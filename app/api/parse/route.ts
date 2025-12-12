@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import Papa from 'papaparse';
 import { parse, isValid } from 'date-fns';
+import pdf from 'pdf-parse/lib/pdf-parse.js';
+import { extractTextFromScannedPDF, isScannedPDF } from '@/lib/ocr';
 
 // Date parsing formats
 const DATE_FORMATS = [
@@ -68,11 +70,7 @@ export async function POST(request: NextRequest) {
     if (fileName.endsWith('.csv')) {
       return await parseCSV(file);
     } else if (fileName.endsWith('.pdf')) {
-      return NextResponse.json({
-        transactions: [],
-        errors: ['PDF parsing is not yet fully implemented. Please use CSV format for best results.'],
-        warnings: [],
-      });
+      return await parsePDF(file);
     } else {
       return NextResponse.json(
         { error: 'Unsupported file type. Please upload CSV or PDF files.' },
@@ -197,4 +195,155 @@ async function parseCSV(file: File): Promise<NextResponse> {
       },
     });
   });
+}
+
+async function parsePDF(file: File): Promise<NextResponse> {
+  const errors: string[] = [];
+  const warnings: string[] = [];
+  const transactions: any[] = [];
+
+  try {
+    const arrayBuffer = await file.arrayBuffer();
+    const buffer = Buffer.from(arrayBuffer);
+
+    // First, try to extract text directly
+    const data = await pdf(buffer);
+    let text = data.text;
+
+    // Check if PDF has extractable text or if it's scanned
+    if (isScannedPDF(text)) {
+      console.log('Scanned PDF detected, using OCR...');
+      warnings.push('Scanned PDF detected. Using OCR to extract text. This may take a few minutes...');
+
+      try {
+        // Use OCR to extract text from scanned PDF
+        text = await extractTextFromScannedPDF(buffer, {
+          language: 'eng',
+          pageLimit: 100,
+        });
+
+        console.log(`OCR completed. Extracted ${text.length} characters.`);
+
+        if (text.trim().length < 50) {
+          errors.push('OCR could not extract sufficient text from the PDF.');
+          errors.push('The PDF may be too low quality or in an unsupported format.');
+          errors.push('Please try: 1) Higher quality scan, 2) CSV export from bank, or 3) Manual entry');
+          return NextResponse.json({ transactions, errors, warnings });
+        }
+      } catch (ocrError) {
+        console.error('OCR error:', ocrError);
+        errors.push('OCR processing failed: ' + (ocrError instanceof Error ? ocrError.message : 'Unknown error'));
+        errors.push('Please try downloading the statement as CSV from your bank.');
+        return NextResponse.json({ transactions, errors, warnings });
+      }
+    }
+
+    // Common bank statement transaction patterns
+    // Enhanced patterns to match both text-based and OCR-extracted PDFs
+    const transactionPatterns = [
+      // Pattern 1: BofA OCR format - Date followed by description and amount at end of line
+      // Example: "09/05/23 CHECKCARD 0902 BUILD.COM 800-375-3403 CA 7443565324508372076 244.19"
+      // Example: "08/24/23 THE HOME DEPOT 08/24 #000207507 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA -26.77"
+      /^[*+\\vA!©1-]\s*(\d{1,2}\/\d{1,2}\/\d{2,4})\s+(.+?)\s+([-]?\d+[,\d]*\.\d{2})$/gm,
+
+      // Pattern 2: Standard format - Date Description Amount
+      /(\d{1,2}\/\d{1,2}\/\d{2,4})\s+(.+?)\s+([-+$]?\d+[,\d]*\.\d{2})/g,
+
+      // Pattern 3: Date Description Debit Credit (two columns)
+      /(\d{1,2}\/\d{1,2}\/\d{2,4})\s+(.+?)\s+(\d+[,\d]*\.\d{2})\s+(\d+[,\d]*\.\d{2})/g,
+    ];
+
+    let matchFound = false;
+
+    for (const pattern of transactionPatterns) {
+      const matches = text.matchAll(pattern);
+
+      for (const match of matches) {
+        matchFound = true;
+        const dateStr = match[1];
+        const description = match[2]?.trim();
+
+        if (!description || description.length < 3) continue;
+
+        // Skip header rows and summary lines
+        const descLower = description.toLowerCase();
+        if (descLower.includes('description') ||
+            descLower.includes('date') ||
+            descLower.includes('transaction') ||
+            descLower.includes('beginning balance') ||
+            descLower.includes('ending balance') ||
+            descLower.includes('total deposits') ||
+            descLower.includes('total withdrawals') ||
+            descLower.includes('account summary') ||
+            descLower.includes('account number') ||
+            descLower.includes('page') ||
+            descLower.startsWith('continued on')) {
+          continue;
+        }
+
+        // Clean up OCR artifacts from description (leading symbols)
+        let cleanDescription = description.replace(/^[*+\\vA!©1-]\s*/, '').trim();
+
+        const date = parseDate(dateStr);
+        if (!date) {
+          warnings.push(`Could not parse date: ${dateStr}`);
+          continue;
+        }
+
+        let amount: number | null = null;
+        let type: 'RECEIPT' | 'DISBURSEMENT' = 'DISBURSEMENT';
+
+        // Check if we have debit/credit columns (match[3] and match[4])
+        if (match[4]) {
+          // Debit/Credit format
+          const debit = parseAmount(match[3]);
+          const credit = parseAmount(match[4]);
+
+          if (debit && debit > 0) {
+            amount = debit;
+            type = 'DISBURSEMENT';
+          } else if (credit && credit > 0) {
+            amount = credit;
+            type = 'RECEIPT';
+          }
+        } else if (match[3]) {
+          // Single amount column
+          amount = parseAmount(match[3]);
+          if (amount !== null) {
+            if (amount < 0) {
+              type = 'DISBURSEMENT';
+              amount = Math.abs(amount);
+            } else {
+              type = 'RECEIPT';
+            }
+          }
+        }
+
+        if (amount === null || amount === 0) {
+          warnings.push(`Could not parse amount for transaction: ${description}`);
+          continue;
+        }
+
+        transactions.push({
+          date: date.toISOString(),
+          description: cleanDescription.replace(/\s+/g, ' ').trim(),
+          amount,
+          type,
+        });
+      }
+
+      if (matchFound) break;
+    }
+
+    if (transactions.length === 0) {
+      errors.push('No transactions found in PDF. The PDF may be scanned or have an unsupported format. Please try converting to CSV or use a text-based PDF.');
+      warnings.push('Tip: Many banks allow you to download statements as CSV which are easier to parse.');
+    }
+
+    return NextResponse.json({ transactions, errors, warnings });
+  } catch (error) {
+    console.error('PDF parsing error:', error);
+    errors.push(`Failed to parse PDF: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    return NextResponse.json({ transactions, errors, warnings });
+  }
 }
