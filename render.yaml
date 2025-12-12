@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: accounting-app
+    runtime: node
+    buildCommand: |
+      # Install system dependencies for OCR
+      apt-get update
+      apt-get install -y tesseract-ocr tesseract-ocr-eng poppler-utils
+      echo "Tesseract version: $(tesseract --version 2>&1 | head -n 1)"
+      echo "pdftoppm version: $(pdftoppm -v 2>&1 | head -n 1)"
+      # Install Node.js dependencies and build
+      npm ci
+      npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: NODE_ENV
+        value: production
+    healthCheckPath: /
+    autoDeploy: true
