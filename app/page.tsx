@@ -1,27 +1,81 @@
-export default function Home() {
-  return (
-    <div className="min-h-screen p-8 pb-20 sm:p-20">
-      <main className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-bold mb-4">
-          California Conservatorship & Trust Accounting
-        </h1>
-        <p className="text-lg text-gray-600 mb-8">
-          Automated court petition generation for GC-400 series forms
-        </p>
+'use client';
 
-        <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
-          <h2 className="text-2xl font-semibold mb-4">Getting Started</h2>
-          <p className="text-gray-700 mb-4">
-            This application helps prepare California Judicial Council forms for conservatorship and trust accountings.
-          </p>
-          <ul className="list-disc list-inside text-gray-700 space-y-2">
-            <li>Upload bank statements (PDF or CSV)</li>
-            <li>Enter case and asset information</li>
-            <li>Review and categorize transactions</li>
-            <li>Generate GC-400 series forms</li>
-          </ul>
+import { useEffect } from 'react';
+import { useAccountingStore } from '@/lib/store';
+import { WorkflowStepper } from '@/components/WorkflowStepper';
+import { CaseInformationForm } from '@/components/CaseInformationForm';
+import { AssetManagement } from '@/components/AssetManagement';
+import { FileUpload } from '@/components/FileUpload';
+import { TransactionReview } from '@/components/TransactionReview';
+import { SummaryDashboard } from '@/components/SummaryDashboard';
+import { Button } from '@/components/ui/button';
+
+export default function Home() {
+  const { currentStep, setCurrentStep, initializeSession } = useAccountingStore();
+
+  useEffect(() => {
+    initializeSession();
+  }, [initializeSession]);
+
+  const goToNextStep = () => {
+    setCurrentStep(currentStep + 1);
+  };
+
+  const goToPreviousStep = () => {
+    setCurrentStep(Math.max(0, currentStep - 1));
+  };
+
+  const resetWorkflow = () => {
+    if (confirm('Are you sure you want to start over? All data will be lost.')) {
+      window.location.reload();
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <header className="bg-white border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div className="flex justify-between items-center">
+            <div>
+              <h1 className="text-3xl font-bold text-gray-900">
+                California Conservatorship & Trust Accounting
+              </h1>
+              <p className="text-sm text-gray-600 mt-1">
+                Automated GC-400 Form Generation
+              </p>
+            </div>
+            <Button variant="outline" onClick={resetWorkflow}>
+              Start Over
+            </Button>
+          </div>
+        </div>
+      </header>
+
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <WorkflowStepper />
+
+        <div className="mt-8">
+          {currentStep === 0 && <CaseInformationForm onNext={goToNextStep} />}
+          {currentStep === 1 && (
+            <AssetManagement onNext={goToNextStep} onBack={goToPreviousStep} />
+          )}
+          {currentStep === 2 && (
+            <FileUpload onNext={goToNextStep} onBack={goToPreviousStep} />
+          )}
+          {currentStep === 3 && (
+            <TransactionReview onNext={goToNextStep} onBack={goToPreviousStep} />
+          )}
+          {currentStep === 4 && <SummaryDashboard onBack={goToPreviousStep} />}
         </div>
       </main>
+
+      <footer className="bg-white border-t border-gray-200 mt-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <p className="text-sm text-gray-500 text-center">
+            This application assists with petition preparation. Please verify all forms with legal counsel before filing.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
