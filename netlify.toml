@@ -1,35 +1,26 @@
-[build]
-  command = "npm run build"
-  publish = ".next"
+# Netlify configuration for accounting app with OCR support
 
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
-
-[build.environment]
-  NODE_VERSION = "20"
-  # Install Tesseract and Poppler utilities via build hook
-  # These are required for OCR processing of scanned PDFs
-
-# Install system dependencies before build
-[[build.processing]]
-  skip_processing = false
-
-# Custom build hook to install system packages
 [build]
   command = """
     echo "Installing OCR dependencies..."
     # Netlify build images use Ubuntu
-    if command -v apt-get &> /dev/null; then
+    if command -v apt-get > /dev/null 2>&1; then
       sudo apt-get update -qq
       sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-eng poppler-utils
-      echo "Tesseract version: $(tesseract --version | head -n 1)"
+      echo "Tesseract version: $(tesseract --version 2>&1 | head -n 1)"
       echo "pdftoppm version: $(pdftoppm -v 2>&1 | head -n 1)"
     fi
     echo "Building Next.js application..."
     npm run build
   """
+  publish = ".next"
 
-# Redirect rules for Next.js
+[build.environment]
+  NODE_VERSION = "20"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
