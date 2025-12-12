@@ -313,3 +313,60 @@ export const CATEGORY_NAMES: Record<TransactionCategory, string> = {
   ...RECEIPT_CATEGORY_NAMES,
   ...DISBURSEMENT_CATEGORY_NAMES,
 };
+
+// ============================================================================
+// Petition Data
+// ============================================================================
+
+export interface PetitionData {
+  // Attorney Information
+  attorneyName: string;
+  attorneyBarNumber: string;
+  attorneyFirmName: string;
+  attorneyAddress: string;
+  attorneyCity: string;
+  attorneyState: string;
+  attorneyZip: string;
+  attorneyPhone: string;
+
+  // Court Information
+  courtName: string;
+  courtCounty: string;
+  caseNumber: string;
+  hearingDate: string; // e.g., "9/3/2024"
+  hearingTime: string; // e.g., "8:30 AM"
+  hearingDepartment: string; // e.g., "2D"
+
+  // Trust/Case Information
+  trustName: string; // e.g., "THE BONNIE DREXLER REVOCALE TRUST"
+  accountType: string; // e.g., "SECOND", "THIRD", "FOURTH"
+
+  // Petitioner/Trustee Information
+  petitionerName: string; // e.g., "Marci Drexler"
+  petitionerTitle: string; // e.g., "Trustee"
+  appointmentDate: string; // e.g., "December 14, 2020"
+
+  // Accounting Period
+  periodStartDate: string; // e.g., "10/21/2021"
+  periodEndDate: string; // e.g., "08/22/2023"
+
+  // Trustor/Conservatee Information
+  trustorName: string; // e.g., "Bonnie Drexler"
+  trustorAddress: string; // Full address
+  trustorIsVeteran: boolean;
+  trustorIsInStateHospital: boolean;
+  trustorMaritalStatus: 'MARRIED' | 'NOT_MARRIED' | 'UNKNOWN';
+
+  // Financial Information
+  attorneyFeesAmount: number; // e.g., 3960.00
+  currentBondAmount: number; // e.g., 1518000.00
+  newBondAmount: number; // e.g., 1719824.06
+
+  // Additional Information
+  hasProbateCodeCompliance: boolean;
+  hasSpecialNoticeRequest: boolean;
+  needsVANotice: boolean;
+
+  // Petition Date
+  petitionDate: string; // e.g., "June 17, 2024"
+}
