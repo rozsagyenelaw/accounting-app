@@ -1,27 +1,14 @@
-import { createWorker } from 'tesseract.js';
 import fs from 'fs/promises';
 import path from 'path';
 import os from 'os';
 import { exec } from 'child_process';
 import { promisify } from 'util';
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
+import tesseract from 'node-tesseract-ocr';
 
 const execAsync = promisify(exec);
 
-// Get the absolute path to the tesseract worker
-const workerPath = path.join(
-  process.cwd(),
-  'node_modules',
-  'tesseract.js',
-  'src',
-  'worker-script',
-  'node',
-  'index.js'
-);
-
 /**
- * OCR utility for extracting text from scanned PDFs
+ * OCR utility for extracting text from scanned PDFs using Tesseract CLI
  */
 
 interface OCROptions {
@@ -30,7 +17,8 @@ interface OCROptions {
 }
 
 /**
- * Convert PDF to images and extract text using OCR
+ * Convert PDF to images and extract text using OCR via Tesseract CLI
+ * This approach uses the system's tesseract command directly, avoiding bundler issues
  */
 export async function extractTextFromScannedPDF(
   pdfBuffer: Buffer,
@@ -72,14 +60,20 @@ export async function extractTextFromScannedPDF(
 
     console.log(`Converted ${imageFiles.length} pages to images`);
 
-    // Initialize Tesseract worker with absolute path for Next.js compatibility
-    const worker = await createWorker(language, undefined, {
-      workerPath,
-    });
+    if (imageFiles.length === 0) {
+      throw new Error('No images were generated from the PDF. The PDF may be corrupted or empty.');
+    }
 
     let fullText = '';
 
-    // Process each page image
+    // Tesseract configuration for better accuracy
+    const config = {
+      lang: language,
+      oem: 1, // LSTM OCR Engine Mode
+      psm: 3, // Automatic page segmentation
+    };
+
+    // Process each page image using Tesseract CLI
     for (let i = 0; i < imageFiles.length; i++) {
       try {
         const pageNum = i + 1;
@@ -87,19 +81,16 @@ export async function extractTextFromScannedPDF(
 
         const imagePath = path.join(tempDir, imageFiles[i]);
 
-        // Run OCR on the image
-        const { data } = await worker.recognize(imagePath);
-        fullText += data.text + '\n\n';
+        // Run OCR on the image using node-tesseract-ocr
+        const text = await tesseract.recognize(imagePath, config);
+        fullText += text + '\n\n';
 
-        console.log(`Page ${pageNum} OCR completed. Extracted ${data.text.length} characters.`);
+        console.log(`Page ${pageNum} OCR completed. Extracted ${text.length} characters.`);
       } catch (error) {
         console.error(`Error processing page ${i + 1}:`, error);
-        // Continue with next page
+        // Continue with next page rather than failing completely
       }
     }
-
-    // Cleanup
-    await worker.terminate();
 
     console.log(`OCR completed. Total text extracted: ${fullText.length} characters`);
     return fullText;

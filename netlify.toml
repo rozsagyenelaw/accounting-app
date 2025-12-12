@@ -7,6 +7,27 @@
 
 [build.environment]
   NODE_VERSION = "20"
+  # Install Tesseract and Poppler utilities via build hook
+  # These are required for OCR processing of scanned PDFs
+
+# Install system dependencies before build
+[[build.processing]]
+  skip_processing = false
+
+# Custom build hook to install system packages
+[build]
+  command = """
+    echo "Installing OCR dependencies..."
+    # Netlify build images use Ubuntu
+    if command -v apt-get &> /dev/null; then
+      sudo apt-get update -qq
+      sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-eng poppler-utils
+      echo "Tesseract version: $(tesseract --version | head -n 1)"
+      echo "pdftoppm version: $(pdftoppm -v 2>&1 | head -n 1)"
+    fi
+    echo "Building Next.js application..."
+    npm run build
+  """
 
 # Redirect rules for Next.js
 [[redirects]]

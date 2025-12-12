@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   // Empty turbopack config to silence migration warning
   turbopack: {},
   webpack: (config) => {
+    // Disable canvas and encoding modules that aren't needed
     config.resolve.alias.canvas = false;
     config.resolve.alias.encoding = false;
     return config;

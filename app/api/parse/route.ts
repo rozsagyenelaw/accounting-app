@@ -62,7 +62,11 @@ export async function POST(request: NextRequest) {
     const file = formData.get('file') as File;
 
     if (!file) {
-      return NextResponse.json({ error: 'No file provided' }, { status: 400 });
+      return NextResponse.json({
+        transactions: [],
+        errors: ['No file provided'],
+        warnings: []
+      }, { status: 400 });
     }
 
     const fileName = file.name.toLowerCase();
@@ -72,17 +76,23 @@ export async function POST(request: NextRequest) {
     } else if (fileName.endsWith('.pdf')) {
       return await parsePDF(file);
     } else {
-      return NextResponse.json(
-        { error: 'Unsupported file type. Please upload CSV or PDF files.' },
-        { status: 400 }
-      );
+      return NextResponse.json({
+        transactions: [],
+        errors: ['Unsupported file type. Please upload CSV or PDF files.'],
+        warnings: []
+      }, { status: 400 });
     }
   } catch (error) {
     console.error('Parse error:', error);
-    return NextResponse.json(
-      { error: error instanceof Error ? error.message : 'Unknown error' },
-      { status: 500 }
-    );
+    console.error('Stack trace:', error instanceof Error ? error.stack : 'No stack trace');
+    return NextResponse.json({
+      transactions: [],
+      errors: [
+        'Failed to parse file: ' + (error instanceof Error ? error.message : 'Unknown error'),
+        'Please try again or contact support if the issue persists.'
+      ],
+      warnings: []
+    }, { status: 500 });
   }
 }
 
@@ -225,16 +235,34 @@ async function parsePDF(file: File): Promise<NextResponse> {
         console.log(`OCR completed. Extracted ${text.length} characters.`);
 
         if (text.trim().length < 50) {
-          errors.push('OCR could not extract sufficient text from the PDF.');
-          errors.push('The PDF may be too low quality or in an unsupported format.');
-          errors.push('Please try: 1) Higher quality scan, 2) CSV export from bank, or 3) Manual entry');
-          return NextResponse.json({ transactions, errors, warnings });
+          errors.push('OCR extracted minimal text from the PDF.');
+          errors.push('This may indicate: (1) Very low scan quality, (2) Non-standard document format, or (3) Corrupted file');
+          errors.push('For best results, ensure the PDF is scanned at 300 DPI or higher with good contrast');
+          return NextResponse.json({ transactions, errors, warnings }, { status: 422 });
         }
       } catch (ocrError) {
         console.error('OCR error:', ocrError);
-        errors.push('OCR processing failed: ' + (ocrError instanceof Error ? ocrError.message : 'Unknown error'));
-        errors.push('Please try downloading the statement as CSV from your bank.');
-        return NextResponse.json({ transactions, errors, warnings });
+        console.error('OCR error stack:', ocrError instanceof Error ? ocrError.stack : 'No stack');
+
+        const errorMessage = ocrError instanceof Error ? ocrError.message : 'Unknown error';
+
+        // Provide specific, actionable error messages
+        if (errorMessage.includes('pdftoppm') || errorMessage.includes('poppler')) {
+          errors.push('PDF to image conversion failed.');
+          errors.push('The server may be missing required PDF processing tools (poppler-utils).');
+          errors.push('System administrator: Install poppler-utils package.');
+        } else if (errorMessage.includes('tesseract') || errorMessage.includes('command not found')) {
+          errors.push('Tesseract OCR engine is not available on this server.');
+          errors.push('System administrator: Install tesseract-ocr package.');
+        } else if (errorMessage.includes('timeout') || errorMessage.includes('maxBuffer')) {
+          errors.push('OCR processing timed out - this PDF is too large or complex.');
+          errors.push('Try processing fewer pages or splitting the document.');
+        } else {
+          errors.push('OCR processing failed: ' + errorMessage);
+          errors.push('The system encountered an unexpected error during text extraction.');
+        }
+
+        return NextResponse.json({ transactions, errors, warnings }, { status: 500 });
       }
     }
 
