@@ -8,6 +8,7 @@ import type {
   ScheduleAData,
   ScheduleCData,
 } from '@/types';
+import { fillPdfForm, AccountingData } from './pdf-fill';
 
 interface PDFData {
   caseInfo: Partial<CaseInformation>;
@@ -18,7 +19,108 @@ interface PDFData {
   scheduleC: ScheduleCData;
 }
 
-export async function generatePDF(data: PDFData) {
+/**
+ * Generate PDF using either a fillable template or creating from scratch
+ * @param data - The accounting data
+ * @param useTemplate - Whether to use a fillable template (if available)
+ */
+export async function generatePDF(data: PDFData, useTemplate: boolean = true) {
+  // Try to use fillable template first if requested
+  if (useTemplate) {
+    try {
+      const filledPdf = await generateFromTemplate(data);
+      if (filledPdf) {
+        return; // Successfully filled and downloaded template
+      }
+    } catch (error) {
+      console.warn('Could not use template, falling back to generated PDF:', error);
+    }
+  }
+
+  // Fall back to creating PDF from scratch
+  await generateFromScratch(data);
+}
+
+/**
+ * Fill a PDF template with the accounting data
+ */
+async function generateFromTemplate(data: PDFData): Promise<boolean> {
+  try {
+    // Check if a template exists
+    const templatePath = '/forms/templates/GC-400.pdf'; // Default template name
+    const response = await fetch(templatePath);
+
+    if (!response.ok) {
+      return false; // Template doesn't exist
+    }
+
+    // Prepare data for form filling
+    const formData: AccountingData = {
+      caseNumber: data.caseInfo.caseNumber,
+      trustName: data.caseInfo.trustConservatorshipName,
+      accountPeriodStart: data.caseInfo.periodStartDate ? format(new Date(data.caseInfo.periodStartDate), 'yyyy-MM-dd') : undefined,
+      accountPeriodEnd: data.caseInfo.periodEndDate ? format(new Date(data.caseInfo.periodEndDate), 'yyyy-MM-dd') : undefined,
+      cashAssetsBeginning: data.summary.beginningCashAssets,
+      nonCashAssets: data.summary.beginningNonCashAssets,
+      receipts: data.summary.totalReceipts,
+      disbursements: data.summary.totalDisbursements,
+      cashAssetsEnding: data.summary.endingCashAssets,
+
+      // Schedule A
+      interestReceipts: data.scheduleA.A2_Interest.reduce((sum, t) => sum + t.amount, 0),
+      pensionReceipts: data.scheduleA.A3_PensionsAnnuities.reduce((sum, t) => sum + t.amount, 0),
+      socialSecurityReceipts: data.scheduleA.A5_SocialSecurityVA.reduce((sum, t) => sum + t.amount, 0),
+      otherReceipts: data.scheduleA.A6_OtherReceipts.reduce((sum, t) => sum + t.amount, 0),
+
+      // Schedule C
+      caregiverExpenses: data.scheduleC.C1_Caregiver.reduce((sum, t) => sum + t.amount, 0),
+      residentialCareExpenses: Object.values(data.scheduleC.C2_ResidentialFacility)
+        .flat()
+        .reduce((sum, t) => sum + t.amount, 0),
+      fiduciaryFees: data.scheduleC.C4_FiduciaryAttorney.reduce((sum, t) => sum + t.amount, 0),
+      livingExpenses: Object.values(data.scheduleC.C7_LivingExpenses)
+        .flat()
+        .reduce((sum, t) => sum + t.amount, 0),
+      medicalExpenses: data.scheduleC.C6_Medical.reduce((sum, t) => sum + t.amount, 0),
+      otherDisbursements: data.scheduleC.C9_OtherDisbursements.reduce((sum, t) => sum + t.amount, 0),
+    };
+
+    // Call the API to fill the PDF
+    const apiResponse = await fetch('/api/pdf-fill', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        templateName: 'GC-400.pdf',
+        data: formData,
+        outputName: `GC-400_${data.caseInfo.caseNumber?.replace(/\s/g, '_') || 'Accounting'}_${format(new Date(), 'yyyy-MM-dd')}.pdf`,
+      }),
+    });
+
+    if (!apiResponse.ok) {
+      return false;
+    }
+
+    const result = await apiResponse.json();
+
+    // Download the filled PDF
+    const link = document.createElement('a');
+    link.href = result.fileUrl;
+    link.download = result.fileUrl.split('/').pop() || 'filled-form.pdf';
+    link.click();
+
+    return true;
+  } catch (error) {
+    console.error('Error filling template:', error);
+    return false;
+  }
+}
+
+/**
+ * Create PDF from scratch (original implementation)
+ */
+async function generateFromScratch(data: PDFData) {
   const pdfDoc = await PDFDocument.create();
   const timesRoman = await pdfDoc.embedFont(StandardFonts.TimesRoman);
   const timesRomanBold = await pdfDoc.embedFont(StandardFonts.TimesRomanBold);

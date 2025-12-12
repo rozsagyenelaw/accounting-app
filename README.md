@@ -8,6 +8,7 @@ A full-stack web application for automating California conservatorship and trust
 - **AI Transaction Classification**: Automatically categorize transactions into California Judicial Council form categories
 - **Transaction Review Interface**: Review and manually adjust transaction categorizations
 - **PDF Form Generation**: Generate complete GC-400 series court petition packages
+- **PDF Form Filling**: Fill actual fillable PDF forms with your accounting data (NEW!)
 - **Mathematical Reconciliation**: Automatic validation of charges vs credits
 - **Multi-Bank Support**: Handle statements from Bank of America, Chase, Wells Fargo, and more
 
@@ -21,10 +22,11 @@ A full-stack web application for automating California conservatorship and trust
 - **Zustand** - Global state management with persistence
 
 ### Backend/Processing
-- **pdf-lib** - PDF form generation and filling
+- **pdf-lib** - PDF form generation and filling (actual fillable forms!)
 - **pdf-parse** - PDF statement parsing
 - **Papa Parse** - CSV statement parsing
 - **date-fns** - Date formatting and parsing
+- **lucide-react** - Icon library for UI components
 
 ### Deployment
 - **Netlify** - Hosting and serverless functions
@@ -87,11 +89,18 @@ accounting-app/
 ├── lib/                   # Core business logic
 │   ├── classifier.ts     # Transaction classification engine
 │   ├── parser.ts         # Bank statement parsers
+│   ├── pdf-fill.ts       # PDF form filling engine (NEW!)
+│   ├── pdf-generator.ts  # PDF generation and form filling
+│   ├── calculations.ts   # Accounting calculations
 │   └── store.ts          # Zustand state management
 ├── types/                 # TypeScript type definitions
 │   └── index.ts          # All type definitions
 ├── utils/                 # Utility functions
 ├── public/               # Static assets
+│   └── forms/            # PDF form templates and filled forms
+│       ├── templates/    # Upload fillable PDF templates here
+│       ├── filled/       # Auto-filled PDFs saved here
+│       └── README.md     # Forms system documentation
 └── README.md             # This file
 ```
 
@@ -132,13 +141,24 @@ Review the automatically classified transactions:
 
 ### 5. Generate Forms
 
-The system generates:
+**Option 1: Fill Actual PDF Forms (Recommended)**
+
+1. Upload a fillable GC-400 PDF template to `public/forms/templates/GC-400.pdf`
+2. Click "Generate GC-400 Forms (PDF)" on the Summary Dashboard
+3. The system will automatically fill the template with your data
+4. Download the filled PDF ready for court filing
+
+**Option 2: Generate from Scratch**
+
+If no template is uploaded, the system generates:
 - Cover Petition (pages 1-4)
 - GC-400(SUM) - Summary of Account
 - GC-400(PH) - Property on Hand at Beginning
 - Schedule A - Receipts (by category)
 - Schedule C - Disbursements (by category)
 - Schedule E - Property on Hand at End
+
+📖 **See [PDF_FORM_FILLING_GUIDE.md](./PDF_FORM_FILLING_GUIDE.md) for detailed instructions on using fillable PDF forms**
 
 ## Transaction Categories
 
