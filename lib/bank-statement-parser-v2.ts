@@ -77,110 +77,72 @@ function extractAmount(text: string, lineIndex: number): ParsedAmount | null {
 }
 
 // ============================================================================
-// DESCRIPTION PATTERNS
+// DESCRIPTION EXTRACTION - GENERIC (NO HARDCODED MERCHANTS)
 // ============================================================================
 
-const MERCHANT_PATTERNS = [
-  // Groceries
-  { pattern: /SPROUTS\s+FARMER/i, category: 'grocery' },
-  { pattern: /TRADER\s+JOE/i, category: 'grocery' },
-  { pattern: /RALPHS/i, category: 'grocery' },
-  { pattern: /GELSON/i, category: 'grocery' },
-  { pattern: /VONS/i, category: 'grocery' },
-  { pattern: /VINTAGE\s+GROCER/i, category: 'grocery' },
-  { pattern: /WHOLE\s+FOODS/i, category: 'grocery' },
-  { pattern: /TAPIA\s+BROS/i, category: 'grocery' },
+function extractDescription(text: string, lineIndex: number): { text: string; lineIndex: number } | null {
+  const trimmed = text.trim();
 
-  // Receipts - Income
-  { pattern: /SSA\s+TREAS/i, category: 'receipt', isReceipt: true },
-  { pattern: /FLETCHER\s+JONES/i, category: 'receipt', isReceipt: true },
-  { pattern: /Interest\s+Earned/i, category: 'receipt', isReceipt: true },
-  { pattern: /WIRE.*IN/i, category: 'receipt', isReceipt: true },
-  { pattern: /DEPOSIT/i, category: 'receipt', isReceipt: true },
-  { pattern: /REFUND/i, category: 'receipt', isReceipt: true },
+  // Skip if line is too short to be a description
+  if (trimmed.length < 5) return null;
 
-  // Utilities
-  { pattern: /SPECTRUM/i, category: 'utility' },
-  { pattern: /CHARTER\s+COMMUN/i, category: 'utility' },
-  { pattern: /SOCALGAS/i, category: 'utility' },
-  { pattern: /LADWP/i, category: 'utility' },
-  { pattern: /\bDWP\b/i, category: 'utility' },
-
-  // Home Improvement
-  { pattern: /HOME\s+DEPOT/i, category: 'home' },
-  { pattern: /LOWE'?S/i, category: 'home' },
-
-  // Restaurants
-  { pattern: /SHARKY/i, category: 'dining' },
-  { pattern: /SHAKE\s+SHACK/i, category: 'dining' },
-  { pattern: /STARBUCKS/i, category: 'dining' },
-  { pattern: /CHIPOTLE/i, category: 'dining' },
-  { pattern: /BAJA\s+FRESH/i, category: 'dining' },
-  { pattern: /FATBURGER/i, category: 'dining' },
-  { pattern: /OUTBACK/i, category: 'dining' },
-
-  // Medical
-  { pattern: /\bCVS\b/i, category: 'medical' },
-  { pattern: /WALGREENS/i, category: 'medical' },
-  { pattern: /PHARMACY/i, category: 'medical' },
-
-  // Fitness
-  { pattern: /LA\s+FITNESS/i, category: 'fitness' },
-  { pattern: /\bGYM\b/i, category: 'fitness' },
-
-  // Online Shopping
-  { pattern: /AMAZON/i, category: 'shopping' },
-  { pattern: /\bAMZN\b/i, category: 'shopping' },
-
-  // General transaction types
-  { pattern: /PURCHASE/i, category: 'purchase' },
-  { pattern: /CHECKCARD/i, category: 'purchase' },
-  { pattern: /DEBIT\s+CARD/i, category: 'purchase' },
-  { pattern: /CHECK\s+#?\d+/i, category: 'check' },
-];
-
-function extractDescription(text: string, lineIndex: number): { text: string; isReceipt: boolean; lineIndex: number } | null {
-  // Check if line contains any merchant pattern
-  for (const { pattern, isReceipt } of MERCHANT_PATTERNS) {
-    if (pattern.test(text)) {
-      return {
-        text: text.trim(),
-        isReceipt: isReceipt || false,
-        lineIndex
-      };
-    }
+  // Skip obvious header lines
+  const lower = trimmed.toLowerCase();
+  if (lower.includes('description') ||
+      lower.includes('date') ||
+      lower.includes('amount') ||
+      lower.includes('balance') ||
+      lower.includes('beginning') ||
+      lower.includes('ending') ||
+      lower.includes('total') ||
+      lower.includes('page') ||
+      lower.match(/^\d+$/)) { // Just a number
+    return null;
   }
 
-  // Check for generic transaction indicators
-  if (/PURCHASE|CHECKCARD|DEBIT|CHECK|PAYMENT|TRANSFER|WIRE/i.test(text)) {
-    // Only if line has substantial content (not just the keyword)
-    if (text.trim().length > 15) {
-      return {
-        text: text.trim(),
-        isReceipt: false,
-        lineIndex
-      };
-    }
+  // Generic indicators that this is a transaction description:
+  // - Contains transaction keywords
+  // - Has uppercase text (merchant names)
+  // - Contains common transaction patterns
+  const hasTransactionKeyword = /PURCHASE|CHECKCARD|DEBIT|CHECK|PAYMENT|TRANSFER|WIRE|DEPOSIT|WITHDRAWAL|ATM|POS|ACH/i.test(trimmed);
+  const hasUpperCase = /[A-Z]{3,}/.test(trimmed); // At least 3 consecutive uppercase letters
+  const hasCheckNumber = /#?\d{3,}/.test(trimmed); // Check numbers or reference numbers
+  const hasLocation = /\b[A-Z]{2}\b/.test(trimmed); // State abbreviations like CA, NY
+
+  // If line has transaction characteristics, it's likely a description
+  if (hasTransactionKeyword || (hasUpperCase && trimmed.length > 10) || hasCheckNumber) {
+    return {
+      text: trimmed,
+      lineIndex
+    };
   }
 
   return null;
 }
 
 // ============================================================================
-// RECEIPT DETECTION
+// RECEIPT DETECTION - GENERIC (BASED ON KEYWORDS, NOT HARDCODED MERCHANTS)
 // ============================================================================
 
 function isReceiptTransaction(description: string): boolean {
+  // Generic receipt indicators (money coming IN):
   const receiptPatterns = [
-    /SSA\s+TREAS/i,
-    /\bSSA\b/i,
-    /FLETCHER\s+JONES/i,
-    /Interest\s+Earned/i,
-    /WIRE.*IN/i,
     /DEPOSIT/i,
+    /CREDIT/i,
     /REFUND/i,
-    /SOC\s+SEC/i,
+    /INTEREST/i,
+    /DIVIDEND/i,
+    /WIRE.*IN/i,
+    /TRANSFER.*IN/i,
+    /ACH.*CREDIT/i,
+    /PAYROLL/i,
+    /SALARY/i,
+    /PENSION/i,
+    /ANNUIT/i,
     /SOCIAL\s+SECURITY/i,
+    /SSA/i,
+    /REIMBURSEMENT/i,
+    /RETURN/i,
   ];
 
   return receiptPatterns.some(p => p.test(description));
@@ -263,8 +225,8 @@ export function parseBankStatementOCR(text: string): ParsedTransaction[] {
     // Mark amount as used
     usedAmounts.add(amount.lineIndex);
 
-    // Determine transaction type
-    const isReceipt = isReceiptTransaction(description.text) || description.isReceipt;
+    // Determine transaction type based on description keywords
+    const isReceipt = isReceiptTransaction(description.text);
     const type: 'RECEIPT' | 'DISBURSEMENT' = isReceipt ? 'RECEIPT' : 'DISBURSEMENT';
 
     // Calculate confidence based on proximity
