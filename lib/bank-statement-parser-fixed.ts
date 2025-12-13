@@ -87,6 +87,16 @@ function parseBankOfAmericaTransactions(text: string): ParsedTransaction[] {
   const transactions: ParsedTransaction[] = [];
   const lines = text.split('\n');
 
+  // DEBUG: Print first 50 lines and regex matches
+  console.log('[DEBUG] First 50 lines of OCR text:');
+  const debugLines = lines.slice(0, 50);
+  for (let i = 0; i < debugLines.length; i++) {
+    const line = debugLines[i];
+    const match = line.match(TRANSACTION_PATTERN);
+    console.log(`Line ${i}: ${match ? 'MATCH' : 'NO MATCH'} | "${line.substring(0, 100)}"`);
+  }
+  console.log('[DEBUG] End of first 50 lines\n');
+
   let currentSection: string | null = null;
 
   for (const line of lines) {
