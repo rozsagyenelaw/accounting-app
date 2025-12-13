@@ -3,7 +3,7 @@ import Papa from 'papaparse';
 import { parse, isValid } from 'date-fns';
 import pdf from 'pdf-parse/lib/pdf-parse.js';
 import { extractTextFromScannedPDF, isScannedPDF } from '@/lib/ocr';
-import { parseBankStatements, validateResults } from '@/lib/bank-statement-parser-production';
+import { parseBankStatements, validateResults } from '@/lib/bank-statement-parser-fixed';
 import { categorizeTransaction } from '@/lib/gc400-categories';
 
 // Date parsing formats
@@ -320,8 +320,8 @@ async function parsePDF(file: File): Promise<NextResponse> {
       }
     }
 
-    // Use PRODUCTION parser for court filing
-    console.log('[PDF Parser] Using PRODUCTION parser for Bank of America + Logix...');
+    // Use FIXED parser matching exact BofA OCR format
+    console.log('[PDF Parser] Using FIXED parser with exact BofA regex pattern...');
     console.log(`[PDF Parser] Text length: ${text.length} characters`);
 
     const parsedTransactions = parseBankStatements(text);
