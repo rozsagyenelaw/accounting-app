@@ -3,6 +3,8 @@ import Papa from 'papaparse';
 import { parse, isValid } from 'date-fns';
 import pdf from 'pdf-parse/lib/pdf-parse.js';
 import { extractTextFromScannedPDF, isScannedPDF } from '@/lib/ocr';
+import { parseBankOfAmericaStatement, validateResults } from '@/lib/bank-statement-parser';
+import { categorizeTransaction } from '@/lib/gc400-categories';
 
 // Date parsing formats
 const DATE_FORMATS = [
@@ -231,11 +233,17 @@ async function parseCSV(file: File): Promise<NextResponse> {
             return;
           }
 
+          // Categorize the transaction
+          const category = categorizeTransaction(description, type);
+
           transactions.push({
             date: date.toISOString(),
             description,
             amount,
             type,
+            category: category.code,
+            subCategory: category.subCategory,
+            confidence: category.confidence,
           });
         });
 
@@ -312,129 +320,39 @@ async function parsePDF(file: File): Promise<NextResponse> {
       }
     }
 
-    // Common bank statement transaction patterns
-    // Enhanced patterns to match both text-based and OCR-extracted PDFs
-    const transactionPatterns = [
-      // Pattern 1: BofA OCR format - Date followed by description and amount at end of line
-      // OCR-aware: Allows "0/" at start for dates where first digit is cut off
-      // Example: "09/05/23 CHECKCARD 0902 BUILD.COM 800-375-3403 CA 7443565324508372076 244.19"
-      // Example: "0/05/23 CHECKCARD..." (OCR artifact - first digit cut off)
-      // Note: [*+\\vA!©-] excludes digits to avoid stripping "1" from "12/30/24"
-      /^[*+\\vA!©-]\s*(\d{1,2}\/\d{1,2}\/\d{2,4}|0\/\d{1,2}\/\d{2,4})\s+(.+?)\s+([-]?\d+[,\d]*\.\d{2})$/gm,
+    // Use new Bank of America statement parser
+    console.log('[PDF Parser] Using new BofA statement parser...');
+    console.log(`[PDF Parser] Text length: ${text.length} characters`);
 
-      // Pattern 2: Standard format - Date Description Amount
-      // OCR-aware: Allows dates starting with "0/"
-      /(\d{1,2}\/\d{1,2}\/\d{2,4}|0\/\d{1,2}\/\d{2,4})\s+(.+?)\s+([-+$]?\d+[,\d]*\.\d{2})/g,
+    const parsedTransactions = parseBankOfAmericaStatement(text);
+    console.log(`[PDF Parser] Parsed ${parsedTransactions.length} transactions`);
 
-      // Pattern 3: Date Description Debit Credit (two columns)
-      // OCR-aware: Allows dates starting with "0/"
-      /(\d{1,2}\/\d{1,2}\/\d{2,4}|0\/\d{1,2}\/\d{2,4})\s+(.+?)\s+(\d+[,\d]*\.\d{2})\s+(\d+[,\d]*\.\d{2})/g,
-    ];
+    // Validate results
+    const validationWarnings = validateResults(parsedTransactions);
+    warnings.push(...validationWarnings);
 
-    let matchFound = false;
+    // Convert to API format and categorize
+    for (const txn of parsedTransactions) {
+      const category = categorizeTransaction(txn.description, txn.type);
 
-    for (const pattern of transactionPatterns) {
-      const matches = text.matchAll(pattern);
-
-      for (const match of matches) {
-        matchFound = true;
-        const dateStr = match[1];
-        const description = match[2]?.trim();
-
-        if (!description || description.length < 3) continue;
-
-        // Skip header rows and summary lines
-        const descLower = description.toLowerCase();
-        if (descLower.includes('description') ||
-            descLower.includes('date') ||
-            descLower.includes('transaction') ||
-            descLower.includes('beginning balance') ||
-            descLower.includes('ending balance') ||
-            descLower.includes('total deposits') ||
-            descLower.includes('total withdrawals') ||
-            descLower.includes('account summary') ||
-            descLower.includes('account number') ||
-            descLower.includes('page') ||
-            descLower.startsWith('continued on')) {
-          continue;
-        }
-
-        // Clean up OCR artifacts from description (leading symbols, but not digits)
-        let cleanDescription = description.replace(/^[*+\\vA!©-]\s*/, '').trim();
-
-        // Create context string for debugging date parsing
-        const rawContext = match[0].substring(0, 80); // First 80 chars of matched line
-
-        const date = parseDate(dateStr, rawContext);
-        if (!date) {
-          warnings.push(`Could not parse date: ${dateStr} (raw text: ${rawContext})`);
-          console.log(`[Transaction Parse] Failed to parse date "${dateStr}" from line: ${rawContext}`);
-          continue;
-        }
-
-        let amount: number | null = null;
-        let type: 'RECEIPT' | 'DISBURSEMENT' = 'DISBURSEMENT';
-
-        // Check if we have debit/credit columns (match[3] and match[4])
-        if (match[4]) {
-          // Debit/Credit format
-          const debit = parseAmount(match[3]);
-          const credit = parseAmount(match[4]);
-
-          if (debit && debit > 0) {
-            amount = debit;
-            type = 'DISBURSEMENT';
-          } else if (credit && credit > 0) {
-            amount = credit;
-            type = 'RECEIPT';
-          }
-        } else if (match[3]) {
-          // Single amount column
-          amount = parseAmount(match[3]);
-          if (amount !== null) {
-            amount = Math.abs(amount);
-
-            // Determine type based on description keywords
-            // Only SSA, Interest, Refunds, and trust distributions are RECEIPTS
-            // Everything else is DISBURSEMENT
-            const descLower = cleanDescription.toLowerCase();
-
-            // Receipt keywords - money coming IN (very specific)
-            const isReceipt = descLower.includes('ssa treas') ||
-                            descLower.includes('ssa') ||
-                            descLower.includes('soc sec') ||
-                            descLower.includes('social security') ||
-                            descLower.includes('interest earned') ||
-                            descLower.includes('interest') ||
-                            descLower.includes('refund') ||
-                            descLower.includes('fletcher jones') ||
-                            descLower.includes('pension') ||
-                            descLower.includes('annuity') ||
-                            descLower.includes('trust distribution');
-
-            type = isReceipt ? 'RECEIPT' : 'DISBURSEMENT';
-          }
-        }
-
-        if (amount === null || amount === 0) {
-          warnings.push(`Could not parse amount for transaction: ${description}`);
-          continue;
-        }
-
-        transactions.push({
-          date: date.toISOString(),
-          description: cleanDescription.replace(/\s+/g, ' ').trim(),
-          amount,
-          type,
-        });
-      }
-
-      if (matchFound) break;
+      transactions.push({
+        date: txn.date.toISOString(),
+        description: txn.description,
+        amount: txn.amount,
+        type: txn.type,
+        category: category.code,
+        subCategory: category.subCategory,
+        confidence: category.confidence,
+      });
     }
 
     if (transactions.length === 0) {
-      errors.push('No transactions found in PDF. The PDF may be scanned or have an unsupported format. Please try converting to CSV or use a text-based PDF.');
+      errors.push('No transactions found in PDF.');
+      errors.push('This may indicate: (1) Unsupported bank statement format, (2) OCR errors, or (3) Invalid PDF structure');
+      warnings.push('Supported formats: Bank of America statements');
       warnings.push('Tip: Many banks allow you to download statements as CSV which are easier to parse.');
+    } else {
+      console.log(`[PDF Parser] Successfully categorized ${transactions.length} transactions`);
     }
 
     return NextResponse.json({ transactions, errors, warnings });
