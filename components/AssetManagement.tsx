@@ -16,11 +16,11 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
   const [realProperty, setRealProperty] = useState<RealProperty[]>(assets.realProperty || []);
   const [otherAssets, setOtherAssets] = useState<NonCashAsset[]>(assets.otherNonCashAssets || []);
 
-  // Balance fields
-  const [beginningCashBalance, setBeginningCashBalance] = useState<number>(assets.beginningCashBalance || 0);
-  const [beginningNonCashBalance, setBeginningNonCashBalance] = useState<number>(assets.beginningNonCashBalance || 0);
-  const [endingCashBalance, setEndingCashBalance] = useState<number>(assets.endingCashBalance || 0);
-  const [endingNonCashBalance, setEndingNonCashBalance] = useState<number>(assets.endingNonCashBalance || 0);
+  // Balance fields - use string to allow proper input handling
+  const [beginningCashBalance, setBeginningCashBalance] = useState<string>(assets.beginningCashBalance?.toString() || '');
+  const [beginningNonCashBalance, setBeginningNonCashBalance] = useState<string>(assets.beginningNonCashBalance?.toString() || '');
+  const [endingCashBalance, setEndingCashBalance] = useState<string>(assets.endingCashBalance?.toString() || '');
+  const [endingNonCashBalance, setEndingNonCashBalance] = useState<string>(assets.endingNonCashBalance?.toString() || '');
 
   // Determine if this is the first account
   // Default to true if accountType is not set yet
@@ -43,7 +43,7 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
 
   // For non-first accounts, default beginning non-cash to ending non-cash
   useEffect(() => {
-    if (!isFirstAccount && endingNonCashBalance > 0 && beginningNonCashBalance === 0) {
+    if (!isFirstAccount && endingNonCashBalance && !beginningNonCashBalance) {
       setBeginningNonCashBalance(endingNonCashBalance);
     }
   }, [isFirstAccount, endingNonCashBalance, beginningNonCashBalance]);
@@ -115,10 +115,10 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
       bankAccounts,
       realProperty,
       otherNonCashAssets: otherAssets,
-      beginningCashBalance: isFirstAccount ? beginningCashBalance : undefined,
-      beginningNonCashBalance: isFirstAccount ? beginningNonCashBalance : undefined,
-      endingCashBalance,
-      endingNonCashBalance,
+      beginningCashBalance: isFirstAccount ? parseFloat(beginningCashBalance) || 0 : undefined,
+      beginningNonCashBalance: isFirstAccount ? parseFloat(beginningNonCashBalance) || 0 : undefined,
+      endingCashBalance: parseFloat(endingCashBalance) || 0,
+      endingNonCashBalance: parseFloat(endingNonCashBalance) || 0,
     });
     onNext();
   };
@@ -349,10 +349,7 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
                       type="number"
                       step="0.01"
                       value={beginningCashBalance}
-                      onChange={(e) => {
-                        const val = e.target.value;
-                        setBeginningCashBalance(val === '' ? 0 : parseFloat(val));
-                      }}
+                      onChange={(e) => setBeginningCashBalance(e.target.value)}
                       placeholder="0.00"
                       className="pl-7"
                     />
@@ -368,10 +365,7 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
                       type="number"
                       step="0.01"
                       value={beginningNonCashBalance}
-                      onChange={(e) => {
-                        const val = e.target.value;
-                        setBeginningNonCashBalance(val === '' ? 0 : parseFloat(val));
-                      }}
+                      onChange={(e) => setBeginningNonCashBalance(e.target.value)}
                       placeholder="0.00"
                       className="pl-7"
                     />
@@ -395,10 +389,7 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
                     type="number"
                     step="0.01"
                     value={endingCashBalance}
-                    onChange={(e) => {
-                      const val = e.target.value;
-                      setEndingCashBalance(val === '' ? 0 : parseFloat(val));
-                    }}
+                    onChange={(e) => setEndingCashBalance(e.target.value)}
                     placeholder="0.00"
                     className="pl-7"
                   />
@@ -414,10 +405,7 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
                     type="number"
                     step="0.01"
                     value={endingNonCashBalance}
-                    onChange={(e) => {
-                      const val = e.target.value;
-                      setEndingNonCashBalance(val === '' ? 0 : parseFloat(val));
-                    }}
+                    onChange={(e) => setEndingNonCashBalance(e.target.value)}
                     placeholder="0.00"
                     className="pl-7"
                   />
@@ -456,10 +444,7 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
                       type="number"
                       step="0.01"
                       value={beginningNonCashBalance}
-                      onChange={(e) => {
-                        const val = e.target.value;
-                        setBeginningNonCashBalance(val === '' ? 0 : parseFloat(val));
-                      }}
+                      onChange={(e) => setBeginningNonCashBalance(e.target.value)}
                       placeholder="0.00"
                       className="pl-7"
                     />
