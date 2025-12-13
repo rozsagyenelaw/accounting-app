@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useAccountingStore } from '@/lib/store';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -10,11 +10,37 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import type { BankAccount, RealProperty, NonCashAsset } from '@/types';
 
 export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack: () => void }) {
-  const { assets, updateAssets } = useAccountingStore();
+  const { caseInfo, assets, updateAssets, calculateBeginningBalances } = useAccountingStore();
 
   const [bankAccounts, setBankAccounts] = useState<BankAccount[]>(assets.bankAccounts || []);
   const [realProperty, setRealProperty] = useState<RealProperty[]>(assets.realProperty || []);
   const [otherAssets, setOtherAssets] = useState<NonCashAsset[]>(assets.otherNonCashAssets || []);
+
+  // Balance fields
+  const [beginningCashBalance, setBeginningCashBalance] = useState<number>(assets.beginningCashBalance || 0);
+  const [beginningNonCashBalance, setBeginningNonCashBalance] = useState<number>(assets.beginningNonCashBalance || 0);
+  const [endingCashBalance, setEndingCashBalance] = useState<number>(assets.endingCashBalance || 0);
+  const [endingNonCashBalance, setEndingNonCashBalance] = useState<number>(assets.endingNonCashBalance || 0);
+
+  // Determine if this is the first account
+  const isFirstAccount = useMemo(() => {
+    return caseInfo.accountType === 'FIRST';
+  }, [caseInfo.accountType]);
+
+  // Calculate beginning balances for non-first accounts
+  const calculatedBeginningBalances = useMemo(() => {
+    if (isFirstAccount) {
+      return null;
+    }
+    return calculateBeginningBalances();
+  }, [isFirstAccount, calculateBeginningBalances]);
+
+  // For non-first accounts, default beginning non-cash to ending non-cash
+  useEffect(() => {
+    if (!isFirstAccount && endingNonCashBalance > 0 && beginningNonCashBalance === 0) {
+      setBeginningNonCashBalance(endingNonCashBalance);
+    }
+  }, [isFirstAccount, endingNonCashBalance, beginningNonCashBalance]);
 
   const addBankAccount = () => {
     setBankAccounts([
@@ -83,6 +109,10 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
       bankAccounts,
       realProperty,
       otherNonCashAssets: otherAssets,
+      beginningCashBalance: isFirstAccount ? beginningCashBalance : undefined,
+      beginningNonCashBalance: isFirstAccount ? beginningNonCashBalance : undefined,
+      endingCashBalance,
+      endingNonCashBalance,
     });
     onNext();
   };
@@ -285,6 +315,139 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
           <Button type="button" variant="outline" onClick={addOtherAsset}>
             + Add Other Asset
           </Button>
+        </CardContent>
+      </Card>
+
+      {/* Beginning and Ending Balances */}
+      <Card>
+        <CardHeader>
+          <CardTitle>Account Balances Summary</CardTitle>
+          <p className="text-sm text-gray-600 mt-2">
+            {isFirstAccount
+              ? 'For the FIRST account, enter both beginning and ending balances.'
+              : 'For subsequent accounts, only enter ending balances. Beginning balances will be auto-calculated.'}
+          </p>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          {/* FIRST Account - Show all balance inputs */}
+          {isFirstAccount && (
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 space-y-4">
+              <h3 className="font-semibold text-blue-900">Beginning Balances (Start of Period)</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <Label htmlFor="beginning-cash">Beginning Cash Balance *</Label>
+                  <div className="relative">
+                    <span className="absolute left-3 top-2.5 text-gray-500">$</span>
+                    <Input
+                      id="beginning-cash"
+                      type="number"
+                      step="0.01"
+                      value={beginningCashBalance}
+                      onChange={(e) => setBeginningCashBalance(parseFloat(e.target.value) || 0)}
+                      placeholder="0.00"
+                      className="pl-7"
+                    />
+                  </div>
+                  <p className="text-xs text-gray-500 mt-1">Opening cash balance when conservatorship/trust started</p>
+                </div>
+                <div>
+                  <Label htmlFor="beginning-non-cash">Beginning Non-Cash Assets *</Label>
+                  <div className="relative">
+                    <span className="absolute left-3 top-2.5 text-gray-500">$</span>
+                    <Input
+                      id="beginning-non-cash"
+                      type="number"
+                      step="0.01"
+                      value={beginningNonCashBalance}
+                      onChange={(e) => setBeginningNonCashBalance(parseFloat(e.target.value) || 0)}
+                      placeholder="0.00"
+                      className="pl-7"
+                    />
+                  </div>
+                  <p className="text-xs text-gray-500 mt-1">Real property and other assets at start</p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Ending Balances - All Accounts */}
+          <div className="bg-green-50 border border-green-200 rounded-lg p-4 space-y-4">
+            <h3 className="font-semibold text-green-900">Ending Balances (End of Period)</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <Label htmlFor="ending-cash">Ending Cash Balance *</Label>
+                <div className="relative">
+                  <span className="absolute left-3 top-2.5 text-gray-500">$</span>
+                  <Input
+                    id="ending-cash"
+                    type="number"
+                    step="0.01"
+                    value={endingCashBalance}
+                    onChange={(e) => setEndingCashBalance(parseFloat(e.target.value) || 0)}
+                    placeholder="0.00"
+                    className="pl-7"
+                  />
+                </div>
+                <p className="text-xs text-gray-500 mt-1">Total cash in all bank accounts at period end</p>
+              </div>
+              <div>
+                <Label htmlFor="ending-non-cash">Ending Non-Cash Assets *</Label>
+                <div className="relative">
+                  <span className="absolute left-3 top-2.5 text-gray-500">$</span>
+                  <Input
+                    id="ending-non-cash"
+                    type="number"
+                    step="0.01"
+                    value={endingNonCashBalance}
+                    onChange={(e) => setEndingNonCashBalance(parseFloat(e.target.value) || 0)}
+                    placeholder="0.00"
+                    className="pl-7"
+                  />
+                </div>
+                <p className="text-xs text-gray-500 mt-1">Real property and other assets at period end</p>
+              </div>
+            </div>
+          </div>
+
+          {/* SECOND+ Accounts - Show calculated beginning balances */}
+          {!isFirstAccount && calculatedBeginningBalances && (
+            <div className="bg-gray-50 border border-gray-300 rounded-lg p-4 space-y-4">
+              <h3 className="font-semibold text-gray-900">Calculated Beginning Balances (Auto-Calculated)</h3>
+              <p className="text-xs text-gray-600 mb-3">
+                These values are automatically calculated using the formula:<br/>
+                <code className="bg-white px-2 py-1 rounded">Beginning = Ending + Disbursements - Receipts</code>
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <Label>Beginning Cash Balance (Calculated)</Label>
+                  <div className="relative">
+                    <span className="absolute left-3 top-2.5 text-gray-500">$</span>
+                    <Input
+                      type="text"
+                      value={calculatedBeginningBalances.cash.toFixed(2)}
+                      disabled
+                      className="pl-7 bg-gray-100 text-gray-700 cursor-not-allowed"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <Label>Beginning Non-Cash Assets</Label>
+                  <div className="relative">
+                    <span className="absolute left-3 top-2.5 text-gray-500">$</span>
+                    <Input
+                      type="number"
+                      step="0.01"
+                      value={beginningNonCashBalance}
+                      onChange={(e) => setBeginningNonCashBalance(parseFloat(e.target.value) || 0)}
+                      placeholder="0.00"
+                      className="pl-7"
+                    />
+                  </div>
+                  <p className="text-xs text-gray-500 mt-1">Defaults to ending value (edit if property was sold/bought)</p>
+                </div>
+              </div>
+            </div>
+          )}
         </CardContent>
       </Card>
 

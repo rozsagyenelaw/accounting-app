@@ -44,6 +44,9 @@ interface AccountingStore {
 
   // Computed
   getSession: () => AccountingSession | null;
+
+  // Calculate beginning balances for non-first accounts
+  calculateBeginningBalances: () => { cash: number; nonCash: number };
 }
 
 // ============================================================================
@@ -149,6 +152,37 @@ export const useAccountingStore = create<AccountingStore>()(
           createdAt: new Date(), // Would be stored in real implementation
           updatedAt: new Date(),
           status: state.status,
+        };
+      },
+
+      // Calculate beginning balances for non-first accounts
+      // Formula: Beginning = Ending Cash + Ending Non-Cash + Disbursements - Receipts
+      calculateBeginningBalances: () => {
+        const state = get();
+        const { assets, transactions } = state;
+
+        const endingCash = assets.endingCashBalance || 0;
+        const endingNonCash = assets.endingNonCashBalance || 0;
+
+        // Calculate total receipts and disbursements
+        const receipts = transactions
+          .filter(t => t.type === 'RECEIPT')
+          .reduce((sum, t) => sum + t.amount, 0);
+
+        const disbursements = transactions
+          .filter(t => t.type === 'DISBURSEMENT')
+          .reduce((sum, t) => sum + t.amount, 0);
+
+        // Calculate beginning cash balance
+        // Beginning = Ending + Disbursements - Receipts
+        const beginningCash = endingCash + disbursements - receipts;
+
+        // Beginning non-cash defaults to same as ending (unless property was sold/bought)
+        const beginningNonCash = endingNonCash;
+
+        return {
+          cash: beginningCash,
+          nonCash: beginningNonCash,
         };
       },
     }),

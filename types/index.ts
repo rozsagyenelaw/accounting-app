@@ -152,6 +152,14 @@ export interface Assets {
   bankAccounts: BankAccount[];
   realProperty: RealProperty[];
   otherNonCashAssets: NonCashAsset[];
+
+  // Beginning balances (for FIRST account only, user-entered)
+  beginningCashBalance?: number;
+  beginningNonCashBalance?: number;
+
+  // Ending balances (all accounts)
+  endingCashBalance?: number;
+  endingNonCashBalance?: number;
 }
 
 // ============================================================================
