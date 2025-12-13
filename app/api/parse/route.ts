@@ -319,7 +319,8 @@ async function parsePDF(file: File): Promise<NextResponse> {
       // OCR-aware: Allows "0/" at start for dates where first digit is cut off
       // Example: "09/05/23 CHECKCARD 0902 BUILD.COM 800-375-3403 CA 7443565324508372076 244.19"
       // Example: "0/05/23 CHECKCARD..." (OCR artifact - first digit cut off)
-      /^[*+\\vA!©1-]\s*(\d{1,2}\/\d{1,2}\/\d{2,4}|0\/\d{1,2}\/\d{2,4})\s+(.+?)\s+([-]?\d+[,\d]*\.\d{2})$/gm,
+      // Note: [*+\\vA!©-] excludes digits to avoid stripping "1" from "12/30/24"
+      /^[*+\\vA!©-]\s*(\d{1,2}\/\d{1,2}\/\d{2,4}|0\/\d{1,2}\/\d{2,4})\s+(.+?)\s+([-]?\d+[,\d]*\.\d{2})$/gm,
 
       // Pattern 2: Standard format - Date Description Amount
       // OCR-aware: Allows dates starting with "0/"
@@ -358,8 +359,8 @@ async function parsePDF(file: File): Promise<NextResponse> {
           continue;
         }
 
-        // Clean up OCR artifacts from description (leading symbols)
-        let cleanDescription = description.replace(/^[*+\\vA!©1-]\s*/, '').trim();
+        // Clean up OCR artifacts from description (leading symbols, but not digits)
+        let cleanDescription = description.replace(/^[*+\\vA!©-]\s*/, '').trim();
 
         // Create context string for debugging date parsing
         const rawContext = match[0].substring(0, 80); // First 80 chars of matched line
@@ -393,11 +394,14 @@ async function parsePDF(file: File): Promise<NextResponse> {
           if (amount !== null) {
             amount = Math.abs(amount);
 
-            // Determine type based on description keywords (more reliable than amount sign for OCR)
+            // Determine type based on description keywords
+            // Only SSA, Interest, Refunds, and trust distributions are RECEIPTS
+            // Everything else is DISBURSEMENT
             const descLower = cleanDescription.toLowerCase();
 
-            // Receipt keywords - money coming IN
+            // Receipt keywords - money coming IN (very specific)
             const isReceipt = descLower.includes('ssa treas') ||
+                            descLower.includes('ssa') ||
                             descLower.includes('soc sec') ||
                             descLower.includes('social security') ||
                             descLower.includes('interest earned') ||
