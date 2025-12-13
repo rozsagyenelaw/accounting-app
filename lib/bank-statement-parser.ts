@@ -160,6 +160,12 @@ function identifySections(text: string): Section[] {
     sections.push(currentSection);
   }
 
+  // Debug: Log section info
+  console.log(`[DEBUG] Found ${sections.length} sections:`);
+  for (const section of sections) {
+    console.log(`  - ${section.type}: lines ${section.startIndex}-${section.endIndex}, text length: ${section.text.length} chars`);
+  }
+
   return sections;
 }
 
@@ -171,35 +177,75 @@ function identifySections(text: string): Section[] {
  * Parse deposit section (RECEIPTS)
  */
 function parseDepositSection(text: string): ParsedTransaction[] {
+  console.log('[DEBUG] Deposits section sample (first 800 chars):');
+  console.log(text.substring(0, 800));
+  console.log('[DEBUG] --- End of deposits sample ---');
+
   const transactions: ParsedTransaction[] = [];
   const lines = text.split('\n');
 
-  for (const line of lines) {
+  console.log(`[DEBUG] Deposits section has ${lines.length} lines`);
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+
+    // Skip empty lines
+    if (!line.trim()) continue;
+
     // Skip header lines
-    if (line.toLowerCase().includes('date') ||
-        line.toLowerCase().includes('description') ||
-        line.toLowerCase().includes('amount')) {
+    const lineLower = line.toLowerCase();
+    if (lineLower.includes('date') ||
+        lineLower.includes('description') ||
+        lineLower.includes('amount')) {
       continue;
     }
 
-    // Match: DATE DESCRIPTION AMOUNT
-    // Amount is positive (no minus sign) for deposits
-    const match = line.match(/^(\d{1,2}\/\d{1,2}\/\d{2,4})\s+(.+?)\s+([\d,]+\.\d{2})\s*$/);
+    // Log first 10 non-header lines for debugging
+    if (transactions.length < 3 && line.trim().length > 10) {
+      console.log(`[DEBUG] Deposits line ${i}: "${line}"`);
+    }
+
+    // Try multiple regex patterns to match different OCR formats
+
+    // Pattern 1: Simple DATE DESCRIPTION AMOUNT
+    let match = line.match(/^(\d{1,2}\/\d{1,2}\/\d{2,4})\s+(.+?)\s+([\d,]+\.\d{2})\s*$/);
+
+    // Pattern 2: DATE with flexible whitespace and AMOUNT at end
+    if (!match) {
+      match = line.match(/^(\d{1,2}\/\d{1,2}\/\d{2,4})\s+(.+)\s+([\d,]+\.\d{2})$/);
+    }
+
+    // Pattern 3: Handle amounts with + prefix
+    if (!match) {
+      match = line.match(/^(\d{1,2}\/\d{1,2}\/\d{2,4})\s+(.+?)\s+\+?([\d,]+\.\d{2})\s*$/);
+    }
+
     if (match) {
       const date = parseDate(match[1]);
-      if (!date) continue;
+      if (!date) {
+        console.log(`[DEBUG] Failed to parse date: "${match[1]}" from line: "${line}"`);
+        continue;
+      }
+
+      const amount = parseFloat(match[3].replace(/,/g, ''));
+      if (isNaN(amount) || amount <= 0) continue;
 
       transactions.push({
         date,
         description: match[2].trim(),
-        amount: parseFloat(match[3].replace(/,/g, '')),
+        amount,
         type: 'RECEIPT',
         sectionType: 'deposits',
         rawLine: line
       });
+
+      if (transactions.length <= 3) {
+        console.log(`[DEBUG] Parsed deposit: ${date.toISOString().split('T')[0]} | ${match[2].trim()} | $${amount}`);
+      }
     }
   }
 
+  console.log(`[DEBUG] Deposits section parsed ${transactions.length} transactions`);
   return transactions;
 }
 
@@ -207,34 +253,70 @@ function parseDepositSection(text: string): ParsedTransaction[] {
  * Parse ATM/Debit section (DISBURSEMENTS)
  */
 function parseATMDebitSection(text: string): ParsedTransaction[] {
+  console.log('[DEBUG] ATM/Debit section sample (first 800 chars):');
+  console.log(text.substring(0, 800));
+  console.log('[DEBUG] --- End of ATM/Debit sample ---');
+
   const transactions: ParsedTransaction[] = [];
   const lines = text.split('\n');
 
-  for (const line of lines) {
+  console.log(`[DEBUG] ATM/Debit section has ${lines.length} lines`);
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+
+    // Skip empty lines
+    if (!line.trim()) continue;
+
     // Skip header lines
-    if (line.toLowerCase().includes('date') ||
-        line.toLowerCase().includes('description') ||
-        line.toLowerCase().includes('amount')) {
+    const lineLower = line.toLowerCase();
+    if (lineLower.includes('date') ||
+        lineLower.includes('description') ||
+        lineLower.includes('amount')) {
       continue;
     }
 
-    // Match: DATE DESCRIPTION -AMOUNT or AMOUNT
-    const match = line.match(/^(\d{1,2}\/\d{1,2}\/\d{2,4})\s+(.+?)\s+-?([\d,]+\.\d{2})\s*$/);
+    // Log first 10 non-header lines for debugging
+    if (transactions.length < 3 && line.trim().length > 10) {
+      console.log(`[DEBUG] ATM/Debit line ${i}: "${line}"`);
+    }
+
+    // Try multiple regex patterns
+
+    // Pattern 1: DATE DESCRIPTION -AMOUNT or AMOUNT
+    let match = line.match(/^(\d{1,2}\/\d{1,2}\/\d{2,4})\s+(.+?)\s+-?([\d,]+\.\d{2})\s*$/);
+
+    // Pattern 2: More flexible whitespace
+    if (!match) {
+      match = line.match(/^(\d{1,2}\/\d{1,2}\/\d{2,4})\s+(.+)\s+-?([\d,]+\.\d{2})$/);
+    }
+
     if (match) {
       const date = parseDate(match[1]);
-      if (!date) continue;
+      if (!date) {
+        console.log(`[DEBUG] Failed to parse date: "${match[1]}" from line: "${line}"`);
+        continue;
+      }
+
+      const amount = parseFloat(match[3].replace(/,/g, ''));
+      if (isNaN(amount) || amount <= 0) continue;
 
       transactions.push({
         date,
         description: match[2].trim(),
-        amount: parseFloat(match[3].replace(/,/g, '')),
+        amount,
         type: 'DISBURSEMENT',
         sectionType: 'atm_debit',
         rawLine: line
       });
+
+      if (transactions.length <= 3) {
+        console.log(`[DEBUG] Parsed ATM/Debit: ${date.toISOString().split('T')[0]} | ${match[2].trim()} | $${amount}`);
+      }
     }
   }
 
+  console.log(`[DEBUG] ATM/Debit section parsed ${transactions.length} transactions`);
   return transactions;
 }
 
@@ -242,34 +324,67 @@ function parseATMDebitSection(text: string): ParsedTransaction[] {
  * Parse Other Subtractions section (DISBURSEMENTS)
  */
 function parseOtherSubtractions(text: string): ParsedTransaction[] {
+  console.log('[DEBUG] Other Subtractions section sample (first 800 chars):');
+  console.log(text.substring(0, 800));
+  console.log('[DEBUG] --- End of Other Subtractions sample ---');
+
   const transactions: ParsedTransaction[] = [];
   const lines = text.split('\n');
 
-  for (const line of lines) {
+  console.log(`[DEBUG] Other Subtractions section has ${lines.length} lines`);
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+
+    // Skip empty lines
+    if (!line.trim()) continue;
+
     // Skip header lines
-    if (line.toLowerCase().includes('date') ||
-        line.toLowerCase().includes('description') ||
-        line.toLowerCase().includes('amount')) {
+    const lineLower = line.toLowerCase();
+    if (lineLower.includes('date') ||
+        lineLower.includes('description') ||
+        lineLower.includes('amount')) {
       continue;
     }
 
+    // Log first 10 non-header lines for debugging
+    if (transactions.length < 3 && line.trim().length > 10) {
+      console.log(`[DEBUG] Other Subtractions line ${i}: "${line}"`);
+    }
+
     // Match: DATE DESCRIPTION -AMOUNT
-    const match = line.match(/^(\d{1,2}\/\d{1,2}\/\d{2,4})\s+(.+?)\s+-?([\d,]+\.\d{2})\s*$/);
+    let match = line.match(/^(\d{1,2}\/\d{1,2}\/\d{2,4})\s+(.+?)\s+-?([\d,]+\.\d{2})\s*$/);
+
+    if (!match) {
+      match = line.match(/^(\d{1,2}\/\d{1,2}\/\d{2,4})\s+(.+)\s+-?([\d,]+\.\d{2})$/);
+    }
+
     if (match) {
       const date = parseDate(match[1]);
-      if (!date) continue;
+      if (!date) {
+        console.log(`[DEBUG] Failed to parse date: "${match[1]}" from line: "${line}"`);
+        continue;
+      }
+
+      const amount = parseFloat(match[3].replace(/,/g, ''));
+      if (isNaN(amount) || amount <= 0) continue;
 
       transactions.push({
         date,
         description: match[2].trim(),
-        amount: parseFloat(match[3].replace(/,/g, '')),
+        amount,
         type: 'DISBURSEMENT',
         sectionType: 'other_subtractions',
         rawLine: line
       });
+
+      if (transactions.length <= 3) {
+        console.log(`[DEBUG] Parsed Other Subtraction: ${date.toISOString().split('T')[0]} | ${match[2].trim()} | $${amount}`);
+      }
     }
   }
 
+  console.log(`[DEBUG] Other Subtractions section parsed ${transactions.length} transactions`);
   return transactions;
 }
 
@@ -278,37 +393,71 @@ function parseOtherSubtractions(text: string): ParsedTransaction[] {
  * Format: DATE CHECK# AMOUNT DATE CHECK# AMOUNT (two columns)
  */
 function parseChecksSection(text: string): ParsedTransaction[] {
+  console.log('[DEBUG] Checks section sample (first 800 chars):');
+  console.log(text.substring(0, 800));
+  console.log('[DEBUG] --- End of Checks sample ---');
+
   const transactions: ParsedTransaction[] = [];
   const lines = text.split('\n');
 
-  for (const line of lines) {
+  console.log(`[DEBUG] Checks section has ${lines.length} lines`);
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+
+    // Skip empty lines
+    if (!line.trim()) continue;
+
     // Skip header lines
-    if (line.toLowerCase().includes('date') ||
-        line.toLowerCase().includes('check') ||
-        line.toLowerCase().includes('amount')) {
+    const lineLower = line.toLowerCase();
+    if (lineLower.includes('date') ||
+        lineLower.includes('check') ||
+        lineLower.includes('amount')) {
       continue;
+    }
+
+    // Log first 10 non-header lines for debugging
+    if (transactions.length < 3 && line.trim().length > 10) {
+      console.log(`[DEBUG] Checks line ${i}: "${line}"`);
     }
 
     // Pattern: DATE CHECK# AMOUNT (may appear twice per line)
     const checkPattern = /(\d{1,2}\/\d{1,2}\/\d{2,4})\s+(\d+)\s+\*?\s*-?([\d,]+\.\d{2})/g;
 
     let match;
+    let matchCount = 0;
     while ((match = checkPattern.exec(line)) !== null) {
       const date = parseDate(match[1]);
-      if (!date) continue;
+      if (!date) {
+        console.log(`[DEBUG] Failed to parse check date: "${match[1]}" from line: "${line}"`);
+        continue;
+      }
+
+      const amount = parseFloat(match[3].replace(/,/g, ''));
+      if (isNaN(amount) || amount <= 0) continue;
 
       transactions.push({
         date,
         description: `Check #${match[2]}`,
-        amount: parseFloat(match[3].replace(/,/g, '')),
+        amount,
         type: 'DISBURSEMENT',
         sectionType: 'checks',
         checkNumber: match[2],
         rawLine: line
       });
+
+      matchCount++;
+      if (transactions.length <= 6) {
+        console.log(`[DEBUG] Parsed Check: ${date.toISOString().split('T')[0]} | Check #${match[2]} | $${amount}`);
+      }
+    }
+
+    if (matchCount > 0 && i < 5) {
+      console.log(`[DEBUG] Checks line ${i} matched ${matchCount} checks`);
     }
   }
 
+  console.log(`[DEBUG] Checks section parsed ${transactions.length} transactions`);
   return transactions;
 }
 
