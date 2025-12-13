@@ -87,15 +87,25 @@ function parseBankOfAmericaTransactions(text: string): ParsedTransaction[] {
   const transactions: ParsedTransaction[] = [];
   const lines = text.split('\n');
 
-  // DEBUG: Print first 50 lines and regex matches
-  console.log('[DEBUG] First 50 lines of OCR text:');
-  const debugLines = lines.slice(0, 50);
-  for (let i = 0; i < debugLines.length; i++) {
-    const line = debugLines[i];
-    const match = line.match(TRANSACTION_PATTERN);
-    console.log(`Line ${i}: ${match ? 'MATCH' : 'NO MATCH'} | "${line.substring(0, 100)}"`);
+  // DEBUG: Search for lines with dates
+  console.log('[DEBUG] Searching for lines with dates (MM/DD/YY pattern):');
+  let found = 0;
+  for (let i = 0; i < lines.length && found < 30; i++) {
+    const line = lines[i];
+    if (/\d{1,2}\/\d{1,2}\/\d{2}/.test(line)) {
+      console.log(`Line ${i}: "${line.substring(0, 120)}"`);
+      found++;
+    }
   }
-  console.log('[DEBUG] End of first 50 lines\n');
+  console.log(`[DEBUG] Found ${found} lines with dates out of ${lines.length} total lines\n`);
+
+  // DEBUG: Search for known merchants
+  const merchants = lines.filter(l => /GELSON|SPROUTS|SSA TREAS|TRADER JOE/i.test(l)).slice(0, 10);
+  console.log('[DEBUG] Lines with known merchants:');
+  merchants.forEach((line, idx) => {
+    console.log(`  ${idx}: "${line.substring(0, 120)}"`);
+  });
+  console.log('');
 
   let currentSection: string | null = null;
 
