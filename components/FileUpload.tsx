@@ -116,8 +116,8 @@ export function FileUpload({ onNext, onBack }: { onNext: () => void; onBack: () 
       return true;
     });
 
-    // Sort by date
-    uniqueTransactions.sort((a, b) => a.date.getTime() - b.date.getTime());
+    // Sort by date (handle both Date objects and string dates)
+    uniqueTransactions.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 
     setTransactions(uniqueTransactions);
     setParseResults({

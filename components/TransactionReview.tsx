@@ -51,8 +51,9 @@ export function TransactionReview({ onNext, onBack }: { onNext: () => void; onBa
       let aVal, bVal;
 
       if (sortField === 'date') {
-        aVal = a.date.getTime();
-        bVal = b.date.getTime();
+        // Handle both Date objects and string dates
+        aVal = new Date(a.date).getTime();
+        bVal = new Date(b.date).getTime();
       } else if (sortField === 'amount') {
         aVal = a.amount;
         bVal = b.amount;

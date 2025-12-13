@@ -326,5 +326,6 @@ export function deduplicateTransactions(transactions: ParsedTransaction[]): Pars
 // ============================================================================
 
 export function sortTransactions(transactions: ParsedTransaction[]): ParsedTransaction[] {
-  return [...transactions].sort((a, b) => a.date.getTime() - b.date.getTime());
+  // Handle both Date objects and string dates
+  return [...transactions].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 }
