@@ -23,17 +23,23 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
   const [endingNonCashBalance, setEndingNonCashBalance] = useState<number>(assets.endingNonCashBalance || 0);
 
   // Determine if this is the first account
+  // Default to true if accountType is not set yet
   const isFirstAccount = useMemo(() => {
-    return caseInfo.accountType === 'FIRST';
+    return !caseInfo.accountType || caseInfo.accountType === 'FIRST';
   }, [caseInfo.accountType]);
 
   // Calculate beginning balances for non-first accounts
   const calculatedBeginningBalances = useMemo(() => {
-    if (isFirstAccount) {
+    if (isFirstAccount || !caseInfo.accountType) {
       return null;
     }
-    return calculateBeginningBalances();
-  }, [isFirstAccount, calculateBeginningBalances]);
+    try {
+      return calculateBeginningBalances();
+    } catch (error) {
+      console.error('Error calculating beginning balances:', error);
+      return { cash: 0, nonCash: 0 };
+    }
+  }, [isFirstAccount, caseInfo.accountType, calculateBeginningBalances]);
 
   // For non-first accounts, default beginning non-cash to ending non-cash
   useEffect(() => {
