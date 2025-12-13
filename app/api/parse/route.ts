@@ -3,7 +3,8 @@ import Papa from 'papaparse';
 import { parse, isValid } from 'date-fns';
 import pdf from 'pdf-parse/lib/pdf-parse.js';
 import { extractTextFromScannedPDF, isScannedPDF } from '@/lib/ocr';
-import { parseBankOfAmericaStatement, validateResults } from '@/lib/bank-statement-parser';
+import { parseBankOfAmericaStatement, validateResults as validateResultsV1 } from '@/lib/bank-statement-parser';
+import { parseBankStatementOCR, validateResults } from '@/lib/bank-statement-parser-v2';
 import { categorizeTransaction } from '@/lib/gc400-categories';
 
 // Date parsing formats
@@ -320,11 +321,11 @@ async function parsePDF(file: File): Promise<NextResponse> {
       }
     }
 
-    // Use new Bank of America statement parser
-    console.log('[PDF Parser] Using new BofA statement parser...');
+    // Use V2 OCR-friendly line-by-line parser
+    console.log('[PDF Parser] Using V2 OCR-friendly line-by-line parser...');
     console.log(`[PDF Parser] Text length: ${text.length} characters`);
 
-    const parsedTransactions = parseBankOfAmericaStatement(text);
+    const parsedTransactions = parseBankStatementOCR(text);
     console.log(`[PDF Parser] Parsed ${parsedTransactions.length} transactions`);
 
     // Validate results
@@ -342,7 +343,7 @@ async function parsePDF(file: File): Promise<NextResponse> {
         type: txn.type,
         category: category.code,
         subCategory: category.subCategory,
-        confidence: category.confidence,
+        confidence: Math.min(category.confidence, txn.confidence), // Use lower confidence
       });
     }
 
