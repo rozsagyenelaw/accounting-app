@@ -10,7 +10,7 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import type { BankAccount, RealProperty, NonCashAsset } from '@/types';
 
 export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack: () => void }) {
-  const { caseInfo, assets, updateAssets, calculateBeginningBalances } = useAccountingStore();
+  const { caseInfo, assets, updateAssets, transactions } = useAccountingStore();
 
   const [bankAccounts, setBankAccounts] = useState<BankAccount[]>(assets.bankAccounts || []);
   const [realProperty, setRealProperty] = useState<RealProperty[]>(assets.realProperty || []);
@@ -29,17 +29,41 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
   }, [caseInfo.accountType]);
 
   // Calculate beginning balances for non-first accounts
+  // Uses local state values, not stored values, so it updates in real-time
   const calculatedBeginningBalances = useMemo(() => {
     if (isFirstAccount || !caseInfo.accountType) {
       return null;
     }
     try {
-      return calculateBeginningBalances();
+      // Parse the current input values
+      const endingCash = parseFloat(endingCashBalance) || 0;
+      const endingNonCash = parseFloat(endingNonCashBalance) || 0;
+
+      // Calculate total receipts and disbursements from store
+      const receipts = transactions
+        .filter(t => t.type === 'RECEIPT')
+        .reduce((sum, t) => sum + t.amount, 0);
+
+      const disbursements = transactions
+        .filter(t => t.type === 'DISBURSEMENT')
+        .reduce((sum, t) => sum + t.amount, 0);
+
+      // Calculate beginning cash balance
+      // Beginning = Ending + Disbursements - Receipts
+      const beginningCash = endingCash + disbursements - receipts;
+
+      // Beginning non-cash defaults to same as ending
+      const beginningNonCash = endingNonCash;
+
+      return {
+        cash: beginningCash,
+        nonCash: beginningNonCash,
+      };
     } catch (error) {
       console.error('Error calculating beginning balances:', error);
       return { cash: 0, nonCash: 0 };
     }
-  }, [isFirstAccount, caseInfo.accountType, calculateBeginningBalances]);
+  }, [isFirstAccount, caseInfo.accountType, endingCashBalance, endingNonCashBalance, transactions]);
 
   // For non-first accounts, default beginning non-cash to ending non-cash
   useEffect(() => {
@@ -421,7 +445,7 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
               <h3 className="font-semibold text-gray-900">Calculated Beginning Balances (Auto-Calculated)</h3>
               <p className="text-xs text-gray-600 mb-3">
                 These values are automatically calculated using the formula:<br/>
-                <code className="bg-white px-2 py-1 rounded">Beginning = Ending + Disbursements - Receipts</code>
+                <code className="bg-white px-2 py-1 rounded">Beginning Cash = ${parseFloat(endingCashBalance) || 0} (Ending) + ${transactions.filter(t => t.type === 'DISBURSEMENT').reduce((sum, t) => sum + t.amount, 0).toFixed(2)} (Disbursements) - ${transactions.filter(t => t.type === 'RECEIPT').reduce((sum, t) => sum + t.amount, 0).toFixed(2)} (Receipts)</code>
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
