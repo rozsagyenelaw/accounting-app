@@ -11,7 +11,7 @@ import { SummaryDashboard } from '@/components/SummaryDashboard';
 import { Button } from '@/components/ui/button';
 
 export default function Home() {
-  const { currentStep, setCurrentStep, initializeSession } = useAccountingStore();
+  const { currentStep, setCurrentStep, initializeSession, resetSession } = useAccountingStore();
 
   useEffect(() => {
     initializeSession();
@@ -26,8 +26,37 @@ export default function Home() {
   };
 
   const resetWorkflow = () => {
-    if (confirm('Are you sure you want to start over? All data will be lost.')) {
-      window.location.reload();
+    const confirmMessage =
+      'Are you sure you want to start over?\n\n' +
+      'This will permanently delete:\n' +
+      '• All case information\n' +
+      '• All assets and balances\n' +
+      '• All uploaded transactions\n' +
+      '• All categorizations and reviews\n\n' +
+      'This action cannot be undone.';
+
+    if (confirm(confirmMessage)) {
+      try {
+        // Clear the Zustand persisted store
+        resetSession();
+
+        // Also clear localStorage to ensure complete reset
+        if (typeof window !== 'undefined') {
+          localStorage.removeItem('accounting-session-storage');
+        }
+
+        // Reinitialize the session
+        initializeSession();
+
+        // Force navigation to step 0
+        setCurrentStep(0);
+
+        // Show success message
+        alert('All data has been cleared. Starting fresh!');
+      } catch (error) {
+        console.error('Error resetting session:', error);
+        alert('There was an error clearing the data. Please refresh the page manually.');
+      }
     }
   };
 
@@ -44,9 +73,14 @@ export default function Home() {
                 Automated GC-400 Form Generation
               </p>
             </div>
-            <Button variant="outline" onClick={resetWorkflow}>
-              Start Over
-            </Button>
+            <div className="flex flex-col items-end gap-1">
+              <Button variant="destructive" onClick={resetWorkflow}>
+                Start Over
+              </Button>
+              <p className="text-xs text-gray-500">
+                Clears all data and restarts
+              </p>
+            </div>
           </div>
         </div>
       </header>
