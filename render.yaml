@@ -1,7 +1,7 @@
 services:
   - type: web
     name: accounting-app
-    runtime: docker
+    env: docker
     plan: starter
     dockerfilePath: ./Dockerfile
     dockerContext: .
