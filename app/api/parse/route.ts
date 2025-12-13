@@ -17,12 +17,54 @@ const DATE_FORMATS = [
   'M-d-yy',
 ];
 
-function parseDate(dateStr: string): Date | null {
-  const trimmed = dateStr.trim();
+function parseDate(dateStr: string, context?: string): Date | null {
+  let trimmed = dateStr.trim();
 
+  // OCR Fix: Handle dates where first digit is cut off by OCR
+  // Examples: "0/04/23" -> "10/04/23", "0/11/23" -> "10/11/23" or "01/11/23"
+  if (/^0\/\d{1,2}\/\d{2,4}$/.test(trimmed)) {
+    // Try prepending "1" to make it "10/..."
+    const candidate1 = '1' + trimmed;
+    const parsed1 = tryParseDateFormats(candidate1);
+    if (parsed1) {
+      console.log(`[OCR Date Fix] "${trimmed}" -> "${candidate1}" (prepended "1")`);
+      return parsed1;
+    }
+
+    // Also try "01/..." for dates like January
+    const candidate2 = '01/' + trimmed.substring(2);
+    const parsed2 = tryParseDateFormats(candidate2);
+    if (parsed2) {
+      console.log(`[OCR Date Fix] "${trimmed}" -> "${candidate2}" (changed to "01/")`);
+      return parsed2;
+    }
+  }
+
+  // OCR Fix: Handle dates starting with "0-"
+  if (/^0-\d{1,2}-\d{2,4}$/.test(trimmed)) {
+    const candidate = '1' + trimmed;
+    const parsed = tryParseDateFormats(candidate);
+    if (parsed) {
+      console.log(`[OCR Date Fix] "${trimmed}" -> "${candidate}" (prepended "1")`);
+      return parsed;
+    }
+  }
+
+  // Try normal parsing
+  const parsed = tryParseDateFormats(trimmed);
+  if (parsed) {
+    return parsed;
+  }
+
+  // Log failure with context for debugging
+  console.log(`[Date Parse Failed] Could not parse date: "${trimmed}"${context ? ` | Context: ${context}` : ''}`);
+  return null;
+}
+
+function tryParseDateFormats(dateStr: string): Date | null {
   for (const format of DATE_FORMATS) {
     try {
-      const parsed = parse(trimmed, format, new Date());
+      const parsed = parse(dateStr, format, new Date());
       if (isValid(parsed)) {
         return parsed;
       }
@@ -30,7 +72,6 @@ function parseDate(dateStr: string): Date | null {
       continue;
     }
   }
-
   return null;
 }
 
@@ -270,15 +311,18 @@ async function parsePDF(file: File): Promise<NextResponse> {
     // Enhanced patterns to match both text-based and OCR-extracted PDFs
     const transactionPatterns = [
       // Pattern 1: BofA OCR format - Date followed by description and amount at end of line
+      // OCR-aware: Allows "0/" at start for dates where first digit is cut off
       // Example: "09/05/23 CHECKCARD 0902 BUILD.COM 800-375-3403 CA 7443565324508372076 244.19"
-      // Example: "08/24/23 THE HOME DEPOT 08/24 #000207507 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA -26.77"
-      /^[*+\\vA!©1-]\s*(\d{1,2}\/\d{1,2}\/\d{2,4})\s+(.+?)\s+([-]?\d+[,\d]*\.\d{2})$/gm,
+      // Example: "0/05/23 CHECKCARD..." (OCR artifact - first digit cut off)
+      /^[*+\\vA!©1-]\s*(\d{1,2}\/\d{1,2}\/\d{2,4}|0\/\d{1,2}\/\d{2,4})\s+(.+?)\s+([-]?\d+[,\d]*\.\d{2})$/gm,
 
       // Pattern 2: Standard format - Date Description Amount
-      /(\d{1,2}\/\d{1,2}\/\d{2,4})\s+(.+?)\s+([-+$]?\d+[,\d]*\.\d{2})/g,
+      // OCR-aware: Allows dates starting with "0/"
+      /(\d{1,2}\/\d{1,2}\/\d{2,4}|0\/\d{1,2}\/\d{2,4})\s+(.+?)\s+([-+$]?\d+[,\d]*\.\d{2})/g,
 
       // Pattern 3: Date Description Debit Credit (two columns)
-      /(\d{1,2}\/\d{1,2}\/\d{2,4})\s+(.+?)\s+(\d+[,\d]*\.\d{2})\s+(\d+[,\d]*\.\d{2})/g,
+      // OCR-aware: Allows dates starting with "0/"
+      /(\d{1,2}\/\d{1,2}\/\d{2,4}|0\/\d{1,2}\/\d{2,4})\s+(.+?)\s+(\d+[,\d]*\.\d{2})\s+(\d+[,\d]*\.\d{2})/g,
     ];
 
     let matchFound = false;
@@ -312,9 +356,13 @@ async function parsePDF(file: File): Promise<NextResponse> {
         // Clean up OCR artifacts from description (leading symbols)
         let cleanDescription = description.replace(/^[*+\\vA!©1-]\s*/, '').trim();
 
-        const date = parseDate(dateStr);
+        // Create context string for debugging date parsing
+        const rawContext = match[0].substring(0, 80); // First 80 chars of matched line
+
+        const date = parseDate(dateStr, rawContext);
         if (!date) {
-          warnings.push(`Could not parse date: ${dateStr}`);
+          warnings.push(`Could not parse date: ${dateStr} (raw text: ${rawContext})`);
+          console.log(`[Transaction Parse] Failed to parse date "${dateStr}" from line: ${rawContext}`);
           continue;
         }
 
