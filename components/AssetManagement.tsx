@@ -28,18 +28,14 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
     return !caseInfo.accountType || caseInfo.accountType === 'FIRST';
   }, [caseInfo.accountType]);
 
-  // Calculate beginning balances for non-first accounts
-  // Uses local state values, not stored values, so it updates in real-time
+  // Calculate ENDING balances based on BEGINNING + Receipts - Disbursements
   const calculatedBeginningBalances = useMemo(() => {
-    if (isFirstAccount || !caseInfo.accountType) {
-      return null;
-    }
     try {
-      // Parse the current input values
-      const endingCash = parseFloat(endingCashBalance) || 0;
-      const endingNonCash = parseFloat(endingNonCashBalance) || 0;
+      // Parse the current input values (BEGINNING balances entered by user)
+      const beginningCash = parseFloat(beginningCashBalance) || 0;
+      const beginningNonCash = parseFloat(beginningNonCashBalance) || 0;
 
-      // Calculate total receipts and disbursements from store
+      // Calculate total receipts and disbursements from transactions
       const receipts = transactions
         .filter(t => t.type === 'RECEIPT')
         .reduce((sum, t) => sum + t.amount, 0);
@@ -48,29 +44,29 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
         .filter(t => t.type === 'DISBURSEMENT')
         .reduce((sum, t) => sum + t.amount, 0);
 
-      // Calculate beginning cash balance
-      // Beginning = Ending + Disbursements - Receipts
-      const beginningCash = endingCash + disbursements - receipts;
+      // Calculate ENDING cash balance
+      // Ending = Beginning + Receipts - Disbursements
+      const endingCash = beginningCash + receipts - disbursements;
 
-      // Beginning non-cash defaults to same as ending
-      const beginningNonCash = endingNonCash;
+      // Ending non-cash defaults to same as beginning
+      const endingNonCash = beginningNonCash;
 
       return {
-        cash: beginningCash,
-        nonCash: beginningNonCash,
+        cash: endingCash,
+        nonCash: endingNonCash,
       };
     } catch (error) {
-      console.error('Error calculating beginning balances:', error);
+      console.error('Error calculating ending balances:', error);
       return { cash: 0, nonCash: 0 };
     }
-  }, [isFirstAccount, caseInfo.accountType, endingCashBalance, endingNonCashBalance, transactions]);
+  }, [beginningCashBalance, beginningNonCashBalance, transactions]);
 
-  // For non-first accounts, default beginning non-cash to ending non-cash
+  // Default ending non-cash to beginning non-cash (unless property sold/bought)
   useEffect(() => {
-    if (!isFirstAccount && endingNonCashBalance && !beginningNonCashBalance) {
-      setBeginningNonCashBalance(endingNonCashBalance);
+    if (beginningNonCashBalance && !endingNonCashBalance) {
+      setEndingNonCashBalance(beginningNonCashBalance);
     }
-  }, [isFirstAccount, endingNonCashBalance, beginningNonCashBalance]);
+  }, [beginningNonCashBalance, endingNonCashBalance]);
 
   const addBankAccount = () => {
     setBankAccounts([
@@ -135,14 +131,18 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
   };
 
   const handleNext = () => {
+    const calculatedEnding = calculatedBeginningBalances || { cash: 0, nonCash: 0 };
+
     updateAssets({
       bankAccounts,
       realProperty,
       otherNonCashAssets: otherAssets,
-      beginningCashBalance: isFirstAccount ? parseFloat(beginningCashBalance) || 0 : undefined,
-      beginningNonCashBalance: isFirstAccount ? parseFloat(beginningNonCashBalance) || 0 : undefined,
-      endingCashBalance: parseFloat(endingCashBalance) || 0,
-      endingNonCashBalance: parseFloat(endingNonCashBalance) || 0,
+      // Save user-entered BEGINNING balances
+      beginningCashBalance: parseFloat(beginningCashBalance) || 0,
+      beginningNonCashBalance: parseFloat(beginningNonCashBalance) || 0,
+      // Save calculated ENDING balances
+      endingCashBalance: calculatedEnding.cash,
+      endingNonCashBalance: parseFloat(endingNonCashBalance) || calculatedEnding.nonCash,
     });
     onNext();
   };
@@ -353,127 +353,89 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
         <CardHeader>
           <CardTitle>Account Balances Summary</CardTitle>
           <p className="text-sm text-gray-600 mt-2">
-            {isFirstAccount
-              ? 'For the FIRST account, enter both beginning and ending balances.'
-              : 'For subsequent accounts, only enter ending balances. Beginning balances will be auto-calculated.'}
+            Enter the beginning balances (from previous period's ending balances).
+            Ending balances will be calculated automatically based on transactions.
           </p>
         </CardHeader>
         <CardContent className="space-y-6">
-          {/* FIRST Account - Show all balance inputs */}
-          {isFirstAccount && (
-            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 space-y-4">
-              <h3 className="font-semibold text-blue-900">Beginning Balances (Start of Period)</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <Label htmlFor="beginning-cash">Beginning Cash Balance *</Label>
-                  <div className="relative">
-                    <span className="absolute left-3 top-2.5 text-gray-500">$</span>
-                    <Input
-                      id="beginning-cash"
-                      type="number"
-                      step="0.01"
-                      value={beginningCashBalance}
-                      onChange={(e) => setBeginningCashBalance(e.target.value)}
-                      placeholder="0.00"
-                      className="pl-7"
-                    />
-                  </div>
-                  <p className="text-xs text-gray-500 mt-1">Opening cash balance when conservatorship/trust started</p>
-                </div>
-                <div>
-                  <Label htmlFor="beginning-non-cash">Beginning Non-Cash Assets *</Label>
-                  <div className="relative">
-                    <span className="absolute left-3 top-2.5 text-gray-500">$</span>
-                    <Input
-                      id="beginning-non-cash"
-                      type="number"
-                      step="0.01"
-                      value={beginningNonCashBalance}
-                      onChange={(e) => setBeginningNonCashBalance(e.target.value)}
-                      placeholder="0.00"
-                      className="pl-7"
-                    />
-                  </div>
-                  <p className="text-xs text-gray-500 mt-1">Real property and other assets at start</p>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* Ending Balances - All Accounts */}
-          <div className="bg-green-50 border border-green-200 rounded-lg p-4 space-y-4">
-            <h3 className="font-semibold text-green-900">Ending Balances (End of Period)</h3>
+          {/* Beginning Balances - User Input */}
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 space-y-4">
+            <h3 className="font-semibold text-blue-900">Beginning Balances (Start of Period) - Enter These</h3>
+            <p className="text-xs text-gray-600 mb-3">
+              For FIRST account: Enter starting balances when conservatorship/trust began<br/>
+              For SECOND+ accounts: Copy ending balances from previous accounting period
+            </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <Label htmlFor="ending-cash">Ending Cash Balance *</Label>
+                <Label htmlFor="beginning-cash">Beginning Cash Assets *</Label>
                 <div className="relative">
                   <span className="absolute left-3 top-2.5 text-gray-500">$</span>
                   <Input
-                    id="ending-cash"
+                    id="beginning-cash"
                     type="number"
                     step="0.01"
-                    value={endingCashBalance}
-                    onChange={(e) => setEndingCashBalance(e.target.value)}
+                    value={beginningCashBalance}
+                    onChange={(e) => setBeginningCashBalance(e.target.value)}
                     placeholder="0.00"
                     className="pl-7"
                   />
                 </div>
-                <p className="text-xs text-gray-500 mt-1">Total cash in all bank accounts at period end</p>
+                <p className="text-xs text-gray-500 mt-1">Goes on Line 1a of GC-400(SUM)</p>
               </div>
               <div>
-                <Label htmlFor="ending-non-cash">Ending Non-Cash Assets *</Label>
+                <Label htmlFor="beginning-non-cash">Beginning Non-Cash Assets *</Label>
                 <div className="relative">
                   <span className="absolute left-3 top-2.5 text-gray-500">$</span>
                   <Input
-                    id="ending-non-cash"
+                    id="beginning-non-cash"
                     type="number"
                     step="0.01"
-                    value={endingNonCashBalance}
-                    onChange={(e) => setEndingNonCashBalance(e.target.value)}
+                    value={beginningNonCashBalance}
+                    onChange={(e) => setBeginningNonCashBalance(e.target.value)}
                     placeholder="0.00"
                     className="pl-7"
                   />
                 </div>
-                <p className="text-xs text-gray-500 mt-1">Real property and other assets at period end</p>
+                <p className="text-xs text-gray-500 mt-1">Goes on Line 1b of GC-400(SUM)</p>
               </div>
             </div>
           </div>
 
-          {/* SECOND+ Accounts - Show calculated beginning balances */}
-          {!isFirstAccount && calculatedBeginningBalances && (
-            <div className="bg-gray-50 border border-gray-300 rounded-lg p-4 space-y-4">
-              <h3 className="font-semibold text-gray-900">Calculated Beginning Balances (Auto-Calculated)</h3>
+          {/* Ending Balances - Calculated */}
+          {calculatedBeginningBalances && (
+            <div className="bg-green-50 border border-green-200 rounded-lg p-4 space-y-4">
+              <h3 className="font-semibold text-green-900">Ending Balances (End of Period) - Auto-Calculated</h3>
               <p className="text-xs text-gray-600 mb-3">
-                These values are automatically calculated using the formula:<br/>
-                <code className="bg-white px-2 py-1 rounded">Beginning Cash = ${parseFloat(endingCashBalance) || 0} (Ending) + ${transactions.filter(t => t.type === 'DISBURSEMENT').reduce((sum, t) => sum + t.amount, 0).toFixed(2)} (Disbursements) - ${transactions.filter(t => t.type === 'RECEIPT').reduce((sum, t) => sum + t.amount, 0).toFixed(2)} (Receipts)</code>
+                Calculated as: Beginning + Receipts - Disbursements
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <Label>Beginning Cash Balance (Calculated)</Label>
+                  <Label>Ending Cash Assets (Calculated)</Label>
                   <div className="relative">
                     <span className="absolute left-3 top-2.5 text-gray-500">$</span>
                     <Input
                       type="text"
                       value={calculatedBeginningBalances.cash.toFixed(2)}
                       disabled
-                      className="pl-7 bg-gray-100 text-gray-700 cursor-not-allowed"
+                      className="pl-7 bg-gray-100 text-gray-700 cursor-not-allowed font-semibold"
                     />
                   </div>
+                  <p className="text-xs text-gray-500 mt-1">Goes on Line 13a of GC-400(SUM)</p>
                 </div>
                 <div>
-                  <Label>Beginning Non-Cash Assets</Label>
+                  <Label>Ending Non-Cash Assets</Label>
                   <div className="relative">
                     <span className="absolute left-3 top-2.5 text-gray-500">$</span>
                     <Input
                       type="number"
                       step="0.01"
-                      value={beginningNonCashBalance}
-                      onChange={(e) => setBeginningNonCashBalance(e.target.value)}
+                      value={endingNonCashBalance}
+                      onChange={(e) => setEndingNonCashBalance(e.target.value)}
                       placeholder="0.00"
                       className="pl-7"
                     />
                   </div>
-                  <p className="text-xs text-gray-500 mt-1">Defaults to ending value (edit if property was sold/bought)</p>
+                  <p className="text-xs text-gray-500 mt-1">Usually same as beginning (edit if property was sold/bought). Goes on Line 13b.</p>
                 </div>
               </div>
             </div>
