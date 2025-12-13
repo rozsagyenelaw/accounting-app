@@ -33,21 +33,23 @@ interface KeywordRule {
 const RECEIPT_RULES: KeywordRule[] = [
   // A2 - Interest
   {
-    keywords: ['interest', 'int paid', 'int credit', 'dividend', 'div'],
+    keywords: ['interest earned', 'interest', 'int paid', 'int credit', 'dividend', 'div'],
     category: 'A2_INTEREST' as ReceiptCategory,
-    weight: 1.5,
+    weight: 2.0,
   },
 
   // A3 - Pensions, Annuities, Trust Distributions
   {
-    keywords: ['trust distribution', 'trust payment', 'trust', 'pension', 'annuity', 'retirement'],
+    keywords: ['fletcher jones', 'trust distribution', 'trust payment', 'trust', 'pension', 'annuity', 'retirement'],
     category: 'A3_PENSIONS_ANNUITIES' as ReceiptCategory,
-    weight: 1.5,
+    weight: 2.0,
   },
 
   // A5 - Social Security, VA Benefits
   {
     keywords: [
+      'ssa treas',
+      'soc sec',
       'social security',
       'ssa',
       'ssi',
@@ -60,14 +62,14 @@ const RECEIPT_RULES: KeywordRule[] = [
       'medicaid',
     ],
     category: 'A5_SOCIAL_SECURITY_VA' as ReceiptCategory,
-    weight: 2.0,
+    weight: 2.5,
   },
 
   // A6 - Other Receipts
   {
     keywords: ['refund', 'reimb', 'reimbursement', 'return', 'credit'],
     category: 'A6_OTHER_RECEIPTS' as ReceiptCategory,
-    weight: 1.0,
+    weight: 1.5,
   },
 ];
 
@@ -88,16 +90,16 @@ const DISBURSEMENT_RULES: KeywordRule[] = [
     weight: 1.5,
   },
   {
-    keywords: ['socal gas', 'gas company', 'pg&e gas', 'natural gas'],
+    keywords: ['socalgas', 'socal gas', 'gas company', 'pg&e gas', 'natural gas'],
     category: 'C2_RESIDENTIAL_FACILITY' as DisbursementCategory,
     subCategory: 'GAS_UTILITY' as C2SubCategory,
-    weight: 2.0,
+    weight: 2.5,
   },
   {
-    keywords: ['window', 'blind', 'tile', 'deck', 'repair', 'maintenance', 'plaster', 'paint'],
+    keywords: ['home depot', 'lowes', "lowe's", 'window', 'blind', 'tile', 'deck', 'repair', 'maintenance', 'plaster', 'paint'],
     category: 'C2_RESIDENTIAL_FACILITY' as DisbursementCategory,
     subCategory: 'HOME_MAINTENANCE' as C2SubCategory,
-    weight: 1.3,
+    weight: 1.8,
   },
   {
     keywords: ['ring', 'adt', 'security', 'alarm', 'simplisafe'],
@@ -121,13 +123,13 @@ const DISBURSEMENT_RULES: KeywordRule[] = [
     keywords: ['charter', 'spectrum', 'at&t', 'verizon', 'comcast', 'xfinity', 'internet', 'cable', 'phone'],
     category: 'C2_RESIDENTIAL_FACILITY' as DisbursementCategory,
     subCategory: 'TELECOM_SERVICE' as C2SubCategory,
-    weight: 1.8,
+    weight: 2.0,
   },
   {
-    keywords: ['water', 'dwp', 'power', 'electric', 'ladwp', 'sce', 'utility'],
+    keywords: ['ladwp', 'dwp', 'water', 'power', 'electric', 'sce', 'utility'],
     category: 'C2_RESIDENTIAL_FACILITY' as DisbursementCategory,
     subCategory: 'WATER_ELECTRICITY_UTILITIES' as C2SubCategory,
-    weight: 1.6,
+    weight: 2.5,
   },
 
   // C4 - Fiduciary and Attorney Fees
@@ -156,11 +158,11 @@ const DISBURSEMENT_RULES: KeywordRule[] = [
   // C6 - Medical
   {
     keywords: [
-      'medical',
-      'hospital',
-      'pharmacy',
       'cvs',
       'walgreens',
+      'pharmacy',
+      'medical',
+      'hospital',
       'rite aid',
       'dr ',
       'doctor',
@@ -171,7 +173,7 @@ const DISBURSEMENT_RULES: KeywordRule[] = [
       'health',
     ],
     category: 'C6_MEDICAL' as DisbursementCategory,
-    weight: 1.7,
+    weight: 2.0,
   },
 
   // C7 - Living Expenses (with subcategories)
@@ -218,10 +220,10 @@ const DISBURSEMENT_RULES: KeywordRule[] = [
     weight: 1.6,
   },
   {
-    keywords: ['grocery', 'ralphs', 'vons', 'trader joe', 'whole foods', 'safeway', 'kroger', 'food'],
+    keywords: ['sprouts', 'trader joe', 'ralphs', 'gelson', 'vons', 'grocery', 'whole foods', 'safeway', 'kroger', 'food'],
     category: 'C7_LIVING_EXPENSES' as DisbursementCategory,
     subCategory: 'DINING_FOOD' as C7SubCategory,
-    weight: 1.5,
+    weight: 2.0,
   },
   {
     keywords: ['gym', 'fitness', '24 hour', 'planet fitness', 'la fitness', 'equinox'],
@@ -272,10 +274,10 @@ const DISBURSEMENT_RULES: KeywordRule[] = [
     weight: 1.7,
   },
   {
-    keywords: ['restaurant', 'cafe', 'bistro', 'grill', 'diner', 'eatery'],
+    keywords: ['shake shack', 'sharky', 'burger', 'restaurant', 'cafe', 'bistro', 'grill', 'diner', 'eatery'],
     category: 'C7_LIVING_EXPENSES' as DisbursementCategory,
     subCategory: 'RESTAURANTS_DINING' as C7SubCategory,
-    weight: 1.4,
+    weight: 1.8,
   },
   {
     keywords: ['doordash', 'uber eats', 'grubhub', 'postmates', 'delivery'],
@@ -304,9 +306,9 @@ const DISBURSEMENT_RULES: KeywordRule[] = [
 
   // C8 - Taxes
   {
-    keywords: ['tax', 'irs', 'ftb', 'franchise tax', 'property tax', 'income tax', 'tax payment'],
+    keywords: ['irs', 'franchise tax', 'u.s. treasury', 'property tax', 'tax', 'ftb', 'income tax', 'tax payment'],
     category: 'C8_TAXES' as DisbursementCategory,
-    weight: 2.0,
+    weight: 2.5,
   },
 
   // C9 - Other Disbursements

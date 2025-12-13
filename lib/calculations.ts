@@ -4,14 +4,9 @@ export function calculateSummary(
   transactions: Transaction[],
   assets: Assets
 ): AccountingSummary {
-  const beginningCashAssets = assets.bankAccounts.reduce(
-    (sum, acc) => sum + acc.openingBalance,
-    0
-  );
-
-  const beginningNonCashAssets =
-    assets.realProperty.reduce((sum, prop) => sum + prop.appraisedValue, 0) +
-    assets.otherNonCashAssets.reduce((sum, asset) => sum + asset.value, 0);
+  // Use the user-entered beginning balances from assets
+  const beginningCashAssets = assets.beginningCashBalance || 0;
+  const beginningNonCashAssets = assets.beginningNonCashBalance || 0;
 
   const totalReceipts = transactions
     .filter((t) => t.type === 'RECEIPT')
@@ -21,12 +16,9 @@ export function calculateSummary(
     .filter((t) => t.type === 'DISBURSEMENT')
     .reduce((sum, t) => sum + t.amount, 0);
 
-  const endingCashAssets = assets.bankAccounts.reduce(
-    (sum, acc) => sum + acc.closingBalance,
-    0
-  );
-
-  const endingNonCashAssets = beginningNonCashAssets; // Assuming no change for now
+  // Use the calculated/entered ending balances from assets
+  const endingCashAssets = assets.endingCashBalance || 0;
+  const endingNonCashAssets = assets.endingNonCashBalance || beginningNonCashAssets;
 
   return {
     beginningCashAssets,

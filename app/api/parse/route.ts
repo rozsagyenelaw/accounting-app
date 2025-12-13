@@ -20,6 +20,11 @@ const DATE_FORMATS = [
 function parseDate(dateStr: string, context?: string): Date | null {
   let trimmed = dateStr.trim();
 
+  // OCR Fix: Handle years like "0023" -> "2023"
+  // Match dates with years starting with "00"
+  trimmed = trimmed.replace(/\/00(\d{2})$/, '/20$1');  // MM/DD/0023 -> MM/DD/2023
+  trimmed = trimmed.replace(/-00(\d{2})$/, '-20$1');    // MM-DD-0023 -> MM-DD-2023
+
   // OCR Fix: Handle dates where first digit is cut off by OCR
   // Examples: "0/04/23" -> "10/04/23", "0/11/23" -> "10/11/23" or "01/11/23"
   if (/^0\/\d{1,2}\/\d{2,4}$/.test(trimmed)) {
@@ -386,12 +391,24 @@ async function parsePDF(file: File): Promise<NextResponse> {
           // Single amount column
           amount = parseAmount(match[3]);
           if (amount !== null) {
-            if (amount < 0) {
-              type = 'DISBURSEMENT';
-              amount = Math.abs(amount);
-            } else {
-              type = 'RECEIPT';
-            }
+            amount = Math.abs(amount);
+
+            // Determine type based on description keywords (more reliable than amount sign for OCR)
+            const descLower = cleanDescription.toLowerCase();
+
+            // Receipt keywords - money coming IN
+            const isReceipt = descLower.includes('ssa treas') ||
+                            descLower.includes('soc sec') ||
+                            descLower.includes('social security') ||
+                            descLower.includes('interest earned') ||
+                            descLower.includes('interest') ||
+                            descLower.includes('refund') ||
+                            descLower.includes('fletcher jones') ||
+                            descLower.includes('pension') ||
+                            descLower.includes('annuity') ||
+                            descLower.includes('trust distribution');
+
+            type = isReceipt ? 'RECEIPT' : 'DISBURSEMENT';
           }
         }
 
