@@ -349,7 +349,10 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
                       type="number"
                       step="0.01"
                       value={beginningCashBalance}
-                      onChange={(e) => setBeginningCashBalance(parseFloat(e.target.value) || 0)}
+                      onChange={(e) => {
+                        const val = e.target.value;
+                        setBeginningCashBalance(val === '' ? 0 : parseFloat(val));
+                      }}
                       placeholder="0.00"
                       className="pl-7"
                     />
@@ -365,7 +368,10 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
                       type="number"
                       step="0.01"
                       value={beginningNonCashBalance}
-                      onChange={(e) => setBeginningNonCashBalance(parseFloat(e.target.value) || 0)}
+                      onChange={(e) => {
+                        const val = e.target.value;
+                        setBeginningNonCashBalance(val === '' ? 0 : parseFloat(val));
+                      }}
                       placeholder="0.00"
                       className="pl-7"
                     />
@@ -389,7 +395,10 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
                     type="number"
                     step="0.01"
                     value={endingCashBalance}
-                    onChange={(e) => setEndingCashBalance(parseFloat(e.target.value) || 0)}
+                    onChange={(e) => {
+                      const val = e.target.value;
+                      setEndingCashBalance(val === '' ? 0 : parseFloat(val));
+                    }}
                     placeholder="0.00"
                     className="pl-7"
                   />
@@ -405,7 +414,10 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
                     type="number"
                     step="0.01"
                     value={endingNonCashBalance}
-                    onChange={(e) => setEndingNonCashBalance(parseFloat(e.target.value) || 0)}
+                    onChange={(e) => {
+                      const val = e.target.value;
+                      setEndingNonCashBalance(val === '' ? 0 : parseFloat(val));
+                    }}
                     placeholder="0.00"
                     className="pl-7"
                   />
@@ -444,7 +456,10 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
                       type="number"
                       step="0.01"
                       value={beginningNonCashBalance}
-                      onChange={(e) => setBeginningNonCashBalance(parseFloat(e.target.value) || 0)}
+                      onChange={(e) => {
+                        const val = e.target.value;
+                        setBeginningNonCashBalance(val === '' ? 0 : parseFloat(val));
+                      }}
                       placeholder="0.00"
                       className="pl-7"
                     />
