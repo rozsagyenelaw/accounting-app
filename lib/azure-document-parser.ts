@@ -42,24 +42,9 @@ const RECEIPT_PATTERNS = [
 const INTERNAL_TRANSFER_PATTERNS = [
   /TRANSFER\s+TO\s+SHARE/i,
   /TRANSFER\s+FROM\s+SHARE/i,
-  /LOGIX.*TRANSFER/i,
-  /TRANSFER.*LOGIX/i,
   /INTERNAL\s+TRANSFER/i,
   /ACCOUNT\s+TRANSFER/i,
   /TRANSFER\s+BETWEEN/i,
-
-  // Logix FCU transfers (pattern: "LOGIX FCU DES:LOGIX" = transfer TO Logix from BofA side)
-  /LOGIX\s+FCU.*DES:LOGIX/i,
-  /DES:LOGIX/i,
-
-  // VERY SPECIFIC: Only exclude deposits/wires FROM Bank of America that are clearly transfers
-  // Must contain BOTH "deposit/wire" AND "from" AND "bank of am"
-  /DEPOSIT.*FROM.*BANK\s+OF\s+AM/i,
-  /WIRE.*FROM.*BANK\s+OF\s+AM/i,
-  /TRANSFER.*FROM.*BANK\s+OF\s+AM/i,
-
-  // Wire transfers between accounts (from BofA side showing WIRE OUT to Logix)
-  /WIRE.*TYPE.*WIRE\s+OUT.*LOGIX/i,
 ];
 
 function isInternalTransfer(description: string): boolean {
