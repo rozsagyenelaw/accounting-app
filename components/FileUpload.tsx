@@ -2,7 +2,6 @@
 
 import { useState, useCallback } from 'react';
 import { useAccountingStore } from '@/lib/store';
-import { classifyTransaction } from '@/lib/classifier';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import type { Transaction } from '@/types';
@@ -84,19 +83,17 @@ export function FileUpload({ onNext, onBack }: { onNext: () => void; onBack: () 
           allWarnings.push(`${file.name}: ${result.warnings.join(', ')}`);
         }
 
-        // Classify and convert to Transaction objects
+        // Convert to Transaction objects - USE SERVER CATEGORIES (already categorized by gc400-categories.ts)
         const transactions: Transaction[] = result.transactions.map((parsed: any) => {
-          const classification = classifyTransaction(parsed.description, parsed.type);
-
           return {
             id: `txn-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
             date: new Date(parsed.date),
             description: parsed.description,
             amount: parsed.amount,
             type: parsed.type,
-            category: classification.category,
-            subCategory: classification.subCategory,
-            confidence: classification.confidence,
+            category: parsed.category,  // Use server's category (from gc400-categories.ts)
+            subCategory: parsed.subCategory,  // Use server's subCategory
+            confidence: parsed.confidence,  // Use server's confidence
             manuallyReviewed: false,
           };
         });
