@@ -48,20 +48,18 @@ const INTERNAL_TRANSFER_PATTERNS = [
   /ACCOUNT\s+TRANSFER/i,
   /TRANSFER\s+BETWEEN/i,
 
-  // Logix FCU transfers (pattern: "LOGIX FCU DES:LOGIX" = transfer TO Logix)
+  // Logix FCU transfers (pattern: "LOGIX FCU DES:LOGIX" = transfer TO Logix from BofA side)
   /LOGIX\s+FCU.*DES:LOGIX/i,
   /DES:LOGIX/i,
 
-  // Bank of America transfers appearing in Logix statements (MUST include TRANSFER keyword)
-  // This is MORE SPECIFIC - only excludes if it's actually a transfer, not just mentions BofA
-  /TRANSFER.*BANK\s+OF\s+AM/i,
-  /BANK\s+OF\s+AM.*TRANSFER/i,
-  /WIRE.*BANK\s+OF\s+AM/i,  // Wire transfers from BofA
-  /BANK\s+OF\s+AM.*WIRE/i,  // Wire transfers from BofA (reversed order)
+  // VERY SPECIFIC: Only exclude deposits/wires FROM Bank of America that are clearly transfers
+  // Must contain BOTH "deposit/wire" AND "from" AND "bank of am"
+  /DEPOSIT.*FROM.*BANK\s+OF\s+AM/i,
+  /WIRE.*FROM.*BANK\s+OF\s+AM/i,
+  /TRANSFER.*FROM.*BANK\s+OF\s+AM/i,
 
-  // Wire transfers between accounts
+  // Wire transfers between accounts (from BofA side showing WIRE OUT to Logix)
   /WIRE.*TYPE.*WIRE\s+OUT.*LOGIX/i,
-  /WIRE.*TYPE.*WIRE\s+IN.*BANK/i,
 ];
 
 function isInternalTransfer(description: string): boolean {
