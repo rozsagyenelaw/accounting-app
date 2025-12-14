@@ -407,6 +407,9 @@ export async function parseExcelFile(buffer: Buffer): Promise<ParseResult> {
     const description = String(descVal || '');
     const date = parseDate(String(dateVal));
 
+    // Skip if date parsing failed
+    if (!date) continue;
+
     // Override type detection based on description
     if (isReceipt(description)) type = "RECEIPT";
 
