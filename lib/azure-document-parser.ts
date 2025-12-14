@@ -52,10 +52,12 @@ const INTERNAL_TRANSFER_PATTERNS = [
   /LOGIX\s+FCU.*DES:LOGIX/i,
   /DES:LOGIX/i,
 
-  // Bank of America appearing in Logix statements = transfer FROM BofA
-  /BANK\s+OF\s+AM/i,
-  /BANKOFAM/i,
-  /WIRE.*BANK.*AM/i,
+  // Bank of America transfers appearing in Logix statements (MUST include TRANSFER keyword)
+  // This is MORE SPECIFIC - only excludes if it's actually a transfer, not just mentions BofA
+  /TRANSFER.*BANK\s+OF\s+AM/i,
+  /BANK\s+OF\s+AM.*TRANSFER/i,
+  /WIRE.*BANK\s+OF\s+AM/i,  // Wire transfers from BofA
+  /BANK\s+OF\s+AM.*WIRE/i,  // Wire transfers from BofA (reversed order)
 
   // Wire transfers between accounts
   /WIRE.*TYPE.*WIRE\s+OUT.*LOGIX/i,
