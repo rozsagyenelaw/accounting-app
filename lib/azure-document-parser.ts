@@ -47,11 +47,23 @@ const INTERNAL_TRANSFER_PATTERNS = [
   /INTERNAL\s+TRANSFER/i,
   /ACCOUNT\s+TRANSFER/i,
   /TRANSFER\s+BETWEEN/i,
-  /LOGIX\s+FCU.*-500000/i, // Specific $500K Logix transfer
-  /WIRE.*LOGIX.*500000/i,
+
+  // Logix FCU transfers (pattern: "LOGIX FCU DES:LOGIX" = transfer TO Logix)
+  /LOGIX\s+FCU.*DES:LOGIX/i,
+  /DES:LOGIX/i,
+
+  // Bank of America appearing in Logix statements = transfer FROM BofA
+  /BANK\s+OF\s+AM/i,
+  /BANKOFAM/i,
+  /WIRE.*BANK.*AM/i,
+
+  // Wire transfers between accounts
+  /WIRE.*TYPE.*WIRE\s+OUT.*LOGIX/i,
+  /WIRE.*TYPE.*WIRE\s+IN.*BANK/i,
 ];
 
 function isInternalTransfer(description: string): boolean {
+  // Pattern-based detection only - catches ANY internal transfer regardless of amount
   return INTERNAL_TRANSFER_PATTERNS.some(pattern => pattern.test(description));
 }
 
@@ -64,7 +76,7 @@ function extractCheckNumber(description: string): string | undefined {
   return match ? match[1] : undefined;
 }
 
-function parseDate(dateStr: string): string {
+function parseDate(dateStr: string): string | null {
   // Handle various date formats from bank statements
   // MM/DD/YY, MM/DD/YYYY, MM-DD-YY, etc.
   const cleaned = dateStr.replace(/\s+/g, '').trim();
@@ -84,7 +96,33 @@ function parseDate(dateStr: string): string {
     return `${year}-${month}-${day}`;
   }
 
-  return dateStr; // Return original if parsing fails
+  return null; // Return null if parsing fails
+}
+
+// Validate that transaction is within the accounting period and not OCR garbage
+function isValidTransaction(description: string, date: string | null): boolean {
+  // Filter out OCR garbage from Logix statements (summary text mistaken as transactions)
+  if (!date) return false;
+
+  if (/dividends?\s+earned\s+in/i.test(description)) return false;
+  if (/current\s+balance:/i.test(description)) return false;
+  if (/matures?\s+on:/i.test(description)) return false;
+  if (/account\s+summary/i.test(description)) return false;
+  if (/statement\s+period/i.test(description)) return false;
+  if (/beginning\s+balance/i.test(description)) return false;
+  if (/ending\s+balance/i.test(description)) return false;
+
+  // Validate date is within reasonable accounting period (2023-08-22 to 2025-08-20)
+  const txnDate = new Date(date);
+  const startDate = new Date('2023-08-22');
+  const endDate = new Date('2025-08-20');
+
+  if (txnDate < startDate || txnDate > endDate) {
+    console.log(`[Azure Parser] Skipping transaction with date outside period: ${date} - ${description.substring(0, 50)}`);
+    return false;
+  }
+
+  return true;
 }
 
 function parseAmount(amountStr: string): number {
@@ -159,6 +197,11 @@ export async function parseWithAzure(pdfBuffer: Buffer): Promise<ParseResult> {
 
         // Only create transaction if we have required fields
         if (date && amount && description) {
+          // Validate transaction (filter OCR garbage and invalid dates)
+          if (!isValidTransaction(description, date)) {
+            continue;
+          }
+
           // SKIP internal transfers - they are not income or expenses
           if (isInternalTransfer(description)) {
             console.log(`[Azure Parser] Skipping internal transfer: ${description.substring(0, 60)}... ($${amount})`);
@@ -259,6 +302,11 @@ function parseTextTransactions(paragraphs: any[]): Transaction[] {
         .trim();
 
       if (description && amount > 0) {
+        // Validate transaction (filter OCR garbage and invalid dates)
+        if (!isValidTransaction(description, date)) {
+          continue;
+        }
+
         // SKIP internal transfers
         if (isInternalTransfer(description)) {
           continue;

@@ -98,24 +98,39 @@ export const DISBURSEMENT_CATEGORIES: CategoryRule[] = [
   // -------------------------------------------------------------------------
   // C(1) - Caregiver Expenses
   // -------------------------------------------------------------------------
+  // NOTE: Very specific patterns to avoid false matches with gyms, restaurants, etc.
   {
     code: 'C1_CAREGIVER',
     name: 'Caregiver Expenses',
     patterns: [
-      /caregiver/i,
+      /\bcaregiver\b/i,
       /care\s+giver/i,
-      /kristine\s+valon/i,
-      /nursing/i,
-      /aide/i,
-      /companion\s+care/i,
-      /home\s+care/i
+      /home\s+health\s+care/i,
+      /nursing\s+service/i,
+      /personal\s+care\s+aide/i,
+      /companion\s+care\s+service/i,
+      /in-home\s+care/i
     ],
-    weight: 3.0
+    weight: 3.5  // Higher weight to win when it does match
   },
 
   // -------------------------------------------------------------------------
   // C(2) - Residential Facility Expenses
   // -------------------------------------------------------------------------
+
+  // Home Insurance (added to residential)
+  {
+    code: 'C2_RESIDENTIAL_FACILITY',
+    name: 'Residential Facility Expenses',
+    subCategory: 'HOME_INSURANCE',
+    patterns: [
+      /nationwide/i,
+      /home\s+insurance/i,
+      /homeowner/i,
+      /property\s+insurance/i
+    ],
+    weight: 3.0
+  },
 
   // Water/Electric
   {
@@ -274,11 +289,12 @@ export const DISBURSEMENT_CATEGORIES: CategoryRule[] = [
     subCategory: 'Court Fees',
     patterns: [
       /caefile/i,
+      /\bcaefiling\b/i,
       /court\s+fee/i,
       /court\s+filing/i,
       /filing\s+fee/i
     ],
-    weight: 3.0
+    weight: 4.0  // High weight to ensure proper categorization
   },
 
   // Bond
@@ -338,7 +354,7 @@ export const DISBURSEMENT_CATEGORIES: CategoryRule[] = [
       /prescription/i,
       /\brx\b/i
     ],
-    weight: 3.0
+    weight: 4.0  // High weight to beat false Caregiver matches
   },
 
   // Doctor/Dental
@@ -348,6 +364,8 @@ export const DISBURSEMENT_CATEGORIES: CategoryRule[] = [
     subCategory: 'Doctor/Dental',
     patterns: [
       /jordan.*colby/i,
+      /colby\s+dmd/i,
+      /smile\s+specialist/i,
       /\bdmd\b/i,
       /\bdds\b/i,
       /dentist/i,
@@ -357,7 +375,7 @@ export const DISBURSEMENT_CATEGORIES: CategoryRule[] = [
       /clinic/i,
       /medical\s+office/i
     ],
-    weight: 2.5
+    weight: 4.0  // High weight to beat false Caregiver matches
   },
 
   // Pet Medical/Vet
@@ -367,12 +385,12 @@ export const DISBURSEMENT_CATEGORIES: CategoryRule[] = [
     subCategory: 'Pet Medical',
     patterns: [
       /sharp\s+pet/i,
+      /dog.*cat.*hospital/i,
       /\bvet\b/i,
       /veterinar/i,
-      /animal\s+hospital/i,
-      /dog.*cat.*hospital/i
+      /animal\s+hospital/i
     ],
-    weight: 2.5
+    weight: 4.0  // High weight - but note: non-medical pet expenses go to C7
   },
 
   // General Medical (specific patterns only - removed overly broad /medical/i and /health/i)
@@ -415,7 +433,7 @@ export const DISBURSEMENT_CATEGORIES: CategoryRule[] = [
       /tapia\s+bros/i,
       /kroger/i
     ],
-    weight: 3.5
+    weight: 4.0  // High weight to beat false Caregiver matches
   },
 
   // Restaurants/Dining
@@ -425,6 +443,7 @@ export const DISBURSEMENT_CATEGORIES: CategoryRule[] = [
     subCategory: 'RESTAURANTS_DINING',
     patterns: [
       /sharky/i,
+      /sharkys/i,
       /shake\s+shack/i,
       /starbucks/i,
       /restaurant/i,
@@ -450,7 +469,7 @@ export const DISBURSEMENT_CATEGORIES: CategoryRule[] = [
       /grubhub/i,
       /postmates/i
     ],
-    weight: 3.0
+    weight: 4.0  // High weight to beat false Caregiver matches
   },
 
   // Online Shopping
@@ -480,7 +499,7 @@ export const DISBURSEMENT_CATEGORIES: CategoryRule[] = [
       /gas\s+station/i,
       /fuel/i
     ],
-    weight: 2.5
+    weight: 4.0  // High weight to beat false Caregiver matches
   },
 
   // Fitness/Gym
@@ -491,12 +510,13 @@ export const DISBURSEMENT_CATEGORIES: CategoryRule[] = [
     patterns: [
       /la\s+fitness/i,
       /\bgym\b/i,
-      /fitness/i,
+      /fitness\s+center/i,
+      /\bfitness\b/i,
       /24\s+hour/i,
       /planet\s+fitness/i,
       /equinox/i
     ],
-    weight: 3.0
+    weight: 4.0  // High weight to beat false Caregiver matches
   },
 
   // Pet Care/Supplies
@@ -506,6 +526,7 @@ export const DISBURSEMENT_CATEGORIES: CategoryRule[] = [
     subCategory: 'PET_EXPENSES',
     patterns: [
       /rusty'?s\s+discount\s+pet/i,
+      /rusty.*pet/i,
       /pet\s+store/i,
       /petco/i,
       /petsmart/i,
@@ -513,7 +534,7 @@ export const DISBURSEMENT_CATEGORIES: CategoryRule[] = [
       /pet\s+insurance/i,
       /pet\s+food/i
     ],
-    weight: 2.5
+    weight: 4.0  // High weight to beat false Caregiver matches
   },
 
   // Personal Care
@@ -736,7 +757,7 @@ export const DISBURSEMENT_CATEGORIES: CategoryRule[] = [
       /car\s+insurance/i,
       /auto\s+insurance/i
     ],
-    weight: 3.0
+    weight: 4.0  // High weight to beat false Caregiver matches
   },
 
   // -------------------------------------------------------------------------
