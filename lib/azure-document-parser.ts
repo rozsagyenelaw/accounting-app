@@ -5,7 +5,7 @@ interface Transaction {
   description: string;
   amount: number;
   type: "RECEIPT" | "DISBURSEMENT";
-  category: string;       // GC-400 category
+  category?: string;      // GC-400 category (optional - will be assigned by parse route)
   checkNumber?: string;
   confidence: number;
 }
@@ -29,47 +29,14 @@ const RECEIPT_PATTERNS = [
   /WIRE TYPE:WIRE IN/i,
   /Interest Earned/i,
   /INTEREST PAYMENT/i,
+  /DEPOSIT DIVIDEND/i,  // Logix credit union dividends
+  /DIVIDEND/i,
   /DEPOSIT/i,
   /REFUND/i,
   /CREDIT/i,
   /TAX REF/i,
   /IRS TREAS/i,
 ];
-
-// GC-400 Category mappings
-// IMPORTANT: Most specific patterns first, checked in order
-const CATEGORY_MAPPINGS = {
-  // Schedule A - Receipts (MOST SPECIFIC FIRST)
-  "A(3) Pensions": [/FLETCHER.*JONES/i, /WIRE.*FLETCHER/i, /PENSION/i, /ANNUITY/i],
-  "A(5) Social Security": [/SSA TREAS/i, /SOC SEC/i, /SOCIAL SECURITY/i],
-  "A(2) Interest": [/^INTEREST EARNED/i, /^INTEREST PAYMENT/i, /DIVIDEND INCOME/i, /^APY\s/i],
-  "A(6) Other Receipts": [/REFUND/i, /TAX REF/i, /IRS TREAS/i],
-
-  // Schedule C - Disbursements (ORDERED BY SPECIFICITY)
-  "C(2) Residential Expenses": [
-    /LADWP/i, /SOCALGAS/i, /SO CAL GAS/i, /SPECTRUM/i, /CHARTER COMM/i,
-    /AT&T/i, /ATT/i, /HOME DEPOT/i, /LOWES/i, /LOWE'S/i, /RING/i,
-    /WATER BILL/i, /ELECTRIC BILL/i, /GAS BILL/i, /UTILITY BILL/i
-  ],
-  "C(4) Attorney/Fiduciary Fees": [/LAW OFFICE/i, /ROZSA/i, /ATTORNEY/i, /LEGAL/i],
-  "C(5) Administration": [/BANK FEE/i, /SERVICE FEE/i, /WIRE FEE/i, /COURT/i, /FILING/i],
-  "C(6) Medical": [
-    /\bCVS\b/i, /WALGREEN/i, /PHARMACY/i, /ANTHEM/i, /BLUE CROSS/i,
-    /\bDOCTOR\b/i, /HOSPITAL/i, /DENTAL/i, /VISION/i, /MEDICARE/i,
-    /PRESCRIPTION/i, /CLINIC/i
-  ],
-  "C(7) Living Expenses": [
-    /SPROUTS/i, /TRADER JOE/i, /GELSON/i, /VONS/i, /RALPHS/i, /GROCERY/i,
-    /AMAZON/i, /TARGET/i, /WALMART/i, /COSTCO/i,
-    /LA FITNESS/i, /GYM/i, /FITNESS/i,
-    /STARBUCKS/i, /RESTAURANT/i, /DINING/i,
-    /TRUPANION/i, /PET/i, /VETERINAR/i,
-    /MACY/i, /NORDSTROM/i, /CLOTHING/i,
-    /UBER/i, /LYFT/i, /TRANSPORT/i
-  ],
-  "C(8) Taxes": [/FRANCHISE TAX/i, /STATE TAX/i, /PROPERTY TAX/i, /TAX PAYMENT/i],
-  "C(9) Other Disbursements": [] // Default for unmatched
-};
 
 // Internal transfer patterns - these should be EXCLUDED from both receipts and disbursements
 const INTERNAL_TRANSFER_PATTERNS = [
@@ -80,6 +47,8 @@ const INTERNAL_TRANSFER_PATTERNS = [
   /INTERNAL\s+TRANSFER/i,
   /ACCOUNT\s+TRANSFER/i,
   /TRANSFER\s+BETWEEN/i,
+  /LOGIX\s+FCU.*-500000/i, // Specific $500K Logix transfer
+  /WIRE.*LOGIX.*500000/i,
 ];
 
 function isInternalTransfer(description: string): boolean {
@@ -88,23 +57,6 @@ function isInternalTransfer(description: string): boolean {
 
 function isReceipt(description: string): boolean {
   return RECEIPT_PATTERNS.some(pattern => pattern.test(description));
-}
-
-function categorizeTransaction(description: string, type: "RECEIPT" | "DISBURSEMENT"): string {
-  for (const [category, patterns] of Object.entries(CATEGORY_MAPPINGS)) {
-    // Only match receipt categories for receipts, disbursement categories for disbursements
-    if (type === "RECEIPT" && !category.startsWith("A")) continue;
-    if (type === "DISBURSEMENT" && !category.startsWith("C")) continue;
-
-    for (const pattern of patterns) {
-      if (pattern.test(description)) {
-        return category;
-      }
-    }
-  }
-
-  // Default categories
-  return type === "RECEIPT" ? "A(6) Other Receipts" : "C(9) Other Disbursements";
 }
 
 function extractCheckNumber(description: string): string | undefined {
@@ -214,7 +166,6 @@ export async function parseWithAzure(pdfBuffer: Buffer): Promise<ParseResult> {
           }
 
           const type = isReceipt(description) ? "RECEIPT" : "DISBURSEMENT";
-          const category = categorizeTransaction(description, type);
           const checkNumber = extractCheckNumber(description);
 
           transactions.push({
@@ -222,7 +173,7 @@ export async function parseWithAzure(pdfBuffer: Buffer): Promise<ParseResult> {
             description: description.substring(0, 200), // Truncate long descriptions
             amount,
             type,
-            category,
+            // category will be assigned by parse route using gc400-categories.ts
             checkNumber,
             confidence: 0.95 // Azure generally has high confidence
           });
@@ -320,7 +271,7 @@ function parseTextTransactions(paragraphs: any[]): Transaction[] {
           description: description.substring(0, 200),
           amount,
           type,
-          category: categorizeTransaction(description, type),
+          // category will be assigned by parse route
           confidence: 0.7 // Lower confidence for text parsing
         });
       }
@@ -416,7 +367,7 @@ export async function parseExcelFile(buffer: Buffer): Promise<ParseResult> {
       description: description.substring(0, 200),
       amount: Math.abs(amount),
       type,
-      category: categorizeTransaction(description, type),
+      // category will be assigned by parse route
       checkNumber: extractCheckNumber(description),
       confidence: 0.99 // Excel data is very reliable
     });

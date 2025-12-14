@@ -279,16 +279,18 @@ async function parseExcelFileRoute(file: File): Promise<NextResponse> {
 
     warnings.push(...result.warnings);
 
-    // Convert format to API format
+    // Convert format to API format and categorize using gc400-categories
     for (const txn of result.transactions) {
+      const category = categorizeTransaction(txn.description, txn.type);
+
       transactions.push({
         date: new Date(txn.date).toISOString(),
         description: txn.description,
         amount: txn.amount,
         type: txn.type,
-        category: txn.category,
-        subCategory: null,
-        confidence: txn.confidence,
+        category: category.code,
+        subCategory: category.subCategory,
+        confidence: category.confidence,
       });
     }
 
@@ -339,16 +341,18 @@ async function parsePDF(file: File): Promise<NextResponse> {
 
         warnings.push(...result.warnings);
 
-        // Convert Azure format to API format
+        // Convert Azure format to API format and categorize using gc400-categories
         for (const txn of result.transactions) {
+          const category = categorizeTransaction(txn.description, txn.type);
+
           transactions.push({
             date: new Date(txn.date).toISOString(),
             description: txn.description,
             amount: txn.amount,
             type: txn.type,
-            category: txn.category,
-            subCategory: null,
-            confidence: txn.confidence,
+            category: category.code,
+            subCategory: category.subCategory,
+            confidence: category.confidence,
           });
         }
 

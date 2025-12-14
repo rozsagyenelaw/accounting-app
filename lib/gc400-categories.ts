@@ -47,6 +47,7 @@ export const RECEIPT_CATEGORIES: CategoryRule[] = [
     patterns: [
       /^interest\s+earned/i,
       /^interest\s+payment/i,
+      /\bdeposit\s+dividend\b/i,  // Logix credit union dividends
       /\bdividend\s+income\b/i,
       /\bdividend\s+payment\b/i,
       /^int\s+paid/i,
