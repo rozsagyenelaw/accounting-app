@@ -7,6 +7,7 @@ import { Input } from '@/components/ui/input';
 import { Select } from '@/components/ui/select';
 import { Label } from '@/components/ui/label';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { AddTransactionDialog } from '@/components/AddTransactionDialog';
 import { format } from 'date-fns';
 import {
   CATEGORY_NAMES,
@@ -18,13 +19,14 @@ import {
 } from '@/types';
 
 export function TransactionReview({ onNext, onBack }: { onNext: () => void; onBack: () => void }) {
-  const { transactions, updateTransaction } = useAccountingStore();
+  const { transactions, updateTransaction, addTransaction, deleteTransaction } = useAccountingStore();
 
   const [filterCategory, setFilterCategory] = useState<string>('');
   const [filterType, setFilterType] = useState<string>('');
   const [searchTerm, setSearchTerm] = useState('');
   const [sortField, setSortField] = useState<'date' | 'amount' | 'confidence'>('date');
   const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc');
+  const [showAddDialog, setShowAddDialog] = useState(false);
 
   const filteredAndSortedTransactions = useMemo(() => {
     let filtered = [...transactions];
@@ -86,6 +88,36 @@ export function TransactionReview({ onNext, onBack }: { onNext: () => void; onBa
     .reduce((sum, t) => sum + t.amount, 0);
 
   const lowConfidenceCount = transactions.filter(t => (t.confidence || 0) < 70).length;
+
+  const handleAddTransaction = (newTxn: {
+    date: Date;
+    description: string;
+    type: 'RECEIPT' | 'DISBURSEMENT';
+    amount: number;
+    category: TransactionCategory;
+    subCategory?: string;
+  }) => {
+    const transaction = {
+      id: `manual-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+      date: newTxn.date,
+      description: newTxn.description,
+      amount: newTxn.amount,
+      type: newTxn.type,
+      category: newTxn.category,
+      subCategory: newTxn.subCategory,
+      confidence: 100, // Manual entries have 100% confidence
+      manuallyReviewed: true,
+    };
+
+    addTransaction(transaction);
+    setShowAddDialog(false);
+  };
+
+  const handleDeleteTransaction = (id: string, description: string) => {
+    if (confirm(`Delete this transaction?\n\n"${description.substring(0, 60)}..."`)) {
+      deleteTransaction(id);
+    }
+  };
 
   return (
     <div className="space-y-6">
@@ -170,8 +202,11 @@ export function TransactionReview({ onNext, onBack }: { onNext: () => void; onBa
 
       {/* Transaction Table */}
       <Card>
-        <CardHeader>
+        <CardHeader className="flex flex-row items-center justify-between">
           <CardTitle>Transactions ({filteredAndSortedTransactions.length})</CardTitle>
+          <Button onClick={() => setShowAddDialog(true)}>
+            + Add Transaction
+          </Button>
         </CardHeader>
         <CardContent>
           <div className="overflow-x-auto">
@@ -210,6 +245,9 @@ export function TransactionReview({ onNext, onBack }: { onNext: () => void; onBa
                   </th>
                   <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                     Check #
+                  </th>
+                  <th className="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    Actions
                   </th>
                 </tr>
               </thead>
@@ -316,6 +354,16 @@ export function TransactionReview({ onNext, onBack }: { onNext: () => void; onBa
                         className="w-20 text-xs"
                       />
                     </td>
+                    <td className="px-4 py-3 whitespace-nowrap text-center">
+                      <Button
+                        variant="destructive"
+                        size="sm"
+                        onClick={() => handleDeleteTransaction(transaction.id, transaction.description)}
+                        className="text-xs"
+                      >
+                        Delete
+                      </Button>
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -332,6 +380,14 @@ export function TransactionReview({ onNext, onBack }: { onNext: () => void; onBa
           Continue to Summary
         </Button>
       </div>
+
+      {/* Add Transaction Dialog */}
+      {showAddDialog && (
+        <AddTransactionDialog
+          onAdd={handleAddTransaction}
+          onCancel={() => setShowAddDialog(false)}
+        />
+      )}
     </div>
   );
 }
