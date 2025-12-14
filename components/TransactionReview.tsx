@@ -104,7 +104,7 @@ export function TransactionReview({ onNext, onBack }: { onNext: () => void; onBa
       amount: newTxn.amount,
       type: newTxn.type,
       category: newTxn.category,
-      subCategory: newTxn.subCategory,
+      subCategory: newTxn.subCategory as C2SubCategory | C7SubCategory | undefined,
       confidence: 100, // Manual entries have 100% confidence
       manuallyReviewed: true,
     };
