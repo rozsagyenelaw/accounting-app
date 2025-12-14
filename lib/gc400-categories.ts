@@ -35,9 +35,13 @@ export const RECEIPT_CATEGORIES: CategoryRule[] = [
       /trust.*distribution/i,
       /pension/i,
       /annuity/i,
-      /retirement\s+income/i
+      /retirement\s+income/i,
+      // Specific amount pattern for recurring $26,979.17 wire transfers (Fletcher Jones Trust)
+      /wire.*type.*wire\s+in.*26,?979\.17/i,
+      /wire\s+in.*26,?979\.17/i,
+      /26,?979\.17.*wire/i
     ],
-    weight: 5.0  // HIGHEST weight - must beat Interest
+    weight: 10.0  // HIGHEST weight - must beat Interest and everything else
   },
 
   // A(2) - Interest (very specific patterns only - NO generic "interest")
