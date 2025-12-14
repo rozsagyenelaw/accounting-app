@@ -28,12 +28,14 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
     return !caseInfo.accountType || caseInfo.accountType === 'FIRST';
   }, [caseInfo.accountType]);
 
-  // Calculate ENDING balances based on BEGINNING + Receipts - Disbursements
-  const calculatedBeginningBalances = useMemo(() => {
+  // Calculate EXPECTED ending balances and reconciliation difference
+  const reconciliationInfo = useMemo(() => {
     try {
-      // Parse the current input values (BEGINNING balances entered by user)
+      // Parse the current input values
       const beginningCash = parseFloat(beginningCashBalance) || 0;
       const beginningNonCash = parseFloat(beginningNonCashBalance) || 0;
+      const endingCash = parseFloat(endingCashBalance) || 0;
+      const endingNonCash = parseFloat(endingNonCashBalance) || 0;
 
       // Calculate total receipts and disbursements from transactions
       const receipts = transactions
@@ -44,22 +46,47 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
         .filter(t => t.type === 'DISBURSEMENT')
         .reduce((sum, t) => sum + t.amount, 0);
 
-      // Calculate ENDING cash balance
-      // Ending = Beginning + Receipts - Disbursements
-      const endingCash = beginningCash + receipts - disbursements;
+      // Calculate EXPECTED ending cash balance using formula:
+      // Expected Ending = Beginning + Receipts - Disbursements
+      const expectedEndingCash = beginningCash + receipts - disbursements;
 
-      // Ending non-cash defaults to same as beginning
-      const endingNonCash = beginningNonCash;
+      // Calculate reconciliation difference
+      const cashDifference = endingCash - expectedEndingCash;
 
       return {
-        cash: endingCash,
-        nonCash: endingNonCash,
+        receipts,
+        disbursements,
+        expectedEndingCash,
+        actualEndingCash: endingCash,
+        cashDifference,
+        isReconciled: Math.abs(cashDifference) < 0.01, // Allow 1 cent rounding
       };
     } catch (error) {
-      console.error('Error calculating ending balances:', error);
-      return { cash: 0, nonCash: 0 };
+      console.error('Error calculating reconciliation:', error);
+      return {
+        receipts: 0,
+        disbursements: 0,
+        expectedEndingCash: 0,
+        actualEndingCash: 0,
+        cashDifference: 0,
+        isReconciled: false,
+      };
     }
-  }, [beginningCashBalance, beginningNonCashBalance, transactions]);
+  }, [beginningCashBalance, endingCashBalance, beginningNonCashBalance, endingNonCashBalance, transactions]);
+
+  // Auto-populate ending balances from bank accounts when they change
+  useEffect(() => {
+    const totalOpening = bankAccounts.reduce((sum, acc) => sum + (acc.openingBalance || 0), 0);
+    const totalClosing = bankAccounts.reduce((sum, acc) => sum + (acc.closingBalance || 0), 0);
+
+    // Only auto-populate if user hasn't manually entered values
+    if (!beginningCashBalance && totalOpening > 0) {
+      setBeginningCashBalance(totalOpening.toFixed(2));
+    }
+    if (!endingCashBalance && totalClosing > 0) {
+      setEndingCashBalance(totalClosing.toFixed(2));
+    }
+  }, [bankAccounts, beginningCashBalance, endingCashBalance]);
 
   // Default ending non-cash to beginning non-cash (unless property sold/bought)
   useEffect(() => {
@@ -131,8 +158,6 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
   };
 
   const handleNext = () => {
-    const calculatedEnding = calculatedBeginningBalances || { cash: 0, nonCash: 0 };
-
     updateAssets({
       bankAccounts,
       realProperty,
@@ -140,9 +165,9 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
       // Save user-entered BEGINNING balances
       beginningCashBalance: parseFloat(beginningCashBalance) || 0,
       beginningNonCashBalance: parseFloat(beginningNonCashBalance) || 0,
-      // Save calculated ENDING balances
-      endingCashBalance: calculatedEnding.cash,
-      endingNonCashBalance: parseFloat(endingNonCashBalance) || calculatedEnding.nonCash,
+      // Save user-entered ENDING balances (NOT calculated)
+      endingCashBalance: parseFloat(endingCashBalance) || 0,
+      endingNonCashBalance: parseFloat(endingNonCashBalance) || 0,
     });
     onNext();
   };
@@ -353,14 +378,14 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
         <CardHeader>
           <CardTitle>Account Balances Summary</CardTitle>
           <p className="text-sm text-gray-600 mt-2">
-            Enter the beginning balances (from previous period's ending balances).
-            Ending balances will be calculated automatically based on transactions.
+            Enter both beginning balances (from prior period) and actual ending balances (from bank statements).
+            The app will check if they reconcile with your transactions.
           </p>
         </CardHeader>
         <CardContent className="space-y-6">
           {/* Beginning Balances - User Input */}
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 space-y-4">
-            <h3 className="font-semibold text-blue-900">Beginning Balances (Start of Period) - Enter These</h3>
+            <h3 className="font-semibold text-blue-900">Beginning Balances (Start of Period)</h3>
             <p className="text-xs text-gray-600 mb-3">
               For FIRST account: Enter starting balances when conservatorship/trust began<br/>
               For SECOND+ accounts: Copy ending balances from previous accounting period
@@ -401,43 +426,103 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
             </div>
           </div>
 
-          {/* Ending Balances - Calculated */}
-          {calculatedBeginningBalances && (
-            <div className="bg-green-50 border border-green-200 rounded-lg p-4 space-y-4">
-              <h3 className="font-semibold text-green-900">Ending Balances (End of Period) - Auto-Calculated</h3>
-              <p className="text-xs text-gray-600 mb-3">
-                Calculated as: Beginning + Receipts - Disbursements
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <Label>Ending Cash Assets (Calculated)</Label>
-                  <div className="relative">
-                    <span className="absolute left-3 top-2.5 text-gray-500">$</span>
-                    <Input
-                      type="text"
-                      value={calculatedBeginningBalances.cash.toFixed(2)}
-                      disabled
-                      className="pl-7 bg-gray-100 text-gray-700 cursor-not-allowed font-semibold"
-                    />
-                  </div>
-                  <p className="text-xs text-gray-500 mt-1">Goes on Line 13a of GC-400(SUM)</p>
+          {/* Ending Balances - User Input */}
+          <div className="bg-green-50 border border-green-200 rounded-lg p-4 space-y-4">
+            <h3 className="font-semibold text-green-900">Ending Balances (End of Period)</h3>
+            <p className="text-xs text-gray-600 mb-3">
+              Enter the ACTUAL balances from your bank statements as of the end date.
+              These should match the closing balances of your individual bank accounts.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <Label htmlFor="ending-cash">Ending Cash Assets *</Label>
+                <div className="relative">
+                  <span className="absolute left-3 top-2.5 text-gray-500">$</span>
+                  <Input
+                    id="ending-cash"
+                    type="number"
+                    step="0.01"
+                    value={endingCashBalance}
+                    onChange={(e) => setEndingCashBalance(e.target.value)}
+                    placeholder="0.00"
+                    className="pl-7"
+                  />
                 </div>
-                <div>
-                  <Label>Ending Non-Cash Assets</Label>
-                  <div className="relative">
-                    <span className="absolute left-3 top-2.5 text-gray-500">$</span>
-                    <Input
-                      type="number"
-                      step="0.01"
-                      value={endingNonCashBalance}
-                      onChange={(e) => setEndingNonCashBalance(e.target.value)}
-                      placeholder="0.00"
-                      className="pl-7"
-                    />
-                  </div>
-                  <p className="text-xs text-gray-500 mt-1">Usually same as beginning (edit if property was sold/bought). Goes on Line 13b.</p>
-                </div>
+                <p className="text-xs text-gray-500 mt-1">Goes on Line 13a of GC-400(SUM)</p>
               </div>
+              <div>
+                <Label htmlFor="ending-non-cash">Ending Non-Cash Assets *</Label>
+                <div className="relative">
+                  <span className="absolute left-3 top-2.5 text-gray-500">$</span>
+                  <Input
+                    id="ending-non-cash"
+                    type="number"
+                    step="0.01"
+                    value={endingNonCashBalance}
+                    onChange={(e) => setEndingNonCashBalance(e.target.value)}
+                    placeholder="0.00"
+                    className="pl-7"
+                  />
+                </div>
+                <p className="text-xs text-gray-500 mt-1">Usually same as beginning (edit if property was sold/bought). Goes on Line 13b.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Reconciliation Check */}
+          {reconciliationInfo && (beginningCashBalance || endingCashBalance) && (
+            <div className={`border rounded-lg p-4 space-y-3 ${
+              reconciliationInfo.isReconciled
+                ? 'bg-green-50 border-green-300'
+                : 'bg-yellow-50 border-yellow-300'
+            }`}>
+              <h3 className={`font-semibold ${
+                reconciliationInfo.isReconciled ? 'text-green-900' : 'text-yellow-900'
+              }`}>
+                {reconciliationInfo.isReconciled ? '✓ Reconciled' : '⚠ Reconciliation Check'}
+              </h3>
+              <div className="text-sm space-y-1">
+                <div className="flex justify-between">
+                  <span>Beginning Cash:</span>
+                  <span className="font-mono">${parseFloat(beginningCashBalance || '0').toFixed(2)}</span>
+                </div>
+                <div className="flex justify-between text-green-700">
+                  <span>+ Receipts:</span>
+                  <span className="font-mono">${reconciliationInfo.receipts.toFixed(2)}</span>
+                </div>
+                <div className="flex justify-between text-red-700">
+                  <span>- Disbursements:</span>
+                  <span className="font-mono">${reconciliationInfo.disbursements.toFixed(2)}</span>
+                </div>
+                <div className="border-t border-gray-300 pt-1 mt-1"></div>
+                <div className="flex justify-between font-semibold">
+                  <span>Expected Ending:</span>
+                  <span className="font-mono">${reconciliationInfo.expectedEndingCash.toFixed(2)}</span>
+                </div>
+                <div className="flex justify-between font-semibold">
+                  <span>Actual Ending:</span>
+                  <span className="font-mono">${reconciliationInfo.actualEndingCash.toFixed(2)}</span>
+                </div>
+                {!reconciliationInfo.isReconciled && (
+                  <div className={`flex justify-between font-bold pt-2 border-t ${
+                    Math.abs(reconciliationInfo.cashDifference) < 0.01
+                      ? 'text-green-700'
+                      : 'text-red-700'
+                  }`}>
+                    <span>Difference:</span>
+                    <span className="font-mono">
+                      {reconciliationInfo.cashDifference > 0 ? '+' : ''}
+                      ${reconciliationInfo.cashDifference.toFixed(2)}
+                    </span>
+                  </div>
+                )}
+              </div>
+              {!reconciliationInfo.isReconciled && Math.abs(reconciliationInfo.cashDifference) > 0.01 && (
+                <p className="text-xs text-yellow-800 mt-2">
+                  ⚠ The ending balance doesn't match the expected value. This may indicate missing transactions,
+                  errors in transaction amounts, or other gains/losses that need to be recorded.
+                </p>
+              )}
             </div>
           )}
         </CardContent>
