@@ -89,7 +89,8 @@ function isValidTransaction(description: string, date: string | undefined): bool
   // Filter out OCR garbage from Logix statements (summary text mistaken as transactions)
   if (!date) return false;
 
-  if (/dividends?\s+earned\s+in/i.test(description)) return false;
+  // VERY SPECIFIC patterns for OCR garbage - must match the EXACT summary text format
+  if (/dividends?\s+earned\s+in\s+\d{4}/i.test(description)) return false; // "Dividends Earned in 2024" (year must be present)
   if (/current\s+balance:/i.test(description)) return false;
   if (/matures?\s+on:/i.test(description)) return false;
   if (/account\s+summary/i.test(description)) return false;
