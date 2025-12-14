@@ -37,24 +37,26 @@ const RECEIPT_PATTERNS = [
 ];
 
 // GC-400 Category mappings
+// IMPORTANT: Order matters! More specific patterns MUST come before generic ones
 const CATEGORY_MAPPINGS = {
-  // Schedule A - Receipts
-  "A(2) Interest": [/interest/i, /dividend/i, /APY/i],
+  // Schedule A - Receipts (ORDERED BY SPECIFICITY - most specific first)
   "A(3) Pensions": [/FLETCHER JONES/i, /PENSION/i, /ANNUITY/i],
   "A(5) Social Security": [/SSA TREAS/i, /SOC SEC/i, /SOCIAL SECURITY/i],
+  "A(2) Interest": [/interest\s+earned/i, /interest\s+payment/i, /dividend/i, /APY/i],
   "A(6) Other Receipts": [/REFUND/i, /TAX REF/i, /IRS TREAS/i],
 
-  // Schedule C - Disbursements
+  // Schedule C - Disbursements (ORDERED BY SPECIFICITY)
   "C(2) Residential Expenses": [
     /LADWP/i, /SOCALGAS/i, /SO CAL GAS/i, /SPECTRUM/i, /CHARTER COMM/i,
     /AT&T/i, /ATT/i, /HOME DEPOT/i, /LOWES/i, /LOWE'S/i, /RING/i,
-    /WATER/i, /ELECTRIC/i, /GAS BILL/i, /UTILITY/i
+    /WATER BILL/i, /ELECTRIC BILL/i, /GAS BILL/i, /UTILITY BILL/i
   ],
   "C(4) Attorney/Fiduciary Fees": [/LAW OFFICE/i, /ROZSA/i, /ATTORNEY/i, /LEGAL/i],
   "C(5) Administration": [/BANK FEE/i, /SERVICE FEE/i, /WIRE FEE/i, /COURT/i, /FILING/i],
   "C(6) Medical": [
-    /CVS/i, /WALGREEN/i, /PHARMACY/i, /MEDICAL/i, /ANTHEM/i, /BLUE CROSS/i,
-    /HEALTH/i, /DOCTOR/i, /HOSPITAL/i, /DENTAL/i, /VISION/i, /MEDICARE/i
+    /\bCVS\b/i, /WALGREEN/i, /PHARMACY/i, /ANTHEM/i, /BLUE CROSS/i,
+    /\bDOCTOR\b/i, /HOSPITAL/i, /DENTAL/i, /VISION/i, /MEDICARE/i,
+    /PRESCRIPTION/i, /CLINIC/i
   ],
   "C(7) Living Expenses": [
     /SPROUTS/i, /TRADER JOE/i, /GELSON/i, /VONS/i, /RALPHS/i, /GROCERY/i,
@@ -68,6 +70,21 @@ const CATEGORY_MAPPINGS = {
   "C(8) Taxes": [/FRANCHISE TAX/i, /STATE TAX/i, /PROPERTY TAX/i, /TAX PAYMENT/i],
   "C(9) Other Disbursements": [] // Default for unmatched
 };
+
+// Internal transfer patterns - these should be EXCLUDED from both receipts and disbursements
+const INTERNAL_TRANSFER_PATTERNS = [
+  /TRANSFER\s+TO\s+SHARE/i,
+  /TRANSFER\s+FROM\s+SHARE/i,
+  /LOGIX.*TRANSFER/i,
+  /TRANSFER.*LOGIX/i,
+  /INTERNAL\s+TRANSFER/i,
+  /ACCOUNT\s+TRANSFER/i,
+  /TRANSFER\s+BETWEEN/i,
+];
+
+function isInternalTransfer(description: string): boolean {
+  return INTERNAL_TRANSFER_PATTERNS.some(pattern => pattern.test(description));
+}
 
 function isReceipt(description: string): boolean {
   return RECEIPT_PATTERNS.some(pattern => pattern.test(description));
@@ -190,6 +207,12 @@ export async function parseWithAzure(pdfBuffer: Buffer): Promise<ParseResult> {
 
         // Only create transaction if we have required fields
         if (date && amount && description) {
+          // SKIP internal transfers - they are not income or expenses
+          if (isInternalTransfer(description)) {
+            console.log(`[Azure Parser] Skipping internal transfer: ${description.substring(0, 60)}... ($${amount})`);
+            continue;
+          }
+
           const type = isReceipt(description) ? "RECEIPT" : "DISBURSEMENT";
           const category = categorizeTransaction(description, type);
           const checkNumber = extractCheckNumber(description);
@@ -285,6 +308,11 @@ function parseTextTransactions(paragraphs: any[]): Transaction[] {
         .trim();
 
       if (description && amount > 0) {
+        // SKIP internal transfers
+        if (isInternalTransfer(description)) {
+          continue;
+        }
+
         const type = isReceipt(description) ? "RECEIPT" : "DISBURSEMENT";
 
         transactions.push({

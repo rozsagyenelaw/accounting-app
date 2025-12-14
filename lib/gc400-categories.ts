@@ -24,21 +24,7 @@ export interface CategoryResult {
 // ============================================================================
 
 export const RECEIPT_CATEGORIES: CategoryRule[] = [
-  // A(2) - Interest
-  {
-    code: 'A2_INTEREST',
-    name: 'Interest',
-    patterns: [
-      /interest\s+earned/i,
-      /interest\s+from/i,
-      /\bdividend\b/i,
-      /int\s+paid/i,
-      /int\s+credit/i
-    ],
-    weight: 3.0
-  },
-
-  // A(3) - Pensions, Annuities, Trust Distributions
+  // A(3) - Pensions, Annuities, Trust Distributions (MUST BE FIRST - higher priority than Interest)
   {
     code: 'A3_PENSIONS_ANNUITIES',
     name: 'Pensions, Annuities, and Other Regular Periodic Payments',
@@ -48,6 +34,20 @@ export const RECEIPT_CATEGORIES: CategoryRule[] = [
       /pension/i,
       /annuity/i,
       /retirement/i
+    ],
+    weight: 4.0  // Higher weight than Interest
+  },
+
+  // A(2) - Interest (AFTER Pensions to avoid false matches)
+  {
+    code: 'A2_INTEREST',
+    name: 'Interest',
+    patterns: [
+      /interest\s+earned/i,
+      /interest\s+payment/i,
+      /\bdividend\b/i,
+      /int\s+paid/i,
+      /int\s+credit/i
     ],
     weight: 3.0
   },
@@ -370,15 +370,20 @@ export const DISBURSEMENT_CATEGORIES: CategoryRule[] = [
     weight: 2.5
   },
 
-  // General Medical
+  // General Medical (specific patterns only - removed overly broad /medical/i and /health/i)
   {
     code: 'C6_MEDICAL',
     name: 'Medical Expenses',
     subCategory: 'General',
     patterns: [
-      /medical/i,
       /hospital/i,
-      /health\s+care/i
+      /health\s+care\s+provider/i,
+      /medical\s+center/i,
+      /urgent\s+care/i,
+      /anthem/i,
+      /blue\s+cross/i,
+      /kaiser/i,
+      /medicare/i
     ],
     weight: 2.0
   },
