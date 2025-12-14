@@ -76,7 +76,7 @@ function extractCheckNumber(description: string): string | undefined {
   return match ? match[1] : undefined;
 }
 
-function parseDate(dateStr: string): string | null {
+function parseDate(dateStr: string): string | undefined {
   // Handle various date formats from bank statements
   // MM/DD/YY, MM/DD/YYYY, MM-DD-YY, etc.
   const cleaned = dateStr.replace(/\s+/g, '').trim();
@@ -96,11 +96,11 @@ function parseDate(dateStr: string): string | null {
     return `${year}-${month}-${day}`;
   }
 
-  return null; // Return null if parsing fails
+  return undefined; // Return undefined if parsing fails
 }
 
 // Validate that transaction is within the accounting period and not OCR garbage
-function isValidTransaction(description: string, date: string | null): boolean {
+function isValidTransaction(description: string, date: string | undefined): boolean {
   // Filter out OCR garbage from Logix statements (summary text mistaken as transactions)
   if (!date) return false;
 
