@@ -200,7 +200,7 @@ export function TransactionReview({ onNext, onBack }: { onNext: () => void; onBa
         </CardContent>
       </Card>
 
-      {/* Transaction Table */}
+      {/* Transaction Table - Manual Add/Delete Controls */}
       <Card>
         <CardHeader className="flex flex-row items-center justify-between">
           <CardTitle>Transactions ({filteredAndSortedTransactions.length})</CardTitle>
