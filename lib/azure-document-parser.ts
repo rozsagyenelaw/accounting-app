@@ -301,7 +301,7 @@ function parseTextTransactions(paragraphs: any[]): Transaction[] {
         .replace(/\s+/g, ' ')
         .trim();
 
-      if (description && amount > 0) {
+      if (description && amount > 0 && date) {
         // Validate transaction (filter OCR garbage and invalid dates)
         if (!isValidTransaction(description, date)) {
           continue;
