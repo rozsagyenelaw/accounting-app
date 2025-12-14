@@ -854,37 +854,80 @@ export function categorizeTransaction(
 ): CategoryResult {
   const categories = type === 'RECEIPT' ? RECEIPT_CATEGORIES : DISBURSEMENT_CATEGORIES;
 
+  // DEBUG: Log the transaction being categorized
+  console.log('\n========== CATEGORIZATION DEBUG ==========');
+  console.log(`Type: ${type}`);
+  console.log(`Description: "${description}"`);
+  console.log(`Total categories to check: ${categories.length}`);
+
   let bestMatch: {
     category: CategoryRule;
     matchedKeywords: string[];
     score: number;
   } | null = null;
 
+  const allMatches: any[] = [];
+
   for (const category of categories) {
     const matchedKeywords: string[] = [];
 
+    console.log(`\n--- Checking category: ${category.code} (weight: ${category.weight}) ---`);
+
     for (const pattern of category.patterns) {
-      if (pattern.test(description)) {
+      const isMatch = pattern.test(description);
+      if (isMatch) {
+        console.log(`  ✓ MATCHED: ${pattern.source}`);
         matchedKeywords.push(pattern.source);
       }
     }
 
     if (matchedKeywords.length > 0) {
       const score = matchedKeywords.length * category.weight;
+      console.log(`  --> ${matchedKeywords.length} patterns matched`);
+      console.log(`  --> Score: ${matchedKeywords.length} × ${category.weight} = ${score}`);
+
+      allMatches.push({
+        code: category.code,
+        name: category.name,
+        matchedCount: matchedKeywords.length,
+        weight: category.weight,
+        score: score,
+        patterns: matchedKeywords
+      });
 
       if (!bestMatch || score > bestMatch.score) {
+        console.log(`  --> NEW BEST MATCH (previous best: ${bestMatch?.score || 'none'})`);
         bestMatch = {
           category,
           matchedKeywords,
           score
         };
+      } else {
+        console.log(`  --> Not better than current best (${bestMatch.score})`);
       }
+    } else {
+      console.log(`  ✗ No patterns matched`);
     }
   }
+
+  // DEBUG: Show all matches sorted by score
+  console.log('\n========== ALL MATCHES (sorted by score) ==========');
+  allMatches.sort((a, b) => b.score - a.score);
+  allMatches.forEach((match, idx) => {
+    console.log(`${idx + 1}. ${match.code} - Score: ${match.score} (${match.matchedCount} × ${match.weight})`);
+    match.patterns.forEach((p: string) => console.log(`   - ${p}`));
+  });
 
   // Return best match or default
   if (bestMatch) {
     const confidence = Math.min(95, 50 + (bestMatch.score * 10));
+
+    console.log('\n========== FINAL RESULT ==========');
+    console.log(`Category: ${bestMatch.category.code}`);
+    console.log(`Name: ${bestMatch.category.name}`);
+    console.log(`Score: ${bestMatch.score}`);
+    console.log(`Confidence: ${Math.round(confidence)}%`);
+    console.log('==========================================\n');
 
     return {
       code: bestMatch.category.code,
@@ -896,6 +939,10 @@ export function categorizeTransaction(
   }
 
   // Default fallback
+  console.log('\n========== NO MATCHES - USING DEFAULT ==========');
+  console.log(`Defaulting to: ${type === 'RECEIPT' ? 'A6_OTHER_RECEIPTS' : 'C9_OTHER_DISBURSEMENTS'}`);
+  console.log('==========================================\n');
+
   if (type === 'RECEIPT') {
     return {
       code: 'A6_OTHER_RECEIPTS',
