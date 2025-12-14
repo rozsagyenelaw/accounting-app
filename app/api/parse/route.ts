@@ -318,9 +318,18 @@ async function parsePDF(file: File): Promise<NextResponse> {
     const arrayBuffer = await file.arrayBuffer();
     const buffer = Buffer.from(arrayBuffer);
 
+    // DEBUG: Check environment variables
+    console.log('=== AZURE CONFIGURATION CHECK ===');
+    console.log('Azure endpoint:', process.env.AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT);
+    console.log('Azure key exists:', !!process.env.AZURE_DOCUMENT_INTELLIGENCE_KEY);
+    console.log('Azure key length:', process.env.AZURE_DOCUMENT_INTELLIGENCE_KEY?.length);
+    console.log('=================================');
+
     // Try Azure Document Intelligence first
     const useAzure = process.env.AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT &&
                      process.env.AZURE_DOCUMENT_INTELLIGENCE_KEY;
+
+    console.log('useAzure decision:', useAzure);
 
     if (useAzure) {
       console.log('[PDF Parser] Using Azure Document Intelligence for table extraction...');
