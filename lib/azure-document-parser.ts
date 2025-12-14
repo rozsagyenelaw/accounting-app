@@ -37,12 +37,12 @@ const RECEIPT_PATTERNS = [
 ];
 
 // GC-400 Category mappings
-// IMPORTANT: Order matters! More specific patterns MUST come before generic ones
+// IMPORTANT: Most specific patterns first, checked in order
 const CATEGORY_MAPPINGS = {
-  // Schedule A - Receipts (ORDERED BY SPECIFICITY - most specific first)
-  "A(3) Pensions": [/FLETCHER JONES/i, /PENSION/i, /ANNUITY/i],
+  // Schedule A - Receipts (MOST SPECIFIC FIRST)
+  "A(3) Pensions": [/FLETCHER.*JONES/i, /WIRE.*FLETCHER/i, /PENSION/i, /ANNUITY/i],
   "A(5) Social Security": [/SSA TREAS/i, /SOC SEC/i, /SOCIAL SECURITY/i],
-  "A(2) Interest": [/interest\s+earned/i, /interest\s+payment/i, /dividend/i, /APY/i],
+  "A(2) Interest": [/^INTEREST EARNED/i, /^INTEREST PAYMENT/i, /DIVIDEND INCOME/i, /^APY\s/i],
   "A(6) Other Receipts": [/REFUND/i, /TAX REF/i, /IRS TREAS/i],
 
   // Schedule C - Disbursements (ORDERED BY SPECIFICITY)

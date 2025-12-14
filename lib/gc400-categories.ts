@@ -24,32 +24,36 @@ export interface CategoryResult {
 // ============================================================================
 
 export const RECEIPT_CATEGORIES: CategoryRule[] = [
-  // A(3) - Pensions, Annuities, Trust Distributions (MUST BE FIRST - higher priority than Interest)
+  // A(3) - Pensions, Annuities, Trust Distributions (MUST BE FIRST - higher priority)
   {
     code: 'A3_PENSIONS_ANNUITIES',
     name: 'Pensions, Annuities, and Other Regular Periodic Payments',
     patterns: [
       /fletcher\s+jones/i,
+      /fletcher.*jones/i,
+      /wire.*fletcher/i,
       /trust.*distribution/i,
       /pension/i,
       /annuity/i,
-      /retirement/i
+      /retirement\s+income/i
     ],
-    weight: 4.0  // Higher weight than Interest
+    weight: 5.0  // HIGHEST weight - must beat Interest
   },
 
-  // A(2) - Interest (AFTER Pensions to avoid false matches)
+  // A(2) - Interest (very specific patterns only - NO generic "interest")
   {
     code: 'A2_INTEREST',
     name: 'Interest',
     patterns: [
-      /interest\s+earned/i,
-      /interest\s+payment/i,
-      /\bdividend\b/i,
-      /int\s+paid/i,
-      /int\s+credit/i
+      /^interest\s+earned/i,
+      /^interest\s+payment/i,
+      /\bdividend\s+income\b/i,
+      /\bdividend\s+payment\b/i,
+      /^int\s+paid/i,
+      /^int\s+credit/i,
+      /^apy\s/i
     ],
-    weight: 3.0
+    weight: 2.0  // Lower weight than Pensions
   },
 
   // A(5) - Social Security, VA Benefits
