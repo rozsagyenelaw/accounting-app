@@ -5,6 +5,7 @@ import pdf from 'pdf-parse/lib/pdf-parse.js';
 import { extractTextFromScannedPDF, isScannedPDF } from '@/lib/ocr';
 import { parseBankStatements, validateResults } from '@/lib/bank-statement-parser-fixed';
 import { categorizeTransaction } from '@/lib/gc400-categories';
+import { parseWithAzure, parseExcelFile } from '@/lib/azure-document-parser';
 
 // Date parsing formats
 const DATE_FORMATS = [
@@ -121,12 +122,14 @@ export async function POST(request: NextRequest) {
 
     if (fileName.endsWith('.csv')) {
       return await parseCSV(file);
+    } else if (fileName.endsWith('.xlsx') || fileName.endsWith('.xls')) {
+      return await parseExcelFileRoute(file);
     } else if (fileName.endsWith('.pdf')) {
       return await parsePDF(file);
     } else {
       return NextResponse.json({
         transactions: [],
-        errors: ['Unsupported file type. Please upload CSV or PDF files.'],
+        errors: ['Unsupported file type. Please upload CSV, XLSX, or PDF files.'],
         warnings: []
       }, { status: 400 });
     }
@@ -261,6 +264,51 @@ async function parseCSV(file: File): Promise<NextResponse> {
   });
 }
 
+async function parseExcelFileRoute(file: File): Promise<NextResponse> {
+  const errors: string[] = [];
+  const warnings: string[] = [];
+  const transactions: any[] = [];
+
+  try {
+    const arrayBuffer = await file.arrayBuffer();
+    const buffer = Buffer.from(arrayBuffer);
+
+    console.log('[Excel Parser] Parsing Excel file...');
+
+    const result = await parseExcelFile(buffer);
+
+    warnings.push(...result.warnings);
+
+    // Convert format to API format
+    for (const txn of result.transactions) {
+      transactions.push({
+        date: new Date(txn.date).toISOString(),
+        description: txn.description,
+        amount: txn.amount,
+        type: txn.type,
+        category: txn.category,
+        subCategory: null,
+        confidence: txn.confidence,
+      });
+    }
+
+    console.log(`[Excel Parser] Successfully extracted ${transactions.length} transactions`);
+    console.log(`[Excel Parser] Total Receipts: $${result.totalReceipts.toFixed(2)}`);
+    console.log(`[Excel Parser] Total Disbursements: $${result.totalDisbursements.toFixed(2)}`);
+
+    if (transactions.length === 0) {
+      errors.push('No transactions found in Excel file.');
+      errors.push('This may indicate: (1) Unsupported format, (2) Missing headers, or (3) Empty file');
+    }
+
+    return NextResponse.json({ transactions, errors, warnings });
+  } catch (error) {
+    console.error('[Excel Parser] Error:', error);
+    errors.push(`Failed to parse Excel file: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    return NextResponse.json({ transactions, errors, warnings }, { status: 500 });
+  }
+}
+
 async function parsePDF(file: File): Promise<NextResponse> {
   const errors: string[] = [];
   const warnings: string[] = [];
@@ -269,6 +317,55 @@ async function parsePDF(file: File): Promise<NextResponse> {
   try {
     const arrayBuffer = await file.arrayBuffer();
     const buffer = Buffer.from(arrayBuffer);
+
+    // Try Azure Document Intelligence first
+    const useAzure = process.env.AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT &&
+                     process.env.AZURE_DOCUMENT_INTELLIGENCE_KEY;
+
+    if (useAzure) {
+      console.log('[PDF Parser] Using Azure Document Intelligence for table extraction...');
+
+      try {
+        const result = await parseWithAzure(buffer);
+
+        warnings.push(...result.warnings);
+
+        // Convert Azure format to API format
+        for (const txn of result.transactions) {
+          transactions.push({
+            date: new Date(txn.date).toISOString(),
+            description: txn.description,
+            amount: txn.amount,
+            type: txn.type,
+            category: txn.category,
+            subCategory: null,
+            confidence: txn.confidence,
+          });
+        }
+
+        console.log(`[Azure Parser] Successfully extracted ${transactions.length} transactions`);
+        console.log(`[Azure Parser] Total Receipts: $${result.totalReceipts.toFixed(2)}`);
+        console.log(`[Azure Parser] Total Disbursements: $${result.totalDisbursements.toFixed(2)}`);
+
+        if (transactions.length === 0) {
+          errors.push('Azure Document Intelligence found no transactions in the PDF.');
+          errors.push('This may indicate: (1) Unsupported statement format, (2) Low quality scan, or (3) Invalid PDF structure');
+          warnings.push('Tip: Try uploading as XLSX/Excel format if your bank provides it.');
+        }
+
+        return NextResponse.json({ transactions, errors, warnings });
+      } catch (azureError) {
+        console.error('[Azure Parser] Error:', azureError);
+        const azureErrorMsg = azureError instanceof Error ? azureError.message : 'Unknown error';
+
+        // If Azure fails, fall back to legacy OCR parser
+        console.log('[Azure Parser] Failed, falling back to legacy OCR parser...');
+        warnings.push(`Azure parsing failed: ${azureErrorMsg}. Attempting legacy OCR parser...`);
+      }
+    }
+
+    // FALLBACK: Use legacy OCR parser if Azure is not configured or failed
+    console.log('[PDF Parser] Using legacy OCR parser (fallback)...');
 
     // First, try to extract text directly
     const data = await pdf(buffer);

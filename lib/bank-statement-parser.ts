@@ -250,7 +250,8 @@ function parseDepositSection(text: string): ParsedTransaction[] {
 }
 
 /**
- * Parse ATM/Debit section (DISBURSEMENTS)
+ * Parse ATM/Debit section (DISBURSEMENTS) using HYBRID approach
+ * Tries line-by-line regex first, then falls back to proximity matching
  */
 function parseATMDebitSection(text: string): ParsedTransaction[] {
   console.log('[DEBUG] ATM/Debit section sample (first 800 chars):');
@@ -262,10 +263,11 @@ function parseATMDebitSection(text: string): ParsedTransaction[] {
 
   console.log(`[DEBUG] ATM/Debit section has ${lines.length} lines`);
 
+  // STEP 1: Try line-by-line matching first (for all-on-one-line format)
+  const lineByLineTransactions: ParsedTransaction[] = [];
+
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
-
-    // Skip empty lines
     if (!line.trim()) continue;
 
     // Skip header lines
@@ -276,32 +278,17 @@ function parseATMDebitSection(text: string): ParsedTransaction[] {
       continue;
     }
 
-    // Log first 10 non-header lines for debugging
-    if (transactions.length < 3 && line.trim().length > 10) {
-      console.log(`[DEBUG] ATM/Debit line ${i}: "${line}"`);
-    }
-
-    // Try multiple regex patterns
-
-    // Pattern 1: DATE DESCRIPTION -AMOUNT or AMOUNT
-    let match = line.match(/^(\d{1,2}\/\d{1,2}\/\d{2,4})\s+(.+?)\s+-?([\d,]+\.\d{2})\s*$/);
-
-    // Pattern 2: More flexible whitespace
-    if (!match) {
-      match = line.match(/^(\d{1,2}\/\d{1,2}\/\d{2,4})\s+(.+)\s+-?([\d,]+\.\d{2})$/);
-    }
+    // Pattern: DATE DESCRIPTION -AMOUNT or AMOUNT
+    const match = line.match(/^(\d{1,2}\/\d{1,2}\/\d{2,4})\s+(.+?)\s+(-?[\d,]+\.\d{2})\s*$/);
 
     if (match) {
       const date = parseDate(match[1]);
-      if (!date) {
-        console.log(`[DEBUG] Failed to parse date: "${match[1]}" from line: "${line}"`);
-        continue;
-      }
+      if (!date) continue;
 
-      const amount = parseFloat(match[3].replace(/,/g, ''));
+      const amount = parseFloat(match[3].replace(/[$,\-]/g, ''));
       if (isNaN(amount) || amount <= 0) continue;
 
-      transactions.push({
+      lineByLineTransactions.push({
         date,
         description: match[2].trim(),
         amount,
@@ -310,18 +297,231 @@ function parseATMDebitSection(text: string): ParsedTransaction[] {
         rawLine: line
       });
 
-      if (transactions.length <= 3) {
-        console.log(`[DEBUG] Parsed ATM/Debit: ${date.toISOString().split('T')[0]} | ${match[2].trim()} | $${amount}`);
+      if (lineByLineTransactions.length <= 3) {
+        console.log(`[DEBUG] Line-by-line matched: ${date.toISOString().split('T')[0]} | ${match[2].trim().substring(0, 40)} | $${amount}`);
       }
     }
   }
 
-  console.log(`[DEBUG] ATM/Debit section parsed ${transactions.length} transactions`);
+  console.log(`[DEBUG] Line-by-line matching found ${lineByLineTransactions.length} transactions`);
+
+  // If line-by-line found enough transactions, use those
+  if (lineByLineTransactions.length > 0) {
+    return lineByLineTransactions;
+  }
+
+  // STEP 2: Fall back to proximity matching for split-across-lines format
+  console.log(`[DEBUG] Falling back to proximity matching...`);
+
+  // Step 1: Find all dates with their line numbers
+  interface DateMatch {
+    line: number;
+    month: string;
+    day: string;
+    year: string;
+    raw: string;
+  }
+  const dates: DateMatch[] = [];
+  const datePattern = /(\d{1,2})\s*\/\s*(\d{1,2})\s*\/\s*(\d{2,4})/;
+
+  for (let i = 0; i < lines.length; i++) {
+    const match = lines[i].match(datePattern);
+    // Look for date-only lines (relaxed constraint - removed strict length limit)
+    // A line is date-only if it has a date pattern and doesn't have long merchant text
+    if (match) {
+      const lineWithoutDate = lines[i].replace(datePattern, '').trim();
+      // If line has minimal text after removing date, it's a date-only line
+      if (lineWithoutDate.length < 30) {
+        dates.push({
+          line: i,
+          month: match[1],
+          day: match[2],
+          year: match[3],
+          raw: match[0]
+        });
+        if (dates.length <= 10) {
+          console.log(`[DEBUG] Found date at line ${i}: ${match[0]}`);
+        }
+      }
+    }
+  }
+
+  // Step 2: Find all amounts with their line numbers
+  interface AmountMatch {
+    line: number;
+    value: number;
+    raw: string;
+  }
+  const amounts: AmountMatch[] = [];
+  // Match amounts either:
+  // 1. On a line by themselves: "  -127.33  "
+  // 2. At the end of a line with text before: "SOMETHING -127.33"
+  const amountPattern = /(-?\$?[\d,]+\.\d{2})\s*$/;
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (line.length === 0) continue;
+
+    const match = line.match(amountPattern);
+    if (match) {
+      const value = parseFloat(match[1].replace(/[$,\-]/g, ''));
+      if (!isNaN(value) && value > 0) {
+        amounts.push({
+          line: i,
+          value,
+          raw: match[1]
+        });
+        if (amounts.length <= 10) {
+          console.log(`[DEBUG] Found amount at line ${i}: ${match[1]} -> $${value}`);
+        }
+      }
+    }
+  }
+
+  // Step 3: Find all descriptions (lines with merchant keywords)
+  interface DescriptionMatch {
+    line: number;
+    text: string;
+  }
+  const descriptions: DescriptionMatch[] = [];
+  const merchantPattern = /GELSON|SPROUTS|TRADER JOE|AMAZON|AMZN|HOME DEPOT|STARBUCKS|CVS|TARGET|WALMART|COSTCO|SSA TREAS|FLETCHER JONES|WIRE|SPECTRUM|SOCALGAS|CHECKCARD|PURCHASE|LADWP|ATT DES|CHARTER COMM|RALPHS|VONS|WHOLE FOODS|CHEVRON|SHELL|ARCO|USPS|LA FITNESS|CHIPOTLE|TRUPANION|SHARP PET|JORDANS|SMILE|RUSTY|NORDSTROM|MACY|HOBBY LOBBY|MICHAELS|WALGREENS|RITE AID|DUNN-EDWARDS|VIOC|RING|BUILD\.COM|TRANSWORLD|ALL STAR|FATBURGER|OUTBACK|SHAKE SHACK|BOX THAI|RIBS USA|FRANKIE|SHARKY|VINTAGE GROCER|BAJA FRESH|SUGAR NAILS|ANYTIME WINDOWS|WEST COAST LOCK|CARFAX|STUDIO SMOG|Interest Earned|NST THE HOME|Deposit Dividend|DEBIT|ONLINE|PAYMENT|#\d{6,}/i;
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    // Skip header lines
+    const lineLower = line.toLowerCase();
+    if (lineLower.includes('date') && lineLower.includes('description') && lineLower.includes('amount')) {
+      continue;
+    }
+
+    // Relaxed length requirement - accept any line with merchant keywords
+    if (merchantPattern.test(line) && line.trim().length > 10) {
+      descriptions.push({
+        line: i,
+        text: line.trim()
+      });
+      if (descriptions.length <= 10) {
+        console.log(`[DEBUG] Found description at line ${i}: ${line.trim().substring(0, 60)}...`);
+      }
+    }
+  }
+
+  console.log(`[DEBUG] Found ${dates.length} dates, ${amounts.length} amounts, ${descriptions.length} descriptions`);
+
+  // Step 4: Smart matching strategy
+  // Strategy A: If counts are similar, try positional matching (table with separate columns)
+  // Strategy B: Otherwise use proximity matching (inline or nearby)
+
+  const usedDates = new Set<number>();
+  const usedAmounts = new Set<number>();
+  const usedDescriptions = new Set<number>();
+
+  const minCount = Math.min(dates.length, amounts.length, descriptions.length);
+  const maxCount = Math.max(dates.length, amounts.length, descriptions.length);
+  const countsAreSimilar = minCount > 0 && (maxCount / minCount) < 2;
+
+  if (countsAreSimilar && minCount >= 3) {
+    // Strategy A: Positional matching (table format with columnar data)
+    console.log(`[DEBUG] Using positional matching (table format detected)`);
+
+    const transactionCount = Math.min(dates.length, amounts.length, descriptions.length);
+    for (let i = 0; i < transactionCount; i++) {
+      if (usedDates.has(i) || usedAmounts.has(i) || usedDescriptions.has(i)) continue;
+
+      const dateMatch = dates[i];
+      const desc = descriptions[i];
+      const amount = amounts[i];
+
+      // Parse the date
+      let year = parseInt(dateMatch.year, 10);
+      if (year < 100) {
+        year = year >= 50 ? 1900 + year : 2000 + year;
+      }
+
+      const date = parseDate(`${dateMatch.month}/${dateMatch.day}/${year}`);
+
+      if (date) {
+        transactions.push({
+          date,
+          description: desc.text.substring(0, 100),
+          amount: amount.value,
+          type: 'DISBURSEMENT',
+          sectionType: 'atm_debit',
+          rawLine: `Positional match ${i}`
+        });
+
+        if (transactions.length <= 5) {
+          console.log(`[DEBUG] Positional match ${i}: ${date.toISOString().split('T')[0]} | ${desc.text.substring(0, 30)}... | $${amount.value}`);
+        }
+
+        usedDates.add(i);
+        usedAmounts.add(i);
+        usedDescriptions.add(i);
+      }
+    }
+  } else {
+    // Strategy B: Proximity matching (inline or nearby format)
+    console.log(`[DEBUG] Using proximity matching`);
+
+    for (const desc of descriptions) {
+      // Find nearest date: Try BEFORE description (within 50 lines for table format) or AFTER (within 10 lines)
+      let nearestDate = dates
+        .filter(d => d.line < desc.line && d.line > desc.line - 50 && !usedDates.has(d.line))
+        .sort((a, b) => b.line - a.line)[0];
+
+      if (!nearestDate) {
+        nearestDate = dates
+          .filter(d => d.line > desc.line && d.line < desc.line + 10 && !usedDates.has(d.line))
+          .sort((a, b) => a.line - b.line)[0];
+      }
+
+      // Find nearest amount: Check same line first, then within 60 lines after (for table format where amounts are grouped at end)
+      let nearestAmount = amounts.find(a => a.line === desc.line && !usedAmounts.has(a.line));
+
+      if (!nearestAmount) {
+        nearestAmount = amounts
+          .filter(a => a.line > desc.line && a.line < desc.line + 60 && !usedAmounts.has(a.line))
+          .sort((a, b) => a.line - b.line)[0];
+      }
+
+      if (nearestDate && nearestAmount) {
+        // Parse the date
+        let year = parseInt(nearestDate.year, 10);
+        if (year < 100) {
+          year = year >= 50 ? 1900 + year : 2000 + year;
+        }
+
+        const date = parseDate(`${nearestDate.month}/${nearestDate.day}/${year}`);
+
+        if (date) {
+          transactions.push({
+            date,
+            description: desc.text.substring(0, 100),
+            amount: nearestAmount.value,
+            type: 'DISBURSEMENT',
+            sectionType: 'atm_debit',
+            rawLine: `Lines ${nearestDate.line}-${nearestAmount.line}`
+          });
+
+          if (transactions.length <= 5) {
+            console.log(`[DEBUG] Proximity matched: ${date.toISOString().split('T')[0]} | ${desc.text.substring(0, 30)}... | $${nearestAmount.value}`);
+          }
+
+          // Mark as used to avoid duplicates
+          usedDates.add(nearestDate.line);
+          usedAmounts.add(nearestAmount.line);
+        }
+      }
+    }
+  }
+
+  console.log(`[DEBUG] ATM/Debit section parsed ${transactions.length} transactions using proximity matching`);
   return transactions;
 }
 
 /**
- * Parse Other Subtractions section (DISBURSEMENTS)
+ * Parse Other Subtractions section (DISBURSEMENTS) using proximity matching
+ * Handles OCR that splits transactions across multiple lines
  */
 function parseOtherSubtractions(text: string): ParsedTransaction[] {
   console.log('[DEBUG] Other Subtractions section sample (first 800 chars):');
@@ -333,58 +533,201 @@ function parseOtherSubtractions(text: string): ParsedTransaction[] {
 
   console.log(`[DEBUG] Other Subtractions section has ${lines.length} lines`);
 
+  // Step 1: Find all dates with their line numbers
+  interface DateMatch {
+    line: number;
+    month: string;
+    day: string;
+    year: string;
+    raw: string;
+  }
+  const dates: DateMatch[] = [];
+  const datePattern = /(\d{1,2})\s*\/\s*(\d{1,2})\s*\/\s*(\d{2,4})/;
+
   for (let i = 0; i < lines.length; i++) {
-    const line = lines[i];
-
-    // Skip empty lines
-    if (!line.trim()) continue;
-
-    // Skip header lines
-    const lineLower = line.toLowerCase();
-    if (lineLower.includes('date') ||
-        lineLower.includes('description') ||
-        lineLower.includes('amount')) {
-      continue;
-    }
-
-    // Log first 10 non-header lines for debugging
-    if (transactions.length < 3 && line.trim().length > 10) {
-      console.log(`[DEBUG] Other Subtractions line ${i}: "${line}"`);
-    }
-
-    // Match: DATE DESCRIPTION -AMOUNT
-    let match = line.match(/^(\d{1,2}\/\d{1,2}\/\d{2,4})\s+(.+?)\s+-?([\d,]+\.\d{2})\s*$/);
-
-    if (!match) {
-      match = line.match(/^(\d{1,2}\/\d{1,2}\/\d{2,4})\s+(.+)\s+-?([\d,]+\.\d{2})$/);
-    }
-
+    const match = lines[i].match(datePattern);
+    // Look for date-only lines (relaxed constraint - removed strict length limit)
+    // A line is date-only if it has a date pattern and doesn't have long merchant text
     if (match) {
-      const date = parseDate(match[1]);
-      if (!date) {
-        console.log(`[DEBUG] Failed to parse date: "${match[1]}" from line: "${line}"`);
-        continue;
-      }
-
-      const amount = parseFloat(match[3].replace(/,/g, ''));
-      if (isNaN(amount) || amount <= 0) continue;
-
-      transactions.push({
-        date,
-        description: match[2].trim(),
-        amount,
-        type: 'DISBURSEMENT',
-        sectionType: 'other_subtractions',
-        rawLine: line
-      });
-
-      if (transactions.length <= 3) {
-        console.log(`[DEBUG] Parsed Other Subtraction: ${date.toISOString().split('T')[0]} | ${match[2].trim()} | $${amount}`);
+      const lineWithoutDate = lines[i].replace(datePattern, '').trim();
+      // If line has minimal text after removing date, it's a date-only line
+      if (lineWithoutDate.length < 30) {
+        dates.push({
+          line: i,
+          month: match[1],
+          day: match[2],
+          year: match[3],
+          raw: match[0]
+        });
+        if (dates.length <= 10) {
+          console.log(`[DEBUG] Found date at line ${i}: ${match[0]}`);
+        }
       }
     }
   }
 
-  console.log(`[DEBUG] Other Subtractions section parsed ${transactions.length} transactions`);
+  // Step 2: Find all amounts with their line numbers
+  interface AmountMatch {
+    line: number;
+    value: number;
+    raw: string;
+  }
+  const amounts: AmountMatch[] = [];
+  // Match amounts either:
+  // 1. On a line by themselves: "  -127.33  "
+  // 2. At the end of a line with text before: "SOMETHING -127.33"
+  const amountPattern = /(-?\$?[\d,]+\.\d{2})\s*$/;
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (line.length === 0) continue;
+
+    const match = line.match(amountPattern);
+    if (match) {
+      const value = parseFloat(match[1].replace(/[$,\-]/g, ''));
+      if (!isNaN(value) && value > 0) {
+        amounts.push({
+          line: i,
+          value,
+          raw: match[1]
+        });
+        if (amounts.length <= 10) {
+          console.log(`[DEBUG] Found amount at line ${i}: ${match[1]} -> $${value}`);
+        }
+      }
+    }
+  }
+
+  // Step 3: Find all descriptions (look for service keywords or any substantive text)
+  interface DescriptionMatch {
+    line: number;
+    text: string;
+  }
+  const descriptions: DescriptionMatch[] = [];
+  const merchantPattern = /WIRE|TRANSFER|FEE|SERVICE|CHARGE|INTEREST|ACH|PAYMENT|ONLINE|BILL PAY|CHECK|OVERDRAFT|RETURN|NSF|LADWP|ATT DES|CHARTER COMM|SPECTRUM|SOCALGAS|VERIZON|T-MOBILE|SPRINT|MORTGAGE|LOAN|INSURANCE|MEDICAL|DENTAL|VISION|GEICO|STATE FARM|ALLSTATE|PROGRESSIVE|#\d{6,}/i;
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    // Skip header lines
+    const lineLower = line.toLowerCase();
+    if (lineLower.includes('date') && lineLower.includes('description') && lineLower.includes('amount')) {
+      continue;
+    }
+
+    // Relaxed length requirement
+    if (merchantPattern.test(line) && line.trim().length > 10) {
+      descriptions.push({
+        line: i,
+        text: line.trim()
+      });
+      if (descriptions.length <= 10) {
+        console.log(`[DEBUG] Found description at line ${i}: ${line.trim().substring(0, 60)}...`);
+      }
+    }
+  }
+
+  console.log(`[DEBUG] Found ${dates.length} dates, ${amounts.length} amounts, ${descriptions.length} descriptions`);
+
+  // Step 4: Smart matching strategy
+  const usedDates = new Set<number>();
+  const usedAmounts = new Set<number>();
+  const usedDescriptions = new Set<number>();
+
+  const minCount = Math.min(dates.length, amounts.length, descriptions.length);
+  const maxCount = Math.max(dates.length, amounts.length, descriptions.length);
+  const countsAreSimilar = minCount > 0 && (maxCount / minCount) < 2;
+
+  if (countsAreSimilar && minCount >= 3) {
+    // Strategy A: Positional matching
+    console.log(`[DEBUG] Using positional matching (table format detected)`);
+
+    const transactionCount = Math.min(dates.length, amounts.length, descriptions.length);
+    for (let i = 0; i < transactionCount; i++) {
+      if (usedDates.has(i) || usedAmounts.has(i) || usedDescriptions.has(i)) continue;
+
+      const dateMatch = dates[i];
+      const desc = descriptions[i];
+      const amount = amounts[i];
+
+      let year = parseInt(dateMatch.year, 10);
+      if (year < 100) {
+        year = year >= 50 ? 1900 + year : 2000 + year;
+      }
+
+      const date = parseDate(`${dateMatch.month}/${dateMatch.day}/${year}`);
+
+      if (date) {
+        transactions.push({
+          date,
+          description: desc.text.substring(0, 100),
+          amount: amount.value,
+          type: 'DISBURSEMENT',
+          sectionType: 'other_subtractions',
+          rawLine: `Positional match ${i}`
+        });
+
+        if (transactions.length <= 5) {
+          console.log(`[DEBUG] Positional match ${i}: ${date.toISOString().split('T')[0]} | ${desc.text.substring(0, 30)}... | $${amount.value}`);
+        }
+
+        usedDates.add(i);
+        usedAmounts.add(i);
+        usedDescriptions.add(i);
+      }
+    }
+  } else {
+    // Strategy B: Proximity matching
+    console.log(`[DEBUG] Using proximity matching`);
+
+    for (const desc of descriptions) {
+      let nearestDate = dates
+        .filter(d => d.line < desc.line && d.line > desc.line - 50 && !usedDates.has(d.line))
+        .sort((a, b) => b.line - a.line)[0];
+
+      if (!nearestDate) {
+        nearestDate = dates
+          .filter(d => d.line > desc.line && d.line < desc.line + 10 && !usedDates.has(d.line))
+          .sort((a, b) => a.line - b.line)[0];
+      }
+
+      let nearestAmount = amounts.find(a => a.line === desc.line && !usedAmounts.has(a.line));
+
+      if (!nearestAmount) {
+        nearestAmount = amounts
+          .filter(a => a.line > desc.line && a.line < desc.line + 60 && !usedAmounts.has(a.line))
+          .sort((a, b) => a.line - b.line)[0];
+      }
+
+      if (nearestDate && nearestAmount) {
+        let year = parseInt(nearestDate.year, 10);
+        if (year < 100) {
+          year = year >= 50 ? 1900 + year : 2000 + year;
+        }
+
+        const date = parseDate(`${nearestDate.month}/${nearestDate.day}/${year}`);
+
+        if (date) {
+          transactions.push({
+            date,
+            description: desc.text.substring(0, 100),
+            amount: nearestAmount.value,
+            type: 'DISBURSEMENT',
+            sectionType: 'other_subtractions',
+            rawLine: `Lines ${nearestDate.line}-${nearestAmount.line}`
+          });
+
+          if (transactions.length <= 5) {
+            console.log(`[DEBUG] Proximity matched: ${date.toISOString().split('T')[0]} | ${desc.text.substring(0, 30)}... | $${nearestAmount.value}`);
+          }
+
+          usedDates.add(nearestDate.line);
+          usedAmounts.add(nearestAmount.line);
+        }
+      }
+    }
+  }
+
+  console.log(`[DEBUG] Other Subtractions section parsed ${transactions.length} transactions using smart matching`);
   return transactions;
 }
 
@@ -422,7 +765,8 @@ function parseChecksSection(text: string): ParsedTransaction[] {
     }
 
     // Pattern: DATE CHECK# AMOUNT (may appear twice per line)
-    const checkPattern = /(\d{1,2}\/\d{1,2}\/\d{2,4})\s+(\d+)\s+\*?\s*-?([\d,]+\.\d{2})/g;
+    // More flexible pattern to handle OCR errors - check# might have garbage chars
+    const checkPattern = /(\d{1,2}\/\d{1,2}\/\d{2,4})\s+[+*#]*\s*(\d+)\s*[*+]*\s+[^\d\-]*\s*-?([\d,]+\.\d{2})/g;
 
     let match;
     let matchCount = 0;

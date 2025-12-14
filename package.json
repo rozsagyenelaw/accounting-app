@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@azure/ai-form-recognizer": "^5.1.0",
     "@radix-ui/react-dialog": "^1.1.2",
     "@radix-ui/react-label": "^2.1.0",
     "@radix-ui/react-progress": "^1.1.0",
@@ -30,6 +31,7 @@
     "react-hook-form": "^7.53.2",
     "sharp": "^0.34.5",
     "tailwind-merge": "^3.4.0",
+    "xlsx": "^0.18.5",
     "zustand": "^5.0.2"
   },
   "devDependencies": {

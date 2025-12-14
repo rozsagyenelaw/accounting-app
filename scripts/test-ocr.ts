@@ -1,4 +1,5 @@
 import { extractTextFromScannedPDF } from '../lib/ocr.js';
+import { parseBankOfAmericaStatement } from '../lib/bank-statement-parser.js';
 import fs from 'fs/promises';
 
 /**
@@ -19,7 +20,7 @@ async function testOCR() {
 
     const text = await extractTextFromScannedPDF(buffer, {
       language: 'eng',
-      pageLimit: 5, // Process only first 5 pages for testing
+      // No page limit - process all pages
     });
 
     const duration = ((Date.now() - startTime) / 1000).toFixed(2);
@@ -36,6 +37,25 @@ async function testOCR() {
 
     if (dates && dates.length > 0) {
       console.log('Sample dates found:', dates.slice(0, 10));
+    }
+
+    // Now parse transactions using the new proximity-based parser
+    console.log('\n\n=== Parsing transactions with proximity matching ===\n');
+    const transactions = parseBankOfAmericaStatement(text);
+
+    console.log(`\n✅ Parsed ${transactions.length} total transactions`);
+
+    const receipts = transactions.filter(t => t.type === 'RECEIPT');
+    const disbursements = transactions.filter(t => t.type === 'DISBURSEMENT');
+
+    console.log(`   Receipts: ${receipts.length}`);
+    console.log(`   Disbursements: ${disbursements.length}`);
+
+    if (transactions.length > 0) {
+      console.log('\n=== Sample transactions ===');
+      transactions.slice(0, 10).forEach(t => {
+        console.log(`${t.date.toISOString().split('T')[0]} | ${t.type.padEnd(13)} | $${t.amount.toFixed(2).padStart(10)} | ${t.description.substring(0, 50)}`);
+      });
     }
   } catch (error) {
     console.error('\n❌ Error:', error);
