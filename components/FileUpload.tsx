@@ -7,7 +7,7 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import type { Transaction } from '@/types';
 
 export function FileUpload({ onNext, onBack }: { onNext: () => void; onBack: () => void }) {
-  const { setTransactions } = useAccountingStore();
+  const { setTransactions, transactions } = useAccountingStore();
   const [files, setFiles] = useState<File[]>([]);
   const [parsing, setParsing] = useState(false);
   const [dragActive, setDragActive] = useState(false);
@@ -131,8 +131,36 @@ export function FileUpload({ onNext, onBack }: { onNext: () => void; onBack: () 
     }
   };
 
+  const handleSkip = () => {
+    // Allow skipping file upload if transactions already exist
+    onNext();
+  };
+
   return (
     <div className="space-y-6">
+      {/* Show existing transactions info */}
+      {transactions.length > 0 && (
+        <Card>
+          <CardContent className="pt-6">
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+              <div className="flex items-center justify-between">
+                <div>
+                  <h3 className="font-medium text-blue-900">
+                    You have {transactions.length} transactions saved
+                  </h3>
+                  <p className="text-sm text-blue-700 mt-1">
+                    You can skip uploading and continue to review your existing transactions, or upload new statements to replace them.
+                  </p>
+                </div>
+                <Button onClick={handleSkip} variant="default">
+                  Use Existing Transactions →
+                </Button>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      )}
+
       <Card>
         <CardHeader>
           <CardTitle>Upload Bank Statements</CardTitle>
@@ -284,13 +312,20 @@ export function FileUpload({ onNext, onBack }: { onNext: () => void; onBack: () 
         <Button type="button" variant="outline" onClick={onBack}>
           Back
         </Button>
-        <Button
-          type="button"
-          onClick={handleNext}
-          disabled={!parseResults || parseResults.success === 0}
-        >
-          Continue to Review Transactions
-        </Button>
+        <div className="flex gap-3">
+          {transactions.length > 0 && (
+            <Button type="button" variant="outline" onClick={handleSkip}>
+              Skip Upload (Use Saved Transactions)
+            </Button>
+          )}
+          <Button
+            type="button"
+            onClick={handleNext}
+            disabled={!parseResults || parseResults.success === 0}
+          >
+            Continue to Review Transactions
+          </Button>
+        </div>
       </div>
     </div>
   );
