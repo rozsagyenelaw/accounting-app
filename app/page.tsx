@@ -11,11 +11,34 @@ import { SummaryDashboard } from '@/components/SummaryDashboard';
 import { Button } from '@/components/ui/button';
 
 export default function Home() {
-  const { currentStep, setCurrentStep, initializeSession, resetSession } = useAccountingStore();
+  const { currentStep, setCurrentStep, initializeSession, resetSession, setTransactions } = useAccountingStore();
 
   useEffect(() => {
     initializeSession();
-  }, [initializeSession]);
+
+    // Load transactions from database on startup
+    const loadFromDatabase = async () => {
+      try {
+        const response = await fetch('/api/transactions');
+        if (response.ok) {
+          const data = await response.json();
+          if (data.transactions && data.transactions.length > 0) {
+            // Convert date strings back to Date objects
+            const transactions = data.transactions.map((t: any) => ({
+              ...t,
+              date: new Date(t.date),
+            }));
+            setTransactions(transactions);
+            console.log(`[App] Loaded ${transactions.length} transactions from database`);
+          }
+        }
+      } catch (error) {
+        console.error('[App] Failed to load transactions from database:', error);
+      }
+    };
+
+    loadFromDatabase();
+  }, [initializeSession, setTransactions]);
 
   const goToNextStep = () => {
     setCurrentStep(currentStep + 1);

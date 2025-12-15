@@ -93,25 +93,64 @@ export const useAccountingStore = create<AccountingStore>()(
         })),
 
       // Transaction Actions
-      setTransactions: (transactions) =>
-        set({ transactions }),
+      setTransactions: (transactions) => {
+        set({ transactions });
+        // Auto-save to database
+        if (typeof window !== 'undefined') {
+          fetch('/api/transactions', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ transactions }),
+          }).catch(err => console.error('[Store] Failed to save transactions:', err));
+        }
+      },
 
-      addTransaction: (transaction) =>
-        set((state) => ({
-          transactions: [...state.transactions, transaction],
-        })),
+      addTransaction: (transaction) => {
+        set((state) => {
+          const newTransactions = [...state.transactions, transaction];
+          // Auto-save to database
+          if (typeof window !== 'undefined') {
+            fetch('/api/transactions', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ transactions: newTransactions }),
+            }).catch(err => console.error('[Store] Failed to save transactions:', err));
+          }
+          return { transactions: newTransactions };
+        });
+      },
 
-      updateTransaction: (id, updates) =>
-        set((state) => ({
-          transactions: state.transactions.map((t) =>
+      updateTransaction: (id, updates) => {
+        set((state) => {
+          const newTransactions = state.transactions.map((t) =>
             t.id === id ? { ...t, ...updates } : t
-          ),
-        })),
+          );
+          // Auto-save to database
+          if (typeof window !== 'undefined') {
+            fetch('/api/transactions', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ transactions: newTransactions }),
+            }).catch(err => console.error('[Store] Failed to save transactions:', err));
+          }
+          return { transactions: newTransactions };
+        });
+      },
 
-      deleteTransaction: (id) =>
-        set((state) => ({
-          transactions: state.transactions.filter((t) => t.id !== id),
-        })),
+      deleteTransaction: (id) => {
+        set((state) => {
+          const newTransactions = state.transactions.filter((t) => t.id !== id);
+          // Auto-save to database
+          if (typeof window !== 'undefined') {
+            fetch('/api/transactions', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ transactions: newTransactions }),
+            }).catch(err => console.error('[Store] Failed to save transactions:', err));
+          }
+          return { transactions: newTransactions };
+        });
+      },
 
       // UI Actions
       setCurrentStep: (step) =>
