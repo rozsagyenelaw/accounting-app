@@ -23,7 +23,14 @@ export async function GET() {
       ORDER BY date ASC
     `);
 
-    return NextResponse.json({ transactions: result.rows });
+    // Ensure amounts are numbers, not strings
+    const transactions = result.rows.map(row => ({
+      ...row,
+      amount: parseFloat(row.amount),
+      confidence: row.confidence ? parseInt(row.confidence) : undefined,
+    }));
+
+    return NextResponse.json({ transactions });
   } catch (error) {
     console.error('[API] Failed to fetch transactions:', error);
     return NextResponse.json(

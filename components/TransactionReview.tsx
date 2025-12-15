@@ -83,11 +83,11 @@ export function TransactionReview({ onNext, onBack }: { onNext: () => void; onBa
 
   const totalReceipts = transactions
     .filter(t => t.type === 'RECEIPT')
-    .reduce((sum, t) => sum + t.amount, 0);
+    .reduce((sum, t) => sum + (typeof t.amount === 'number' ? t.amount : parseFloat(t.amount || 0)), 0);
 
   const totalDisbursements = transactions
     .filter(t => t.type === 'DISBURSEMENT')
-    .reduce((sum, t) => sum + t.amount, 0);
+    .reduce((sum, t) => sum + (typeof t.amount === 'number' ? t.amount : parseFloat(t.amount || 0)), 0);
 
   const lowConfidenceCount = transactions.filter(t => (t.confidence || 0) < 70).length;
 
