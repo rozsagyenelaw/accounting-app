@@ -27,6 +27,8 @@ export function TransactionReview({ onNext, onBack }: { onNext: () => void; onBa
   const [sortField, setSortField] = useState<'date' | 'amount' | 'confidence'>('date');
   const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc');
   const [showAddDialog, setShowAddDialog] = useState(false);
+  const [saving, setSaving] = useState(false);
+  const [saveStatus, setSaveStatus] = useState<'idle' | 'saving' | 'saved' | 'error'>('idle');
 
   const filteredAndSortedTransactions = useMemo(() => {
     let filtered = [...transactions];
@@ -88,6 +90,33 @@ export function TransactionReview({ onNext, onBack }: { onNext: () => void; onBa
     .reduce((sum, t) => sum + t.amount, 0);
 
   const lowConfidenceCount = transactions.filter(t => (t.confidence || 0) < 70).length;
+
+  const handleSaveToDatabase = async () => {
+    setSaving(true);
+    setSaveStatus('saving');
+
+    try {
+      const response = await fetch('/api/transactions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ transactions }),
+      });
+
+      if (response.ok) {
+        setSaveStatus('saved');
+        setTimeout(() => setSaveStatus('idle'), 2000); // Show "Saved!" for 2 seconds
+      } else {
+        setSaveStatus('error');
+        setTimeout(() => setSaveStatus('idle'), 3000);
+      }
+    } catch (error) {
+      console.error('Failed to save:', error);
+      setSaveStatus('error');
+      setTimeout(() => setSaveStatus('idle'), 3000);
+    } finally {
+      setSaving(false);
+    }
+  };
 
   const handleAddTransaction = (newTxn: {
     date: Date;
@@ -204,9 +233,22 @@ export function TransactionReview({ onNext, onBack }: { onNext: () => void; onBa
       <Card>
         <CardHeader className="flex flex-row items-center justify-between">
           <CardTitle>Transactions ({filteredAndSortedTransactions.length})</CardTitle>
-          <Button onClick={() => setShowAddDialog(true)}>
-            + Add Transaction
-          </Button>
+          <div className="flex gap-3 items-center">
+            <Button
+              onClick={handleSaveToDatabase}
+              disabled={saving}
+              variant={saveStatus === 'saved' ? 'default' : saveStatus === 'error' ? 'destructive' : 'outline'}
+              className={saveStatus === 'saved' ? 'bg-green-600 hover:bg-green-700' : ''}
+            >
+              {saveStatus === 'saving' && 'Saving...'}
+              {saveStatus === 'saved' && '✓ Saved!'}
+              {saveStatus === 'error' && '✗ Error'}
+              {saveStatus === 'idle' && 'Save to Database'}
+            </Button>
+            <Button onClick={() => setShowAddDialog(true)}>
+              + Add Transaction
+            </Button>
+          </div>
         </CardHeader>
         <CardContent>
           <div className="overflow-x-auto">
