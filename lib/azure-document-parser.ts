@@ -85,16 +85,45 @@ function parseDate(dateStr: string): string | undefined {
   return undefined; // Return undefined if parsing fails
 }
 
-// ABSOLUTE MINIMUM validation - almost no filtering
+// Validate transactions and filter out non-transaction entries
 function isValidTransaction(description: string, date: string | undefined): boolean {
   if (!date) return false;
   if (!description || description.trim().length === 0) return false;
 
-  // ONLY filter single-word column headers (exact match)
+  const desc = description.toLowerCase();
+
+  // FILTER 1: Balance lines (these are NOT transactions)
+  const balancePatterns = [
+    /beginning balance/i,
+    /ending balance/i,
+    /previous balance/i,
+    /new balance/i,
+    /balance brought forward/i,
+    /^balance\s*/i,
+    /current balance/i,
+  ];
+  if (balancePatterns.some(pattern => pattern.test(description))) {
+    console.log(`[Azure Parser] FILTERED BALANCE LINE: "${description.substring(0, 60)}"`);
+    return false;
+  }
+
+  // FILTER 2: Internal transfers (between shares/accounts within trust)
+  const internalTransferPatterns = [
+    /transfer to share/i,
+    /transfer from share/i,
+    /withdrawal transfer/i,
+    /deposit transfer.*share/i,
+  ];
+  if (internalTransferPatterns.some(pattern => pattern.test(description))) {
+    console.log(`[Azure Parser] FILTERED INTERNAL TRANSFER: "${description.substring(0, 60)}"`);
+    return false;
+  }
+
+  // FILTER 3: Single-word column headers
   const singleWord = description.trim();
   if (/^(Date|Description|Amount|Deposit|Withdrawal|Balance|Check)$/i.test(singleWord)) return false;
 
-  // Validate date is parseable
+  // FILTER 4: Validate date is parseable
   const txnDate = new Date(date);
   if (isNaN(txnDate.getTime())) {
     console.log(`[Azure Parser] Invalid date: ${date} - ${description.substring(0, 50)}`);
