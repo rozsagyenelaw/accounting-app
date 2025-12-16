@@ -342,48 +342,79 @@ export async function parseWithAzure(pdfBuffer: Buffer): Promise<ParseResult> {
 function parseTextTransactions(paragraphs: any[]): Transaction[] {
   const transactions: Transaction[] = [];
 
-  // Pattern to match Bank of America transaction format in text
-  // Date + Description + Amount on same or nearby lines
-  const datePattern = /(\d{1,2}\/\d{1,2}\/\d{2,4})/g;
-  const amountPattern = /-?\$?([\d,]+\.\d{2})/g;
+  // Pattern to match transaction formats
+  const datePattern = /(\d{1,2}\/\d{1,2}\/\d{2,4})/;
+  const amountPattern = /\$?([\d,]+\.\d{2})/;
 
+  // APPROACH 1: Try to find transactions within single paragraphs (Bank of America format)
   for (const para of paragraphs) {
     const text = para.content || '';
+    const dateMatch = text.match(datePattern);
+    const amountMatches = text.match(new RegExp(amountPattern, 'g'));
 
-    // Check if this paragraph contains transaction data
-    const dates = text.match(datePattern);
-    const amounts = text.match(amountPattern);
+    if (dateMatch && amountMatches && amountMatches.length > 0) {
+      const date = parseDate(dateMatch[0]);
+      const amount = parseAmount(amountMatches[amountMatches.length - 1]);
 
-    if (dates && amounts && dates.length > 0 && amounts.length > 0) {
-      // Try to pair dates with amounts
-      // This is a simplified approach - Azure tables are more reliable
-      const date = parseDate(dates[0]);
-      const amount = parseAmount(amounts[amounts.length - 1]); // Last amount is usually the transaction amount
-
-      // Extract description (text between date and amount)
       let description = text
-        .replace(datePattern, '')
-        .replace(amountPattern, '')
+        .replace(new RegExp(datePattern, 'g'), '')
+        .replace(new RegExp(amountPattern, 'g'), '')
         .replace(/\s+/g, ' ')
         .trim();
 
       if (description && amount > 0 && date) {
-        // Minimal validation
         if (!isValidTransaction(description, date)) {
           continue;
         }
 
         const type = isReceipt(description) ? "RECEIPT" : "DISBURSEMENT";
-
         transactions.push({
           date,
           description: description.substring(0, 200),
           amount,
           type,
-          // category will be assigned by parse route
-          confidence: 0.7 // Lower confidence for text parsing
+          confidence: 0.7
         });
       }
+    }
+  }
+
+  // APPROACH 2: Try to find Logix-style transactions across consecutive paragraphs
+  // Format: Date paragraph, Description paragraph, Amount paragraph
+  for (let i = 0; i < paragraphs.length - 2; i++) {
+    const para1 = (paragraphs[i].content || '').trim();
+    const para2 = (paragraphs[i + 1].content || '').trim();
+    const para3 = (paragraphs[i + 2].content || '').trim();
+
+    // Check if para1 is a date
+    const dateMatch = para1.match(/^(\d{1,2}\/\d{1,2}\/\d{2,4})$/);
+    if (!dateMatch) continue;
+
+    // Check if para2 contains "dividend" or "deposit"
+    if (!para2.match(/dividend|deposit/i)) continue;
+
+    // Check if para3 is an amount
+    const amountMatch = para3.match(/^\$?([\d,]+\.\d{2})$/);
+    if (!amountMatch) continue;
+
+    const date = parseDate(dateMatch[1]);
+    const amount = parseAmount(amountMatch[0]);
+    const description = para2;
+
+    if (date && amount > 0 && description) {
+      if (!isValidTransaction(description, date)) {
+        continue;
+      }
+
+      const type = isReceipt(description) ? "RECEIPT" : "DISBURSEMENT";
+
+      transactions.push({
+        date,
+        description: description.substring(0, 200),
+        amount,
+        type,
+        confidence: 0.8 // Higher confidence for structured multi-line format
+      });
     }
   }
 
