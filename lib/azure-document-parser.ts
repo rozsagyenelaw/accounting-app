@@ -85,20 +85,18 @@ function parseDate(dateStr: string): string | undefined {
   return undefined; // Return undefined if parsing fails
 }
 
-// Minimal validation - only check if date exists and is somewhat reasonable
+// ABSOLUTE MINIMUM validation - almost no filtering
 function isValidTransaction(description: string, date: string | undefined): boolean {
   if (!date) return false;
+  if (!description || description.trim().length === 0) return false;
 
-  // Only filter out obvious OCR garbage headers (very specific)
-  if (/^(Date|Description|Amount|Deposits?|Withdrawals?|Balance|Check\s*#)$/i.test(description.trim())) return false;
-  if (/^[\d\s\-$.,\/]+$/.test(description.trim())) return false; // Only numbers/symbols
+  // ONLY filter single-word column headers (exact match)
+  const singleWord = description.trim();
+  if (/^(Date|Description|Amount|Deposit|Withdrawal|Balance|Check)$/i.test(singleWord)) return false;
 
-  // Validate date is a real date (not garbage like year 2099)
+  // Validate date is parseable
   const txnDate = new Date(date);
-  const minDate = new Date('2000-01-01');
-  const maxDate = new Date('2099-12-31');
-
-  if (isNaN(txnDate.getTime()) || txnDate < minDate || txnDate > maxDate) {
+  if (isNaN(txnDate.getTime())) {
     console.log(`[Azure Parser] Invalid date: ${date} - ${description.substring(0, 50)}`);
     return false;
   }
