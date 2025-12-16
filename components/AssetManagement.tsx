@@ -378,8 +378,9 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
         <CardHeader>
           <CardTitle>Account Balances Summary</CardTitle>
           <p className="text-sm text-gray-600 mt-2">
-            Enter both beginning balances (from prior period) and actual ending balances (from bank statements).
-            The app will check if they reconcile with your transactions.
+            <strong>Optional:</strong> Enter beginning and ending balances from your bank statements.
+            If provided, the app will verify they reconcile with your parsed transactions.
+            Cash balances are on the first and last page of bank statements.
           </p>
         </CardHeader>
         <CardContent className="space-y-6">
@@ -392,7 +393,7 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <Label htmlFor="beginning-cash">Beginning Cash Assets *</Label>
+                <Label htmlFor="beginning-cash">Beginning Cash Assets (Optional)</Label>
                 <div className="relative">
                   <span className="absolute left-3 top-2.5 text-gray-500">$</span>
                   <Input
@@ -405,10 +406,10 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
                     className="pl-7"
                   />
                 </div>
-                <p className="text-xs text-gray-500 mt-1">Goes on Line 1a of GC-400(SUM)</p>
+                <p className="text-xs text-gray-500 mt-1">From bank statement - Line 1a of GC-400(SUM)</p>
               </div>
               <div>
-                <Label htmlFor="beginning-non-cash">Beginning Non-Cash Assets *</Label>
+                <Label htmlFor="beginning-non-cash">Beginning Non-Cash Assets (Optional)</Label>
                 <div className="relative">
                   <span className="absolute left-3 top-2.5 text-gray-500">$</span>
                   <Input
@@ -421,7 +422,7 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
                     className="pl-7"
                   />
                 </div>
-                <p className="text-xs text-gray-500 mt-1">Goes on Line 1b of GC-400(SUM)</p>
+                <p className="text-xs text-gray-500 mt-1">Property/assets - Line 1b of GC-400(SUM)</p>
               </div>
             </div>
           </div>
@@ -435,7 +436,7 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <Label htmlFor="ending-cash">Ending Cash Assets *</Label>
+                <Label htmlFor="ending-cash">Ending Cash Assets (Optional)</Label>
                 <div className="relative">
                   <span className="absolute left-3 top-2.5 text-gray-500">$</span>
                   <Input
@@ -448,10 +449,10 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
                     className="pl-7"
                   />
                 </div>
-                <p className="text-xs text-gray-500 mt-1">Goes on Line 13a of GC-400(SUM)</p>
+                <p className="text-xs text-gray-500 mt-1">From bank statement - Line 13a of GC-400(SUM)</p>
               </div>
               <div>
-                <Label htmlFor="ending-non-cash">Ending Non-Cash Assets *</Label>
+                <Label htmlFor="ending-non-cash">Ending Non-Cash Assets (Optional)</Label>
                 <div className="relative">
                   <span className="absolute left-3 top-2.5 text-gray-500">$</span>
                   <Input
@@ -464,7 +465,7 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
                     className="pl-7"
                   />
                 </div>
-                <p className="text-xs text-gray-500 mt-1">Usually same as beginning (edit if property was sold/bought). Goes on Line 13b.</p>
+                <p className="text-xs text-gray-500 mt-1">Usually same as beginning unless property sold/bought - Line 13b</p>
               </div>
             </div>
           </div>
@@ -518,10 +519,17 @@ export function AssetManagement({ onNext, onBack }: { onNext: () => void; onBack
                 )}
               </div>
               {!reconciliationInfo.isReconciled && Math.abs(reconciliationInfo.cashDifference) > 0.01 && (
-                <p className="text-xs text-yellow-800 mt-2">
-                  ⚠ The ending balance doesn't match the expected value. This may indicate missing transactions,
-                  errors in transaction amounts, or other gains/losses that need to be recorded.
-                </p>
+                <div className="text-xs text-yellow-800 mt-2 space-y-1">
+                  <p className="font-semibold">⚠ RECONCILIATION ERROR - Transactions do not match bank balances!</p>
+                  <p>Possible causes:</p>
+                  <ul className="list-disc ml-5 space-y-1">
+                    <li>Missing transactions in the PDF (parser didn't catch everything)</li>
+                    <li>Wrong beginning/ending balance entered</li>
+                    <li>Duplicate transactions</li>
+                    <li>Internal transfers not removed</li>
+                  </ul>
+                  <p className="font-semibold mt-2">Review the transaction list carefully and manually add/delete as needed.</p>
+                </div>
               )}
             </div>
           )}
