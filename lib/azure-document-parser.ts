@@ -189,7 +189,8 @@ export async function parseWithAzure(pdfBuffer: Buffer): Promise<ParseResult> {
             amount = parseAmount(value);
           }
           // Otherwise it's likely part of description
-          else if (value.length > 3 && !/^\d+$/.test(value)) {
+          // BUT: Don't add values that look like amounts (to avoid picking up "New Balance" column)
+          else if (value.length > 3 && !/^\d+$/.test(value) && !/^-?\$?[\d,]+\.\d{2}$/.test(value.replace(/\s/g, ''))) {
             description = description ? `${description} ${value}` : value;
           }
         }
