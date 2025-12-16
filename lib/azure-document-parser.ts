@@ -38,27 +38,28 @@ const RECEIPT_PATTERNS = [
   /IRS TREAS/i,
 ];
 
-// Internal transfer patterns - these should be EXCLUDED from both receipts and disbursements
-const INTERNAL_TRANSFER_PATTERNS = [
-  /TRANSFER\s+TO\s+SHARE/i,
-  /TRANSFER\s+FROM\s+SHARE/i,
-  /INTERNAL\s+TRANSFER/i,
-  /ACCOUNT\s+TRANSFER/i,
-  /TRANSFER\s+BETWEEN/i,
-];
-
-function isInternalTransfer(description: string): boolean {
-  // Pattern-based detection only - catches ANY internal transfer regardless of amount
-  return INTERNAL_TRANSFER_PATTERNS.some(pattern => pattern.test(description));
-}
+// NO FILTERS - User will manually review and delete unwanted transactions
+// Internal transfers, duplicates, etc. will be handled manually in the UI
 
 function isReceipt(description: string): boolean {
   return RECEIPT_PATTERNS.some(pattern => pattern.test(description));
 }
 
 function extractCheckNumber(description: string): string | undefined {
-  const match = description.match(/(?:CHECK|CHK|CK)\s*#?\s*(\d+)/i);
-  return match ? match[1] : undefined;
+  // More robust check number extraction - try multiple patterns
+  const patterns = [
+    /(?:CHECK|CHK|CK)\s*#?\s*(\d+)/i,
+    /\bCHECK\s+(\d+)/i,
+    /\b#\s*(\d+)/,
+    /CHECK\s+NO\.?\s*(\d+)/i,
+  ];
+
+  for (const pattern of patterns) {
+    const match = description.match(pattern);
+    if (match) return match[1];
+  }
+
+  return undefined;
 }
 
 function parseDate(dateStr: string): string | undefined {
@@ -84,27 +85,21 @@ function parseDate(dateStr: string): string | undefined {
   return undefined; // Return undefined if parsing fails
 }
 
-// Validate that transaction is within the accounting period and not OCR garbage
+// Minimal validation - only check if date exists and is somewhat reasonable
 function isValidTransaction(description: string, date: string | undefined): boolean {
-  // Filter out OCR garbage from Logix statements (summary text mistaken as transactions)
   if (!date) return false;
 
-  // VERY SPECIFIC patterns for OCR garbage - must match the EXACT summary text format
-  if (/dividends?\s+earned\s+in\s+\d{4}/i.test(description)) return false; // "Dividends Earned in 2024" (year must be present)
-  if (/current\s+balance:/i.test(description)) return false;
-  if (/matures?\s+on:/i.test(description)) return false;
-  if (/account\s+summary/i.test(description)) return false;
-  if (/statement\s+period/i.test(description)) return false;
-  if (/beginning\s+balance/i.test(description)) return false;
-  if (/ending\s+balance/i.test(description)) return false;
+  // Only filter out obvious OCR garbage headers (very specific)
+  if (/^(Date|Description|Amount|Deposits?|Withdrawals?|Balance|Check\s*#)$/i.test(description.trim())) return false;
+  if (/^[\d\s\-$.,\/]+$/.test(description.trim())) return false; // Only numbers/symbols
 
-  // Validate date is within reasonable accounting period (2023-08-22 to 2025-08-20)
+  // Validate date is a real date (not garbage like year 2099)
   const txnDate = new Date(date);
-  const startDate = new Date('2023-08-22');
-  const endDate = new Date('2025-08-20');
+  const minDate = new Date('2000-01-01');
+  const maxDate = new Date('2099-12-31');
 
-  if (txnDate < startDate || txnDate > endDate) {
-    console.log(`[Azure Parser] Skipping transaction with date outside period: ${date} - ${description.substring(0, 50)}`);
+  if (isNaN(txnDate.getTime()) || txnDate < minDate || txnDate > maxDate) {
+    console.log(`[Azure Parser] Invalid date: ${date} - ${description.substring(0, 50)}`);
     return false;
   }
 
@@ -183,15 +178,8 @@ export async function parseWithAzure(pdfBuffer: Buffer): Promise<ParseResult> {
 
         // Only create transaction if we have required fields
         if (date && amount && description) {
-          // Validate transaction (filter OCR garbage and invalid dates)
+          // Minimal validation - only skip obvious garbage
           if (!isValidTransaction(description, date)) {
-            console.log(`[Azure Parser] FILTERED - Invalid transaction: ${description.substring(0, 60)}...`);
-            continue;
-          }
-
-          // SKIP internal transfers - they are not income or expenses
-          if (isInternalTransfer(description)) {
-            console.log(`[Azure Parser] FILTERED - Internal transfer: ${description.substring(0, 80)}... ($${amount})`);
             continue;
           }
 
@@ -250,9 +238,10 @@ export async function parseWithAzure(pdfBuffer: Buffer): Promise<ParseResult> {
   console.log(`[Azure Parser] FINAL COUNT: ${transactions.length} transactions`);
   console.log(`[Azure Parser] Receipts: ${totalReceipts.toFixed(2)}, Disbursements: ${totalDisbursements.toFixed(2)}`);
 
-  // Add warnings if transaction count seems low
-  if (transactions.length < 500) {
-    warnings.push(`Only ${transactions.length} transactions found. Expected ~800-1000 for 2-year period.`);
+  // Info message about transaction count
+  console.log(`[Azure Parser] Parsed ${transactions.length} total transactions`);
+  if (transactions.length < 100) {
+    warnings.push(`Only ${transactions.length} transactions found. This seems low - please verify the PDF contains transaction data.`);
   }
 
   return {
@@ -292,13 +281,8 @@ function parseTextTransactions(paragraphs: any[]): Transaction[] {
         .trim();
 
       if (description && amount > 0 && date) {
-        // Validate transaction (filter OCR garbage and invalid dates)
+        // Minimal validation
         if (!isValidTransaction(description, date)) {
-          continue;
-        }
-
-        // SKIP internal transfers
-        if (isInternalTransfer(description)) {
           continue;
         }
 
