@@ -130,11 +130,24 @@ export async function parseWithAzure(pdfBuffer: Buffer): Promise<ParseResult> {
   const transactions: Transaction[] = [];
   const warnings: string[] = [];
 
+  let totalRowsFound = 0;
+  let rowsWithDateAmountDesc = 0;
+  let rowsFiltered = 0;
+  let rowsKept = 0;
+
+  // PRE-PARSING COUNTER: Count what Azure found BEFORE any filtering
+  const rawTransactionsByMonth: Record<string, number> = {};
+  let rawTotalTransactions = 0;
+
   // Process all tables from all pages
   if (result.tables) {
+    console.log(`[Azure Parser] Found ${result.tables.length} tables in PDF`);
+
     for (const table of result.tables) {
       // Skip tables that don't look like transaction tables
       if (table.columnCount < 2) continue;
+
+      console.log(`[Azure Parser] Processing table with ${table.rowCount} rows, ${table.columnCount} columns`);
 
       // Build rows from cells
       const rows: Map<number, Map<number, string>> = new Map();
@@ -150,6 +163,8 @@ export async function parseWithAzure(pdfBuffer: Buffer): Promise<ParseResult> {
       for (const [rowIndex, columns] of rows) {
         // Skip header rows
         if (rowIndex === 0) continue;
+
+        totalRowsFound++;
 
         const values = Array.from(columns.values());
         const rowText = values.join(' ');
@@ -176,14 +191,24 @@ export async function parseWithAzure(pdfBuffer: Buffer): Promise<ParseResult> {
 
         // Only create transaction if we have required fields
         if (date && amount && description) {
+          rowsWithDateAmountDesc++;
+
+          // COUNT BEFORE FILTERING - Track what Azure found
+          rawTotalTransactions++;
+          const monthKey = date.substring(0, 7); // YYYY-MM
+          rawTransactionsByMonth[monthKey] = (rawTransactionsByMonth[monthKey] || 0) + 1;
+
           // Minimal validation - only skip obvious garbage
           if (!isValidTransaction(description, date)) {
+            rowsFiltered++;
+            console.log(`[Azure Parser] FILTERED: "${description.substring(0, 60)}..." (date: ${date})`);
             continue;
           }
 
           const type = isReceipt(description) ? "RECEIPT" : "DISBURSEMENT";
           const checkNumber = extractCheckNumber(description);
 
+          rowsKept++;
           transactions.push({
             date,
             description: description.substring(0, 200), // Truncate long descriptions
@@ -233,13 +258,66 @@ export async function parseWithAzure(pdfBuffer: Buffer): Promise<ParseResult> {
   // Sort by date
   transactions.sort((a, b) => a.date.localeCompare(b.date));
 
-  console.log(`[Azure Parser] FINAL COUNT: ${transactions.length} transactions`);
-  console.log(`[Azure Parser] Receipts: ${totalReceipts.toFixed(2)}, Disbursements: ${totalDisbursements.toFixed(2)}`);
+  // Count by month and type for detailed verification
+  const countsByMonth: Record<string, { receipts: number; disbursements: number; checks: number }> = {};
+  let totalChecks = 0;
 
-  // Info message about transaction count
-  console.log(`[Azure Parser] Parsed ${transactions.length} total transactions`);
+  for (const txn of transactions) {
+    const monthKey = txn.date.substring(0, 7); // YYYY-MM
+    if (!countsByMonth[monthKey]) {
+      countsByMonth[monthKey] = { receipts: 0, disbursements: 0, checks: 0 };
+    }
+    if (txn.type === 'RECEIPT') {
+      countsByMonth[monthKey].receipts++;
+    } else {
+      countsByMonth[monthKey].disbursements++;
+    }
+    if (txn.checkNumber) {
+      countsByMonth[monthKey].checks++;
+      totalChecks++;
+    }
+  }
+
+  // DETAILED PARSING REPORT
+  console.log(`\n==================== AZURE PARSER REPORT ====================`);
+  console.log(`\n📥 WHAT AZURE FOUND (BEFORE FILTERING):`);
+  console.log(`   Total rows in tables: ${totalRowsFound}`);
+  console.log(`   Rows with date+amount+description: ${rowsWithDateAmountDesc}`);
+  console.log(`   RAW TRANSACTIONS FOUND: ${rawTotalTransactions}`);
+  console.log(`\n   📅 RAW TRANSACTIONS BY MONTH:`);
+  const rawSortedMonths = Object.keys(rawTransactionsByMonth).sort();
+  for (const month of rawSortedMonths) {
+    console.log(`      ${month}: ${rawTransactionsByMonth[month]} transactions`);
+  }
+
+  console.log(`\n🔍 FILTERING:`);
+  console.log(`   Filtered out (headers/garbage): ${rowsFiltered}`);
+  console.log(`   Kept as valid transactions: ${rowsKept}`);
+
+  console.log(`\n✅ FINAL PARSED RESULTS:`);
+  console.log(`   Total Transactions: ${transactions.length}`);
+  console.log(`   Total Receipts: ${transactions.filter(t => t.type === 'RECEIPT').length} ($${totalReceipts.toFixed(2)})`);
+  console.log(`   Total Disbursements: ${transactions.filter(t => t.type === 'DISBURSEMENT').length} ($${totalDisbursements.toFixed(2)})`);
+  console.log(`   Total Checks: ${totalChecks}`);
+
+  console.log(`\n   📅 PARSED TRANSACTIONS BY MONTH:`);
+  const sortedMonths = Object.keys(countsByMonth).sort();
+  for (const month of sortedMonths) {
+    const counts = countsByMonth[month];
+    const total = counts.receipts + counts.disbursements;
+    const rawCount = rawTransactionsByMonth[month] || 0;
+    const diff = rawCount - total;
+    console.log(`      ${month}: ${total} parsed (${counts.receipts}R + ${counts.disbursements}D + ${counts.checks}C) [${diff} filtered]`);
+  }
+  console.log(`============================================================\n`);
+
+  // Add summary to warnings for user visibility
+  warnings.push(`📊 AZURE FOUND: ${rawTotalTransactions} transactions BEFORE filtering`);
+  warnings.push(`📊 PARSED: ${transactions.length} transactions AFTER filtering (${rowsFiltered} filtered out)`);
+  warnings.push(`   • Receipts: ${transactions.filter(t => t.type === 'RECEIPT').length}, Disbursements: ${transactions.filter(t => t.type === 'DISBURSEMENT').length}, Checks: ${totalChecks}`);
+
   if (transactions.length < 100) {
-    warnings.push(`Only ${transactions.length} transactions found. This seems low - please verify the PDF contains transaction data.`);
+    warnings.push(`⚠️ Only ${transactions.length} transactions found. This seems low - verify PDF has transaction tables.`);
   }
 
   return {
