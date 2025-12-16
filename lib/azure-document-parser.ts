@@ -225,11 +225,16 @@ export async function parseWithAzure(pdfBuffer: Buffer): Promise<ParseResult> {
 
   // Also extract transactions from paragraphs/text if tables didn't capture everything
   // Bank of America sometimes has transactions in text format, not tables
-  if (result.paragraphs && transactions.length < 100) {
+  // Logix statements may also have dividends in text format
+  if (result.paragraphs) {
+    console.log(`[Azure Parser] Processing ${result.paragraphs.length} paragraphs for text-based transactions...`);
+
     // Parse text-based transactions as fallback
     const textTransactions = parseTextTransactions(result.paragraphs);
+    console.log(`[Azure Parser] Found ${textTransactions.length} transactions in text/paragraphs`);
 
     // Add unique transactions (avoid duplicates)
+    let addedFromText = 0;
     for (const txn of textTransactions) {
       const isDuplicate = transactions.some(t =>
         t.date === txn.date &&
@@ -239,7 +244,13 @@ export async function parseWithAzure(pdfBuffer: Buffer): Promise<ParseResult> {
 
       if (!isDuplicate) {
         transactions.push(txn);
+        addedFromText++;
       }
+    }
+
+    if (addedFromText > 0) {
+      console.log(`[Azure Parser] Added ${addedFromText} unique transactions from text parsing`);
+      warnings.push(`✨ Added ${addedFromText} transactions from text parsing (not in tables)`);
     }
   }
 
