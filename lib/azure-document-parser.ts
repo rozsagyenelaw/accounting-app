@@ -185,12 +185,13 @@ export async function parseWithAzure(pdfBuffer: Buffer): Promise<ParseResult> {
         if (date && amount && description) {
           // Validate transaction (filter OCR garbage and invalid dates)
           if (!isValidTransaction(description, date)) {
+            console.log(`[Azure Parser] FILTERED - Invalid transaction: ${description.substring(0, 60)}...`);
             continue;
           }
 
           // SKIP internal transfers - they are not income or expenses
           if (isInternalTransfer(description)) {
-            console.log(`[Azure Parser] Skipping internal transfer: ${description.substring(0, 60)}... ($${amount})`);
+            console.log(`[Azure Parser] FILTERED - Internal transfer: ${description.substring(0, 80)}... ($${amount})`);
             continue;
           }
 
@@ -245,6 +246,9 @@ export async function parseWithAzure(pdfBuffer: Buffer): Promise<ParseResult> {
 
   // Sort by date
   transactions.sort((a, b) => a.date.localeCompare(b.date));
+
+  console.log(`[Azure Parser] FINAL COUNT: ${transactions.length} transactions`);
+  console.log(`[Azure Parser] Receipts: ${totalReceipts.toFixed(2)}, Disbursements: ${totalDisbursements.toFixed(2)}`);
 
   // Add warnings if transaction count seems low
   if (transactions.length < 500) {
