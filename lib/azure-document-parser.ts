@@ -222,6 +222,11 @@ export async function parseWithAzure(pdfBuffer: Buffer): Promise<ParseResult> {
           console.log(`[Azure Parser] Inferred year for Logix transaction: ${partialDate} → ${date} (${description?.substring(0, 40)}...)`);
         }
 
+        // Debug: Log when we have partial data
+        if (partialDate || (description && description.toLowerCase().includes('dividend'))) {
+          console.log(`[Azure Parser] 📋 Row parsing: date=${date}, partialDate=${partialDate}, amount=${amount}, desc="${description?.substring(0, 40)}"`);
+        }
+
         // Only create transaction if we have required fields
         if (date && amount && description) {
           rowsWithDateAmountDesc++;
@@ -230,6 +235,11 @@ export async function parseWithAzure(pdfBuffer: Buffer): Promise<ParseResult> {
           rawTotalTransactions++;
           const monthKey = date.substring(0, 7); // YYYY-MM
           rawTransactionsByMonth[monthKey] = (rawTransactionsByMonth[monthKey] || 0) + 1;
+
+          // Log potential Logix dividends for debugging
+          if (description.toLowerCase().includes('dividend')) {
+            console.log(`[Azure Parser] 🔍 LOGIX DIVIDEND CANDIDATE: ${date} | $${amount} | ${description.substring(0, 60)}`);
+          }
 
           // Minimal validation - only skip obvious garbage
           if (!isValidTransaction(description, date)) {
