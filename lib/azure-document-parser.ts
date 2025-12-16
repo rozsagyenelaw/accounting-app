@@ -173,11 +173,16 @@ export async function parseWithAzure(pdfBuffer: Buffer): Promise<ParseResult> {
         let date: string | undefined;
         let description: string | undefined;
         let amount: number | undefined;
+        let partialDate: string | undefined; // For MM/DD format without year
 
         for (const value of values) {
-          // Check for date
-          if (!date && /\d{1,2}[\/\-]\d{1,2}[\/\-]\d{2,4}/.test(value)) {
+          // Check for full date with year (MM/DD/YYYY or MM-DD-YYYY)
+          if (!date && !partialDate && /\d{1,2}[\/\-]\d{1,2}[\/\-]\d{2,4}/.test(value)) {
             date = parseDate(value);
+          }
+          // Check for partial date without year (MM/DD or MM-DD) - common in Logix statements
+          else if (!date && !partialDate && /^\d{1,2}[\/\-]\d{1,2}$/.test(value.trim())) {
+            partialDate = value.trim();
           }
           // Check for amount
           else if (!amount && /^-?\$?[\d,]+\.\d{2}$/.test(value.replace(/\s/g, ''))) {
@@ -187,6 +192,33 @@ export async function parseWithAzure(pdfBuffer: Buffer): Promise<ParseResult> {
           else if (value.length > 3 && !/^\d+$/.test(value)) {
             description = description ? `${description} ${value}` : value;
           }
+        }
+
+        // If we found a partial date (MM/DD), infer the year
+        if (partialDate && !date) {
+          // Infer year from current context - use 2024 for most transactions
+          // If month >= 1-12, determine year based on when statement was generated
+          const [month, day] = partialDate.split(/[\/\-]/).map(n => parseInt(n));
+
+          // Use 2024 as default for historical transactions
+          // If we're in early months (Jan-Mar) and the transaction is late in year (Oct-Dec),
+          // it's likely from previous year
+          const currentYear = new Date().getFullYear();
+          const currentMonth = new Date().getMonth() + 1;
+
+          let inferredYear = 2024; // Default to 2024 for historical data
+
+          // If current year is 2025 and transaction month is >= April, use 2025
+          if (currentYear >= 2025 && month >= 4) {
+            inferredYear = 2025;
+          }
+          // If current year is 2025 and we're past the transaction month, likely it's from 2025
+          else if (currentYear === 2025 && month <= currentMonth) {
+            inferredYear = 2025;
+          }
+
+          date = parseDate(`${month}/${day}/${inferredYear}`);
+          console.log(`[Azure Parser] Inferred year for Logix transaction: ${partialDate} → ${date} (${description?.substring(0, 40)}...)`);
         }
 
         // Only create transaction if we have required fields
