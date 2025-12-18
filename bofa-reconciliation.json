@@ -1,0 +1,1521 @@
+{
+  "summary": {
+    "statementPeriods": 20,
+    "firstPeriod": "August 23, 2023 to September 20, 2023",
+    "lastPeriod": "July 23, 2025 to August 20, 2025",
+    "fromStatementHeaders": {
+      "totalDeposits": 522669.14999999997,
+      "totalATMWithdrawals": -49881.12,
+      "totalChecks": -185723.48999999996,
+      "totalOtherSubtractions": -520192.53
+    },
+    "extracted": {
+      "depositCount": 22,
+      "depositTotal": 37710.07,
+      "withdrawalCount": 169,
+      "withdrawalTotal": -15006.869999999994,
+      "checkCount": 22,
+      "checkTotal": -13082.550000000003
+    },
+    "differences": {
+      "deposits": 484959.07999999996,
+      "withdrawals": -34874.25000000001,
+      "checks": -172640.93999999994
+    }
+  },
+  "transactions": [
+    {
+      "date": "08/23/23",
+      "fullDate": "2023-08-22T22:00:00.000Z",
+      "description": "GELSON'S MARKE 08/22 11000936032 PURCHASEGELSON'S MARKETS VALLEY VILLAG CA",
+      "amount": -41.76,
+      "type": "unknown"
+    },
+    {
+      "date": "08/24/23",
+      "fullDate": "2023-08-23T22:00:00.000Z",
+      "description": "THE HOME DEPOT 08/24 11000207507 PURCHASETHE HOME DEPOT 116 N. HOLLYWOOD CA",
+      "amount": -26.77,
+      "type": "unknown"
+    },
+    {
+      "date": "08/24/23",
+      "fullDate": "2023-08-23T22:00:00.000Z",
+      "description": "THE HOME DEPOT 08/24 11000319034 PURCHASETHE HOME DEPOT 116 N. HOLLYWOOD CA -47.38 ' 08/25/23 CHECKC",
+      "amount": -143.17,
+      "type": "unknown"
+    },
+    {
+      "date": "08/25/23",
+      "fullDate": "2023-08-24T22:00:00.000Z",
+      "description": "CHECKCARD 0823 TRADERJOE S 11122 STUDIO CITY CA 24 l 37463236500814079969",
+      "amount": -77.02,
+      "type": "unknown"
+    },
+    {
+      "date": "08/28/23",
+      "fullDate": "2023-08-27T22:00:00.000Z",
+      "description": "CHECKCARD 0825 AMZN MKTP US*TQl 3H2I01 AMZN.COM/BILLWA -10.94 24431063237083335746549 I 08 /28/23 CH",
+      "amount": -8.9,
+      "type": "unknown"
+    },
+    {
+      "date": "08/30/23",
+      "fullDate": "2023-08-29T22:00:00.000Z",
+      "description": "SOCALGAS DES:ARC PYMT CHECK #:0323 INDN:0093129100 CO ID:3951240705",
+      "amount": -35.23,
+      "type": "utility"
+    },
+    {
+      "date": "09/13/23",
+      "fullDate": "2023-09-12T22:00:00.000Z",
+      "description": "SSA TREAS 310 OES:XXSOC SEC I0:XXXXXXXXXA SSA INON:MARCI DREXLERFOR CO 2,012 .00 10:9031736042 PPD P",
+      "amount": 111.68,
+      "type": "ssa"
+    },
+    {
+      "date": "09/18/23",
+      "fullDate": "2023-09-17T22:00:00.000Z",
+      "description": "CHECKCARD 0915 LA FITNESS 949-255-8100 CA 24492153258084001986004 RECURRING",
+      "amount": -29.99,
+      "type": "unknown"
+    },
+    {
+      "date": "09/18/23",
+      "fullDate": "2023-09-17T22:00:00.000Z",
+      "description": "SPROUTS FARMER 09/18 #000932726 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -133.68,
+      "type": "unknown"
+    },
+    {
+      "date": "09/19/23",
+      "fullDate": "2023-09-18T22:00:00.000Z",
+      "description": "CHECKCARD 0918 AMAZON.COM SEATTLE WA 7443106326108300253 10.05 ' 09/20 /23 Interest Earned",
+      "amount": 8.16,
+      "type": "unknown"
+    },
+    {
+      "date": "09/22/23",
+      "fullDate": "2023-09-21T22:00:00.000Z",
+      "description": "CHECKCARD 0921 AMZN MKTP US*TX2VU6WWO SEATTLE WA 24431063265083301730845",
+      "amount": -31.74,
+      "type": "unknown"
+    },
+    {
+      "date": "09/25/23",
+      "fullDate": "2023-09-24T22:00:00.000Z",
+      "description": "CHECKCARD 0921 TRADER JOE S #122 STUDIO CITY CA 24137463265500859214970",
+      "amount": -48.26,
+      "type": "unknown"
+    },
+    {
+      "date": "09/25/23",
+      "fullDate": "2023-09-24T22:00:00.000Z",
+      "description": "CHECKCARD 0923 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786713267900012300064",
+      "amount": -77.73,
+      "type": "unknown"
+    },
+    {
+      "date": "09/25/23",
+      "fullDate": "2023-09-24T22:00:00.000Z",
+      "description": "SPROUTS FARMER 09/23 #000702530 PURCHASE SPROUTS FARMERS M BURBANK CA -128.2 5 , 09/26/23 CHECKCARD ",
+      "amount": -268.23,
+      "type": "unknown"
+    },
+    {
+      "date": "09/26/23",
+      "fullDate": "2023-09-25T22:00:00.000Z",
+      "description": "CHECKCARD 0924 BR FACTORY.COM 2624 844-23 77746 OH 24789303268470300953996",
+      "amount": -39.86,
+      "type": "unknown"
+    },
+    {
+      "date": "10/05/23",
+      "fullDate": "2023-10-04T22:00:00.000Z",
+      "description": "CHECKCARD 1005 WWW.TRUPANION. SEATTLE WA",
+      "amount": -69.53,
+      "type": "unknown"
+    },
+    {
+      "date": "10/10/23",
+      "fullDate": "2023-10-09T22:00:00.000Z",
+      "description": "CHECKCARD 1008 N & DOIL CORP NORTH HOLLYWOCA -74.98 ' 10/10/23 VINTAGE GROCER 10/08 #000637727 PURCH",
+      "amount": -223,
+      "type": "unknown"
+    },
+    {
+      "date": "10/10/23",
+      "fullDate": "2023-10-09T22:00:00.000Z",
+      "description": "CHECKCARD 1008 N & DOIL CORP NORTH HOLLYWOCA",
+      "amount": -74.98,
+      "type": "card"
+    },
+    {
+      "date": "10/10/23",
+      "fullDate": "2023-10-09T22:00:00.000Z",
+      "description": "ATT DES:Payment ID:XXXXXXXXXEPAYGINDN:MARCI DREXLER co",
+      "amount": -74.28,
+      "type": "utility"
+    },
+    {
+      "date": "10/11/23",
+      "fullDate": "2023-10-10T22:00:00.000Z",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO 2,012 .00 ID:9031736042 PPD ",
+      "amount": 98,
+      "type": "ssa"
+    },
+    {
+      "date": "10/16/23",
+      "fullDate": "2023-10-15T22:00:00.000Z",
+      "description": "CHECKCARD 1015 LA FITNESS 949-255-8100 CA 244921 53288084001886596 RECURRING -29.99 ' 10/16/23 CHECK",
+      "amount": -35,
+      "type": "unknown"
+    },
+    {
+      "date": "10/16/23",
+      "fullDate": "2023-10-15T22:00:00.000Z",
+      "description": "CHECKCARD 1015 LA FITNESS 949-255-8100 CA 24492153288084036900834 RECURRING",
+      "amount": -29.99,
+      "type": "unknown"
+    },
+    {
+      "date": "10/16/23",
+      "fullDate": "2023-10-15T22:00:00.000Z",
+      "description": "CHECKCARD 1015 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786713288900014800066",
+      "amount": -77.73,
+      "type": "unknown"
+    },
+    {
+      "date": "10/16/23",
+      "fullDate": "2023-10-15T22:00:00.000Z",
+      "description": "NORDSTROM RACK 10/15 #000107961 PURCHASENORDSTROM RACK# BURBANK CA -77.11 1 10/16/23 GELSON'S MARKE ",
+      "amount": -19.28,
+      "type": "unknown"
+    },
+    {
+      "date": "10/16/23",
+      "fullDate": "2023-10-15T22:00:00.000Z",
+      "description": "WALGREENS STOR 10/16 #000902832 PURCHASEWALGREENS STORE 1 BURBANK CA",
+      "amount": -22.69,
+      "type": "unknown"
+    },
+    {
+      "date": "10/19/23",
+      "fullDate": "2023-10-18T22:00:00.000Z",
+      "description": "MACY'S 1400 10/19 #000727417 REFUND MACY'S 14000 R SHERMAN OAKS CA 98.00 1 10/20/23 Interest Earned",
+      "amount": 8.32,
+      "type": "unknown"
+    },
+    {
+      "date": "10/19/23",
+      "fullDate": "2023-10-18T22:00:00.000Z",
+      "description": "RITE AID 05575 10/19 #000159580 PURCHASERITE AID 05575 NORTH HOLLYWO CA",
+      "amount": -7.65,
+      "type": "unknown"
+    },
+    {
+      "date": "10/20/23",
+      "fullDate": "2023-10-19T22:00:00.000Z",
+      "description": "Interest Earned",
+      "amount": 8.32,
+      "type": "interest"
+    },
+    {
+      "date": "10/20/23",
+      "fullDate": "2023-10-19T22:00:00.000Z",
+      "description": "LADWP DES:WEB PAY ID:4027131000 INDN:bonnie drexler CO ID:4956000736 WEB",
+      "amount": -709.5,
+      "type": "utility"
+    },
+    {
+      "date": "10/24/23",
+      "fullDate": "2023-10-23T22:00:00.000Z",
+      "description": "SOCALGAS DES:ARC PYMT CHECK~ INDN:0093129100 CO ID:3951240705",
+      "amount": -41.21,
+      "type": "utility"
+    },
+    {
+      "date": "11/02/23",
+      "fullDate": "2023-11-01T23:00:00.000Z",
+      "description": "SPROUTSFARMER 11/01 #000681636 PURCHASESPROUTSFARMERSM BURBANK CA -25.36 o 11/06/23 CHECKCARD 1103 A",
+      "amount": -69.53,
+      "type": "unknown"
+    },
+    {
+      "date": "11/06/23",
+      "fullDate": "2023-11-05T23:00:00.000Z",
+      "description": "CHECKCARD 1105 WWW.TRUPANION.SEATTLE WA",
+      "amount": -69.53,
+      "type": "card"
+    },
+    {
+      "date": "11/10/23",
+      "fullDate": "2023-11-09T23:00:00.000Z",
+      "description": "SPROUTSFARMER 11/10 #000611275 PURCHASESPROUTSFARMERSM BURBANK CA",
+      "amount": -98.06,
+      "type": "unknown"
+    },
+    {
+      "date": "11/13/23",
+      "fullDate": "2023-11-12T23:00:00.000Z",
+      "description": "CHECKCARD 1110 TRADERJOES #124 BURBANK CA 24137463315501081814678 -41.42 ' 11/13 /23 CHECKCARD 1111 ",
+      "amount": -14.22,
+      "type": "unknown"
+    },
+    {
+      "date": "11/16/23",
+      "fullDate": "2023-11-15T23:00:00.000Z",
+      "description": "CHECKCARD 1114 TRADERJOES #122 STUDIO CITY CA 24137463319500770611797",
+      "amount": -58.15,
+      "type": "unknown"
+    },
+    {
+      "date": "11/16/23",
+      "fullDate": "2023-11-15T23:00:00.000Z",
+      "description": "CHECKCARD 1115 LAFITNESS 949-255-8100 CA 24492153319084021623287 RECURRING -29.99 1 11/16 /23 CHECKC",
+      "amount": -29.99,
+      "type": "unknown"
+    },
+    {
+      "date": "11/20/23",
+      "fullDate": "2023-11-19T23:00:00.000Z",
+      "description": "VINTAGE GROCER 11/19 #000112282 PURCHASEVINTAGE GROCERS MALIBU CA",
+      "amount": -38.55,
+      "type": "unknown"
+    },
+    {
+      "date": "11/21/23",
+      "fullDate": "2023-11-20T23:00:00.000Z",
+      "description": "RALPHS 110 1292 11/21 11000752007 PURCHASE RALPHS 110 12921 M VAN NUYS CA",
+      "amount": -23.56,
+      "type": "unknown"
+    },
+    {
+      "date": "11/22/23",
+      "fullDate": "2023-11-21T23:00:00.000Z",
+      "description": "SPROUTS FARMER 11/22 11000937689 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -84,
+      "type": "unknown"
+    },
+    {
+      "date": "11/24/23",
+      "fullDate": "2023-11-23T23:00:00.000Z",
+      "description": "CHECK CARD 1122 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786713326900018800199 -94.15 ' 11/24/23 CHE",
+      "amount": -49.87,
+      "type": "unknown"
+    },
+    {
+      "date": "11/27/23",
+      "fullDate": "2023-11-26T23:00:00.000Z",
+      "description": "CHECKCARD 1126 N & DO IL CORP NORTH HOLLYWOCA",
+      "amount": -78.2,
+      "type": "unknown"
+    },
+    {
+      "date": "12/04/23",
+      "fullDate": "2023-12-03T23:00:00.000Z",
+      "description": "SOCALGAS DES:ARC PYMT CHECK~ INDN:0093129100 CO ID:395 1240705",
+      "amount": -35.19,
+      "type": "utility"
+    },
+    {
+      "date": "12/08/23",
+      "fullDate": "2023-12-07T23:00:00.000Z",
+      "description": "ATT DES:Payment ID:XXXXXXXXXEPAYJ INDN:MARCI DREXLER CO ID:9864031004",
+      "amount": -74.78,
+      "type": "utility"
+    },
+    {
+      "date": "12/18/23",
+      "fullDate": "2023-12-17T23:00:00.000Z",
+      "description": "THE HOME DEPOT 12/17 #000676301 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -20.1,
+      "type": "unknown"
+    },
+    {
+      "date": "12/19/23",
+      "fullDate": "2023-12-18T23:00:00.000Z",
+      "description": "SPROUTS FARMER 12/19 #000129094 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -90.1,
+      "type": "unknown"
+    },
+    {
+      "date": "12/22/23",
+      "fullDate": "2023-12-21T23:00:00.000Z",
+      "description": "RALPHS#0 1284 12/22 #000849184 PURCHASERALPHS #0 12842 V STUDIO CITY CA",
+      "amount": -43.96,
+      "type": "unknown"
+    },
+    {
+      "date": "12/26/23",
+      "fullDate": "2023-12-25T23:00:00.000Z",
+      "description": "CHECKCARD 1222 Trupanion trupanion.comWA 7490641335618996517",
+      "amount": 11.66,
+      "type": "unknown"
+    },
+    {
+      "date": "12/26/23",
+      "fullDate": "2023-12-25T23:00:00.000Z",
+      "description": "CHECKCARD 1222 TRADERJOE S #122 STUDIO CITY CA24137463357100695193295",
+      "amount": -68.93,
+      "type": "unknown"
+    },
+    {
+      "date": "12/29/23",
+      "fullDate": "2023-12-28T23:00:00.000Z",
+      "description": "CHECKCARD 1228 CAEFILE*013967544-0 800-297-5377 TX 24692163362100427569925 -26 .67 ' 01/02/24 PURCHA",
+      "amount": -56.14,
+      "type": "unknown"
+    },
+    {
+      "date": "01/02/24",
+      "fullDate": "2024-01-01T23:00:00.000Z",
+      "description": "CHECKCARD 1231 CHEVRON0093049 BURBANK CA 24692163365102286353638",
+      "amount": -61.48,
+      "type": "unknown"
+    },
+    {
+      "date": "01/02/24",
+      "fullDate": "2024-01-01T23:00:00.000Z",
+      "description": "CHECKCARD 1230 TRADERJOE S #124 BURBANK CA24137463365100970299601",
+      "amount": -54.4,
+      "type": "unknown"
+    },
+    {
+      "date": "01/10/24",
+      "fullDate": "2024-01-09T23:00:00.000Z",
+      "description": "SSA TREAS 310 DES:XXSOCSEC ID:XXXXXXXXXASSA INDN:MARCI DREXLERFOR CO",
+      "amount": 2059.8,
+      "type": "ssa"
+    },
+    {
+      "date": "01/22/24",
+      "fullDate": "2024-01-21T23:00:00.000Z",
+      "description": "Interest Earned",
+      "amount": 10.58,
+      "type": "unknown"
+    },
+    {
+      "date": "01/23/24",
+      "fullDate": "2024-01-22T23:00:00.000Z",
+      "description": "CHECKCARD 0122 BLT*Kyle Switch Plates 800-5515953 CA 24906414022192042576188",
+      "amount": -474.06,
+      "type": "unknown"
+    },
+    {
+      "date": "01/25/24",
+      "fullDate": "2024-01-24T23:00:00.000Z",
+      "description": "CHECKCARD 0124 AMZN MKTP US*R881729Cl SEATTLE WA 24431064024083332114621",
+      "amount": -14.22,
+      "type": "unknown"
+    },
+    {
+      "date": "01/29/24",
+      "fullDate": "2024-01-28T23:00:00.000Z",
+      "description": "GELSON'S MARKE 01/29 #000609913 PURCHASE GELSON'S MARKETS VALLEY VILLAG CA",
+      "amount": -33.81,
+      "type": "unknown"
+    },
+    {
+      "date": "01/30/24",
+      "fullDate": "2024-01-29T23:00:00.000Z",
+      "description": "CHECKCARD 0129 AMZN MKTP US*R065897W2 SEATTLE WA 24431064029083333034401 -95.29 ., 01/31/24 SPROUTS ",
+      "amount": -437.25,
+      "type": "unknown"
+    },
+    {
+      "date": "02/05/24",
+      "fullDate": "2024-02-04T23:00:00.000Z",
+      "description": "CHECKCARD 0205 WWW.TRUPANION. SEATTLE WA -90.4102/06/24 CHECKCARD 0205 AMZN MKTP US*R21NZ2MN1 SEATTL",
+      "amount": -60.63,
+      "type": "unknown"
+    },
+    {
+      "date": "02/05/24",
+      "fullDate": "2024-02-04T23:00:00.000Z",
+      "description": "CHECKCARD 0205 WWW.TRUPANION. SEATTLE WA",
+      "amount": -90.41,
+      "type": "card"
+    },
+    {
+      "date": "02/08/24",
+      "fullDate": "2024-02-07T23:00:00.000Z",
+      "description": "CHECKCARD 0206 TST* HARVESTMOON -NEW Los Angeles CA 24692164038101948407480 -24.8002/09/24 CHECKCARD",
+      "amount": -42.5,
+      "type": "unknown"
+    },
+    {
+      "date": "02/09/24",
+      "fullDate": "2024-02-08T23:00:00.000Z",
+      "description": "CHECKCARD 0209 N & DOIL CORPNORTH HOLLYWOCA",
+      "amount": -42.5,
+      "type": "card"
+    },
+    {
+      "date": "02/12/24",
+      "fullDate": "2024-02-11T23:00:00.000Z",
+      "description": "CHECKCARD 0209 TRADER JOES 11122STUDIO CITY CA 24137464041501127582924",
+      "amount": -55.09,
+      "type": "unknown"
+    },
+    {
+      "date": "02/14/24",
+      "fullDate": "2024-02-13T23:00:00.000Z",
+      "description": "SPROUTS FARMER 02/13 11000761491 PURCHASESPROUTSFARMERSM BURBANK I CA -122.92 I02/15 /24 CHECKCARD 0",
+      "amount": -32.52,
+      "type": "unknown"
+    },
+    {
+      "date": "02/14/24",
+      "fullDate": "2024-02-13T23:00:00.000Z",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO",
+      "amount": 2059.8,
+      "type": "ssa"
+    },
+    {
+      "date": "02/15/24",
+      "fullDate": "2024-02-14T23:00:00.000Z",
+      "description": "USPS PO 055452 02/15 #000163446 PURCHASEUSPS PO 05545203 I VALLEY VILLAG CA",
+      "amount": -7.48,
+      "type": "unknown"
+    },
+    {
+      "date": "02/16/24",
+      "fullDate": "2024-02-15T23:00:00.000Z",
+      "description": "CHECKCARD 021 5 LA FITNESS 949-255-8100 CA 2449215404688788862 l 238 RECURRING I",
+      "amount": -29.99,
+      "type": "unknown"
+    },
+    {
+      "date": "02/20/24",
+      "fullDate": "2024-02-19T23:00:00.000Z",
+      "description": "Interest Earned",
+      "amount": 8.84,
+      "type": "unknown"
+    },
+    {
+      "date": "02/22/24",
+      "fullDate": "2024-02-21T23:00:00.000Z",
+      "description": "SOCALGAS DES:ARC PYMT CHECK@DN:0093129100 CO ID:3951240705 ARC , 02/22/24 LADWP DES:WEB PAY ID:40271",
+      "amount": -30.04,
+      "type": "utility"
+    },
+    {
+      "date": "03/25/24",
+      "fullDate": "2024-03-24T23:00:00.000Z",
+      "description": "CHECKCARD 0322 CAEFILE*014757613-0 213-830-0840 CA 24692164082105117639661 -2 .25 , 03/25/24 CHECKCA",
+      "amount": -102.97,
+      "type": "unknown"
+    },
+    {
+      "date": "03/29/24",
+      "fullDate": "2024-03-28T23:00:00.000Z",
+      "description": "CHECKCARD 0328 CAEFILE*Ol 4818683 -0 213-830 -0840 CA 24692164088100039792973",
+      "amount": -2.25,
+      "type": "unknown"
+    },
+    {
+      "date": "03/29/24",
+      "fullDate": "2024-03-28T23:00:00.000Z",
+      "description": "CHECKCARD 0327 TRADERJOE S #122 STUDIO CITY CA 24137464088500932664061 -59.10 t 03/29/24 CHECKCARD 0",
+      "amount": -124.35,
+      "type": "unknown"
+    },
+    {
+      "date": "04/02/24",
+      "fullDate": "2024-04-01T22:00:00.000Z",
+      "description": "SPROUTS FARMER 04/02 11000151916 PURCHASESPROUTSFARMERSM BURBANK CA",
+      "amount": -87.23,
+      "type": "unknown"
+    },
+    {
+      "date": "04/08/24",
+      "fullDate": "2024-04-07T22:00:00.000Z",
+      "description": "SPROUTSFARMER 04/08 #000995119 PURCHASESPROUTS FARMERSM BURBANK CA -128.50 t 04/09/24 CHECKCARD 0407",
+      "amount": -23.79,
+      "type": "unknown"
+    },
+    {
+      "date": "04/10/24",
+      "fullDate": "2024-04-09T22:00:00.000Z",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO 2,059 .80 ID:9031736042 PPD ",
+      "amount": 3.4,
+      "type": "ssa"
+    },
+    {
+      "date": "04/22/24",
+      "fullDate": "2024-04-21T22:00:00.000Z",
+      "description": "LADWP DES:WEB PAY 10:4027131000 INON:bonnie drexler CO 10:4956000736 WEB",
+      "amount": -641.03,
+      "type": "utility"
+    },
+    {
+      "date": "04/24/24",
+      "fullDate": "2024-04-23T22:00:00.000Z",
+      "description": "CHECKCARD 0422 TRADER JOE S #l 24 BURBANK CA 24 l 37464114500864812694",
+      "amount": -47.28,
+      "type": "unknown"
+    },
+    {
+      "date": "04/24/24",
+      "fullDate": "2024-04-23T22:00:00.000Z",
+      "description": "PURCHASE 0424 AMZN Mktp US*YE49613B3 Amzn.com/billWA -12.80 -. 04/24/24 PURCHASE 0424 AMZN Mktp US*Y",
+      "amount": -2.25,
+      "type": "unknown"
+    },
+    {
+      "date": "04/25/24",
+      "fullDate": "2024-04-24T22:00:00.000Z",
+      "description": "CHECKCARD 0424 CAEFILE*Ol5101560-0 800-297-5377 TX 24692164115109267783825",
+      "amount": -14.7,
+      "type": "unknown"
+    },
+    {
+      "date": "04/26/24",
+      "fullDate": "2024-04-25T22:00:00.000Z",
+      "description": "SOCALGAS OES:ARC PYMT CHECK@ INDN:0093129100 CO 10:3951240705",
+      "amount": -54.37,
+      "type": "utility"
+    },
+    {
+      "date": "04/29/24",
+      "fullDate": "2024-04-28T22:00:00.000Z",
+      "description": "CHECK CARD 0426 BAJA FRESH 30675 MARINA DEL RECA 24138294118401000000367 -57.56 -I 04 /29/24 CHECKCA",
+      "amount": -227.49,
+      "type": "unknown"
+    },
+    {
+      "date": "05/01/24",
+      "fullDate": "2024-04-30T22:00:00.000Z",
+      "description": "CHECKCARD 0429 THE HOME DEPOT #6613 N. HOLLYWOOD CA 7 494301412101018549",
+      "amount": 60.28,
+      "type": "unknown"
+    },
+    {
+      "date": "05/08/24",
+      "fullDate": "2024-05-07T22:00:00.000Z",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXASSA INDN:MARCI DREXLER FOR CO 2,059 .80 �., ID:9031736042 P",
+      "amount": 26979.17,
+      "type": "ssa"
+    },
+    {
+      "date": "05/08/24",
+      "fullDate": "2024-05-07T22:00:00.000Z",
+      "description": "ATT DES:Payment 10:XXXXXXXXXEPAYE INON:MARCI DREXLER co",
+      "amount": -72.84,
+      "type": "utility"
+    },
+    {
+      "date": "05/16/24",
+      "fullDate": "2024-05-15T22:00:00.000Z",
+      "description": "CHECKCARO 0515 LA FITNESS 949-255-8100 CA 24492154136084004891744 RECURRING -29.99 l 05/16/24 SPROUT",
+      "amount": -121.95,
+      "type": "unknown"
+    },
+    {
+      "date": "05/20/24",
+      "fullDate": "2024-05-19T22:00:00.000Z",
+      "description": "CHECKCARD 0517 ALL STAR HEALTH.COM 800-875-0448 CA 24692164138108085942095",
+      "amount": -113.62,
+      "type": "unknown"
+    },
+    {
+      "date": "05/20/24",
+      "fullDate": "2024-05-19T22:00:00.000Z",
+      "description": "SPROUTS FARMER 05/20 #000635788 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -93,
+      "type": "unknown"
+    },
+    {
+      "date": "05/21/24",
+      "fullDate": "2024-05-20T22:00:00.000Z",
+      "description": "Interest Earned",
+      "amount": 2.17,
+      "type": "unknown"
+    },
+    {
+      "date": "05/28/24",
+      "fullDate": "2024-05-27T22:00:00.000Z",
+      "description": "THE HOMEDEPOT 05/28 11000885273PURCHASETHE HOME DEPOT116N. HOLLYWOODCA",
+      "amount": -66.24,
+      "type": "unknown"
+    },
+    {
+      "date": "05/30/24",
+      "fullDate": "2024-05-29T22:00:00.000Z",
+      "description": "SPROUTSFARMER05/29 11000323651 PURCHASESPROUTSFARMERSM BURBANK CA -94.95 t 06/03/24 CHECKCARD 0602 N",
+      "amount": -77.67,
+      "type": "unknown"
+    },
+    {
+      "date": "06/03/24",
+      "fullDate": "2024-06-02T22:00:00.000Z",
+      "description": "VINTAGEGROCER06/02 /1000655575 PURCHASEVINTAGEGROCERS MALIBU CA",
+      "amount": -9.98,
+      "type": "unknown"
+    },
+    {
+      "date": "06/03/24",
+      "fullDate": "2024-06-02T22:00:00.000Z",
+      "description": "CHECKCARD 0602 N & DOIL CORPNORTH HOLLYWOCA",
+      "amount": -77.67,
+      "type": "card"
+    },
+    {
+      "date": "06/10/24",
+      "fullDate": "2024-06-09T22:00:00.000Z",
+      "description": "ATT DES:Payment ID:XXXXXXXXXEPAYJ INDN:MARCI DREXLER CO ID:9864031004 PPD 06/18/24 FRANCHISE TAX BO ",
+      "amount": -95.57,
+      "type": "utility"
+    },
+    {
+      "date": "06/12/24",
+      "fullDate": "2024-06-11T22:00:00.000Z",
+      "description": "SSA TREAS310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLERFOR CO",
+      "amount": 2.05,
+      "type": "ssa"
+    },
+    {
+      "date": "06/13/24",
+      "fullDate": "2024-06-12T22:00:00.000Z",
+      "description": "NSTTHE HOMED 06/13 11000181102 REFUND116 SHERMANWAY N. HOLLYWOOD CA",
+      "amount": 22.04,
+      "type": "unknown"
+    },
+    {
+      "date": "06/26/24",
+      "fullDate": "2024-06-25T22:00:00.000Z",
+      "description": "SOCALGAS DES:ARCPYMT CHECK~INDN:0093129100 CO ID:395 1240705",
+      "amount": -42.97,
+      "type": "utility"
+    },
+    {
+      "date": "07/09/24",
+      "fullDate": "2024-07-08T22:00:00.000Z",
+      "description": "ATT DES:Payment ID:XXXXXXXXXEPAYNINDN:MARCI DREXLER co",
+      "amount": -72.84,
+      "type": "utility"
+    },
+    {
+      "date": "07/22/24",
+      "fullDate": "2024-07-21T22:00:00.000Z",
+      "description": "I 07/22/24 I 07/ 22/24 Description SPROUTS FARMER 06/27 11000978125 PURCHASE SPROUTS FARMERS M WOODL",
+      "amount": -112.4,
+      "type": "unknown"
+    },
+    {
+      "date": "08/08/24",
+      "fullDate": "2024-08-07T22:00:00.000Z",
+      "description": "ATT DES:Payment ID:XXXXXXXXXEPAYS INDN:MARCI DREXLER co",
+      "amount": -73.04,
+      "type": "utility"
+    },
+    {
+      "date": "08/14/24",
+      "fullDate": "2024-08-13T22:00:00.000Z",
+      "description": "SSA TREAS 31 O DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO",
+      "amount": 2059.8,
+      "type": "ssa"
+    },
+    {
+      "date": "08/21/24",
+      "fullDate": "2024-08-20T22:00:00.000Z",
+      "description": "THE HOME DEPOT 08/21 11000443818PURCHASETHE HOME DEPOT 116 N. HOLLYWOOD CA",
+      "amount": -28.94,
+      "type": "unknown"
+    },
+    {
+      "date": "08/23/24",
+      "fullDate": "2024-08-22T22:00:00.000Z",
+      "description": "SPROUTS FARMER 08/23 #000329594 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -134.98,
+      "type": "unknown"
+    },
+    {
+      "date": "08/26/24",
+      "fullDate": "2024-08-25T22:00:00.000Z",
+      "description": "CHECKCARD 0823 TRADER JOE S #124 BURBANK CA 24 l 37464237501238847806 -46.55 t 08/27/24 PURCHASE 082",
+      "amount": -8.12,
+      "type": "unknown"
+    },
+    {
+      "date": "08/27/24",
+      "fullDate": "2024-08-26T22:00:00.000Z",
+      "description": "PURCHASE 0827 RING YEARLY PLAN HTTPSRING.COMCA",
+      "amount": -49.99,
+      "type": "unknown"
+    },
+    {
+      "date": "08/27/24",
+      "fullDate": "2024-08-26T22:00:00.000Z",
+      "description": "SOCALGAS DES:ARC PYMT CHECK #:0400 INDN:0093129100 CO ID:3951240705",
+      "amount": -30.98,
+      "type": "utility"
+    },
+    {
+      "date": "09/03/24",
+      "fullDate": "2024-09-02T22:00:00.000Z",
+      "description": "CHECKCARD 0831 TRADER JOE 5 /fl 24 BURBANK CA 24137464245501224527461",
+      "amount": -54.17,
+      "type": "unknown"
+    },
+    {
+      "date": "09/03/24",
+      "fullDate": "2024-09-02T22:00:00.000Z",
+      "description": "SPROUTS FARMER 08/31 #000155471 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -116.9,
+      "type": "unknown"
+    },
+    {
+      "date": "09/05/24",
+      "fullDate": "2024-09-04T22:00:00.000Z",
+      "description": "CHECKCARD 0905 WWW.TRUPANION. SEATTLE WA 00000000000000000362711 RECURRING -90.41 4 09/06/24 CHECKCA",
+      "amount": -50.22,
+      "type": "unknown"
+    },
+    {
+      "date": "09/09/24",
+      "fullDate": "2024-09-08T22:00:00.000Z",
+      "description": "CHECKCARD 0907 FRANKIE'S ITALIAN KITCH TARZANA CA 24000974252290201369178",
+      "amount": -37.5,
+      "type": "unknown"
+    },
+    {
+      "date": "09/09/24",
+      "fullDate": "2024-09-08T22:00:00.000Z",
+      "description": "CHECKCARD 0908 CHEVRON 0094240 CALABASAS CA 246921642521068649751 79",
+      "amount": -67.07,
+      "type": "unknown"
+    },
+    {
+      "date": "09/09/24",
+      "fullDate": "2024-09-08T22:00:00.000Z",
+      "description": "VINTAGE GROCER 09/08 #000794134 PURCHASE VINTAGE GROCERS MALIBU CA",
+      "amount": -32.11,
+      "type": "unknown"
+    },
+    {
+      "date": "09/09/24",
+      "fullDate": "2024-09-08T22:00:00.000Z",
+      "description": "ATT DES:Payment ID:XXXXXXXXXEPAYX INDN:MARCI DREXLER co",
+      "amount": -76.55,
+      "type": "utility"
+    },
+    {
+      "date": "09/10/24",
+      "fullDate": "2024-09-09T22:00:00.000Z",
+      "description": "CHECKCARD 0908 TRADER JOE S #122 STUDIO CITY CA 24137464253501018454079",
+      "amount": -44.94,
+      "type": "unknown"
+    },
+    {
+      "date": "09/11/24",
+      "fullDate": "2024-09-10T22:00:00.000Z",
+      "description": "THE HOME DEPOT 09/11 #000141360 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -19.69,
+      "type": "unknown"
+    },
+    {
+      "date": "09/13/24",
+      "fullDate": "2024-09-12T22:00:00.000Z",
+      "description": "PURCHASE 0912 AMAZON MKTPL*OP7EV6V73 Amzn.com/billWA",
+      "amount": -69.45,
+      "type": "unknown"
+    },
+    {
+      "date": "09/16/24",
+      "fullDate": "2024-09-15T22:00:00.000Z",
+      "description": "CHECKCARD 0915 LA FITNESS IRVINE CA 00000000000000000386385 RECURRING",
+      "amount": -29.99,
+      "type": "unknown"
+    },
+    {
+      "date": "09/16/24",
+      "fullDate": "2024-09-15T22:00:00.000Z",
+      "description": "SPROUTS FARMER 09/15 #000642589 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -141.84,
+      "type": "unknown"
+    },
+    {
+      "date": "09/16/24",
+      "fullDate": "2024-09-15T22:00:00.000Z",
+      "description": "CHECKCARD 0915 LA FITNESS IRVINE CA 00000000000000000386166 RECURRING -29 .99 , 09/17/24 CHECKCARD 0",
+      "amount": -39.32,
+      "type": "unknown"
+    },
+    {
+      "date": "09/18/24",
+      "fullDate": "2024-09-17T22:00:00.000Z",
+      "description": "SOCALGAS DES:ARC PYMT CHECK #:0407 INDN:0093129100 CO ID:3951240705",
+      "amount": -33.05,
+      "type": "utility"
+    },
+    {
+      "date": "10/03/24",
+      "fullDate": "2024-10-02T22:00:00.000Z",
+      "description": "CHECKCARD 1001 TRADER JOE S 11124 BURBANK CA 24137464276501043092376 -55.22 4 10/03/24 PURCHASE 1002",
+      "amount": -15.32,
+      "type": "unknown"
+    },
+    {
+      "date": "10/07/24",
+      "fullDate": "2024-10-06T22:00:00.000Z",
+      "description": "CHECKCARD 1005 WWW.TRUPANION. SEATTLE WA 00000000000000000891777 RECURRING",
+      "amount": -90.41,
+      "type": "unknown"
+    },
+    {
+      "date": "10/07/24",
+      "fullDate": "2024-10-06T22:00:00.000Z",
+      "description": "THE HOME DEPOT 10/06 11000397626 PURCHASE THE HOME DEPOT 116 N. HOLLYWOOD CA",
+      "amount": -40.14,
+      "type": "unknown"
+    },
+    {
+      "date": "10/08/24",
+      "fullDate": "2024-10-07T22:00:00.000Z",
+      "description": "PURCHASE 1008 AMAZON MKTPL*Nl69J9PM3 Amzn.com/billWA",
+      "amount": -65.69,
+      "type": "unknown"
+    },
+    {
+      "date": "10/08/24",
+      "fullDate": "2024-10-07T22:00:00.000Z",
+      "description": "ATT DES:Payment ID:XXXXXXXXXEPAYB INDN:MARCI DREXLER co",
+      "amount": -76.55,
+      "type": "utility"
+    },
+    {
+      "date": "10/15/24",
+      "fullDate": "2024-10-14T22:00:00.000Z",
+      "description": "PURCHASE 1014 AMAZON RETA* Y43F35243 WWW.AMAZON.COWA",
+      "amount": -27.36,
+      "type": "unknown"
+    },
+    {
+      "date": "10/15/24",
+      "fullDate": "2024-10-14T22:00:00.000Z",
+      "description": "CHECKCARD 1015 LA FITNESS IRVINE CA 00000000000000000404984 RECURRING",
+      "amount": -29.99,
+      "type": "unknown"
+    },
+    {
+      "date": "10/21/24",
+      "fullDate": "2024-10-20T22:00:00.000Z",
+      "description": "SPROUTS FARMER 10/20 #000395847 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -129.69,
+      "type": "unknown"
+    },
+    {
+      "date": "10/21/24",
+      "fullDate": "2024-10-20T22:00:00.000Z",
+      "description": "LADWP DES:WEB PAY ID:4027131000 INDN:bonnie drexler CO ID:4956000736 WEB",
+      "amount": -848.44,
+      "type": "utility"
+    },
+    {
+      "date": "10/29/24",
+      "fullDate": "2024-10-28T23:00:00.000Z",
+      "description": "SOCALGAS DES:ARCPYMT CHECK #:0412 INDN:0093129100 CO ID:3951240705",
+      "amount": -33.14,
+      "type": "utility"
+    },
+    {
+      "date": "11/06/24",
+      "fullDate": "2024-11-05T23:00:00.000Z",
+      "description": "PURCHASE 1106 AMAZON MARK* 8W4V75HU3 HTTPSAMAZON.CWA",
+      "amount": -141.78,
+      "type": "unknown"
+    },
+    {
+      "date": "11/08/24",
+      "fullDate": "2024-11-07T23:00:00.000Z",
+      "description": "ATT DES:Payment ID:XXXXXXXXXEPAYGINDN:MARCI DREXLER co",
+      "amount": -76.64,
+      "type": "utility"
+    },
+    {
+      "date": "11/12/24",
+      "fullDate": "2024-11-11T23:00:00.000Z",
+      "description": "PURCHASE 1108 AMAZON MARK* 9C03B3KJ3 HTTPSAMAZON.CWA -58.02 a 11/12/24 CHECKCARD 1108 RIBS USA 818-8",
+      "amount": -20.11,
+      "type": "unknown"
+    },
+    {
+      "date": "11/12/24",
+      "fullDate": "2024-11-11T23:00:00.000Z",
+      "description": "SPROUTS FARMER 11/09 #000997376 PURCHASESPROUTS FARMERSM BURBANK CA",
+      "amount": -125.76,
+      "type": "unknown"
+    },
+    {
+      "date": "11/12/24",
+      "fullDate": "2024-11-11T23:00:00.000Z",
+      "description": "CHECKCARD 1109 TRADER JOE S #124 BURBANK CA 2413746431550126171 l 106",
+      "amount": -74.22,
+      "type": "unknown"
+    },
+    {
+      "date": "11/15/24",
+      "fullDate": "2024-11-14T23:00:00.000Z",
+      "description": "CHECKCARD 1115 N & DOIL CORP NORTH HOLLYWOCA -51 .71 , 11/15/24 SPROUTS FARMER 11/15 #000602704 PURC",
+      "amount": -67.62,
+      "type": "unknown"
+    },
+    {
+      "date": "11/18/24",
+      "fullDate": "2024-11-17T23:00:00.000Z",
+      "description": "CHECKCARD 1115 TRADERJOE S #122 STUDIO CITY CA 24137464321501385867760",
+      "amount": -53.64,
+      "type": "unknown"
+    },
+    {
+      "date": "11/18/24",
+      "fullDate": "2024-11-17T23:00:00.000Z",
+      "description": "PURCHASE 1117 AMAZON MKTPL*KN2061 UE3 Amzn.com/billWA",
+      "amount": -38.27,
+      "type": "unknown"
+    },
+    {
+      "date": "11/19/24",
+      "fullDate": "2024-11-18T23:00:00.000Z",
+      "description": "SPROUTSFARMER 11/19 #000640538 PURCHASESPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -79.07,
+      "type": "unknown"
+    },
+    {
+      "date": "12/09/24",
+      "fullDate": "2024-12-08T23:00:00.000Z",
+      "description": "ATT DES:Payment ID:XXXXXXXXXEPAYK INDN:MARCI DREXLER co",
+      "amount": -76.64,
+      "type": "utility"
+    },
+    {
+      "date": "12/16/24",
+      "fullDate": "2024-12-15T23:00:00.000Z",
+      "description": "CHECKCARD 1215 LA FITNESS IRVINE CA 00000000000000000479370 RECURRING -29 .99 ,. 12/16 /24 CHECKCARD",
+      "amount": -29.99,
+      "type": "unknown"
+    },
+    {
+      "date": "12/16/24",
+      "fullDate": "2024-12-15T23:00:00.000Z",
+      "description": "SPROUTS FARMER 12/15 #000908897 PURCHASESPROUTS FARMERSM STUDIO CITY CA -44 .15 .-12/16/24 SPROUTSFA",
+      "amount": -22.77,
+      "type": "unknown"
+    },
+    {
+      "date": "12/16/24",
+      "fullDate": "2024-12-15T23:00:00.000Z",
+      "description": "USPS PO 055452 12/16 #000761401 PURCHASEUSPS PO 05545203 VALLEY VILLAG CA",
+      "amount": -22.1,
+      "type": "unknown"
+    },
+    {
+      "date": "12/18/24",
+      "fullDate": "2024-12-17T23:00:00.000Z",
+      "description": "PURCHASE 1217 AMZN Mktp US*Zl 4H61JW1 Amzn.com/billWA",
+      "amount": -27.36,
+      "type": "unknown"
+    },
+    {
+      "date": "12/18/24",
+      "fullDate": "2024-12-17T23:00:00.000Z",
+      "description": "SPROUTS FARMER 12/18 #000972705 PURCHASESPROUTS FARMERSM STUDIO CITY CA",
+      "amount": -35.98,
+      "type": "unknown"
+    },
+    {
+      "date": "12/19/24",
+      "fullDate": "2024-12-18T23:00:00.000Z",
+      "description": "CHECKCARD 1218 RUSTY' S DISCOUNT PET CE STUDIO CITY CA 24786714353900013300207",
+      "amount": -168.61,
+      "type": "unknown"
+    },
+    {
+      "date": "12/23/24",
+      "fullDate": "2024-12-22T23:00:00.000Z",
+      "description": "PURCHASE 1222 AMAZON MARK* ZE3476J82 HTTPSAMAZON.CWA",
+      "amount": -153.94,
+      "type": "unknown"
+    },
+    {
+      "date": "12/23/24",
+      "fullDate": "2024-12-22T23:00:00.000Z",
+      "description": "CHECKCARD 1221 TRADER JOE S #124 BURBANK CA 24137464357501322935511",
+      "amount": -49.65,
+      "type": "unknown"
+    },
+    {
+      "date": "12/23/24",
+      "fullDate": "2024-12-22T23:00:00.000Z",
+      "description": "SPROUTS FARMER 12/21 #000987218 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -93.35,
+      "type": "unknown"
+    },
+    {
+      "date": "12/24/24",
+      "fullDate": "2024-12-23T23:00:00.000Z",
+      "description": "HOBBYLOBB 641 12/24 #000957908 PURCHASE HOBBYLOBB 641 N. BURBANK CA",
+      "amount": -4.41,
+      "type": "unknown"
+    },
+    {
+      "date": "12/24/24",
+      "fullDate": "2024-12-23T23:00:00.000Z",
+      "description": "SPROUTS FARMER 12/24 #000653310 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -108.29,
+      "type": "unknown"
+    },
+    {
+      "date": "01/02/25",
+      "fullDate": "2025-01-01T23:00:00.000Z",
+      "description": "SPROUTS FARMER 01/02 #000774367 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -64.31,
+      "type": "unknown"
+    },
+    {
+      "date": "01/06/25",
+      "fullDate": "2025-01-05T23:00:00.000Z",
+      "description": "SPROUTS FARMER 01/05 11000990427 PURCHASESPROUTS FARMERSM STUDIO CITY CA",
+      "amount": -69.96,
+      "type": "unknown"
+    },
+    {
+      "date": "01/08/25",
+      "fullDate": "2025-01-07T23:00:00.000Z",
+      "description": "ATT DES:Payment ID:XXXXXXXXXEPAYP INDN:MARCI DREXLER co",
+      "amount": -76.64,
+      "type": "utility"
+    },
+    {
+      "date": "01/13/25",
+      "fullDate": "2025-01-12T23:00:00.000Z",
+      "description": "SPROUTS FARMER 01/13 11000358652 PURCHASESPROUTS FARMERSM STUDIO CITY CA -9.98 1 01/15 /25 CHECKCARD",
+      "amount": -29.99,
+      "type": "unknown"
+    },
+    {
+      "date": "01/15/25",
+      "fullDate": "2025-01-14T23:00:00.000Z",
+      "description": "CHECKCARD 0115 LA FITNESS IRVINE CA 00000000000000000009100 RECURRING",
+      "amount": -29.99,
+      "type": "unknown"
+    },
+    {
+      "date": "01/16/25",
+      "fullDate": "2025-01-15T23:00:00.000Z",
+      "description": "BKOFAMERICA ATM 01 /16 #000001346 DEPOSIT LAUREL CANYON-MAGN VALLEY VILLAG CA 105.04 1 01 /22/25 Int",
+      "amount": 5.61,
+      "type": "unknown"
+    },
+    {
+      "date": "02/06/25",
+      "fullDate": "2025-02-05T23:00:00.000Z",
+      "description": "CHECKCARD 0204 TRADERJOE 5 11122STUDIO CITY CA 24137465036500935088722",
+      "amount": -53.3,
+      "type": "unknown"
+    },
+    {
+      "date": "02/12/25",
+      "fullDate": "2025-02-11T23:00:00.000Z",
+      "description": "SPROUTS FARMER 02/12 11000177946 PURCHASESPROUTS FARMERSM STUDIO CITY CA",
+      "amount": -50.12,
+      "type": "unknown"
+    },
+    {
+      "date": "02/18/25",
+      "fullDate": "2025-02-17T23:00:00.000Z",
+      "description": "CHECKCARD 0216 ALL STAR HEALTH.COM 800-875-0448 CA 2469216S047108815295506",
+      "amount": -113.11,
+      "type": "unknown"
+    },
+    {
+      "date": "02/18/25",
+      "fullDate": "2025-02-17T23:00:00.000Z",
+      "description": "CHECKCARD 0216 TRADERJOE 5 11122STUDIO CITY CA 2413746S048500918918412",
+      "amount": -51.63,
+      "type": "unknown"
+    },
+    {
+      "date": "02/18/25",
+      "fullDate": "2025-02-17T23:00:00.000Z",
+      "description": "SPROUTS FARMER 02/16 11000377523 PURCHASESPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -78.4,
+      "type": "unknown"
+    },
+    {
+      "date": "02/21/25",
+      "fullDate": "2025-02-20T23:00:00.000Z",
+      "description": "CHECKCARD 0221 N & DOIL CORPNORTH HOLLYWOCA",
+      "amount": -61.46,
+      "type": "card"
+    },
+    {
+      "date": "02/24/25",
+      "fullDate": "2025-02-23T23:00:00.000Z",
+      "description": "LADWP DES:WEB PAY ID:4027131000 INDN:bonnie drexler CO ID:4956000736 WEB",
+      "amount": -824.53,
+      "type": "utility"
+    },
+    {
+      "date": "02/25/25",
+      "fullDate": "2025-02-24T23:00:00.000Z",
+      "description": "SPROUTS FARMER 02/25 #000988607 PURCHASESPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -62.7,
+      "type": "unknown"
+    },
+    {
+      "date": "02/25/25",
+      "fullDate": "2025-02-24T23:00:00.000Z",
+      "description": "SPROUTS FARMER 02/25 #000130792 PURCHASESPROUTS FARMERS M BURBANK CA",
+      "amount": -23.16,
+      "type": "unknown"
+    },
+    {
+      "date": "02/28/25",
+      "fullDate": "2025-02-27T23:00:00.000Z",
+      "description": "SPROUTS FARMER 02/28 #000770455 PURCHASESPROUTS FARMERS M STUDIO CITY CA -94.44, 03 /03 /25 CHECKCAR",
+      "amount": -37.02,
+      "type": "unknown"
+    },
+    {
+      "date": "03/04/25",
+      "fullDate": "2025-03-03T23:00:00.000Z",
+      "description": "SPROUTS FARMER 03/04 #000314036 PURCHASESPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -86.64,
+      "type": "unknown"
+    },
+    {
+      "date": "03/12/25",
+      "fullDate": "2025-03-11T23:00:00.000Z",
+      "description": "SSA TREAS 310 DES:XXSOCSEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO",
+      "amount": 2089.4,
+      "type": "ssa"
+    },
+    {
+      "date": "03/17/25",
+      "fullDate": "2025-03-16T23:00:00.000Z",
+      "description": "CHECKCARD 0315 LA FITNESS IRVINE CA 00000000000000000419700 RECURRING",
+      "amount": -29.99,
+      "type": "unknown"
+    },
+    {
+      "date": "03/17/25",
+      "fullDate": "2025-03-16T23:00:00.000Z",
+      "description": "CHECKCARD 0315 N & DOIL CORPNORTH HOLLYWOCA I -70 .10 , 03/17 /25 I THE HOME DEPOT 03/15 #000347109 ",
+      "amount": -8.21,
+      "type": "unknown"
+    },
+    {
+      "date": "03/17/25",
+      "fullDate": "2025-03-16T23:00:00.000Z",
+      "description": "THE HOME DEPOT 03/17 #000039246 PURCHASETHE HOME DEPOT #6 N. HOLLYWOOD CA -8 .21 , 03/18 /25 SPROUTS",
+      "amount": -74.93,
+      "type": "unknown"
+    },
+    {
+      "date": "03/20/25",
+      "fullDate": "2025-03-19T23:00:00.000Z",
+      "description": "Interest Earned",
+      "amount": 4.63,
+      "type": "unknown"
+    },
+    {
+      "date": "04/14/25",
+      "fullDate": "2025-04-13T22:00:00.000Z",
+      "description": "PURCHASE 0412 SP BABYLIST CHECKOUT.BABYCA",
+      "amount": -109.74,
+      "type": "card"
+    },
+    {
+      "date": "04/15/25",
+      "fullDate": "2025-04-14T22:00:00.000Z",
+      "description": "CHECKCARD0415 LAFITNESSIRVINE CA00000000000000000249810 RECURRING",
+      "amount": -29.99,
+      "type": "unknown"
+    },
+    {
+      "date": "04/15/25",
+      "fullDate": "2025-04-14T22:00:00.000Z",
+      "description": "SPROUTSFARMER04/15 11000937950 PURCHASESPROUTSFARMERSM STUDIO CITY CA -110.90 o 04/16/25 THE HOMEDEP",
+      "amount": -143.1,
+      "type": "unknown"
+    },
+    {
+      "date": "04/18/25",
+      "fullDate": "2025-04-17T22:00:00.000Z",
+      "description": "CHECKCARD0416 TRADERJOES 11122 STUDIOCITY CA24137465107501111810669 -41.16 t 04/21/25 CHECKCARD0419 ",
+      "amount": -79.63,
+      "type": "unknown"
+    },
+    {
+      "date": "04/21/25",
+      "fullDate": "2025-04-20T22:00:00.000Z",
+      "description": "PURCHASE 0421 AMAZONRETA*R28981FY3WWW.AMAZON.COWA",
+      "amount": -35.11,
+      "type": "unknown"
+    },
+    {
+      "date": "04/21/25",
+      "fullDate": "2025-04-20T22:00:00.000Z",
+      "description": "CHECKCARD0419 N & DOIL CORPNORTHHOLLYWOCA",
+      "amount": -71.28,
+      "type": "card"
+    },
+    {
+      "date": "04/22/25",
+      "fullDate": "2025-04-21T22:00:00.000Z",
+      "description": "LADWP DES:WEB PAY ID:4027131000 INDN:bonnie drexler CO ID:4956000736 WEB Amount",
+      "amount": -756.95,
+      "type": "utility"
+    },
+    {
+      "date": "05/08/25",
+      "fullDate": "2025-05-07T22:00:00.000Z",
+      "description": "ATT DES:Payment ID:XXXXXXXXXEPAYF INDN:MARCI DREXLER ID:9864031004 PPD Total other subtractions Chec",
+      "amount": -112.1,
+      "type": "utility"
+    },
+    {
+      "date": "06/09/25",
+      "fullDate": "2025-06-08T22:00:00.000Z",
+      "description": "ATT DES:Payment ID:XXXXXXXXXEPAYKINDN:MARCI DREXLER 0 co",
+      "amount": -76.47,
+      "type": "utility"
+    },
+    {
+      "date": "06/13/25",
+      "fullDate": "2025-06-12T22:00:00.000Z",
+      "description": "SPROUTSFARMER 06/13 11000391680 PURCHASESPROUTS FARMERSM STUDIO CITY CA -148.72 1 06/16/25 CHECKCARD",
+      "amount": -104.86,
+      "type": "unknown"
+    },
+    {
+      "date": "06/18/25",
+      "fullDate": "2025-06-17T22:00:00.000Z",
+      "description": "CHECKCARD 0618 CVS/PHARMACY II Studio City CA",
+      "amount": -27.84,
+      "type": "card"
+    },
+    {
+      "date": "07/02/25",
+      "fullDate": "2025-07-01T22:00:00.000Z",
+      "description": "SPROUTS FARMER 07/02 #000178559 PURCHASE SPROUTS FARMERSM STUDIO CITY CA",
+      "amount": -126.59,
+      "type": "unknown"
+    },
+    {
+      "date": "07/03/25",
+      "fullDate": "2025-07-02T22:00:00.000Z",
+      "description": "CHECKCARD 0702 THE UPS STORE 2036 213-4945128 CA 24000975183996403602577 -15.00 l 07/07/25 CHECKCARD",
+      "amount": -50.29,
+      "type": "unknown"
+    },
+    {
+      "date": "07/09/25",
+      "fullDate": "2025-07-08T22:00:00.000Z",
+      "description": "SSA TREAS 310 DES:XXSOCSEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO",
+      "amount": 2089.4,
+      "type": "ssa"
+    },
+    {
+      "date": "07/22/25",
+      "fullDate": "2025-07-21T22:00:00.000Z",
+      "description": "Interest Earned",
+      "amount": 6.96,
+      "type": "unknown"
+    },
+    {
+      "date": "07/28/25",
+      "fullDate": "2025-07-27T22:00:00.000Z",
+      "description": "CHECKCARD0726 TRADERJOES #122 STUDIOCITY CA24137465208501272623065",
+      "amount": -39.88,
+      "type": "unknown"
+    },
+    {
+      "date": "07/28/25",
+      "fullDate": "2025-07-27T22:00:00.000Z",
+      "description": "SPROUTSFARMER07/26 #000962931 PURCHASESPROUTSFARMERSM STUDIOCITY CA",
+      "amount": -75.47,
+      "type": "unknown"
+    },
+    {
+      "date": "07/30/25",
+      "fullDate": "2025-07-29T22:00:00.000Z",
+      "description": "THEHOMEDEPOT 07/30 #000153359 PURCHASETHE HOMEDEPOT#6 N. HOLLYWOODCA",
+      "amount": -87.59,
+      "type": "unknown"
+    },
+    {
+      "date": "07/30/25",
+      "fullDate": "2025-07-29T22:00:00.000Z",
+      "description": "SPROUTSFARMER07/30 #000363991 PURCHASESPROUTSFARMERSM STUDIOCITY CA",
+      "amount": -96.63,
+      "type": "unknown"
+    },
+    {
+      "date": "08/04/25",
+      "fullDate": "2025-08-03T22:00:00.000Z",
+      "description": "SPROUTSFARMER08/03 #000353014 PURCHASESPROUTSFARMERSM STUDIOCITY CA",
+      "amount": -90.6,
+      "type": "unknown"
+    }
+  ],
+  "checks": [
+    {
+      "date": "08/29/23",
+      "fullDate": "2023-08-28T22:00:00.000Z",
+      "checkNum": "341",
+      "amount": -4500,
+      "type": "check"
+    },
+    {
+      "date": "09/20/23",
+      "fullDate": "2023-09-19T22:00:00.000Z",
+      "checkNum": "328",
+      "amount": -37.22,
+      "type": "check"
+    },
+    {
+      "date": "10/06/23",
+      "fullDate": "2023-10-05T22:00:00.000Z",
+      "checkNum": "330",
+      "amount": -130,
+      "type": "check"
+    },
+    {
+      "date": "10/17/23",
+      "fullDate": "2023-10-16T22:00:00.000Z",
+      "checkNum": "335",
+      "amount": -100,
+      "type": "check"
+    },
+    {
+      "date": "10/20/23",
+      "fullDate": "2023-10-19T22:00:00.000Z",
+      "checkNum": "337",
+      "amount": -94.5,
+      "type": "check"
+    },
+    {
+      "date": "01/29/24",
+      "fullDate": "2024-01-28T23:00:00.000Z",
+      "checkNum": "351",
+      "amount": -130,
+      "type": "check"
+    },
+    {
+      "date": "02/27/24",
+      "fullDate": "2024-02-26T23:00:00.000Z",
+      "checkNum": "366",
+      "amount": -463.2,
+      "type": "check"
+    },
+    {
+      "date": "04/25/24",
+      "fullDate": "2024-04-24T22:00:00.000Z",
+      "checkNum": "378",
+      "amount": -463.2,
+      "type": "check"
+    },
+    {
+      "date": "05/28/24",
+      "fullDate": "2024-05-27T22:00:00.000Z",
+      "checkNum": "383",
+      "amount": -132.7,
+      "type": "check"
+    },
+    {
+      "date": "07/01/24",
+      "fullDate": "2024-06-30T22:00:00.000Z",
+      "checkNum": "390",
+      "amount": -2191.46,
+      "type": "check"
+    },
+    {
+      "date": "07/01/24",
+      "fullDate": "2024-06-30T22:00:00.000Z",
+      "checkNum": "392",
+      "amount": -132.7,
+      "type": "check"
+    },
+    {
+      "date": "07/01/24",
+      "fullDate": "2024-06-30T22:00:00.000Z",
+      "checkNum": "391",
+      "amount": -463.2,
+      "type": "check"
+    },
+    {
+      "date": "07/29/24",
+      "fullDate": "2024-07-28T22:00:00.000Z",
+      "checkNum": "394",
+      "amount": -463.2,
+      "type": "check"
+    },
+    {
+      "date": "08/22/24",
+      "fullDate": "2024-08-21T22:00:00.000Z",
+      "checkNum": "401",
+      "amount": -132.7,
+      "type": "check"
+    },
+    {
+      "date": "08/28/24",
+      "fullDate": "2024-08-27T22:00:00.000Z",
+      "checkNum": "399",
+      "amount": -390,
+      "type": "check"
+    },
+    {
+      "date": "09/18/24",
+      "fullDate": "2024-09-17T22:00:00.000Z",
+      "checkNum": "406",
+      "amount": -425,
+      "type": "check"
+    },
+    {
+      "date": "10/25/24",
+      "fullDate": "2024-10-24T22:00:00.000Z",
+      "checkNum": "414",
+      "amount": -463.2,
+      "type": "check"
+    },
+    {
+      "date": "12/20/24",
+      "fullDate": "2024-12-19T23:00:00.000Z",
+      "checkNum": "424",
+      "amount": -463.2,
+      "type": "check"
+    },
+    {
+      "date": "12/23/24",
+      "fullDate": "2024-12-22T23:00:00.000Z",
+      "checkNum": "422",
+      "amount": -220.94,
+      "type": "check"
+    },
+    {
+      "date": "01/28/25",
+      "fullDate": "2025-01-27T23:00:00.000Z",
+      "checkNum": "436",
+      "amount": -1000,
+      "type": "check"
+    },
+    {
+      "date": "03/03/25",
+      "fullDate": "2025-03-02T23:00:00.000Z",
+      "checkNum": "446",
+      "amount": -164.9,
+      "type": "check"
+    },
+    {
+      "date": "06/02/25",
+      "fullDate": "2025-06-01T22:00:00.000Z",
+      "checkNum": "462",
+      "amount": -521.23,
+      "type": "check"
+    }
+  ]
+}

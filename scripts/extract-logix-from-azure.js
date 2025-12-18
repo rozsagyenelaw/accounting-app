@@ -13,7 +13,8 @@ const dividendTables = [];
 
 for (let i = 0; i < azureData.tables.length; i++) {
   const table = azureData.tables[i];
-  const hasDividend = table.sample.some(cell =>
+  const cells = table.cells || [];
+  const hasDividend = cells.some(cell =>
     typeof cell === 'string' && cell.toLowerCase().includes('dividend')
   );
 
@@ -32,10 +33,11 @@ dividendTables.forEach((table, idx) => {
   console.log(`TABLE ${table.index + 1} (${table.rows} rows x ${table.cols} cols)`);
   console.log('='.repeat(80));
 
-  // Parse the sample array into rows
+  // Parse the cells array into rows
+  const cellData = table.cells || [];
   const rows = [];
-  for (let i = 0; i < table.sample.length; i += table.cols) {
-    rows.push(table.sample.slice(i, i + table.cols));
+  for (let i = 0; i < cellData.length; i += table.cols) {
+    rows.push(cellData.slice(i, i + table.cols));
   }
 
   console.log('\nHeader row:', rows[0]);
@@ -56,14 +58,23 @@ dividendTables.forEach((table, idx) => {
       // Check for date (MM/DD format)
       if (!date && /^\d{1,2}\/\d{1,2}$/.test(cellStr)) {
         date = cellStr;
+        continue;
       }
+
+      // Description - must contain "dividend"
+      if (!description && cellStr.length > 5 && cellStr.toLowerCase().includes('dividend')) {
+        description = cellStr;
+        continue;
+      }
+
       // Check for amount (various formats)
-      else if (!amount) {
-        // Format 1: Simple amount like "379.58"
+      if (!amount) {
+        // Format 1: Simple amount like "379.58" or "75.99"
         if (/^\d{1,3}(,\d{3})*\.\d{2}$/.test(cellStr)) {
           const parsed = parseFloat(cellStr.replace(/,/g, ''));
           if (parsed < 100000) {
             amount = parsed;
+            continue;
           }
         }
         // Format 2: Amount with percentage like "5.010% 379.58"
@@ -73,13 +84,10 @@ dividendTables.forEach((table, idx) => {
             const parsed = parseFloat(match[1].replace(/,/g, ''));
             if (parsed < 100000) {
               amount = parsed;
+              continue;
             }
           }
         }
-      }
-      // Description - must contain "dividend"
-      else if (cellStr.length > 5 && cellStr.toLowerCase().includes('dividend')) {
-        description = cellStr;
       }
     }
 

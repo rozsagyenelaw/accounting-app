@@ -1,0 +1,4694 @@
+[
+  {
+    "date": "9/5/2023",
+    "description": "Bank of America CHECKCARD 0902 BUILD.COM 800-375-3403 CA 7443565324508372076",
+    "amount": 244.19,
+    "type": "RECEIPT",
+    "source": "Table 2",
+    "raw": {
+      "date": "09/05/23",
+      "description": "CHECKCARD 0902 BUILD.COM 800-375-3403 CA 7443565324508372076",
+      "amount": 244.19
+    }
+  },
+  {
+    "date": "9/8/2023",
+    "description": "Bank of America WIRE TYPE:WIRE IN DATE: 230908 TIME:1754 ET TRN:2023090800505756 SEQ:2023090800010823/004020 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: 0G79Z1DTSY",
+    "amount": 26979.17,
+    "type": "RECEIPT",
+    "source": "Table 2",
+    "raw": {
+      "date": "09/08/23",
+      "description": "WIRE TYPE:WIRE IN DATE: 230908 TIME:1754 ET TRN:2023090800505756 SEQ:2023090800010823/004020 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: 0G79Z1DTSY",
+      "amount": 26979.17
+    }
+  },
+  {
+    "date": "9/13/2023",
+    "description": "Bank of America SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXXX",
+    "amount": 2012,
+    "type": "RECEIPT",
+    "source": "Table 2",
+    "raw": {
+      "date": "09/13/23",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXXX",
+      "amount": 2012
+    }
+  },
+  {
+    "date": "9/19/2023",
+    "description": "Bank of America CHECKCARD 0918 AMZN MKTP US SEATTLE WA 7443106326108300274",
+    "amount": 111.68,
+    "type": "RECEIPT",
+    "source": "Table 2",
+    "raw": {
+      "date": "09/19/23",
+      "description": "CHECKCARD 0918 AMZN MKTP US SEATTLE WA 7443106326108300274",
+      "amount": 111.68
+    }
+  },
+  {
+    "date": "9/19/2023",
+    "description": "Bank of America CHECKCARD 0918 AMAZON.COM SEATTLE WA 7443106326108300143",
+    "amount": 10.06,
+    "type": "RECEIPT",
+    "source": "Table 2",
+    "raw": {
+      "date": "09/19/23",
+      "description": "CHECKCARD 0918 AMAZON.COM SEATTLE WA 7443106326108300143",
+      "amount": 10.06
+    }
+  },
+  {
+    "date": "9/19/2023",
+    "description": "Bank of America CHECKCARD 0918 AMAZON.COM SEATTLE WA 7443106326108300253",
+    "amount": 10.05,
+    "type": "RECEIPT",
+    "source": "Table 2",
+    "raw": {
+      "date": "09/19/23",
+      "description": "CHECKCARD 0918 AMAZON.COM SEATTLE WA 7443106326108300253",
+      "amount": 10.05
+    }
+  },
+  {
+    "date": "8/25/2023",
+    "description": "Bank of America CHECKCARD 0823 TRANSWORLD TILE INC. NORTHRIDGE CA 24692163236104049351260",
+    "amount": 15.63,
+    "type": "RECEIPT",
+    "source": "Table 3",
+    "raw": {
+      "date": "08/25/23",
+      "description": "CHECKCARD 0823 TRANSWORLD TILE INC. NORTHRIDGE CA 24692163236104049351260",
+      "amount": 15.63
+    }
+  },
+  {
+    "date": "8/25/2023",
+    "description": "Bank of America CHECKCARD 0824 ALL STAR HEALTH.COM 800-875-0448 CA 24692163236103995554257",
+    "amount": 143.17,
+    "type": "RECEIPT",
+    "source": "Table 3",
+    "raw": {
+      "date": "08/25/23",
+      "description": "CHECKCARD 0824 ALL STAR HEALTH.COM 800-875-0448 CA 24692163236103995554257",
+      "amount": 143.17
+    }
+  },
+  {
+    "date": "8/25/2023",
+    "description": "Bank of America CHECKCARD 0823 TRADER JOE S #122 STUDIO CITY CA 24137463236500814079969",
+    "amount": 77.02,
+    "type": "RECEIPT",
+    "source": "Table 3",
+    "raw": {
+      "date": "08/25/23",
+      "description": "CHECKCARD 0823 TRADER JOE S #122 STUDIO CITY CA 24137463236500814079969",
+      "amount": 77.02
+    }
+  },
+  {
+    "date": "8/28/2023",
+    "description": "Bank of America CHECKCARD 0825 AMZN MKTP US*TQ13H2ID1 AMZN.COM/BILLWA 24431063237083335746549",
+    "amount": 10.94,
+    "type": "RECEIPT",
+    "source": "Table 3",
+    "raw": {
+      "date": "08/28/23",
+      "description": "CHECKCARD 0825 AMZN MKTP US*TQ13H2ID1 AMZN.COM/BILLWA 24431063237083335746549",
+      "amount": 10.94
+    }
+  },
+  {
+    "date": "8/28/2023",
+    "description": "Bank of America CHECKCARD 0826 STARBUCKS STORE 05870 BURBANK CA 24692163239106653671260",
+    "amount": 8.9,
+    "type": "RECEIPT",
+    "source": "Table 3",
+    "raw": {
+      "date": "08/28/23",
+      "description": "CHECKCARD 0826 STARBUCKS STORE 05870 BURBANK CA 24692163239106653671260",
+      "amount": 8.9
+    }
+  },
+  {
+    "date": "8/30/2023",
+    "description": "Bank of America CHECKCARD 0829 AMZN MKTP US*T389X4UO2 AMZN.COM/BILLWA 24431063242083716206413",
+    "amount": 94.03,
+    "type": "RECEIPT",
+    "source": "Table 4",
+    "raw": {
+      "date": "08/30/23",
+      "description": "CHECKCARD 0829 AMZN MKTP US*T389X4UO2 AMZN.COM/BILLWA 24431063242083716206413",
+      "amount": 94.03
+    }
+  },
+  {
+    "date": "8/31/2023",
+    "description": "Bank of America CHECKCARD 0830 CHIPOTLE 1412 STUDIO CITY CA 24431063243400588002119",
+    "amount": 11.88,
+    "type": "RECEIPT",
+    "source": "Table 4",
+    "raw": {
+      "date": "08/31/23",
+      "description": "CHECKCARD 0830 CHIPOTLE 1412 STUDIO CITY CA 24431063243400588002119",
+      "amount": 11.88
+    }
+  },
+  {
+    "date": "9/1/2023",
+    "description": "Bank of America CHECKCARD 0831 AMZN MKTP US*TL70Y1L62 AMZN.COM/BILLWA 24431063243083711227595",
+    "amount": 10.9,
+    "type": "RECEIPT",
+    "source": "Table 4",
+    "raw": {
+      "date": "09/01/23",
+      "description": "CHECKCARD 0831 AMZN MKTP US*TL70Y1L62 AMZN.COM/BILLWA 24431063243083711227595",
+      "amount": 10.9
+    }
+  },
+  {
+    "date": "9/5/2023",
+    "description": "Bank of America CHECKCARD 0902 TRADER JOE S #124 BURBANK CA 24137463246500760071810",
+    "amount": 60.14,
+    "type": "RECEIPT",
+    "source": "Table 4",
+    "raw": {
+      "date": "09/05/23",
+      "description": "CHECKCARD 0902 TRADER JOE S #124 BURBANK CA 24137463246500760071810",
+      "amount": 60.14
+    }
+  },
+  {
+    "date": "9/5/2023",
+    "description": "Bank of America CHECKCARD 0902 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786713246900010400219",
+    "amount": 77.73,
+    "type": "RECEIPT",
+    "source": "Table 4",
+    "raw": {
+      "date": "09/05/23",
+      "description": "CHECKCARD 0902 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786713246900010400219",
+      "amount": 77.73
+    }
+  },
+  {
+    "date": "9/5/2023",
+    "description": "Bank of America CHECKCARD 0905 AMAZON.COM*TL6TA2SM2 AM AMZN.COM/BILLWA 24431063248083326486920",
+    "amount": 10.05,
+    "type": "RECEIPT",
+    "source": "Table 4",
+    "raw": {
+      "date": "09/05/23",
+      "description": "CHECKCARD 0905 AMAZON.COM*TL6TA2SM2 AM AMZN.COM/BILLWA 24431063248083326486920",
+      "amount": 10.05
+    }
+  },
+  {
+    "date": "9/5/2023",
+    "description": "Bank of America CHECKCARD 0905 N & D OIL CORP NORTH HOLLYWOCA",
+    "amount": 35.8,
+    "type": "RECEIPT",
+    "source": "Table 4",
+    "raw": {
+      "date": "09/05/23",
+      "description": "CHECKCARD 0905 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": 35.8
+    }
+  },
+  {
+    "date": "9/5/2023",
+    "description": "Bank of America CHECKCARD 0905 WWW.TRUPANION. SEATTLE WA",
+    "amount": 69.53,
+    "type": "RECEIPT",
+    "source": "Table 4",
+    "raw": {
+      "date": "09/05/23",
+      "description": "CHECKCARD 0905 WWW.TRUPANION. SEATTLE WA",
+      "amount": 69.53
+    }
+  },
+  {
+    "date": "9/6/2023",
+    "description": "Bank of America CHECKCARD 0905 JORDAN D COLBY DMD INC OCEANSIDE CA 24431063248200000000021",
+    "amount": 145,
+    "type": "RECEIPT",
+    "source": "Table 4",
+    "raw": {
+      "date": "09/06/23",
+      "description": "CHECKCARD 0905 JORDAN D COLBY DMD INC OCEANSIDE CA 24431063248200000000021",
+      "amount": 145
+    }
+  },
+  {
+    "date": "9/7/2023",
+    "description": "Bank of America CHECKCARD 0905 TRADER JOE S #022 OCEANSIDE CA 24137463249500776736015",
+    "amount": 19.65,
+    "type": "RECEIPT",
+    "source": "Table 4",
+    "raw": {
+      "date": "09/07/23",
+      "description": "CHECKCARD 0905 TRADER JOE S #022 OCEANSIDE CA 24137463249500776736015",
+      "amount": 19.65
+    }
+  },
+  {
+    "date": "9/7/2023",
+    "description": "Bank of America CHECKCARD 0906 AMZN MKTP US*TL4SO22SO SEATTLE WA 24431063249083746075328",
+    "amount": 31.2,
+    "type": "RECEIPT",
+    "source": "Table 4",
+    "raw": {
+      "date": "09/07/23",
+      "description": "CHECKCARD 0906 AMZN MKTP US*TL4SO22SO SEATTLE WA 24431063249083746075328",
+      "amount": 31.2
+    }
+  },
+  {
+    "date": "9/7/2023",
+    "description": "Bank of America CHECKCARD 0906 AMAZON.COM*TL5VE7BL1 AM AMZN.COM/BILLWA 24431063250083725202683",
+    "amount": 10.06,
+    "type": "RECEIPT",
+    "source": "Table 4",
+    "raw": {
+      "date": "09/07/23",
+      "description": "CHECKCARD 0906 AMAZON.COM*TL5VE7BL1 AM AMZN.COM/BILLWA 24431063250083725202683",
+      "amount": 10.06
+    }
+  },
+  {
+    "date": "9/11/2023",
+    "description": "Bank of America CHECKCARD 0907 TRADER JOE S #124 BURBANK CA 24137463251500806718814",
+    "amount": 40.09,
+    "type": "RECEIPT",
+    "source": "Table 4",
+    "raw": {
+      "date": "09/11/23",
+      "description": "CHECKCARD 0907 TRADER JOE S #124 BURBANK CA 24137463251500806718814",
+      "amount": 40.09
+    }
+  },
+  {
+    "date": "9/11/2023",
+    "description": "Bank of America CHECKCARD 0909 N & D OIL CORP NORTH HOLLYWOCA",
+    "amount": 86.81,
+    "type": "RECEIPT",
+    "source": "Table 4",
+    "raw": {
+      "date": "09/11/23",
+      "description": "CHECKCARD 0909 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": 86.81
+    }
+  },
+  {
+    "date": "9/11/2023",
+    "description": "Bank of America CHECKCARD 0910 AMZN MKTP US*TR6WB61E0 AMZN.COM/BILLWA 24431063253083353006452",
+    "amount": 10.92,
+    "type": "RECEIPT",
+    "source": "Table 4",
+    "raw": {
+      "date": "09/11/23",
+      "description": "CHECKCARD 0910 AMZN MKTP US*TR6WB61E0 AMZN.COM/BILLWA 24431063253083353006452",
+      "amount": 10.92
+    }
+  },
+  {
+    "date": "9/12/2023",
+    "description": "Bank of America CHECKCARD 0911 AMZN MKTP US*TR3578810 SEATTLE WA 24431063254083728588944",
+    "amount": 111.68,
+    "type": "RECEIPT",
+    "source": "Table 4",
+    "raw": {
+      "date": "09/12/23",
+      "description": "CHECKCARD 0911 AMZN MKTP US*TR3578810 SEATTLE WA 24431063254083728588944",
+      "amount": 111.68
+    }
+  },
+  {
+    "date": "9/15/2023",
+    "description": "Bank of America CHECKCARD 0913 TRADER JOE S #124 BURBANK CA 24137463257500804669773",
+    "amount": 46.42,
+    "type": "RECEIPT",
+    "source": "Table 4",
+    "raw": {
+      "date": "09/15/23",
+      "description": "CHECKCARD 0913 TRADER JOE S #124 BURBANK CA 24137463257500804669773",
+      "amount": 46.42
+    }
+  },
+  {
+    "date": "9/15/2023",
+    "description": "Bank of America CHECKCARD 0914 AMZN MKTP US*TX5N28F52 SEATTLE WA 24431063257083735753710",
+    "amount": 17.51,
+    "type": "RECEIPT",
+    "source": "Table 4",
+    "raw": {
+      "date": "09/15/23",
+      "description": "CHECKCARD 0914 AMZN MKTP US*TX5N28F52 SEATTLE WA 24431063257083735753710",
+      "amount": 17.51
+    }
+  },
+  {
+    "date": "9/18/2023",
+    "description": "Bank of America CHECKCARD 0915 ALL STAR HEALTH.COM 800-875-0448 CA 24692163258108614487444",
+    "amount": 44.96,
+    "type": "RECEIPT",
+    "source": "Table 4",
+    "raw": {
+      "date": "09/18/23",
+      "description": "CHECKCARD 0915 ALL STAR HEALTH.COM 800-875-0448 CA 24692163258108614487444",
+      "amount": 44.96
+    }
+  },
+  {
+    "date": "9/18/2023",
+    "description": "Bank of America CHECKCARD 0915 LA FITNESS 949-255-8100 CA 24492153258084001986004 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 5",
+    "raw": {
+      "date": "09/18/23",
+      "description": "CHECKCARD 0915 LA FITNESS 949-255-8100 CA 24492153258084001986004 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "9/18/2023",
+    "description": "Bank of America CHECKCARD 0915 AMZN MKTP US*TX6V30EM2 SEATTLE WA 24431063259083715408820",
+    "amount": 116.52,
+    "type": "RECEIPT",
+    "source": "Table 5",
+    "raw": {
+      "date": "09/18/23",
+      "description": "CHECKCARD 0915 AMZN MKTP US*TX6V30EM2 SEATTLE WA 24431063259083715408820",
+      "amount": 116.52
+    }
+  },
+  {
+    "date": "9/18/2023",
+    "description": "Bank of America CHECKCARD 0916 AMZN MKTP US*TR9TN5KM1 SEATTLE WA 24431063259083354040694",
+    "amount": 121.44,
+    "type": "RECEIPT",
+    "source": "Table 5",
+    "raw": {
+      "date": "09/18/23",
+      "description": "CHECKCARD 0916 AMZN MKTP US*TR9TN5KM1 SEATTLE WA 24431063259083354040694",
+      "amount": 121.44
+    }
+  },
+  {
+    "date": "9/18/2023",
+    "description": "Bank of America CHECKCARD 0918 AMZN MKTP US*TX8MH8892 SEATTLE WA 24431063261083314647915",
+    "amount": 41.6,
+    "type": "RECEIPT",
+    "source": "Table 5",
+    "raw": {
+      "date": "09/18/23",
+      "description": "CHECKCARD 0918 AMZN MKTP US*TX8MH8892 SEATTLE WA 24431063261083314647915",
+      "amount": 41.6
+    }
+  },
+  {
+    "date": "9/25/2023",
+    "description": "Bank of America CHECKCARD 0923 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786713267900012300064",
+    "amount": 77.73,
+    "type": "RECEIPT",
+    "source": "Table 12",
+    "raw": {
+      "date": "09/25/23",
+      "description": "CHECKCARD 0923 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786713267900012300064",
+      "amount": 77.73
+    }
+  },
+  {
+    "date": "9/26/2023",
+    "description": "Bank of America CHECKCARD 0925 BR FACTORY.COM 2624 844-2377746 OH 24789303268474600938764",
+    "amount": 268.23,
+    "type": "RECEIPT",
+    "source": "Table 12",
+    "raw": {
+      "date": "09/26/23",
+      "description": "CHECKCARD 0925 BR FACTORY.COM 2624 844-2377746 OH 24789303268474600938764",
+      "amount": 268.23
+    }
+  },
+  {
+    "date": "9/26/2023",
+    "description": "Bank of America CHECKCARD 0924 BR FACTORY.COM 2624 844-2377746 OH 24789303268470300953996",
+    "amount": 39.86,
+    "type": "RECEIPT",
+    "source": "Table 12",
+    "raw": {
+      "date": "09/26/23",
+      "description": "CHECKCARD 0924 BR FACTORY.COM 2624 844-2377746 OH 24789303268470300953996",
+      "amount": 39.86
+    }
+  },
+  {
+    "date": "9/28/2023",
+    "description": "Bank of America CHECKCARD 0927 VIOC GN0013 NORTH HOLLYWOCA 24210733271837000078518",
+    "amount": 72.67,
+    "type": "RECEIPT",
+    "source": "Table 12",
+    "raw": {
+      "date": "09/28/23",
+      "description": "CHECKCARD 0927 VIOC GN0013 NORTH HOLLYWOCA 24210733271837000078518",
+      "amount": 72.67
+    }
+  },
+  {
+    "date": "10/13/2023",
+    "description": "Bank of America CHECKCARD 1012 SHARP PET HOSPITAL NORTH HOLLYWOCA 24493983285207949600025",
+    "amount": 223,
+    "type": "RECEIPT",
+    "source": "Table 13",
+    "raw": {
+      "date": "10/13/23",
+      "description": "CHECKCARD 1012 SHARP PET HOSPITAL NORTH HOLLYWOCA 24493983285207949600025",
+      "amount": 223
+    }
+  },
+  {
+    "date": "10/13/2023",
+    "description": "Bank of America CHECKCARD 1012 DOG AND CAT HOSPITAL CA CALABASAS CA 24701773285550500335959",
+    "amount": 465,
+    "type": "RECEIPT",
+    "source": "Table 13",
+    "raw": {
+      "date": "10/13/23",
+      "description": "CHECKCARD 1012 DOG AND CAT HOSPITAL CA CALABASAS CA 24701773285550500335959",
+      "amount": 465
+    }
+  },
+  {
+    "date": "10/16/2023",
+    "description": "Bank of America CHECKCARD 1012 SHARKYS WOODFIRED MEXI 818-8409080 CA 24000973286553107112048",
+    "amount": 28.85,
+    "type": "RECEIPT",
+    "source": "Table 13",
+    "raw": {
+      "date": "10/16/23",
+      "description": "CHECKCARD 1012 SHARKYS WOODFIRED MEXI 818-8409080 CA 24000973286553107112048",
+      "amount": 28.85
+    }
+  },
+  {
+    "date": "10/16/2023",
+    "description": "Bank of America CHECKCARD 1015 LA FITNESS 949-255-8100 CA 24492153288084001886596 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 13",
+    "raw": {
+      "date": "10/16/23",
+      "description": "CHECKCARD 1015 LA FITNESS 949-255-8100 CA 24492153288084001886596 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "10/16/2023",
+    "description": "Bank of America CHECKCARD 1014 BOX THAI STREET FOOD LAKE BALBOA CA 24717053288132885323912",
+    "amount": 35,
+    "type": "RECEIPT",
+    "source": "Table 13",
+    "raw": {
+      "date": "10/16/23",
+      "description": "CHECKCARD 1014 BOX THAI STREET FOOD LAKE BALBOA CA 24717053288132885323912",
+      "amount": 35
+    }
+  },
+  {
+    "date": "11/13/2023",
+    "description": "Bank of America WIRE TYPE:WIRE IN DATE: 231113 TIME:1644 ET TRN:2023111300506293 SEQ:2023111300008231/002921 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: Y7X8EZHL51",
+    "amount": 26979.17,
+    "type": "RECEIPT",
+    "source": "Table 18",
+    "raw": {
+      "date": "11/13/23",
+      "description": "WIRE TYPE:WIRE IN DATE: 231113 TIME:1644 ET TRN:2023111300506293 SEQ:2023111300008231/002921 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: Y7X8EZHL51",
+      "amount": 26979.17
+    }
+  },
+  {
+    "date": "10/31/2023",
+    "description": "Bank of America CHECKCARD 1029 HARVEST MOON KITCHEN + VALLEY VILLAGCA 24342853303017013123861",
+    "amount": 42.7,
+    "type": "RECEIPT",
+    "source": "Table 19",
+    "raw": {
+      "date": "10/31/23",
+      "description": "CHECKCARD 1029 HARVEST MOON KITCHEN + VALLEY VILLAGCA 24342853303017013123861",
+      "amount": 42.7
+    }
+  },
+  {
+    "date": "11/6/2023",
+    "description": "Bank of America CHECKCARD 1105 WWW.TRUPANION. SEATTLE WA",
+    "amount": 69.53,
+    "type": "RECEIPT",
+    "source": "Table 20",
+    "raw": {
+      "date": "11/06/23",
+      "description": "CHECKCARD 1105 WWW.TRUPANION. SEATTLE WA",
+      "amount": 69.53
+    }
+  },
+  {
+    "date": "11/20/2023",
+    "description": "Bank of America CHECKCARD 1117 SHARKYS WOODFIRED MEXI 818-8409080 CA 24000973323711002896868",
+    "amount": 31.06,
+    "type": "RECEIPT",
+    "source": "Table 20",
+    "raw": {
+      "date": "11/20/23",
+      "description": "CHECKCARD 1117 SHARKYS WOODFIRED MEXI 818-8409080 CA 24000973323711002896868",
+      "amount": 31.06
+    }
+  },
+  {
+    "date": "11/24/2023",
+    "description": "Bank of America CHECKCARD 1122 TRADER JOE S #122 STUDIO CITY CA 24137463327100655839157",
+    "amount": 49.87,
+    "type": "RECEIPT",
+    "source": "Table 26",
+    "raw": {
+      "date": "11/24/23",
+      "description": "CHECKCARD 1122 TRADER JOE S #122 STUDIO CITY CA 24137463327100655839157",
+      "amount": 49.87
+    }
+  },
+  {
+    "date": "11/28/2023",
+    "description": "Bank of America CHECKCARD 1127 AMAZON.COM*P59RNOQW3 SEATTLE WA 24431063331083729242142",
+    "amount": 129.22,
+    "type": "RECEIPT",
+    "source": "Table 26",
+    "raw": {
+      "date": "11/28/23",
+      "description": "CHECKCARD 1127 AMAZON.COM*P59RNOQW3 SEATTLE WA 24431063331083729242142",
+      "amount": 129.22
+    }
+  },
+  {
+    "date": "11/28/2023",
+    "description": "Bank of America CHECKCARD 1126 TRADER JOE S #124 BURBANK CA 24137463331100501591766",
+    "amount": 27.84,
+    "type": "RECEIPT",
+    "source": "Table 26",
+    "raw": {
+      "date": "11/28/23",
+      "description": "CHECKCARD 1126 TRADER JOE S #124 BURBANK CA 24137463331100501591766",
+      "amount": 27.84
+    }
+  },
+  {
+    "date": "12/4/2023",
+    "description": "Bank of America CHECKCARD 1130 TRADER JOE S #122 STUDIO CITY CA 24137463335100659290357",
+    "amount": 51.52,
+    "type": "RECEIPT",
+    "source": "Table 27",
+    "raw": {
+      "date": "12/04/23",
+      "description": "CHECKCARD 1130 TRADER JOE S #122 STUDIO CITY CA 24137463335100659290357",
+      "amount": 51.52
+    }
+  },
+  {
+    "date": "12/4/2023",
+    "description": "Bank of America CHECKCARD 1201 AMZN MKTP US*1G4BF9V83 SEATTLE WA 24431063336083345261851",
+    "amount": 134.99,
+    "type": "RECEIPT",
+    "source": "Table 27",
+    "raw": {
+      "date": "12/04/23",
+      "description": "CHECKCARD 1201 AMZN MKTP US*1G4BF9V83 SEATTLE WA 24431063336083345261851",
+      "amount": 134.99
+    }
+  },
+  {
+    "date": "12/4/2023",
+    "description": "Bank of America CHECKCARD 1202 SP ROTATORELIEVER HTTPSSHOULDERMI 24492163336000015895986",
+    "amount": 189.99,
+    "type": "RECEIPT",
+    "source": "Table 27",
+    "raw": {
+      "date": "12/04/23",
+      "description": "CHECKCARD 1202 SP ROTATORELIEVER HTTPSSHOULDERMI 24492163336000015895986",
+      "amount": 189.99
+    }
+  },
+  {
+    "date": "12/5/2023",
+    "description": "Bank of America CHECKCARD 1204 AMZN MKTP US*LV5RC2KC3 SEATTLE WA 24431063338083344184284",
+    "amount": 37.43,
+    "type": "RECEIPT",
+    "source": "Table 27",
+    "raw": {
+      "date": "12/05/23",
+      "description": "CHECKCARD 1204 AMZN MKTP US*LV5RC2KC3 SEATTLE WA 24431063338083344184284",
+      "amount": 37.43
+    }
+  },
+  {
+    "date": "12/5/2023",
+    "description": "Bank of America CHECKCARD 1205 WWW.TRUPANION. SEATTLE WA",
+    "amount": 90.41,
+    "type": "RECEIPT",
+    "source": "Table 27",
+    "raw": {
+      "date": "12/05/23",
+      "description": "CHECKCARD 1205 WWW.TRUPANION. SEATTLE WA",
+      "amount": 90.41
+    }
+  },
+  {
+    "date": "12/6/2023",
+    "description": "Bank of America CHECKCARD 1204 TST* OINKSTER - EAGLE R Los Angeles CA 24692163339102644734803",
+    "amount": 42.29,
+    "type": "RECEIPT",
+    "source": "Table 27",
+    "raw": {
+      "date": "12/06/23",
+      "description": "CHECKCARD 1204 TST* OINKSTER - EAGLE R Los Angeles CA 24692163339102644734803",
+      "amount": 42.29
+    }
+  },
+  {
+    "date": "12/7/2023",
+    "description": "Bank of America CHECKCARD 1206 AMZN MKTP US*CK1U03K83 SEATTLE WA 24431063340083351818747",
+    "amount": 26.12,
+    "type": "RECEIPT",
+    "source": "Table 27",
+    "raw": {
+      "date": "12/07/23",
+      "description": "CHECKCARD 1206 AMZN MKTP US*CK1U03K83 SEATTLE WA 24431063340083351818747",
+      "amount": 26.12
+    }
+  },
+  {
+    "date": "12/11/2023",
+    "description": "Bank of America CHECKCARD 1208 TRADER JOE S #252 NORTH HOLLYWOCA 24137463343501091613108",
+    "amount": 23.82,
+    "type": "RECEIPT",
+    "source": "Table 27",
+    "raw": {
+      "date": "12/11/23",
+      "description": "CHECKCARD 1208 TRADER JOE S #252 NORTH HOLLYWOCA 24137463343501091613108",
+      "amount": 23.82
+    }
+  },
+  {
+    "date": "12/11/2023",
+    "description": "Bank of America CHECKCARD 1210 AMZN MKTP US*J98KG9NN3 SEATTLE WA 24431063344083743565747",
+    "amount": 18.07,
+    "type": "RECEIPT",
+    "source": "Table 27",
+    "raw": {
+      "date": "12/11/23",
+      "description": "CHECKCARD 1210 AMZN MKTP US*J98KG9NN3 SEATTLE WA 24431063344083743565747",
+      "amount": 18.07
+    }
+  },
+  {
+    "date": "12/12/2023",
+    "description": "Bank of America CHECKCARD 1211 AMZN MKTP US*BS8717BX3 SEATTLE WA 24431063346083328224460",
+    "amount": 59.12,
+    "type": "RECEIPT",
+    "source": "Table 27",
+    "raw": {
+      "date": "12/12/23",
+      "description": "CHECKCARD 1211 AMZN MKTP US*BS8717BX3 SEATTLE WA 24431063346083328224460",
+      "amount": 59.12
+    }
+  },
+  {
+    "date": "12/12/2023",
+    "description": "Bank of America CHECKCARD 1211 FSP*POLISHED BEAUTY BAR BURBANK CA 24445003345300615796831",
+    "amount": 57,
+    "type": "RECEIPT",
+    "source": "Table 27",
+    "raw": {
+      "date": "12/12/23",
+      "description": "CHECKCARD 1211 FSP*POLISHED BEAUTY BAR BURBANK CA 24445003345300615796831",
+      "amount": 57
+    }
+  },
+  {
+    "date": "12/13/2023",
+    "description": "Bank of America CHECKCARD 1211 SHARKYS WOODFIRED MEXI 818-8409080 CA 24000973346813103200520",
+    "amount": 35.72,
+    "type": "RECEIPT",
+    "source": "Table 27",
+    "raw": {
+      "date": "12/13/23",
+      "description": "CHECKCARD 1211 SHARKYS WOODFIRED MEXI 818-8409080 CA 24000973346813103200520",
+      "amount": 35.72
+    }
+  },
+  {
+    "date": "12/15/2023",
+    "description": "Bank of America CHECKCARD 1214 AMZN MKTP US*GX46N7H63 SEATTLE WA 24431063348083330629050",
+    "amount": 45.23,
+    "type": "RECEIPT",
+    "source": "Table 27",
+    "raw": {
+      "date": "12/15/23",
+      "description": "CHECKCARD 1214 AMZN MKTP US*GX46N7H63 SEATTLE WA 24431063348083330629050",
+      "amount": 45.23
+    }
+  },
+  {
+    "date": "12/15/2023",
+    "description": "Bank of America CHECKCARD 1215 SQ *LAW OFFICES OF ROZS gosq.com CA 24692163349101447371019",
+    "amount": 3000,
+    "type": "RECEIPT",
+    "source": "Table 27",
+    "raw": {
+      "date": "12/15/23",
+      "description": "CHECKCARD 1215 SQ *LAW OFFICES OF ROZS gosq.com CA 24692163349101447371019",
+      "amount": 3000
+    }
+  },
+  {
+    "date": "12/18/2023",
+    "description": "Bank of America CHECKCARD 1215 LA FITNESS 949-255-8100 CA 24492153349084011559602 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 27",
+    "raw": {
+      "date": "12/18/23",
+      "description": "CHECKCARD 1215 LA FITNESS 949-255-8100 CA 24492153349084011559602 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "12/18/2023",
+    "description": "Bank of America CHECKCARD 1215 AMZN MKTP US*H03PW88D3 SEATTLE WA 24431063349083341602715",
+    "amount": 81.58,
+    "type": "RECEIPT",
+    "source": "Table 27",
+    "raw": {
+      "date": "12/18/23",
+      "description": "CHECKCARD 1215 AMZN MKTP US*H03PW88D3 SEATTLE WA 24431063349083341602715",
+      "amount": 81.58
+    }
+  },
+  {
+    "date": "12/18/2023",
+    "description": "Bank of America CHECKCARD 1215 LA FITNESS 949-255-8100 CA 24492153349084004830234 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 27",
+    "raw": {
+      "date": "12/18/23",
+      "description": "CHECKCARD 1215 LA FITNESS 949-255-8100 CA 24492153349084004830234 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "12/18/2023",
+    "description": "Bank of America CHECKCARD 1215 TRADER JOE S #122 STUDIO CITY CA 24137463350501109373935",
+    "amount": 80.43,
+    "type": "RECEIPT",
+    "source": "Table 27",
+    "raw": {
+      "date": "12/18/23",
+      "description": "CHECKCARD 1215 TRADER JOE S #122 STUDIO CITY CA 24137463350501109373935",
+      "amount": 80.43
+    }
+  },
+  {
+    "date": "12/18/2023",
+    "description": "Bank of America CHECKCARD 1217 AMZN MKTP US*5A3CR4WS3 SEATTLE WA 24431063351083325506549",
+    "amount": 43.77,
+    "type": "RECEIPT",
+    "source": "Table 27",
+    "raw": {
+      "date": "12/18/23",
+      "description": "CHECKCARD 1217 AMZN MKTP US*5A3CR4WS3 SEATTLE WA 24431063351083325506549",
+      "amount": 43.77
+    }
+  },
+  {
+    "date": "12/18/2023",
+    "description": "Bank of America CHECKCARD 1216 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786713351900012600270",
+    "amount": 75.54,
+    "type": "RECEIPT",
+    "source": "Table 27",
+    "raw": {
+      "date": "12/18/23",
+      "description": "CHECKCARD 1216 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786713351900012600270",
+      "amount": 75.54
+    }
+  },
+  {
+    "date": "12/26/2023",
+    "description": "Bank of America CHECKCARD 1222 Trupanion trupanion.comWA 7490641335618996517",
+    "amount": 11.66,
+    "type": "RECEIPT",
+    "source": "Table 33",
+    "raw": {
+      "date": "12/26/23",
+      "description": "CHECKCARD 1222 Trupanion trupanion.comWA 7490641335618996517",
+      "amount": 11.66
+    }
+  },
+  {
+    "date": "1/9/2024",
+    "description": "Bank of America WIRE TYPE:WIRE IN DATE: 240109 TIME:1753 ET TRN:2024010900480509 SEQ:2024010900008351/002920 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: X7PYW9T6A8",
+    "amount": 26979.17,
+    "type": "RECEIPT",
+    "source": "Table 33",
+    "raw": {
+      "date": "01/09/24",
+      "description": "WIRE TYPE:WIRE IN DATE: 240109 TIME:1753 ET TRN:2024010900480509 SEQ:2024010900008351/002920 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: X7PYW9T6A8",
+      "amount": 26979.17
+    }
+  },
+  {
+    "date": "1/10/2024",
+    "description": "Bank of America SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX\\",
+    "amount": 2059.8,
+    "type": "RECEIPT",
+    "source": "Table 33",
+    "raw": {
+      "date": "01/10/24",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX\\",
+      "amount": 2059.8
+    }
+  },
+  {
+    "date": "12/26/2023",
+    "description": "Bank of America CHECKCARD 1222 TRADER JOE S #122 STUDIO CITY CA 24137463357100695193295",
+    "amount": 68.93,
+    "type": "RECEIPT",
+    "source": "Table 34",
+    "raw": {
+      "date": "12/26/23",
+      "description": "CHECKCARD 1222 TRADER JOE S #122 STUDIO CITY CA 24137463357100695193295",
+      "amount": 68.93
+    }
+  },
+  {
+    "date": "12/29/2023",
+    "description": "Bank of America CHECKCARD 1228 CAEFILE*013967544-0 213-830-0840 CA 24692163362100426963293",
+    "amount": 437.25,
+    "type": "RECEIPT",
+    "source": "Table 34",
+    "raw": {
+      "date": "12/29/23",
+      "description": "CHECKCARD 1228 CAEFILE*013967544-0 213-830-0840 CA 24692163362100426963293",
+      "amount": 437.25
+    }
+  },
+  {
+    "date": "1/4/2024",
+    "description": "Bank of America CHECKCARD 0104 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714004900010900598",
+    "amount": 45.89,
+    "type": "RECEIPT",
+    "source": "Table 35",
+    "raw": {
+      "date": "01/04/24",
+      "description": "CHECKCARD 0104 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714004900010900598",
+      "amount": 45.89
+    }
+  },
+  {
+    "date": "1/5/2024",
+    "description": "Bank of America CHECKCARD 0105 WWW.TRUPANION. SEATTLE WA",
+    "amount": 90.41,
+    "type": "RECEIPT",
+    "source": "Table 35",
+    "raw": {
+      "date": "01/05/24",
+      "description": "CHECKCARD 0105 WWW.TRUPANION. SEATTLE WA",
+      "amount": 90.41
+    }
+  },
+  {
+    "date": "1/9/2024",
+    "description": "Bank of America CHECKCARD 0107 TRADER JOE S #124 BURBANK CA 24137464008500731773268",
+    "amount": 45.78,
+    "type": "RECEIPT",
+    "source": "Table 35",
+    "raw": {
+      "date": "01/09/24",
+      "description": "CHECKCARD 0107 TRADER JOE S #124 BURBANK CA 24137464008500731773268",
+      "amount": 45.78
+    }
+  },
+  {
+    "date": "1/12/2024",
+    "description": "Bank of America CHECKCARD 0112 TRADER JOE S #124 BURBANK CA 24137464013500970405591",
+    "amount": 97.6,
+    "type": "RECEIPT",
+    "source": "Table 35",
+    "raw": {
+      "date": "01/12/24",
+      "description": "CHECKCARD 0112 TRADER JOE S #124 BURBANK CA 24137464013500970405591",
+      "amount": 97.6
+    }
+  },
+  {
+    "date": "1/16/2024",
+    "description": "Bank of America CHECKCARD 0112 MICHELADAS MEX GRILL NORTHRIDGE CA 24275394012900014842175",
+    "amount": 38.84,
+    "type": "RECEIPT",
+    "source": "Table 35",
+    "raw": {
+      "date": "01/16/24",
+      "description": "CHECKCARD 0112 MICHELADAS MEX GRILL NORTHRIDGE CA 24275394012900014842175",
+      "amount": 38.84
+    }
+  },
+  {
+    "date": "1/16/2024",
+    "description": "Bank of America CHECKCARD",
+    "amount": 163.16,
+    "type": "RECEIPT",
+    "source": "Table 35",
+    "raw": {
+      "date": "01/16/24",
+      "description": "CHECKCARD",
+      "amount": 163.16
+    }
+  },
+  {
+    "date": "1/16/2024",
+    "description": "Bank of America CHECKCARD",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 35",
+    "raw": {
+      "date": "01/16/24",
+      "description": "CHECKCARD",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "1/18/2024",
+    "description": "Bank of America CHECKCARD 0117 AMZN MKTP US*R82A006BO SEATTLE WA 24431064017083756003036",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 35",
+    "raw": {
+      "date": "01/18/24",
+      "description": "CHECKCARD 0117 AMZN MKTP US*R82A006BO SEATTLE WA 24431064017083756003036",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "1/22/2024",
+    "description": "Bank of America CHECKCARD 0118 TRADER JOE S #122 STUDIO CITY CA 24137464019500794682403",
+    "amount": 54.53,
+    "type": "RECEIPT",
+    "source": "Table 35",
+    "raw": {
+      "date": "01/22/24",
+      "description": "CHECKCARD 0118 TRADER JOE S #122 STUDIO CITY CA 24137464019500794682403",
+      "amount": 54.53
+    }
+  },
+  {
+    "date": "2/12/2024",
+    "description": "Bank of America WIRE TYPE:WIRE IN DATE: 240212 TIME:1155 ET TRN:2024021200320387 SEQ:2024021200003184/000827 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: 4XF24SLNKJ",
+    "amount": 26979.17,
+    "type": "RECEIPT",
+    "source": "Table 40",
+    "raw": {
+      "date": "02/12/24",
+      "description": "WIRE TYPE:WIRE IN DATE: 240212 TIME:1155 ET TRN:2024021200320387 SEQ:2024021200003184/000827 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: 4XF24SLNKJ",
+      "amount": 26979.17
+    }
+  },
+  {
+    "date": "2/14/2024",
+    "description": "Bank of America SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX\\",
+    "amount": 2059.8,
+    "type": "RECEIPT",
+    "source": "Table 40",
+    "raw": {
+      "date": "02/14/24",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX\\",
+      "amount": 2059.8
+    }
+  },
+  {
+    "date": "1/24/2024",
+    "description": "Bank of America CHECKCARD 0123 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714023900013200431",
+    "amount": 75.83,
+    "type": "RECEIPT",
+    "source": "Table 41",
+    "raw": {
+      "date": "01/24/24",
+      "description": "CHECKCARD 0123 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714023900013200431",
+      "amount": 75.83
+    }
+  },
+  {
+    "date": "1/29/2024",
+    "description": "Bank of America CHECKCARD 0125 SHARKY'S - SHERMAN OAKS LOS ANGELES CA 24801974026872472708618",
+    "amount": 46.53,
+    "type": "RECEIPT",
+    "source": "Table 41",
+    "raw": {
+      "date": "01/29/24",
+      "description": "CHECKCARD 0125 SHARKY'S - SHERMAN OAKS LOS ANGELES CA 24801974026872472708618",
+      "amount": 46.53
+    }
+  },
+  {
+    "date": "1/30/2024",
+    "description": "Bank of America CHECKCARD 0129 AMZN MKTP US*R06S897W2 SEATTLE WA 24431064029083333034401",
+    "amount": 95.29,
+    "type": "RECEIPT",
+    "source": "Table 41",
+    "raw": {
+      "date": "01/30/24",
+      "description": "CHECKCARD 0129 AMZN MKTP US*R06S897W2 SEATTLE WA 24431064029083333034401",
+      "amount": 95.29
+    }
+  },
+  {
+    "date": "2/1/2024",
+    "description": "Bank of America CHECKCARD 0131 CAEFILE*014269383-0 800-297-5377 TX 24692164031106719659042",
+    "amount": 26.67,
+    "type": "RECEIPT",
+    "source": "Table 42",
+    "raw": {
+      "date": "02/01/24",
+      "description": "CHECKCARD 0131 CAEFILE*014269383-0 800-297-5377 TX 24692164031106719659042",
+      "amount": 26.67
+    }
+  },
+  {
+    "date": "2/2/2024",
+    "description": "Bank of America CHECKCARD 0202 N & D OIL CORP NORTH HOLLYWOCA",
+    "amount": 51.28,
+    "type": "RECEIPT",
+    "source": "Table 42",
+    "raw": {
+      "date": "02/02/24",
+      "description": "CHECKCARD 0202 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": 51.28
+    }
+  },
+  {
+    "date": "2/5/2024",
+    "description": "Bank of America CHECKCARD 0202 TRADER JOE S #122 STUDIO CITY CA 24137464034501086135929",
+    "amount": 49.36,
+    "type": "RECEIPT",
+    "source": "Table 42",
+    "raw": {
+      "date": "02/05/24",
+      "description": "CHECKCARD 0202 TRADER JOE S #122 STUDIO CITY CA 24137464034501086135929",
+      "amount": 49.36
+    }
+  },
+  {
+    "date": "2/5/2024",
+    "description": "Bank of America CHECKCARD 0205 WWW.TRUPANION. SEATTLE WA",
+    "amount": 90.41,
+    "type": "RECEIPT",
+    "source": "Table 42",
+    "raw": {
+      "date": "02/05/24",
+      "description": "CHECKCARD 0205 WWW.TRUPANION. SEATTLE WA",
+      "amount": 90.41
+    }
+  },
+  {
+    "date": "2/6/2024",
+    "description": "Bank of America CHECKCARD 0205 AMZN MKTP US*R21NZ2MN1 SEATTLE WA 24431064036083326024477",
+    "amount": 62.36,
+    "type": "RECEIPT",
+    "source": "Table 42",
+    "raw": {
+      "date": "02/06/24",
+      "description": "CHECKCARD 0205 AMZN MKTP US*R21NZ2MN1 SEATTLE WA 24431064036083326024477",
+      "amount": 62.36
+    }
+  },
+  {
+    "date": "2/8/2024",
+    "description": "Bank of America CHECKCARD 0206 TST* HARVEST MOON - NEW Los Angeles CA 24692164038101948407480",
+    "amount": 24.8,
+    "type": "RECEIPT",
+    "source": "Table 42",
+    "raw": {
+      "date": "02/08/24",
+      "description": "CHECKCARD 0206 TST* HARVEST MOON - NEW Los Angeles CA 24692164038101948407480",
+      "amount": 24.8
+    }
+  },
+  {
+    "date": "2/9/2024",
+    "description": "Bank of America CHECKCARD 0209 N & D OIL CORP NORTH HOLLYWOCA",
+    "amount": 42.5,
+    "type": "RECEIPT",
+    "source": "Table 42",
+    "raw": {
+      "date": "02/09/24",
+      "description": "CHECKCARD 0209 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": 42.5
+    }
+  },
+  {
+    "date": "2/12/2024",
+    "description": "Bank of America CHECKCARD 0209 TRADER JOE S #122 STUDIO CITY CA 24137464041501127582924",
+    "amount": 55.09,
+    "type": "RECEIPT",
+    "source": "Table 42",
+    "raw": {
+      "date": "02/12/24",
+      "description": "CHECKCARD 0209 TRADER JOE S #122 STUDIO CITY CA 24137464041501127582924",
+      "amount": 55.09
+    }
+  },
+  {
+    "date": "2/15/2024",
+    "description": "Bank of America CHECKCARD 0215 AMZN MKTP US*RB02E7971 SEATTLE WA 24431064046083351272908",
+    "amount": 32.52,
+    "type": "RECEIPT",
+    "source": "Table 42",
+    "raw": {
+      "date": "02/15/24",
+      "description": "CHECKCARD 0215 AMZN MKTP US*RB02E7971 SEATTLE WA 24431064046083351272908",
+      "amount": 32.52
+    }
+  },
+  {
+    "date": "2/16/2024",
+    "description": "Bank of America CHECKCARD 0215 LA FITNESS 949-255-8100 CA 24492154046887888621238 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 42",
+    "raw": {
+      "date": "02/16/24",
+      "description": "CHECKCARD 0215 LA FITNESS 949-255-8100 CA 24492154046887888621238 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "2/16/2024",
+    "description": "Bank of America CHECKCARD 0215 LA FITNESS 949-255-8100 CA 24492154046887888613367 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 42",
+    "raw": {
+      "date": "02/16/24",
+      "description": "CHECKCARD 0215 LA FITNESS 949-255-8100 CA 24492154046887888613367 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "2/16/2024",
+    "description": "Bank of America CHECKCARD 0215 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714046900015200465",
+    "amount": 75.54,
+    "type": "RECEIPT",
+    "source": "Table 42",
+    "raw": {
+      "date": "02/16/24",
+      "description": "CHECKCARD 0215 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714046900015200465",
+      "amount": 75.54
+    }
+  },
+  {
+    "date": "2/20/2024",
+    "description": "Bank of America CHECKCARD 0215 TRADER JOE S #122 STUDIO CITY CA 24137464047500766164949",
+    "amount": 20.79,
+    "type": "RECEIPT",
+    "source": "Table 42",
+    "raw": {
+      "date": "02/20/24",
+      "description": "CHECKCARD 0215 TRADER JOE S #122 STUDIO CITY CA 24137464047500766164949",
+      "amount": 20.79
+    }
+  },
+  {
+    "date": "2/20/2024",
+    "description": "Bank of America CHECKCARD 0217 AMZN MKTP US*RI80U3NI1 SEATTLE WA 24431064048083323053897",
+    "amount": 13.99,
+    "type": "RECEIPT",
+    "source": "Table 42",
+    "raw": {
+      "date": "02/20/24",
+      "description": "CHECKCARD 0217 AMZN MKTP US*RI80U3NI1 SEATTLE WA 24431064048083323053897",
+      "amount": 13.99
+    }
+  },
+  {
+    "date": "3/12/2024",
+    "description": "Bank of America WIRE TYPE:WIRE IN DATE: 240312 TIME:1656 ET TRN:2024031200461648 SEQ:2024031200007433/002244 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: D19COYU6DS",
+    "amount": 26979.17,
+    "type": "RECEIPT",
+    "source": "Table 46",
+    "raw": {
+      "date": "03/12/24",
+      "description": "WIRE TYPE:WIRE IN DATE: 240312 TIME:1656 ET TRN:2024031200461648 SEQ:2024031200007433/002244 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: D19COYU6DS",
+      "amount": 26979.17
+    }
+  },
+  {
+    "date": "3/13/2024",
+    "description": "Bank of America SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXXI",
+    "amount": 2059.8,
+    "type": "RECEIPT",
+    "source": "Table 46",
+    "raw": {
+      "date": "03/13/24",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXXI",
+      "amount": 2059.8
+    }
+  },
+  {
+    "date": "2/22/2024",
+    "description": "Bank of America CHECKCARD 0221 AMZN MKTP US*RWOPC99JO SEATTLE WA 24431064052083726318015",
+    "amount": 27.02,
+    "type": "RECEIPT",
+    "source": "Table 47",
+    "raw": {
+      "date": "02/22/24",
+      "description": "CHECKCARD 0221 AMZN MKTP US*RWOPC99JO SEATTLE WA 24431064052083726318015",
+      "amount": 27.02
+    }
+  },
+  {
+    "date": "2/22/2024",
+    "description": "Bank of America CHECKCARD 0221 COFFEE BEAN & TEA BURBANK CA 24692164053100485354774",
+    "amount": 18.32,
+    "type": "RECEIPT",
+    "source": "Table 47",
+    "raw": {
+      "date": "02/22/24",
+      "description": "CHECKCARD 0221 COFFEE BEAN & TEA BURBANK CA 24692164053100485354774",
+      "amount": 18.32
+    }
+  },
+  {
+    "date": "2/26/2024",
+    "description": "Bank of America CHECKCARD 0223 TRADER JOE S #124 BURBANK CA 24137464055100596349718",
+    "amount": 37.3,
+    "type": "RECEIPT",
+    "source": "Table 47",
+    "raw": {
+      "date": "02/26/24",
+      "description": "CHECKCARD 0223 TRADER JOE S #124 BURBANK CA 24137464055100596349718",
+      "amount": 37.3
+    }
+  },
+  {
+    "date": "2/27/2024",
+    "description": "Bank of America CHECKCARD 0226 AMZN MKTP US*RZ8X91650 SEATTLE WA 24431064058083320774310",
+    "amount": 16.41,
+    "type": "RECEIPT",
+    "source": "Table 47",
+    "raw": {
+      "date": "02/27/24",
+      "description": "CHECKCARD 0226 AMZN MKTP US*RZ8X91650 SEATTLE WA 24431064058083320774310",
+      "amount": 16.41
+    }
+  },
+  {
+    "date": "3/1/2024",
+    "description": "Bank of America CHECKCARD 0228 TRADER JOE S #124 BURBANK CA 24137464060500759275530",
+    "amount": 42.63,
+    "type": "RECEIPT",
+    "source": "Table 47",
+    "raw": {
+      "date": "03/01/24",
+      "description": "CHECKCARD 0228 TRADER JOE S #124 BURBANK CA 24137464060500759275530",
+      "amount": 42.63
+    }
+  },
+  {
+    "date": "3/4/2024",
+    "description": "Bank of America CHECKCARD 0302 XOC TEQUILA GRILL 818-9927930 CA 24000974063206312114575",
+    "amount": 41,
+    "type": "RECEIPT",
+    "source": "Table 47",
+    "raw": {
+      "date": "03/04/24",
+      "description": "CHECKCARD 0302 XOC TEQUILA GRILL 818-9927930 CA 24000974063206312114575",
+      "amount": 41
+    }
+  },
+  {
+    "date": "3/4/2024",
+    "description": "Bank of America CHECKCARD 0302 LAZ PARKING M47166-SKI CANOGA PARK CA 24055224063016000111567",
+    "amount": 3,
+    "type": "RECEIPT",
+    "source": "Table 47",
+    "raw": {
+      "date": "03/04/24",
+      "description": "CHECKCARD 0302 LAZ PARKING M47166-SKI CANOGA PARK CA 24055224063016000111567",
+      "amount": 3
+    }
+  },
+  {
+    "date": "3/5/2024",
+    "description": "Bank of America CHECKCARD 0305 WWW.TRUPANION. SEATTLE WA",
+    "amount": 90.41,
+    "type": "RECEIPT",
+    "source": "Table 47",
+    "raw": {
+      "date": "03/05/24",
+      "description": "CHECKCARD 0305 WWW.TRUPANION. SEATTLE WA",
+      "amount": 90.41
+    }
+  },
+  {
+    "date": "3/6/2024",
+    "description": "Bank of America CHECKCARD",
+    "amount": 30.04,
+    "type": "RECEIPT",
+    "source": "Table 48",
+    "raw": {
+      "date": "03/06/24",
+      "description": "CHECKCARD",
+      "amount": 30.04
+    }
+  },
+  {
+    "date": "3/6/2024",
+    "description": "Bank of America CHECKCARD:",
+    "amount": 17.51,
+    "type": "RECEIPT",
+    "source": "Table 48",
+    "raw": {
+      "date": "03/06/24",
+      "description": "CHECKCARD:",
+      "amount": 17.51
+    }
+  },
+  {
+    "date": "3/6/2024",
+    "description": "Bank of America CHECKCARD",
+    "amount": 84.3,
+    "type": "RECEIPT",
+    "source": "Table 48",
+    "raw": {
+      "date": "03/06/24",
+      "description": "CHECKCARD",
+      "amount": 84.3
+    }
+  },
+  {
+    "date": "3/6/2024",
+    "description": "Bank of America CHECKCARD\nRECURRING",
+    "amount": 94.99,
+    "type": "RECEIPT",
+    "source": "Table 48",
+    "raw": {
+      "date": "03/06/24",
+      "description": "CHECKCARD\nRECURRING",
+      "amount": 94.99
+    }
+  },
+  {
+    "date": "3/7/2024",
+    "description": "Bank of America CHECKCARD 0305 TRADER JOE S #122 STUDIO CITY CA 24137464066500876216734",
+    "amount": 20.33,
+    "type": "RECEIPT",
+    "source": "Table 48",
+    "raw": {
+      "date": "03/07/24",
+      "description": "CHECKCARD 0305 TRADER JOE S #122 STUDIO CITY CA 24137464066500876216734",
+      "amount": 20.33
+    }
+  },
+  {
+    "date": "3/7/2024",
+    "description": "Bank of America CHECKCARD 0307 N & D OIL CORP NORTH HOLLYWOCA",
+    "amount": 68.09,
+    "type": "RECEIPT",
+    "source": "Table 48",
+    "raw": {
+      "date": "03/07/24",
+      "description": "CHECKCARD 0307 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": 68.09
+    }
+  },
+  {
+    "date": "3/11/2024",
+    "description": "Bank of America CHECKCARD 0308 CAEFILE*014602995-0 213-830-0840 CA 24692164068103762939054",
+    "amount": 316,
+    "type": "RECEIPT",
+    "source": "Table 48",
+    "raw": {
+      "date": "03/11/24",
+      "description": "CHECKCARD 0308 CAEFILE*014602995-0 213-830-0840 CA 24692164068103762939054",
+      "amount": 316
+    }
+  },
+  {
+    "date": "3/11/2024",
+    "description": "Bank of America CHECKCARD",
+    "amount": 2.25,
+    "type": "RECEIPT",
+    "source": "Table 48",
+    "raw": {
+      "date": "03/11/24",
+      "description": "CHECKCARD",
+      "amount": 2.25
+    }
+  },
+  {
+    "date": "3/11/2024",
+    "description": "Bank of America CHECKCARD 0307 TRADER JOE S #022 OCEANSIDE CA 24137464068500969150582",
+    "amount": 14.7,
+    "type": "RECEIPT",
+    "source": "Table 48",
+    "raw": {
+      "date": "03/11/24",
+      "description": "CHECKCARD 0307 TRADER JOE S #022 OCEANSIDE CA 24137464068500969150582",
+      "amount": 14.7
+    }
+  },
+  {
+    "date": "3/13/2024",
+    "description": "Bank of America CHECKCARD 0312 CAEFILE*014640512-0 213-830-0840 CA 24692164072106953305310",
+    "amount": 2.25,
+    "type": "RECEIPT",
+    "source": "Table 48",
+    "raw": {
+      "date": "03/13/24",
+      "description": "CHECKCARD 0312 CAEFILE*014640512-0 213-830-0840 CA 24692164072106953305310",
+      "amount": 2.25
+    }
+  },
+  {
+    "date": "3/14/2024",
+    "description": "Bank of America CHECKCARD",
+    "amount": 14.7,
+    "type": "RECEIPT",
+    "source": "Table 48",
+    "raw": {
+      "date": "03/14/24",
+      "description": "CHECKCARD",
+      "amount": 14.7
+    }
+  },
+  {
+    "date": "3/18/2024",
+    "description": "Bank of America CHECKCARD 0312 TRADER JOE S #122 STUDIO CITY CA 24137464073500973996668",
+    "amount": 31.51,
+    "type": "RECEIPT",
+    "source": "Table 48",
+    "raw": {
+      "date": "03/18/24",
+      "description": "CHECKCARD 0312 TRADER JOE S #122 STUDIO CITY CA 24137464073500973996668",
+      "amount": 31.51
+    }
+  },
+  {
+    "date": "3/18/2024",
+    "description": "Bank of America CHECKCARD",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 48",
+    "raw": {
+      "date": "03/18/24",
+      "description": "CHECKCARD",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "3/18/2024",
+    "description": "Bank of America CHECKCARD",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 48",
+    "raw": {
+      "date": "03/18/24",
+      "description": "CHECKCARD",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "3/18/2024",
+    "description": "Bank of America CHECKCARD 0315 AMZN MKTP US*R68NN44K1 SEATTLE WA 24431064075083736365017",
+    "amount": 108.57,
+    "type": "RECEIPT",
+    "source": "Table 48",
+    "raw": {
+      "date": "03/18/24",
+      "description": "CHECKCARD 0315 AMZN MKTP US*R68NN44K1 SEATTLE WA 24431064075083736365017",
+      "amount": 108.57
+    }
+  },
+  {
+    "date": "3/18/2024",
+    "description": "Bank of America CHECKCARD 0316 SXM*SIRIUSXM.COM/ACCT 888-635-5144 NY 24692164076109669433950 RECURRING",
+    "amount": 349.49,
+    "type": "RECEIPT",
+    "source": "Table 48",
+    "raw": {
+      "date": "03/18/24",
+      "description": "CHECKCARD 0316 SXM*SIRIUSXM.COM/ACCT 888-635-5144 NY 24692164076109669433950 RECURRING",
+      "amount": 349.49
+    }
+  },
+  {
+    "date": "3/18/2024",
+    "description": "Bank of America CHECKCARD 0316 TRADER JOE S #124 BURBANK CA 24137464077501223801605",
+    "amount": 20.16,
+    "type": "RECEIPT",
+    "source": "Table 48",
+    "raw": {
+      "date": "03/18/24",
+      "description": "CHECKCARD 0316 TRADER JOE S #124 BURBANK CA 24137464077501223801605",
+      "amount": 20.16
+    }
+  },
+  {
+    "date": "4/9/2024",
+    "description": "Bank of America WIRE TYPE:WIRE IN DATE: 240409 TIME:1211 ET TRN:2024040900302165 SEQ:2024040900003745/000862 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: 75IEN2ZOIV",
+    "amount": 26979.17,
+    "type": "RECEIPT",
+    "source": "Table 54",
+    "raw": {
+      "date": "04/09/24",
+      "description": "WIRE TYPE:WIRE IN DATE: 240409 TIME:1211 ET TRN:2024040900302165 SEQ:2024040900003745/000862 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: 75IEN2ZOIV",
+      "amount": 26979.17
+    }
+  },
+  {
+    "date": "4/10/2024",
+    "description": "Bank of America SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR AN1*BE*BONNI E DREXLER *34*XXXXXXXXX1",
+    "amount": 2059.8,
+    "type": "RECEIPT",
+    "source": "Table 54",
+    "raw": {
+      "date": "04/10/24",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR AN1*BE*BONNI E DREXLER *34*XXXXXXXXX1",
+      "amount": 2059.8
+    }
+  },
+  {
+    "date": "3/22/2024",
+    "description": "Bank of America CHECKCARD 0320 TRADER JOE S #124 BURBANK CA 24137464081500858544666",
+    "amount": 22.85,
+    "type": "RECEIPT",
+    "source": "Table 55",
+    "raw": {
+      "date": "03/22/24",
+      "description": "CHECKCARD 0320 TRADER JOE S #124 BURBANK CA 24137464081500858544666",
+      "amount": 22.85
+    }
+  },
+  {
+    "date": "3/25/2024",
+    "description": "Bank of America CHECKCARD 0322 CAEFILE*014757613-0 213-830-0840 CA 24692164082105117639661",
+    "amount": 2.25,
+    "type": "RECEIPT",
+    "source": "Table 55",
+    "raw": {
+      "date": "03/25/24",
+      "description": "CHECKCARD 0322 CAEFILE*014757613-0 213-830-0840 CA 24692164082105117639661",
+      "amount": 2.25
+    }
+  },
+  {
+    "date": "3/25/2024",
+    "description": "Bank of America CHECKCARD 0322 CAEFILE*014757613-0 800-297-5377 TX 24692164082105118860100",
+    "amount": 14.7,
+    "type": "RECEIPT",
+    "source": "Table 55",
+    "raw": {
+      "date": "03/25/24",
+      "description": "CHECKCARD 0322 CAEFILE*014757613-0 800-297-5377 TX 24692164082105118860100",
+      "amount": 14.7
+    }
+  },
+  {
+    "date": "3/27/2024",
+    "description": "Bank of America CHECKCARD 0326 BUILD.COM 800-375-3403 CA 24435654086083748680693",
+    "amount": 217.91,
+    "type": "RECEIPT",
+    "source": "Table 55",
+    "raw": {
+      "date": "03/27/24",
+      "description": "CHECKCARD 0326 BUILD.COM 800-375-3403 CA 24435654086083748680693",
+      "amount": 217.91
+    }
+  },
+  {
+    "date": "3/28/2024",
+    "description": "Bank of America CHECKCARD 0327 BUILD.COM 800-375-3403 CA 24435654087083749120847",
+    "amount": 56.37,
+    "type": "RECEIPT",
+    "source": "Table 55",
+    "raw": {
+      "date": "03/28/24",
+      "description": "CHECKCARD 0327 BUILD.COM 800-375-3403 CA 24435654087083749120847",
+      "amount": 56.37
+    }
+  },
+  {
+    "date": "3/29/2024",
+    "description": "Bank of America CHECKCARD 0328 CAEFILE*014818683-0 213-830-0840 CA 24692164088100039792973",
+    "amount": 2.25,
+    "type": "RECEIPT",
+    "source": "Table 55",
+    "raw": {
+      "date": "03/29/24",
+      "description": "CHECKCARD 0328 CAEFILE*014818683-0 213-830-0840 CA 24692164088100039792973",
+      "amount": 2.25
+    }
+  },
+  {
+    "date": "3/29/2024",
+    "description": "Bank of America CHECKCARD 0328 CAEFILE*014818683-0 800-297-5377 TX 24692164088100039791868",
+    "amount": 14.7,
+    "type": "RECEIPT",
+    "source": "Table 55",
+    "raw": {
+      "date": "03/29/24",
+      "description": "CHECKCARD 0328 CAEFILE*014818683-0 800-297-5377 TX 24692164088100039791868",
+      "amount": 14.7
+    }
+  },
+  {
+    "date": "3/29/2024",
+    "description": "Bank of America CHECKCARD 0327 TRADER JOE S #122 STUDIO CITY CA 24137464088500932664061",
+    "amount": 59.1,
+    "type": "RECEIPT",
+    "source": "Table 55",
+    "raw": {
+      "date": "03/29/24",
+      "description": "CHECKCARD 0327 TRADER JOE S #122 STUDIO CITY CA 24137464088500932664061",
+      "amount": 59.1
+    }
+  },
+  {
+    "date": "3/29/2024",
+    "description": "Bank of America CHECKCARD 0329 N & D OIL CORP NORTH HOLLYWOCA",
+    "amount": 73.85,
+    "type": "RECEIPT",
+    "source": "Table 55",
+    "raw": {
+      "date": "03/29/24",
+      "description": "CHECKCARD 0329 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": 73.85
+    }
+  },
+  {
+    "date": "4/1/2024",
+    "description": "Bank of America CHECKCARD 0329 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714089900019700179",
+    "amount": 84.3,
+    "type": "RECEIPT",
+    "source": "Table 55",
+    "raw": {
+      "date": "04/01/24",
+      "description": "CHECKCARD 0329 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714089900019700179",
+      "amount": 84.3
+    }
+  },
+  {
+    "date": "4/4/2024",
+    "description": "Bank of America CHECKCARD 0402 TRADER JOE S #054 TOLUCA LAKE CA 24137464094500898600630",
+    "amount": 34.31,
+    "type": "RECEIPT",
+    "source": "Table 56",
+    "raw": {
+      "date": "04/04/24",
+      "description": "CHECKCARD 0402 TRADER JOE S #054 TOLUCA LAKE CA 24137464094500898600630",
+      "amount": 34.31
+    }
+  },
+  {
+    "date": "4/5/2024",
+    "description": "Bank of America CHECKCARD 0405 WWW.TRUPANION. SEATTLE WA",
+    "amount": 90.41,
+    "type": "RECEIPT",
+    "source": "Table 56",
+    "raw": {
+      "date": "04/05/24",
+      "description": "CHECKCARD 0405 WWW.TRUPANION. SEATTLE WA",
+      "amount": 90.41
+    }
+  },
+  {
+    "date": "4/9/2024",
+    "description": "Bank of America CHECKCARD 0407 SHAKE SHACK - 1309 646-747-7178 CA 24692164099105857119941",
+    "amount": 36.73,
+    "type": "RECEIPT",
+    "source": "Table 56",
+    "raw": {
+      "date": "04/09/24",
+      "description": "CHECKCARD 0407 SHAKE SHACK - 1309 646-747-7178 CA 24692164099105857119941",
+      "amount": 36.73
+    }
+  },
+  {
+    "date": "4/9/2024",
+    "description": "Bank of America CHECKCARD 0407 SALSA & BEER VAN NUYS CA 24040684099900017000320",
+    "amount": 23.79,
+    "type": "RECEIPT",
+    "source": "Table 56",
+    "raw": {
+      "date": "04/09/24",
+      "description": "CHECKCARD 0407 SALSA & BEER VAN NUYS CA 24040684099900017000320",
+      "amount": 23.79
+    }
+  },
+  {
+    "date": "4/10/2024",
+    "description": "Bank of America CHECKCARD 0408 TRADER JOE S #124 BURBANK CA 24137464100500855079242",
+    "amount": 45.69,
+    "type": "RECEIPT",
+    "source": "Table 56",
+    "raw": {
+      "date": "04/10/24",
+      "description": "CHECKCARD 0408 TRADER JOE S #124 BURBANK CA 24137464100500855079242",
+      "amount": 45.69
+    }
+  },
+  {
+    "date": "4/16/2024",
+    "description": "Bank of America CHECKCARD 0415 LA FITNESS 949-255-8100 CA 24492154106084018270683 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 56",
+    "raw": {
+      "date": "04/16/24",
+      "description": "CHECKCARD 0415 LA FITNESS 949-255-8100 CA 24492154106084018270683 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "4/16/2024",
+    "description": "Bank of America CHECKCARD 0415 LA FITNESS 949-255-8100 CA 24492154106084001271086 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 56",
+    "raw": {
+      "date": "04/16/24",
+      "description": "CHECKCARD 0415 LA FITNESS 949-255-8100 CA 24492154106084001271086 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "4/18/2024",
+    "description": "Bank of America CHECKCARD 0416 TRADER JOE S #124 BURBANK CA 24137464108500880689736",
+    "amount": 37.85,
+    "type": "RECEIPT",
+    "source": "Table 56",
+    "raw": {
+      "date": "04/18/24",
+      "description": "CHECKCARD 0416 TRADER JOE S #124 BURBANK CA 24137464108500880689736",
+      "amount": 37.85
+    }
+  },
+  {
+    "date": "5/1/2024",
+    "description": "Bank of America CHECKCARD 0429 THE HOME DEPOT #6613 N. HOLLYWOOD CA 7494301412101018549",
+    "amount": 60.28,
+    "type": "RECEIPT",
+    "source": "Table 61",
+    "raw": {
+      "date": "05/01/24",
+      "description": "CHECKCARD 0429 THE HOME DEPOT #6613 N. HOLLYWOOD CA 7494301412101018549",
+      "amount": 60.28
+    }
+  },
+  {
+    "date": "5/8/2024",
+    "description": "Bank of America SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX\\",
+    "amount": 2059.8,
+    "type": "RECEIPT",
+    "source": "Table 61",
+    "raw": {
+      "date": "05/08/24",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX\\",
+      "amount": 2059.8
+    }
+  },
+  {
+    "date": "5/10/2024",
+    "description": "Bank of America WIRE TYPE:WIRE IN DATE: 240510 TIME:1706 ET TRN:2024051000501234 SEQ:2024051000009275/003021 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: H65UJ2F3A3",
+    "amount": 26979.17,
+    "type": "RECEIPT",
+    "source": "Table 61",
+    "raw": {
+      "date": "05/10/24",
+      "description": "WIRE TYPE:WIRE IN DATE: 240510 TIME:1706 ET TRN:2024051000501234 SEQ:2024051000009275/003021 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: H65UJ2F3A3",
+      "amount": 26979.17
+    }
+  },
+  {
+    "date": "4/22/2024",
+    "description": "Bank of America CHECKCARD 0418 SHARKY'S - SHERMAN OAKS LOS ANGELES CA 24801974110872123759843",
+    "amount": 33.66,
+    "type": "RECEIPT",
+    "source": "Table 62",
+    "raw": {
+      "date": "04/22/24",
+      "description": "CHECKCARD 0418 SHARKY'S - SHERMAN OAKS LOS ANGELES CA 24801974110872123759843",
+      "amount": 33.66
+    }
+  },
+  {
+    "date": "4/22/2024",
+    "description": "Bank of America CHECKCARD 0419 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714110900011900655",
+    "amount": 84.34,
+    "type": "RECEIPT",
+    "source": "Table 62",
+    "raw": {
+      "date": "04/22/24",
+      "description": "CHECKCARD 0419 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714110900011900655",
+      "amount": 84.34
+    }
+  },
+  {
+    "date": "4/24/2024",
+    "description": "Bank of America CHECKCARD 0422 TRADER JOE S #124 BURBANK CA 24137464114500864812694",
+    "amount": 47.28,
+    "type": "RECEIPT",
+    "source": "Table 62",
+    "raw": {
+      "date": "04/24/24",
+      "description": "CHECKCARD 0422 TRADER JOE S #124 BURBANK CA 24137464114500864812694",
+      "amount": 47.28
+    }
+  },
+  {
+    "date": "4/25/2024",
+    "description": "Bank of America CHECKCARD 0424 CAEFILE*015101560-0 213-830-0840 CA 24692164115109267755658",
+    "amount": 2.25,
+    "type": "RECEIPT",
+    "source": "Table 62",
+    "raw": {
+      "date": "04/25/24",
+      "description": "CHECKCARD 0424 CAEFILE*015101560-0 213-830-0840 CA 24692164115109267755658",
+      "amount": 2.25
+    }
+  },
+  {
+    "date": "4/25/2024",
+    "description": "Bank of America CHECKCARD 0424 CAEFILE*015101560-0 800-297-5377 TX 24692164115109267783825",
+    "amount": 14.7,
+    "type": "RECEIPT",
+    "source": "Table 62",
+    "raw": {
+      "date": "04/25/24",
+      "description": "CHECKCARD 0424 CAEFILE*015101560-0 800-297-5377 TX 24692164115109267783825",
+      "amount": 14.7
+    }
+  },
+  {
+    "date": "4/25/2024",
+    "description": "Bank of America CHECKCARD 0424 CAEFILE*015104797-0 213-830-0840 CA 24692164115109268294137",
+    "amount": 2.25,
+    "type": "RECEIPT",
+    "source": "Table 63",
+    "raw": {
+      "date": "04/25/24",
+      "description": "CHECKCARD 0424 CAEFILE*015104797-0 213-830-0840 CA 24692164115109268294137",
+      "amount": 2.25
+    }
+  },
+  {
+    "date": "4/25/2024",
+    "description": "Bank of America CHECKCARD 0424 CAEFILE*015104797-0 800-297-5377 TX 24692164115109268301031",
+    "amount": 14.7,
+    "type": "RECEIPT",
+    "source": "Table 63",
+    "raw": {
+      "date": "04/25/24",
+      "description": "CHECKCARD 0424 CAEFILE*015104797-0 800-297-5377 TX 24692164115109268301031",
+      "amount": 14.7
+    }
+  },
+  {
+    "date": "4/25/2024",
+    "description": "Bank of America CHECKCARD 0424 CAEFILE*015104905-0 800-297-5377 TX 24692164115109268300983",
+    "amount": 14.7,
+    "type": "RECEIPT",
+    "source": "Table 63",
+    "raw": {
+      "date": "04/25/24",
+      "description": "CHECKCARD 0424 CAEFILE*015104905-0 800-297-5377 TX 24692164115109268300983",
+      "amount": 14.7
+    }
+  },
+  {
+    "date": "4/25/2024",
+    "description": "Bank of America CHECKCARD 0424 CAEFILE*015101567-0 800-297-5377 TX 24692164115109267783817",
+    "amount": 14.7,
+    "type": "RECEIPT",
+    "source": "Table 63",
+    "raw": {
+      "date": "04/25/24",
+      "description": "CHECKCARD 0424 CAEFILE*015101567-0 800-297-5377 TX 24692164115109267783817",
+      "amount": 14.7
+    }
+  },
+  {
+    "date": "4/25/2024",
+    "description": "Bank of America CHECKCARD 0424 CAEFILE*015101567-0 213-830-0840 CA 24692164115109267755641",
+    "amount": 2.25,
+    "type": "RECEIPT",
+    "source": "Table 63",
+    "raw": {
+      "date": "04/25/24",
+      "description": "CHECKCARD 0424 CAEFILE*015101567-0 213-830-0840 CA 24692164115109267755641",
+      "amount": 2.25
+    }
+  },
+  {
+    "date": "4/25/2024",
+    "description": "Bank of America CHECKCARD 0424 CAEFILE*015104905-0 213-830-0840 CA 24692164115109268293709",
+    "amount": 2.25,
+    "type": "RECEIPT",
+    "source": "Table 63",
+    "raw": {
+      "date": "04/25/24",
+      "description": "CHECKCARD 0424 CAEFILE*015104905-0 213-830-0840 CA 24692164115109268293709",
+      "amount": 2.25
+    }
+  },
+  {
+    "date": "4/25/2024",
+    "description": "Bank of America CHECKCARD 0424 SQ *SUGAR NAILS Valley VillagCA 24692164115109065397448",
+    "amount": 31,
+    "type": "RECEIPT",
+    "source": "Table 63",
+    "raw": {
+      "date": "04/25/24",
+      "description": "CHECKCARD 0424 SQ *SUGAR NAILS Valley VillagCA 24692164115109065397448",
+      "amount": 31
+    }
+  },
+  {
+    "date": "4/26/2024",
+    "description": "Bank of America CHECKCARD 0425 CAEFILE*015120766-0 213-830-0840 CA 24692164116100094537525",
+    "amount": 2.25,
+    "type": "RECEIPT",
+    "source": "Table 63",
+    "raw": {
+      "date": "04/26/24",
+      "description": "CHECKCARD 0425 CAEFILE*015120766-0 213-830-0840 CA 24692164116100094537525",
+      "amount": 2.25
+    }
+  },
+  {
+    "date": "4/26/2024",
+    "description": "Bank of America CHECKCARD 0425 CAEFILE*015120766-0 800-297-5377 TX 24692164116100094571698",
+    "amount": 14.7,
+    "type": "RECEIPT",
+    "source": "Table 63",
+    "raw": {
+      "date": "04/26/24",
+      "description": "CHECKCARD 0425 CAEFILE*015120766-0 800-297-5377 TX 24692164116100094571698",
+      "amount": 14.7
+    }
+  },
+  {
+    "date": "4/29/2024",
+    "description": "Bank of America CHECKCARD 0426 BAJA FRESH 30675 MARINA DEL RECA 24138294118401000000367",
+    "amount": 57.56,
+    "type": "RECEIPT",
+    "source": "Table 63",
+    "raw": {
+      "date": "04/29/24",
+      "description": "CHECKCARD 0426 BAJA FRESH 30675 MARINA DEL RECA 24138294118401000000367",
+      "amount": 57.56
+    }
+  },
+  {
+    "date": "4/29/2024",
+    "description": "Bank of America CHECKCARD 0427 THE HOME DEPOT #6613 N. HOLLYWOOD CA 24943014119010194135461",
+    "amount": 227.49,
+    "type": "RECEIPT",
+    "source": "Table 63",
+    "raw": {
+      "date": "04/29/24",
+      "description": "CHECKCARD 0427 THE HOME DEPOT #6613 N. HOLLYWOOD CA 24943014119010194135461",
+      "amount": 227.49
+    }
+  },
+  {
+    "date": "5/1/2024",
+    "description": "Bank of America CHECKCARD 0430 N & D OIL CORP NORTH HOLLYWOCA",
+    "amount": 78.25,
+    "type": "RECEIPT",
+    "source": "Table 63",
+    "raw": {
+      "date": "05/01/24",
+      "description": "CHECKCARD 0430 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": 78.25
+    }
+  },
+  {
+    "date": "5/2/2024",
+    "description": "Bank of America CHECKCARD 0430 TRADER JOE S #122 STUDIO CITY CA 24137464122500976965828",
+    "amount": 46.39,
+    "type": "RECEIPT",
+    "source": "Table 63",
+    "raw": {
+      "date": "05/02/24",
+      "description": "CHECKCARD 0430 TRADER JOE S #122 STUDIO CITY CA 24137464122500976965828",
+      "amount": 46.39
+    }
+  },
+  {
+    "date": "5/6/2024",
+    "description": "Bank of America CHECKCARD 0505 WWW.TRUPANION. SEATTLE WA 00000000000000000747709 RECURRING",
+    "amount": 90.41,
+    "type": "RECEIPT",
+    "source": "Table 63",
+    "raw": {
+      "date": "05/06/24",
+      "description": "CHECKCARD 0505 WWW.TRUPANION. SEATTLE WA 00000000000000000747709 RECURRING",
+      "amount": 90.41
+    }
+  },
+  {
+    "date": "5/8/2024",
+    "description": "Bank of America CHECKCARD 0506 TRADER JOE S #122 STUDIO CITY CA 24137464128500873053680",
+    "amount": 45.98,
+    "type": "RECEIPT",
+    "source": "Table 63",
+    "raw": {
+      "date": "05/08/24",
+      "description": "CHECKCARD 0506 TRADER JOE S #122 STUDIO CITY CA 24137464128500873053680",
+      "amount": 45.98
+    }
+  },
+  {
+    "date": "5/13/2024",
+    "description": "Bank of America CHECKCARD 0511 TRADER JOE S #124 BURBANK CA 24137464133501263275639",
+    "amount": 23.96,
+    "type": "RECEIPT",
+    "source": "Table 63",
+    "raw": {
+      "date": "05/13/24",
+      "description": "CHECKCARD 0511 TRADER JOE S #124 BURBANK CA 24137464133501263275639",
+      "amount": 23.96
+    }
+  },
+  {
+    "date": "5/13/2024",
+    "description": "Bank of America CHECKCARD 0511 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714133900014100710",
+    "amount": 84.3,
+    "type": "RECEIPT",
+    "source": "Table 63",
+    "raw": {
+      "date": "05/13/24",
+      "description": "CHECKCARD 0511 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714133900014100710",
+      "amount": 84.3
+    }
+  },
+  {
+    "date": "5/16/2024",
+    "description": "Bank of America CHECKCARD 0515 LA FITNESS 949-255-8100 CA 24492154136084020006327 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 63",
+    "raw": {
+      "date": "05/16/24",
+      "description": "CHECKCARD 0515 LA FITNESS 949-255-8100 CA 24492154136084020006327 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "5/20/2024",
+    "description": "Bank of America CHECKCARD 0517 ALL STAR HEALTH.COM 800-875-0448 CA 24692164138108085942095",
+    "amount": 113.62,
+    "type": "RECEIPT",
+    "source": "Table 64",
+    "raw": {
+      "date": "05/20/24",
+      "description": "CHECKCARD 0517 ALL STAR HEALTH.COM 800-875-0448 CA 24692164138108085942095",
+      "amount": 113.62
+    }
+  },
+  {
+    "date": "4/26/2024",
+    "description": "Bank of America SOCALGAS DES:ARC PYMT CHECK #0379 INDN:0093129100 CO ID:3951240705 ARC\n:selected:",
+    "amount": 54.37,
+    "type": "RECEIPT",
+    "source": "Table 65",
+    "raw": {
+      "date": "04/26/24",
+      "description": "SOCALGAS DES:ARC PYMT CHECK #0379 INDN:0093129100 CO ID:3951240705 ARC\n:selected:",
+      "amount": 54.37
+    }
+  },
+  {
+    "date": "5/6/2024",
+    "description": "Bank of America CHARTER COMMUNIC DES:CHECK PYMT CHECK #0380 INDN:8448200181422279 CO ID:0470122023 ARC\n:selected:",
+    "amount": 294.23,
+    "type": "RECEIPT",
+    "source": "Table 65",
+    "raw": {
+      "date": "05/06/24",
+      "description": "CHARTER COMMUNIC DES:CHECK PYMT CHECK #0380 INDN:8448200181422279 CO ID:0470122023 ARC\n:selected:",
+      "amount": 294.23
+    }
+  },
+  {
+    "date": "6/10/2024",
+    "description": "Bank of America WIRE TYPE:WIRE IN DATE: 240610 TIME:1118 ET TRN:2024061000374014 SEQ:2024061000002999/000753 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: SFLUEBUCOM",
+    "amount": 26979.17,
+    "type": "RECEIPT",
+    "source": "Table 69",
+    "raw": {
+      "date": "06/10/24",
+      "description": "WIRE TYPE:WIRE IN DATE: 240610 TIME:1118 ET TRN:2024061000374014 SEQ:2024061000002999/000753 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: SFLUEBUCOM",
+      "amount": 26979.17
+    }
+  },
+  {
+    "date": "6/12/2024",
+    "description": "Bank of America SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX1",
+    "amount": 2059.8,
+    "type": "RECEIPT",
+    "source": "Table 69",
+    "raw": {
+      "date": "06/12/24",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX1",
+      "amount": 2059.8
+    }
+  },
+  {
+    "date": "5/22/2024",
+    "description": "Bank of America CHECKCARD 0520 TRADER JOE S #122 STUDIO CITY CA 24137464142500801684582",
+    "amount": 39.13,
+    "type": "RECEIPT",
+    "source": "Table 70",
+    "raw": {
+      "date": "05/22/24",
+      "description": "CHECKCARD 0520 TRADER JOE S #122 STUDIO CITY CA 24137464142500801684582",
+      "amount": 39.13
+    }
+  },
+  {
+    "date": "5/28/2024",
+    "description": "Bank of America CHECKCARD 0524 TST* HEAVY HANDED STUDI STUDIO CITY CA 24137464145100299060614",
+    "amount": 32.37,
+    "type": "RECEIPT",
+    "source": "Table 70",
+    "raw": {
+      "date": "05/28/24",
+      "description": "CHECKCARD 0524 TST* HEAVY HANDED STUDI STUDIO CITY CA 24137464145100299060614",
+      "amount": 32.37
+    }
+  },
+  {
+    "date": "5/28/2024",
+    "description": "Bank of America CHECKCARD 0525 TRADER JOE S #124 BURBANK CA 24137464147501151322554",
+    "amount": 33.22,
+    "type": "RECEIPT",
+    "source": "Table 70",
+    "raw": {
+      "date": "05/28/24",
+      "description": "CHECKCARD 0525 TRADER JOE S #124 BURBANK CA 24137464147501151322554",
+      "amount": 33.22
+    }
+  },
+  {
+    "date": "5/29/2024",
+    "description": "Bank of America CHECKCARD 0528 ANYTIME WINDOWS AND DOO 424-2029177 CA 24355894149421679283884",
+    "amount": 447.5,
+    "type": "RECEIPT",
+    "source": "Table 70",
+    "raw": {
+      "date": "05/29/24",
+      "description": "CHECKCARD 0528 ANYTIME WINDOWS AND DOO 424-2029177 CA 24355894149421679283884",
+      "amount": 447.5
+    }
+  },
+  {
+    "date": "6/3/2024",
+    "description": "Bank of America CHECKCARD 0602 N & D OIL CORP NORTH HOLLYWOCA",
+    "amount": 77.67,
+    "type": "RECEIPT",
+    "source": "Table 70",
+    "raw": {
+      "date": "06/03/24",
+      "description": "CHECKCARD 0602 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": 77.67
+    }
+  },
+  {
+    "date": "6/4/2024",
+    "description": "Bank of America CHECKCARD 0602 TST* FOR THE WIN - VAN Los Angeles CA 24692164155109559806632",
+    "amount": 30,
+    "type": "RECEIPT",
+    "source": "Table 71",
+    "raw": {
+      "date": "06/04/24",
+      "description": "CHECKCARD 0602 TST* FOR THE WIN - VAN Los Angeles CA 24692164155109559806632",
+      "amount": 30
+    }
+  },
+  {
+    "date": "6/4/2024",
+    "description": "Bank of America CHECKCARD 0602 TRADER JOE S #122 STUDIO CITY CA 24137464155500911025878",
+    "amount": 47.33,
+    "type": "RECEIPT",
+    "source": "Table 71",
+    "raw": {
+      "date": "06/04/24",
+      "description": "CHECKCARD 0602 TRADER JOE S #122 STUDIO CITY CA 24137464155500911025878",
+      "amount": 47.33
+    }
+  },
+  {
+    "date": "6/4/2024",
+    "description": "Bank of America CHECKCARD 0603 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714155900019200419",
+    "amount": 84.3,
+    "type": "RECEIPT",
+    "source": "Table 71",
+    "raw": {
+      "date": "06/04/24",
+      "description": "CHECKCARD 0603 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714155900019200419",
+      "amount": 84.3
+    }
+  },
+  {
+    "date": "6/5/2024",
+    "description": "Bank of America CHECKCARD 0605 WWW.TRUPANION. SEATTLE WA 00000000000000000403368 RECURRING",
+    "amount": 90.41,
+    "type": "RECEIPT",
+    "source": "Table 71",
+    "raw": {
+      "date": "06/05/24",
+      "description": "CHECKCARD 0605 WWW.TRUPANION. SEATTLE WA 00000000000000000403368 RECURRING",
+      "amount": 90.41
+    }
+  },
+  {
+    "date": "6/7/2024",
+    "description": "Bank of America CHECKCARD 0605 TST* MARSTONS Valencia CA 24692164158102097017470",
+    "amount": 38.11,
+    "type": "RECEIPT",
+    "source": "Table 71",
+    "raw": {
+      "date": "06/07/24",
+      "description": "CHECKCARD 0605 TST* MARSTONS Valencia CA 24692164158102097017470",
+      "amount": 38.11
+    }
+  },
+  {
+    "date": "6/10/2024",
+    "description": "Bank of America CHECKCARD 0607 TST* FOR THE WIN - VAN Los Angeles CA 24692164160103874343689",
+    "amount": 23.27,
+    "type": "RECEIPT",
+    "source": "Table 71",
+    "raw": {
+      "date": "06/10/24",
+      "description": "CHECKCARD 0607 TST* FOR THE WIN - VAN Los Angeles CA 24692164160103874343689",
+      "amount": 23.27
+    }
+  },
+  {
+    "date": "6/13/2024",
+    "description": "Bank of America CHECKCARD 0611 TRADER JOE S #122 STUDIO CITY CA 24137464164500900164737",
+    "amount": 41.7,
+    "type": "RECEIPT",
+    "source": "Table 71",
+    "raw": {
+      "date": "06/13/24",
+      "description": "CHECKCARD 0611 TRADER JOE S #122 STUDIO CITY CA 24137464164500900164737",
+      "amount": 41.7
+    }
+  },
+  {
+    "date": "6/17/2024",
+    "description": "Bank of America CHECKCARD 0615 LA FITNESS 949-255-8100 CA 24492154167000732335848 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 71",
+    "raw": {
+      "date": "06/17/24",
+      "description": "CHECKCARD 0615 LA FITNESS 949-255-8100 CA 24492154167000732335848 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "6/17/2024",
+    "description": "Bank of America CHECKCARD 0615 LA FITNESS 949-255-8100 CA 24492154167000732313456 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 71",
+    "raw": {
+      "date": "06/17/24",
+      "description": "CHECKCARD 0615 LA FITNESS 949-255-8100 CA 24492154167000732313456 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "7/10/2024",
+    "description": "Bank of America SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR AN1*BE*BONNI E DREXLER *34*XXXXXXXXXI",
+    "amount": 2059.8,
+    "type": "RECEIPT",
+    "source": "Table 75",
+    "raw": {
+      "date": "07/10/24",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR AN1*BE*BONNI E DREXLER *34*XXXXXXXXXI",
+      "amount": 2059.8
+    }
+  },
+  {
+    "date": "7/16/2024",
+    "description": "Bank of America WIRE TYPE:WIRE IN DATE: 240716 TIME:0932 ET TRN:2024071600302376 SEQ:2024071600001558/000365 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: 9ARX1EV4YO",
+    "amount": 26979.17,
+    "type": "RECEIPT",
+    "source": "Table 75",
+    "raw": {
+      "date": "07/16/24",
+      "description": "WIRE TYPE:WIRE IN DATE: 240716 TIME:0932 ET TRN:2024071600302376 SEQ:2024071600001558/000365 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: 9ARX1EV4YO",
+      "amount": 26979.17
+    }
+  },
+  {
+    "date": "6/24/2024",
+    "description": "Bank of America CHECKCARD 0621 CAEFILE*015685153-0 213-830-0840 CA 24692164173105255537180",
+    "amount": 437.25,
+    "type": "RECEIPT",
+    "source": "Table 76",
+    "raw": {
+      "date": "06/24/24",
+      "description": "CHECKCARD 0621 CAEFILE*015685153-0 213-830-0840 CA 24692164173105255537180",
+      "amount": 437.25
+    }
+  },
+  {
+    "date": "6/24/2024",
+    "description": "Bank of America CHECKCARD 0621 CAEFILE*015685153-0 800-297-5377 TX 24692164173105255584075",
+    "amount": 26.67,
+    "type": "RECEIPT",
+    "source": "Table 76",
+    "raw": {
+      "date": "06/24/24",
+      "description": "CHECKCARD 0621 CAEFILE*015685153-0 800-297-5377 TX 24692164173105255584075",
+      "amount": 26.67
+    }
+  },
+  {
+    "date": "6/25/2024",
+    "description": "Bank of America CHECKCARD 0624 CAEFILE*015685355-0 213-830-0840 CA 24692164176107745280873",
+    "amount": 437.25,
+    "type": "RECEIPT",
+    "source": "Table 76",
+    "raw": {
+      "date": "06/25/24",
+      "description": "CHECKCARD 0624 CAEFILE*015685355-0 213-830-0840 CA 24692164176107745280873",
+      "amount": 437.25
+    }
+  },
+  {
+    "date": "6/25/2024",
+    "description": "Bank of America CHECKCARD 0624 CAEFILE*015685355-0 800-297-5377 TX 24692164176107745266534",
+    "amount": 26.67,
+    "type": "RECEIPT",
+    "source": "Table 76",
+    "raw": {
+      "date": "06/25/24",
+      "description": "CHECKCARD 0624 CAEFILE*015685355-0 800-297-5377 TX 24692164176107745266534",
+      "amount": 26.67
+    }
+  },
+  {
+    "date": "6/25/2024",
+    "description": "Bank of America CHECKCARD 0624 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714176900011700031",
+    "amount": 84.3,
+    "type": "RECEIPT",
+    "source": "Table 76",
+    "raw": {
+      "date": "06/25/24",
+      "description": "CHECKCARD 0624 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714176900011700031",
+      "amount": 84.3
+    }
+  },
+  {
+    "date": "6/26/2024",
+    "description": "Bank of America CHECKCARD 0624 TRADER JOE S #122 STUDIO CITY CA 24137464177500892004920",
+    "amount": 46.36,
+    "type": "RECEIPT",
+    "source": "Table 76",
+    "raw": {
+      "date": "06/26/24",
+      "description": "CHECKCARD 0624 TRADER JOE S #122 STUDIO CITY CA 24137464177500892004920",
+      "amount": 46.36
+    }
+  },
+  {
+    "date": "6/27/2024",
+    "description": "Bank of America CHECKCARD 0626 CAEFILE*015753013-0 213-830-0840 CA 24692164178109365460205",
+    "amount": 2.25,
+    "type": "RECEIPT",
+    "source": "Table 76",
+    "raw": {
+      "date": "06/27/24",
+      "description": "CHECKCARD 0626 CAEFILE*015753013-0 213-830-0840 CA 24692164178109365460205",
+      "amount": 2.25
+    }
+  },
+  {
+    "date": "6/27/2024",
+    "description": "Bank of America CHECKCARD 0626 CAEFILE*015753013-0 800-297-5377 TX 24692164178109365467648",
+    "amount": 14.7,
+    "type": "RECEIPT",
+    "source": "Table 76",
+    "raw": {
+      "date": "06/27/24",
+      "description": "CHECKCARD 0626 CAEFILE*015753013-0 800-297-5377 TX 24692164178109365467648",
+      "amount": 14.7
+    }
+  },
+  {
+    "date": "7/1/2024",
+    "description": "Bank of America CHECKCARD 0627 TST* OLD NEW YORK DELI Woodland HillCA 24692164180100691176074",
+    "amount": 50.37,
+    "type": "RECEIPT",
+    "source": "Table 77",
+    "raw": {
+      "date": "07/01/24",
+      "description": "CHECKCARD 0627 TST* OLD NEW YORK DELI Woodland HillCA 24692164180100691176074",
+      "amount": 50.37
+    }
+  },
+  {
+    "date": "7/5/2024",
+    "description": "Bank of America CHECKCARD 0703 STUDIO SMOG STUDIO CITY CA 24692164186105732648803",
+    "amount": 50,
+    "type": "RECEIPT",
+    "source": "Table 77",
+    "raw": {
+      "date": "07/05/24",
+      "description": "CHECKCARD 0703 STUDIO SMOG STUDIO CITY CA 24692164186105732648803",
+      "amount": 50
+    }
+  },
+  {
+    "date": "7/5/2024",
+    "description": "Bank of America CHECKCARD 0703 TRADER JOE S #122 STUDIO CITY CA 24137464186100398893071",
+    "amount": 51.83,
+    "type": "RECEIPT",
+    "source": "Table 77",
+    "raw": {
+      "date": "07/05/24",
+      "description": "CHECKCARD 0703 TRADER JOE S #122 STUDIO CITY CA 24137464186100398893071",
+      "amount": 51.83
+    }
+  },
+  {
+    "date": "7/5/2024",
+    "description": "Bank of America CHECKCARD 0704 N & D OIL CORP NORTH HOLLYWOCA",
+    "amount": 42.06,
+    "type": "RECEIPT",
+    "source": "Table 77",
+    "raw": {
+      "date": "07/05/24",
+      "description": "CHECKCARD 0704 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": 42.06
+    }
+  },
+  {
+    "date": "7/5/2024",
+    "description": "Bank of America CHECKCARD 0705 WWW.TRUPANION. SEATTLE WA 00000000000000000698101 RECURRING",
+    "amount": 90.41,
+    "type": "RECEIPT",
+    "source": "Table 77",
+    "raw": {
+      "date": "07/05/24",
+      "description": "CHECKCARD 0705 WWW.TRUPANION. SEATTLE WA 00000000000000000698101 RECURRING",
+      "amount": 90.41
+    }
+  },
+  {
+    "date": "7/8/2024",
+    "description": "Bank of America CHECKCARD 0705 FATBURGER - 116 WOODLAND HILLCA 24269794188500854261176",
+    "amount": 15.33,
+    "type": "RECEIPT",
+    "source": "Table 77",
+    "raw": {
+      "date": "07/08/24",
+      "description": "CHECKCARD 0705 FATBURGER - 116 WOODLAND HILLCA 24269794188500854261176",
+      "amount": 15.33
+    }
+  },
+  {
+    "date": "7/12/2024",
+    "description": "Bank of America CHECKCARD 0710 TRADER JOE S #124 BURBANK CA 24137464193500972598452",
+    "amount": 35.61,
+    "type": "RECEIPT",
+    "source": "Table 77",
+    "raw": {
+      "date": "07/12/24",
+      "description": "CHECKCARD 0710 TRADER JOE S #124 BURBANK CA 24137464193500972598452",
+      "amount": 35.61
+    }
+  },
+  {
+    "date": "7/12/2024",
+    "description": "Bank of America CHECKCARD 0711 ALL STAR HEALTH.COM 800-875-0448 CA 24692164193101465209765",
+    "amount": 197.14,
+    "type": "RECEIPT",
+    "source": "Table 77",
+    "raw": {
+      "date": "07/12/24",
+      "description": "CHECKCARD 0711 ALL STAR HEALTH.COM 800-875-0448 CA 24692164193101465209765",
+      "amount": 197.14
+    }
+  },
+  {
+    "date": "7/15/2024",
+    "description": "Bank of America CHECKCARD 0713 AMAZON.COM*RYOID9QT1 SEATTLE WA 24431064195017709686046",
+    "amount": 59.56,
+    "type": "RECEIPT",
+    "source": "Table 77",
+    "raw": {
+      "date": "07/15/24",
+      "description": "CHECKCARD 0713 AMAZON.COM*RYOID9QT1 SEATTLE WA 24431064195017709686046",
+      "amount": 59.56
+    }
+  },
+  {
+    "date": "7/15/2024",
+    "description": "Bank of America CHECKCARD 0713 TST* FOR THE WIN - HOLL Los Angeles CA 24692164196101250223630",
+    "amount": 59.15,
+    "type": "RECEIPT",
+    "source": "Table 77",
+    "raw": {
+      "date": "07/15/24",
+      "description": "CHECKCARD 0713 TST* FOR THE WIN - HOLL Los Angeles CA 24692164196101250223630",
+      "amount": 59.15
+    }
+  },
+  {
+    "date": "7/15/2024",
+    "description": "Bank of America CHECKCARD 0715 N & D OIL CORP NORTH HOLLYWOCA",
+    "amount": 71.11,
+    "type": "RECEIPT",
+    "source": "Table 77",
+    "raw": {
+      "date": "07/15/24",
+      "description": "CHECKCARD 0715 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": 71.11
+    }
+  },
+  {
+    "date": "7/16/2024",
+    "description": "Bank of America CHECKCARD 0715 LA FITNESS 949-255-8100 CA 24492154197009989993724 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 77",
+    "raw": {
+      "date": "07/16/24",
+      "description": "CHECKCARD 0715 LA FITNESS 949-255-8100 CA 24492154197009989993724 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "7/16/2024",
+    "description": "Bank of America CHECKCARD 0715 LA FITNESS 949-255-8100 CA 24492154197009989824267 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 77",
+    "raw": {
+      "date": "07/16/24",
+      "description": "CHECKCARD 0715 LA FITNESS 949-255-8100 CA 24492154197009989824267 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "7/22/2024",
+    "description": "Bank of America CHECKCARD 0718 TRADER JOE S #124 BURBANK CA 24137464201500971319603",
+    "amount": 53.56,
+    "type": "RECEIPT",
+    "source": "Table 77",
+    "raw": {
+      "date": "07/22/24",
+      "description": "CHECKCARD 0718 TRADER JOE S #124 BURBANK CA 24137464201500971319603",
+      "amount": 53.56
+    }
+  },
+  {
+    "date": "7/22/2024",
+    "description": "Bank of America CHECKCARD 0719 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714201900011100587",
+    "amount": 84.3,
+    "type": "RECEIPT",
+    "source": "Table 77",
+    "raw": {
+      "date": "07/22/24",
+      "description": "CHECKCARD 0719 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714201900011100587",
+      "amount": 84.3
+    }
+  },
+  {
+    "date": "7/2/2024",
+    "description": "Bank of America CHARTER COMMUNIC DES:CHECK PYMT CHECK #0393 /INDN:8448200181422279 co ID:0470122023 ARC\n:selected:",
+    "amount": 42.97,
+    "type": "RECEIPT",
+    "source": "Table 78",
+    "raw": {
+      "date": "07/02/24",
+      "description": "CHARTER COMMUNIC DES:CHECK PYMT CHECK #0393 /INDN:8448200181422279 co ID:0470122023 ARC\n:selected:",
+      "amount": 42.97
+    }
+  },
+  {
+    "date": "8/13/2024",
+    "description": "Bank of America WIRE TYPE:WIRE IN DATE: 240813 TIME:1151 ET TRN:2024081300351877 SEQ:2024081300003196/000892 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: M2810MDXUV",
+    "amount": 26979.17,
+    "type": "RECEIPT",
+    "source": "Table 83",
+    "raw": {
+      "date": "08/13/24",
+      "description": "WIRE TYPE:WIRE IN DATE: 240813 TIME:1151 ET TRN:2024081300351877 SEQ:2024081300003196/000892 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: M2810MDXUV",
+      "amount": 26979.17
+    }
+  },
+  {
+    "date": "8/14/2024",
+    "description": "Bank of America SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR co ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX1",
+    "amount": 2059.8,
+    "type": "RECEIPT",
+    "source": "Table 83",
+    "raw": {
+      "date": "08/14/24",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR co ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX1",
+      "amount": 2059.8
+    }
+  },
+  {
+    "date": "8/1/2024",
+    "description": "Bank of America CHECKCARD 0730 TRADER JOE S #124 BURBANK CA 24137464213500965846724",
+    "amount": 47.54,
+    "type": "RECEIPT",
+    "source": "Table 84",
+    "raw": {
+      "date": "08/01/24",
+      "description": "CHECKCARD 0730 TRADER JOE S #124 BURBANK CA 24137464213500965846724",
+      "amount": 47.54
+    }
+  },
+  {
+    "date": "8/1/2024",
+    "description": "Bank of America CHECKCARD 0731 SQ *SUGAR NAILS Valley VillagCA 24692164213106315953013",
+    "amount": 26,
+    "type": "RECEIPT",
+    "source": "Table 84",
+    "raw": {
+      "date": "08/01/24",
+      "description": "CHECKCARD 0731 SQ *SUGAR NAILS Valley VillagCA 24692164213106315953013",
+      "amount": 26
+    }
+  },
+  {
+    "date": "8/14/2024",
+    "description": "Bank of America CHECKCARD 0813 CAEFILE*016234648-0 213-830-0840 CA 24692164226107765052566",
+    "amount": 2.25,
+    "type": "RECEIPT",
+    "source": "Table 85",
+    "raw": {
+      "date": "08/14/24",
+      "description": "CHECKCARD 0813 CAEFILE*016234648-0 213-830-0840 CA 24692164226107765052566",
+      "amount": 2.25
+    }
+  },
+  {
+    "date": "8/14/2024",
+    "description": "Bank of America CHECKCARD 0813 CAEFILE*016234648-0 800-297-5377 TX 24692164226107765080849",
+    "amount": 14.7,
+    "type": "RECEIPT",
+    "source": "Table 85",
+    "raw": {
+      "date": "08/14/24",
+      "description": "CHECKCARD 0813 CAEFILE*016234648-0 800-297-5377 TX 24692164226107765080849",
+      "amount": 14.7
+    }
+  },
+  {
+    "date": "8/15/2024",
+    "description": "Bank of America CHECKCARD 0815 LA FITNESS IRVINE CA 00000000000000000113193 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 85",
+    "raw": {
+      "date": "08/15/24",
+      "description": "CHECKCARD 0815 LA FITNESS IRVINE CA 00000000000000000113193 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "8/15/2024",
+    "description": "Bank of America CHECKCARD 0815 LA FITNESS IRVINE CA 00000000000000000124435 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 85",
+    "raw": {
+      "date": "08/15/24",
+      "description": "CHECKCARD 0815 LA FITNESS IRVINE CA 00000000000000000124435 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "8/16/2024",
+    "description": "Bank of America CHECKCARD 0815 CAEFILE*016272835-0 213-830-0840 CA 24692164228109468237674",
+    "amount": 2.25,
+    "type": "RECEIPT",
+    "source": "Table 85",
+    "raw": {
+      "date": "08/16/24",
+      "description": "CHECKCARD 0815 CAEFILE*016272835-0 213-830-0840 CA 24692164228109468237674",
+      "amount": 2.25
+    }
+  },
+  {
+    "date": "8/16/2024",
+    "description": "Bank of America CHECKCARD 0815 CAEFILE*016272835-0 800-297-5377 TX 24692164228109468226834",
+    "amount": 14.7,
+    "type": "RECEIPT",
+    "source": "Table 85",
+    "raw": {
+      "date": "08/16/24",
+      "description": "CHECKCARD 0815 CAEFILE*016272835-0 800-297-5377 TX 24692164228109468226834",
+      "amount": 14.7
+    }
+  },
+  {
+    "date": "8/19/2024",
+    "description": "Bank of America CHECKCARD 0816 TRADER JOE S #122 STUDIO CITY CA 24137464230501223109367",
+    "amount": 42.04,
+    "type": "RECEIPT",
+    "source": "Table 85",
+    "raw": {
+      "date": "08/19/24",
+      "description": "CHECKCARD 0816 TRADER JOE S #122 STUDIO CITY CA 24137464230501223109367",
+      "amount": 42.04
+    }
+  },
+  {
+    "date": "8/19/2024",
+    "description": "Bank of America CHECKCARD 0818 N & D OIL CORP NORTH HOLLYWOCA",
+    "amount": 53.22,
+    "type": "RECEIPT",
+    "source": "Table 85",
+    "raw": {
+      "date": "08/19/24",
+      "description": "CHECKCARD 0818 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": 53.22
+    }
+  },
+  {
+    "date": "8/21/2024",
+    "description": "Bank of America CHECKCARD 0820 CAEFILE*016313583-0 213-830-0840 CA 24692164233103766188765",
+    "amount": 2.25,
+    "type": "RECEIPT",
+    "source": "Table 85",
+    "raw": {
+      "date": "08/21/24",
+      "description": "CHECKCARD 0820 CAEFILE*016313583-0 213-830-0840 CA 24692164233103766188765",
+      "amount": 2.25
+    }
+  },
+  {
+    "date": "8/21/2024",
+    "description": "Bank of America CHECKCARD 0820 CAEFILE*016313583-0 800-297-5377 TX 24692164233103766209496",
+    "amount": 14.7,
+    "type": "RECEIPT",
+    "source": "Table 85",
+    "raw": {
+      "date": "08/21/24",
+      "description": "CHECKCARD 0820 CAEFILE*016313583-0 800-297-5377 TX 24692164233103766209496",
+      "amount": 14.7
+    }
+  },
+  {
+    "date": "8/21/2024",
+    "description": "Bank of America CHECKCARD 0820 CAEFILE*016313598-0 213-830-0840 CA 24692164233103766188781",
+    "amount": 2.25,
+    "type": "RECEIPT",
+    "source": "Table 85",
+    "raw": {
+      "date": "08/21/24",
+      "description": "CHECKCARD 0820 CAEFILE*016313598-0 213-830-0840 CA 24692164233103766188781",
+      "amount": 2.25
+    }
+  },
+  {
+    "date": "8/21/2024",
+    "description": "Bank of America CHECKCARD 0820 CAEFILE*016313598-0 800-297-5377 TX 24692164233103766209140",
+    "amount": 14.7,
+    "type": "RECEIPT",
+    "source": "Table 85",
+    "raw": {
+      "date": "08/21/24",
+      "description": "CHECKCARD 0820 CAEFILE*016313598-0 800-297-5377 TX 24692164233103766209140",
+      "amount": 14.7
+    }
+  },
+  {
+    "date": "7/31/2024",
+    "description": "Bank of America SOCALGAS DES:ARC PYMT CHECK #0396 INDN:0093129100 CO ID:3951240705 ARC\n:selected:",
+    "amount": 32.47,
+    "type": "RECEIPT",
+    "source": "Table 85",
+    "raw": {
+      "date": "07/31/24",
+      "description": "SOCALGAS DES:ARC PYMT CHECK #0396 INDN:0093129100 CO ID:3951240705 ARC\n:selected:",
+      "amount": 32.47
+    }
+  },
+  {
+    "date": "9/10/2024",
+    "description": "Bank of America WIRE TYPE:WIRE IN DATE: 240910 TIME:1623 ET TRN:2024091000502376 SEQ:2024091000008046/002735 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: 13TOJIAFTO",
+    "amount": 26979.17,
+    "type": "RECEIPT",
+    "source": "Table 104",
+    "raw": {
+      "date": "09/10/24",
+      "description": "WIRE TYPE:WIRE IN DATE: 240910 TIME:1623 ET TRN:2024091000502376 SEQ:2024091000008046/002735 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: 13TOJIAFTO",
+      "amount": 26979.17
+    }
+  },
+  {
+    "date": "9/11/2024",
+    "description": "Bank of America SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX1",
+    "amount": 2059.8,
+    "type": "RECEIPT",
+    "source": "Table 104",
+    "raw": {
+      "date": "09/11/24",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX1",
+      "amount": 2059.8
+    }
+  },
+  {
+    "date": "8/26/2024",
+    "description": "Bank of America CHECKCARD 0823 TRADER JOE S #124 BURBANK CA 24137464237501238847806",
+    "amount": 46.55,
+    "type": "RECEIPT",
+    "source": "Table 105",
+    "raw": {
+      "date": "08/26/24",
+      "description": "CHECKCARD 0823 TRADER JOE S #124 BURBANK CA 24137464237501238847806",
+      "amount": 46.55
+    }
+  },
+  {
+    "date": "9/3/2024",
+    "description": "Bank of America CHECKCARD 0831 TRADER JOE S #124 BURBANK CA 24137464245501224527461",
+    "amount": 54.17,
+    "type": "RECEIPT",
+    "source": "Table 105",
+    "raw": {
+      "date": "09/03/24",
+      "description": "CHECKCARD 0831 TRADER JOE S #124 BURBANK CA 24137464245501224527461",
+      "amount": 54.17
+    }
+  },
+  {
+    "date": "9/4/2024",
+    "description": "Bank of America CHECKCARD 0903 CAEFILE*016440381-1 213-830-0840 CA 24692164247102598644940",
+    "amount": 2.25,
+    "type": "RECEIPT",
+    "source": "Table 105",
+    "raw": {
+      "date": "09/04/24",
+      "description": "CHECKCARD 0903 CAEFILE*016440381-1 213-830-0840 CA 24692164247102598644940",
+      "amount": 2.25
+    }
+  },
+  {
+    "date": "9/4/2024",
+    "description": "Bank of America CHECKCARD 0903 CAEFILE*016440381-1 800-297-5377 TX 24692164247102598646788",
+    "amount": 15.25,
+    "type": "RECEIPT",
+    "source": "Table 105",
+    "raw": {
+      "date": "09/04/24",
+      "description": "CHECKCARD 0903 CAEFILE*016440381-1 800-297-5377 TX 24692164247102598646788",
+      "amount": 15.25
+    }
+  },
+  {
+    "date": "9/4/2024",
+    "description": "Bank of America CHECKCARD 0903 CAEFILE*016443930-1 213-830-0840 CA 24692164247102598808263",
+    "amount": 2.25,
+    "type": "RECEIPT",
+    "source": "Table 105",
+    "raw": {
+      "date": "09/04/24",
+      "description": "CHECKCARD 0903 CAEFILE*016443930-1 213-830-0840 CA 24692164247102598808263",
+      "amount": 2.25
+    }
+  },
+  {
+    "date": "9/4/2024",
+    "description": "Bank of America CHECKCARD 0903 CAEFILE*016443930-1 800-297-5377 TX 24692164247102598809600",
+    "amount": 15.25,
+    "type": "RECEIPT",
+    "source": "Table 105",
+    "raw": {
+      "date": "09/04/24",
+      "description": "CHECKCARD 0903 CAEFILE*016443930-1 800-297-5377 TX 24692164247102598809600",
+      "amount": 15.25
+    }
+  },
+  {
+    "date": "9/5/2024",
+    "description": "Bank of America CHECKCARD 0905 WWW.TRUPANION. SEATTLE WA 00000000000000000362711 RECURRING",
+    "amount": 90.41,
+    "type": "RECEIPT",
+    "source": "Table 106",
+    "raw": {
+      "date": "09/05/24",
+      "description": "CHECKCARD 0905 WWW.TRUPANION. SEATTLE WA 00000000000000000362711 RECURRING",
+      "amount": 90.41
+    }
+  },
+  {
+    "date": "9/6/2024",
+    "description": "Bank of America CHECKCARD 0904 SHARKY'S MEXICAN GRILL SANTA CLARITACA 24801974249080104631395",
+    "amount": 50.22,
+    "type": "RECEIPT",
+    "source": "Table 106",
+    "raw": {
+      "date": "09/06/24",
+      "description": "CHECKCARD 0904 SHARKY'S MEXICAN GRILL SANTA CLARITACA 24801974249080104631395",
+      "amount": 50.22
+    }
+  },
+  {
+    "date": "9/6/2024",
+    "description": "Bank of America CHECKCARD 0905 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714249900016000422",
+    "amount": 84.3,
+    "type": "RECEIPT",
+    "source": "Table 106",
+    "raw": {
+      "date": "09/06/24",
+      "description": "CHECKCARD 0905 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714249900016000422",
+      "amount": 84.3
+    }
+  },
+  {
+    "date": "9/9/2024",
+    "description": "Bank of America CHECKCARD 0907 FRANKIE'S ITALIAN KITCH TARZANA CA 24000974252290201369178",
+    "amount": 37.5,
+    "type": "RECEIPT",
+    "source": "Table 106",
+    "raw": {
+      "date": "09/09/24",
+      "description": "CHECKCARD 0907 FRANKIE'S ITALIAN KITCH TARZANA CA 24000974252290201369178",
+      "amount": 37.5
+    }
+  },
+  {
+    "date": "9/9/2024",
+    "description": "Bank of America CHECKCARD 0908 CHEVRON 0094240 CALABASAS CA 24692164252106864975179",
+    "amount": 67.07,
+    "type": "RECEIPT",
+    "source": "Table 106",
+    "raw": {
+      "date": "09/09/24",
+      "description": "CHECKCARD 0908 CHEVRON 0094240 CALABASAS CA 24692164252106864975179",
+      "amount": 67.07
+    }
+  },
+  {
+    "date": "9/10/2024",
+    "description": "Bank of America CHECKCARD 0908 TRADER JOE S #122 STUDIO CITY CA 24137464253501018454079",
+    "amount": 44.94,
+    "type": "RECEIPT",
+    "source": "Table 106",
+    "raw": {
+      "date": "09/10/24",
+      "description": "CHECKCARD 0908 TRADER JOE S #122 STUDIO CITY CA 24137464253501018454079",
+      "amount": 44.94
+    }
+  },
+  {
+    "date": "9/16/2024",
+    "description": "Bank of America CHECKCARD 0915 LA FITNESS IRVINE CA 00000000000000000386385 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 106",
+    "raw": {
+      "date": "09/16/24",
+      "description": "CHECKCARD 0915 LA FITNESS IRVINE CA 00000000000000000386385 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "9/16/2024",
+    "description": "Bank of America CHECKCARD 0915 LA FITNESS IRVINE CA 00000000000000000386166 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 106",
+    "raw": {
+      "date": "09/16/24",
+      "description": "CHECKCARD 0915 LA FITNESS IRVINE CA 00000000000000000386166 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "9/17/2024",
+    "description": "Bank of America CHECKCARD 0915 TRADER JOE S #124 BURBANK CA 24137464260501080958990",
+    "amount": 39.32,
+    "type": "RECEIPT",
+    "source": "Table 106",
+    "raw": {
+      "date": "09/17/24",
+      "description": "CHECKCARD 0915 TRADER JOE S #124 BURBANK CA 24137464260501080958990",
+      "amount": 39.32
+    }
+  },
+  {
+    "date": "10/9/2024",
+    "description": "Bank of America WIRE TYPE:WIRE IN DATE: 241009 TIME:1414 ET TRN:2024100900427645 SEQ:2024100900005515/001646 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: LVLXU31XJY",
+    "amount": 26979.17,
+    "type": "RECEIPT",
+    "source": "Table 111",
+    "raw": {
+      "date": "10/09/24",
+      "description": "WIRE TYPE:WIRE IN DATE: 241009 TIME:1414 ET TRN:2024100900427645 SEQ:2024100900005515/001646 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: LVLXU31XJY",
+      "amount": 26979.17
+    }
+  },
+  {
+    "date": "10/9/2024",
+    "description": "Bank of America SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR AN1*BE*BONNI E DREXLER *34*XXXXXXXXXI",
+    "amount": 2059.8,
+    "type": "RECEIPT",
+    "source": "Table 111",
+    "raw": {
+      "date": "10/09/24",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR AN1*BE*BONNI E DREXLER *34*XXXXXXXXXI",
+      "amount": 2059.8
+    }
+  },
+  {
+    "date": "9/23/2024",
+    "description": "Bank of America CHECKCARD 0920 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714264900017600089",
+    "amount": 84.3,
+    "type": "RECEIPT",
+    "source": "Table 112",
+    "raw": {
+      "date": "09/23/24",
+      "description": "CHECKCARD 0920 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714264900017600089",
+      "amount": 84.3
+    }
+  },
+  {
+    "date": "9/23/2024",
+    "description": "Bank of America CHECKCARD 0920 TRADER JOE S #124 BURBANK CA 24137464265501250179265",
+    "amount": 39.2,
+    "type": "RECEIPT",
+    "source": "Table 112",
+    "raw": {
+      "date": "09/23/24",
+      "description": "CHECKCARD 0920 TRADER JOE S #124 BURBANK CA 24137464265501250179265",
+      "amount": 39.2
+    }
+  },
+  {
+    "date": "9/23/2024",
+    "description": "Bank of America CHECKCARD 0920 SMILE SPECIALIST LOS ANGELES CA 24750764266900012900653",
+    "amount": 180,
+    "type": "RECEIPT",
+    "source": "Table 112",
+    "raw": {
+      "date": "09/23/24",
+      "description": "CHECKCARD 0920 SMILE SPECIALIST LOS ANGELES CA 24750764266900012900653",
+      "amount": 180
+    }
+  },
+  {
+    "date": "9/26/2024",
+    "description": "Bank of America CHECKCARD 0925 VIOC GN0013 NORTH HOLLYWOCA 24210734270023365008569",
+    "amount": 109.47,
+    "type": "RECEIPT",
+    "source": "Table 112",
+    "raw": {
+      "date": "09/26/24",
+      "description": "CHECKCARD 0925 VIOC GN0013 NORTH HOLLYWOCA 24210734270023365008569",
+      "amount": 109.47
+    }
+  },
+  {
+    "date": "10/2/2024",
+    "description": "Bank of America CHECKCARD 1001 CHEVRON 0095560 GLENDALE CA 24692164275106433984713",
+    "amount": 69.16,
+    "type": "RECEIPT",
+    "source": "Table 112",
+    "raw": {
+      "date": "10/02/24",
+      "description": "CHECKCARD 1001 CHEVRON 0095560 GLENDALE CA 24692164275106433984713",
+      "amount": 69.16
+    }
+  },
+  {
+    "date": "10/2/2024",
+    "description": "Bank of America CHECKCARD 1001 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714275900018700117",
+    "amount": 104.55,
+    "type": "RECEIPT",
+    "source": "Table 112",
+    "raw": {
+      "date": "10/02/24",
+      "description": "CHECKCARD 1001 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714275900018700117",
+      "amount": 104.55
+    }
+  },
+  {
+    "date": "10/3/2024",
+    "description": "Bank of America CHECKCARD 1001 TRADER JOE S #124 BURBANK CA 24137464276501043092376",
+    "amount": 55.22,
+    "type": "RECEIPT",
+    "source": "Table 113",
+    "raw": {
+      "date": "10/03/24",
+      "description": "CHECKCARD 1001 TRADER JOE S #124 BURBANK CA 24137464276501043092376",
+      "amount": 55.22
+    }
+  },
+  {
+    "date": "10/4/2024",
+    "description": "Bank of America CHECKCARD 1003 ALL STAR HEALTH.COM 800-875-0448 CA 24692164277107800091585",
+    "amount": 138.37,
+    "type": "RECEIPT",
+    "source": "Table 113",
+    "raw": {
+      "date": "10/04/24",
+      "description": "CHECKCARD 1003 ALL STAR HEALTH.COM 800-875-0448 CA 24692164277107800091585",
+      "amount": 138.37
+    }
+  },
+  {
+    "date": "10/7/2024",
+    "description": "Bank of America CHECKCARD 1005 WWW.TRUPANION. SEATTLE WA 00000000000000000891777 RECURRING",
+    "amount": 6.56,
+    "type": "RECEIPT",
+    "source": "Table 113",
+    "raw": {
+      "date": "10/07/24",
+      "description": "CHECKCARD 1005 WWW.TRUPANION. SEATTLE WA 00000000000000000891777 RECURRING",
+      "amount": 6.56
+    }
+  },
+  {
+    "date": "10/15/2024",
+    "description": "Bank of America CHECKCARD 1015 LA FITNESS IRVINE CA 00000000000000000389234 RECURRING",
+    "amount": 138.85,
+    "type": "RECEIPT",
+    "source": "Table 113",
+    "raw": {
+      "date": "10/15/24",
+      "description": "CHECKCARD 1015 LA FITNESS IRVINE CA 00000000000000000389234 RECURRING",
+      "amount": 138.85
+    }
+  },
+  {
+    "date": "10/15/2024",
+    "description": "Bank of America CHECKCARD 1015 LA FITNESS IRVINE CA 00000000000000000404984 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 113",
+    "raw": {
+      "date": "10/15/24",
+      "description": "CHECKCARD 1015 LA FITNESS IRVINE CA 00000000000000000404984 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "11/1/2024",
+    "description": "Bank of America SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9101036669 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXXI",
+    "amount": 5043.5,
+    "type": "RECEIPT",
+    "source": "Table 117",
+    "raw": {
+      "date": "11/01/24",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9101036669 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXXI",
+      "amount": 5043.5
+    }
+  },
+  {
+    "date": "11/13/2024",
+    "description": "Bank of America SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR AN1*BE*BONNI E DREXLER *34*XXXXXXXXXI",
+    "amount": 2059.8,
+    "type": "RECEIPT",
+    "source": "Table 117",
+    "raw": {
+      "date": "11/13/24",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR AN1*BE*BONNI E DREXLER *34*XXXXXXXXXI",
+      "amount": 2059.8
+    }
+  },
+  {
+    "date": "11/15/2024",
+    "description": "Bank of America WIRE TYPE:WIRE IN DATE: 241115 TIME:1454 ET TRN:2024111500525966 SEQ:2024111500008189/003085 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: MUWJWQ4QHY",
+    "amount": 26979.17,
+    "type": "RECEIPT",
+    "source": "Table 117",
+    "raw": {
+      "date": "11/15/24",
+      "description": "WIRE TYPE:WIRE IN DATE: 241115 TIME:1454 ET TRN:2024111500525966 SEQ:2024111500008189/003085 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: MUWJWQ4QHY",
+      "amount": 26979.17
+    }
+  },
+  {
+    "date": "10/29/2024",
+    "description": "Bank of America CHECKCARD 1027 TRADER JOE S #122 STUDIO CITY CA 24137464302501037800659",
+    "amount": 74.08,
+    "type": "RECEIPT",
+    "source": "Table 118",
+    "raw": {
+      "date": "10/29/24",
+      "description": "CHECKCARD 1027 TRADER JOE S #122 STUDIO CITY CA 24137464302501037800659",
+      "amount": 74.08
+    }
+  },
+  {
+    "date": "11/5/2024",
+    "description": "Bank of America CHECKCARD 1103 TRADER JOE S #049 SHERMAN OAKS CA 24137464309500928040170",
+    "amount": 39.53,
+    "type": "RECEIPT",
+    "source": "Table 118",
+    "raw": {
+      "date": "11/05/24",
+      "description": "CHECKCARD 1103 TRADER JOE S #049 SHERMAN OAKS CA 24137464309500928040170",
+      "amount": 39.53
+    }
+  },
+  {
+    "date": "11/5/2024",
+    "description": "Bank of America CHECKCARD 1105 WWW.TRUPANION. SEATTLE WA 00000000000000000054003 RECURRING",
+    "amount": 121.51,
+    "type": "RECEIPT",
+    "source": "Table 119",
+    "raw": {
+      "date": "11/05/24",
+      "description": "CHECKCARD 1105 WWW.TRUPANION. SEATTLE WA 00000000000000000054003 RECURRING",
+      "amount": 121.51
+    }
+  },
+  {
+    "date": "11/12/2024",
+    "description": "Bank of America CHECKCARD 1108 RIBS USA 818-8418872 CA 24000974315648902515586",
+    "amount": 20.11,
+    "type": "RECEIPT",
+    "source": "Table 119",
+    "raw": {
+      "date": "11/12/24",
+      "description": "CHECKCARD 1108 RIBS USA 818-8418872 CA 24000974315648902515586",
+      "amount": 20.11
+    }
+  },
+  {
+    "date": "11/12/2024",
+    "description": "Bank of America CHECKCARD 1109 TRADER JOE S #124 BURBANK CA 24137464315501261711106",
+    "amount": 125.76,
+    "type": "RECEIPT",
+    "source": "Table 119",
+    "raw": {
+      "date": "11/12/24",
+      "description": "CHECKCARD 1109 TRADER JOE S #124 BURBANK CA 24137464315501261711106",
+      "amount": 125.76
+    }
+  },
+  {
+    "date": "11/13/2024",
+    "description": "Bank of America CHECKCARD 1112 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714317900012900572",
+    "amount": 168.61,
+    "type": "RECEIPT",
+    "source": "Table 119",
+    "raw": {
+      "date": "11/13/24",
+      "description": "CHECKCARD 1112 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714317900012900572",
+      "amount": 168.61
+    }
+  },
+  {
+    "date": "11/15/2024",
+    "description": "Bank of America CHECKCARD 1115 LA FITNESS IRVINE CA 00000000000000000321846 RECURRING",
+    "amount": 19.44,
+    "type": "RECEIPT",
+    "source": "Table 119",
+    "raw": {
+      "date": "11/15/24",
+      "description": "CHECKCARD 1115 LA FITNESS IRVINE CA 00000000000000000321846 RECURRING",
+      "amount": 19.44
+    }
+  },
+  {
+    "date": "11/15/2024",
+    "description": "Bank of America CHECKCARD 1115 LA FITNESS IRVINE CA 00000000000000000322115 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 119",
+    "raw": {
+      "date": "11/15/24",
+      "description": "CHECKCARD 1115 LA FITNESS IRVINE CA 00000000000000000322115 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "11/15/2024",
+    "description": "Bank of America CHECKCARD 1115 N & D OIL CORP NORTH HOLLYWOCA",
+    "amount": 51.71,
+    "type": "RECEIPT",
+    "source": "Table 119",
+    "raw": {
+      "date": "11/15/24",
+      "description": "CHECKCARD 1115 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": 51.71
+    }
+  },
+  {
+    "date": "11/18/2024",
+    "description": "Bank of America CHECKCARD 1115 TRADER JOE S #122 STUDIO CITY CA 24137464321501385867760",
+    "amount": 67.62,
+    "type": "RECEIPT",
+    "source": "Table 119",
+    "raw": {
+      "date": "11/18/24",
+      "description": "CHECKCARD 1115 TRADER JOE S #122 STUDIO CITY CA 24137464321501385867760",
+      "amount": 67.62
+    }
+  },
+  {
+    "date": "12/10/2024",
+    "description": "Bank of America WIRE TYPE:WIRE IN DATE: 241210 TIME:1204 ET TRN:2024121000387336 SEQ:2024121000003768/000948 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: PGRD5WLP67",
+    "amount": 26979.17,
+    "type": "RECEIPT",
+    "source": "Table 123",
+    "raw": {
+      "date": "12/10/24",
+      "description": "WIRE TYPE:WIRE IN DATE: 241210 TIME:1204 ET TRN:2024121000387336 SEQ:2024121000003768/000948 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: PGRD5WLP67",
+      "amount": 26979.17
+    }
+  },
+  {
+    "date": "12/11/2024",
+    "description": "Bank of America SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR AN1*BE*BONNI E DREXLER *34*XXXXXXXXX1",
+    "amount": 2518,
+    "type": "RECEIPT",
+    "source": "Table 123",
+    "raw": {
+      "date": "12/11/24",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR AN1*BE*BONNI E DREXLER *34*XXXXXXXXX1",
+      "amount": 2518
+    }
+  },
+  {
+    "date": "11/25/2024",
+    "description": "Bank of America CHECKCARD 1123 ALL STAR HEALTH.COM 800-875-0448 CA 24692164328109931290465",
+    "amount": 136.08,
+    "type": "RECEIPT",
+    "source": "Table 124",
+    "raw": {
+      "date": "11/25/24",
+      "description": "CHECKCARD 1123 ALL STAR HEALTH.COM 800-875-0448 CA 24692164328109931290465",
+      "amount": 136.08
+    }
+  },
+  {
+    "date": "11/25/2024",
+    "description": "Bank of America CHECKCARD 1123 TRADER JOE S #122 STUDIO CITY CA 24137464329501161289975",
+    "amount": 48.65,
+    "type": "RECEIPT",
+    "source": "Table 124",
+    "raw": {
+      "date": "11/25/24",
+      "description": "CHECKCARD 1123 TRADER JOE S #122 STUDIO CITY CA 24137464329501161289975",
+      "amount": 48.65
+    }
+  },
+  {
+    "date": "12/2/2024",
+    "description": "Bank of America CHECKCARD 1130 TRADER JOE S #124 BURBANK CA 24137464336501238323832",
+    "amount": 44.23,
+    "type": "RECEIPT",
+    "source": "Table 124",
+    "raw": {
+      "date": "12/02/24",
+      "description": "CHECKCARD 1130 TRADER JOE S #124 BURBANK CA 24137464336501238323832",
+      "amount": 44.23
+    }
+  },
+  {
+    "date": "12/5/2024",
+    "description": "Bank of America CHECKCARD 1205 WWW.TRUPANION. SEATTLE WA 00000000000000000629707 RECURRING",
+    "amount": 113.95,
+    "type": "RECEIPT",
+    "source": "Table 125",
+    "raw": {
+      "date": "12/05/24",
+      "description": "CHECKCARD 1205 WWW.TRUPANION. SEATTLE WA 00000000000000000629707 RECURRING",
+      "amount": 113.95
+    }
+  },
+  {
+    "date": "12/10/2024",
+    "description": "Bank of America CHECKCARD 1208 TRADER JOE S #122",
+    "amount": 49.9,
+    "type": "RECEIPT",
+    "source": "Table 125",
+    "raw": {
+      "date": "12/10/24",
+      "description": "CHECKCARD 1208 TRADER JOE S #122",
+      "amount": 49.9
+    }
+  },
+  {
+    "date": "12/16/2024",
+    "description": "Bank of America CHECKCARD 1215 LA FITNESS IRVINE",
+    "amount": 45.64,
+    "type": "RECEIPT",
+    "source": "Table 125",
+    "raw": {
+      "date": "12/16/24",
+      "description": "CHECKCARD 1215 LA FITNESS IRVINE",
+      "amount": 45.64
+    }
+  },
+  {
+    "date": "12/16/2024",
+    "description": "Bank of America CHECKCARD 1215 LA FITNESS IRVINE",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 125",
+    "raw": {
+      "date": "12/16/24",
+      "description": "CHECKCARD 1215 LA FITNESS IRVINE",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "12/17/2024",
+    "description": "Bank of America CHECKCARD 1216 SQ *SUGAR NAILS",
+    "amount": 22.1,
+    "type": "RECEIPT",
+    "source": "Table 125",
+    "raw": {
+      "date": "12/17/24",
+      "description": "CHECKCARD 1216 SQ *SUGAR NAILS",
+      "amount": 22.1
+    }
+  },
+  {
+    "date": "12/19/2024",
+    "description": "Bank of America CHECKCARD 1218 RUSTY'S DISCOUNT",
+    "amount": 35.98,
+    "type": "RECEIPT",
+    "source": "Table 125",
+    "raw": {
+      "date": "12/19/24",
+      "description": "CHECKCARD 1218 RUSTY'S DISCOUNT",
+      "amount": 35.98
+    }
+  },
+  {
+    "date": "1/8/2025",
+    "description": "Bank of America WIRE TYPE:WIRE IN DATE: 250108 TIME:1402 ET TRN:2025010800446063 SEQ:2025010800005376/001612 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: 6F3TWUCDX2",
+    "amount": 26979.17,
+    "type": "RECEIPT",
+    "source": "Table 128",
+    "raw": {
+      "date": "01/08/25",
+      "description": "WIRE TYPE:WIRE IN DATE: 250108 TIME:1402 ET TRN:2025010800446063 SEQ:2025010800005376/001612 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: 6F3TWUCDX2",
+      "amount": 26979.17
+    }
+  },
+  {
+    "date": "1/8/2025",
+    "description": "Bank of America SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX1",
+    "amount": 2089.4,
+    "type": "RECEIPT",
+    "source": "Table 128",
+    "raw": {
+      "date": "01/08/25",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX1",
+      "amount": 2089.4
+    }
+  },
+  {
+    "date": "12/23/2024",
+    "description": "Bank of America CHECKCARD 1221 TRADER JOE S #124 BURBANK CA 24137464357501322935511",
+    "amount": 49.65,
+    "type": "RECEIPT",
+    "source": "Table 129",
+    "raw": {
+      "date": "12/23/24",
+      "description": "CHECKCARD 1221 TRADER JOE S #124 BURBANK CA 24137464357501322935511",
+      "amount": 49.65
+    }
+  },
+  {
+    "date": "12/27/2024",
+    "description": "Bank of America CHECKCARD 1227 ROCKET 167 NORTH HILLS CA",
+    "amount": 65.15,
+    "type": "RECEIPT",
+    "source": "Table 129",
+    "raw": {
+      "date": "12/27/24",
+      "description": "CHECKCARD 1227 ROCKET 167 NORTH HILLS CA",
+      "amount": 65.15
+    }
+  },
+  {
+    "date": "12/30/2024",
+    "description": "Bank of America CHECKCARD 1227 SHAKE SHACK - 1309 646-747-7178 CA 24692164363100460910751",
+    "amount": 13.67,
+    "type": "RECEIPT",
+    "source": "Table 129",
+    "raw": {
+      "date": "12/30/24",
+      "description": "CHECKCARD 1227 SHAKE SHACK - 1309 646-747-7178 CA 24692164363100460910751",
+      "amount": 13.67
+    }
+  },
+  {
+    "date": "1/2/2025",
+    "description": "Bank of America CHECKCARD 1231 TRADER JOE S #122 STUDIO CITY CA 24137465001501355892370",
+    "amount": 44.52,
+    "type": "RECEIPT",
+    "source": "Table 129",
+    "raw": {
+      "date": "01/02/25",
+      "description": "CHECKCARD 1231 TRADER JOE S #122 STUDIO CITY CA 24137465001501355892370",
+      "amount": 44.52
+    }
+  },
+  {
+    "date": "1/6/2025",
+    "description": "Bank of America CHECKCARD 0105 WWW.TRUPANION. SEATTLE WA 00000000000000000420403 RECURRING",
+    "amount": 113.95,
+    "type": "RECEIPT",
+    "source": "Table 130",
+    "raw": {
+      "date": "01/06/25",
+      "description": "CHECKCARD 0105 WWW.TRUPANION. SEATTLE WA 00000000000000000420403 RECURRING",
+      "amount": 113.95
+    }
+  },
+  {
+    "date": "1/10/2025",
+    "description": "Bank of America CHECKCARD 0108 TRADER JOE S #124 BURBANK CA 24137465009500899353784",
+    "amount": 60.03,
+    "type": "RECEIPT",
+    "source": "Table 130",
+    "raw": {
+      "date": "01/10/25",
+      "description": "CHECKCARD 0108 TRADER JOE S #124 BURBANK CA 24137465009500899353784",
+      "amount": 60.03
+    }
+  },
+  {
+    "date": "1/15/2025",
+    "description": "Bank of America CHECKCARD 0115 LA FITNESS IRVINE CA 00000000000000000007573 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 130",
+    "raw": {
+      "date": "01/15/25",
+      "description": "CHECKCARD 0115 LA FITNESS IRVINE CA 00000000000000000007573 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "1/15/2025",
+    "description": "Bank of America CHECKCARD 0115 LA FITNESS IRVINE CA 00000000000000000009100 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 130",
+    "raw": {
+      "date": "01/15/25",
+      "description": "CHECKCARD 0115 LA FITNESS IRVINE CA 00000000000000000009100 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "1/21/2025",
+    "description": "Bank of America CHECKCARD 0118 TRADER JOE S #124 BURBANK CA 24137465019501267787999",
+    "amount": 42.82,
+    "type": "RECEIPT",
+    "source": "Table 130",
+    "raw": {
+      "date": "01/21/25",
+      "description": "CHECKCARD 0118 TRADER JOE S #124 BURBANK CA 24137465019501267787999",
+      "amount": 42.82
+    }
+  },
+  {
+    "date": "1/21/2025",
+    "description": "Bank of America CHECKCARD 0118 TST*OLD NEW YORK DELI & Woodland HillCA 24692165019108523467581",
+    "amount": 28.62,
+    "type": "RECEIPT",
+    "source": "Table 130",
+    "raw": {
+      "date": "01/21/25",
+      "description": "CHECKCARD 0118 TST*OLD NEW YORK DELI & Woodland HillCA 24692165019108523467581",
+      "amount": 28.62
+    }
+  },
+  {
+    "date": "2/12/2025",
+    "description": "Bank of America SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX\\",
+    "amount": 2089.4,
+    "type": "RECEIPT",
+    "source": "Table 136",
+    "raw": {
+      "date": "02/12/25",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX\\",
+      "amount": 2089.4
+    }
+  },
+  {
+    "date": "1/28/2025",
+    "description": "Bank of America CHECKCARD 0126 TRADER JOE S #122 STUDIO CITY CA 24137465027500968584564",
+    "amount": 59.73,
+    "type": "RECEIPT",
+    "source": "Table 137",
+    "raw": {
+      "date": "01/28/25",
+      "description": "CHECKCARD 0126 TRADER JOE S #122 STUDIO CITY CA 24137465027500968584564",
+      "amount": 59.73
+    }
+  },
+  {
+    "date": "2/5/2025",
+    "description": "Bank of America CHECKCARD 0205 WWW.TRUPANION. SEATTLE WA 00000000000000000344835 RECURRING",
+    "amount": 113.95,
+    "type": "RECEIPT",
+    "source": "Table 138",
+    "raw": {
+      "date": "02/05/25",
+      "description": "CHECKCARD 0205 WWW.TRUPANION. SEATTLE WA 00000000000000000344835 RECURRING",
+      "amount": 113.95
+    }
+  },
+  {
+    "date": "2/6/2025",
+    "description": "Bank of America CHECKCARD 0204 TRADER JOE S #122 STUDIO CITY CA 24137465036500935088722",
+    "amount": 53.3,
+    "type": "RECEIPT",
+    "source": "Table 138",
+    "raw": {
+      "date": "02/06/25",
+      "description": "CHECKCARD 0204 TRADER JOE S #122 STUDIO CITY CA 24137465036500935088722",
+      "amount": 53.3
+    }
+  },
+  {
+    "date": "2/7/2025",
+    "description": "Bank of America CHECKCARD 0206 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786715037900011300556",
+    "amount": 168.61,
+    "type": "RECEIPT",
+    "source": "Table 138",
+    "raw": {
+      "date": "02/07/25",
+      "description": "CHECKCARD 0206 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786715037900011300556",
+      "amount": 168.61
+    }
+  },
+  {
+    "date": "2/14/2025",
+    "description": "Bank of America CHECKCARD 0212 TRADER JOE S #122 STUDIO CITY CA 24137465044500890896309",
+    "amount": 48.26,
+    "type": "RECEIPT",
+    "source": "Table 138",
+    "raw": {
+      "date": "02/14/25",
+      "description": "CHECKCARD 0212 TRADER JOE S #122 STUDIO CITY CA 24137465044500890896309",
+      "amount": 48.26
+    }
+  },
+  {
+    "date": "3/12/2025",
+    "description": "Bank of America SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX1",
+    "amount": 2089.4,
+    "type": "RECEIPT",
+    "source": "Table 143",
+    "raw": {
+      "date": "03/12/25",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX1",
+      "amount": 2089.4
+    }
+  },
+  {
+    "date": "2/21/2025",
+    "description": "Bank of America CHECKCARD 0219 TRADER JOE S #122 STUDIO CITY CA 24137465051500881209983",
+    "amount": 29.36,
+    "type": "RECEIPT",
+    "source": "Table 144",
+    "raw": {
+      "date": "02/21/25",
+      "description": "CHECKCARD 0219 TRADER JOE S #122 STUDIO CITY CA 24137465051500881209983",
+      "amount": 29.36
+    }
+  },
+  {
+    "date": "2/24/2025",
+    "description": "Bank of America CHECKCARD 0221 N & D OIL CORP NORTH HOLLYWOCA",
+    "amount": 61.46,
+    "type": "RECEIPT",
+    "source": "Table 144",
+    "raw": {
+      "date": "02/24/25",
+      "description": "CHECKCARD 0221 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": 61.46
+    }
+  },
+  {
+    "date": "2/24/2025",
+    "description": "Bank of America CHECKCARD 0221 TRADER JOE S #122 STUDIO CITY CA 24137465053501318841032",
+    "amount": 21.73,
+    "type": "RECEIPT",
+    "source": "Table 144",
+    "raw": {
+      "date": "02/24/25",
+      "description": "CHECKCARD 0221 TRADER JOE S #122 STUDIO CITY CA 24137465053501318841032",
+      "amount": 21.73
+    }
+  },
+  {
+    "date": "3/3/2025",
+    "description": "Bank of America CHECKCARD 0228 TRADER JOE S #122 STUDIO CITY CA 24137465060501426123456",
+    "amount": 37.02,
+    "type": "RECEIPT",
+    "source": "Table 144",
+    "raw": {
+      "date": "03/03/25",
+      "description": "CHECKCARD 0228 TRADER JOE S #122 STUDIO CITY CA 24137465060501426123456",
+      "amount": 37.02
+    }
+  },
+  {
+    "date": "3/6/2025",
+    "description": "Bank of America CHECKCARD 0305 WWW.TRUPANION. SEATTLE WA 00000000000000000682424 RECURRING",
+    "amount": 113.95,
+    "type": "RECEIPT",
+    "source": "Table 144",
+    "raw": {
+      "date": "03/06/25",
+      "description": "CHECKCARD 0305 WWW.TRUPANION. SEATTLE WA 00000000000000000682424 RECURRING",
+      "amount": 113.95
+    }
+  },
+  {
+    "date": "3/6/2025",
+    "description": "Bank of America CHECKCARD 0306 NORTON *AP1585662866 NORTON.COM/CCAZ 24692165065104684209501 RECURRING",
+    "amount": 94.99,
+    "type": "RECEIPT",
+    "source": "Table 145",
+    "raw": {
+      "date": "03/06/25",
+      "description": "CHECKCARD 0306 NORTON *AP1585662866 NORTON.COM/CCAZ 24692165065104684209501 RECURRING",
+      "amount": 94.99
+    }
+  },
+  {
+    "date": "3/10/2025",
+    "description": "Bank of America CHECKCARD 0308 SHARKY'S - SHERMAN OAKS LOS ANGELES CA 24801975068267004178685",
+    "amount": 31.37,
+    "type": "RECEIPT",
+    "source": "Table 145",
+    "raw": {
+      "date": "03/10/25",
+      "description": "CHECKCARD 0308 SHARKY'S - SHERMAN OAKS LOS ANGELES CA 24801975068267004178685",
+      "amount": 31.37
+    }
+  },
+  {
+    "date": "3/11/2025",
+    "description": "Bank of America CHECKCARD 0309 TRADER JOE S #122 STUDIO CITY CA 24137465069501050063789",
+    "amount": 22.39,
+    "type": "RECEIPT",
+    "source": "Table 145",
+    "raw": {
+      "date": "03/11/25",
+      "description": "CHECKCARD 0309 TRADER JOE S #122 STUDIO CITY CA 24137465069501050063789",
+      "amount": 22.39
+    }
+  },
+  {
+    "date": "3/13/2025",
+    "description": "Bank of America CHECKCARD 0311 TRADER JOE S #022 OCEANSIDE CA 24137465071501019563867",
+    "amount": 7.33,
+    "type": "RECEIPT",
+    "source": "Table 145",
+    "raw": {
+      "date": "03/13/25",
+      "description": "CHECKCARD 0311 TRADER JOE S #022 OCEANSIDE CA 24137465071501019563867",
+      "amount": 7.33
+    }
+  },
+  {
+    "date": "3/17/2025",
+    "description": "Bank of America CHECKCARD 0315 LA FITNESS IRVINE CA 00000000000000000419700 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 145",
+    "raw": {
+      "date": "03/17/25",
+      "description": "CHECKCARD 0315 LA FITNESS IRVINE CA 00000000000000000419700 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "3/17/2025",
+    "description": "Bank of America CHECKCARD 0315 LA FITNESS IRVINE CA 00000000000000000440226 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 145",
+    "raw": {
+      "date": "03/17/25",
+      "description": "CHECKCARD 0315 LA FITNESS IRVINE CA 00000000000000000440226 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "3/17/2025",
+    "description": "Bank of America CHECKCARD 0315 N & D OIL CORP NORTH HOLLYWOCA",
+    "amount": 70.1,
+    "type": "RECEIPT",
+    "source": "Table 145",
+    "raw": {
+      "date": "03/17/25",
+      "description": "CHECKCARD 0315 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": 70.1
+    }
+  },
+  {
+    "date": "3/17/2025",
+    "description": "Bank of America CHECKCARD 0316 SXM*SIRIUSXM.COM/ACCT 888-635-5144 NY 24692165075100637061682 RECURRING",
+    "amount": 359.65,
+    "type": "RECEIPT",
+    "source": "Table 145",
+    "raw": {
+      "date": "03/17/25",
+      "description": "CHECKCARD 0316 SXM*SIRIUSXM.COM/ACCT 888-635-5144 NY 24692165075100637061682 RECURRING",
+      "amount": 359.65
+    }
+  },
+  {
+    "date": "3/19/2025",
+    "description": "Bank of America CHECKCARD 0317 TRADER JOE S #122 STUDIO CITY CA 24137465077501016602282",
+    "amount": 49.25,
+    "type": "RECEIPT",
+    "source": "Table 145",
+    "raw": {
+      "date": "03/19/25",
+      "description": "CHECKCARD 0317 TRADER JOE S #122 STUDIO CITY CA 24137465077501016602282",
+      "amount": 49.25
+    }
+  },
+  {
+    "date": "4/9/2025",
+    "description": "Bank of America WIRE TYPE:WIRE IN DATE: 250409 TIME:1606 ET TRN:2025040900515873 SEQ:2025040900007981/002669 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: QC7DV04JOZ",
+    "amount": 26979.17,
+    "type": "RECEIPT",
+    "source": "Table 150",
+    "raw": {
+      "date": "04/09/25",
+      "description": "WIRE TYPE:WIRE IN DATE: 250409 TIME:1606 ET TRN:2025040900515873 SEQ:2025040900007981/002669 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: QC7DV04JOZ",
+      "amount": 26979.17
+    }
+  },
+  {
+    "date": "4/9/2025",
+    "description": "Bank of America SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR co ID:9031036030 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX1",
+    "amount": 2089.4,
+    "type": "RECEIPT",
+    "source": "Table 150",
+    "raw": {
+      "date": "04/09/25",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR co ID:9031036030 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX1",
+      "amount": 2089.4
+    }
+  },
+  {
+    "date": "3/24/2025",
+    "description": "Bank of America CHECKCARD 0322 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786715082900015700136",
+    "amount": 161.61,
+    "type": "RECEIPT",
+    "source": "Table 151",
+    "raw": {
+      "date": "03/24/25",
+      "description": "CHECKCARD 0322 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786715082900015700136",
+      "amount": 161.61
+    }
+  },
+  {
+    "date": "3/24/2025",
+    "description": "Bank of America CHECKCARD 0322 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786715082900015700144",
+    "amount": 8,
+    "type": "RECEIPT",
+    "source": "Table 151",
+    "raw": {
+      "date": "03/24/25",
+      "description": "CHECKCARD 0322 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786715082900015700144",
+      "amount": 8
+    }
+  },
+  {
+    "date": "3/24/2025",
+    "description": "Bank of America CHECKCARD 0322 TRADER JOE S # 124 BURBANK CA 24137465082501356635788",
+    "amount": 34.54,
+    "type": "RECEIPT",
+    "source": "Table 151",
+    "raw": {
+      "date": "03/24/25",
+      "description": "CHECKCARD 0322 TRADER JOE S # 124 BURBANK CA 24137465082501356635788",
+      "amount": 34.54
+    }
+  },
+  {
+    "date": "3/27/2025",
+    "description": "Bank of America CHECKCARD 0325 TRADER JOE S #124 BURBANK CA 24137465085501022771964",
+    "amount": 18.46,
+    "type": "RECEIPT",
+    "source": "Table 151",
+    "raw": {
+      "date": "03/27/25",
+      "description": "CHECKCARD 0325 TRADER JOE S #124 BURBANK CA 24137465085501022771964",
+      "amount": 18.46
+    }
+  },
+  {
+    "date": "3/31/2025",
+    "description": "Bank of America CHECKCARD 0328 ALL STAR HEALTH.COM 800-875-0448 CA 24692165087101015597897",
+    "amount": 166.82,
+    "type": "RECEIPT",
+    "source": "Table 151",
+    "raw": {
+      "date": "03/31/25",
+      "description": "CHECKCARD 0328 ALL STAR HEALTH.COM 800-875-0448 CA 24692165087101015597897",
+      "amount": 166.82
+    }
+  },
+  {
+    "date": "4/1/2025",
+    "description": "Bank of America CHECKCARD 0330 TRADER JOE S #122 STUDIO CITY CA 24137465090501024751884",
+    "amount": 7.65,
+    "type": "RECEIPT",
+    "source": "Table 151",
+    "raw": {
+      "date": "04/01/25",
+      "description": "CHECKCARD 0330 TRADER JOE S #122 STUDIO CITY CA 24137465090501024751884",
+      "amount": 7.65
+    }
+  },
+  {
+    "date": "4/4/2025",
+    "description": "Bank of America CHECKCARD 0402 TRADER JOE S #122 STUDIO CITY CA 24137465093501032012110",
+    "amount": 57.51,
+    "type": "RECEIPT",
+    "source": "Table 151",
+    "raw": {
+      "date": "04/04/25",
+      "description": "CHECKCARD 0402 TRADER JOE S #122 STUDIO CITY CA 24137465093501032012110",
+      "amount": 57.51
+    }
+  },
+  {
+    "date": "4/7/2025",
+    "description": "Bank of America CHECKCARD 0405 WWW.TRUPANION. SEATTLE WA 00000000000000000932556 RECURRING",
+    "amount": 113.95,
+    "type": "RECEIPT",
+    "source": "Table 152",
+    "raw": {
+      "date": "04/07/25",
+      "description": "CHECKCARD 0405 WWW.TRUPANION. SEATTLE WA 00000000000000000932556 RECURRING",
+      "amount": 113.95
+    }
+  },
+  {
+    "date": "4/11/2025",
+    "description": "Bank of America CHECKCARD 0409 TRADER JOE S #122 STUDIO CITY CA 24137465100501100882544",
+    "amount": 54.16,
+    "type": "RECEIPT",
+    "source": "Table 152",
+    "raw": {
+      "date": "04/11/25",
+      "description": "CHECKCARD 0409 TRADER JOE S #122 STUDIO CITY CA 24137465100501100882544",
+      "amount": 54.16
+    }
+  },
+  {
+    "date": "4/14/2025",
+    "description": "Bank of America CHECKCARD 0412 WWW.REDBUBBLE.COM REDBUBBLE.COMCA 24011345102100093553338",
+    "amount": 109.74,
+    "type": "RECEIPT",
+    "source": "Table 152",
+    "raw": {
+      "date": "04/14/25",
+      "description": "CHECKCARD 0412 WWW.REDBUBBLE.COM REDBUBBLE.COMCA 24011345102100093553338",
+      "amount": 109.74
+    }
+  },
+  {
+    "date": "4/15/2025",
+    "description": "Bank of America CHECKCARD 0415 LA FITNESS IRVINE CA 00000000000000000249331 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 152",
+    "raw": {
+      "date": "04/15/25",
+      "description": "CHECKCARD 0415 LA FITNESS IRVINE CA 00000000000000000249331 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "4/15/2025",
+    "description": "Bank of America CHECKCARD 0415 LA FITNESS IRVINE CA 00000000000000000249810 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 152",
+    "raw": {
+      "date": "04/15/25",
+      "description": "CHECKCARD 0415 LA FITNESS IRVINE CA 00000000000000000249810 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "4/18/2025",
+    "description": "Bank of America CHECKCARD 0416 TRADER JOE S #122 STUDIO CITY CA 24137465107501111810669",
+    "amount": 41.16,
+    "type": "RECEIPT",
+    "source": "Table 152",
+    "raw": {
+      "date": "04/18/25",
+      "description": "CHECKCARD 0416 TRADER JOE S #122 STUDIO CITY CA 24137465107501111810669",
+      "amount": 41.16
+    }
+  },
+  {
+    "date": "4/21/2025",
+    "description": "Bank of America CHECKCARD 0419 N & D OIL CORP NORTH HOLLYWOCA",
+    "amount": 71.28,
+    "type": "RECEIPT",
+    "source": "Table 152",
+    "raw": {
+      "date": "04/21/25",
+      "description": "CHECKCARD 0419 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": 71.28
+    }
+  },
+  {
+    "date": "5/5/2025",
+    "description": "Bank of America WIRE TYPE:WIRE IN DATE: 250505 TIME:1519 ET TRN:2025050500521384 SEQ:2025050500006695/002022 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: 98U8EKODWE",
+    "amount": 26979.17,
+    "type": "RECEIPT",
+    "source": "Table 156",
+    "raw": {
+      "date": "05/05/25",
+      "description": "WIRE TYPE:WIRE IN DATE: 250505 TIME:1519 ET TRN:2025050500521384 SEQ:2025050500006695/002022 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: 98U8EKODWE",
+      "amount": 26979.17
+    }
+  },
+  {
+    "date": "5/14/2025",
+    "description": "Bank of America SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR co ID:9031036030 PPD PMT INFO:N1*GD*MARCI DREXLER FOR AN1*BE*BONNI E DREXLER *34*XXXXXXXXX\\",
+    "amount": 2089.4,
+    "type": "RECEIPT",
+    "source": "Table 156",
+    "raw": {
+      "date": "05/14/25",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR co ID:9031036030 PPD PMT INFO:N1*GD*MARCI DREXLER FOR AN1*BE*BONNI E DREXLER *34*XXXXXXXXX\\",
+      "amount": 2089.4
+    }
+  },
+  {
+    "date": "4/23/2025",
+    "description": "Bank of America CHECKCARD 0422 SQ *EL TIJUANENSE - NOR North Hills CA 24692165113104042087021",
+    "amount": 13.72,
+    "type": "RECEIPT",
+    "source": "Table 157",
+    "raw": {
+      "date": "04/23/25",
+      "description": "CHECKCARD 0422 SQ *EL TIJUANENSE - NOR North Hills CA 24692165113104042087021",
+      "amount": 13.72
+    }
+  },
+  {
+    "date": "4/25/2025",
+    "description": "Bank of America CHECKCARD 0424 SQ *SUGAR NAILS Valley VillagCA 24692165114105641931229",
+    "amount": 32,
+    "type": "RECEIPT",
+    "source": "Table 157",
+    "raw": {
+      "date": "04/25/25",
+      "description": "CHECKCARD 0424 SQ *SUGAR NAILS Valley VillagCA 24692165114105641931229",
+      "amount": 32
+    }
+  },
+  {
+    "date": "4/28/2025",
+    "description": "Bank of America CHECKCARD 0425 TRADER JOE S #122 STUDIO CITY CA 24137465116501396055187",
+    "amount": 51.23,
+    "type": "RECEIPT",
+    "source": "Table 157",
+    "raw": {
+      "date": "04/28/25",
+      "description": "CHECKCARD 0425 TRADER JOE S #122 STUDIO CITY CA 24137465116501396055187",
+      "amount": 51.23
+    }
+  },
+  {
+    "date": "5/5/2025",
+    "description": "Bank of America CHECKCARD 0501 TRADER JOE S #122 STUDIO CITY CA 24137465122501247879829",
+    "amount": 37.05,
+    "type": "RECEIPT",
+    "source": "Table 157",
+    "raw": {
+      "date": "05/05/25",
+      "description": "CHECKCARD 0501 TRADER JOE S #122 STUDIO CITY CA 24137465122501247879829",
+      "amount": 37.05
+    }
+  },
+  {
+    "date": "5/5/2025",
+    "description": "Bank of America CHECKCARD 0505 N & D OIL CORP NORTH HOLLYWOCA",
+    "amount": 64.23,
+    "type": "RECEIPT",
+    "source": "Table 157",
+    "raw": {
+      "date": "05/05/25",
+      "description": "CHECKCARD 0505 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": 64.23
+    }
+  },
+  {
+    "date": "5/5/2025",
+    "description": "Bank of America CHECKCARD 0505 WWW.TRUPANION. SEATTLE WA 00000000000000000975480 RECURRING",
+    "amount": 113.95,
+    "type": "RECEIPT",
+    "source": "Table 158",
+    "raw": {
+      "date": "05/05/25",
+      "description": "CHECKCARD 0505 WWW.TRUPANION. SEATTLE WA 00000000000000000975480 RECURRING",
+      "amount": 113.95
+    }
+  },
+  {
+    "date": "5/12/2025",
+    "description": "Bank of America CHECKCARD 0508 TRADER JOE S #122 STUDIO CITY CA 24137465129501160884239",
+    "amount": 63.44,
+    "type": "RECEIPT",
+    "source": "Table 158",
+    "raw": {
+      "date": "05/12/25",
+      "description": "CHECKCARD 0508 TRADER JOE S #122 STUDIO CITY CA 24137465129501160884239",
+      "amount": 63.44
+    }
+  },
+  {
+    "date": "5/15/2025",
+    "description": "Bank of America CHECKCARD 0515 LA FITNESS IRVINE CA 00000000000000000416081 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 158",
+    "raw": {
+      "date": "05/15/25",
+      "description": "CHECKCARD 0515 LA FITNESS IRVINE CA 00000000000000000416081 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "6/6/2025",
+    "description": "Bank of America WIRE TYPE:WIRE IN DATE: 250606 TIME:1745 ET TRN:2025060600535226 SEQ:2025060600009862/003463 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: 6838HH17ZM",
+    "amount": 26979.17,
+    "type": "RECEIPT",
+    "source": "Table 163",
+    "raw": {
+      "date": "06/06/25",
+      "description": "WIRE TYPE:WIRE IN DATE: 250606 TIME:1745 ET TRN:2025060600535226 SEQ:2025060600009862/003463 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: 6838HH17ZM",
+      "amount": 26979.17
+    }
+  },
+  {
+    "date": "6/11/2025",
+    "description": "Bank of America SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031036030 PPD PMT INFO:N1*GD*MARCI DREXLER FOR AN1*BE*BONNI E DREXLER *34*XXXXXXXXXI",
+    "amount": 2089.4,
+    "type": "RECEIPT",
+    "source": "Table 163",
+    "raw": {
+      "date": "06/11/25",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031036030 PPD PMT INFO:N1*GD*MARCI DREXLER FOR AN1*BE*BONNI E DREXLER *34*XXXXXXXXXI",
+      "amount": 2089.4
+    }
+  },
+  {
+    "date": "5/30/2025",
+    "description": "Bank of America CHECKCARD 0530 N & D OIL CORP NORTH HOLLYWOCA",
+    "amount": 45.04,
+    "type": "RECEIPT",
+    "source": "Table 164",
+    "raw": {
+      "date": "05/30/25",
+      "description": "CHECKCARD 0530 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": 45.04
+    }
+  },
+  {
+    "date": "6/2/2025",
+    "description": "Bank of America CHECKCARD 0531 TRADER JOE S #122 STUDIO CITY CA 24137465152501306469416",
+    "amount": 38.37,
+    "type": "RECEIPT",
+    "source": "Table 164",
+    "raw": {
+      "date": "06/02/25",
+      "description": "CHECKCARD 0531 TRADER JOE S #122 STUDIO CITY CA 24137465152501306469416",
+      "amount": 38.37
+    }
+  },
+  {
+    "date": "6/5/2025",
+    "description": "Bank of America CHECKCARD 0605 WWW.TRUPANION. SEATTLE WA 00000000000000000953659 RECURRING",
+    "amount": 113.95,
+    "type": "RECEIPT",
+    "source": "Table 164",
+    "raw": {
+      "date": "06/05/25",
+      "description": "CHECKCARD 0605 WWW.TRUPANION. SEATTLE WA 00000000000000000953659 RECURRING",
+      "amount": 113.95
+    }
+  },
+  {
+    "date": "6/9/2025",
+    "description": "Bank of America CHECKCARD 0607 TRADER JOE S #122 STUDIO CITY CA 24137465159501273795895",
+    "amount": 72.56,
+    "type": "RECEIPT",
+    "source": "Table 164",
+    "raw": {
+      "date": "06/09/25",
+      "description": "CHECKCARD 0607 TRADER JOE S #122 STUDIO CITY CA 24137465159501273795895",
+      "amount": 72.56
+    }
+  },
+  {
+    "date": "6/11/2025",
+    "description": "Bank of America CHECKCARD 0609 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786715162000000029584",
+    "amount": 168.61,
+    "type": "RECEIPT",
+    "source": "Table 165",
+    "raw": {
+      "date": "06/11/25",
+      "description": "CHECKCARD 0609 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786715162000000029584",
+      "amount": 168.61
+    }
+  },
+  {
+    "date": "6/12/2025",
+    "description": "Bank of America CHECKCARD 0611 ALL STAR HEALTH.COM 800-875-0448 CA 24692165162105877931969",
+    "amount": 172.85,
+    "type": "RECEIPT",
+    "source": "Table 165",
+    "raw": {
+      "date": "06/12/25",
+      "description": "CHECKCARD 0611 ALL STAR HEALTH.COM 800-875-0448 CA 24692165162105877931969",
+      "amount": 172.85
+    }
+  },
+  {
+    "date": "6/16/2025",
+    "description": "Bank of America CHECKCARD 0614 TRADER JOE S #122 STUDIO CITY CA 24137465166501253370686",
+    "amount": 57.59,
+    "type": "RECEIPT",
+    "source": "Table 165",
+    "raw": {
+      "date": "06/16/25",
+      "description": "CHECKCARD 0614 TRADER JOE S #122 STUDIO CITY CA 24137465166501253370686",
+      "amount": 57.59
+    }
+  },
+  {
+    "date": "6/16/2025",
+    "description": "Bank of America CHECKCARD 0615 LA FITNESS IRVINE CA 00000000000000000396990 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 165",
+    "raw": {
+      "date": "06/16/25",
+      "description": "CHECKCARD 0615 LA FITNESS IRVINE CA 00000000000000000396990 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "6/16/2025",
+    "description": "Bank of America CHECKCARD 0615 LA FITNESS IRVINE CA 00000000000000000426235 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 165",
+    "raw": {
+      "date": "06/16/25",
+      "description": "CHECKCARD 0615 LA FITNESS IRVINE CA 00000000000000000426235 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "6/18/2025",
+    "description": "Bank of America CHECKCARD 0618 CVS/PHARMACY # Studio City CA",
+    "amount": 27.84,
+    "type": "RECEIPT",
+    "source": "Table 165",
+    "raw": {
+      "date": "06/18/25",
+      "description": "CHECKCARD 0618 CVS/PHARMACY # Studio City CA",
+      "amount": 27.84
+    }
+  },
+  {
+    "date": "7/2/2025",
+    "description": "Bank of America WIRE TYPE:WIRE IN DATE: 250702 TIME:1126 ET TRN:2025070200413592 SEQ:2025070200004615/001571 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: 2FHOYNDB86",
+    "amount": 26979.17,
+    "type": "RECEIPT",
+    "source": "Table 168",
+    "raw": {
+      "date": "07/02/25",
+      "description": "WIRE TYPE:WIRE IN DATE: 250702 TIME:1126 ET TRN:2025070200413592 SEQ:2025070200004615/001571 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: 2FHOYNDB86",
+      "amount": 26979.17
+    }
+  },
+  {
+    "date": "7/9/2025",
+    "description": "Bank of America SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031036030 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXXI",
+    "amount": 2089.4,
+    "type": "RECEIPT",
+    "source": "Table 168",
+    "raw": {
+      "date": "07/09/25",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031036030 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXXI",
+      "amount": 2089.4
+    }
+  },
+  {
+    "date": "6/25/2025",
+    "description": "Bank of America CHECKCARD 0623 TRADER JOE S #122 STUDIO CITY CA 24137465175500977157055",
+    "amount": 44.23,
+    "type": "RECEIPT",
+    "source": "Table 169",
+    "raw": {
+      "date": "06/25/25",
+      "description": "CHECKCARD 0623 TRADER JOE S #122 STUDIO CITY CA 24137465175500977157055",
+      "amount": 44.23
+    }
+  },
+  {
+    "date": "7/3/2025",
+    "description": "Bank of America CHECKCARD 0702 THE UPS STORE 2036 213-4945128 CA 24000975183996403602577",
+    "amount": 15,
+    "type": "RECEIPT",
+    "source": "Table 169",
+    "raw": {
+      "date": "07/03/25",
+      "description": "CHECKCARD 0702 THE UPS STORE 2036 213-4945128 CA 24000975183996403602577",
+      "amount": 15
+    }
+  },
+  {
+    "date": "7/7/2025",
+    "description": "Bank of America CHECKCARD 0702 TRADER JOE S #122 STUDIO CITY CA 24137465184501155589969",
+    "amount": 43.09,
+    "type": "RECEIPT",
+    "source": "Table 169",
+    "raw": {
+      "date": "07/07/25",
+      "description": "CHECKCARD 0702 TRADER JOE S #122 STUDIO CITY CA 24137465184501155589969",
+      "amount": 43.09
+    }
+  },
+  {
+    "date": "7/7/2025",
+    "description": "Bank of America CHECKCARD 0704 ALL STAR HEALTH.COM 800-875-0448 CA 24692165185103987652180",
+    "amount": 50.29,
+    "type": "RECEIPT",
+    "source": "Table 169",
+    "raw": {
+      "date": "07/07/25",
+      "description": "CHECKCARD 0704 ALL STAR HEALTH.COM 800-875-0448 CA 24692165185103987652180",
+      "amount": 50.29
+    }
+  },
+  {
+    "date": "7/7/2025",
+    "description": "Bank of America CHECKCARD 0704 N & D OIL CORP NORTH HOLLYWOCA",
+    "amount": 71.79,
+    "type": "RECEIPT",
+    "source": "Table 170",
+    "raw": {
+      "date": "07/07/25",
+      "description": "CHECKCARD 0704 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": 71.79
+    }
+  },
+  {
+    "date": "7/7/2025",
+    "description": "Bank of America CHECKCARD 0705 WWW.TRUPANION. SEATTLE WA 00000000000000000177428 RECURRING",
+    "amount": 113.95,
+    "type": "RECEIPT",
+    "source": "Table 170",
+    "raw": {
+      "date": "07/07/25",
+      "description": "CHECKCARD 0705 WWW.TRUPANION. SEATTLE WA 00000000000000000177428 RECURRING",
+      "amount": 113.95
+    }
+  },
+  {
+    "date": "7/8/2025",
+    "description": "Bank of America CHECKCARD 0707 CARFAX *CARFAX.COM CARFAX.COM VA 24692165188106309563784",
+    "amount": 44.99,
+    "type": "RECEIPT",
+    "source": "Table 170",
+    "raw": {
+      "date": "07/08/25",
+      "description": "CHECKCARD 0707 CARFAX *CARFAX.COM CARFAX.COM VA 24692165188106309563784",
+      "amount": 44.99
+    }
+  },
+  {
+    "date": "7/15/2025",
+    "description": "Bank of America CHECKCARD 0715 LA FITNESS IRVINE CA 00000000000000000294907 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 170",
+    "raw": {
+      "date": "07/15/25",
+      "description": "CHECKCARD 0715 LA FITNESS IRVINE CA 00000000000000000294907 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "7/15/2025",
+    "description": "Bank of America CHECKCARD 0715 LA FITNESS IRVINE CA 00000000000000000296114 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 170",
+    "raw": {
+      "date": "07/15/25",
+      "description": "CHECKCARD 0715 LA FITNESS IRVINE CA 00000000000000000296114 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "7/16/2025",
+    "description": "Bank of America CHECKCARD 0714 TRADER JOE S #122 STUDIO CITY CA 24137465196501013283546",
+    "amount": 33.79,
+    "type": "RECEIPT",
+    "source": "Table 170",
+    "raw": {
+      "date": "07/16/25",
+      "description": "CHECKCARD 0714 TRADER JOE S #122 STUDIO CITY CA 24137465196501013283546",
+      "amount": 33.79
+    }
+  },
+  {
+    "date": "7/22/2025",
+    "description": "Bank of America CHECKCARD 0720 TRADER JOE S #122 STUDIO CITY CA 24137465202501041664628",
+    "amount": 40.11,
+    "type": "RECEIPT",
+    "source": "Table 170",
+    "raw": {
+      "date": "07/22/25",
+      "description": "CHECKCARD 0720 TRADER JOE S #122 STUDIO CITY CA 24137465202501041664628",
+      "amount": 40.11
+    }
+  },
+  {
+    "date": "8/13/2025",
+    "description": "Bank of America SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031036030 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX\\",
+    "amount": 2089.4,
+    "type": "RECEIPT",
+    "source": "Table 175",
+    "raw": {
+      "date": "08/13/25",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031036030 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX\\",
+      "amount": 2089.4
+    }
+  },
+  {
+    "date": "7/25/2025",
+    "description": "Bank of America CHECKCARD 0724 TST* HEAVY HANDED STUDI STUDIO CITY CA 24137465205100327495653",
+    "amount": 16.6,
+    "type": "RECEIPT",
+    "source": "Table 176",
+    "raw": {
+      "date": "07/25/25",
+      "description": "CHECKCARD 0724 TST* HEAVY HANDED STUDI STUDIO CITY CA 24137465205100327495653",
+      "amount": 16.6
+    }
+  },
+  {
+    "date": "7/28/2025",
+    "description": "Bank of America CHECKCARD 0725 CHIPOTLE 1784 MALIBU CA 24431065207253483237549",
+    "amount": 23.48,
+    "type": "RECEIPT",
+    "source": "Table 176",
+    "raw": {
+      "date": "07/28/25",
+      "description": "CHECKCARD 0725 CHIPOTLE 1784 MALIBU CA 24431065207253483237549",
+      "amount": 23.48
+    }
+  },
+  {
+    "date": "7/28/2025",
+    "description": "Bank of America CHECKCARD 0726 TRADER JOE S #122 STUDIO CITY CA 24137465208501272623065",
+    "amount": 39.88,
+    "type": "RECEIPT",
+    "source": "Table 176",
+    "raw": {
+      "date": "07/28/25",
+      "description": "CHECKCARD 0726 TRADER JOE S #122 STUDIO CITY CA 24137465208501272623065",
+      "amount": 39.88
+    }
+  },
+  {
+    "date": "7/30/2025",
+    "description": "Bank of America CHECKCARD 0729 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24988065210900015200013",
+    "amount": 168.99,
+    "type": "RECEIPT",
+    "source": "Table 176",
+    "raw": {
+      "date": "07/30/25",
+      "description": "CHECKCARD 0729 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24988065210900015200013",
+      "amount": 168.99
+    }
+  },
+  {
+    "date": "8/5/2025",
+    "description": "Bank of America CHECKCARD 0803 TRADER JOE S #122 STUDIO CITY CA 24137465216501083474989",
+    "amount": 30.3,
+    "type": "RECEIPT",
+    "source": "Table 176",
+    "raw": {
+      "date": "08/05/25",
+      "description": "CHECKCARD 0803 TRADER JOE S #122 STUDIO CITY CA 24137465216501083474989",
+      "amount": 30.3
+    }
+  },
+  {
+    "date": "8/5/2025",
+    "description": "Bank of America CHECKCARD 0805 WWW.TRUPANION. SEATTLE WA 00000000000000000644627 RECURRING",
+    "amount": 113.95,
+    "type": "RECEIPT",
+    "source": "Table 177",
+    "raw": {
+      "date": "08/05/25",
+      "description": "CHECKCARD 0805 WWW.TRUPANION. SEATTLE WA 00000000000000000644627 RECURRING",
+      "amount": 113.95
+    }
+  },
+  {
+    "date": "8/11/2025",
+    "description": "Bank of America CHECKCARD 0808 TST*ERNIES MEXICAN REST North HollywoCA 24692165221103969112472",
+    "amount": 19.44,
+    "type": "RECEIPT",
+    "source": "Table 177",
+    "raw": {
+      "date": "08/11/25",
+      "description": "CHECKCARD 0808 TST*ERNIES MEXICAN REST North HollywoCA 24692165221103969112472",
+      "amount": 19.44
+    }
+  },
+  {
+    "date": "8/11/2025",
+    "description": "Bank of America CHECKCARD 0810 PSJMC BURBANK PARKING BURBANK CA 24055235223438976369420",
+    "amount": 10,
+    "type": "RECEIPT",
+    "source": "Table 177",
+    "raw": {
+      "date": "08/11/25",
+      "description": "CHECKCARD 0810 PSJMC BURBANK PARKING BURBANK CA 24055235223438976369420",
+      "amount": 10
+    }
+  },
+  {
+    "date": "8/13/2025",
+    "description": "Bank of America CHECKCARD 0811 TRADER JOE S #122 STUDIO CITY CA 24137465224501039785454",
+    "amount": 43.28,
+    "type": "RECEIPT",
+    "source": "Table 177",
+    "raw": {
+      "date": "08/13/25",
+      "description": "CHECKCARD 0811 TRADER JOE S #122 STUDIO CITY CA 24137465224501039785454",
+      "amount": 43.28
+    }
+  },
+  {
+    "date": "8/15/2025",
+    "description": "Bank of America CHECKCARD 0815 LA FITNESS IRVINE CA 00000000000000000251492 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 177",
+    "raw": {
+      "date": "08/15/25",
+      "description": "CHECKCARD 0815 LA FITNESS IRVINE CA 00000000000000000251492 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "8/15/2025",
+    "description": "Bank of America CHECKCARD 0815 LA FITNESS IRVINE CA 00000000000000000287821 RECURRING",
+    "amount": 29.99,
+    "type": "RECEIPT",
+    "source": "Table 177",
+    "raw": {
+      "date": "08/15/25",
+      "description": "CHECKCARD 0815 LA FITNESS IRVINE CA 00000000000000000287821 RECURRING",
+      "amount": 29.99
+    }
+  },
+  {
+    "date": "8/18/2025",
+    "description": "Bank of America CHECKCARD 0814 TRADER JOE S #122 STUDIO CITY CA 24137465227501119394554",
+    "amount": 18.46,
+    "type": "RECEIPT",
+    "source": "Table 177",
+    "raw": {
+      "date": "08/18/25",
+      "description": "CHECKCARD 0814 TRADER JOE S #122 STUDIO CITY CA 24137465227501119394554",
+      "amount": 18.46
+    }
+  },
+  {
+    "date": "8/18/2025",
+    "description": "Bank of America CHECKCARD 0815 SMILE SPECIALIST LOS ANGELES CA 24750765229900015900695",
+    "amount": 180,
+    "type": "RECEIPT",
+    "source": "Table 177",
+    "raw": {
+      "date": "08/18/25",
+      "description": "CHECKCARD 0815 SMILE SPECIALIST LOS ANGELES CA 24750765229900015900695",
+      "amount": 180
+    }
+  },
+  {
+    "date": "8/18/2025",
+    "description": "Bank of America CHECKCARD 0816 CHIPOTLE 2093 SHERMAN OAKS CA 24431065229268056544695",
+    "amount": 23.05,
+    "type": "RECEIPT",
+    "source": "Table 177",
+    "raw": {
+      "date": "08/18/25",
+      "description": "CHECKCARD 0816 CHIPOTLE 2093 SHERMAN OAKS CA 24431065229268056544695",
+      "amount": 23.05
+    }
+  }
+]

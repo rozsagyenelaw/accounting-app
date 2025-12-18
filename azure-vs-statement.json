@@ -1,0 +1,6241 @@
+{
+  "statementSummary": {
+    "deposits": 703315.26,
+    "atmDebit": -62381.16000000001,
+    "checks": -187777.96999999997,
+    "otherSubtractions": -561643.5200000001,
+    "serviceFees": -17.42,
+    "totalWithdrawals": -811820.0700000002
+  },
+  "azureExtracted": {
+    "depositCount": 90,
+    "depositTotal": 703974.8,
+    "atmDebitCount": 758,
+    "atmDebitTotal": -60030.9,
+    "otherWithdrawalCount": 166,
+    "otherWithdrawalTotal": -715264.0499999984,
+    "checkCount": 21,
+    "checkTotal": -44098.26
+  },
+  "differences": {
+    "deposits": -659.5400000000373,
+    "atmDebit": -2350.2600000000093,
+    "checks": -143679.70999999996,
+    "other": 153620.52999999828,
+    "net": 6913.599999997183
+  },
+  "transactions": [
+    {
+      "date": "09/05/23",
+      "description": "CHECKCARD 0902 BUILD.COM 800-375-3403 CA 7443565324508372076",
+      "amount": 244.19,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/08/23",
+      "description": "WIRE TYPE:WIRE IN DATE: 230908 TIME:1754 ET TRN:2023090800505756 SEQ:2023090800010823/004020 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: 0G79Z1DTSY",
+      "amount": 26979.17,
+      "type": "wire"
+    },
+    {
+      "date": "09/13/23",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXXX",
+      "amount": 2012,
+      "type": "ssa"
+    },
+    {
+      "date": "09/19/23",
+      "description": "CHECKCARD 0918 AMZN MKTP US SEATTLE WA 7443106326108300274",
+      "amount": 111.68,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/19/23",
+      "description": "CHECKCARD 0918 AMAZON.COM SEATTLE WA 7443106326108300143",
+      "amount": 10.06,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/19/23",
+      "description": "CHECKCARD 0918 AMAZON.COM SEATTLE WA 7443106326108300253",
+      "amount": 10.05,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/20/23",
+      "description": "1 09/20/23 Interest Earned",
+      "amount": 8.16,
+      "type": "interest"
+    },
+    {
+      "date": "08/23/23",
+      "description": "1 08/23/23 GELSON'S MARKE 08/22 #000936032 PURCHASE GELSON'S MARKETS VALLEY VILLAG CA",
+      "amount": -41.76,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/24/23",
+      "description": "* 08/24/23 THE HOME DEPOT 08/24 #000207507 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -26.77,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/24/23",
+      "description": "THE HOME DEPOT 08/24 #000319034 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -47.38,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/25/23",
+      "description": "CHECKCARD 0823 TRANSWORLD TILE INC. NORTHRIDGE CA 24692163236104049351260",
+      "amount": -15.63,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/25/23",
+      "description": "CHECKCARD 0824 ALL STAR HEALTH.COM 800-875-0448 CA 24692163236103995554257",
+      "amount": -143.17,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/25/23",
+      "description": "CHECKCARD 0823 TRADER JOE S #122 STUDIO CITY CA 24137463236500814079969",
+      "amount": -77.02,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/28/23",
+      "description": "CHECKCARD 0825 AMZN MKTP US*TQ13H2ID1 AMZN.COM/BILLWA 24431063237083335746549",
+      "amount": -10.94,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/28/23",
+      "description": "CHECKCARD 0826 STARBUCKS STORE 05870 BURBANK CA 24692163239106653671260",
+      "amount": -8.9,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/28/23",
+      "description": "SPROUTS FARMER 08/26 #000820766 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -127.33,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/28/23",
+      "description": "PURCHASE 0827 RING YEARLY PLAN HTTPSRING.COMCA",
+      "amount": -39.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/30/23",
+      "description": "CHECKCARD 0829 AMZN MKTP US*T389X4UO2 AMZN.COM/BILLWA 24431063242083716206413",
+      "amount": -94.03,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/30/23",
+      "description": "SPROUTS FARMER 08/29 #000018034 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -71.49,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/31/23",
+      "description": "CHECKCARD 0830 CHIPOTLE 1412 STUDIO CITY CA 24431063243400588002119",
+      "amount": -11.88,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/01/23",
+      "description": "CHECKCARD 0831 AMZN MKTP US*TL70Y1L62 AMZN.COM/BILLWA 24431063243083711227595",
+      "amount": -10.9,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/01/23",
+      "description": "THE HOME DEPOT 08/31 #000670000 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -76.56,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/05/23",
+      "description": "CVS/PHARMACY # 09/02 #000049854 PURCHASE 09601 -- 1015 N. Sa Burbank CA",
+      "amount": -19.26,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/05/23",
+      "description": "SPROUTS FARMER 09/02 #000236997 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -65.1,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/05/23",
+      "description": "CHECKCARD 0902 TRADER JOE S #124 BURBANK CA 24137463246500760071810",
+      "amount": -60.14,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/05/23",
+      "description": "CHECKCARD 0902 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786713246900010400219",
+      "amount": -77.73,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/05/23",
+      "description": "CHECKCARD 0905 AMAZON.COM*TL6TA2SM2 AM AMZN.COM/BILLWA 24431063248083326486920",
+      "amount": -10.05,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/05/23",
+      "description": "THE HOME DEPOT 09/04 #000269053 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -99.15,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/05/23",
+      "description": "CHECKCARD 0905 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": -35.8,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/05/23",
+      "description": "CHECKCARD 0905 WWW.TRUPANION. SEATTLE WA",
+      "amount": -69.53,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/06/23",
+      "description": "CHECKCARD 0905 JORDAN D COLBY DMD INC OCEANSIDE CA 24431063248200000000021",
+      "amount": -145,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/07/23",
+      "description": "CHECKCARD 0905 TRADER JOE S #022 OCEANSIDE CA 24137463249500776736015",
+      "amount": -19.65,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/07/23",
+      "description": "CHECKCARD 0906 AMZN MKTP US*TL4SO22SO SEATTLE WA 24431063249083746075328",
+      "amount": -31.2,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/07/23",
+      "description": "CHECKCARD 0906 AMAZON.COM*TL5VE7BL1 AM AMZN.COM/BILLWA 24431063250083725202683",
+      "amount": -10.06,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/07/23",
+      "description": "SPROUTS FARMER 09/07 #000817648 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -86.15,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/11/23",
+      "description": "CHECKCARD 0907 TRADER JOE S #124 BURBANK CA 24137463251500806718814",
+      "amount": -40.09,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/11/23",
+      "description": "CHECKCARD 0909 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": -86.81,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/11/23",
+      "description": "CHECKCARD 0910 AMZN MKTP US*TR6WB61E0 AMZN.COM/BILLWA 24431063253083353006452",
+      "amount": -10.92,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/11/23",
+      "description": "THE HOME DEPOT 09/10 #000086592 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -210.15,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/12/23",
+      "description": "CHECKCARD 0911 AMZN MKTP US*TR3578810 SEATTLE WA 24431063254083728588944",
+      "amount": -111.68,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/13/23",
+      "description": "SPROUTS FARMER 09/13 #000311077 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -130.92,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/14/23",
+      "description": "THE HOME DEPOT 09/14 #000570072 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -109.55,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/15/23",
+      "description": "CHECKCARD 0913 TRADER JOE S #124 BURBANK CA 24137463257500804669773",
+      "amount": -46.42,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/15/23",
+      "description": "CHECKCARD 0914 AMZN MKTP US*TX5N28F52 SEATTLE WA 24431063257083735753710",
+      "amount": -17.51,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/18/23",
+      "description": "CHECKCARD 0915 ALL STAR HEALTH.COM 800-875-0448 CA 24692163258108614487444",
+      "amount": -44.96,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/18/23",
+      "description": "CHECKCARD 0915 LA FITNESS 949-255-8100 CA 24492153258084001986004 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/18/23",
+      "description": "1 09/18/23 CHECKCARD 0915 LA FITNESS 949-255-8100 CA 24492153258084023963429 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/18/23",
+      "description": "CHECKCARD 0915 AMZN MKTP US*TX6V30EM2 SEATTLE WA 24431063259083715408820",
+      "amount": -116.52,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/18/23",
+      "description": "CHECKCARD 0916 AMZN MKTP US*TR9TN5KM1 SEATTLE WA 24431063259083354040694",
+      "amount": -121.44,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/18/23",
+      "description": "CHECKCARD 0918 AMZN MKTP US*TX8MH8892 SEATTLE WA 24431063261083314647915",
+      "amount": 41.6,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/18/23",
+      "description": "CVS/PHARMACY # 09/18 #000173971 PURCHASE 09601 -- 1015 N. Sa Burbank CA",
+      "amount": -20.69,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/18/23",
+      "description": ": 09/18/23 SPROUTS FARMER 09/18 #000932726 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -133.68,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/28/23",
+      "description": "CHARTER COMMUNIC DES:CHECK PYMT CHECK #:0322 INDN:8448200181422279 CO ID:0470122023 ARC",
+      "amount": -291.18,
+      "type": "check"
+    },
+    {
+      "date": "08/30/23",
+      "description": "SOCALGAS DES:ARC PYMT CHECK #:0323 INDN:0093129100 CO ID:3951240705 ARC",
+      "amount": -35.23,
+      "type": "check"
+    },
+    {
+      "date": "09/11/23",
+      "description": "ATT DES:Payment ID:XXXXXXXXXEPAYW INDN:MARCI DREXLER CO ID:9864031004 PPD",
+      "amount": -74.28,
+      "type": "other"
+    },
+    {
+      "date": "08/29/23",
+      "description": "319 Anthem blueCross",
+      "amount": -412.04,
+      "type": "other"
+    },
+    {
+      "date": "08/29/23",
+      "description": "320 Anthem blue Cross",
+      "amount": -94.5,
+      "type": "other"
+    },
+    {
+      "date": "08/29/23",
+      "description": "321 Bond",
+      "amount": -3828,
+      "type": "other"
+    },
+    {
+      "date": "09/12/23",
+      "description": "324* Manuel Gonzalez",
+      "amount": -130,
+      "type": "other"
+    },
+    {
+      "date": "09/01/23",
+      "description": "325 Stefan Meyer",
+      "amount": -1832.71,
+      "type": "other"
+    },
+    {
+      "date": "09/19/23",
+      "description": "326 Hector and Payment Paint/cement",
+      "amount": -1700,
+      "type": "other"
+    },
+    {
+      "date": "09/20/23",
+      "description": "328* 90 CALGAS",
+      "amount": -37.22,
+      "type": "other"
+    },
+    {
+      "date": "09/18/23",
+      "description": "329 Anthem Blue Cross",
+      "amount": -94.5,
+      "type": "other"
+    },
+    {
+      "date": "08/29/23",
+      "description": "341 Jaime Herrera",
+      "amount": -4500,
+      "type": "other"
+    },
+    {
+      "date": "10/04/23",
+      "description": "· 10/04/23 CHECKCARD 1004 AMZN MKTP US SEATTLE WA 7443106327708300998",
+      "amount": 17.51,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/10/23",
+      "description": "1 10/10/23 WIRE TYPE:WIRE IN DATE: 231010 TIME:1105 ET TRN:2023101000630791 SEQ:2023101000005372/001441 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: Q3350VTLZE",
+      "amount": 26979.17,
+      "type": "wire"
+    },
+    {
+      "date": "10/11/23",
+      "description": "1 10/11/23 SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR Co ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX\\",
+      "amount": 2012,
+      "type": "ssa"
+    },
+    {
+      "date": "10/19/23",
+      "description": "/ 10/19/23 MACY'S 1400 10/19 #000727417 REFUND MACY'S 14000 R SHERMAN OAKS CA",
+      "amount": 98,
+      "type": "other"
+    },
+    {
+      "date": "10/20/23",
+      "description": "7 10/20/23 Interest Earned",
+      "amount": 8.32,
+      "type": "interest"
+    },
+    {
+      "date": "09/21/23",
+      "description": "RALPHS #0701 1 09/21 #000516459 PURCHASE RALPHS #0701 1284 STUDIO CITY CA",
+      "amount": -6.56,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/22/23",
+      "description": ", 09/22/23 CHECKCARD 0921 AMZN MKTP US*TX2VU6WWO SEATTLE WA 24431063265083301730845",
+      "amount": -31.74,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/25/23",
+      "description": "· 09/25/23 CHECKCARD 0921 TRADER JOE S #122 STUDIO CITY CA 24137463265500859214970",
+      "amount": -48.26,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/25/23",
+      "description": "CHECKCARD 0923 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786713267900012300064",
+      "amount": -77.73,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/25/23",
+      "description": "- 09/25/23 SPROUTS FARMER 09/23 #000702530 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -128.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/26/23",
+      "description": "CHECKCARD 0925 BR FACTORY.COM 2624 844-2377746 OH 24789303268474600938764",
+      "amount": -268.23,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/26/23",
+      "description": "CHECKCARD 0924 BR FACTORY.COM 2624 844-2377746 OH 24789303268470300953996",
+      "amount": -39.86,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/27/23",
+      "description": "/ 09/27/23 CHECKCARD 0926 ANNTAYLOR.COM #611 800-342-5266 CT 24431063269884226750842",
+      "amount": -137.2,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/27/23",
+      "description": "THE HOME DEPOT 09/27 #000270294 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -71.88,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/28/23",
+      "description": "CHECKCARD 0927 VIOC GN0013 NORTH HOLLYWOCA 24210733271837000078518",
+      "amount": -72.67,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/28/23",
+      "description": "SPROUTS FARMER 09/28 #000917546 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -83.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/02/23",
+      "description": "SPROUTS FARMER 10/02 #000758044 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -106.7,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/04/23",
+      "description": "· 10/04/23 CHECKCARD 1002 TRADER JOE S #124 BURBANK CA 24137463276500827105885",
+      "amount": -43.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/05/23",
+      "description": "· 10/05/23 CHECKCARD 1005 WWW.TRUPANION. SEATTLE WA",
+      "amount": -69.53,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/10/23",
+      "description": "· 10/10/23 GELSON'S MARKE 10/07 #000906401 PURCHASE GELSON'S MARKETS VALLEY VILLAG CA",
+      "amount": -12.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/10/23",
+      "description": "· 10/10/23 CHECKCARD 1008 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": -74.98,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/10/23",
+      "description": "VINTAGE GROCER 10/08 #000637727 PURCHASE VINTAGE GROCERS MALIBU CA",
+      "amount": -32.01,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/12/23",
+      "description": "SPROUTS FARMER 10/12 #000961493 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -110.66,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/13/23",
+      "description": "CHECKCARD 1012 SHARP PET HOSPITAL NORTH HOLLYWOCA 24493983285207949600025",
+      "amount": -223,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/13/23",
+      "description": "CHECKCARD 1012 DOG AND CAT HOSPITAL CA CALABASAS CA 24701773285550500335959",
+      "amount": -465,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/16/23",
+      "description": "CHECKCARD 1012 SHARKYS WOODFIRED MEXI 818-8409080 CA 24000973286553107112048",
+      "amount": -28.85,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/16/23",
+      "description": "CHECKCARD 1015 LA FITNESS 949-255-8100 CA 24492153288084001886596 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/16/23",
+      "description": "CHECKCARD 1014 BOX THAI STREET FOOD LAKE BALBOA CA 24717053288132885323912",
+      "amount": -35,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/16/23",
+      "description": "₹ 10/16/23 CHECKCARD 1015 LA FITNESS 949-255-8100 CA 24492153288084036900834 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/16/23",
+      "description": ", 10/16/23 CHECKCARD 1015 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786713288900014800066",
+      "amount": -77.73,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/16/23",
+      "description": "NORDSTROM RACK 10/15 #000107961 PURCHASE NORDSTROM RACK # BURBANK CA",
+      "amount": -77.11,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/16/23",
+      "description": "GELSON'S MARKE 10/15 #000369112 PURCHASE GELSON'S MARKETS VALLEY VILLAG CA",
+      "amount": -10.42,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/16/23",
+      "description": "៛ 10/16/23 HOBBYLOBB 641 10/16 #000719379 PURCHASE HOBBYLOBB 641 N. BURBANK CA",
+      "amount": -19.28,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/16/23",
+      "description": "/ 10/16/23 WALGREENS STOR 10/16 #000902832 PURCHASE WALGREENS STORE 1 BURBANK CA",
+      "amount": -22.69,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/17/23",
+      "description": "MACY'S 50 10/17 #000335224 PURCHASE MACY'S 501 1 SHERMAN OAKS CA",
+      "amount": -98,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/18/23",
+      "description": "៛ 10/18/23 CHECKCARD 1016 TRADER JOE S #124 BURBANK CA 24137463290500750499786",
+      "amount": -73.72,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/18/23",
+      "description": "* 10/18/23 TARGET T- 5711 10/18 #000800377 PURCHASE TARGET T- 5711 Se Van Nuys CA",
+      "amount": -162.66,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/19/23",
+      "description": "1 10/19/23 TARGET T- 1105 10/19 #000709477 PURCHASE TARGET T- 11051 V North Hollywo CA",
+      "amount": -36.98,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/19/23",
+      "description": "· 10/19/23 RITE AID 05575 10/19 #000159580 PURCHASE RITE AID 05575 NORTH HOLLYWO CA",
+      "amount": -7.65,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/04/23",
+      "description": "/ 10/04/23 CHARTER COMMUNIC DES:CHECK PYMT CHECK #:0333 INDN:8448200181422279 CO ID:0470122023 ARC",
+      "amount": -285.18,
+      "type": "check"
+    },
+    {
+      "date": "10/10/23",
+      "description": ", 10/10/23 ATT DES:Payment ID:XXXXXXXXXEPAYG INDN:MARCI DREXLER CO ID:9864031004 PPD",
+      "amount": -74.28,
+      "type": "other"
+    },
+    {
+      "date": "10/20/23",
+      "description": "/ 10/20/23 LADWP DES:WEB PAY ID:4027131000 INDN:bonnie drexler CO ID:4956000736 WEB",
+      "amount": -709.5,
+      "type": "other"
+    },
+    {
+      "date": "09/21/23",
+      "description": "# 09/21/23 327 USTherum Tax",
+      "amount": -26442,
+      "type": "other"
+    },
+    {
+      "date": "10/06/23",
+      "description": "330* Manuel Gonzalez",
+      "amount": -130,
+      "type": "other"
+    },
+    {
+      "date": "09/29/23",
+      "description": "$ 09/29/23 331 Manuel (Cut Palms)",
+      "amount": -800,
+      "type": "other"
+    },
+    {
+      "date": "10/05/23",
+      "description": "332 Authem blue Cross",
+      "amount": -412.04,
+      "type": "other"
+    },
+    {
+      "date": "10/17/23",
+      "description": "335* Yeule Nails",
+      "amount": -100,
+      "type": "other"
+    },
+    {
+      "date": "10/20/23",
+      "description": ", 10/20/23 337* Authem",
+      "amount": -94.5,
+      "type": "other"
+    },
+    {
+      "date": "10/20/23",
+      "description": "338 Authem",
+      "amount": -412.04,
+      "type": "other"
+    },
+    {
+      "date": "10/20/23",
+      "description": "1 10/20/23 339 AAA Membership",
+      "amount": -119,
+      "type": "other"
+    },
+    {
+      "date": "11/08/23",
+      "description": "$ 11/08/23 SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR AN1*BE*BONNI E DREXLER *34*XXXXXXXXXI",
+      "amount": 2012,
+      "type": "ssa"
+    },
+    {
+      "date": "11/13/23",
+      "description": "WIRE TYPE:WIRE IN DATE: 231113 TIME:1644 ET TRN:2023111300506293 SEQ:2023111300008231/002921 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: Y7X8EZHL51",
+      "amount": 26979.17,
+      "type": "wire"
+    },
+    {
+      "date": "11/20/23",
+      "description": "Interest Earned",
+      "amount": 8.87,
+      "type": "interest"
+    },
+    {
+      "date": "10/23/23",
+      "description": "0 10/23/23 CHECKCARD 1022 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": -95.66,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/23/23",
+      "description": "· 10/23/23 GELSON'S MARKE 10/22 #000136987 PURCHASE GELSON'S MARKETS VALLEY VILLAG CA",
+      "amount": -48.79,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/23/23",
+      "description": ", 10/23/23 SPROUTS FARMER 10/23 #000753414 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -88.89,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/23/23",
+      "description": "· 10/23/23 TRADER JOE S # 10/23 #000436185 PURCHASE TRADER JOE S #12 BURBANK CA",
+      "amount": -20.47,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/24/23",
+      "description": ", 10/24/23 SPROUTS FARMER 10/24 #000986691 PURCHASE SPROUTS FARMERS M WOODLAND HILL CA",
+      "amount": -12.65,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/25/23",
+      "description": "- 10/25/23 CHECKCARD 1024 SHARP PET HOSPITAL NORTH HOLLYWOCA 24493983297207949400372",
+      "amount": -4391,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/30/23",
+      "description": "- 10/30/23 CHECKCARD 1027 AMZN MKTP US*XB6FR32J3 SEATTLE WA 24431063300083344086582",
+      "amount": -45.96,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/30/23",
+      "description": ", 10/30/23 LOWE'S #1144 10/29 #000259322 PURCHASE LOWE'S #1144 BURBANK CA",
+      "amount": -53.91,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/30/23",
+      "description": "CVS/PHARMACY # 10/29 #000607070 PURCHASE CVS/PHARMACY #09 Burbank CA",
+      "amount": -8.8,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/30/23",
+      "description": "៛ 10/30/23 SPROUTS FARMER 10/29 #000167333 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -102.03,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/31/23",
+      "description": "CHECKCARD 1029 HARVEST MOON KITCHEN + VALLEY VILLAGCA 24342853303017013123861",
+      "amount": -42.7,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/31/23",
+      "description": "· 10/31/23 CHECKCARD 1029 TRADER JOE S #122 STUDIO CITY CA 24137463303500835446716",
+      "amount": -71.04,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/02/23",
+      "description": ": 11/02/23 CHECKCARD 1101 AMAZON.COM*K09HN1EU3 SEATTLE WA 24431063305083341488976",
+      "amount": -51.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/02/23",
+      "description": "SPROUTS FARMER 11/01 #000681636 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -25.36,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/06/23",
+      "description": "· 11/06/23 CHECKCARD 1103 AMZN MKTP US*3N3VJ2RF3 SEATTLE WA 24431063307083330764609",
+      "amount": -40.24,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/06/23",
+      "description": "SPROUTS FARMER 11/05 #000101769 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -135.32,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/06/23",
+      "description": "CHECKCARD 1105 WWW.TRUPANION. SEATTLE WA",
+      "amount": -69.53,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/07/23",
+      "description": "1 11/07/23 CHECKCARD 1105 TRADER JOE S #124 BURBANK CA 24137463310500794295238",
+      "amount": -48.38,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/09/23",
+      "description": "à 11/09/23 CHECKCARD 1108 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786713312900014300463",
+      "amount": -77.73,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/10/23",
+      "description": "৳ 11/10/23 CHECKCARD 1108 SHARKY'S - SHERMAN OAKS LOS ANGELES CA 24801973313872620744204",
+      "amount": -35.03,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/10/23",
+      "description": "* 11/10/23 SPROUTS FARMER 11/10 #000611275 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -98.06,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/13/23",
+      "description": "1 11/13/23 CHECKCARD 1110 TRADER JOE S #124 BURBANK CA 24137463315501081814678",
+      "amount": -41.42,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/13/23",
+      "description": "· 11/13/23 CHECKCARD 1111 AMZN MKTP US*BL6POOIK3 SEATTLE WA 24431063315083751743983",
+      "amount": -22.98,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/13/23",
+      "description": "* 11/13/23 PURCHASE 1113 AMZN Mktp US*UV8198JU3 Amzn.com/billWA",
+      "amount": -14.22,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/13/23",
+      "description": "* 11/13/23 CHECKCARD 1112 AMZN MKTP US*YB7EE9VB3 SEATTLE WA 24431063316083333817767",
+      "amount": -27.91,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/14/23",
+      "description": "@ 11/14/23 RALPHS #0 1284 11/14 #000861558 PURCHASE RALPHS #0 12842 V STUDIO CITY CA",
+      "amount": -39.81,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/15/23",
+      "description": "9 11/15/23 CHECKCARD 1115 SELECTBLINDS, LLC 480-302-5164 AZ 24492153319719361249090",
+      "amount": -459.15,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/16/23",
+      "description": "· 11/16/23 CHECKCARD 1114 TRADER JOE S #122 STUDIO CITY CA 24137463319500770611797",
+      "amount": -58.15,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/16/23",
+      "description": "' 11/16/23 CHECKCARD 1115 LA FITNESS 949-255-8100 CA 24492153319084021623287 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/16/23",
+      "description": "· 11/16/23 CHECKCARD 1115 LA FITNESS 949-255-8100 CA 24492153319084027823667 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/16/23",
+      "description": "· 11/16/23 CHECKCARD 1116 AMZN MKTP US*445732N03 SEATTLE WA 24431063320083312018134",
+      "amount": -76.62,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/17/23",
+      "description": "· 11/17/23 CHECKCARD 1116 ALL STAR HEALTH.COM 800-875-0448 CA 24692163320105930303507",
+      "amount": -144.81,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/17/23",
+      "description": "៛ 11/17/23 CHECKCARD 1116 AMZN MKTP US*EZ8TW1BC3 SEATTLE WA 24431063320083303626499",
+      "amount": -53.31,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/17/23",
+      "description": "THE HOME DEPOT 11/17 #000787818 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -97.62,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/17/23",
+      "description": "# 11/17/23 SPROUTS FARMER 11/17 #000187579 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -92.8,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/17/23",
+      "description": "៛ 11/17/23 RALPHS #0 1090 11/17 #000257603 PURCHASE RALPHS #0 10901 V STUDIO CITY CA",
+      "amount": -43.96,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/20/23",
+      "description": "CHECKCARD 1117 SHARKYS WOODFIRED MEXI 818-8409080 CA 24000973323711002896868",
+      "amount": -31.06,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/20/23",
+      "description": "· 11/20/23 CHECKCARD 1117 TRADER JOE S #122 STUDIO CITY CA 24137463322501062082213",
+      "amount": -29.77,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/20/23",
+      "description": "4 11/20/23 VINTAGE GROCER 11/19 #000112282 PURCHASE VINTAGE GROCERS MALIBU CA",
+      "amount": -38.55,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/24/23",
+      "description": "SOCALGAS DES:ARC PYMT CHECK #:0336 INDN:0093129100 CO ID:3951240705 ARC\n:selected:",
+      "amount": -41.21,
+      "type": "check"
+    },
+    {
+      "date": "11/03/23",
+      "description": "CHARTER COMMUNIC DES:CHECK PYMT CHECK #:0342 INDN:8448200181422279 CO ID:0470122023 ARC\n:selected:",
+      "amount": -291.18,
+      "type": "check"
+    },
+    {
+      "date": "11/08/23",
+      "description": "ATT DES:Payment ID:XXXXXXXXXEPAYL INDN:MARCI DREXLER CO ID:9864031004 PPD",
+      "amount": -74.78,
+      "type": "other"
+    },
+    {
+      "date": "11/03/23",
+      "description": "340 GARDNER",
+      "amount": -130,
+      "type": "other"
+    },
+    {
+      "date": "11/03/23",
+      "description": "343* Property tax",
+      "amount": -2337.5,
+      "type": "other"
+    },
+    {
+      "date": "12/12/23",
+      "description": "* 12/12/23 WIRE TYPE:WIRE IN DATE: 231212 TIME:1418 ET TRN:2023121200394615 SEQ:2023121200005438/001497 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: QITH3TX4YZ",
+      "amount": 26979.17,
+      "type": "wire"
+    },
+    {
+      "date": "12/13/23",
+      "description": "1 12/13/23 SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR co ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX1",
+      "amount": 2012,
+      "type": "ssa"
+    },
+    {
+      "date": "12/19/23",
+      "description": "' 12/19/23 Interest Earned",
+      "amount": 8.67,
+      "type": "interest"
+    },
+    {
+      "date": "11/21/23",
+      "description": "· 11/21/23 RALPHS #0 1292 11/21 #000752007 PURCHASE RALPHS #0 12921 M VAN NUYS CA",
+      "amount": -23.56,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/22/23",
+      "description": ": 11/22/23 SPROUTS FARMER 11/22 #000937689 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -84,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/24/23",
+      "description": "/ 11/24/23 CHECKCARD 1122 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786713326900018800199",
+      "amount": -94.15,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/24/23",
+      "description": "CHECKCARD 1122 TRADER JOE S #122 STUDIO CITY CA 24137463327100655839157",
+      "amount": -49.87,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/27/23",
+      "description": "€ 11/27/23 CHECKCARD 1126 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": -78.2,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/27/23",
+      "description": "SPROUTS FARMER 11/26 #000085045 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -105.41,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/27/23",
+      "description": "THE HOME DEPOT 11/27 #000058597 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -16.96,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/28/23",
+      "description": "CHECKCARD 1127 AMAZON.COM*P59RNOQW3 SEATTLE WA 24431063331083729242142",
+      "amount": -129.22,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/28/23",
+      "description": "CHECKCARD 1126 TRADER JOE S #124 BURBANK CA 24137463331100501591766",
+      "amount": -27.84,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/29/23",
+      "description": ": 11/29/23 CHECKCARD 1128 WEST COAST LOCKSMITH IN WOODLAND HILLCA 24493983333400093000041",
+      "amount": -330,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/30/23",
+      "description": "$ 11/30/23 SPROUTS FARMER 11/30 #000974973 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -72.73,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/30/23",
+      "description": "/ 11/30/23 RALPHS #0 1100 11/30 #000126689 PURCHASE RALPHS #0 1100 N. BURBANK CA",
+      "amount": -43.96,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/04/23",
+      "description": ", 12/04/23 CHECKCARD 1130 SHARKYS WOODFIRED MEXI 818-8409080 CA 24000973335765608949824",
+      "amount": -24.05,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/04/23",
+      "description": "CHECKCARD 1130 TRADER JOE S #122 STUDIO CITY CA 24137463335100659290357",
+      "amount": -51.52,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/04/23",
+      "description": "CHECKCARD 1201 AMZN MKTP US*1G4BF9V83 SEATTLE WA 24431063336083345261851",
+      "amount": -134.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/04/23",
+      "description": "CHECKCARD 1202 SP ROTATORELIEVER HTTPSSHOULDERMI 24492163336000015895986",
+      "amount": -189.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/04/23",
+      "description": "LAWRENCE H JOE 12/04 #000699438 PURCHASE LAWRENCE H JOE DD LOS ANGELES CA",
+      "amount": -125,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/05/23",
+      "description": "CHECKCARD 1204 AMZN MKTP US*LV5RC2KC3 SEATTLE WA 24431063338083344184284",
+      "amount": -37.43,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/05/23",
+      "description": "CHECKCARD 1205 WWW.TRUPANION. SEATTLE WA",
+      "amount": -90.41,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/05/23",
+      "description": "SPROUTS FARMER 12/05 #000990032 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -133.28,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/06/23",
+      "description": "CHECKCARD 1204 TST* OINKSTER - EAGLE R Los Angeles CA 24692163339102644734803",
+      "amount": -42.29,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/07/23",
+      "description": "CHECKCARD 1206 AMZN MKTP US*CK1U03K83 SEATTLE WA 24431063340083351818747",
+      "amount": -26.12,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/08/23",
+      "description": "THE HOME DEPOT 12/08 #000220151 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -104.39,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/11/23",
+      "description": "CHECKCARD 1208 TRADER JOE S #252 NORTH HOLLYWOCA 24137463343501091613108",
+      "amount": -23.82,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/11/23",
+      "description": "LOWE'S #1144 12/09 #000681599 PURCHASE LOWE'S #1144 BURBANK CA",
+      "amount": -17.97,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/11/23",
+      "description": "SPROUTS FARMER 12/09 #000930751 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -36.13,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/11/23",
+      "description": "RALPHS #0 1100 12/09 #000153622 PURCHASE RALPHS #0 1100 N. BURBANK CA",
+      "amount": -44.41,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/11/23",
+      "description": "CHECKCARD 1210 AMZN MKTP US*J98KG9NN3 SEATTLE WA 24431063344083743565747",
+      "amount": -18.07,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/11/23",
+      "description": "HOBBYLOBB 641 12/11 #000939467 PURCHASE HOBBYLOBB 641 N. BURBANK CA",
+      "amount": -3.3,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/12/23",
+      "description": "CHECKCARD 1211 AMZN MKTP US*BS8717BX3 SEATTLE WA 24431063346083328224460",
+      "amount": -59.12,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/12/23",
+      "description": "CHECKCARD 1211 FSP*POLISHED BEAUTY BAR BURBANK CA 24445003345300615796831",
+      "amount": -57,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/13/23",
+      "description": "CHECKCARD 1211 SHARKYS WOODFIRED MEXI 818-8409080 CA 24000973346813103200520",
+      "amount": -35.72,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/13/23",
+      "description": "SPROUTS FARMER 12/13 #000798777 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -80.08,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/14/23",
+      "description": "PURCHASE 1213 AMZN Mktp US*177Z64G93 Amzn.com/billWA",
+      "amount": -24.74,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/15/23",
+      "description": "CHECKCARD 1214 AMZN MKTP US*GX46N7H63 SEATTLE WA 24431063348083330629050",
+      "amount": -45.23,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/15/23",
+      "description": "CHECKCARD 1215 SQ *LAW OFFICES OF ROZS gosq.com CA 24692163349101447371019",
+      "amount": -3000,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/15/23",
+      "description": "CVS/PHARMACY # 12/15 #000187985 PURCHASE 09675 -- 12143 Vent Studio City CA",
+      "amount": -17.94,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/15/23",
+      "description": "RALPHS #0 1284 12/15 #000948456 PURCHASE RALPHS #0 12842 V STUDIO CITY CA",
+      "amount": -33.96,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/18/23",
+      "description": "CHECKCARD 1215 LA FITNESS 949-255-8100 CA 24492153349084011559602 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/18/23",
+      "description": "CHECKCARD 1215 AMZN MKTP US*H03PW88D3 SEATTLE WA 24431063349083341602715",
+      "amount": -81.58,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/18/23",
+      "description": "CHECKCARD 1215 LA FITNESS 949-255-8100 CA 24492153349084004830234 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/18/23",
+      "description": "CHECKCARD 1215 TRADER JOE S #122 STUDIO CITY CA 24137463350501109373935",
+      "amount": -80.43,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/18/23",
+      "description": "CHECKCARD 1217 AMZN MKTP US*5A3CR4WS3 SEATTLE WA 24431063351083325506549",
+      "amount": -43.77,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/18/23",
+      "description": "· 12/18/23 GELSON'S MARKE 12/16 #000914942 PURCHASE GELSON'S MARKETS VALLEY VILLAG CA",
+      "amount": -31.07,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/18/23",
+      "description": "CHECKCARD 1216 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786713351900012600270",
+      "amount": -75.54,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/18/23",
+      "description": "₹ 12/18/23 THE HOME DEPOT 12/17 #000676301 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -20.1,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/19/23",
+      "description": "₹ 12/19/23 SPROUTS FARMER 12/19 #000129094 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -90.1,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/29/23",
+      "description": "CHARTER COMMUNIC DES:CHECK PYMT CHECK :0347) INDN:8448200181422279 CO ID:0470122023 ARC\n:selected:",
+      "amount": -291.18,
+      "type": "other"
+    },
+    {
+      "date": "12/04/23",
+      "description": "SOCALGAS DES:ARC PYMT CHECK *: 0346 INDN:0093129100 CO ID:3951240705 ARC\n:selected:",
+      "amount": -35.19,
+      "type": "other"
+    },
+    {
+      "date": "12/08/23",
+      "description": "ATT DES:Payment ID:XXXXXXXXXEPAYJ INDN:MARCI DREXLER CO ID:9864031004 PPD",
+      "amount": -74.78,
+      "type": "other"
+    },
+    {
+      "date": "11/29/23",
+      "description": "344 Authem Pharmacy",
+      "amount": -94.5,
+      "type": "other"
+    },
+    {
+      "date": "11/29/23",
+      "description": "345 Anthem Medical",
+      "amount": -412.04,
+      "type": "other"
+    },
+    {
+      "date": "12/07/23",
+      "description": "348* GARDNER",
+      "amount": -130,
+      "type": "other"
+    },
+    {
+      "date": "12/26/23",
+      "description": "CHECKCARD 1222 Trupanion trupanion.comWA 7490641335618996517",
+      "amount": 11.66,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/09/24",
+      "description": "WIRE TYPE:WIRE IN DATE: 240109 TIME:1753 ET TRN:2024010900480509 SEQ:2024010900008351/002920 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: X7PYW9T6A8",
+      "amount": 26979.17,
+      "type": "wire"
+    },
+    {
+      "date": "01/10/24",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX\\",
+      "amount": 2059.8,
+      "type": "ssa"
+    },
+    {
+      "date": "01/22/24",
+      "description": "Interest Earned",
+      "amount": 10.58,
+      "type": "interest"
+    },
+    {
+      "date": "12/22/23",
+      "description": "· 12/22/23 RALPHS #0 1284 12/22 #000849184 PURCHASE RALPHS #0 12842 V STUDIO CITY CA",
+      "amount": -43.96,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/26/23",
+      "description": "CHECKCARD 1222 TRADER JOE S #122 STUDIO CITY CA 24137463357100695193295",
+      "amount": -68.93,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/26/23",
+      "description": "THE HOME DEPOT 12/24 #000619066 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -54.76,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/26/23",
+      "description": "· 12/26/23 THE HOME DEPOT 12/24 #000897387 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -6.21,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/26/23",
+      "description": "THE HOME DEPOT 12/26 #000251714 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -31.72,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/26/23",
+      "description": "· 12/26/23 SPROUTS FARMER 12/26 #000392466 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -104.92,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/29/23",
+      "description": "CHECKCARD 1228 CAEFILE*013967544-0 213-830-0840 CA 24692163362100426963293",
+      "amount": -437.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/29/23",
+      "description": "¥ 12/29/23 CHECKCARD 1228 CAEFILE*013967544-0 800-297-5377 TX 24692163362100427569925",
+      "amount": -26.67,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/02/24",
+      "description": "1 01/02/24 PURCHASE 1229 WWW.AMAZON* 114-090091 WWW.AMAZON.COWA",
+      "amount": -4.19,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/02/24",
+      "description": "· 01/02/24 CHECKCARD 1231 AMZN MKTP US*ZF3HO2VZ3 SEATTLE WA 24431063365083325556431",
+      "amount": -56.14,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/02/24",
+      "description": "· 01/02/24 CHECKCARD 1231 CHEVRON 0093049 BURBANK CA 24692163365102286353638",
+      "amount": -61.48,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/02/24",
+      "description": "· 01/02/24 CHECKCARD 1230 TRADER JOE S #124 BURBANK CA 24137463365100970299601",
+      "amount": -54.4,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/02/24",
+      "description": "RALPHS #0 1100 12/30 #000413320 PURCHASE RALPHS #0 1100 N. BURBANK CA SPROUTS FARMER 12/30 #000637050 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -19.98,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/02/24",
+      "description": "VINTAGE GROCER 01/01 #000630889 PURCHASE VINTAGE GROCERS MALIBU CA",
+      "amount": -42.05,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/04/24",
+      "description": "RALPHS #0 1284 01/04 #000356465 PURCHASE RALPHS #0 12842 V STUDIO CITY CA CHECKCARD 0104 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714004900010900598",
+      "amount": -45.89,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/05/24",
+      "description": "THE HOME DEPOT 01/05 #000900295 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -172.06,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/05/24",
+      "description": "CHECKCARD 0105 WWW.TRUPANION. SEATTLE WA CHECKCARD 0107 AMAZON.COM*RTOPN9L80 SEATTLE WA 24431064007083711507933",
+      "amount": -90.41,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/08/24",
+      "description": "SPROUTS FARMER 01/07 #000311994 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -162.58,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/09/24",
+      "description": "CHECKCARD 0107 TRADER JOE S #124 BURBANK CA 24137464008500731773268 CHECKCARD 0108 OUTBACK 0565 SANTA CLARITACA 24692164008108608096004",
+      "amount": -45.78,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/12/24",
+      "description": "RALPHS #0 25 E 01/12 #000952075 PURCHASE RALPHS #0 25 E. A BURBANK CA",
+      "amount": -34.12,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/12/24",
+      "description": "SPROUTS FARMER 01/12 #000799849 PURCHASE SPROUTS FARMERS M BURBANK CA CHECKCARD 0112 TRADER JOE S #124 BURBANK CA 24137464013500970405591",
+      "amount": -97.6,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/16/24",
+      "description": "CHECKCARD 0112 MICHELADAS MEX GRILL NORTHRIDGE CA 24275394012900014842175",
+      "amount": -20.76,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/16/24",
+      "description": "CHECKCARD 0114 AMZN MKTP US*RT2NQ6VJ1 SEATTLE WA 24431064014083734034767",
+      "amount": -163.16,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/16/24",
+      "description": "CHECKCARD 0115 LA FITNESS 949-255-8100 CA 24492154015084002174347 RECURRING CHECKCARD",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/18/24",
+      "description": "0115 LA FITNESS 949-255-8100 CA 24492154015084033626505 RECURRING CHECKCARD 0117 AMZN MKTP US*R82A006BO SEATTLE WA 24431064017083756003036",
+      "amount": -8.74,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/18/24",
+      "description": "RALPHS #0 1284 01/18 #000034292 PURCHASE RALPHS #0 12842 V STUDIO CITY CA",
+      "amount": -54.85,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/18/24",
+      "description": "THE HOME DEPOT 01/18 #000417780 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA SPROUTS FARMER 01/18 #000968904 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -60.82,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/22/24",
+      "description": "CHECKCARD 0118 TRADER JOE S #122 STUDIO CITY CA 24137464019500794682403 Total ATM and debit card subtractions",
+      "amount": -54.53,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/29/23",
+      "description": "DES:WEB PAY ID:4027131000 INDN:bonnie drexler CO ID:4956000736 WEB SOCALGAS DES:ARC PYMT CHECK(#:0351 INDN:0093129100",
+      "amount": -634.07,
+      "type": "other"
+    },
+    {
+      "date": "01/04/24",
+      "description": "CHARTER COMMUNIC DES:CHECK PYMT CHECK #:0353 INDN:8448200181422279 CO ID:0470122023 ARC",
+      "amount": -291.18,
+      "type": "check"
+    },
+    {
+      "date": "01/09/24",
+      "description": ": 01/09/24 ATT DES:Payment ID:XXXXXXXXXEPAYN INDN:MARCI DREXLER CO ID:9864031004 PPD",
+      "amount": -74.78,
+      "type": "other"
+    },
+    {
+      "date": "01/22/24",
+      "description": "FRANCHISE TAX BO DES:PAYMENTS ID:XXXXXXXXX PM INDN:DREXLER ID:1282532045 WEB",
+      "amount": -7916,
+      "type": "other"
+    },
+    {
+      "date": "12/21/23",
+      "description": "· 12/21/23 349 Anthem Medical",
+      "amount": -412.04,
+      "type": "other"
+    },
+    {
+      "date": "12/27/23",
+      "description": "§ 12/27/23 350 DMV Renewal",
+      "amount": -428,
+      "type": "other"
+    },
+    {
+      "date": "01/05/24",
+      "description": "৳ 01/05/24 352* GARDNER",
+      "amount": -130,
+      "type": "other"
+    },
+    {
+      "date": "02/12/24",
+      "description": "WIRE TYPE:WIRE IN DATE: 240212 TIME:1155 ET TRN:2024021200320387 SEQ:2024021200003184/000827 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: 4XF24SLNKJ",
+      "amount": 26979.17,
+      "type": "wire"
+    },
+    {
+      "date": "02/14/24",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX\\",
+      "amount": 2059.8,
+      "type": "ssa"
+    },
+    {
+      "date": "02/20/24",
+      "description": "Interest Earned",
+      "amount": 8.84,
+      "type": "interest"
+    },
+    {
+      "date": "01/23/24",
+      "description": "៛ 01/23/24 CHECKCARD 0122 BLT*Kyle Switch Plates 800-5515953 CA 24906414022192042576188",
+      "amount": -474.06,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/24/24",
+      "description": "CHECKCARD 0123 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714023900013200431",
+      "amount": -75.83,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/25/24",
+      "description": "ø 01/25/24 CHECKCARD 0124 AMZN MKTP US*R881729C1 SEATTLE WA 24431064024083332114621",
+      "amount": -14.22,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/25/24",
+      "description": ", 01/25/24 CHECKCARD 0123 TRADER JOE S #122 STUDIO CITY CA 24137464024500739344039",
+      "amount": -45.33,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/25/24",
+      "description": "· 01/25/24 SPROUTS FARMER 01/25 #000622626 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -90.19,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/26/24",
+      "description": "USPS PO 055452 01/26 #000553543 PURCHASE USPS PO 05545203 VALLEY VILLAG CA",
+      "amount": -40.65,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/29/24",
+      "description": "CHECKCARD 0125 SHARKY'S - SHERMAN OAKS LOS ANGELES CA 24801974026872472708618",
+      "amount": -46.53,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/29/24",
+      "description": "· 01/29/24 CHECKCARD 0127 ALL STAR HEALTH.COM 800-875-0448 CA 24692164027103199042209",
+      "amount": -148.21,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/29/24",
+      "description": "DUNN-EDWARDS C 01/27 #000656087 PURCHASE DUNN-EDWARDS CORP BURBANK CA",
+      "amount": -22.92,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/29/24",
+      "description": "¥ 01/29/24 GELSON'S MARKE 01/29 #000609913 PURCHASE GELSON'S MARKETS VALLEY VILLAG CA",
+      "amount": -33.81,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/30/24",
+      "description": "CHECKCARD 0129 AMZN MKTP US*R06S897W2 SEATTLE WA 24431064029083333034401",
+      "amount": -95.29,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/31/24",
+      "description": "4 01/31/24 SPROUTS FARMER 01/31 #000753593 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -120.88,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/01/24",
+      "description": "$ 02/01/24 CHECKCARD 0131 CAEFILE*014269383-0 213-830-0840 CA 24692164031106717184290",
+      "amount": -437.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/01/24",
+      "description": "CHECKCARD 0131 CAEFILE*014269383-0 800-297-5377 TX 24692164031106719659042",
+      "amount": -26.67,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/02/24",
+      "description": "CHECKCARD 0202 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": -51.28,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/05/24",
+      "description": "CHECKCARD 0202 TRADER JOE S #122 STUDIO CITY CA 24137464034501086135929",
+      "amount": -49.36,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/05/24",
+      "description": "GELSON'S MARKE 02/04 #000966983 PURCHASE GELSON'S MARKETS VALLEY VILLAG CA",
+      "amount": -47.97,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/05/24",
+      "description": "CHECKCARD 0205 WWW.TRUPANION. SEATTLE WA",
+      "amount": -90.41,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/06/24",
+      "description": "CHECKCARD 0205 AMZN MKTP US*R21NZ2MN1 SEATTLE WA 24431064036083326024477",
+      "amount": -62.36,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/06/24",
+      "description": "SPROUTS FARMER 02/06 #000742239 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -60.63,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/08/24",
+      "description": "CHECKCARD 0206 TST* HARVEST MOON - NEW Los Angeles CA 24692164038101948407480",
+      "amount": -24.8,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/09/24",
+      "description": "CHECKCARD 0209 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": -42.5,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/09/24",
+      "description": "RALPHS #0 1284 02/09 #000347534 PURCHASE RALPHS #0 12842 V STUDIO CITY CA",
+      "amount": -57.83,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/12/24",
+      "description": "CHECKCARD 0209 TRADER JOE S #122 STUDIO CITY CA 24137464041501127582924",
+      "amount": -55.09,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/14/24",
+      "description": "SPROUTS FARMER 02/13 #000761491 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -122.92,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/15/24",
+      "description": "CHECKCARD 0215 AMZN MKTP US*RB02E7971 SEATTLE WA 24431064046083351272908",
+      "amount": -32.52,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/15/24",
+      "description": "USPS PO 055452 02/15 #000163446 PURCHASE USPS PO 05545203 VALLEY VILLAG CA",
+      "amount": -7.48,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/16/24",
+      "description": "CHECKCARD 0215 LA FITNESS 949-255-8100 CA 24492154046887888621238 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/16/24",
+      "description": "CHECKCARD 0215 LA FITNESS 949-255-8100 CA 24492154046887888613367 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/16/24",
+      "description": "CHECKCARD 0215 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714046900015200465",
+      "amount": -75.54,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/20/24",
+      "description": "CHECKCARD 0215 TRADER JOE S #122 STUDIO CITY CA 24137464047500766164949",
+      "amount": -20.79,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/20/24",
+      "description": "PURCHASE 0217 AMAZON RET* 111-867941 WWW.AMAZON.COWA",
+      "amount": -41.87,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/20/24",
+      "description": "CHECKCARD 0217 AMZN MKTP US*RI80U3NI1 SEATTLE WA 24431064048083323053897",
+      "amount": -13.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/20/24",
+      "description": "SPROUTS FARMER 02/18 #000309381 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -98,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/30/24",
+      "description": "CHARTER COMMUNIC DES:CHECK PYMT CHECK #:0362 JNDN:8448200181422279 CO ID:0470122023 ARC\n:selected:",
+      "amount": -291.18,
+      "type": "check"
+    },
+    {
+      "date": "02/08/24",
+      "description": "ATT DES:Payment ID:XXXXXXXXXEPAYS INDN:MARCI DREXLER CO ID:9864031004 PPD",
+      "amount": -74.88,
+      "type": "other"
+    },
+    {
+      "date": "01/24/24",
+      "description": ", 01/24/24 357 IRS",
+      "amount": -26442,
+      "type": "other"
+    },
+    {
+      "date": "01/29/24",
+      "description": "* 01/29/24 360* Yeule Nails",
+      "amount": -70,
+      "type": "other"
+    },
+    {
+      "date": "03/12/24",
+      "description": "WIRE TYPE:WIRE IN DATE: 240312 TIME:1656 ET TRN:2024031200461648 SEQ:2024031200007433/002244 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: D19COYU6DS",
+      "amount": 26979.17,
+      "type": "wire"
+    },
+    {
+      "date": "03/13/24",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXXI",
+      "amount": 2059.8,
+      "type": "ssa"
+    },
+    {
+      "date": "03/20/24",
+      "description": "Interest Earned",
+      "amount": 9.22,
+      "type": "interest"
+    },
+    {
+      "date": "02/22/24",
+      "description": "CHECKCARD 0221 AMZN MKTP US*RWOPC99JO SEATTLE WA 24431064052083726318015",
+      "amount": -27.02,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/22/24",
+      "description": "CHECKCARD 0221 COFFEE BEAN & TEA BURBANK CA 24692164053100485354774",
+      "amount": -18.32,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/23/24",
+      "description": "· 02/23/24 SPROUTS FARMER 02/23 #000604632 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -82.44,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/26/24",
+      "description": "· 02/26/24 CHECKCARD 0223 AMZN MKTP US*RW2H33X72 SEATTLE WA 24431064054083735076529",
+      "amount": -13.84,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/26/24",
+      "description": "CHECKCARD 0223 TRADER JOE S #124 BURBANK CA 24137464055100596349718",
+      "amount": -37.3,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/26/24",
+      "description": ", 02/26/24 CHECKCARD 0225 AMZN MKTP US*RW4315D12 SEATTLE WA 24431064056083728019518",
+      "amount": -25.12,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/27/24",
+      "description": "CHECKCARD 0226 AMZN MKTP US*RZ8X91650 SEATTLE WA 24431064058083320774310",
+      "amount": -16.41,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/28/24",
+      "description": "§ 02/28/24 SPROUTS FARMER 02/28 #000989004 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -107.01,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/01/24",
+      "description": "CHECKCARD 0228 TRADER JOE S #124 BURBANK CA 24137464060500759275530",
+      "amount": -42.63,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/04/24",
+      "description": "CHECKCARD 0302 XOC TEQUILA GRILL 818-9927930 CA 24000974063206312114575",
+      "amount": -41,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/04/24",
+      "description": "CHECKCARD 0302 LAZ PARKING M47166-SKI CANOGA PARK CA 24055224063016000111567",
+      "amount": -3,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/04/24",
+      "description": ", 03/04/24 SPROUTS FARMER 03/04 #000354360 PURCHASE SPROUTS FARMERS M WOODLAND HILL CA",
+      "amount": -122.38,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/05/24",
+      "description": "CHECKCARD 0305 WWW.TRUPANION. SEATTLE WA",
+      "amount": -90.41,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/06/24",
+      "description": "CHECKCARD 0305 AMAZON.COM*RZ94D4531 SEATTLE WA 24431064066083320282116",
+      "amount": -30.04,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/06/24",
+      "description": "CHECKCARD: 0305 AMZN MKTP US*RN5Y72UZO SEATTLE WA 24431064066083305404826",
+      "amount": -17.51,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/06/24",
+      "description": "CHECKCARD 0305 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714065900018500263",
+      "amount": -84.3,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/06/24",
+      "description": "CHECKCARD\nRECURRING 0306 NORTON *AP1516268549 NORTON.COM/CCAZ 24692164066101511888798",
+      "amount": -94.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/07/24",
+      "description": "CHECKCARD 0305 TRADER JOE S #122 STUDIO CITY CA 24137464066500876216734",
+      "amount": -20.33,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/07/24",
+      "description": "CHECKCARD 0307 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": -68.09,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/11/24",
+      "description": "JORDAN D COLBY 03/07 #000393622 PURCHASE JORDAN D COLBY DM OCEANSIDE CA CHECKCARD 0308 CAEFILE*014602995-0 213-830-0840 CA 24692164068103762939054",
+      "amount": -316,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/11/24",
+      "description": "CHECKCARD 0308 CAEFILE*014602995-0 800-297-5377 TX 24692164068103763710777",
+      "amount": -2.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/11/24",
+      "description": "CHECKCARD 0307 TRADER JOE S #022 OCEANSIDE CA 24137464068500969150582",
+      "amount": -15.06,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/11/24",
+      "description": "SPROUTS FARMER 03/10 #000374316 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -139.85,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/13/24",
+      "description": "CHECKCARD 0312 CAEFILE*014640512-0 213-830-0840 CA 24692164072106953305310",
+      "amount": -2.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/14/24",
+      "description": "CHECKCARD 0312 CAEFILE*014640512-0 800-297-5377 TX 24692164072106954422213",
+      "amount": -14.7,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/18/24",
+      "description": "CHECKCARD 0312 TRADER JOE S #122 STUDIO CITY CA 24137464073500973996668 CHECKCARD 0315 LA FITNESS 949-255-8100 CA 24492154075084025581772 RECURRING",
+      "amount": -31.51,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/18/24",
+      "description": "CHECKCARD 0315 LA FITNESS 949-255-8100 CA 24492154075084004565358 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/18/24",
+      "description": "CHECKCARD 0316 ALL STAR HEALTH.COM 800-875-0448 CA 24692164076109711054077",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/18/24",
+      "description": "CHECKCARD 0315 AMZN MKTP US*R68NN44K1 SEATTLE WA 24431064075083736365017",
+      "amount": -30.65,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/18/24",
+      "description": "CHECKCARD 0316 SXM*SIRIUSXM.COM/ACCT 888-635-5144 NY 24692164076109669433950 RECURRING",
+      "amount": -349.49,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/18/24",
+      "description": "CHECKCARD 0316 TRADER JOE S #124 BURBANK CA 24137464077501223801605",
+      "amount": -20.16,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/20/24",
+      "description": "SPROUTS FARMER 03/16 #000658659 PURCHASE SPROUTS FARMERS M BURBANK CA SPROUTS FARMER 03/20 #000901203 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -111.77,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/22/24",
+      "description": "Amount SOCALGAS DES:ARC PYMT CHECK #:0365 INDN:0093129100 CO ID:3951240705 ARC",
+      "amount": -223.93,
+      "type": "check"
+    },
+    {
+      "date": "02/27/24",
+      "description": "LADWP DES:WEB PAY ID:4027131000 INDN:bonnie drexler CO ID:4956000736 WEB",
+      "amount": -777.15,
+      "type": "other"
+    },
+    {
+      "date": "03/08/24",
+      "description": "CHARTER COMMUNIC DES:CHECK PYMT CHECK #:0367 )INDN:8448200181422279 CO ID:0470122023 ARC\n:selected: ATT DES: Payment ID:XXXXXXXXXEPAYV INDN:MARCI DREXLER CO ID:9864031004 PPD",
+      "amount": -294.23,
+      "type": "check"
+    },
+    {
+      "date": "02/27/24",
+      "description": "364 Anthem Pharmacy / 02/27/24",
+      "amount": -132.7,
+      "type": "other"
+    },
+    {
+      "date": "03/11/24",
+      "description": "368* Gardner",
+      "amount": -130,
+      "type": "other"
+    },
+    {
+      "date": "04/09/24",
+      "description": "WIRE TYPE:WIRE IN DATE: 240409 TIME:1211 ET TRN:2024040900302165 SEQ:2024040900003745/000862 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: 75IEN2ZOIV",
+      "amount": 26979.17,
+      "type": "wire"
+    },
+    {
+      "date": "04/10/24",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR AN1*BE*BONNI E DREXLER *34*XXXXXXXXX1",
+      "amount": 2059.8,
+      "type": "ssa"
+    },
+    {
+      "date": "04/19/24",
+      "description": "Interest Earned",
+      "amount": 3.4,
+      "type": "interest"
+    },
+    {
+      "date": "03/22/24",
+      "description": "CHECKCARD 0320 TRADER JOE S #124 BURBANK CA 24137464081500858544666",
+      "amount": -22.85,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/25/24",
+      "description": "CHECKCARD 0322 CAEFILE*014757613-0 213-830-0840 CA 24692164082105117639661",
+      "amount": -2.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/25/24",
+      "description": "CHECKCARD 0322 CAEFILE*014757613-0 800-297-5377 TX 24692164082105118860100",
+      "amount": -14.7,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/25/24",
+      "description": "THE HOME DEPOT 03/24 #000515145 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -109.97,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/25/24",
+      "description": "SPROUTS FARMER 03/25 #000705468 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -102.97,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/27/24",
+      "description": "CHECKCARD 0326 BUILD.COM 800-375-3403 CA 24435654086083748680693",
+      "amount": -217.91,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/28/24",
+      "description": "CHECKCARD 0327 BUILD.COM 800-375-3403 CA 24435654087083749120847",
+      "amount": -56.37,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/29/24",
+      "description": "CHECKCARD 0328 CAEFILE*014818683-0 213-830-0840 CA 24692164088100039792973",
+      "amount": -2.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/29/24",
+      "description": "CHECKCARD 0328 CAEFILE*014818683-0 800-297-5377 TX 24692164088100039791868",
+      "amount": -14.7,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/29/24",
+      "description": "CHECKCARD 0327 TRADER JOE S #122 STUDIO CITY CA 24137464088500932664061",
+      "amount": -59.1,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/29/24",
+      "description": "CHECKCARD 0329 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": -73.85,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/29/24",
+      "description": "SPROUTS FARMER 03/29 #000171774 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -124.35,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/01/24",
+      "description": "CHECKCARD 0329 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714089900019700179",
+      "amount": -84.3,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/02/24",
+      "description": "SPROUTS FARMER 04/02 #000151916 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -87.23,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/04/24",
+      "description": "CHECKCARD 0402 TRADER JOE S #054 TOLUCA LAKE CA 24137464094500898600630",
+      "amount": -34.31,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/05/24",
+      "description": "CHECKCARD 0405 WWW.TRUPANION. SEATTLE WA",
+      "amount": -90.41,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/08/24",
+      "description": "SPROUTS FARMER 04/08 #000995119 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": 128.5,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/09/24",
+      "description": "CHECKCARD 0407 SHAKE SHACK - 1309 646-747-7178 CA 24692164099105857119941",
+      "amount": -36.73,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/09/24",
+      "description": "CHECKCARD 0407 SALSA & BEER VAN NUYS CA 24040684099900017000320",
+      "amount": -23.79,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/10/24",
+      "description": "CHECKCARD 0408 TRADER JOE S #124 BURBANK CA 24137464100500855079242",
+      "amount": -45.69,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/10/24",
+      "description": "PURCHASE 0410 AMZN Mktp US*Q52TD7GF3 Amzn.com/billWA",
+      "amount": -17.51,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/12/24",
+      "description": "SPROUTS FARMER 04/11 #000348320 PURCHASE SPROUTS FARMERS M WOODLAND HILL CA",
+      "amount": -127.14,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/16/24",
+      "description": "CHECKCARD 0415 LA FITNESS 949-255-8100 CA 24492154106084018270683 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/16/24",
+      "description": "CHECKCARD 0415 LA FITNESS 949-255-8100 CA 24492154106084001271086 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/16/24",
+      "description": "SPROUTS FARMER 04/16 #000787275 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -83.03,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/18/24",
+      "description": "CHECKCARD 0416 TRADER JOE S #124 BURBANK CA 24137464108500880689736",
+      "amount": -37.85,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/27/24",
+      "description": "LOGIX FCU DES:LOGIX ID:000000449444600 INDN:THE BONNIE DREXL CO ID:0956044941 PPD",
+      "amount": -500000,
+      "type": "other"
+    },
+    {
+      "date": "03/28/24",
+      "description": "CHARTER COMMUNIC DES:CHECK PYMT CHECK #:0373 NDN:8448200181422279 co ID:0470122023 ARC\n:selected:",
+      "amount": -294.23,
+      "type": "check"
+    },
+    {
+      "date": "04/01/24",
+      "description": "1 04/01/24 SOCALGAS DES:ARC PYMT CHECK #0370 INDN:0093129100 CO ID:3951240705 ARC",
+      "amount": -247.32,
+      "type": "check"
+    },
+    {
+      "date": "04/09/24",
+      "description": ". 04/09/24 ATT DES:Payment ID:XXXXXXXXXEPAYA INDN:MARCI DREXLER CO ID:9864031004 PPD",
+      "amount": -72.95,
+      "type": "other"
+    },
+    {
+      "date": "04/16/24",
+      "description": "FRANCHISE TAX BO DES:PAYMENTS ID:XXXXXXXXX PM INDN:DREXLER CO ID:1282532045 WEB",
+      "amount": -3252,
+      "type": "other"
+    },
+    {
+      "date": "03/29/24",
+      "description": "› 03/29/24 369 Shapiro fax Prep",
+      "amount": -400,
+      "type": "other"
+    },
+    {
+      "date": "03/28/24",
+      "description": "371* Anthem",
+      "amount": -132.7,
+      "type": "other"
+    },
+    {
+      "date": "03/28/24",
+      "description": "372 Authem",
+      "amount": -463.2,
+      "type": "other"
+    },
+    {
+      "date": "03/28/24",
+      "description": "374* Felipe Juarez",
+      "amount": -793.5,
+      "type": "other"
+    },
+    {
+      "date": "03/29/24",
+      "description": ": 03/29/24 375 Manuel Gonzalez",
+      "amount": -130,
+      "type": "other"
+    },
+    {
+      "date": "05/01/24",
+      "description": "CHECKCARD 0429 THE HOME DEPOT #6613 N. HOLLYWOOD CA 7494301412101018549",
+      "amount": 60.28,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/08/24",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX\\",
+      "amount": 2059.8,
+      "type": "ssa"
+    },
+    {
+      "date": "05/10/24",
+      "description": "WIRE TYPE:WIRE IN DATE: 240510 TIME:1706 ET TRN:2024051000501234 SEQ:2024051000009275/003021 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: H65UJ2F3A3",
+      "amount": 26979.17,
+      "type": "wire"
+    },
+    {
+      "date": "05/21/24",
+      "description": "֏ 05/21/24 Interest Earned",
+      "amount": 2.17,
+      "type": "interest"
+    },
+    {
+      "date": "04/22/24",
+      "description": "CHECKCARD 0418 SHARKY'S - SHERMAN OAKS LOS ANGELES CA 24801974110872123759843",
+      "amount": -33.66,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/22/24",
+      "description": "CHECKCARD 0419 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714110900011900655",
+      "amount": -84.34,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/22/24",
+      "description": "THE HOME DEPOT 04/20 #000056484 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -43.71,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/22/24",
+      "description": "THE HOME DEPOT 04/20 #000549410 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -116.77,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/22/24",
+      "description": "WALGREENS STOR 04/22 #000809573 PURCHASE WALGREENS STORE 1 BURBANK CA",
+      "amount": -24.54,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/22/24",
+      "description": "SPROUTS FARMER 04/22 #000683062 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -127.68,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/23/24",
+      "description": "PURCHASE 0422 AMZN Mktp US*EB8FE6PS3 Amzn.com/billWA",
+      "amount": -7.65,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/24/24",
+      "description": "CHECKCARD 0422 TRADER JOE S #124 BURBANK CA 24137464114500864812694",
+      "amount": -47.28,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/24/24",
+      "description": "PURCHASE 0424 AMZN Mktp US*YE49613B3 Amzn.com/billWA",
+      "amount": -12.8,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/24/24",
+      "description": "PURCHASE 0424 AMZN Mktp US*YY3HE8L53 Amzn.com/billWA",
+      "amount": -14.01,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/25/24",
+      "description": "CHECKCARD 0424 CAEFILE*015101560-0 213-830-0840 CA 24692164115109267755658",
+      "amount": -2.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/25/24",
+      "description": "CHECKCARD 0424 CAEFILE*015101560-0 800-297-5377 TX 24692164115109267783825",
+      "amount": -14.7,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/25/24",
+      "description": "CHECKCARD 0424 CAEFILE*015104797-0 213-830-0840 CA 24692164115109268294137",
+      "amount": -2.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/25/24",
+      "description": "CHECKCARD 0424 CAEFILE*015104797-0 800-297-5377 TX 24692164115109268301031",
+      "amount": -14.7,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/25/24",
+      "description": "CHECKCARD 0424 CAEFILE*015104905-0 800-297-5377 TX 24692164115109268300983",
+      "amount": -14.7,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/25/24",
+      "description": "CHECKCARD 0424 CAEFILE*015101567-0 800-297-5377 TX 24692164115109267783817",
+      "amount": -14.7,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/25/24",
+      "description": "CHECKCARD 0424 CAEFILE*015101567-0 213-830-0840 CA 24692164115109267755641",
+      "amount": -2.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/25/24",
+      "description": "CHECKCARD 0424 CAEFILE*015104905-0 213-830-0840 CA 24692164115109268293709",
+      "amount": -2.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/25/24",
+      "description": "PURCHASE 0424 AMZN Mktp US*SA6WZ8QA3 Amzn.com/billWA",
+      "amount": -34.14,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/25/24",
+      "description": "CHECKCARD 0424 SQ *SUGAR NAILS Valley VillagCA 24692164115109065397448",
+      "amount": -31,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/26/24",
+      "description": "CHECKCARD 0425 CAEFILE*015120766-0 213-830-0840 CA 24692164116100094537525",
+      "amount": -2.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/26/24",
+      "description": "CHECKCARD 0425 CAEFILE*015120766-0 800-297-5377 TX 24692164116100094571698",
+      "amount": -14.7,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/29/24",
+      "description": "CHECKCARD 0426 BAJA FRESH 30675 MARINA DEL RECA 24138294118401000000367",
+      "amount": -57.56,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/29/24",
+      "description": "CHECKCARD 0427 THE HOME DEPOT #6613 N. HOLLYWOOD CA 24943014119010194135461",
+      "amount": -227.49,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/29/24",
+      "description": "SPROUTS FARMER 04/27 #000793704 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -124.87,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/01/24",
+      "description": "CHECKCARD 0430 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": -78.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/01/24",
+      "description": "THE HOME DEPOT 05/01 #000830101 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -20.09,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/01/24",
+      "description": "SPROUTS FARMER 05/01 #000658172 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -104.16,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/02/24",
+      "description": "CHECKCARD 0430 TRADER JOE S #122 STUDIO CITY CA 24137464122500976965828",
+      "amount": -46.39,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/03/24",
+      "description": "PURCHASE 0502 Amazon Prime*003743R13 Amzn.com/billWA Prime Membership",
+      "amount": -152.21,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/06/24",
+      "description": "PURCHASE 0505 AMZN Mktp US*7Y4001HP3 Amzn.com/billWA",
+      "amount": -35.01,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/06/24",
+      "description": "CHECKCARD 0505 WWW.TRUPANION. SEATTLE WA 00000000000000000747709 RECURRING",
+      "amount": -90.41,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/06/24",
+      "description": "SPROUTS FARMER 05/06 #000630523 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -79.2,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/06/24",
+      "description": "SPROUTS FARMER 05/06 #000632064 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -6.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/07/24",
+      "description": "THE HOME DEPOT 05/07 #000156829 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -56.58,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/08/24",
+      "description": "CHECKCARD 0506 TRADER JOE S #122 STUDIO CITY CA 24137464128500873053680",
+      "amount": -45.98,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/10/24",
+      "description": "CVS/PHARMACY # 05/10 #000047121 PURCHASE 09675 -- 12143 Vent Studio City CA",
+      "amount": -29.37,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/10/24",
+      "description": "THE HOME DEPOT 05/10 #000871351 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -104.2,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/13/24",
+      "description": "PURCHASE 0511 AMAZON MAR* 112-786080 HTTPSAMAZON.CWA",
+      "amount": -19.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/13/24",
+      "description": "CHECKCARD 0511 TRADER JOE S #124 BURBANK CA 24137464133501263275639",
+      "amount": -23.96,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/13/24",
+      "description": "SPROUTS FARMER 05/11 #000656019 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -78.62,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/13/24",
+      "description": "CHECKCARD 0511 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714133900014100710",
+      "amount": -84.3,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/14/24",
+      "description": "PURCHASE 0514 AMAZON RET* 112-948185 WWW.AMAZON.COWA",
+      "amount": -119.36,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/16/24",
+      "description": "PURCHASE 0515 AMAZON RET* 112-948185 WWW.AMAZON.COWA",
+      "amount": -98.53,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/16/24",
+      "description": "CHECKCARD 0515 LA FITNESS 949-255-8100 CA 24492154136084020006327 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/16/24",
+      "description": "៛ 05/16/24 CHECKCARD 0515 LA FITNESS 949-255-8100 CA 24492154136084004891744 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/16/24",
+      "description": "SPROUTS FARMER 05/15 #000951406 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -121.95,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/20/24",
+      "description": "CHECKCARD 0517 ALL STAR HEALTH.COM 800-875-0448 CA 24692164138108085942095",
+      "amount": -113.62,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/20/24",
+      "description": "\", 05/20/24 SPROUTS FARMER 05/20 #000635788 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -93,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/22/24",
+      "description": "· 04/22/24 LADWP DES:WEB PAY ID:4027131000 INDN:bonnie drexler CO ID:4956000736 WEB",
+      "amount": -641.03,
+      "type": "other"
+    },
+    {
+      "date": "04/26/24",
+      "description": "SOCALGAS DES:ARC PYMT CHECK #0379 INDN:0093129100 CO ID:3951240705 ARC\n:selected:",
+      "amount": -54.37,
+      "type": "check"
+    },
+    {
+      "date": "05/06/24",
+      "description": "CHARTER COMMUNIC DES:CHECK PYMT CHECK #0380 INDN:8448200181422279 CO ID:0470122023 ARC\n:selected:",
+      "amount": -294.23,
+      "type": "check"
+    },
+    {
+      "date": "05/08/24",
+      "description": "ATT DES:Payment ID:XXXXXXXXXEPAYE INDN:MARCI DREXLER CO ID:9864031004 PPD",
+      "amount": -72.84,
+      "type": "other"
+    },
+    {
+      "date": "04/25/24",
+      "description": "7 04/25/24 376 Nationwide HomeInsurance",
+      "amount": -6892.47,
+      "type": "other"
+    },
+    {
+      "date": "04/24/24",
+      "description": "377 Authem",
+      "amount": -132.7,
+      "type": "other"
+    },
+    {
+      "date": "04/25/24",
+      "description": "378 Authem",
+      "amount": -463.2,
+      "type": "other"
+    },
+    {
+      "date": "05/03/24",
+      "description": "· 05/03/24 381* Manuel Gonzalez",
+      "amount": -130,
+      "type": "other"
+    },
+    {
+      "date": "06/10/24",
+      "description": "WIRE TYPE:WIRE IN DATE: 240610 TIME:1118 ET TRN:2024061000374014 SEQ:2024061000002999/000753 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: SFLUEBUCOM",
+      "amount": 26979.17,
+      "type": "wire"
+    },
+    {
+      "date": "06/12/24",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX1",
+      "amount": 2059.8,
+      "type": "ssa"
+    },
+    {
+      "date": "06/13/24",
+      "description": "NST THE HOME D 06/13 #000181102 REFUND 116 SHERMAN WAY N. HOLLYWOOD CA",
+      "amount": 22.04,
+      "type": "other"
+    },
+    {
+      "date": "06/17/24",
+      "description": "· 06/17/24 CHECKCARD 0613 THE HOME DEPOT #6613 N. HOLLYWOOD CA 7494301416601018556",
+      "amount": 6.55,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/18/24",
+      "description": ": 06/18/24 Interest Earned",
+      "amount": 2.24,
+      "type": "interest"
+    },
+    {
+      "date": "05/22/24",
+      "description": "CHECKCARD 0520 TRADER JOE S #122 STUDIO CITY CA 24137464142500801684582",
+      "amount": -39.13,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/23/24",
+      "description": "LAWRENCE H JOE 05/23 #000288987 PURCHASE LAWRENCE H JOE DD LOS ANGELES CA",
+      "amount": -125,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/28/24",
+      "description": "CHECKCARD 0524 TST* HEAVY HANDED STUDI STUDIO CITY CA 24137464145100299060614",
+      "amount": -32.37,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/28/24",
+      "description": "CHECKCARD 0525 TRADER JOE S #124 BURBANK CA 24137464147501151322554",
+      "amount": -33.22,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/28/24",
+      "description": "SPROUTS FARMER 05/25 #000986786 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -142.06,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/28/24",
+      "description": "THE HOME DEPOT 05/28 #000885273 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -66.24,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/29/24",
+      "description": "CHECKCARD 0528 ANYTIME WINDOWS AND DOO 424-2029177 CA 24355894149421679283884",
+      "amount": -447.5,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/30/24",
+      "description": "SPROUTS FARMER 05/29 #000323651 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -94.95,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/03/24",
+      "description": "CHECKCARD 0602 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": -77.67,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/03/24",
+      "description": "# 06/03/24 VINTAGE GROCER 06/02 #000655575 PURCHASE VINTAGE GROCERS MALIBU CA",
+      "amount": -9.98,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/03/24",
+      "description": "SPROUTS FARMER 06/03 #000923087 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -95.57,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/04/24",
+      "description": "CHECKCARD 0602 TST* FOR THE WIN - VAN Los Angeles CA 24692164155109559806632",
+      "amount": -30,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/04/24",
+      "description": "CHECKCARD 0602 TRADER JOE S #122 STUDIO CITY CA 24137464155500911025878",
+      "amount": -47.33,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/04/24",
+      "description": "CHECKCARD 0603 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714155900019200419",
+      "amount": -84.3,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/05/24",
+      "description": "CHECKCARD 0605 WWW.TRUPANION. SEATTLE WA 00000000000000000403368 RECURRING",
+      "amount": -90.41,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/07/24",
+      "description": "CHECKCARD 0605 TST* MARSTONS Valencia CA 24692164158102097017470",
+      "amount": -38.11,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/10/24",
+      "description": "CHECKCARD 0607 TST* FOR THE WIN - VAN Los Angeles CA 24692164160103874343689",
+      "amount": -23.27,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/10/24",
+      "description": "SPROUTS FARMER 06/09 #000792919 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -134.7,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/10/24",
+      "description": "CVS/PHARMACY # 06/09 #000182849 PURCHASE 09601 -- 1015 N. Sa Burbank CA",
+      "amount": -33.9,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/12/24",
+      "description": "THE HOME DEPOT 06/12 #000544347 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -83.95,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/13/24",
+      "description": "CHECKCARD 0611 TRADER JOE S #122 STUDIO CITY CA 24137464164500900164737",
+      "amount": -41.7,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/13/24",
+      "description": "THE HOME DEPOT 06/13 #000851736 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -49.17,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/14/24",
+      "description": "SPROUTS FARMER 06/14 #000629174 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -129.45,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/17/24",
+      "description": "PURCHASE 0614 AMAZON MKTPL*5DONM2MA3 Amzn.com/billWA",
+      "amount": -21.89,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/17/24",
+      "description": "CHECKCARD 0615 LA FITNESS 949-255-8100 CA 24492154167000732335848 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/17/24",
+      "description": "CHECKCARD 0615 LA FITNESS 949-255-8100 CA 24492154167000732313456 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/17/24",
+      "description": "PURCHASE 0615 SP HEALTHYLINE HEALTHYLINE.CNY",
+      "amount": -899,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/17/24",
+      "description": "CVS/PHARM 0967 06/15 #000121964 PURCHASE CVS/PHARM 09675 -- Studio City CA",
+      "amount": -14.94,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/18/24",
+      "description": "VIOC GN0013 06/18 #000572069 PURCHASE VIOC GN0013 NORTH HOLLYWO CA",
+      "amount": -47.01,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/28/24",
+      "description": "SOCALGAS DES:ARC PYMT CHECK #:0384 INDN:0093129100 CO ID:3951240705 ARC\n:selected:",
+      "amount": -79.6,
+      "type": "check"
+    },
+    {
+      "date": "06/07/24",
+      "description": "CHARTER COMMUNIC DES:CHECK PYMT CHECK #:0385 UNDN:8448200181422279 co ID:0470122023 ARC\n:selected:",
+      "amount": -294.23,
+      "type": "check"
+    },
+    {
+      "date": "06/10/24",
+      "description": "ATT DES:Payment ID:XXXXXXXXXEPAYJ INDN:MARCI DREXLER CO ID:9864031004 PPD",
+      "amount": -72.84,
+      "type": "other"
+    },
+    {
+      "date": "06/18/24",
+      "description": "FRANCHISE TAX BO DES:PAYMENTS ID:XXXXXXXXX PM INDN:DREXLER CO ID:1282532045 WEB",
+      "amount": -4487,
+      "type": "other"
+    },
+    {
+      "date": "05/28/24",
+      "description": "382 Anthem · 05/28/24 383",
+      "amount": -463.2,
+      "type": "other"
+    },
+    {
+      "date": "07/10/24",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR AN1*BE*BONNI E DREXLER *34*XXXXXXXXXI",
+      "amount": 2059.8,
+      "type": "ssa"
+    },
+    {
+      "date": "07/16/24",
+      "description": "WIRE TYPE:WIRE IN DATE: 240716 TIME:0932 ET TRN:2024071600302376 SEQ:2024071600001558/000365 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: 9ARX1EV4YO",
+      "amount": 26979.17,
+      "type": "wire"
+    },
+    {
+      "date": "07/22/24",
+      "description": "Interest Earned",
+      "amount": 2.91,
+      "type": "interest"
+    },
+    {
+      "date": "06/20/24",
+      "description": "₹ 06/20/24 CHECKCARD 0618 TRADER JOE S #122 STUDIO CITY CA 24137464171500809457316",
+      "amount": -66.7,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/21/24",
+      "description": "PURCHASE 0620 AMAZON MKTPL*RG6R43Q60 Amzn.com/billWA",
+      "amount": -16.09,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/21/24",
+      "description": "SPROUTS FARMER 06/21 #000938457 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -104.4,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/24/24",
+      "description": "CHECKCARD 0621 CAEFILE*015685153-0 213-830-0840 CA 24692164173105255537180",
+      "amount": -437.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/24/24",
+      "description": "CHECKCARD 0621 CAEFILE*015685153-0 800-297-5377 TX 24692164173105255584075",
+      "amount": -26.67,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/24/24",
+      "description": "THE HOME DEPOT 06/24 #000707920 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -31.68,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/25/24",
+      "description": "CHECKCARD 0624 CAEFILE*015685355-0 213-830-0840 CA 24692164176107745280873",
+      "amount": -437.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/25/24",
+      "description": "CHECKCARD 0624 CAEFILE*015685355-0 800-297-5377 TX 24692164176107745266534",
+      "amount": -26.67,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/25/24",
+      "description": "CHECKCARD 0624 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714176900011700031",
+      "amount": -84.3,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/25/24",
+      "description": "THE HOME DEPOT 06/25 #000891275 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -17.14,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/26/24",
+      "description": "CHECKCARD 0624 TRADER JOE S #122 STUDIO CITY CA 24137464177500892004920",
+      "amount": -46.36,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/27/24",
+      "description": "CHECKCARD 0626 CAEFILE*015753013-0 213-830-0840 CA 24692164178109365460205",
+      "amount": -2.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/27/24",
+      "description": "CHECKCARD 0626 CAEFILE*015753013-0 800-297-5377 TX 24692164178109365467648",
+      "amount": -14.7,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/27/24",
+      "description": "SPROUTS FARMER 06/27 #000978125 PURCHASE SPROUTS FARMERS M WOODLAND HILL CA",
+      "amount": -102.21,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/28/24",
+      "description": "PURCHASE 0627 AMAZON MKTPL*RCORL33V1 Amzn.com/billWA",
+      "amount": -111.08,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/01/24",
+      "description": "CHECKCARD 0627 TST* OLD NEW YORK DELI Woodland HillCA 24692164180100691176074",
+      "amount": -50.37,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/02/24",
+      "description": "SPROUTS FARMER 07/02 #000309161 PURCHASE SPROUTS FARMERS M WOODLAND HILL CA",
+      "amount": -134.61,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/05/24",
+      "description": "CHECKCARD 0703 STUDIO SMOG STUDIO CITY CA 24692164186105732648803",
+      "amount": -50,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/05/24",
+      "description": "CHECKCARD 0703 TRADER JOE S #122 STUDIO CITY CA 24137464186100398893071",
+      "amount": -51.83,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/05/24",
+      "description": "CHECKCARD 0704 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": -42.06,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/05/24",
+      "description": "SPROUTS FARMER 07/04 #000994294 PURCHASE SPROUTS FARMERS M WOODLAND HILL CA",
+      "amount": -21.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/05/24",
+      "description": "THE HOME DEPOT 07/05 #000908120 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -62.29,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/05/24",
+      "description": "CHECKCARD 0705 WWW.TRUPANION. SEATTLE WA 00000000000000000698101 RECURRING",
+      "amount": -90.41,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/08/24",
+      "description": "CHECKCARD 0705 FATBURGER - 116 WOODLAND HILLCA 24269794188500854261176",
+      "amount": -15.33,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/08/24",
+      "description": "GELSON'S MARKE 07/06 #000979753 PURCHASE GELSON'S MARKETS VALLEY VILLAG CA",
+      "amount": -24.61,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/08/24",
+      "description": "SPROUTS FARMER 07/07 #000190154 PURCHASE SPROUTS FARMERS M WOODLAND HILL CA",
+      "amount": -91.01,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/10/24",
+      "description": "SPROUTS FARMER 07/10 #000780052 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -87.58,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/12/24",
+      "description": "CHECKCARD 0710 TRADER JOE S #124 BURBANK CA 24137464193500972598452",
+      "amount": -35.61,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/12/24",
+      "description": "CHECKCARD 0711 ALL STAR HEALTH.COM 800-875-0448 CA 24692164193101465209765",
+      "amount": -197.14,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/12/24",
+      "description": "PURCHASE 0711 AMAZON MKTPL*RY69L3XK2 Amzn.com/billWA",
+      "amount": -41.6,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/15/24",
+      "description": "CHECKCARD 0713 AMAZON.COM*RYOID9QT1 SEATTLE WA 24431064195017709686046",
+      "amount": -59.56,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/15/24",
+      "description": "CHECKCARD 0713 TST* FOR THE WIN - HOLL Los Angeles CA 24692164196101250223630",
+      "amount": -59.15,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/15/24",
+      "description": "CHECKCARD 0715 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": -71.11,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/15/24",
+      "description": "SPROUTS FARMER 07/15 #000978722 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -114.54,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/16/24",
+      "description": "CHECKCARD 0715 LA FITNESS 949-255-8100 CA 24492154197009989993724 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/16/24",
+      "description": "CHECKCARD 0715 LA FITNESS 949-255-8100 CA 24492154197009989824267 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/18/24",
+      "description": "LOWE'S #1144 07/18 #000363165 PURCHASE LOWE'S #1144 BURBANK CA",
+      "amount": -96.56,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/18/24",
+      "description": "WALGREENS STOR 07/18 #000937847 PURCHASE WALGREENS STORE 1 BURBANK CA",
+      "amount": -27.3,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/22/24",
+      "description": "CHECKCARD 0718 TRADER JOE S #124 BURBANK CA 24137464201500971319603",
+      "amount": -53.56,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/22/24",
+      "description": "PURCHASE 0720 AMAZON MKTPL*RJ7039JLO Amzn.com/billWA",
+      "amount": -84.28,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/22/24",
+      "description": "CHECKCARD 0719 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714201900011100587",
+      "amount": -84.3,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/22/24",
+      "description": "SPROUTS FARMER 07/20 #000630896 PURCHASE SPROUTS FARMERS M WOODLAND HILL CA",
+      "amount": -112.4,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/21/24",
+      "description": "LADWP DES:WEB PAY ID:4027131000 INDN:bonnie drexler CO ID:4956000736 WEB",
+      "amount": -565.22,
+      "type": "other"
+    },
+    {
+      "date": "06/26/24",
+      "description": "US TREASURY IRS DES:PAYMENT CHECK #:0388 INDN:PUSB85241770060545 CO ID:2009290085 ARC\n:selected: SOCALGAS DES:ARC PYMT CHECK #:0389 INDN:0093129100 CO ID:3951240705 ARC\n:selected:",
+      "amount": -6178,
+      "type": "check"
+    },
+    {
+      "date": "07/02/24",
+      "description": "CHARTER COMMUNIC DES:CHECK PYMT CHECK #0393 /INDN:8448200181422279 co ID:0470122023 ARC\n:selected:",
+      "amount": -294.23,
+      "type": "check"
+    },
+    {
+      "date": "07/09/24",
+      "description": "ATT DES:Payment ID:XXXXXXXXXEPAYN INDN:MARCI DREXLER CO ID:9864031004 PPD",
+      "amount": -72.84,
+      "type": "other"
+    },
+    {
+      "date": "07/01/24",
+      "description": "1 07/01/24 390 Geico 6 months",
+      "amount": -2191.46,
+      "type": "other"
+    },
+    {
+      "date": "07/01/24",
+      "description": ": 07/01/24 391 Authem",
+      "amount": -463.2,
+      "type": "other"
+    },
+    {
+      "date": "07/01/24",
+      "description": "· 07/01/24 392 Authem",
+      "amount": -132.7,
+      "type": "other"
+    },
+    {
+      "date": "08/13/24",
+      "description": "WIRE TYPE:WIRE IN DATE: 240813 TIME:1151 ET TRN:2024081300351877 SEQ:2024081300003196/000892 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: M2810MDXUV",
+      "amount": 26979.17,
+      "type": "wire"
+    },
+    {
+      "date": "08/14/24",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR co ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX1",
+      "amount": 2059.8,
+      "type": "ssa"
+    },
+    {
+      "date": "08/21/24",
+      "description": "¢ 08/21/24 Interest Earned",
+      "amount": 2.99,
+      "type": "interest"
+    },
+    {
+      "date": "07/23/24",
+      "description": "PURCHASE 0722 AMAZON MKTPL*RJ68U11J2 Amzn.com/billWA",
+      "amount": -62.83,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/25/24",
+      "description": "# 07/25/24 SPROUTS FARMER 07/25 #000114629 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -124.85,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/29/24",
+      "description": "¥ 07/29/24 CHECKCARD 0725 TRADER JOE S #124 BURBANK CA 24137464208500819190813",
+      "amount": -46.4,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/30/24",
+      "description": "¥ 07/30/24 SPROUTS FARMER 07/30 #000334398 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -82.61,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/01/24",
+      "description": "CHECKCARD 0730 TRADER JOE S #124 BURBANK CA 24137464213500965846724",
+      "amount": -47.54,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/01/24",
+      "description": "CHECKCARD 0731 SQ *SUGAR NAILS Valley VillagCA 24692164213106315953013",
+      "amount": -26,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/05/24",
+      "description": "PURCHASE 0802 AMAZON MKTPL*RF51H4ZGO Amzn.com/billWA",
+      "amount": -72.93,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/05/24",
+      "description": "PURCHASE 0804 AMAZON MKTPL*RFOT96EV1 Amzn.com/billWA",
+      "amount": -311.42,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/05/24",
+      "description": "SPROUTS FARMER 08/03 #000124009 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -122.29,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/05/24",
+      "description": "/ 08/05/24 CHECKCARD 0805 WWW.TRUPANION. SEATTLE WA 00000000000000000817928 RECURRING",
+      "amount": -90.41,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/09/24",
+      "description": "SPROUTS FARMER 08/09 #000178133 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -116.73,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/12/24",
+      "description": "¢ 08/12/24 CHECKCARD 0809 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714222900013300180",
+      "amount": -84.3,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/12/24",
+      "description": "៛ 08/12/24 CHECKCARD 0809 TRADER JOE S #124 BURBANK CA 24137464223501285487940",
+      "amount": -43.88,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/12/24",
+      "description": "PURCHASE 0811 AMAZON MKTPL*RM5VL9PO1 Amzn.com/billWA",
+      "amount": -47.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/14/24",
+      "description": "CHECKCARD 0813 CAEFILE*016234648-0 213-830-0840 CA 24692164226107765052566",
+      "amount": -2.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/14/24",
+      "description": "CHECKCARD 0813 CAEFILE*016234648-0 800-297-5377 TX 24692164226107765080849",
+      "amount": -14.7,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/14/24",
+      "description": "SPROUTS FARMER 08/14 #000979525 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -98.8,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/15/24",
+      "description": "CHECKCARD 0815 LA FITNESS IRVINE CA 00000000000000000113193 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/15/24",
+      "description": "CHECKCARD 0815 LA FITNESS IRVINE CA 00000000000000000124435 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/16/24",
+      "description": "CHECKCARD 0815 CAEFILE*016272835-0 213-830-0840 CA 24692164228109468237674",
+      "amount": -2.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/16/24",
+      "description": "CHECKCARD 0815 CAEFILE*016272835-0 800-297-5377 TX 24692164228109468226834",
+      "amount": -14.7,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/16/24",
+      "description": "GELSON'S MARKE 08/16 #000903487 PURCHASE GELSON'S MARKETS VALLEY VILLAG CA",
+      "amount": -9.03,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/19/24",
+      "description": "CHECKCARD 0816 TRADER JOE S #122 STUDIO CITY CA 24137464230501223109367",
+      "amount": -42.04,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/19/24",
+      "description": "PURCHASE 0817 AMAZON MKTPL*RU87W8P20 Amzn.com/billWA",
+      "amount": -94.79,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/19/24",
+      "description": "CHECKCARD 0818 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": -53.22,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/19/24",
+      "description": "SPROUTS FARMER 08/18 #000133160 PURCHASE SPROUTS FARMERS M WOODLAND HILL CA",
+      "amount": -89.23,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/21/24",
+      "description": "CHECKCARD 0820 CAEFILE*016313583-0 213-830-0840 CA 24692164233103766188765",
+      "amount": -2.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/21/24",
+      "description": "CHECKCARD 0820 CAEFILE*016313583-0 800-297-5377 TX 24692164233103766209496",
+      "amount": -14.7,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/21/24",
+      "description": "CHECKCARD 0820 CAEFILE*016313598-0 213-830-0840 CA 24692164233103766188781",
+      "amount": -2.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/21/24",
+      "description": "CHECKCARD 0820 CAEFILE*016313598-0 800-297-5377 TX 24692164233103766209140",
+      "amount": -14.7,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/21/24",
+      "description": "THE HOME DEPOT 08/21 #000443818 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -28.94,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/31/24",
+      "description": "SOCALGAS DES:ARC PYMT CHECK #0396 INDN:0093129100 CO ID:3951240705 ARC\n:selected:",
+      "amount": -32.47,
+      "type": "check"
+    },
+    {
+      "date": "08/06/24",
+      "description": "CHARTER COMMUNIC DES:CHECK PYMT CHECK #:0398)INDN:8448200181422279 CO ID:0470122023 ARC\n:selected:",
+      "amount": -295.48,
+      "type": "check"
+    },
+    {
+      "date": "08/08/24",
+      "description": "ATT DES:Payment ID:XXXXXXXXXEPAYS INDN:MARCI DREXLER CO ID:9864031004 PPD",
+      "amount": -73.04,
+      "type": "other"
+    },
+    {
+      "date": "08/20/24",
+      "description": "LADWP DES:WEB PAY ID:4027131000 INDN:bonnie drexler CO ID:4956000736 WEB",
+      "amount": -855,
+      "type": "other"
+    },
+    {
+      "date": "07/29/24",
+      "description": "394 Authem",
+      "amount": -463.2,
+      "type": "other"
+    },
+    {
+      "date": "07/31/24",
+      "description": "* 07/31/24 395 Authem",
+      "amount": -132.7,
+      "type": "other"
+    },
+    {
+      "date": "09/10/24",
+      "description": "WIRE TYPE:WIRE IN DATE: 240910 TIME:1623 ET TRN:2024091000502376 SEQ:2024091000008046/002735 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: 13TOJIAFTO",
+      "amount": 26979.17,
+      "type": "wire"
+    },
+    {
+      "date": "09/11/24",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX1",
+      "amount": 2059.8,
+      "type": "ssa"
+    },
+    {
+      "date": "09/19/24",
+      "description": "Interest Earned",
+      "amount": 3.24,
+      "type": "interest"
+    },
+    {
+      "date": "08/23/24",
+      "description": "SPROUTS FARMER 08/23 #000329594 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -134.98,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/26/24",
+      "description": "CHECKCARD 0823 TRADER JOE S #124 BURBANK CA 24137464237501238847806",
+      "amount": -46.55,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/27/24",
+      "description": "PURCHASE 0826 AMAZON RETA* R45PU7231 WWW.AMAZON.COWA",
+      "amount": -8.12,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/27/24",
+      "description": "PURCHASE 0826 AMAZON RETA* RK7K32TN2 WWW.AMAZON.COWA",
+      "amount": -18.43,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/27/24",
+      "description": "PURCHASE 0827 RING YEARLY PLAN HTTPSRING.COMCA",
+      "amount": -49.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/28/24",
+      "description": "SPROUTS FARMER 08/28 #000731514 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -54.28,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/03/24",
+      "description": "CHECKCARD 0831 TRADER JOE S #124 BURBANK CA 24137464245501224527461",
+      "amount": -54.17,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/03/24",
+      "description": "SPROUTS FARMER 08/31 #000155471 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -116.9,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/03/24",
+      "description": "PURCHASE 0903 AMAZON MKTPL*RK7AZ5WLO Amzn.com/billWA",
+      "amount": -27.36,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/04/24",
+      "description": "CHECKCARD 0903 CAEFILE*016440381-1 213-830-0840 CA 24692164247102598644940",
+      "amount": -2.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/04/24",
+      "description": "CHECKCARD 0903 CAEFILE*016440381-1 800-297-5377 TX 24692164247102598646788",
+      "amount": -15.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/04/24",
+      "description": "CHECKCARD 0903 CAEFILE*016443930-1 213-830-0840 CA 24692164247102598808263",
+      "amount": -2.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/04/24",
+      "description": "CHECKCARD 0903 CAEFILE*016443930-1 800-297-5377 TX 24692164247102598809600",
+      "amount": -15.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/05/24",
+      "description": "SPROUTS FARMER 09/05 #000773792 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -131.46,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/05/24",
+      "description": "CHECKCARD 0905 WWW.TRUPANION. SEATTLE WA 00000000000000000362711 RECURRING",
+      "amount": -90.41,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/06/24",
+      "description": "CHECKCARD 0904 SHARKY'S MEXICAN GRILL SANTA CLARITACA 24801974249080104631395",
+      "amount": -50.22,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/06/24",
+      "description": "CHECKCARD 0905 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714249900016000422",
+      "amount": -84.3,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/09/24",
+      "description": "CHECKCARD 0907 FRANKIE'S ITALIAN KITCH TARZANA CA 24000974252290201369178",
+      "amount": -37.5,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/09/24",
+      "description": "CHECKCARD 0908 CHEVRON 0094240 CALABASAS CA 24692164252106864975179",
+      "amount": -67.07,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/09/24",
+      "description": "VINTAGE GROCER 09/08 #000794134 PURCHASE VINTAGE GROCERS MALIBU CA",
+      "amount": -32.11,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/10/24",
+      "description": "CHECKCARD 0908 TRADER JOE S #122 STUDIO CITY CA 24137464253501018454079",
+      "amount": -44.94,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/10/24",
+      "description": "JORDAN D COLBY 09/10 #000387478 PURCHASE JORDAN D COLBY DM OCEANSIDE CA",
+      "amount": -145,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/10/24",
+      "description": "SPROUTS FARMER 09/10 #000367615 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -93.05,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/11/24",
+      "description": "THE HOME DEPOT 09/11 #000141360 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -19.69,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/13/24",
+      "description": "PURCHASE 0912 AMAZON MKTPL*OP7EV6V73 Amzn.com/billWA",
+      "amount": -69.45,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/16/24",
+      "description": "PURCHASE 0913 AMAZON MKTPL*BM8W27BM3 Amzn.com/billWA",
+      "amount": -40.5,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/16/24",
+      "description": "CHECKCARD 0915 LA FITNESS IRVINE CA 00000000000000000386385 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/16/24",
+      "description": "SPROUTS FARMER 09/15 #000642589 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -141.84,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/16/24",
+      "description": "CHECKCARD 0915 LA FITNESS IRVINE CA 00000000000000000386166 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/17/24",
+      "description": "CHECKCARD 0915 TRADER JOE S #124 BURBANK CA 24137464260501080958990",
+      "amount": -39.32,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/27/24",
+      "description": "SOCALGAS DES:ARC PYMT CHECK #:0400 INDN:0093129100 CO ID:3951240705 ARC",
+      "amount": -30.98,
+      "type": "check"
+    },
+    {
+      "date": "09/05/24",
+      "description": "SPECTRUM DES:SPECTRUM ID:4164450 INDN:BONNIE DREXLER CO ID:0000358635 PPD",
+      "amount": -300.42,
+      "type": "other"
+    },
+    {
+      "date": "09/09/24",
+      "description": "ATT DES:Payment ID:XXXXXXXXXEPAYX INDN:MARCI DREXLER CO ID:9864031004 PPD",
+      "amount": -76.55,
+      "type": "other"
+    },
+    {
+      "date": "09/18/24",
+      "description": "SOCALGAS DES:ARC PYMT CHECK #:0407 INDN:0093129100 CO ID:3951240705 ARC",
+      "amount": -33.05,
+      "type": "check"
+    },
+    {
+      "date": "09/19/24",
+      "description": "US TREASURY IRS DES:PAYMENT CHECK #:0405 INDN:PUSB85242620016606 co ID:2009290085 ARC",
+      "amount": -8583,
+      "type": "check"
+    },
+    {
+      "date": "08/28/24",
+      "description": "· 08/28/24 399 Manuel May,June, July",
+      "amount": -390,
+      "type": "other"
+    },
+    {
+      "date": "08/22/24",
+      "description": "401* Authem Pharmacy",
+      "amount": -132.7,
+      "type": "other"
+    },
+    {
+      "date": "08/22/24",
+      "description": "402 Authem Medical",
+      "amount": -463.2,
+      "type": "other"
+    },
+    {
+      "date": "10/09/24",
+      "description": "WIRE TYPE:WIRE IN DATE: 241009 TIME:1414 ET TRN:2024100900427645 SEQ:2024100900005515/001646 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: LVLXU31XJY",
+      "amount": 26979.17,
+      "type": "wire"
+    },
+    {
+      "date": "10/09/24",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR AN1*BE*BONNI E DREXLER *34*XXXXXXXXXI",
+      "amount": 2059.8,
+      "type": "ssa"
+    },
+    {
+      "date": "10/22/24",
+      "description": "Interest Earned",
+      "amount": 4.02,
+      "type": "interest"
+    },
+    {
+      "date": "09/20/24",
+      "description": "SPROUTS FARMER 09/20 #000901317 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -76.94,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/23/24",
+      "description": "CHECKCARD 0920 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714264900017600089",
+      "amount": -84.3,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/23/24",
+      "description": "CHECKCARD 0920 TRADER JOE S #124 BURBANK CA 24137464265501250179265",
+      "amount": -39.2,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/23/24",
+      "description": "CHECKCARD 0920 SMILE SPECIALIST LOS ANGELES CA 24750764266900012900653",
+      "amount": -180,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/25/24",
+      "description": "SPROUTS FARMER 09/25 #000637062 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -121.74,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/26/24",
+      "description": "PURCHASE 0925 AMZN Mktp US*OQ23085M3 Amzn.com/billWA",
+      "amount": -410.61,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/26/24",
+      "description": "CHECKCARD 0925 VIOC GN0013 NORTH HOLLYWOCA 24210734270023365008569",
+      "amount": -109.47,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/30/24",
+      "description": "THE HOME DEPOT 09/28 #000213336 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -17.45,
+      "type": "debit_card"
+    },
+    {
+      "date": "09/30/24",
+      "description": "· 09/30/24 SPROUTS FARMER 09/28 #000927300 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -108.75,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/01/24",
+      "description": "SPROUTS FARMER 10/01 #000981393 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -146.85,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/02/24",
+      "description": "CHECKCARD 1001 CHEVRON 0095560 GLENDALE CA 24692164275106433984713",
+      "amount": -69.16,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/02/24",
+      "description": "CHECKCARD 1001 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714275900018700117",
+      "amount": -104.55,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/02/24",
+      "description": "PURCHASE 1002 AMAZON RETA* EGOEY6KW3 WWW.AMAZON.COWA",
+      "amount": -33.91,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/03/24",
+      "description": "CHECKCARD 1001 TRADER JOE S #124 BURBANK CA 24137464276501043092376 PURCHASE 1002 AMAZON MKTPL*7H4YE46N3 Amzn.com/billWA",
+      "amount": -15.32,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/04/24",
+      "description": "CHECKCARD 1003 ALL STAR HEALTH.COM 800-875-0448 CA 24692164277107800091585",
+      "amount": 138.37,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/07/24",
+      "description": "PURCHASE 1006 AMAZON RETA* 872231D83 WWW.AMAZON.COWA CHECKCARD 1005 WWW.TRUPANION. SEATTLE WA 00000000000000000891777 RECURRING",
+      "amount": -6.56,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/07/24",
+      "description": "THE HOME DEPOT 10/06 #000397626 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -40.14,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/07/24",
+      "description": "SPROUTS FARMER 10/06 #000986547 PURCHASE SPROUTS FARMERS M BURBANK CA PURCHASE 1008 AMAZON MKTPL*NI69J9PM3 Amzn.com/billWA",
+      "amount": -113.39,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/10/24",
+      "description": "SPROUTS FARMER 10/10 #000107573 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -133.9,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/15/24",
+      "description": "PURCHASE 1014 AMAZON RETA* Y43F35243 WWW.AMAZON.COWA SPROUTS FARMER 10/14 #000981091 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -27.36,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/15/24",
+      "description": "CHECKCARD 1015 LA FITNESS IRVINE CA 00000000000000000389234 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/15/24",
+      "description": "CHECKCARD 1015 LA FITNESS IRVINE CA 00000000000000000404984 RECURRING CHECKCARD 1014 TRADER JOE S #124 BURBANK CA 24137464289500898038166",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/21/24",
+      "description": "SPROUTS FARMER 10/20 #000395847 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -129.69,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/08/24",
+      "description": "DES:SPECTRUM ID:4401535 INDN:BONNIE DREXLER CO ID:0000358635 ATT DES:Payment ID:XXXXXXXXXEPAYB INDN:MARCI DREXLER ID:9864031004 PPD",
+      "amount": -295.15,
+      "type": "other"
+    },
+    {
+      "date": "10/21/24",
+      "description": "LADWP DES:WEB PAY ID:4027131000 INDN:bonnie drexler CO ID:4956000736 WEB",
+      "amount": -848.44,
+      "type": "other"
+    },
+    {
+      "date": "09/30/24",
+      "description": ". 09/30/24 408 Manuel Trim Palms(6)",
+      "amount": -775,
+      "type": "other"
+    },
+    {
+      "date": "09/30/24",
+      "description": "409 Authem Pharmacy",
+      "amount": -132.7,
+      "type": "other"
+    },
+    {
+      "date": "09/30/24",
+      "description": "410 Anthem Medical · 10/09/24",
+      "amount": -463.2,
+      "type": "other"
+    },
+    {
+      "date": "11/01/24",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9101036669 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXXI",
+      "amount": 5043.5,
+      "type": "ssa"
+    },
+    {
+      "date": "11/13/24",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR AN1*BE*BONNI E DREXLER *34*XXXXXXXXXI",
+      "amount": 2059.8,
+      "type": "ssa"
+    },
+    {
+      "date": "11/15/24",
+      "description": "WIRE TYPE:WIRE IN DATE: 241115 TIME:1454 ET TRN:2024111500525966 SEQ:2024111500008189/003085 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: MUWJWQ4QHY",
+      "amount": 26979.17,
+      "type": "wire"
+    },
+    {
+      "date": "11/19/24",
+      "description": "Interest Earned",
+      "amount": 3.72,
+      "type": "interest"
+    },
+    {
+      "date": "10/24/24",
+      "description": "· 10/24/24 LAWRENCE H JOE 10/24 #000666295 PURCHASE LAWRENCE H JOE DD LOS ANGELES CA",
+      "amount": -125,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/24/24",
+      "description": "SPROUTS FARMER 10/24 #000147177 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -61.86,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/28/24",
+      "description": "PURCHASE 1026 AMAZON MKTPL*RW61V8WP3 Amzn.com/billWA",
+      "amount": -6.56,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/29/24",
+      "description": "PURCHASE 1028 AMAZON MKTPL*KY30730M3 Amzn.com/billWA",
+      "amount": -6.56,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/29/24",
+      "description": "PURCHASE 1028 AMZN Mktp US*JG8PW7RA3 Amzn.com/billWA",
+      "amount": -87.59,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/29/24",
+      "description": "CHECKCARD 1027 TRADER JOE S #122 STUDIO CITY CA 24137464302501037800659",
+      "amount": -74.08,
+      "type": "debit_card"
+    },
+    {
+      "date": "10/29/24",
+      "description": "· 10/29/24 SPROUTS FARMER 10/29 #000329176 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -117.73,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/01/24",
+      "description": "PURCHASE 1031 AMAZON MARK* MI7RO3QF3 HTTPSAMAZON.CWA",
+      "amount": -6.54,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/04/24",
+      "description": "THE HOME DEPOT 11/03 #000954430 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -78.71,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/04/24",
+      "description": "SPROUTS FARMER 11/04 #000702833 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -178.81,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/05/24",
+      "description": "CHECKCARD 1103 TRADER JOE S #049 SHERMAN OAKS CA 24137464309500928040170",
+      "amount": -39.53,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/05/24",
+      "description": "PURCHASE 1104 AMAZON MKTPL*7G8RP5VU3 Amzn.com/billWA CHECKCARD 1105 WWW.TRUPANION. SEATTLE WA 00000000000000000054003 RECURRING",
+      "amount": -121.51,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/06/24",
+      "description": "€ 11/06/24 PURCHASE 1106 AMAZON MARK* 8W4V75HU3 HTTPSAMAZON.CWA",
+      "amount": -141.78,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/12/24",
+      "description": "PURCHASE 1108 AMAZON MARK* 9C03B3KJ3 HTTPSAMAZON.CWA",
+      "amount": -58.02,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/12/24",
+      "description": "CHECKCARD 1108 RIBS USA 818-8418872 CA 24000974315648902515586 SPROUTS FARMER 11/09 #000997376 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -20.11,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/12/24",
+      "description": "CHECKCARD 1109 TRADER JOE S #124 BURBANK CA 24137464315501261711106",
+      "amount": -74.22,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/13/24",
+      "description": "CHECKCARD 1112 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714317900012900572",
+      "amount": -168.61,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/15/24",
+      "description": "GELSON'S MARKE 11/14 #000959614 PURCHASE GELSON'S MARKETS VALLEY VILLAG CA CHECKCARD 1115 LA FITNESS IRVINE CA 00000000000000000321846 RECURRING",
+      "amount": -19.44,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/15/24",
+      "description": "CHECKCARD 1115 LA FITNESS IRVINE CA 00000000000000000322115 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/15/24",
+      "description": "CHECKCARD 1115 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": -51.71,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/18/24",
+      "description": "SPROUTS FARMER 11/15 #000602704 PURCHASE SPROUTS FARMERS M STUDIO CITY CA CHECKCARD 1115 TRADER JOE S #122 STUDIO CITY CA 24137464321501385867760",
+      "amount": -67.62,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/18/24",
+      "description": "PURCHASE 1117 AMAZON MKTPL*KN2061UE3 Amzn.com/billWA",
+      "amount": -38.27,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/19/24",
+      "description": "PURCHASE 1118 AMZN Mktp US*1L29116A3 Amzn.com/billWA 2 11/19/24",
+      "amount": -15,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/05/24",
+      "description": "DES:ARC PYMT CHECK #:0412 INDN:0093129100 CO ID:3951240705 SPECTRUM PPD",
+      "amount": -33.14,
+      "type": "check"
+    },
+    {
+      "date": "10/25/24",
+      "description": "413 La County tax",
+      "amount": -1189.42,
+      "type": "other"
+    },
+    {
+      "date": "10/25/24",
+      "description": "9 10/25/24 414 Anthem Pharmacy",
+      "amount": -463.2,
+      "type": "other"
+    },
+    {
+      "date": "10/25/24",
+      "description": "₹ 10/25/24 415 Anthem Medical",
+      "amount": -132.7,
+      "type": "other"
+    },
+    {
+      "date": "10/25/24",
+      "description": "416 AAA Membership",
+      "amount": -121,
+      "type": "other"
+    },
+    {
+      "date": "11/08/24",
+      "description": "417 Manuel Gardner",
+      "amount": -130,
+      "type": "other"
+    },
+    {
+      "date": "12/10/24",
+      "description": "WIRE TYPE:WIRE IN DATE: 241210 TIME:1204 ET TRN:2024121000387336 SEQ:2024121000003768/000948 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: PGRD5WLP67",
+      "amount": 26979.17,
+      "type": "wire"
+    },
+    {
+      "date": "12/11/24",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR AN1*BE*BONNI E DREXLER *34*XXXXXXXXX1",
+      "amount": 2518,
+      "type": "ssa"
+    },
+    {
+      "date": "12/19/24",
+      "description": "Interest Earned",
+      "amount": 4.51,
+      "type": "interest"
+    },
+    {
+      "date": "11/21/24",
+      "description": "PURCHASE 1120 AMAZON MKTPL*JX54A10W3 Amzn.com/billWA",
+      "amount": -10.94,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/25/24",
+      "description": "PURCHASE 1123 AMAZON MARK* M56HJ0213 HTTPSAMAZON.CWA",
+      "amount": -21.02,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/25/24",
+      "description": "CHECKCARD 1123 ALL STAR HEALTH.COM 800-875-0448 CA 24692164328109931290465",
+      "amount": -136.08,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/25/24",
+      "description": "PURCHASE 1123 AMAZON RETA* BD5FA48P3 WWW.AMAZON.COWA",
+      "amount": -47.51,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/25/24",
+      "description": "SPROUTS FARMER 11/23 #000127215 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -112.95,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/25/24",
+      "description": "CHECKCARD 1123 TRADER JOE S #122 STUDIO CITY CA 24137464329501161289975",
+      "amount": -48.65,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/25/24",
+      "description": "PURCHASE 1125 AMAZON MARK* 7E8101QR3 HTTPSAMAZON.CWA",
+      "amount": -8.75,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/25/24",
+      "description": "PURCHASE 1125 AMAZON MARK* 969ZW4F43 HTTPSAMAZON.CWA",
+      "amount": -33.76,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/26/24",
+      "description": "PURCHASE 1125 AMAZON MARK* 2D5UE2013 HTTPSAMAZON.CWA",
+      "amount": -180.45,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/26/24",
+      "description": "SPROUTS FARMER 11/26 #000633098 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -55.68,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/29/24",
+      "description": "RALPHS #0 1284 11/28 #000940294 PURCHASE RALPHS #0 12842 V STUDIO CITY CA",
+      "amount": -26.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "11/29/24",
+      "description": "THE HOME DEPOT 11/29 #000652758 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -358.24,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/02/24",
+      "description": "CHECKCARD 1130 TRADER JOE S #124 BURBANK CA 24137464336501238323832",
+      "amount": -44.23,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/02/24",
+      "description": "₹ 12/02/24 SPROUTS FARMER 11/30 #000614336 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -95.73,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/05/24",
+      "description": "CHECKCARD 1205 WWW.TRUPANION. SEATTLE WA 00000000000000000629707 RECURRING",
+      "amount": -113.95,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/10/24",
+      "description": "SPROUTS FARMER 12/06 #000776775 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -119.4,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/10/24",
+      "description": "CHECKCARD 1208 TRADER JOE S #122 STUDIO CITY CA 24137464344501021795410",
+      "amount": -49.9,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/11/24",
+      "description": "SPROUTS FARMER 12/10 #000336345 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -117.3,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/11/24",
+      "description": "HOBBYLOBB 641 12/11 #000203722 PURCHASE HOBBYLOBB 641 N. BURBANK CA",
+      "amount": -8.79,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/16/24",
+      "description": "SPROUTS FARMER 12/11 #000642648 PURCHASE SPROUTS FARMERS M BURBANK CA CHECKCARD 1215 LA FITNESS IRVINE",
+      "amount": -45.64,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/16/24",
+      "description": "CA 00000000000000000479370 RECURRING CHECKCARD 1215 LA FITNESS IRVINE",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/16/24",
+      "description": "CA 00000000000000000484829 RECURRING SPROUTS FARMER 12/15 #000908897",
+      "amount": -29.99,
+      "type": "other"
+    },
+    {
+      "date": "12/16/24",
+      "description": "PURCHASE SPROUTS FARMERS M STUDIO CITY CA SPROUTS FARMER 12/15 #000732484",
+      "amount": -44.15,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/16/24",
+      "description": "PURCHASE SPROUTS FARMERS M BURBANK CA USPS PO 055452 12/16 #000761401",
+      "amount": -22.77,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/17/24",
+      "description": "PURCHASE USPS PO 05545203 VALLEY VILLAG CA CHECKCARD 1216 SQ *SUGAR NAILS",
+      "amount": -22.1,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/18/24",
+      "description": "Valley VillagCA 24692164351109773895074 PURCHASE 1217 AMZN Mktp US*Z14H61JW1 Amzn.com/billWA",
+      "amount": -67,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/18/24",
+      "description": "CVS/PHARMACY # 12/18 #000049177 PURCHASE 09675 -- 12143 Vent Studio City CA",
+      "amount": -27.36,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/18/24",
+      "description": "· 12/18/24 MICHAELS STORE 12/18 #000226253 PURCHASE 11239 VENTURA BLV STUDIO CITY CA",
+      "amount": -26.92,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/18/24",
+      "description": "SPROUTS FARMER 12/18 #000972705 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -20.24,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/19/24",
+      "description": "CHECKCARD 1218 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714353900013300207",
+      "amount": -35.98,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/05/24",
+      "description": "SPECTRUM DES:SPECTRUM ID:5246537 INDN:BONNIE DREXLER CO ID:0000358635 PPD",
+      "amount": -295.15,
+      "type": "other"
+    },
+    {
+      "date": "12/04/24",
+      "description": "418 GO CALGAS",
+      "amount": -57,
+      "type": "other"
+    },
+    {
+      "date": "11/29/24",
+      "description": "419 Anthem Medical",
+      "amount": -463.2,
+      "type": "other"
+    },
+    {
+      "date": "01/08/25",
+      "description": "WIRE TYPE:WIRE IN DATE: 250108 TIME:1402 ET TRN:2025010800446063 SEQ:2025010800005376/001612 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: 6F3TWUCDX2",
+      "amount": 26979.17,
+      "type": "wire"
+    },
+    {
+      "date": "01/08/25",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX1",
+      "amount": 2089.4,
+      "type": "ssa"
+    },
+    {
+      "date": "01/16/25",
+      "description": "BKOFAMERICA ATM 01/16 #000001346 DEPOSIT LAUREL CANYON-MAGN VALLEY VILLAG CA",
+      "amount": 105.04,
+      "type": "other"
+    },
+    {
+      "date": "01/22/25",
+      "description": "Interest Earned",
+      "amount": 5.61,
+      "type": "interest"
+    },
+    {
+      "date": "12/23/24",
+      "description": "PURCHASE 1222 AMAZON MARK* ZE3476J82 HTTPSAMAZON.CWA",
+      "amount": -153.94,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/23/24",
+      "description": "CHECKCARD 1221 TRADER JOE S #124 BURBANK CA 24137464357501322935511",
+      "amount": -49.65,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/23/24",
+      "description": "SPROUTS FARMER 12/21 #000987218 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -93.35,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/24/24",
+      "description": "PURCHASE 1224 AMAZON MARK* ZE1PD84LO HTTPSAMAZON.CWA",
+      "amount": -17.93,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/24/24",
+      "description": "HOBBYLOBB 641 12/24 #000957908 PURCHASE HOBBYLOBB 641 N. BURBANK CA",
+      "amount": -4.41,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/24/24",
+      "description": "SPROUTS FARMER 12/24 #000653310 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -108.29,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/27/24",
+      "description": "CHECKCARD 1227 ROCKET 167 NORTH HILLS CA",
+      "amount": -65.15,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/27/24",
+      "description": "SPROUTS FARMER 12/27 #000359860 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -59.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/30/24",
+      "description": "CHECKCARD 1227 SHAKE SHACK - 1309 646-747-7178 CA 24692164363100460910751",
+      "amount": -13.67,
+      "type": "debit_card"
+    },
+    {
+      "date": "12/30/24",
+      "description": "SPROUTS FARMER 12/30 #000985893 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -39.94,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/02/25",
+      "description": "CHECKCARD 1231 TRADER JOE S #122 STUDIO CITY CA 24137465001501355892370",
+      "amount": -44.52,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/02/25",
+      "description": "SPROUTS FARMER 01/02 #000774367 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -64.31,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/06/25",
+      "description": "· 01/06/25 PURCHASE 0105 AMAZON MARK* ZD46W2HM2 HTTPSAMAZON.CWA",
+      "amount": -15.32,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/06/25",
+      "description": "PURCHASE 0104 AMAZON MARK* ZD8PL7MZ2 HTTPSAMAZON.CWA",
+      "amount": -26,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/06/25",
+      "description": "SPROUTS FARMER 01/05 #000990427 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -69.96,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/06/25",
+      "description": "CHECKCARD 0105 WWW.TRUPANION. SEATTLE WA 00000000000000000420403 RECURRING",
+      "amount": -113.95,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/07/25",
+      "description": "PURCHASE 0107 AMAZON MARK* ZP8NC2HH1 HTTPSAMAZON.CWA",
+      "amount": -17.51,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/08/25",
+      "description": "SPROUTS FARMER 01/08 #000647454 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -151.4,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/09/25",
+      "description": "PURCHASE 0108 AMAZON RETA* ZP86089F1 WWW.AMAZON.COWA",
+      "amount": -8.51,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/10/25",
+      "description": "CHECKCARD 0108 TRADER JOE S #124 BURBANK CA 24137465009500899353784",
+      "amount": -60.03,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/13/25",
+      "description": "0 01/13/25 CHECKCARD 0111 SHARKYS WOODFIRED MEXI 818-6238000 CA 24000975012014108571209",
+      "amount": -23.97,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/13/25",
+      "description": "₡ 01/13/25 SPROUTS FARMER 01/13 #000773102 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -102.72,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/13/25",
+      "description": "SPROUTS FARMER 01/13 #000358652 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -9.98,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/15/25",
+      "description": "CHECKCARD 0115 LA FITNESS IRVINE CA 00000000000000000007573 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/15/25",
+      "description": "CHECKCARD 0115 LA FITNESS IRVINE CA 00000000000000000009100 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/16/25",
+      "description": "SPROUTS FARMER 01/16 #000364997 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -93.02,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/21/25",
+      "description": "CHECKCARD 0118 TRADER JOE S #124 BURBANK CA 24137465019501267787999",
+      "amount": -42.82,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/21/25",
+      "description": "· 01/21/25 SPROUTS FARMER 01/18 #000650338 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -51.64,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/21/25",
+      "description": "CHECKCARD 0118 TST*OLD NEW YORK DELI & Woodland HillCA 24692165019108523467581",
+      "amount": -28.62,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/21/25",
+      "description": "SPROUTS FARMER 01/21 #000315005 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -35.27,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/21/25",
+      "description": "GELSON'S MARKE 01/21 #000944325 PURCHASE GELSON'S MARKETS VALLEY VILLAG CA",
+      "amount": -8.98,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/06/25",
+      "description": "LADWP DES:WEB PAY ID:4027131000 INDN:bonnie drexler CO ID:4956000736 WEB",
+      "amount": -759.2,
+      "type": "other"
+    },
+    {
+      "date": "01/08/25",
+      "description": "SPECTRUM DES:SPECTRUM ID:6704042 INDN:BONNIE DREXLER CO ID:0000358635 PPD ATT DES:Payment ID:XXXXXXXXXEPAYP INDN:MARCI DREXLER CO ID:9864031004 PPD",
+      "amount": -295.15,
+      "type": "other"
+    },
+    {
+      "date": "01/15/25",
+      "description": "FRANCHISE TAX BO DES:PAYMENTS ID:XXXXXXXXX PM INDN:DREXLER CO ID:1282532045 WEB",
+      "amount": -3366,
+      "type": "other"
+    },
+    {
+      "date": "12/20/24",
+      "description": "422 So Cal Gas 423 Authem Pharmacy",
+      "amount": -220.94,
+      "type": "other"
+    },
+    {
+      "date": "12/20/24",
+      "description": "៛ 12/20/24 424 Authem Medical",
+      "amount": -463.2,
+      "type": "other"
+    },
+    {
+      "date": "01/14/25",
+      "description": "· 01/14/25 425 Geico CAR Insurance · 01/07/25",
+      "amount": -2191.46,
+      "type": "other"
+    },
+    {
+      "date": "01/16/25",
+      "description": "426 Manuel Gardner · 01/16/25 427",
+      "amount": -130,
+      "type": "other"
+    },
+    {
+      "date": "01/15/25",
+      "description": "428 DMV Renewal",
+      "amount": -407,
+      "type": "other"
+    },
+    {
+      "date": "01/13/25",
+      "description": "429 La County tax (#2)",
+      "amount": -1189.41,
+      "type": "other"
+    },
+    {
+      "date": "01/10/25",
+      "description": "431* Air Condition Repair",
+      "amount": -90,
+      "type": "other"
+    },
+    {
+      "date": "01/17/25",
+      "description": "433* Anthem Pharmacy",
+      "amount": -164.9,
+      "type": "other"
+    },
+    {
+      "date": "01/17/25",
+      "description": "434 Anthem Medical",
+      "amount": -463.2,
+      "type": "other"
+    },
+    {
+      "date": "02/05/25",
+      "description": "WIRE TYPE:WIRE IN DATE: 250205 TIME:0920 ET TRN:2025020500309658 SEQ:2025020500001901/000370 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: N52TRUYHMQ",
+      "amount": 26979.17,
+      "type": "wire"
+    },
+    {
+      "date": "02/12/25",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX\\",
+      "amount": 2089.4,
+      "type": "ssa"
+    },
+    {
+      "date": "02/18/25",
+      "description": "WIRE TYPE:WIRE IN DATE: 250218 TIME:1227 ET TRN:2025021800759278 SEQ:2025021800006233/001920 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: ERLC6E61CQ",
+      "amount": 26979.17,
+      "type": "wire"
+    },
+    {
+      "date": "02/19/25",
+      "description": "$ 02/19/25 Interest Earned",
+      "amount": 4.4,
+      "type": "interest"
+    },
+    {
+      "date": "01/27/25",
+      "description": "SPROUTS FARMER 01/26 #000783532 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -111.69,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/28/25",
+      "description": "CHECKCARD 0126 TRADER JOE S #122 STUDIO CITY CA 24137465027500968584564",
+      "amount": -59.73,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/28/25",
+      "description": "PURCHASE 0128 AMAZON MARK* ZC43P41X0 HTTPSAMAZON.CWA",
+      "amount": -78.58,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/30/25",
+      "description": "SPROUTS FARMER 01/30 #000132783 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -66.65,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/31/25",
+      "description": "PURCHASE 0131 AMAZON MARK* ZC8QW6ES1 HTTPSAMAZON.CWA",
+      "amount": -16.41,
+      "type": "debit_card"
+    },
+    {
+      "date": "01/31/25",
+      "description": "PURCHASE 0131 AMAZON MARK* ZC02U17MO AMAZON.COM/MAWA",
+      "amount": -26.27,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/03/25",
+      "description": "PURCHASE 0203 AMAZON RETA* Z79JC1TPO WWW.AMAZON.COWA",
+      "amount": -19.75,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/03/25",
+      "description": "PURCHASE 0203 AMAZON MARK* ZC5NF19X1 HTTPSAMAZON.CWA",
+      "amount": -43.76,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/03/25",
+      "description": "PURCHASE 0202 AMAZON MARK* Z78E50ZRO HTTPSAMAZON.CWA",
+      "amount": -17.57,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/03/25",
+      "description": "PURCHASE 0202 AMAZON MARK* Z72KP7L90 AMAZON.COM/MAWA",
+      "amount": -13.91,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/03/25",
+      "description": "SPROUTS FARMER 02/03 #000916907 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -119.52,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/05/25",
+      "description": "CHECKCARD 0205 WWW.TRUPANION. SEATTLE WA 00000000000000000344835 RECURRING",
+      "amount": -113.95,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/06/25",
+      "description": "CHECKCARD 0204 TRADER JOE S #122 STUDIO CITY CA 24137465036500935088722",
+      "amount": -53.3,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/06/25",
+      "description": "SPROUTS FARMER 02/06 #000626980 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -32.87,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/07/25",
+      "description": "CHECKCARD 0206 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786715037900011300556",
+      "amount": -168.61,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/10/25",
+      "description": "PURCHASE 0208 AMAZON MARK* JY6R01Z63 AMAZON.COM/MAWA",
+      "amount": -39.38,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/10/25",
+      "description": "$ 02/10/25 SPROUTS FARMER 02/09 #000641681 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -111.03,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/12/25",
+      "description": "· 02/12/25 SPROUTS FARMER 02/12 #000177946 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -50.12,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/14/25",
+      "description": "CHECKCARD 0212 TRADER JOE S #122 STUDIO CITY CA 24137465044500890896309",
+      "amount": -48.26,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/18/25",
+      "description": "· 02/18/25 CHECKCARD 0215 LA FITNESS IRVINE CA 00000000000000000454851 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/18/25",
+      "description": "· 02/18/25 CHECKCARD 0215 LA FITNESS IRVINE CA 00000000000000000455028 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/18/25",
+      "description": "₱ 02/18/25 CHECKCARD 0216 ALL STAR HEALTH.COM 800-875-0448 CA 24692165047108815295506",
+      "amount": -113.11,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/18/25",
+      "description": "9 02/18/25 CHECKCARD 0216 TRADER JOE S #122 STUDIO CITY CA 24137465048500918918412",
+      "amount": -51.63,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/18/25",
+      "description": "· 02/18/25 SPROUTS FARMER 02/16 #000377523 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -78.4,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/05/25",
+      "description": "US TREASURY IRS DES:PAYMENT CHECK #:0430 INDN:PUSB85250220076427 co ID:2009290085 ARC SPECTRUM DES:SPECTRUM ID:7829436 INDN:BONNIE DREXLER PPD",
+      "amount": -8583,
+      "type": "check"
+    },
+    {
+      "date": "02/10/25",
+      "description": "CO ID:0000358635 ATT DES:Payment ID:XXXXXXXXXEPAYU INDN:MARCI DREXLER ID:9864031004 PPD",
+      "amount": -302.82,
+      "type": "other"
+    },
+    {
+      "date": "01/23/25",
+      "description": "432 SO CALGAS",
+      "amount": 284.59,
+      "type": "other"
+    },
+    {
+      "date": "01/24/25",
+      "description": "435 Nawel 1/2 Pay Flout Ya",
+      "amount": -2425,
+      "type": "other"
+    },
+    {
+      "date": "01/28/25",
+      "description": "436 Roofing deposit",
+      "amount": -1000,
+      "type": "other"
+    },
+    {
+      "date": "01/30/25",
+      "description": "437 Roofing and Payment",
+      "amount": -19475,
+      "type": "other"
+    },
+    {
+      "date": "02/04/25",
+      "description": "438 Manuel front Ycl Redo · 02/04/25",
+      "amount": -2555,
+      "type": "other"
+    },
+    {
+      "date": "02/14/25",
+      "description": "440* United Roof 3d payment · 02/14/25",
+      "amount": -19475,
+      "type": "other"
+    },
+    {
+      "date": "02/19/25",
+      "description": "441 Manuel Sprinkler timer € 02/19/25",
+      "amount": -375,
+      "type": "other"
+    },
+    {
+      "date": "03/12/25",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031736042 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX1",
+      "amount": 2089.4,
+      "type": "ssa"
+    },
+    {
+      "date": "03/20/25",
+      "description": "Interest Earned",
+      "amount": 4.63,
+      "type": "interest"
+    },
+    {
+      "date": "02/21/25",
+      "description": "SPROUTS FARMER 02/20 #000747726 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -131.59,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/21/25",
+      "description": "CHECKCARD 0219 TRADER JOE S #122 STUDIO CITY CA 24137465051500881209983",
+      "amount": -29.36,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/24/25",
+      "description": "CHECKCARD 0221 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": -61.46,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/24/25",
+      "description": "CHECKCARD 0221 TRADER JOE S #122 STUDIO CITY CA 24137465053501318841032",
+      "amount": -21.73,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/24/25",
+      "description": "SPROUTS FARMER 02/22 #000119884 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -44.66,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/25/25",
+      "description": "THE HOME DEPOT 02/24 #000323286 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -210.7,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/25/25",
+      "description": "PURCHASE 0224 AMAZON RETA* AE7N62KX3 WWW.AMAZON.COWA",
+      "amount": -45.98,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/25/25",
+      "description": "SPROUTS FARMER 02/25 #000988607 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -62.7,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/28/25",
+      "description": "SPROUTS FARMER 02/25 #000130792 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -23.16,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/03/25",
+      "description": "SPROUTS FARMER 02/28 #000770455 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -94.44,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/03/25",
+      "description": "CHECKCARD 0228 TRADER JOE S #122 STUDIO CITY CA 24137465060501426123456",
+      "amount": -37.02,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/04/25",
+      "description": "PURCHASE 0301 AMAZON RETA* IX6HB91X3 WWW.AMAZON.COWA",
+      "amount": -210.6,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/05/25",
+      "description": "SPROUTS FARMER 03/04 #000314036 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -86.64,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/06/25",
+      "description": "CHECKCARD 0305 WWW.TRUPANION. SEATTLE WA 00000000000000000682424 RECURRING",
+      "amount": -113.95,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/06/25",
+      "description": "CHECKCARD 0306 NORTON *AP1585662866 NORTON.COM/CCAZ 24692165065104684209501 RECURRING",
+      "amount": -94.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/10/25",
+      "description": "CHECKCARD 0308 SHARKY'S - SHERMAN OAKS LOS ANGELES CA 24801975068267004178685",
+      "amount": -31.37,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/10/25",
+      "description": "SPROUTS FARMER 03/09 #000943285 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -66.93,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/11/25",
+      "description": "CHECKCARD 0309 TRADER JOE S #122 STUDIO CITY CA 24137465069501050063789",
+      "amount": -22.39,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/11/25",
+      "description": "JORDAN D COLBY 03/11 #000781070 PURCHASE JORDAN D COLBY DM OCEANSIDE CA",
+      "amount": -401,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/13/25",
+      "description": "CHECKCARD 0311 TRADER JOE S #022 OCEANSIDE CA 24137465071501019563867",
+      "amount": -7.33,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/13/25",
+      "description": "PURCHASE 0312 AMAZON RETA* Z62US1863 WWW.AMAZON.COWA",
+      "amount": -7.65,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/13/25",
+      "description": "SPROUTS FARMER 03/13 #000101158 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -159.43,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/17/25",
+      "description": "CHECKCARD 0315 LA FITNESS IRVINE CA 00000000000000000419700 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/17/25",
+      "description": "CHECKCARD 0315 LA FITNESS IRVINE CA 00000000000000000440226 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/17/25",
+      "description": "CHECKCARD 0315 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": -70.1,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/17/25",
+      "description": "THE HOME DEPOT 03/15 #000347109 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -8.21,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/17/25",
+      "description": "CHECKCARD 0316 SXM*SIRIUSXM.COM/ACCT 888-635-5144 NY 24692165075100637061682 RECURRING",
+      "amount": -359.65,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/17/25",
+      "description": "THE HOME DEPOT 03/17 #000039246 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -8.21,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/18/25",
+      "description": "SPROUTS FARMER 03/18 #000971340 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -74.93,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/19/25",
+      "description": "CHECKCARD 0317 TRADER JOE S #122 STUDIO CITY CA 24137465077501016602282",
+      "amount": -49.25,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/19/25",
+      "description": "PURCHASE 0319 AMAZON MARK* W09ZK80R3 AMAZON.COM/MAWA",
+      "amount": -32.84,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/20/25",
+      "description": "PURCHASE 0319 AMAZON MARK* FZOUM2BI3 AMAZON.COM/MAWA",
+      "amount": -13.51,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/20/25",
+      "description": "PURCHASE 0320 AMAZON MARK* A56QL1573 AMAZON.COM/MAWA",
+      "amount": -30.65,
+      "type": "debit_card"
+    },
+    {
+      "date": "02/24/25",
+      "description": "LADWP DES:WEB PAY ID:4027131000 INDN:bonnie drexler CO ID:4956000736 WEB",
+      "amount": -824.53,
+      "type": "other"
+    },
+    {
+      "date": "03/05/25",
+      "description": "SPECTRUM DES:SPECTRUM ID:9069581 INDN:BONNIE DREXLER CO ID:0000358635 PPD",
+      "amount": -302.82,
+      "type": "other"
+    },
+    {
+      "date": "03/10/25",
+      "description": "ATT DES:Payment ID:XXXXXXXXXEPAYW INDN:MARCI DREXLER CO ID:9864031004 PPD",
+      "amount": -76.68,
+      "type": "other"
+    },
+    {
+      "date": "02/28/25",
+      "description": "443 SO CAL GAS",
+      "amount": -323.27,
+      "type": "other"
+    },
+    {
+      "date": "03/03/25",
+      "description": "445* Anthem Medical ៛ 03/03/25",
+      "amount": -521.23,
+      "type": "other"
+    },
+    {
+      "date": "03/03/25",
+      "description": "447 Manuel Gardho",
+      "amount": -130,
+      "type": "other"
+    },
+    {
+      "date": "03/11/25",
+      "description": "448 Mom Sit Kustine",
+      "amount": -120,
+      "type": "other"
+    },
+    {
+      "date": "04/09/25",
+      "description": "WIRE TYPE:WIRE IN DATE: 250409 TIME:1606 ET TRN:2025040900515873 SEQ:2025040900007981/002669 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: QC7DV04JOZ",
+      "amount": 26979.17,
+      "type": "wire"
+    },
+    {
+      "date": "04/09/25",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR co ID:9031036030 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX1",
+      "amount": 2089.4,
+      "type": "ssa"
+    },
+    {
+      "date": "04/21/25",
+      "description": "· 04/21/25 Interest Earned",
+      "amount": 5.27,
+      "type": "interest"
+    },
+    {
+      "date": "03/24/25",
+      "description": "CHECKCARD 0322 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786715082900015700136",
+      "amount": -161.61,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/24/25",
+      "description": "CHECKCARD 0322 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786715082900015700144",
+      "amount": -8,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/24/25",
+      "description": "CHECKCARD 0322 TRADER JOE S # 124 BURBANK CA 24137465082501356635788",
+      "amount": -34.54,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/24/25",
+      "description": "SPROUTS FARMER 03/22 #000946238 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -113.98,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/25/25",
+      "description": "LOWE'S #1144 03/25 #000593395 PURCHASE LOWE'S #1144 BURBANK CA",
+      "amount": 23.36,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/25/25",
+      "description": "SPROUTS FARMER 03/25 #000627047 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -38.1,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/27/25",
+      "description": "CHECKCARD 0325 TRADER JOE S #124 BURBANK CA 24137465085501022771964",
+      "amount": -18.46,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/28/25",
+      "description": "SPROUTS FARMER 03/28 #000704583 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -140.43,
+      "type": "debit_card"
+    },
+    {
+      "date": "03/31/25",
+      "description": "CHECKCARD 0328 ALL STAR HEALTH.COM 800-875-0448 CA 24692165087101015597897",
+      "amount": -166.82,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/01/25",
+      "description": "CHECKCARD 0330 TRADER JOE S #122 STUDIO CITY CA 24137465090501024751884",
+      "amount": -7.65,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/01/25",
+      "description": "SPROUTS FARMER 04/01 #000145778 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -64.31,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/04/25",
+      "description": "CHECKCARD 0402 TRADER JOE S #122 STUDIO CITY CA 24137465093501032012110",
+      "amount": -57.51,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/07/25",
+      "description": "PURCHASE 0404 AMAZON MARK* A141H1N63 AMAZON.COM/MAWA",
+      "amount": -16.69,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/07/25",
+      "description": "CHECKCARD 0405 WWW.TRUPANION. SEATTLE WA 00000000000000000932556 RECURRING SPROUTS FARMER 04/06 #000737582 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -113.95,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/08/25",
+      "description": "PURCHASE 0408 AMAZON RETA* RC8T29H43 WWW.AMAZON.COWA",
+      "amount": -52.3,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/08/25",
+      "description": "PURCHASE 0408 AMAZON MARK* SO5KB4M63 AMAZON.COM/MAWA",
+      "amount": -99.68,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/08/25",
+      "description": "PURCHASE 0408 AMAZON MARK* 6ROTB4CP3 AMAZON.COM/MAWA",
+      "amount": -35.09,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/09/25",
+      "description": "SPROUTS FARMER 04/09 #000722306 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -68.3,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/11/25",
+      "description": "CHECKCARD 0409 TRADER JOE S #122 STUDIO CITY CA 24137465100501100882544",
+      "amount": -54.16,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/14/25",
+      "description": "SPROUTS FARMER 04/11 #000749572 PURCHASE SPROUTS FARMERS M STUDIO CITY CA PURCHASE 0412 SP BABYLIST CHECKOUT.BABYCA",
+      "amount": -37.49,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/14/25",
+      "description": "CHECKCARD 0412 WWW.REDBUBBLE.COM REDBUBBLE.COMCA 24011345102100093553338",
+      "amount": 43.12,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/14/25",
+      "description": "PURCHASE 0412 AMAZON MARK* T36091K33 AMAZON.COM/MAWA",
+      "amount": -9.87,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/15/25",
+      "description": "CHECKCARD 0415 LA FITNESS IRVINE CA 00000000000000000249331 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/15/25",
+      "description": "CHECKCARD 0415 LA FITNESS IRVINE CA 00000000000000000249810 RECURRING SPROUTS FARMER 04/15 #000937950 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/16/25",
+      "description": "THE HOME DEPOT 04/16 #000174484 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -143.1,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/18/25",
+      "description": "CHECKCARD 0416 TRADER JOE S #122 STUDIO CITY CA 24137465107501111810669",
+      "amount": -41.16,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/21/25",
+      "description": "CHECKCARD 0419 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": -71.28,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/21/25",
+      "description": "SPROUTS FARMER 04/19 #000149502 PURCHASE SPROUTS FARMERS M STUDIO CITY CA PURCHASE 0421 AMAZON RETA* R28981FY3 WWW.AMAZON.COWA",
+      "amount": -79.63,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/08/25",
+      "description": "DES:SPECTRUM ID:0187495 INDN:BONNIE DREXLER CO ID:0000358635 ATT DES:Payment ID:XXXXXXXXXEPAYB INDN:MARCI DREXLER CO ID:9864031004 PPD",
+      "amount": -302.82,
+      "type": "other"
+    },
+    {
+      "date": "04/03/25",
+      "description": "449 SO CALGAS",
+      "amount": -197.57,
+      "type": "other"
+    },
+    {
+      "date": "03/31/25",
+      "description": "450 Anthem",
+      "amount": -164.9,
+      "type": "other"
+    },
+    {
+      "date": "03/31/25",
+      "description": "451 Anthem",
+      "amount": -521.23,
+      "type": "other"
+    },
+    {
+      "date": "04/02/25",
+      "description": "៛ 04/02/25 452 Manuel Gonzalez",
+      "amount": -130,
+      "type": "other"
+    },
+    {
+      "date": "04/18/25",
+      "description": "@ 04/18/25 453 Shapiro Tax Prep",
+      "amount": -400,
+      "type": "other"
+    },
+    {
+      "date": "05/05/25",
+      "description": "WIRE TYPE:WIRE IN DATE: 250505 TIME:1519 ET TRN:2025050500521384 SEQ:2025050500006695/002022 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: 98U8EKODWE",
+      "amount": 26979.17,
+      "type": "wire"
+    },
+    {
+      "date": "05/14/25",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR co ID:9031036030 PPD PMT INFO:N1*GD*MARCI DREXLER FOR AN1*BE*BONNI E DREXLER *34*XXXXXXXXX\\",
+      "amount": 2089.4,
+      "type": "ssa"
+    },
+    {
+      "date": "05/20/25",
+      "description": "0 05/20/25 Interest Earned",
+      "amount": 5.13,
+      "type": "interest"
+    },
+    {
+      "date": "04/22/25",
+      "description": "PURCHASE 0421 AMAZON MARK* 306QB09M3 AMAZON.COM/MAWA",
+      "amount": -14.59,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/23/25",
+      "description": "CHECKCARD 0422 SQ *EL TIJUANENSE - NOR North Hills CA 24692165113104042087021",
+      "amount": -13.72,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/24/25",
+      "description": "DAVID C JOE DD 04/24 #000575468 PURCHASE DAVID C JOE DDS LOS ANGELES CA",
+      "amount": -125,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/24/25",
+      "description": "SPROUTS FARMER 04/24 #000616941 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -151.43,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/25/25",
+      "description": "CHECKCARD 0424 SQ *SUGAR NAILS Valley VillagCA 24692165114105641931229",
+      "amount": -32,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/28/25",
+      "description": "CHECKCARD 0425 TRADER JOE S #122 STUDIO CITY CA 24137465116501396055187",
+      "amount": -51.23,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/28/25",
+      "description": "THE HOME DEPOT 04/28 #000099888 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -59.23,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/29/25",
+      "description": "SPROUTS FARMER 04/29 #000176110 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -121.71,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/05/25",
+      "description": "CHECKCARD 0501 TRADER JOE S #122 STUDIO CITY CA 24137465122501247879829",
+      "amount": -37.05,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/05/25",
+      "description": "PURCHASE 0502 AMAZON PRIME*NB11D7FK1 Amzn.com/billWA",
+      "amount": -152.55,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/05/25",
+      "description": "PURCHASE 0505 AMAZON MARK* NI5298GI2 AMAZON.COM/MAWA",
+      "amount": -10.92,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/05/25",
+      "description": "CHECKCARD 0505 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": -64.23,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/05/25",
+      "description": "SPROUTS FARMER 05/05 #000940756 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -144.57,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/05/25",
+      "description": "CHECKCARD 0505 WWW.TRUPANION. SEATTLE WA 00000000000000000975480 RECURRING",
+      "amount": -113.95,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/07/25",
+      "description": "¢ 05/07/25 CHECKCARD 0505 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786715127000000031592",
+      "amount": -168.61,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/09/25",
+      "description": "₹ 05/09/25 PURCHASE 0508 AMAZON MARK* NB6030W51 AMAZON.COM/MAWA",
+      "amount": -21.94,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/12/25",
+      "description": "CHECKCARD 0508 TRADER JOE S #122 STUDIO CITY CA 24137465129501160884239",
+      "amount": -63.44,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/12/25",
+      "description": "@ 05/12/25 SPROUTS FARMER 05/11 #000924336 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -136.38,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/15/25",
+      "description": "4 05/15/25 CHECKCARD 0515 LA FITNESS IRVINE CA 00000000000000000398925 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/15/25",
+      "description": "CHECKCARD 0515 LA FITNESS IRVINE CA 00000000000000000416081 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/15/25",
+      "description": "# 05/15/25 SPROUTS FARMER 05/15 #000622970 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -108.1,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/19/25",
+      "description": "₱ 05/19/25 SPROUTS FARMER 05/19 #000947617 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -152.17,
+      "type": "debit_card"
+    },
+    {
+      "date": "04/22/25",
+      "description": "LADWP DES:WEB PAY ID:4027131000 INDN:bonnie drexler CO ID:4956000736 WEB",
+      "amount": -756.95,
+      "type": "other"
+    },
+    {
+      "date": "05/05/25",
+      "description": "SPECTRUM DES:SPECTRUM ID:1253481 INDN:BONNIE DREXLER CO ID:0000358635 PPD",
+      "amount": -302.82,
+      "type": "other"
+    },
+    {
+      "date": "05/08/25",
+      "description": "ATT DES:Payment ID:XXXXXXXXXEPAYF INDN:MARCI DREXLER co ID:9864031004 PPD",
+      "amount": -76.7,
+      "type": "other"
+    },
+    {
+      "date": "04/22/25",
+      "description": "· 04/22/25 454 SO CAL GAS",
+      "amount": -112.1,
+      "type": "other"
+    },
+    {
+      "date": "04/28/25",
+      "description": "456 Anthem",
+      "amount": -521.23,
+      "type": "other"
+    },
+    {
+      "date": "04/28/25",
+      "description": "₡ 04/28/25 457 Anthem",
+      "amount": -164.9,
+      "type": "other"
+    },
+    {
+      "date": "05/02/25",
+      "description": "458 Nationwide Insurance 459 Manuel Gonzalez",
+      "amount": -6892.47,
+      "type": "other"
+    },
+    {
+      "date": "05/19/25",
+      "description": "460 Autoro (oven Removal)",
+      "amount": -130,
+      "type": "other"
+    },
+    {
+      "date": "06/06/25",
+      "description": "WIRE TYPE:WIRE IN DATE: 250606 TIME:1745 ET TRN:2025060600535226 SEQ:2025060600009862/003463 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: 6838HH17ZM",
+      "amount": 26979.17,
+      "type": "wire"
+    },
+    {
+      "date": "06/11/25",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031036030 PPD PMT INFO:N1*GD*MARCI DREXLER FOR AN1*BE*BONNI E DREXLER *34*XXXXXXXXXI",
+      "amount": 2089.4,
+      "type": "ssa"
+    },
+    {
+      "date": "06/18/25",
+      "description": "Interest Earned",
+      "amount": 5.48,
+      "type": "interest"
+    },
+    {
+      "date": "05/22/25",
+      "description": "PURCHASE 0522 AMAZON MARK* NZOW36JSO AMAZON.COM/MAWA",
+      "amount": -28.47,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/22/25",
+      "description": "SPROUTS FARMER 05/22 #000178436 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -82.33,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/27/25",
+      "description": "SPROUTS FARMER 05/26 #000193372 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -184.07,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/30/25",
+      "description": "PURCHASE 0529 AMAZON MARK* NN3FC9VRO AMAZON.COM/MAWA",
+      "amount": -133.83,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/30/25",
+      "description": "CHECKCARD 0530 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": -45.04,
+      "type": "debit_card"
+    },
+    {
+      "date": "05/30/25",
+      "description": "SPROUTS FARMER 05/30 #000700336 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -98.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/02/25",
+      "description": "CHECKCARD 0531 TRADER JOE S #122 STUDIO CITY CA 24137465152501306469416",
+      "amount": -38.37,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/02/25",
+      "description": "PURCHASE 0601 AMAZON MARK* N64PS9F21 AMAZON.COM/MAWA",
+      "amount": -58.72,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/02/25",
+      "description": "PURCHASE 0601 AMAZON MARK* N61A35FA1 AMAZON.COM/MAWA",
+      "amount": -49.34,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/03/25",
+      "description": "SPROUTS FARMER 06/03 #000685420 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -81.16,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/05/25",
+      "description": "CHECKCARD 0605 WWW.TRUPANION. SEATTLE WA 00000000000000000953659 RECURRING",
+      "amount": -113.95,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/09/25",
+      "description": "PURCHASE 0606 AMAZON MARK* N62K70UI1 AMAZON.COM/MAWA",
+      "amount": -23.97,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/09/25",
+      "description": "CHECKCARD 0607 TRADER JOE S #122 STUDIO CITY CA 24137465159501273795895",
+      "amount": -72.56,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/09/25",
+      "description": "SPROUTS FARMER 06/09 #000172643 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -116.79,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/11/25",
+      "description": "CHECKCARD 0609 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786715162000000029584",
+      "amount": -168.61,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/12/25",
+      "description": "CHECKCARD 0611 ALL STAR HEALTH.COM 800-875-0448 CA 24692165162105877931969",
+      "amount": -172.85,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/13/25",
+      "description": "PURCHASE 0612 AMAZON MARK* NH4J31IPO AMAZON.COM/MAWA",
+      "amount": -120.71,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/13/25",
+      "description": "PURCHASE 0613 AMAZON MARK* NA6EF2622 AMAZON.COM/MAWA",
+      "amount": -10.59,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/13/25",
+      "description": ": 06/13/25 SPROUTS FARMER 06/13 #000391680 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -148.72,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/16/25",
+      "description": "CHECKCARD 0614 TRADER JOE S #122 STUDIO CITY CA 24137465166501253370686",
+      "amount": -57.59,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/16/25",
+      "description": "CHECKCARD 0615 LA FITNESS IRVINE CA 00000000000000000396990 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/16/25",
+      "description": "CHECKCARD 0615 LA FITNESS IRVINE CA 00000000000000000426235 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/18/25",
+      "description": "CHECKCARD 0618 CVS/PHARMACY # Studio City CA",
+      "amount": -27.84,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/18/25",
+      "description": "SPROUTS FARMER 06/18 #000964988 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -104.86,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/09/25",
+      "description": "SPECTRUM DES:SPECTRUM ID:2686620 INDN:BONNIE DREXLER CO ID:0000358635 PPD",
+      "amount": -302.82,
+      "type": "other"
+    },
+    {
+      "date": "05/29/25",
+      "description": "461 SOCALGAS",
+      "amount": -100.59,
+      "type": "other"
+    },
+    {
+      "date": "06/02/25",
+      "description": "462 Authers",
+      "amount": -521.23,
+      "type": "other"
+    },
+    {
+      "date": "07/02/25",
+      "description": "WIRE TYPE:WIRE IN DATE: 250702 TIME:1126 ET TRN:2025070200413592 SEQ:2025070200004615/001571 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: 2FHOYNDB86",
+      "amount": 26979.17,
+      "type": "wire"
+    },
+    {
+      "date": "07/09/25",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031036030 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXXI",
+      "amount": 2089.4,
+      "type": "ssa"
+    },
+    {
+      "date": "07/22/25",
+      "description": "Interest Earned",
+      "amount": 6.96,
+      "type": "interest"
+    },
+    {
+      "date": "06/20/25",
+      "description": "CVS/PHARM 0967 06/20 #000700682 PURCHASE CVS/PHARM 09675 -- Studio City CA",
+      "amount": -6.56,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/20/25",
+      "description": "THE HOME DEPOT 06/20 #000422252 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -103.83,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/23/25",
+      "description": "SPROUTS FARMER 06/23 #000371569 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -81.75,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/25/25",
+      "description": "CHECKCARD 0623 TRADER JOE S #122 STUDIO CITY CA 24137465175500977157055",
+      "amount": -44.23,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/27/25",
+      "description": "SPROUTS FARMER 06/27 #000611045 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -125.1,
+      "type": "debit_card"
+    },
+    {
+      "date": "06/30/25",
+      "description": "PURCHASE 0630 AMAZON MARK* NQ9BV7UY1 AMAZON.COM/MAWA",
+      "amount": -36.73,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/01/25",
+      "description": "PURCHASE 0630 AMAZON MARK* N330FOXR2 AMAZON.COM/MAWA",
+      "amount": -18.65,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/01/25",
+      "description": "PURCHASE 0630 LAW OFFICES OF ROZSA LIVINGTRUST-ACA",
+      "amount": -150,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/02/25",
+      "description": "SPROUTS FARMER 07/02 #000178559 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -126.59,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/03/25",
+      "description": "CHECKCARD 0702 THE UPS STORE 2036 213-4945128 CA 24000975183996403602577",
+      "amount": -15,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/07/25",
+      "description": "CHECKCARD 0702 TRADER JOE S #122 STUDIO CITY CA 24137465184501155589969",
+      "amount": -43.09,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/07/25",
+      "description": "CHECKCARD 0704 ALL STAR HEALTH.COM 800-875-0448 CA 24692165185103987652180",
+      "amount": -50.29,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/07/25",
+      "description": "SPROUTS FARMER 07/04 #000151869 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -31.81,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/07/25",
+      "description": "CHECKCARD 0704 N & D OIL CORP NORTH HOLLYWOCA",
+      "amount": -71.79,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/07/25",
+      "description": "CHECKCARD 0705 WWW.TRUPANION. SEATTLE WA 00000000000000000177428 RECURRING",
+      "amount": -113.95,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/07/25",
+      "description": "SPROUTS FARMER 07/07 #000676817 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -82.58,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/08/25",
+      "description": "CHECKCARD 0707 CARFAX *CARFAX.COM CARFAX.COM VA 24692165188106309563784",
+      "amount": -44.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/10/25",
+      "description": "SPROUTS FARMER 07/10 #000913745 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -72.08,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/11/25",
+      "description": "THE HOME DEPOT 07/11 #000227901 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -236.88,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/14/25",
+      "description": "PURCHASE 0714 AMAZON MARK* 7L9GI5QM3 AMAZON.COM/MAWA",
+      "amount": -24.13,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/14/25",
+      "description": "SPROUTS FARMER 07/14 #000783331 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -70.06,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/15/25",
+      "description": "CHECKCARD 0715 LA FITNESS IRVINE CA 00000000000000000294907 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/15/25",
+      "description": "CHECKCARD 0715 LA FITNESS IRVINE CA 00000000000000000296114 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/16/25",
+      "description": "CHECKCARD 0714 TRADER JOE S #122 STUDIO CITY CA 24137465196501013283546",
+      "amount": -33.79,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/21/25",
+      "description": "SPROUTS FARMER 07/20 #000368813 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -134.05,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/22/25",
+      "description": "CHECKCARD 0720 TRADER JOE S #122 STUDIO CITY CA 24137465202501041664628",
+      "amount": -40.11,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/22/25",
+      "description": "MICHAELS STORE 07/22 #000068916 PURCHASE 1551 N VICTORY PL BURBANK CA",
+      "amount": -9.92,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/22/25",
+      "description": "SPROUTS FARMER 07/22 #000977030 PURCHASE SPROUTS FARMERS M BURBANK CA",
+      "amount": -45.7,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/07/25",
+      "description": "DES:WEB PAY ID:4027131000 INDN:bonnie drexler CO ID:4956000736 WEB SPECTRUM DES:SPECTRUM ID:4088952 INDN:BONNIE DREXLER PPD",
+      "amount": -739,
+      "type": "other"
+    },
+    {
+      "date": "07/08/25",
+      "description": "CO ID:0000358635 ATT DES: PAYMENT ID:XXXXXXXXXEPAYO INDN:MARCI DREXLER CO ID:9864031004 PPD",
+      "amount": -76.47,
+      "type": "other"
+    },
+    {
+      "date": "06/27/25",
+      "description": "465 40 CALGAS",
+      "amount": -51.59,
+      "type": "other"
+    },
+    {
+      "date": "06/27/25",
+      "description": "466 Authum",
+      "amount": -521.23,
+      "type": "other"
+    },
+    {
+      "date": "07/03/25",
+      "description": "467 Authorm",
+      "amount": -164.9,
+      "type": "other"
+    },
+    {
+      "date": "07/14/25",
+      "description": "* 07/14/25 470 GRIco CAR INSURANCE",
+      "amount": -2534.46,
+      "type": "other"
+    },
+    {
+      "date": "07/16/25",
+      "description": "» 07/16/25 471 DMV FOCUS",
+      "amount": -164,
+      "type": "other"
+    },
+    {
+      "date": "08/04/25",
+      "description": "৳ 08/04/25 WIRE TYPE:WIRE IN DATE: 250804 TIME:1751 ET TRN:2025080400639129 SEQ:2025080400009555/002995 ORIG:FLETCHER JONES SR TRUST ID:0690007516 SND BK: ZIONS BANCORPORATION, NA DBA ID:122400779 PMT DET: /LOCINS/CTRC",
+      "amount": 26979.17,
+      "type": "wire"
+    },
+    {
+      "date": "08/13/25",
+      "description": "SSA TREAS 310 DES:XXSOC SEC ID:XXXXXXXXXA SSA INDN:MARCI DREXLER FOR CO ID:9031036030 PPD PMT INFO:N1*GD*MARCI DREXLER FOR \\N1*BE*BONNI E DREXLER *34*XXXXXXXXX\\",
+      "amount": 2089.4,
+      "type": "ssa"
+    },
+    {
+      "date": "08/20/25",
+      "description": "· 08/20/25 Interest Earned",
+      "amount": 6.28,
+      "type": "interest"
+    },
+    {
+      "date": "07/24/25",
+      "description": "PURCHASE 0723 AMAZON MARK* HL7UE10Z3 AMAZON.COM/MAWA",
+      "amount": -45,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/25/25",
+      "description": "CHECKCARD 0724 TST* HEAVY HANDED STUDI STUDIO CITY CA 24137465205100327495653",
+      "amount": -16.6,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/28/25",
+      "description": "CHECKCARD 0725 CHIPOTLE 1784 MALIBU CA 24431065207253483237549",
+      "amount": -23.48,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/28/25",
+      "description": "CHECKCARD 0726 TRADER JOE S #122 STUDIO CITY CA 24137465208501272623065",
+      "amount": -39.88,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/28/25",
+      "description": "SPROUTS FARMER 07/26 #000962931 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -75.47,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/30/25",
+      "description": "CHECKCARD 0729 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24988065210900015200013",
+      "amount": -168.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/30/25",
+      "description": "THE HOME DEPOT 07/30 #000153359 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -87.59,
+      "type": "debit_card"
+    },
+    {
+      "date": "07/30/25",
+      "description": "SPROUTS FARMER 07/30 #000363991 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -96.63,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/04/25",
+      "description": "PURCHASE 0801 AMAZON MKTPL*072GA53P3 Amzn.com/billWA",
+      "amount": -17.55,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/04/25",
+      "description": "PURCHASE 0801 AMAZON MARK* VB2UL1713 AMAZON.COM/MAWA",
+      "amount": -9.77,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/04/25",
+      "description": "PURCHASE 0803 AMAZON RETA* S910B9Q23 WWW.AMAZON.COWA",
+      "amount": -43.9,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/04/25",
+      "description": "SPROUTS FARMER 08/03 #000353014 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -90.6,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/05/25",
+      "description": "CHECKCARD 0803 TRADER JOE S #122 STUDIO CITY CA 24137465216501083474989",
+      "amount": -30.3,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/05/25",
+      "description": "CHECKCARD 0805 WWW.TRUPANION. SEATTLE WA 00000000000000000644627 RECURRING",
+      "amount": -113.95,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/07/25",
+      "description": "SPROUTS FARMER 08/07 #000727866 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -110.6,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/11/25",
+      "description": "CHECKCARD 0808 TST*ERNIES MEXICAN REST North HollywoCA 24692165221103969112472",
+      "amount": -19.44,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/11/25",
+      "description": "CHECKCARD 0810 PSJMC BURBANK PARKING BURBANK CA 24055235223438976369420",
+      "amount": -10,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/11/25",
+      "description": "USPS PO 055452 08/11 #000814900 PURCHASE USPS PO 05545203 VALLEY VILLAG CA",
+      "amount": -15.6,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/11/25",
+      "description": "SPROUTS FARMER 08/11 #000175892 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -72.65,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/13/25",
+      "description": "CHECKCARD 0811 TRADER JOE S #122 STUDIO CITY CA 24137465224501039785454",
+      "amount": -43.28,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/14/25",
+      "description": "PURCHASE 0814 AMAZON MARK* GM3AR4ZS3 AMAZON.COM/MAWA",
+      "amount": -53.44,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/14/25",
+      "description": "PURCHASE 0814 AMAZON MARK* WW6W81323 AMAZON.COM/MAWA",
+      "amount": -25.23,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/14/25",
+      "description": "THE HOME DEPOT 08/14 #000634156 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+      "amount": -47.61,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/14/25",
+      "description": "SPROUTS FARMER 08/14 #000991317 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -80.68,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/15/25",
+      "description": "CHECKCARD 0815 LA FITNESS IRVINE CA 00000000000000000251492 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/15/25",
+      "description": "CHECKCARD 0815 LA FITNESS IRVINE CA 00000000000000000287821 RECURRING",
+      "amount": -29.99,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/18/25",
+      "description": "CHECKCARD 0814 TRADER JOE S #122 STUDIO CITY CA 24137465227501119394554",
+      "amount": -18.46,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/18/25",
+      "description": "PURCHASE 0816 AMAZON MARK* TG3SROHA3 AMAZON.COM/MAWA",
+      "amount": -123.38,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/18/25",
+      "description": "CHECKCARD 0815 SMILE SPECIALIST LOS ANGELES CA 24750765229900015900695",
+      "amount": -180,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/18/25",
+      "description": "CHECKCARD 0816 CHIPOTLE 2093 SHERMAN OAKS CA 24431065229268056544695",
+      "amount": -23.05,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/18/25",
+      "description": "PURCHASE 0818 AMAZON MARK* 3G6XG4QF3 AMAZON.COM/MAWA",
+      "amount": -52.67,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/18/25",
+      "description": "SPROUTS FARMER 08/18 #000187880 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+      "amount": -121.3,
+      "type": "debit_card"
+    },
+    {
+      "date": "08/05/25",
+      "description": "SPECTRUM DES:SPECTRUM ID:5867653 INDN:BONNIE DREXLER CO ID:0000358635 PPD",
+      "amount": -320.4,
+      "type": "other"
+    },
+    {
+      "date": "08/20/25",
+      "description": "ATT DES:PAYMENT ID:XXXXXXXXXEPAYT INDN:MARCI DREXLER co ID:9864031004 PPD · 08/20/25 LADWP DES:WEB PAY ID:4027131000 INDN:bonnie drexler CO ID:4956000736 WEB",
+      "amount": -76.43,
+      "type": "other"
+    },
+    {
+      "date": "08/01/25",
+      "description": "472 Anthem",
+      "amount": -164.9,
+      "type": "other"
+    },
+    {
+      "date": "08/01/25",
+      "description": "473 Authem",
+      "amount": -521.23,
+      "type": "other"
+    },
+    {
+      "date": "08/01/25",
+      "description": "· 08/01/25 474 SOCAL GAS",
+      "amount": -41.36,
+      "type": "other"
+    },
+    {
+      "date": "08/20/25",
+      "description": "479* ANTHEM",
+      "amount": -164.9,
+      "type": "other"
+    }
+  ],
+  "checks": [
+    {
+      "date": "11/29/23",
+      "checkNum": "344",
+      "amount": -94.5,
+      "type": "check"
+    },
+    {
+      "date": "11/29/23",
+      "checkNum": "345",
+      "amount": -412.04,
+      "type": "check"
+    },
+    {
+      "date": "02/21/24",
+      "checkNum": "364",
+      "amount": -132.7,
+      "type": "check"
+    },
+    {
+      "date": "02/27/24",
+      "checkNum": "366",
+      "amount": -463.2,
+      "type": "check"
+    },
+    {
+      "date": "05/28/24",
+      "checkNum": "383",
+      "amount": -132.7,
+      "type": "check"
+    },
+    {
+      "date": "09/30/24",
+      "checkNum": "408",
+      "amount": -775,
+      "type": "check"
+    },
+    {
+      "date": "09/30/24",
+      "checkNum": "409",
+      "amount": -132.7,
+      "type": "check"
+    },
+    {
+      "date": "09/30/24",
+      "checkNum": "410",
+      "amount": -463.2,
+      "type": "check"
+    },
+    {
+      "date": "10/09/24",
+      "checkNum": "411",
+      "amount": -130,
+      "type": "check"
+    },
+    {
+      "date": "01/16/25",
+      "checkNum": "427",
+      "amount": -425,
+      "type": "check"
+    },
+    {
+      "date": "02/07/25",
+      "checkNum": "438",
+      "amount": -2555,
+      "type": "check"
+    },
+    {
+      "date": "02/04/25",
+      "checkNum": "440",
+      "amount": -19475,
+      "type": "check"
+    },
+    {
+      "date": "02/14/25",
+      "checkNum": "441",
+      "amount": -375,
+      "type": "check"
+    },
+    {
+      "date": "02/19/25",
+      "checkNum": "442",
+      "amount": -16750,
+      "type": "check"
+    },
+    {
+      "date": "03/06/25",
+      "checkNum": "443",
+      "amount": -323.27,
+      "type": "check"
+    },
+    {
+      "date": "02/28/25",
+      "checkNum": "445",
+      "amount": -521.23,
+      "type": "check"
+    },
+    {
+      "date": "05/19/25",
+      "checkNum": "460",
+      "amount": -50,
+      "type": "check"
+    },
+    {
+      "date": "07/01/25",
+      "checkNum": "465",
+      "amount": -51.59,
+      "type": "check"
+    },
+    {
+      "date": "06/27/25",
+      "checkNum": "466",
+      "amount": -521.23,
+      "type": "check"
+    },
+    {
+      "date": "06/27/25",
+      "checkNum": "467",
+      "amount": -164.9,
+      "type": "check"
+    },
+    {
+      "date": "07/03/25",
+      "checkNum": "468",
+      "amount": -150,
+      "type": "check"
+    }
+  ]
+}

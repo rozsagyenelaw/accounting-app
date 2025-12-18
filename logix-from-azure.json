@@ -1,1 +1,212 @@
-[]
+[
+  {
+    "date": "4/1/2024",
+    "description": "Logix Deposit Dividend Split Rate",
+    "amount": 75.99,
+    "type": "RECEIPT",
+    "source": "Table 90"
+  },
+  {
+    "date": "4/1/2024",
+    "description": "Logix Deposit Dividend 4.887% Annual Percentage Yield Earned (APYE) For Period 03/25 - 03/31:",
+    "amount": 379.58,
+    "type": "RECEIPT",
+    "source": "Table 93"
+  },
+  {
+    "date": "5/1/2024",
+    "description": "Logix Deposit Dividend Split Rate Annual Percentage Yield Earned (APYE) For Period 04/01 - 04/30: 4.250% Based on an Average Daily Balance of $ 95,075.99",
+    "amount": 325.89,
+    "type": "RECEIPT",
+    "source": "Table 96"
+  },
+  {
+    "date": "6/1/2024",
+    "description": "Logix Deposit Dividend Split Rate",
+    "amount": 337.9,
+    "type": "RECEIPT",
+    "source": "Table 96"
+  },
+  {
+    "date": "7/1/2024",
+    "description": "Logix Deposit Dividend Split Rate Annual Percentage Yield Earned (APYE) For Period 06/01 - 06/30: 4.250% Based on an Average Daily Balance of $ 95,739.78",
+    "amount": 328.16,
+    "type": "RECEIPT",
+    "source": "Table 96"
+  },
+  {
+    "date": "8/1/2024",
+    "description": "Logix Deposit Dividend Split Rate Annual Percentage Yield Earned (APYE) For Period 07/01 - 07/31: 4.250% Based on an Average Daily Balance of $ 96,067.94",
+    "amount": 340.26,
+    "type": "RECEIPT",
+    "source": "Table 101"
+  },
+  {
+    "date": "9/1/2024",
+    "description": "Logix Deposit Dividend Split Rate",
+    "amount": 341.49,
+    "type": "RECEIPT",
+    "source": "Table 101"
+  },
+  {
+    "date": "10/1/2024",
+    "description": "Logix Deposit Dividend Split Rate Annual Percentage Yield Earned (APYE) For Period 09/01 - 09/30: 4.250% Based on an Average Daily Balance of $ 96,749.69",
+    "amount": 331.63,
+    "type": "RECEIPT",
+    "source": "Table 101"
+  },
+  {
+    "date": "8/1/2024",
+    "description": "Logix Deposit Dividend 4.887%",
+    "amount": 1703.16,
+    "type": "RECEIPT",
+    "source": "Table 102"
+  },
+  {
+    "date": "10/12/2024",
+    "description": "Logix Deposit Dividend 4.887% Annual Percentage Yield Earned (APYE) For Period 09/01 - 09/30: 5.000%",
+    "amount": 1661.93,
+    "type": "RECEIPT",
+    "source": "Table 102"
+  },
+  {
+    "date": "11/1/2024",
+    "description": "Logix Deposit Dividend Split Rate Annual Percentage Yield Earned (APYE) For Period 10/01 - 10/31: 4.110% Based on an Average Daily Balance of $ 97,081.32",
+    "amount": 332.52,
+    "type": "RECEIPT",
+    "source": "Table 184"
+  },
+  {
+    "date": "12/1/2024",
+    "description": "Logix Deposit Dividend Split Rate",
+    "amount": 309.76,
+    "type": "RECEIPT",
+    "source": "Table 184"
+  },
+  {
+    "date": "1/1/2025",
+    "description": "Logix Deposit Dividend Split Rate Annual Percentage Yield Earned (APYE) For Period 12/01 - 12/31: 3.770% Based on an Average Daily Balance of $ 97,723.60",
+    "amount": 307.55,
+    "type": "RECEIPT",
+    "source": "Table 184"
+  },
+  {
+    "date": "1/1/2025",
+    "description": "Logix Deposit Dividend 4.887%",
+    "amount": 1738.34,
+    "type": "RECEIPT",
+    "source": "Table 186"
+  },
+  {
+    "date": "2/1/2025",
+    "description": "Logix Deposit Dividend Split Rate Annual Percentage Yield Earned (APYE) For Period 01/01 - 01/31: 3.750% Based on an Average Daily Balance of $ 98,031.15",
+    "amount": 307.35,
+    "type": "RECEIPT",
+    "source": "Table 190"
+  },
+  {
+    "date": "3/1/2025",
+    "description": "Logix Deposit Dividend Split Rate",
+    "amount": 278.48,
+    "type": "RECEIPT",
+    "source": "Table 190"
+  },
+  {
+    "date": "4/1/2024",
+    "description": "Logix Deposit Dividend Split Rate",
+    "amount": 305.63,
+    "type": "RECEIPT",
+    "source": "Table 190"
+  },
+  {
+    "date": "4/1/2024",
+    "description": "Logix Deposit Dividend 3.924%",
+    "amount": 323.78,
+    "type": "RECEIPT",
+    "source": "Table 193"
+  },
+  {
+    "date": "5/1/2024",
+    "description": "Logix Deposit Dividend Split Rate Annual Percentage Yield Earned (APYE) For Period 04/01 - 04/30: 3.750% Based on an Average Daily Balance of $ 93,922.61",
+    "amount": 284.96,
+    "type": "RECEIPT",
+    "source": "Table 196"
+  },
+  {
+    "date": "6/1/2024",
+    "description": "Logix Deposit Dividend Split Rate",
+    "amount": 295.35,
+    "type": "RECEIPT",
+    "source": "Table 196"
+  },
+  {
+    "date": "7/1/2024",
+    "description": "Logix Deposit Dividend Split Rate Annual Percentage Yield Earned (APYE) For Period 06/01 - 06/30: 3.750% Based on an Average Daily Balance of $ 94,502.92",
+    "amount": 286.72,
+    "type": "RECEIPT",
+    "source": "Table 196"
+  },
+  {
+    "date": "5/1/2024",
+    "description": "Logix Deposit Dividend 3.924% Annual Percentage Yield Earned (APYE) For Period 04/01 - 04/30: 4.000%",
+    "amount": 1388.67,
+    "type": "RECEIPT",
+    "source": "Table 198"
+  },
+  {
+    "date": "6/1/2024",
+    "description": "Logix Deposit Dividend 3.924% Annual Percentage Yield Earned (APYE) For Period 05/01 - 05/31: 4.000%",
+    "amount": 1439.59,
+    "type": "RECEIPT",
+    "source": "Table 198"
+  },
+  {
+    "date": "7/12/2024",
+    "description": "Logix Deposit Dividend 3.924% Annual Percentage Yield Earned (APYE) For Period 06/01 - 06/30: 4.000%",
+    "amount": 1397.79,
+    "type": "RECEIPT",
+    "source": "Table 198"
+  },
+  {
+    "date": "8/1/2024",
+    "description": "Logix Deposit Dividend Split Rate Annual Percentage Yield Earned (APYE) For Period 07/01 - 07/31: 3.750% Based on an Average Daily Balance of $ 94,789.64",
+    "amount": 297.16,
+    "type": "RECEIPT",
+    "source": "Table 201"
+  },
+  {
+    "date": "9/1/2024",
+    "description": "Logix Deposit Dividend Split Rate",
+    "amount": 298.09,
+    "type": "RECEIPT",
+    "source": "Table 201"
+  },
+  {
+    "date": "10/1/2024",
+    "description": "Logix Deposit Dividend Split Rate Annual Percentage Yield Earned (APYE) For Period 09/01 - 09/30: 3.750% Based on an Average Daily Balance of $ 95,384.89",
+    "amount": 289.29,
+    "type": "RECEIPT",
+    "source": "Table 201"
+  },
+  {
+    "date": "8/1/2024",
+    "description": "Logix Deposit Dividend 3.924%",
+    "amount": 1449.04,
+    "type": "RECEIPT",
+    "source": "Table 203"
+  },
+  {
+    "date": "9/1/2024",
+    "description": "Logix Deposit Dividend 3.924%",
+    "amount": 1453.87,
+    "type": "RECEIPT",
+    "source": "Table 203"
+  },
+  {
+    "date": "10/1/2024",
+    "description": "Logix Deposit Dividend 3.924%",
+    "amount": 1411.66,
+    "type": "RECEIPT",
+    "source": "Table 203"
+  }
+]

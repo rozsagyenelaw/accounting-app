@@ -59,7 +59,7 @@
     {
       "rows": 7,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Beginning balance on August 23, 2023",
         "$510,908.55",
         "Deposits and other additions",
@@ -79,7 +79,7 @@
     {
       "rows": 8,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Deposits\nDate",
         "and other additions\nDescription",
         "Amount",
@@ -99,13 +99,17 @@
         "CHECKCARD 0918 AMAZON.COM SEATTLE WA 7443106326108300143",
         "10.06",
         "09/19/23",
-        "CHECKCARD 0918 AMAZON.COM SEATTLE WA 7443106326108300253"
+        "CHECKCARD 0918 AMAZON.COM SEATTLE WA 7443106326108300253",
+        "10.05",
+        "1 09/20/23",
+        "Interest Earned",
+        "8.16"
       ]
     },
     {
       "rows": 9,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -125,13 +129,20 @@
         "CHECKCARD 0824 ALL STAR HEALTH.COM 800-875-0448 CA 24692163236103995554257",
         "-143.17",
         "08/25/23",
-        "CHECKCARD 0823 TRADER JOE S #122 STUDIO CITY CA 24137463236500814079969"
+        "CHECKCARD 0823 TRADER JOE S #122 STUDIO CITY CA 24137463236500814079969",
+        "-77.02",
+        "08/28/23",
+        "CHECKCARD 0825 AMZN MKTP US*TQ13H2ID1 AMZN.COM/BILLWA 24431063237083335746549",
+        "-10.94",
+        "08/28/23",
+        "CHECKCARD 0826 STARBUCKS STORE 05870 BURBANK CA 24692163239106653671260",
+        "-8.90"
       ]
     },
     {
       "rows": 31,
       "cols": 4,
-      "sample": [
+      "cells": [
         "",
         "Date",
         "Description",
@@ -151,13 +162,117 @@
         "1",
         "08/30/23",
         "SPROUTS FARMER 08/29 #000018034 PURCHASE SPROUTS FARMERS M BURBANK CA",
-        "-71.49"
+        "-71.49",
+        ".",
+        "08/31/23",
+        "CHECKCARD 0830 CHIPOTLE 1412 STUDIO CITY CA 24431063243400588002119",
+        "-11.88",
+        "-",
+        "09/01/23",
+        "CHECKCARD 0831 AMZN MKTP US*TL70Y1L62 AMZN.COM/BILLWA 24431063243083711227595",
+        "-10.90",
+        "1",
+        "09/01/23",
+        "THE HOME DEPOT 08/31 #000670000 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-76.56",
+        "›",
+        "09/05/23",
+        "CVS/PHARMACY # 09/02 #000049854 PURCHASE 09601 -- 1015 N. Sa Burbank CA",
+        "-19.26",
+        "",
+        "09/05/23",
+        "SPROUTS FARMER 09/02 #000236997 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-65.10",
+        "-",
+        "09/05/23",
+        "CHECKCARD 0902 TRADER JOE S #124 BURBANK CA 24137463246500760071810",
+        "-60.14",
+        "1",
+        "09/05/23",
+        "CHECKCARD 0902 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786713246900010400219",
+        "-77.73",
+        "·",
+        "09/05/23",
+        "CHECKCARD 0905 AMAZON.COM*TL6TA2SM2 AM AMZN.COM/BILLWA 24431063248083326486920",
+        "-10.05",
+        ",",
+        "09/05/23",
+        "THE HOME DEPOT 09/04 #000269053 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-99.15",
+        "1",
+        "09/05/23",
+        "CHECKCARD 0905 N & D OIL CORP NORTH HOLLYWOCA",
+        "-35.80",
+        "",
+        "09/05/23",
+        "CHECKCARD 0905 WWW.TRUPANION. SEATTLE WA",
+        "-69.53",
+        "",
+        "09/06/23",
+        "CHECKCARD 0905 JORDAN D COLBY DMD INC OCEANSIDE CA 24431063248200000000021",
+        "-145.00",
+        "",
+        "09/07/23",
+        "CHECKCARD 0905 TRADER JOE S #022 OCEANSIDE CA 24137463249500776736015",
+        "-19.65",
+        "",
+        "09/07/23",
+        "CHECKCARD 0906 AMZN MKTP US*TL4SO22SO SEATTLE WA 24431063249083746075328",
+        "-31.20",
+        "0",
+        "09/07/23",
+        "CHECKCARD 0906 AMAZON.COM*TL5VE7BL1 AM AMZN.COM/BILLWA 24431063250083725202683",
+        "-10.06",
+        "1",
+        "09/07/23",
+        "SPROUTS FARMER 09/07 #000817648 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-86.15",
+        "0",
+        "09/11/23",
+        "CHECKCARD 0907 TRADER JOE S #124 BURBANK CA 24137463251500806718814",
+        "-40.09",
+        "₹",
+        "09/11/23",
+        "CHECKCARD 0909 N & D OIL CORP NORTH HOLLYWOCA",
+        "-86.81",
+        "",
+        "09/11/23",
+        "CHECKCARD 0910 AMZN MKTP US*TR6WB61E0 AMZN.COM/BILLWA 24431063253083353006452",
+        "-10.92",
+        "·",
+        "09/11/23",
+        "THE HOME DEPOT 09/10 #000086592 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-210.15",
+        "",
+        "09/12/23",
+        "CHECKCARD 0911 AMZN MKTP US*TR3578810 SEATTLE WA 24431063254083728588944",
+        "-111.68",
+        "",
+        "09/13/23",
+        "SPROUTS FARMER 09/13 #000311077 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-130.92",
+        "/",
+        "09/14/23",
+        "THE HOME DEPOT 09/14 #000570072 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-109.55",
+        "-",
+        "09/15/23",
+        "CHECKCARD 0913 TRADER JOE S #124 BURBANK CA 24137463257500804669773",
+        "-46.42",
+        "",
+        "09/15/23",
+        "CHECKCARD 0914 AMZN MKTP US*TX5N28F52 SEATTLE WA 24431063257083735753710",
+        "-17.51",
+        "1",
+        "09/18/23",
+        "CHECKCARD 0915 ALL STAR HEALTH.COM 800-875-0448 CA 24692163258108614487444",
+        "-44.96"
       ]
     },
     {
       "rows": 8,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -177,13 +292,17 @@
         "CHECKCARD 0918 AMZN MKTP US*TX8MH8892 SEATTLE WA 24431063261083314647915",
         "41.60",
         "09/18/23",
-        "CVS/PHARMACY # 09/18 #000173971 PURCHASE 09601 -- 1015 N. Sa Burbank CA"
+        "CVS/PHARMACY # 09/18 #000173971 PURCHASE 09601 -- 1015 N. Sa Burbank CA",
+        "-20.69",
+        ": 09/18/23",
+        "SPROUTS FARMER 09/18 #000932726 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-133.68"
       ]
     },
     {
       "rows": 4,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -201,7 +320,7 @@
     {
       "rows": 6,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -225,7 +344,7 @@
     {
       "rows": 5,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -246,7 +365,7 @@
     {
       "rows": 2,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Total checks",
         "-$12,628.97",
         "Total # of checks",
@@ -256,7 +375,7 @@
     {
       "rows": 7,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Beginning balance on September 21, 2023",
         "$524,418.71",
         "Deposits and other additions",
@@ -276,7 +395,7 @@
     {
       "rows": 6,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Deposits\nDate",
         "and other\nDescription",
         "Amount",
@@ -300,7 +419,7 @@
     {
       "rows": 12,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -320,13 +439,29 @@
         "SPROUTS FARMER 09/23 #000702530 PURCHASE SPROUTS FARMERS M BURBANK CA",
         "-128.25",
         "09/26/23",
-        "CHECKCARD 0925 BR FACTORY.COM 2624 844-2377746 OH 24789303268474600938764"
+        "CHECKCARD 0925 BR FACTORY.COM 2624 844-2377746 OH 24789303268474600938764",
+        "-268.23",
+        "09/26/23",
+        "CHECKCARD 0924 BR FACTORY.COM 2624 844-2377746 OH 24789303268470300953996",
+        "-39.86",
+        "/ 09/27/23",
+        "CHECKCARD 0926 ANNTAYLOR.COM #611 800-342-5266 CT 24431063269884226750842",
+        "-137.20",
+        "09/27/23",
+        "THE HOME DEPOT 09/27 #000270294 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-71.88",
+        "09/28/23",
+        "CHECKCARD 0927 VIOC GN0013 NORTH HOLLYWOCA 24210733271837000078518",
+        "-72.67",
+        "09/28/23",
+        "SPROUTS FARMER 09/28 #000917546 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-83.25"
       ]
     },
     {
       "rows": 24,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -346,13 +481,65 @@
         "CHECKCARD 1008 N & D OIL CORP NORTH HOLLYWOCA",
         "-74.98",
         "10/10/23",
-        "VINTAGE GROCER 10/08 #000637727 PURCHASE VINTAGE GROCERS MALIBU CA"
+        "VINTAGE GROCER 10/08 #000637727 PURCHASE VINTAGE GROCERS MALIBU CA",
+        "-32.01",
+        "10/12/23",
+        "SPROUTS FARMER 10/12 #000961493 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-110.66",
+        "10/13/23",
+        "CHECKCARD 1012 SHARP PET HOSPITAL NORTH HOLLYWOCA 24493983285207949600025",
+        "-223.00",
+        "10/13/23",
+        "CHECKCARD 1012 DOG AND CAT HOSPITAL CA CALABASAS CA 24701773285550500335959",
+        "-465.00",
+        "10/16/23",
+        "CHECKCARD 1012 SHARKYS WOODFIRED MEXI 818-8409080 CA 24000973286553107112048",
+        "-28.85",
+        "10/16/23",
+        "CHECKCARD 1015 LA FITNESS 949-255-8100 CA 24492153288084001886596 RECURRING",
+        "-29.99",
+        "10/16/23",
+        "CHECKCARD 1014 BOX THAI STREET FOOD LAKE BALBOA CA 24717053288132885323912",
+        "-35.00",
+        "₹ 10/16/23",
+        "CHECKCARD 1015 LA FITNESS 949-255-8100 CA 24492153288084036900834 RECURRING",
+        "-29.99",
+        ", 10/16/23",
+        "CHECKCARD 1015 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786713288900014800066",
+        "-77.73",
+        "10/16/23",
+        "NORDSTROM RACK 10/15 #000107961 PURCHASE NORDSTROM RACK # BURBANK CA",
+        "-77.11",
+        "10/16/23",
+        "GELSON'S MARKE 10/15 #000369112 PURCHASE GELSON'S MARKETS VALLEY VILLAG CA",
+        "-10.42",
+        "៛ 10/16/23",
+        "HOBBYLOBB 641 10/16 #000719379 PURCHASE HOBBYLOBB 641 N. BURBANK CA",
+        "-19.28",
+        "/ 10/16/23",
+        "WALGREENS STOR 10/16 #000902832 PURCHASE WALGREENS STORE 1 BURBANK CA",
+        "-22.69",
+        "10/17/23",
+        "MACY'S 50 10/17 #000335224 PURCHASE MACY'S 501 1 SHERMAN OAKS CA",
+        "-98.00",
+        "៛ 10/18/23",
+        "CHECKCARD 1016 TRADER JOE S #124 BURBANK CA 24137463290500750499786",
+        "-73.72",
+        "* 10/18/23",
+        "TARGET T- 5711 10/18 #000800377 PURCHASE TARGET T- 5711 Se Van Nuys CA",
+        "-162.66",
+        "1 10/19/23",
+        "TARGET T- 1105 10/19 #000709477 PURCHASE TARGET T- 11051 V North Hollywo CA",
+        "-36.98",
+        "· 10/19/23",
+        "RITE AID 05575 10/19 #000159580 PURCHASE RITE AID 05575 NORTH HOLLYWO CA",
+        "-7.65"
       ]
     },
     {
       "rows": 4,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -370,7 +557,7 @@
     {
       "rows": 5,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -391,7 +578,7 @@
     {
       "rows": 5,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -412,7 +599,7 @@
     {
       "rows": 7,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Beginning balance on October 21, 2023",
         "$521,141.35",
         "Deposits and other additions",
@@ -432,7 +619,7 @@
     {
       "rows": 4,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Deposits\nDate",
         "and other additions\nDescription",
         "Amount",
@@ -450,7 +637,7 @@
     {
       "rows": 14,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -470,13 +657,35 @@
         "SPROUTS FARMER 10/24 #000986691 PURCHASE SPROUTS FARMERS M WOODLAND HILL CA",
         "-12.65",
         "- 10/25/23",
-        "CHECKCARD 1024 SHARP PET HOSPITAL NORTH HOLLYWOCA 24493983297207949400372"
+        "CHECKCARD 1024 SHARP PET HOSPITAL NORTH HOLLYWOCA 24493983297207949400372",
+        "-4,391.00",
+        "- 10/30/23",
+        "CHECKCARD 1027 AMZN MKTP US*XB6FR32J3 SEATTLE WA 24431063300083344086582",
+        "-45.96",
+        ", 10/30/23",
+        "LOWE'S #1144 10/29 #000259322 PURCHASE LOWE'S #1144 BURBANK CA",
+        "-53.91",
+        "10/30/23",
+        "CVS/PHARMACY # 10/29 #000607070 PURCHASE CVS/PHARMACY #09 Burbank CA",
+        "-8.80",
+        "៛ 10/30/23",
+        "SPROUTS FARMER 10/29 #000167333 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-102.03",
+        "10/31/23",
+        "CHECKCARD 1029 HARVEST MOON KITCHEN + VALLEY VILLAGCA 24342853303017013123861",
+        "-42.70",
+        "· 10/31/23",
+        "CHECKCARD 1029 TRADER JOE S #122 STUDIO CITY CA 24137463303500835446716",
+        "-71.04",
+        ": 11/02/23",
+        "CHECKCARD 1101 AMAZON.COM*K09HN1EU3 SEATTLE WA 24431063305083341488976",
+        "-51.99"
       ]
     },
     {
       "rows": 27,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -496,13 +705,74 @@
         "CHECKCARD 1105 TRADER JOE S #124 BURBANK CA 24137463310500794295238",
         "-48.38",
         "à 11/09/23",
-        "CHECKCARD 1108 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786713312900014300463"
+        "CHECKCARD 1108 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786713312900014300463",
+        "-77.73",
+        "৳ 11/10/23",
+        "CHECKCARD 1108 SHARKY'S - SHERMAN OAKS LOS ANGELES CA 24801973313872620744204",
+        "-35.03",
+        "* 11/10/23",
+        "SPROUTS FARMER 11/10 #000611275 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-98.06",
+        "1 11/13/23",
+        "CHECKCARD 1110 TRADER JOE S #124 BURBANK CA 24137463315501081814678",
+        "-41.42",
+        "· 11/13/23",
+        "CHECKCARD 1111 AMZN MKTP US*BL6POOIK3 SEATTLE WA 24431063315083751743983",
+        "-22.98",
+        "* 11/13/23",
+        "PURCHASE 1113 AMZN Mktp US*UV8198JU3 Amzn.com/billWA",
+        "-14.22",
+        "* 11/13/23",
+        "CHECKCARD 1112 AMZN MKTP US*YB7EE9VB3 SEATTLE WA 24431063316083333817767",
+        "-27.91",
+        "@ 11/14/23",
+        "RALPHS #0 1284 11/14 #000861558 PURCHASE RALPHS #0 12842 V STUDIO CITY CA",
+        "-39.81",
+        "9 11/15/23",
+        "CHECKCARD 1115 SELECTBLINDS, LLC 480-302-5164 AZ 24492153319719361249090",
+        "-459.15",
+        "· 11/16/23",
+        "CHECKCARD 1114 TRADER JOE S #122 STUDIO CITY CA 24137463319500770611797",
+        "-58.15",
+        "' 11/16/23",
+        "CHECKCARD 1115 LA FITNESS 949-255-8100 CA 24492153319084021623287 RECURRING",
+        "-29.99",
+        "· 11/16/23",
+        "CHECKCARD 1115 LA FITNESS 949-255-8100 CA 24492153319084027823667 RECURRING",
+        "-29.99",
+        "· 11/16/23",
+        "CHECKCARD 1116 AMZN MKTP US*445732N03 SEATTLE WA 24431063320083312018134",
+        "-76.62",
+        "· 11/17/23",
+        "CHECKCARD 1116 ALL STAR HEALTH.COM 800-875-0448 CA 24692163320105930303507",
+        "-144.81",
+        "៛ 11/17/23",
+        "CHECKCARD 1116 AMZN MKTP US*EZ8TW1BC3 SEATTLE WA 24431063320083303626499",
+        "-53.31",
+        "11/17/23",
+        "THE HOME DEPOT 11/17 #000787818 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-97.62",
+        "# 11/17/23",
+        "SPROUTS FARMER 11/17 #000187579 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-92.80",
+        "៛ 11/17/23",
+        "RALPHS #0 1090 11/17 #000257603 PURCHASE RALPHS #0 10901 V STUDIO CITY CA",
+        "-43.96",
+        "11/20/23",
+        "CHECKCARD 1117 SHARKYS WOODFIRED MEXI 818-8409080 CA 24000973323711002896868",
+        "-31.06",
+        "· 11/20/23",
+        "CHECKCARD 1117 TRADER JOE S #122 STUDIO CITY CA 24137463322501062082213",
+        "-29.77",
+        "4 11/20/23",
+        "VINTAGE GROCER 11/19 #000112282 PURCHASE VINTAGE GROCERS MALIBU CA",
+        "-38.55"
       ]
     },
     {
       "rows": 4,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -520,7 +790,7 @@
     {
       "rows": 2,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -532,7 +802,7 @@
     {
       "rows": 2,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -544,7 +814,7 @@
     {
       "rows": 7,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Beginning balance on November 21, 2023",
         "$540,371.06",
         "Deposits and other additions",
@@ -564,7 +834,7 @@
     {
       "rows": 4,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Deposits\nDate",
         "and other additions\nDescription",
         "Amount",
@@ -582,7 +852,7 @@
     {
       "rows": 13,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -602,13 +872,32 @@
         "CHECKCARD 1126 N & D OIL CORP NORTH HOLLYWOCA",
         "-78.20",
         "11/27/23",
-        "SPROUTS FARMER 11/26 #000085045 PURCHASE SPROUTS FARMERS M BURBANK CA"
+        "SPROUTS FARMER 11/26 #000085045 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-105.41",
+        "11/27/23",
+        "THE HOME DEPOT 11/27 #000058597 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-16.96",
+        "11/28/23",
+        "CHECKCARD 1127 AMAZON.COM*P59RNOQW3 SEATTLE WA 24431063331083729242142",
+        "-129.22",
+        "11/28/23",
+        "CHECKCARD 1126 TRADER JOE S #124 BURBANK CA 24137463331100501591766",
+        "-27.84",
+        ": 11/29/23",
+        "CHECKCARD 1128 WEST COAST LOCKSMITH IN WOODLAND HILLCA 24493983333400093000041",
+        "-330.00",
+        "$ 11/30/23",
+        "SPROUTS FARMER 11/30 #000974973 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-72.73",
+        "/ 11/30/23",
+        "RALPHS #0 1100 11/30 #000126689 PURCHASE RALPHS #0 1100 N. BURBANK CA",
+        "-43.96"
       ]
     },
     {
       "rows": 34,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -628,13 +917,95 @@
         "LAWRENCE H JOE 12/04 #000699438 PURCHASE LAWRENCE H JOE DD LOS ANGELES CA",
         "-125.00",
         "12/05/23",
-        "CHECKCARD 1204 AMZN MKTP US*LV5RC2KC3 SEATTLE WA 24431063338083344184284"
+        "CHECKCARD 1204 AMZN MKTP US*LV5RC2KC3 SEATTLE WA 24431063338083344184284",
+        "-37.43",
+        "12/05/23",
+        "CHECKCARD 1205 WWW.TRUPANION. SEATTLE WA",
+        "-90.41",
+        "12/05/23",
+        "SPROUTS FARMER 12/05 #000990032 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-133.28",
+        "12/06/23",
+        "CHECKCARD 1204 TST* OINKSTER - EAGLE R Los Angeles CA 24692163339102644734803",
+        "-42.29",
+        "12/07/23",
+        "CHECKCARD 1206 AMZN MKTP US*CK1U03K83 SEATTLE WA 24431063340083351818747",
+        "-26.12",
+        "12/08/23",
+        "THE HOME DEPOT 12/08 #000220151 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-104.39",
+        "12/11/23",
+        "CHECKCARD 1208 TRADER JOE S #252 NORTH HOLLYWOCA 24137463343501091613108",
+        "-23.82",
+        "12/11/23",
+        "LOWE'S #1144 12/09 #000681599 PURCHASE LOWE'S #1144 BURBANK CA",
+        "-17.97",
+        "12/11/23",
+        "SPROUTS FARMER 12/09 #000930751 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-36.13",
+        "12/11/23",
+        "RALPHS #0 1100 12/09 #000153622 PURCHASE RALPHS #0 1100 N. BURBANK CA",
+        "-44.41",
+        "12/11/23",
+        "CHECKCARD 1210 AMZN MKTP US*J98KG9NN3 SEATTLE WA 24431063344083743565747",
+        "-18.07",
+        "12/11/23",
+        "HOBBYLOBB 641 12/11 #000939467 PURCHASE HOBBYLOBB 641 N. BURBANK CA",
+        "-3.30",
+        "12/12/23",
+        "CHECKCARD 1211 AMZN MKTP US*BS8717BX3 SEATTLE WA 24431063346083328224460",
+        "-59.12",
+        "12/12/23",
+        "CHECKCARD 1211 FSP*POLISHED BEAUTY BAR BURBANK CA 24445003345300615796831",
+        "-57.00",
+        "12/13/23",
+        "CHECKCARD 1211 SHARKYS WOODFIRED MEXI 818-8409080 CA 24000973346813103200520",
+        "-35.72",
+        "12/13/23",
+        "SPROUTS FARMER 12/13 #000798777 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-80.08",
+        "12/14/23",
+        "PURCHASE 1213 AMZN Mktp US*177Z64G93 Amzn.com/billWA",
+        "-24.74",
+        "12/15/23",
+        "CHECKCARD 1214 AMZN MKTP US*GX46N7H63 SEATTLE WA 24431063348083330629050",
+        "-45.23",
+        "12/15/23",
+        "CHECKCARD 1215 SQ *LAW OFFICES OF ROZS gosq.com CA 24692163349101447371019",
+        "-3,000.00",
+        "12/15/23",
+        "CVS/PHARMACY # 12/15 #000187985 PURCHASE 09675 -- 12143 Vent Studio City CA",
+        "-17.94",
+        "12/15/23",
+        "RALPHS #0 1284 12/15 #000948456 PURCHASE RALPHS #0 12842 V STUDIO CITY CA",
+        "-33.96",
+        "12/18/23",
+        "CHECKCARD 1215 LA FITNESS 949-255-8100 CA 24492153349084011559602 RECURRING",
+        "-29.99",
+        "12/18/23",
+        "CHECKCARD 1215 AMZN MKTP US*H03PW88D3 SEATTLE WA 24431063349083341602715",
+        "-81.58",
+        "12/18/23",
+        "CHECKCARD 1215 LA FITNESS 949-255-8100 CA 24492153349084004830234 RECURRING",
+        "-29.99",
+        "12/18/23",
+        "CHECKCARD 1215 TRADER JOE S #122 STUDIO CITY CA 24137463350501109373935",
+        "-80.43",
+        "12/18/23",
+        "CHECKCARD 1217 AMZN MKTP US*5A3CR4WS3 SEATTLE WA 24431063351083325506549",
+        "-43.77",
+        "· 12/18/23",
+        "GELSON'S MARKE 12/16 #000914942 PURCHASE GELSON'S MARKETS VALLEY VILLAG CA",
+        "-31.07",
+        "12/18/23",
+        "CHECKCARD 1216 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786713351900012600270",
+        "-75.54"
       ]
     },
     {
       "rows": 3,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -649,7 +1020,7 @@
     {
       "rows": 4,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -667,7 +1038,7 @@
     {
       "rows": 3,
       "cols": 4,
-      "sample": [
+      "cells": [
         "Date",
         "Check",
         "#",
@@ -685,7 +1056,7 @@
     {
       "rows": 5,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -702,7 +1073,7 @@
     {
       "rows": 7,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Beginning balance on December 20, 2023",
         "$562,337.78",
         "Deposits and other additions",
@@ -722,7 +1093,7 @@
     {
       "rows": 5,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Deposits\nDate",
         "and other additions\nDescription",
         "Amount",
@@ -743,7 +1114,7 @@
     {
       "rows": 13,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -763,13 +1134,32 @@
         "THE HOME DEPOT 12/26 #000251714 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
         "-31.72",
         "· 12/26/23",
-        "SPROUTS FARMER 12/26 #000392466 PURCHASE SPROUTS FARMERS M BURBANK CA"
+        "SPROUTS FARMER 12/26 #000392466 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-104.92",
+        "12/29/23",
+        "CHECKCARD 1228 CAEFILE*013967544-0 213-830-0840 CA 24692163362100426963293",
+        "-437.25",
+        "¥ 12/29/23",
+        "CHECKCARD 1228 CAEFILE*013967544-0 800-297-5377 TX 24692163362100427569925",
+        "-26.67",
+        "1 01/02/24",
+        "PURCHASE 1229 WWW.AMAZON* 114-090091 WWW.AMAZON.COWA",
+        "-4.19",
+        "· 01/02/24",
+        "CHECKCARD 1231 AMZN MKTP US*ZF3HO2VZ3 SEATTLE WA 24431063365083325556431",
+        "-56.14",
+        "· 01/02/24",
+        "CHECKCARD 1231 CHEVRON 0093049 BURBANK CA 24692163365102286353638",
+        "-61.48",
+        "· 01/02/24",
+        "CHECKCARD 1230 TRADER JOE S #124 BURBANK CA 24137463365100970299601",
+        "-54.40"
       ]
     },
     {
       "rows": 29,
       "cols": 6,
-      "sample": [
+      "cells": [
         "",
         "ATM and\nDate",
         "debit card\nDescription",
@@ -789,13 +1179,115 @@
         "-42.05",
         "·",
         "01/04/24",
-        "RALPHS #0 1284 01/04 #000356465 PURCHASE RALPHS #0 12842 V STUDIO CITY CA"
+        "RALPHS #0 1284 01/04 #000356465 PURCHASE RALPHS #0 12842 V STUDIO CITY CA",
+        "-45.89",
+        ">",
+        "01/05/24",
+        "CHECKCARD 0104 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714004900010900598",
+        "-107.07",
+        "¢",
+        "01/05/24",
+        "THE HOME DEPOT 01/05 #000900295 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-172.06",
+        "/",
+        "01/05/24",
+        "CHECKCARD 0105 WWW.TRUPANION. SEATTLE WA",
+        "-90.41",
+        "৳",
+        "01/08/24",
+        "CHECKCARD 0107 AMAZON.COM*RTOPN9L80 SEATTLE WA 24431064007083711507933",
+        "-55.77",
+        "֏",
+        "01/08/24",
+        "SPROUTS FARMER 01/07 #000311994 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-162.58",
+        "₺",
+        "01/09/24",
+        "CHECKCARD 0107 TRADER JOE S #124 BURBANK CA 24137464008500731773268",
+        "-45.78",
+        "",
+        "01/09/24",
+        "CHECKCARD 0108 OUTBACK 0565 SANTA CLARITACA 24692164008108608096004",
+        "-38.83",
+        "·",
+        "01/12/24",
+        "RALPHS #0 25 E 01/12 #000952075 PURCHASE RALPHS #0 25 E. A BURBANK CA",
+        "-34.12",
+        "/",
+        "01/12/24",
+        "SPROUTS FARMER 01/12 #000799849 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-97.60",
+        "·",
+        "01/16/24",
+        "CHECKCARD 0112 TRADER JOE S #124 BURBANK CA 24137464013500970405591",
+        "-38.84",
+        "៛",
+        "01/16/24",
+        "CHECKCARD 0112 MICHELADAS MEX GRILL NORTHRIDGE CA 24275394012900014842175",
+        "-20.76",
+        "·",
+        "01/16/24",
+        "CHECKCARD",
+        "0114 AMZN MKTP US*RT2NQ6VJ1 SEATTLE WA 24431064014083734034767",
+        "-163.16",
+        "\"",
+        "01/16/24",
+        "CHECKCARD",
+        "0115 LA FITNESS 949-255-8100 CA 24492154015084002174347 RECURRING",
+        "-29.99",
+        "·",
+        "01/16/24",
+        "CHECKCARD",
+        "0115 LA FITNESS 949-255-8100 CA 24492154015084033626505 RECURRING",
+        "-29.99",
+        "·",
+        "01/18/24",
+        "CHECKCARD 0117 AMZN MKTP US*R82A006BO SEATTLE WA 24431064017083756003036",
+        "-8.74",
+        "·",
+        "01/18/24",
+        "RALPHS #0 1284 01/18 #000034292 PURCHASE RALPHS #0 12842 V STUDIO CITY CA",
+        "-54.85",
+        "·",
+        "01/18/24",
+        "THE HOME DEPOT 01/18 #000417780 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-56.75",
+        "₹",
+        "01/18/24",
+        "SPROUTS FARMER 01/18 #000968904 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-60.82",
+        "·",
+        "01/22/24",
+        "CHECKCARD 0118 TRADER JOE S #122 STUDIO CITY CA 24137464019500794682403",
+        "-54.53",
+        "",
+        "Total ATM and debit card subtractions",
+        "-$2,459.51",
+        "",
+        "Other subtractions",
+        "",
+        "",
+        "Date",
+        "Description",
+        "",
+        "Amount",
+        "",
+        "12/21/23",
+        "LADWP",
+        "DES:WEB PAY ID:4027131000 INDN:bonnie drexler",
+        "CO ID:4956000736 WEB",
+        "-634.07",
+        ",",
+        "12/29/23",
+        "SOCALGAS DES:ARC PYMT CHECK(#:0351 INDN:0093129100",
+        "CO ID:3951240705",
+        "-141.28"
       ]
     },
     {
       "rows": 5,
       "cols": 3,
-      "sample": [
+      "cells": [
         "",
         "",
         "",
@@ -816,7 +1308,7 @@
     {
       "rows": 3,
       "cols": 4,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -833,7 +1325,7 @@
     {
       "rows": 4,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -851,7 +1343,7 @@
     {
       "rows": 7,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Beginning balance on January 23, 2024",
         "$576,649.47",
         "Deposits and other additions",
@@ -871,7 +1363,7 @@
     {
       "rows": 4,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Deposits\nDate",
         "and other additions\nDescription",
         "Amount",
@@ -889,7 +1381,7 @@
     {
       "rows": 14,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -909,13 +1401,35 @@
         "SPROUTS FARMER 01/25 #000622626 PURCHASE SPROUTS FARMERS M BURBANK CA",
         "-90.19",
         "01/26/24",
-        "USPS PO 055452 01/26 #000553543 PURCHASE USPS PO 05545203 VALLEY VILLAG CA"
+        "USPS PO 055452 01/26 #000553543 PURCHASE USPS PO 05545203 VALLEY VILLAG CA",
+        "-40.65",
+        "01/29/24",
+        "CHECKCARD 0125 SHARKY'S - SHERMAN OAKS LOS ANGELES CA 24801974026872472708618",
+        "-46.53",
+        "· 01/29/24",
+        "CHECKCARD 0127 ALL STAR HEALTH.COM 800-875-0448 CA 24692164027103199042209",
+        "-148.21",
+        "01/29/24",
+        "DUNN-EDWARDS C 01/27 #000656087 PURCHASE DUNN-EDWARDS CORP BURBANK CA",
+        "-22.92",
+        "¥ 01/29/24",
+        "GELSON'S MARKE 01/29 #000609913 PURCHASE GELSON'S MARKETS VALLEY VILLAG CA",
+        "-33.81",
+        "01/30/24",
+        "CHECKCARD 0129 AMZN MKTP US*R06S897W2 SEATTLE WA 24431064029083333034401",
+        "-95.29",
+        "4 01/31/24",
+        "SPROUTS FARMER 01/31 #000753593 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-120.88",
+        "$ 02/01/24",
+        "CHECKCARD 0131 CAEFILE*014269383-0 213-830-0840 CA 24692164031106717184290",
+        "-437.25"
       ]
     },
     {
       "rows": 22,
       "cols": 4,
-      "sample": [
+      "cells": [
         "",
         "Date",
         "Description",
@@ -935,13 +1449,81 @@
         "",
         "02/05/24",
         "GELSON'S MARKE 02/04 #000966983 PURCHASE GELSON'S MARKETS VALLEY VILLAG CA",
-        "-47.97"
+        "-47.97",
+        ",",
+        "02/05/24",
+        "CHECKCARD 0205 WWW.TRUPANION. SEATTLE WA",
+        "-90.41",
+        "",
+        "02/06/24",
+        "CHECKCARD 0205 AMZN MKTP US*R21NZ2MN1 SEATTLE WA 24431064036083326024477",
+        "-62.36",
+        "",
+        "02/06/24",
+        "SPROUTS FARMER 02/06 #000742239 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-60.63",
+        "",
+        "02/08/24",
+        "CHECKCARD 0206 TST* HARVEST MOON - NEW Los Angeles CA 24692164038101948407480",
+        "-24.80",
+        "",
+        "02/09/24",
+        "CHECKCARD 0209 N & D OIL CORP NORTH HOLLYWOCA",
+        "-42.50",
+        "/",
+        "02/09/24",
+        "RALPHS #0 1284 02/09 #000347534 PURCHASE RALPHS #0 12842 V STUDIO CITY CA",
+        "-57.83",
+        "",
+        "02/12/24",
+        "CHECKCARD 0209 TRADER JOE S #122 STUDIO CITY CA 24137464041501127582924",
+        "-55.09",
+        "",
+        "02/14/24",
+        "SPROUTS FARMER 02/13 #000761491 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-122.92",
+        "",
+        "02/15/24",
+        "CHECKCARD 0215 AMZN MKTP US*RB02E7971 SEATTLE WA 24431064046083351272908",
+        "-32.52",
+        "1",
+        "02/15/24",
+        "USPS PO 055452 02/15 #000163446 PURCHASE USPS PO 05545203 VALLEY VILLAG CA",
+        "-7.48",
+        "·",
+        "02/16/24",
+        "CHECKCARD 0215 LA FITNESS 949-255-8100 CA 24492154046887888621238 RECURRING",
+        "-29.99",
+        "",
+        "02/16/24",
+        "CHECKCARD 0215 LA FITNESS 949-255-8100 CA 24492154046887888613367 RECURRING",
+        "-29.99",
+        "·",
+        "02/16/24",
+        "CHECKCARD 0215 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714046900015200465",
+        "-75.54",
+        "៛",
+        "02/20/24",
+        "CHECKCARD 0215 TRADER JOE S #122 STUDIO CITY CA 24137464047500766164949",
+        "-20.79",
+        "",
+        "02/20/24",
+        "PURCHASE 0217 AMAZON RET* 111-867941 WWW.AMAZON.COWA",
+        "-41.87",
+        "",
+        "02/20/24",
+        "CHECKCARD 0217 AMZN MKTP US*RI80U3NI1 SEATTLE WA 24431064048083323053897",
+        "-13.99",
+        "@",
+        "02/20/24",
+        "SPROUTS FARMER 02/18 #000309381 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-98.00"
       ]
     },
     {
       "rows": 3,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -956,7 +1538,7 @@
     {
       "rows": 3,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -971,7 +1553,7 @@
     {
       "rows": 7,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Beginning balance on February 21, 2024",
         "$575,590.02",
         "Deposits and other additions",
@@ -991,7 +1573,7 @@
     {
       "rows": 4,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Deposits\nDate",
         "and other additions\nDescription",
         "Amount",
@@ -1009,7 +1591,7 @@
     {
       "rows": 14,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -1029,13 +1611,35 @@
         "CHECKCARD 0223 TRADER JOE S #124 BURBANK CA 24137464055100596349718",
         "-37.30",
         ", 02/26/24",
-        "CHECKCARD 0225 AMZN MKTP US*RW4315D12 SEATTLE WA 24431064056083728019518"
+        "CHECKCARD 0225 AMZN MKTP US*RW4315D12 SEATTLE WA 24431064056083728019518",
+        "-25.12",
+        "02/27/24",
+        "CHECKCARD 0226 AMZN MKTP US*RZ8X91650 SEATTLE WA 24431064058083320774310",
+        "-16.41",
+        "§ 02/28/24",
+        "SPROUTS FARMER 02/28 #000989004 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-107.01",
+        "03/01/24",
+        "CHECKCARD 0228 TRADER JOE S #124 BURBANK CA 24137464060500759275530",
+        "-42.63",
+        "03/04/24",
+        "CHECKCARD 0302 XOC TEQUILA GRILL 818-9927930 CA 24000974063206312114575",
+        "-41.00",
+        "03/04/24",
+        "CHECKCARD 0302 LAZ PARKING M47166-SKI CANOGA PARK CA 24055224063016000111567",
+        "-3.00",
+        ", 03/04/24",
+        "SPROUTS FARMER 03/04 #000354360 PURCHASE SPROUTS FARMERS M WOODLAND HILL CA",
+        "-122.38",
+        "03/05/24",
+        "CHECKCARD 0305 WWW.TRUPANION. SEATTLE WA",
+        "-90.41"
       ]
     },
     {
       "rows": 27,
       "cols": 5,
-      "sample": [
+      "cells": [
         "",
         "ATM and\nDate",
         "debit card\nDescription",
@@ -1055,13 +1659,108 @@
         "03/06/24",
         "CHECKCARD",
         "0305 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714065900018500263",
-        "-84.30"
+        "-84.30",
+        "",
+        "03/06/24",
+        "CHECKCARD\nRECURRING",
+        "0306 NORTON *AP1516268549 NORTON.COM/CCAZ 24692164066101511888798",
+        "-94.99",
+        "·",
+        "03/07/24",
+        "CHECKCARD 0305 TRADER JOE S #122 STUDIO CITY CA 24137464066500876216734",
+        "-20.33",
+        "៛",
+        "03/07/24",
+        "CHECKCARD 0307 N & D OIL CORP NORTH HOLLYWOCA",
+        "-68.09",
+        "€",
+        "03/07/24",
+        "JORDAN D COLBY 03/07 #000393622 PURCHASE JORDAN D COLBY DM OCEANSIDE CA",
+        "-316.00",
+        "",
+        "03/11/24",
+        "CHECKCARD 0308 CAEFILE*014602995-0 213-830-0840 CA 24692164068103762939054",
+        "-2.25",
+        "¢",
+        "03/11/24",
+        "CHECKCARD",
+        "0308 CAEFILE*014602995-0 800-297-5377 TX 24692164068103763710777",
+        "-14.70",
+        "·",
+        "03/11/24",
+        "CHECKCARD 0307 TRADER JOE S #022 OCEANSIDE CA 24137464068500969150582",
+        "-15.06",
+        "៛",
+        "03/11/24",
+        "SPROUTS FARMER 03/10 #000374316 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-139.85",
+        "¢",
+        "03/13/24",
+        "CHECKCARD 0312 CAEFILE*014640512-0 213-830-0840 CA 24692164072106953305310",
+        "-2.25",
+        "'",
+        "03/13/24",
+        "CHECKCARD",
+        "0312 CAEFILE*014640512-0 800-297-5377 TX 24692164072106954422213",
+        "-14.70",
+        "",
+        "03/14/24",
+        "CHECKCARD 0312 TRADER JOE S #122 STUDIO CITY CA 24137464073500973996668",
+        "-31.51",
+        "៛",
+        "03/18/24",
+        "CHECKCARD 0315 LA FITNESS 949-255-8100 CA 24492154075084025581772 RECURRING",
+        "-29.99",
+        "#",
+        "03/18/24",
+        "CHECKCARD",
+        "0315 LA FITNESS 949-255-8100 CA 24492154075084004565358 RECURRING",
+        "-29.99",
+        "",
+        "03/18/24",
+        "CHECKCARD",
+        "0316 ALL STAR HEALTH.COM 800-875-0448 CA 24692164076109711054077",
+        "-108.57",
+        "",
+        "03/18/24",
+        "CHECKCARD 0315 AMZN MKTP US*R68NN44K1 SEATTLE WA 24431064075083736365017",
+        "-30.65",
+        "",
+        "03/18/24",
+        "CHECKCARD 0316 SXM*SIRIUSXM.COM/ACCT 888-635-5144 NY 24692164076109669433950 RECURRING",
+        "-349.49",
+        "₱",
+        "03/18/24",
+        "CHECKCARD 0316 TRADER JOE S #124 BURBANK CA 24137464077501223801605",
+        "-20.16",
+        "·",
+        "03/18/24",
+        "SPROUTS FARMER 03/16 #000658659 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-111.77",
+        "*",
+        "03/20/24",
+        "SPROUTS FARMER 03/20 #000901203 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-64.52",
+        "",
+        "Total ATM and debit card subtractions",
+        "-$2,223.60",
+        "",
+        "Other subtractions",
+        "",
+        "",
+        "Date",
+        "Description",
+        "Amount",
+        "",
+        "02/22/24",
+        "SOCALGAS DES:ARC PYMT CHECK #:0365 INDN:0093129100 CO ID:3951240705 ARC",
+        "-223.93"
       ]
     },
     {
       "rows": 5,
       "cols": 4,
-      "sample": [
+      "cells": [
         "",
         "",
         "",
@@ -1084,7 +1783,7 @@
     {
       "rows": 3,
       "cols": 4,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -1101,7 +1800,7 @@
     {
       "rows": 2,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -1113,7 +1812,7 @@
     {
       "rows": 2,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Total checks",
         "-$725.90",
         "Total # of checks",
@@ -1123,7 +1822,7 @@
     {
       "rows": 7,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Beginning balance on March 21, 2024",
         "$600,320.45",
         "Deposits and other additions",
@@ -1143,7 +1842,7 @@
     {
       "rows": 4,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Deposits\nDate",
         "and other additions\nDescription",
         "Amount",
@@ -1161,7 +1860,7 @@
     {
       "rows": 14,
       "cols": 4,
-      "sample": [
+      "cells": [
         "",
         "Date",
         "Description",
@@ -1181,13 +1880,49 @@
         "",
         "03/25/24",
         "THE HOME DEPOT 03/24 #000515145 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
-        "-109.97"
+        "-109.97",
+        "",
+        "03/25/24",
+        "SPROUTS FARMER 03/25 #000705468 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-102.97",
+        "៛",
+        "03/27/24",
+        "CHECKCARD 0326 BUILD.COM 800-375-3403 CA 24435654086083748680693",
+        "-217.91",
+        "·",
+        "03/28/24",
+        "CHECKCARD 0327 BUILD.COM 800-375-3403 CA 24435654087083749120847",
+        "-56.37",
+        "",
+        "03/29/24",
+        "CHECKCARD 0328 CAEFILE*014818683-0 213-830-0840 CA 24692164088100039792973",
+        "-2.25",
+        "·",
+        "03/29/24",
+        "CHECKCARD 0328 CAEFILE*014818683-0 800-297-5377 TX 24692164088100039791868",
+        "-14.70",
+        "·",
+        "03/29/24",
+        "CHECKCARD 0327 TRADER JOE S #122 STUDIO CITY CA 24137464088500932664061",
+        "-59.10",
+        "9",
+        "03/29/24",
+        "CHECKCARD 0329 N & D OIL CORP NORTH HOLLYWOCA",
+        "-73.85",
+        "#",
+        "03/29/24",
+        "SPROUTS FARMER 03/29 #000171774 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-124.35",
+        "·",
+        "04/01/24",
+        "CHECKCARD 0329 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714089900019700179",
+        "-84.30"
       ]
     },
     {
       "rows": 14,
       "cols": 4,
-      "sample": [
+      "cells": [
         "",
         "Date",
         "Description",
@@ -1207,13 +1942,49 @@
         "",
         "04/08/24",
         "SPROUTS FARMER 04/08 #000995119 PURCHASE SPROUTS FARMERS M BURBANK CA",
-        "128.50"
+        "128.50",
+        "1",
+        "04/09/24",
+        "CHECKCARD 0407 SHAKE SHACK - 1309 646-747-7178 CA 24692164099105857119941",
+        "-36.73",
+        "",
+        "04/09/24",
+        "CHECKCARD 0407 SALSA & BEER VAN NUYS CA 24040684099900017000320",
+        "-23.79",
+        "៛",
+        "04/10/24",
+        "CHECKCARD 0408 TRADER JOE S #124 BURBANK CA 24137464100500855079242",
+        "-45.69",
+        "৳",
+        "04/10/24",
+        "PURCHASE 0410 AMZN Mktp US*Q52TD7GF3 Amzn.com/billWA",
+        "-17.51",
+        "",
+        "04/12/24",
+        "SPROUTS FARMER 04/11 #000348320 PURCHASE SPROUTS FARMERS M WOODLAND HILL CA",
+        "-127.14",
+        "₹",
+        "04/16/24",
+        "CHECKCARD 0415 LA FITNESS 949-255-8100 CA 24492154106084018270683 RECURRING",
+        "-29.99",
+        "›",
+        "04/16/24",
+        "CHECKCARD 0415 LA FITNESS 949-255-8100 CA 24492154106084001271086 RECURRING",
+        "-29.99",
+        "·",
+        "04/16/24",
+        "SPROUTS FARMER 04/16 #000787275 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-83.03",
+        "៛",
+        "04/18/24",
+        "CHECKCARD 0416 TRADER JOE S #124 BURBANK CA 24137464108500880689736",
+        "-37.85"
       ]
     },
     {
       "rows": 6,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -1237,7 +2008,7 @@
     {
       "rows": 4,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -1255,7 +2026,7 @@
     {
       "rows": 3,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -1270,7 +2041,7 @@
     {
       "rows": 7,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Beginning balance on April 20, 2024",
         "$121,919.18",
         "Deposits and other additions",
@@ -1290,7 +2061,7 @@
     {
       "rows": 5,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Deposits\nDate",
         "and other additions\nDescription",
         "Amount",
@@ -1311,7 +2082,7 @@
     {
       "rows": 13,
       "cols": 4,
-      "sample": [
+      "cells": [
         "",
         "Date",
         "Description",
@@ -1331,13 +2102,45 @@
         "",
         "04/22/24",
         "THE HOME DEPOT 04/20 #000549410 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
-        "-116.77"
+        "-116.77",
+        ".",
+        "04/22/24",
+        "WALGREENS STOR 04/22 #000809573 PURCHASE WALGREENS STORE 1 BURBANK CA",
+        "-24.54",
+        "·",
+        "04/22/24",
+        "SPROUTS FARMER 04/22 #000683062 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-127.68",
+        "",
+        "04/23/24",
+        "PURCHASE 0422 AMZN Mktp US*EB8FE6PS3 Amzn.com/billWA",
+        "-7.65",
+        "",
+        "04/24/24",
+        "CHECKCARD 0422 TRADER JOE S #124 BURBANK CA 24137464114500864812694",
+        "-47.28",
+        "",
+        "04/24/24",
+        "PURCHASE 0424 AMZN Mktp US*YE49613B3 Amzn.com/billWA",
+        "-12.80",
+        "",
+        "04/24/24",
+        "PURCHASE 0424 AMZN Mktp US*YY3HE8L53 Amzn.com/billWA",
+        "-14.01",
+        "9",
+        "04/25/24",
+        "CHECKCARD 0424 CAEFILE*015101560-0 213-830-0840 CA 24692164115109267755658",
+        "-2.25",
+        "",
+        "04/25/24",
+        "CHECKCARD 0424 CAEFILE*015101560-0 800-297-5377 TX 24692164115109267783825",
+        "-14.70"
       ]
     },
     {
       "rows": 34,
       "cols": 4,
-      "sample": [
+      "cells": [
         "",
         "Date",
         "Description",
@@ -1357,13 +2160,129 @@
         "",
         "04/25/24",
         "CHECKCARD 0424 CAEFILE*015101567-0 800-297-5377 TX 24692164115109267783817",
-        "-14.70"
+        "-14.70",
+        "·",
+        "04/25/24",
+        "CHECKCARD 0424 CAEFILE*015101567-0 213-830-0840 CA 24692164115109267755641",
+        "-2.25",
+        "៛",
+        "04/25/24",
+        "CHECKCARD 0424 CAEFILE*015104905-0 213-830-0840 CA 24692164115109268293709",
+        "-2.25",
+        "",
+        "04/25/24",
+        "PURCHASE 0424 AMZN Mktp US*SA6WZ8QA3 Amzn.com/billWA",
+        "-34.14",
+        "",
+        "04/25/24",
+        "CHECKCARD 0424 SQ *SUGAR NAILS Valley VillagCA 24692164115109065397448",
+        "-31.00",
+        "$",
+        "04/26/24",
+        "CHECKCARD 0425 CAEFILE*015120766-0 213-830-0840 CA 24692164116100094537525",
+        "-2.25",
+        "",
+        "04/26/24",
+        "CHECKCARD 0425 CAEFILE*015120766-0 800-297-5377 TX 24692164116100094571698",
+        "-14.70",
+        "",
+        "04/29/24",
+        "CHECKCARD 0426 BAJA FRESH 30675 MARINA DEL RECA 24138294118401000000367",
+        "-57.56",
+        "",
+        "04/29/24",
+        "CHECKCARD 0427 THE HOME DEPOT #6613 N. HOLLYWOOD CA 24943014119010194135461",
+        "-227.49",
+        "·",
+        "04/29/24",
+        "SPROUTS FARMER 04/27 #000793704 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-124.87",
+        "",
+        "05/01/24",
+        "CHECKCARD 0430 N & D OIL CORP NORTH HOLLYWOCA",
+        "-78.25",
+        ",",
+        "05/01/24",
+        "THE HOME DEPOT 05/01 #000830101 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-20.09",
+        "",
+        "05/01/24",
+        "SPROUTS FARMER 05/01 #000658172 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-104.16",
+        "",
+        "05/02/24",
+        "CHECKCARD 0430 TRADER JOE S #122 STUDIO CITY CA 24137464122500976965828",
+        "-46.39",
+        ",",
+        "05/03/24",
+        "PURCHASE 0502 Amazon Prime*003743R13 Amzn.com/billWA Prime Membership",
+        "-152.21",
+        "",
+        "05/06/24",
+        "PURCHASE 0505 AMZN Mktp US*7Y4001HP3 Amzn.com/billWA",
+        "-35.01",
+        "",
+        "05/06/24",
+        "CHECKCARD 0505 WWW.TRUPANION. SEATTLE WA 00000000000000000747709 RECURRING",
+        "-90.41",
+        "",
+        "05/06/24",
+        "SPROUTS FARMER 05/06 #000630523 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-79.20",
+        "",
+        "05/06/24",
+        "SPROUTS FARMER 05/06 #000632064 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-6.99",
+        "*",
+        "05/07/24",
+        "THE HOME DEPOT 05/07 #000156829 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-56.58",
+        "",
+        "05/08/24",
+        "CHECKCARD 0506 TRADER JOE S #122 STUDIO CITY CA 24137464128500873053680",
+        "-45.98",
+        "",
+        "05/10/24",
+        "CVS/PHARMACY # 05/10 #000047121 PURCHASE 09675 -- 12143 Vent Studio City CA",
+        "-29.37",
+        "",
+        "05/10/24",
+        "THE HOME DEPOT 05/10 #000871351 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-104.20",
+        "",
+        "05/13/24",
+        "PURCHASE 0511 AMAZON MAR* 112-786080 HTTPSAMAZON.CWA",
+        "-19.25",
+        "",
+        "05/13/24",
+        "CHECKCARD 0511 TRADER JOE S #124 BURBANK CA 24137464133501263275639",
+        "-23.96",
+        "",
+        "05/13/24",
+        "SPROUTS FARMER 05/11 #000656019 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-78.62",
+        "៛",
+        "05/13/24",
+        "CHECKCARD 0511 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714133900014100710",
+        "-84.30",
+        "",
+        "05/14/24",
+        "PURCHASE 0514 AMAZON RET* 112-948185 WWW.AMAZON.COWA",
+        "-119.36",
+        ">",
+        "05/16/24",
+        "PURCHASE 0515 AMAZON RET* 112-948185 WWW.AMAZON.COWA",
+        "-98.53",
+        "₡",
+        "05/16/24",
+        "CHECKCARD 0515 LA FITNESS 949-255-8100 CA 24492154136084020006327 RECURRING",
+        "-29.99"
       ]
     },
     {
       "rows": 6,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -1386,7 +2305,7 @@
     {
       "rows": 5,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -1407,7 +2326,7 @@
     {
       "rows": 3,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -1422,7 +2341,7 @@
     {
       "rows": 5,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -1441,7 +2360,7 @@
     {
       "rows": 7,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Beginning balance on May 22, 2024",
         "$139,606.10",
         "Deposits and other additions",
@@ -1461,7 +2380,7 @@
     {
       "rows": 6,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Deposits\nDate",
         "and other additions\nDescription",
         "Amount",
@@ -1485,7 +2404,7 @@
     {
       "rows": 11,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -1505,13 +2424,26 @@
         "SPROUTS FARMER 05/25 #000986786 PURCHASE SPROUTS FARMERS M BURBANK CA",
         "-142.06",
         "05/28/24",
-        "THE HOME DEPOT 05/28 #000885273 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA"
+        "THE HOME DEPOT 05/28 #000885273 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-66.24",
+        "05/29/24",
+        "CHECKCARD 0528 ANYTIME WINDOWS AND DOO 424-2029177 CA 24355894149421679283884",
+        "-447.50",
+        "05/30/24",
+        "SPROUTS FARMER 05/29 #000323651 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-94.95",
+        "06/03/24",
+        "CHECKCARD 0602 N & D OIL CORP NORTH HOLLYWOCA",
+        "-77.67",
+        "# 06/03/24",
+        "VINTAGE GROCER 06/02 #000655575 PURCHASE VINTAGE GROCERS MALIBU CA",
+        "-9.98"
       ]
     },
     {
       "rows": 20,
       "cols": 4,
-      "sample": [
+      "cells": [
         "",
         "Date",
         "Description",
@@ -1531,13 +2463,73 @@
         "",
         "06/04/24",
         "CHECKCARD 0603 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714155900019200419",
-        "-84.30"
+        "-84.30",
+        "៛",
+        "06/05/24",
+        "CHECKCARD 0605 WWW.TRUPANION. SEATTLE WA 00000000000000000403368 RECURRING",
+        "-90.41",
+        "",
+        "06/07/24",
+        "CHECKCARD 0605 TST* MARSTONS Valencia CA 24692164158102097017470",
+        "-38.11",
+        "",
+        "06/10/24",
+        "CHECKCARD 0607 TST* FOR THE WIN - VAN Los Angeles CA 24692164160103874343689",
+        "-23.27",
+        "",
+        "06/10/24",
+        "SPROUTS FARMER 06/09 #000792919 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-134.70",
+        "",
+        "06/10/24",
+        "CVS/PHARMACY # 06/09 #000182849 PURCHASE 09601 -- 1015 N. Sa Burbank CA",
+        "-33.90",
+        "",
+        "06/12/24",
+        "THE HOME DEPOT 06/12 #000544347 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-83.95",
+        "",
+        "06/13/24",
+        "CHECKCARD 0611 TRADER JOE S #122 STUDIO CITY CA 24137464164500900164737",
+        "-41.70",
+        "·",
+        "06/13/24",
+        "THE HOME DEPOT 06/13 #000851736 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-49.17",
+        ",",
+        "06/14/24",
+        "SPROUTS FARMER 06/14 #000629174 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-129.45",
+        "₹",
+        "06/17/24",
+        "PURCHASE 0614 AMAZON MKTPL*5DONM2MA3 Amzn.com/billWA",
+        "-21.89",
+        "+",
+        "06/17/24",
+        "CHECKCARD 0615 LA FITNESS 949-255-8100 CA 24492154167000732335848 RECURRING",
+        "-29.99",
+        ",",
+        "06/17/24",
+        "CHECKCARD 0615 LA FITNESS 949-255-8100 CA 24492154167000732313456 RECURRING",
+        "-29.99",
+        "",
+        "06/17/24",
+        "PURCHASE 0615 SP HEALTHYLINE HEALTHYLINE.CNY",
+        "-899.00",
+        "",
+        "06/17/24",
+        "CVS/PHARM 0967 06/15 #000121964 PURCHASE CVS/PHARM 09675 -- Studio City CA",
+        "-14.94",
+        "৳",
+        "06/18/24",
+        "VIOC GN0013 06/18 #000572069 PURCHASE VIOC GN0013 NORTH HOLLYWO CA",
+        "-47.01"
       ]
     },
     {
       "rows": 5,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -1558,7 +2550,7 @@
     {
       "rows": 3,
       "cols": 4,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -1574,7 +2566,7 @@
     {
       "rows": 7,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Beginning balance on June 19, 2024",
         "$159,661.03",
         "Deposits and other additions",
@@ -1594,7 +2586,7 @@
     {
       "rows": 4,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Deposits\nDate",
         "and other additions\nDescription",
         "Amount",
@@ -1612,7 +2604,7 @@
     {
       "rows": 14,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -1632,13 +2624,35 @@
         "CHECKCARD 0621 CAEFILE*015685153-0 800-297-5377 TX 24692164173105255584075",
         "-26.67",
         "06/24/24",
-        "THE HOME DEPOT 06/24 #000707920 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA"
+        "THE HOME DEPOT 06/24 #000707920 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-31.68",
+        "06/25/24",
+        "CHECKCARD 0624 CAEFILE*015685355-0 213-830-0840 CA 24692164176107745280873",
+        "-437.25",
+        "06/25/24",
+        "CHECKCARD 0624 CAEFILE*015685355-0 800-297-5377 TX 24692164176107745266534",
+        "-26.67",
+        "06/25/24",
+        "CHECKCARD 0624 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714176900011700031",
+        "-84.30",
+        "06/25/24",
+        "THE HOME DEPOT 06/25 #000891275 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-17.14",
+        "06/26/24",
+        "CHECKCARD 0624 TRADER JOE S #122 STUDIO CITY CA 24137464177500892004920",
+        "-46.36",
+        "06/27/24",
+        "CHECKCARD 0626 CAEFILE*015753013-0 213-830-0840 CA 24692164178109365460205",
+        "-2.25",
+        "06/27/24",
+        "CHECKCARD 0626 CAEFILE*015753013-0 800-297-5377 TX 24692164178109365467648",
+        "-14.70"
       ]
     },
     {
       "rows": 30,
       "cols": 4,
-      "sample": [
+      "cells": [
         "",
         "Date",
         "Description",
@@ -1658,13 +2672,113 @@
         "·",
         "07/02/24",
         "SPROUTS FARMER 07/02 #000309161 PURCHASE SPROUTS FARMERS M WOODLAND HILL CA",
-        "-134.61"
+        "-134.61",
+        "·",
+        "07/05/24",
+        "CHECKCARD 0703 STUDIO SMOG STUDIO CITY CA 24692164186105732648803",
+        "-50.00",
+        "",
+        "07/05/24",
+        "CHECKCARD 0703 TRADER JOE S #122 STUDIO CITY CA 24137464186100398893071",
+        "-51.83",
+        "¢",
+        "07/05/24",
+        "CHECKCARD 0704 N & D OIL CORP NORTH HOLLYWOCA",
+        "-42.06",
+        "$",
+        "07/05/24",
+        "SPROUTS FARMER 07/04 #000994294 PURCHASE SPROUTS FARMERS M WOODLAND HILL CA",
+        "-21.99",
+        ":",
+        "07/05/24",
+        "THE HOME DEPOT 07/05 #000908120 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-62.29",
+        "·",
+        "07/05/24",
+        "CHECKCARD 0705 WWW.TRUPANION. SEATTLE WA 00000000000000000698101 RECURRING",
+        "-90.41",
+        "¢",
+        "07/08/24",
+        "CHECKCARD 0705 FATBURGER - 116 WOODLAND HILLCA 24269794188500854261176",
+        "-15.33",
+        "·",
+        "07/08/24",
+        "GELSON'S MARKE 07/06 #000979753 PURCHASE GELSON'S MARKETS VALLEY VILLAG CA",
+        "-24.61",
+        "·",
+        "07/08/24",
+        "SPROUTS FARMER 07/07 #000190154 PURCHASE SPROUTS FARMERS M WOODLAND HILL CA",
+        "-91.01",
+        "$",
+        "07/10/24",
+        "SPROUTS FARMER 07/10 #000780052 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-87.58",
+        "៛",
+        "07/12/24",
+        "CHECKCARD 0710 TRADER JOE S #124 BURBANK CA 24137464193500972598452",
+        "-35.61",
+        "៛",
+        "07/12/24",
+        "CHECKCARD 0711 ALL STAR HEALTH.COM 800-875-0448 CA 24692164193101465209765",
+        "-197.14",
+        "·",
+        "07/12/24",
+        "PURCHASE 0711 AMAZON MKTPL*RY69L3XK2 Amzn.com/billWA",
+        "-41.60",
+        "/",
+        "07/15/24",
+        "CHECKCARD 0713 AMAZON.COM*RYOID9QT1 SEATTLE WA 24431064195017709686046",
+        "-59.56",
+        "·",
+        "07/15/24",
+        "CHECKCARD 0713 TST* FOR THE WIN - HOLL Los Angeles CA 24692164196101250223630",
+        "-59.15",
+        "·",
+        "07/15/24",
+        "CHECKCARD 0715 N & D OIL CORP NORTH HOLLYWOCA",
+        "-71.11",
+        "·",
+        "07/15/24",
+        "SPROUTS FARMER 07/15 #000978722 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-114.54",
+        ":",
+        "07/16/24",
+        "CHECKCARD 0715 LA FITNESS 949-255-8100 CA 24492154197009989993724 RECURRING",
+        "-29.99",
+        "",
+        "07/16/24",
+        "CHECKCARD 0715 LA FITNESS 949-255-8100 CA 24492154197009989824267 RECURRING",
+        "-29.99",
+        "·",
+        "07/18/24",
+        "LOWE'S #1144 07/18 #000363165 PURCHASE LOWE'S #1144 BURBANK CA",
+        "-96.56",
+        "¥",
+        "07/18/24",
+        "WALGREENS STOR 07/18 #000937847 PURCHASE WALGREENS STORE 1 BURBANK CA",
+        "-27.30",
+        "*",
+        "07/22/24",
+        "CHECKCARD 0718 TRADER JOE S #124 BURBANK CA 24137464201500971319603",
+        "-53.56",
+        "·",
+        "07/22/24",
+        "PURCHASE 0720 AMAZON MKTPL*RJ7039JLO Amzn.com/billWA",
+        "-84.28",
+        "·",
+        "07/22/24",
+        "CHECKCARD 0719 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714201900011100587",
+        "-84.30",
+        "/",
+        "07/22/24",
+        "SPROUTS FARMER 07/20 #000630896 PURCHASE SPROUTS FARMERS M WOODLAND HILL CA",
+        "-112.40"
       ]
     },
     {
       "rows": 6,
       "cols": 4,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "",
@@ -1689,7 +2803,7 @@
     {
       "rows": 3,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -1704,7 +2818,7 @@
     {
       "rows": 5,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -1721,7 +2835,7 @@
     {
       "rows": 4,
       "cols": 4,
-      "sample": [
+      "cells": [
         "Date",
         "Transaction description",
         "",
@@ -1740,7 +2854,7 @@
     {
       "rows": 7,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Beginning balance on July 23, 2024",
         "$175,400.94",
         "Deposits and other additions",
@@ -1760,7 +2874,7 @@
     {
       "rows": 4,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Deposits\nDate",
         "and other additions\nDescription",
         "Amount",
@@ -1778,7 +2892,7 @@
     {
       "rows": 14,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -1798,13 +2912,35 @@
         "CHECKCARD 0730 TRADER JOE S #124 BURBANK CA 24137464213500965846724",
         "-47.54",
         "08/01/24",
-        "CHECKCARD 0731 SQ *SUGAR NAILS Valley VillagCA 24692164213106315953013"
+        "CHECKCARD 0731 SQ *SUGAR NAILS Valley VillagCA 24692164213106315953013",
+        "-26.00",
+        "08/05/24",
+        "PURCHASE 0802 AMAZON MKTPL*RF51H4ZGO Amzn.com/billWA",
+        "-72.93",
+        "08/05/24",
+        "PURCHASE 0804 AMAZON MKTPL*RFOT96EV1 Amzn.com/billWA",
+        "-311.42",
+        "08/05/24",
+        "SPROUTS FARMER 08/03 #000124009 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-122.29",
+        "/ 08/05/24",
+        "CHECKCARD 0805 WWW.TRUPANION. SEATTLE WA 00000000000000000817928 RECURRING",
+        "-90.41",
+        "08/09/24",
+        "SPROUTS FARMER 08/09 #000178133 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-116.73",
+        "¢ 08/12/24",
+        "CHECKCARD 0809 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714222900013300180",
+        "-84.30",
+        "៛ 08/12/24",
+        "CHECKCARD 0809 TRADER JOE S #124 BURBANK CA 24137464223501285487940",
+        "-43.88"
       ]
     },
     {
       "rows": 26,
       "cols": 4,
-      "sample": [
+      "cells": [
         "",
         "ATM and\nDate",
         "debit card subtractions - continued\nDescription",
@@ -1824,13 +2960,93 @@
         "¥",
         "08/14/24",
         "SPROUTS FARMER 08/14 #000979525 PURCHASE SPROUTS FARMERS M BURBANK CA",
-        "-98.80"
+        "-98.80",
+        "·",
+        "08/15/24",
+        "CHECKCARD 0815 LA FITNESS IRVINE CA 00000000000000000113193 RECURRING",
+        "-29.99",
+        "",
+        "08/15/24",
+        "CHECKCARD 0815 LA FITNESS IRVINE CA 00000000000000000124435 RECURRING",
+        "-29.99",
+        "",
+        "08/16/24",
+        "CHECKCARD 0815 CAEFILE*016272835-0 213-830-0840 CA 24692164228109468237674",
+        "-2.25",
+        "1",
+        "08/16/24",
+        "CHECKCARD 0815 CAEFILE*016272835-0 800-297-5377 TX 24692164228109468226834",
+        "-14.70",
+        "₡",
+        "08/16/24",
+        "GELSON'S MARKE 08/16 #000903487 PURCHASE GELSON'S MARKETS VALLEY VILLAG CA",
+        "-9.03",
+        "¥",
+        "08/19/24",
+        "CHECKCARD 0816 TRADER JOE S #122 STUDIO CITY CA 24137464230501223109367",
+        "-42.04",
+        "",
+        "08/19/24",
+        "PURCHASE 0817 AMAZON MKTPL*RU87W8P20 Amzn.com/billWA",
+        "-94.79",
+        "·",
+        "08/19/24",
+        "CHECKCARD 0818 N & D OIL CORP NORTH HOLLYWOCA",
+        "-53.22",
+        "·",
+        "08/19/24",
+        "SPROUTS FARMER 08/18 #000133160 PURCHASE SPROUTS FARMERS M WOODLAND HILL CA",
+        "-89.23",
+        "",
+        "08/21/24",
+        "CHECKCARD 0820 CAEFILE*016313583-0 213-830-0840 CA 24692164233103766188765",
+        "-2.25",
+        "0",
+        "08/21/24",
+        "CHECKCARD 0820 CAEFILE*016313583-0 800-297-5377 TX 24692164233103766209496",
+        "-14.70",
+        "$5",
+        "08/21/24",
+        "CHECKCARD 0820 CAEFILE*016313598-0 213-830-0840 CA 24692164233103766188781",
+        "-2.25",
+        "৳",
+        "08/21/24",
+        "CHECKCARD 0820 CAEFILE*016313598-0 800-297-5377 TX 24692164233103766209140",
+        "-14.70",
+        "",
+        "08/21/24",
+        "THE HOME DEPOT 08/21 #000443818 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-28.94",
+        "",
+        "Total ATM and debit card subtractions",
+        "-$1,823.27",
+        "Other subtractions",
+        "",
+        "Date",
+        "Description",
+        "Amount",
+        "",
+        "07/31/24",
+        "SOCALGAS DES:ARC PYMT CHECK #0396 INDN:0093129100 CO ID:3951240705 ARC\n:selected:",
+        "-32.47",
+        "",
+        "08/06/24",
+        "CHARTER COMMUNIC DES:CHECK PYMT CHECK #:0398)INDN:8448200181422279 CO ID:0470122023 ARC\n:selected:",
+        "-295.48",
+        "",
+        "08/08/24",
+        "ATT DES:Payment ID:XXXXXXXXXEPAYS INDN:MARCI DREXLER CO ID:9864031004 PPD",
+        "-73.04",
+        "৳",
+        "08/20/24",
+        "LADWP DES:WEB PAY ID:4027131000 INDN:bonnie drexler CO ID:4956000736 WEB",
+        "-855.00"
       ]
     },
     {
       "rows": 3,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -1845,7 +3061,7 @@
     {
       "rows": 2,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Account No.",
         "Statement Period",
         "Page",
@@ -1857,7 +3073,7 @@
     {
       "rows": 10,
       "cols": 2,
-      "sample": [
+      "cells": [
         "ACCOUNT BALANCE SUMMARY",
         "Savings",
         "$5.00",
@@ -1882,7 +3098,7 @@
     {
       "rows": 7,
       "cols": 5,
-      "sample": [
+      "cells": [
         "Transaction Date",
         "Post Date",
         "Transaction Description",
@@ -1902,13 +3118,28 @@
         "",
         "Deposit ACH PPD BANK OF AM1: LOGIX CO: PPD BANK OF AM1",
         "500,000.00",
-        "500,005.00"
+        "500,005.00",
+        "03/25",
+        "",
+        "Withdrawal Transfer To Share 42",
+        "-95,000.00",
+        "405,005.00",
+        "03/25",
+        "",
+        "Withdrawal Transfer To Share 50",
+        "-405,000.00",
+        "5.00",
+        "04/12",
+        "",
+        "Ending Balance",
+        "",
+        "$ 5.00"
       ]
     },
     {
       "rows": 5,
       "cols": 5,
-      "sample": [
+      "cells": [
         "Transaction Date",
         "Post Date",
         "Transaction Description",
@@ -1928,13 +3159,18 @@
         "",
         "Deposit Dividend Split Rate",
         "75.99",
-        "95,075.99"
+        "95,075.99",
+        "",
+        "",
+        "Annual Percentage Yield Earned (APYE) For Period 03/25\nBased on an Average Daily Balance of $ 95,000.00",
+        "- 03/31: 4.260%",
+        ""
       ]
     },
     {
       "rows": 2,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Account No.",
         "Statement Period",
         "Page",
@@ -1946,7 +3182,7 @@
     {
       "rows": 3,
       "cols": 5,
-      "sample": [
+      "cells": [
         "HIGH RATE SAVINGS (ID 42)",
         "(continued)",
         "Transaction Date",
@@ -1964,7 +3200,7 @@
     {
       "rows": 5,
       "cols": 5,
-      "sample": [
+      "cells": [
         "Transaction Date",
         "Post Date",
         "Transaction Description",
@@ -1984,13 +3220,18 @@
         "",
         "Deposit Dividend 4.887% Annual Percentage Yield Earned (APYE) For Period 03/25 - 03/31:",
         "5.010% 379.58",
-        "405,379.58"
+        "405,379.58",
+        "04/12",
+        "",
+        "Ending Balance",
+        "",
+        "$ 405,379.58"
       ]
     },
     {
       "rows": 2,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Account No.",
         "Statement Period",
         "Page",
@@ -2002,7 +3243,7 @@
     {
       "rows": 10,
       "cols": 3,
-      "sample": [
+      "cells": [
         "ACCOUNT BALANCE SUMMARY",
         "Savings",
         "$5.00",
@@ -2022,13 +3263,18 @@
         "--",
         "",
         "Home Equity",
+        "--",
+        "",
+        "Mortgage",
+        "--",
+        "ReadyLine & Other Loans",
         "--"
       ]
     },
     {
       "rows": 7,
       "cols": 5,
-      "sample": [
+      "cells": [
         "Transaction Date",
         "Post Date",
         "Transaction Description",
@@ -2048,13 +3294,28 @@
         "",
         "Deposit Dividend Split Rate",
         "337.90",
-        "95,739.78"
+        "95,739.78",
+        "",
+        "",
+        "Annual Percentage Yield Earned (APYE) For Period 05/01 - 05/31: 4.250% Based on an Average Daily Balance of $ 95,401.88",
+        "",
+        "",
+        "07/01",
+        "",
+        "Deposit Dividend Split Rate Annual Percentage Yield Earned (APYE) For Period 06/01 - 06/30: 4.250% Based on an Average Daily Balance of $ 95,739.78",
+        "328.16",
+        "96,067.94",
+        "07/12",
+        "",
+        "Ending Balance",
+        "",
+        "$ 96,067.94"
       ]
     },
     {
       "rows": 2,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Account No.",
         "Statement Period",
         "Page",
@@ -2066,7 +3327,7 @@
     {
       "rows": 12,
       "cols": 6,
-      "sample": [
+      "cells": [
         "12 MONTH FLEX CERTIFICATE (ID 50)",
         "",
         "",
@@ -2086,13 +3347,62 @@
         "Date",
         "Transaction Description",
         "",
-        "Amount"
+        "Amount",
+        "New Balance",
+        "",
+        "",
+        "Previous Balance",
+        "",
+        "",
+        "$ 405,379.58",
+        "05/01",
+        "",
+        "Deposit Dividend 4.887%",
+        "",
+        "1,628.30",
+        "407,007.88",
+        "",
+        "",
+        "Annual Percentage Yield Earned (APYE) For Period 04/01",
+        "- 04/30: 5.000%",
+        "",
+        "",
+        "06/01",
+        "",
+        "Deposit Dividend 4.887%",
+        "",
+        "1,689.33",
+        "408,697.21",
+        "",
+        "",
+        "Annual Percentage Yield Earned (APYE) For Period 05/01",
+        "- 05/31: 5.000%",
+        "",
+        "",
+        "07/01",
+        "",
+        "Deposit Dividend 4.887%",
+        "",
+        "1,641.62",
+        "410,338.83",
+        "",
+        "",
+        "Annual Percentage Yield Earned (APYE) For Period 06/01",
+        "- 06/30: 5.000%",
+        "",
+        "",
+        "07/12",
+        "",
+        "Ending Balance",
+        "",
+        "",
+        "$ 410,338.83"
       ]
     },
     {
       "rows": 2,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Account No.",
         "Statement Period",
         "Page",
@@ -2104,7 +3414,7 @@
     {
       "rows": 10,
       "cols": 2,
-      "sample": [
+      "cells": [
         "ACCOUNT BALANCE SUMMARY",
         "Savings",
         "$5.00",
@@ -2129,7 +3439,7 @@
     {
       "rows": 7,
       "cols": 5,
-      "sample": [
+      "cells": [
         "Transaction Date",
         "Post Date",
         "Transaction Description",
@@ -2149,13 +3459,28 @@
         "",
         "Deposit Dividend Split Rate",
         "341.49",
-        "96,749.69"
+        "96,749.69",
+        "",
+        "",
+        "Annual Percentage Yield Earned (APYE) For Period 08/01 - 08/31: 4.250% Based on an Average Daily Balance of $ 96,408.20",
+        "",
+        "",
+        "10/01",
+        "",
+        "Deposit Dividend Split Rate Annual Percentage Yield Earned (APYE) For Period 09/01 - 09/30: 4.250% Based on an Average Daily Balance of $ 96,749.69",
+        "331.63",
+        "97,081.32",
+        "10/12",
+        "",
+        "Ending Balance",
+        "",
+        "$ 97,081.32"
       ]
     },
     {
       "rows": 8,
       "cols": 5,
-      "sample": [
+      "cells": [
         "Transaction Date",
         "Post Date",
         "Transaction Description",
@@ -2175,13 +3500,30 @@
         "Annual Percentage Yield Earned (APYE) For Period 07/01 - 07/31: 5.000%",
         "",
         "09/01",
-        ""
+        "",
+        "Deposit Dividend 4.887%",
+        "1,710.23",
+        "413,752.22",
+        "",
+        "",
+        "Annual Percentage Yield Earned (APYE) For Period 08/01 - 08/31: 5.000%",
+        "",
+        "415,414.15",
+        "10/01",
+        "",
+        "Deposit Dividend 4.887% Annual Percentage Yield Earned (APYE) For Period 09/01 - 09/30: 5.000%",
+        "1,661.93",
+        "10/12",
+        "",
+        "Ending Balance",
+        "",
+        "$ 415,414.15"
       ]
     },
     {
       "rows": 7,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Beginning balance on August 22, 2024",
         "$200,599.74",
         "Deposits and other additions",
@@ -2201,7 +3543,7 @@
     {
       "rows": 4,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Deposits\nDate",
         "and other additions\nDescription",
         "Amount",
@@ -2219,7 +3561,7 @@
     {
       "rows": 14,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -2239,13 +3581,35 @@
         "PURCHASE 0827 RING YEARLY PLAN HTTPSRING.COMCA",
         "-49.99",
         "08/28/24",
-        "SPROUTS FARMER 08/28 #000731514 PURCHASE SPROUTS FARMERS M BURBANK CA"
+        "SPROUTS FARMER 08/28 #000731514 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-54.28",
+        "09/03/24",
+        "CHECKCARD 0831 TRADER JOE S #124 BURBANK CA 24137464245501224527461",
+        "-54.17",
+        "09/03/24",
+        "SPROUTS FARMER 08/31 #000155471 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-116.90",
+        "09/03/24",
+        "PURCHASE 0903 AMAZON MKTPL*RK7AZ5WLO Amzn.com/billWA",
+        "-27.36",
+        "09/04/24",
+        "CHECKCARD 0903 CAEFILE*016440381-1 213-830-0840 CA 24692164247102598644940",
+        "-2.25",
+        "09/04/24",
+        "CHECKCARD 0903 CAEFILE*016440381-1 800-297-5377 TX 24692164247102598646788",
+        "-15.25",
+        "09/04/24",
+        "CHECKCARD 0903 CAEFILE*016443930-1 213-830-0840 CA 24692164247102598808263",
+        "-2.25",
+        "09/04/24",
+        "CHECKCARD 0903 CAEFILE*016443930-1 800-297-5377 TX 24692164247102598809600",
+        "-15.25"
       ]
     },
     {
       "rows": 18,
       "cols": 4,
-      "sample": [
+      "cells": [
         "",
         "Date",
         "Description",
@@ -2265,13 +3629,65 @@
         "·",
         "09/06/24",
         "CHECKCARD 0905 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714249900016000422",
-        "-84.30"
+        "-84.30",
+        "",
+        "09/09/24",
+        "CHECKCARD 0907 FRANKIE'S ITALIAN KITCH TARZANA CA 24000974252290201369178",
+        "-37.50",
+        "",
+        "09/09/24",
+        "CHECKCARD 0908 CHEVRON 0094240 CALABASAS CA 24692164252106864975179",
+        "-67.07",
+        "",
+        "09/09/24",
+        "VINTAGE GROCER 09/08 #000794134 PURCHASE VINTAGE GROCERS MALIBU CA",
+        "-32.11",
+        "",
+        "09/10/24",
+        "CHECKCARD 0908 TRADER JOE S #122 STUDIO CITY CA 24137464253501018454079",
+        "-44.94",
+        "",
+        "09/10/24",
+        "JORDAN D COLBY 09/10 #000387478 PURCHASE JORDAN D COLBY DM OCEANSIDE CA",
+        "-145.00",
+        "·",
+        "09/10/24",
+        "SPROUTS FARMER 09/10 #000367615 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-93.05",
+        "",
+        "09/11/24",
+        "THE HOME DEPOT 09/11 #000141360 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-19.69",
+        "",
+        "09/13/24",
+        "PURCHASE 0912 AMAZON MKTPL*OP7EV6V73 Amzn.com/billWA",
+        "-69.45",
+        "·",
+        "09/16/24",
+        "PURCHASE 0913 AMAZON MKTPL*BM8W27BM3 Amzn.com/billWA",
+        "-40.50",
+        "",
+        "09/16/24",
+        "CHECKCARD 0915 LA FITNESS IRVINE CA 00000000000000000386385 RECURRING",
+        "-29.99",
+        "·",
+        "09/16/24",
+        "SPROUTS FARMER 09/15 #000642589 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-141.84",
+        "",
+        "09/16/24",
+        "CHECKCARD 0915 LA FITNESS IRVINE CA 00000000000000000386166 RECURRING",
+        "-29.99",
+        "·",
+        "09/17/24",
+        "CHECKCARD 0915 TRADER JOE S #124 BURBANK CA 24137464260501080958990",
+        "-39.32"
       ]
     },
     {
       "rows": 6,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -2295,7 +3711,7 @@
     {
       "rows": 4,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -2313,7 +3729,7 @@
     {
       "rows": 7,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Beginning balance on September 20, 2024",
         "$213,556.43",
         "Deposits and other additions",
@@ -2333,7 +3749,7 @@
     {
       "rows": 6,
       "cols": 3,
-      "sample": [
+      "cells": [
         "How are we doing?",
         "Your opinion is important to us.",
         "",
@@ -2350,7 +3766,7 @@
     {
       "rows": 4,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Deposits\nDate",
         "and other additions\nDescription",
         "Amount",
@@ -2368,7 +3784,7 @@
     {
       "rows": 14,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -2388,13 +3804,35 @@
         "SPROUTS FARMER 09/25 #000637062 PURCHASE SPROUTS FARMERS M BURBANK CA",
         "-121.74",
         "09/26/24",
-        "PURCHASE 0925 AMZN Mktp US*OQ23085M3 Amzn.com/billWA"
+        "PURCHASE 0925 AMZN Mktp US*OQ23085M3 Amzn.com/billWA",
+        "-410.61",
+        "09/26/24",
+        "CHECKCARD 0925 VIOC GN0013 NORTH HOLLYWOCA 24210734270023365008569",
+        "-109.47",
+        "09/30/24",
+        "THE HOME DEPOT 09/28 #000213336 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-17.45",
+        "· 09/30/24",
+        "SPROUTS FARMER 09/28 #000927300 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-108.75",
+        "10/01/24",
+        "SPROUTS FARMER 10/01 #000981393 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-146.85",
+        "10/02/24",
+        "CHECKCARD 1001 CHEVRON 0095560 GLENDALE CA 24692164275106433984713",
+        "-69.16",
+        "10/02/24",
+        "CHECKCARD 1001 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714275900018700117",
+        "-104.55",
+        "10/02/24",
+        "PURCHASE 1002 AMAZON RETA* EGOEY6KW3 WWW.AMAZON.COWA",
+        "-33.91"
       ]
     },
     {
       "rows": 22,
       "cols": 6,
-      "sample": [
+      "cells": [
         "",
         "Date",
         "Description",
@@ -2414,13 +3852,83 @@
         "0",
         "10/07/24",
         "PURCHASE",
-        "1006 AMAZON RETA* 872231D83 WWW.AMAZON.COWA"
+        "1006 AMAZON RETA* 872231D83 WWW.AMAZON.COWA",
+        "-6.56",
+        "",
+        "10/07/24",
+        "CHECKCARD 1005 WWW.TRUPANION. SEATTLE WA 00000000000000000891777 RECURRING",
+        "-90.41",
+        "",
+        "10/07/24",
+        "THE HOME DEPOT 10/06 #000397626 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-40.14",
+        "",
+        "10/07/24",
+        "SPROUTS FARMER 10/06 #000986547 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-113.39",
+        "",
+        "10/08/24",
+        "PURCHASE 1008 AMAZON MKTPL*NI69J9PM3 Amzn.com/billWA",
+        "-65.69",
+        "",
+        "10/10/24",
+        "SPROUTS FARMER 10/10 #000107573 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-133.90",
+        "",
+        "10/15/24",
+        "PURCHASE 1014 AMAZON RETA* Y43F35243 WWW.AMAZON.COWA",
+        "-27.36",
+        "",
+        "10/15/24",
+        "SPROUTS FARMER 10/14 #000981091 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-138.85",
+        "",
+        "10/15/24",
+        "CHECKCARD 1015 LA FITNESS IRVINE CA 00000000000000000389234 RECURRING",
+        "-29.99",
+        "0",
+        "10/15/24",
+        "CHECKCARD 1015 LA FITNESS IRVINE CA 00000000000000000404984 RECURRING",
+        "-29.99",
+        "›",
+        "10/16/24",
+        "CHECKCARD 1014 TRADER JOE S #124 BURBANK CA 24137464289500898038166",
+        "-46.18",
+        "",
+        "10/21/24",
+        "SPROUTS FARMER 10/20 #000395847 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-129.69",
+        "",
+        "Total ATM and debit card subtractions",
+        "-$2,563.99",
+        "",
+        "Other subtractions",
+        "",
+        "",
+        "Date",
+        "Description",
+        "Amount",
+        "",
+        "10/07/24",
+        "SPECTRUM PPD",
+        "DES:SPECTRUM ID:4401535 INDN:BONNIE DREXLER",
+        "CO ID:0000358635",
+        "-295.15",
+        "",
+        "10/08/24",
+        "ATT DES:Payment ID:XXXXXXXXXEPAYB INDN:MARCI DREXLER ID:9864031004 PPD",
+        "CO",
+        "-76.55",
+        "2",
+        "10/21/24",
+        "LADWP DES:WEB PAY ID:4027131000 INDN:bonnie drexler CO ID:4956000736 WEB",
+        "-848.44"
       ]
     },
     {
       "rows": 3,
       "cols": 4,
-      "sample": [
+      "cells": [
         "Date",
         "Check",
         "#",
@@ -2438,7 +3946,7 @@
     {
       "rows": 5,
       "cols": 5,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "",
@@ -2463,7 +3971,7 @@
     {
       "rows": 7,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Beginning balance on October 23, 2024",
         "$237,314.39",
         "Deposits and other additions",
@@ -2483,7 +3991,7 @@
     {
       "rows": 5,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Deposits\nDate",
         "and other additions\nDescription",
         "Amount",
@@ -2504,7 +4012,7 @@
     {
       "rows": 12,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -2524,13 +4032,29 @@
         "PURCHASE 1028 AMZN Mktp US*JG8PW7RA3 Amzn.com/billWA",
         "-87.59",
         "10/29/24",
-        "CHECKCARD 1027 TRADER JOE S #122 STUDIO CITY CA 24137464302501037800659"
+        "CHECKCARD 1027 TRADER JOE S #122 STUDIO CITY CA 24137464302501037800659",
+        "-74.08",
+        "· 10/29/24",
+        "SPROUTS FARMER 10/29 #000329176 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-117.73",
+        "11/01/24",
+        "PURCHASE 1031 AMAZON MARK* MI7RO3QF3 HTTPSAMAZON.CWA",
+        "-6.54",
+        "11/04/24",
+        "THE HOME DEPOT 11/03 #000954430 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-78.71",
+        "11/04/24",
+        "SPROUTS FARMER 11/04 #000702833 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-178.81",
+        "11/05/24",
+        "CHECKCARD 1103 TRADER JOE S #049 SHERMAN OAKS CA 24137464309500928040170",
+        "-39.53"
       ]
     },
     {
       "rows": 23,
       "cols": 4,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -2550,13 +4074,63 @@
         "CHECKCARD 1108 RIBS USA 818-8418872 CA 24000974315648902515586",
         "-20.11",
         "11/12/24",
-        "SPROUTS FARMER 11/09 #000997376 PURCHASE SPROUTS FARMERS M BURBANK CA"
+        "SPROUTS FARMER 11/09 #000997376 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-125.76",
+        "11/12/24",
+        "CHECKCARD 1109 TRADER JOE S #124 BURBANK CA 24137464315501261711106",
+        "-74.22",
+        "11/13/24",
+        "CHECKCARD 1112 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24786714317900012900572",
+        "-168.61",
+        "11/14/24",
+        "GELSON'S MARKE 11/14 #000959614 PURCHASE GELSON'S MARKETS VALLEY VILLAG CA",
+        "-19.44",
+        "11/15/24",
+        "CHECKCARD 1115 LA FITNESS IRVINE CA 00000000000000000321846 RECURRING",
+        "-29.99",
+        "11/15/24",
+        "CHECKCARD 1115 LA FITNESS IRVINE CA 00000000000000000322115 RECURRING",
+        "-29.99",
+        "11/15/24",
+        "CHECKCARD 1115 N & D OIL CORP NORTH HOLLYWOCA",
+        "-51.71",
+        "11/15/24",
+        "SPROUTS FARMER 11/15 #000602704 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-67.62",
+        "11/18/24",
+        "CHECKCARD 1115 TRADER JOE S #122 STUDIO CITY CA 24137464321501385867760",
+        "-53.64",
+        "11/18/24",
+        "PURCHASE 1117 AMAZON MKTPL*KN2061UE3 Amzn.com/billWA",
+        "-38.27",
+        "11/19/24",
+        "PURCHASE 1118 AMZN Mktp US*1L29116A3 Amzn.com/billWA",
+        "-15.00",
+        "2 11/19/24",
+        "SPROUTS FARMER 11/19 #000640538 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-79.07",
+        "Total ATM and debit card subtractions",
+        "-$1,968.12",
+        "Other subtractions",
+        "",
+        "Date",
+        "Description",
+        "",
+        "Amount",
+        "10/29/24",
+        "SOCALGAS ARC",
+        "DES:ARC PYMT CHECK #:0412 INDN:0093129100 CO ID:3951240705",
+        "-33.14",
+        "11/05/24",
+        "SPECTRUM PPD",
+        "DES:SPECTRUM ID:4603129 INDN:BONNIE DREXLER CO ID:0000358635",
+        "-295.15"
       ]
     },
     {
       "rows": 4,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -2574,7 +4148,7 @@
     {
       "rows": 3,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -2589,7 +4163,7 @@
     {
       "rows": 7,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Beginning balance on November 20, 2024",
         "$266,991.21",
         "Deposits and other additions",
@@ -2609,7 +4183,7 @@
     {
       "rows": 4,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Deposits\nDate",
         "and other additions\nDescription",
         "Amount",
@@ -2627,7 +4201,7 @@
     {
       "rows": 14,
       "cols": 4,
-      "sample": [
+      "cells": [
         "",
         "Date",
         "Description",
@@ -2647,13 +4221,49 @@
         ".",
         "11/25/24",
         "PURCHASE 1123 AMAZON RETA* BD5FA48P3 WWW.AMAZON.COWA",
-        "-47.51"
+        "-47.51",
+        "",
+        "11/25/24",
+        "SPROUTS FARMER 11/23 #000127215 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-112.95",
+        "≥",
+        "11/25/24",
+        "CHECKCARD 1123 TRADER JOE S #122 STUDIO CITY CA 24137464329501161289975",
+        "-48.65",
+        "",
+        "11/25/24",
+        "PURCHASE 1125 AMAZON MARK* 7E8101QR3 HTTPSAMAZON.CWA",
+        "-8.75",
+        "",
+        "11/25/24",
+        "PURCHASE 1125 AMAZON MARK* 969ZW4F43 HTTPSAMAZON.CWA",
+        "-33.76",
+        "",
+        "11/26/24",
+        "PURCHASE 1125 AMAZON MARK* 2D5UE2013 HTTPSAMAZON.CWA",
+        "-180.45",
+        "",
+        "11/26/24",
+        "SPROUTS FARMER 11/26 #000633098 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-55.68",
+        "",
+        "11/29/24",
+        "RALPHS #0 1284 11/28 #000940294 PURCHASE RALPHS #0 12842 V STUDIO CITY CA",
+        "-26.99",
+        "",
+        "11/29/24",
+        "THE HOME DEPOT 11/29 #000652758 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-358.24",
+        "",
+        "12/02/24",
+        "CHECKCARD 1130 TRADER JOE S #124 BURBANK CA 24137464336501238323832",
+        "-44.23"
       ]
     },
     {
       "rows": 27,
       "cols": 4,
-      "sample": [
+      "cells": [
         "ATM and debit card subtractions - continued",
         "Date",
         "Description",
@@ -2673,13 +4283,82 @@
         "CHECKCARD 1208 TRADER JOE S #122",
         "STUDIO CITY CA 24137464344501021795410",
         "-49.90",
-        "12/10/24"
+        "12/10/24",
+        "SPROUTS FARMER 12/10 #000336345",
+        "PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-117.30",
+        "12/11/24",
+        "HOBBYLOBB 641 12/11 #000203722",
+        "PURCHASE HOBBYLOBB 641 N. BURBANK CA",
+        "-8.79",
+        "12/11/24",
+        "SPROUTS FARMER 12/11 #000642648 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-45.64",
+        "12/16/24",
+        "CHECKCARD 1215 LA FITNESS IRVINE",
+        "CA 00000000000000000479370 RECURRING",
+        "-29.99",
+        "12/16/24",
+        "CHECKCARD 1215 LA FITNESS IRVINE",
+        "CA 00000000000000000484829 RECURRING",
+        "-29.99",
+        "12/16/24",
+        "SPROUTS FARMER 12/15 #000908897",
+        "PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-44.15",
+        "12/16/24",
+        "SPROUTS FARMER 12/15 #000732484",
+        "PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-22.77",
+        "12/16/24",
+        "USPS PO 055452 12/16 #000761401",
+        "PURCHASE USPS PO 05545203 VALLEY VILLAG CA",
+        "-22.10",
+        "12/17/24",
+        "CHECKCARD 1216 SQ *SUGAR NAILS",
+        "Valley VillagCA 24692164351109773895074",
+        "-67.00",
+        "12/18/24",
+        "PURCHASE 1217 AMZN Mktp US*Z14H61JW1 Amzn.com/billWA",
+        "-27.36",
+        "12/18/24",
+        "CVS/PHARMACY # 12/18 #000049177",
+        "PURCHASE 09675 -- 12143 Vent Studio City CA",
+        "-26.92",
+        "· 12/18/24",
+        "MICHAELS STORE 12/18 #000226253",
+        "PURCHASE 11239 VENTURA BLV STUDIO CITY CA",
+        "-20.24",
+        "12/18/24",
+        "SPROUTS FARMER 12/18 #000972705",
+        "PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-35.98",
+        "12/19/24",
+        "CHECKCARD 1218 RUSTY'S DISCOUNT",
+        "PET CE STUDIO CITY CA 24786714353900013300207",
+        "-168.61",
+        "Total ATM and debit card subtractions",
+        "-$2,131.07",
+        "Other subtractions",
+        "",
+        "Date",
+        "Description",
+        "Amount",
+        "12/05/24",
+        "SPECTRUM DES:SPECTRUM ID:5246537 INDN:BONNIE DREXLER CO ID:0000358635 PPD",
+        "-295.15",
+        "12/09/24",
+        "ATT DES:Payment ID:XXXXXXXXXEPAYK INDN:MARCI DREXLER co ID:9864031004 PPD",
+        "-76.64",
+        "Total other subtractions Checks",
+        "-$371.79",
+        ""
       ]
     },
     {
       "rows": 3,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -2694,7 +4373,7 @@
     {
       "rows": 7,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Beginning balance on December 20, 2024",
         "$293,207.13",
         "Deposits and other additions",
@@ -2714,7 +4393,7 @@
     {
       "rows": 5,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Deposits\nDate",
         "and other additions\nDescription",
         "Amount",
@@ -2735,7 +4414,7 @@
     {
       "rows": 13,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -2755,13 +4434,32 @@
         "HOBBYLOBB 641 12/24 #000957908 PURCHASE HOBBYLOBB 641 N. BURBANK CA",
         "-4.41",
         "12/24/24",
-        "SPROUTS FARMER 12/24 #000653310 PURCHASE SPROUTS FARMERS M BURBANK CA"
+        "SPROUTS FARMER 12/24 #000653310 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-108.29",
+        "12/27/24",
+        "CHECKCARD 1227 ROCKET 167 NORTH HILLS CA",
+        "-65.15",
+        "12/27/24",
+        "SPROUTS FARMER 12/27 #000359860 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-59.99",
+        "12/30/24",
+        "CHECKCARD 1227 SHAKE SHACK - 1309 646-747-7178 CA 24692164363100460910751",
+        "-13.67",
+        "12/30/24",
+        "SPROUTS FARMER 12/30 #000985893 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-39.94",
+        "01/02/25",
+        "CHECKCARD 1231 TRADER JOE S #122 STUDIO CITY CA 24137465001501355892370",
+        "-44.52",
+        "01/02/25",
+        "SPROUTS FARMER 01/02 #000774367 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-64.31"
       ]
     },
     {
       "rows": 20,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -2781,13 +4479,53 @@
         "PURCHASE 0107 AMAZON MARK* ZP8NC2HH1 HTTPSAMAZON.CWA",
         "-17.51",
         "01/08/25",
-        "SPROUTS FARMER 01/08 #000647454 PURCHASE SPROUTS FARMERS M BURBANK CA"
+        "SPROUTS FARMER 01/08 #000647454 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-151.40",
+        "01/09/25",
+        "PURCHASE 0108 AMAZON RETA* ZP86089F1 WWW.AMAZON.COWA",
+        "-8.51",
+        "01/10/25",
+        "CHECKCARD 0108 TRADER JOE S #124 BURBANK CA 24137465009500899353784",
+        "-60.03",
+        "0 01/13/25",
+        "CHECKCARD 0111 SHARKYS WOODFIRED MEXI 818-6238000 CA 24000975012014108571209",
+        "-23.97",
+        "₡ 01/13/25",
+        "SPROUTS FARMER 01/13 #000773102 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-102.72",
+        "01/13/25",
+        "SPROUTS FARMER 01/13 #000358652 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-9.98",
+        "01/15/25",
+        "CHECKCARD 0115 LA FITNESS IRVINE CA 00000000000000000007573 RECURRING",
+        "-29.99",
+        "01/15/25",
+        "CHECKCARD 0115 LA FITNESS IRVINE CA 00000000000000000009100 RECURRING",
+        "-29.99",
+        "01/16/25",
+        "SPROUTS FARMER 01/16 #000364997 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-93.02",
+        "01/21/25",
+        "CHECKCARD 0118 TRADER JOE S #124 BURBANK CA 24137465019501267787999",
+        "-42.82",
+        "· 01/21/25",
+        "SPROUTS FARMER 01/18 #000650338 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-51.64",
+        "01/21/25",
+        "CHECKCARD 0118 TST*OLD NEW YORK DELI & Woodland HillCA 24692165019108523467581",
+        "-28.62",
+        "01/21/25",
+        "SPROUTS FARMER 01/21 #000315005 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-35.27",
+        "01/21/25",
+        "GELSON'S MARKE 01/21 #000944325 PURCHASE GELSON'S MARKETS VALLEY VILLAG CA",
+        "-8.98"
       ]
     },
     {
       "rows": 5,
       "cols": 4,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -2809,7 +4547,7 @@
     {
       "rows": 7,
       "cols": 4,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -2829,13 +4567,15 @@
         "426 Manuel Gardner",
         "-130.00",
         "· 01/16/25",
-        "427"
+        "427",
+        "Probate Investigator",
+        "-425.00"
       ]
     },
     {
       "rows": 6,
       "cols": 4,
-      "sample": [
+      "cells": [
         "",
         "Date",
         "Check #",
@@ -2855,13 +4595,17 @@
         "@",
         "01/17/25 ·",
         "433* Anthem Pharmacy",
-        "-164.90"
+        "-164.90",
+        "",
+        "01/17/25 .",
+        "434 Anthem Medical",
+        "-463.20"
       ]
     },
     {
       "rows": 2,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Total checks",
         "-$5,910.01",
         "Total # of checks",
@@ -2871,7 +4615,7 @@
     {
       "rows": 7,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Beginning balance on January 23, 2025",
         "$310,344.52",
         "Deposits and other additions",
@@ -2891,7 +4635,7 @@
     {
       "rows": 5,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Deposits\nDate",
         "and other additions\nDescription",
         "Amount",
@@ -2912,7 +4656,7 @@
     {
       "rows": 12,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -2932,13 +4676,29 @@
         "PURCHASE 0131 AMAZON MARK* ZC8QW6ES1 HTTPSAMAZON.CWA",
         "-16.41",
         "01/31/25",
-        "PURCHASE 0131 AMAZON MARK* ZC02U17MO AMAZON.COM/MAWA"
+        "PURCHASE 0131 AMAZON MARK* ZC02U17MO AMAZON.COM/MAWA",
+        "-26.27",
+        "02/03/25",
+        "PURCHASE 0203 AMAZON RETA* Z79JC1TPO WWW.AMAZON.COWA",
+        "-19.75",
+        "02/03/25",
+        "PURCHASE 0203 AMAZON MARK* ZC5NF19X1 HTTPSAMAZON.CWA",
+        "-43.76",
+        "02/03/25",
+        "PURCHASE 0202 AMAZON MARK* Z78E50ZRO HTTPSAMAZON.CWA",
+        "-17.57",
+        "02/03/25",
+        "PURCHASE 0202 AMAZON MARK* Z72KP7L90 AMAZON.COM/MAWA",
+        "-13.91",
+        "02/03/25",
+        "SPROUTS FARMER 02/03 #000916907 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-119.52"
       ]
     },
     {
       "rows": 14,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -2958,13 +4718,35 @@
         "PURCHASE 0208 AMAZON MARK* JY6R01Z63 AMAZON.COM/MAWA",
         "-39.38",
         "$ 02/10/25",
-        "SPROUTS FARMER 02/09 #000641681 PURCHASE SPROUTS FARMERS M BURBANK CA"
+        "SPROUTS FARMER 02/09 #000641681 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-111.03",
+        "· 02/12/25",
+        "SPROUTS FARMER 02/12 #000177946 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-50.12",
+        "02/14/25",
+        "CHECKCARD 0212 TRADER JOE S #122 STUDIO CITY CA 24137465044500890896309",
+        "-48.26",
+        "· 02/18/25",
+        "CHECKCARD 0215 LA FITNESS IRVINE CA 00000000000000000454851 RECURRING",
+        "-29.99",
+        "· 02/18/25",
+        "CHECKCARD 0215 LA FITNESS IRVINE CA 00000000000000000455028 RECURRING",
+        "-29.99",
+        "₱ 02/18/25",
+        "CHECKCARD 0216 ALL STAR HEALTH.COM 800-875-0448 CA 24692165047108815295506",
+        "-113.11",
+        "9 02/18/25",
+        "CHECKCARD 0216 TRADER JOE S #122 STUDIO CITY CA 24137465048500918918412",
+        "-51.63",
+        "· 02/18/25",
+        "SPROUTS FARMER 02/16 #000377523 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-78.40"
       ]
     },
     {
       "rows": 4,
       "cols": 4,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -2984,7 +4766,7 @@
     {
       "rows": 5,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -3005,7 +4787,7 @@
     {
       "rows": 5,
       "cols": 4,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -3030,7 +4812,7 @@
     {
       "rows": 7,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Beginning balance on February 20, 2025",
         "$293,599.97",
         "Deposits and other additions",
@@ -3050,7 +4832,7 @@
     {
       "rows": 3,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Deposits\nDate",
         "and other\nDescription",
         "Amount",
@@ -3065,7 +4847,7 @@
     {
       "rows": 19,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Total",
         "deposits and other additions",
         "$2,094.03",
@@ -3085,13 +4867,46 @@
         "-61.46",
         "02/24/25",
         "CHECKCARD 0221 TRADER JOE S #122 STUDIO CITY CA 24137465053501318841032",
-        "-21.73"
+        "-21.73",
+        "02/24/25",
+        "SPROUTS FARMER 02/22 #000119884 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-44.66",
+        "02/24/25",
+        "THE HOME DEPOT 02/24 #000323286 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-210.70",
+        "02/25/25",
+        "PURCHASE 0224 AMAZON RETA* AE7N62KX3 WWW.AMAZON.COWA",
+        "-45.98",
+        "02/25/25",
+        "SPROUTS FARMER 02/25 #000988607 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-62.70",
+        "02/25/25",
+        "SPROUTS FARMER 02/25 #000130792 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-23.16",
+        "02/28/25",
+        "SPROUTS FARMER 02/28 #000770455 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-94.44",
+        "03/03/25",
+        "CHECKCARD 0228 TRADER JOE S #122 STUDIO CITY CA 24137465060501426123456",
+        "-37.02",
+        "03/03/25",
+        "PURCHASE 0301 AMAZON RETA* IX6HB91X3 WWW.AMAZON.COWA",
+        "-210.60",
+        "03/04/25",
+        "SPROUTS FARMER 03/04 #000314036 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-86.64",
+        "03/05/25",
+        "CHECKCARD 0305 WWW.TRUPANION. SEATTLE WA 00000000000000000682424 RECURRING",
+        "-113.95",
+        "03/06/25",
+        "CHECKCARD 0304 TRADER JOE S #122 STUDIO CITY CA 24137465064500828100571",
+        "-29.70"
       ]
     },
     {
       "rows": 20,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -3111,13 +4926,53 @@
         "JORDAN D COLBY 03/11 #000781070 PURCHASE JORDAN D COLBY DM OCEANSIDE CA",
         "-401.00",
         "03/13/25",
-        "CHECKCARD 0311 TRADER JOE S #022 OCEANSIDE CA 24137465071501019563867"
+        "CHECKCARD 0311 TRADER JOE S #022 OCEANSIDE CA 24137465071501019563867",
+        "-7.33",
+        "03/13/25",
+        "PURCHASE 0312 AMAZON RETA* Z62US1863 WWW.AMAZON.COWA",
+        "-7.65",
+        "03/13/25",
+        "SPROUTS FARMER 03/13 #000101158 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-159.43",
+        "03/17/25",
+        "CHECKCARD 0315 LA FITNESS IRVINE CA 00000000000000000419700 RECURRING",
+        "-29.99",
+        "03/17/25",
+        "CHECKCARD 0315 LA FITNESS IRVINE CA 00000000000000000440226 RECURRING",
+        "-29.99",
+        "03/17/25",
+        "CHECKCARD 0315 N & D OIL CORP NORTH HOLLYWOCA",
+        "-70.10",
+        "03/17/25",
+        "THE HOME DEPOT 03/15 #000347109 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-8.21",
+        "03/17/25",
+        "CHECKCARD 0316 SXM*SIRIUSXM.COM/ACCT 888-635-5144 NY 24692165075100637061682 RECURRING",
+        "-359.65",
+        "03/17/25",
+        "THE HOME DEPOT 03/17 #000039246 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-8.21",
+        "03/18/25",
+        "SPROUTS FARMER 03/18 #000971340 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-74.93",
+        "03/19/25",
+        "CHECKCARD 0317 TRADER JOE S #122 STUDIO CITY CA 24137465077501016602282",
+        "-49.25",
+        "03/19/25",
+        "PURCHASE 0319 AMAZON MARK* W09ZK80R3 AMAZON.COM/MAWA",
+        "-32.84",
+        "03/20/25",
+        "PURCHASE 0319 AMAZON MARK* FZOUM2BI3 AMAZON.COM/MAWA",
+        "-13.51",
+        "03/20/25",
+        "PURCHASE 0320 AMAZON MARK* A56QL1573 AMAZON.COM/MAWA",
+        "-30.65"
       ]
     },
     {
       "rows": 4,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -3135,7 +4990,7 @@
     {
       "rows": 4,
       "cols": 4,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -3156,7 +5011,7 @@
     {
       "rows": 3,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -3171,7 +5026,7 @@
     {
       "rows": 7,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Beginning balance on March 21, 2025",
         "$290,528.46",
         "Deposits and other additions",
@@ -3191,7 +5046,7 @@
     {
       "rows": 4,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Deposits\nDate",
         "and other additions\nDescription",
         "Amount",
@@ -3209,7 +5064,7 @@
     {
       "rows": 14,
       "cols": 4,
-      "sample": [
+      "cells": [
         "",
         "Date",
         "Description",
@@ -3229,13 +5084,49 @@
         "",
         "03/24/25",
         "SPROUTS FARMER 03/22 #000946238 PURCHASE SPROUTS FARMERS M BURBANK CA",
-        "-113.98"
+        "-113.98",
+        "·",
+        "03/25/25",
+        "LOWE'S #1144 03/25 #000593395 PURCHASE LOWE'S #1144 BURBANK CA",
+        "23.36",
+        "$",
+        "03/25/25",
+        "SPROUTS FARMER 03/25 #000627047 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-38.10",
+        "0",
+        "03/27/25",
+        "CHECKCARD 0325 TRADER JOE S #124 BURBANK CA 24137465085501022771964",
+        "-18.46",
+        "",
+        "03/28/25",
+        "SPROUTS FARMER 03/28 #000704583 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-140.43",
+        "0",
+        "03/31/25",
+        "CHECKCARD 0328 ALL STAR HEALTH.COM 800-875-0448 CA 24692165087101015597897",
+        "-166.82",
+        "1",
+        "04/01/25",
+        "CHECKCARD 0330 TRADER JOE S #122 STUDIO CITY CA 24137465090501024751884",
+        "-7.65",
+        "",
+        "04/01/25",
+        "SPROUTS FARMER 04/01 #000145778 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-64.31",
+        "",
+        "04/04/25",
+        "CHECKCARD 0402 TRADER JOE S #122 STUDIO CITY CA 24137465093501032012110",
+        "-57.51",
+        "",
+        "04/07/25",
+        "PURCHASE 0404 AMAZON MARK* A141H1N63 AMAZON.COM/MAWA",
+        "-16.69"
       ]
     },
     {
       "rows": 27,
       "cols": 5,
-      "sample": [
+      "cells": [
         "ATM and debit card subtractions - continued Date Description",
         "",
         "Amount",
@@ -3255,13 +5146,97 @@
         "04/08/25",
         "PURCHASE",
         "0408 AMAZON MARK* SO5KB4M63 AMAZON.COM/MAWA",
-        "-99.68"
+        "-99.68",
+        "·",
+        "04/08/25",
+        "PURCHASE",
+        "0408 AMAZON MARK* 6ROTB4CP3 AMAZON.COM/MAWA",
+        "-35.09",
+        "៛",
+        "04/09/25",
+        "SPROUTS FARMER 04/09 #000722306 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-68.30",
+        "",
+        "04/11/25",
+        "CHECKCARD 0409 TRADER JOE S #122 STUDIO CITY CA 24137465100501100882544",
+        "-54.16",
+        "¿",
+        "04/11/25",
+        "SPROUTS FARMER 04/11 #000749572 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-37.49",
+        "·",
+        "04/14/25",
+        "PURCHASE 0412 SP BABYLIST CHECKOUT.BABYCA",
+        "-109.74",
+        "៛",
+        "04/14/25",
+        "CHECKCARD 0412 WWW.REDBUBBLE.COM REDBUBBLE.COMCA 24011345102100093553338",
+        "43.12",
+        "៛",
+        "04/14/25",
+        "PURCHASE 0412 AMAZON MARK* T36091K33 AMAZON.COM/MAWA",
+        "-9.87",
+        ",",
+        "04/15/25",
+        "CHECKCARD 0415 LA FITNESS IRVINE CA 00000000000000000249331 RECURRING",
+        "-29.99",
+        "₡",
+        "04/15/25",
+        "CHECKCARD 0415 LA FITNESS IRVINE CA 00000000000000000249810 RECURRING",
+        "-29.99",
+        "/",
+        "04/15/25",
+        "SPROUTS FARMER 04/15 #000937950 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-110.90",
+        "·",
+        "04/16/25",
+        "THE HOME DEPOT 04/16 #000174484 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-143.10",
+        "/",
+        "04/18/25",
+        "CHECKCARD 0416 TRADER JOE S #122 STUDIO CITY CA 24137465107501111810669",
+        "-41.16",
+        "֏",
+        "04/21/25",
+        "CHECKCARD 0419 N & D OIL CORP NORTH HOLLYWOCA",
+        "-71.28",
+        "·",
+        "04/21/25",
+        "SPROUTS FARMER 04/19 #000149502 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-79.63",
+        "·",
+        "04/21/25",
+        "PURCHASE 0421 AMAZON RETA* R28981FY3 WWW.AMAZON.COWA",
+        "-35.11",
+        "",
+        "Total ATM and debit card subtractions",
+        "-$2,139.01",
+        "",
+        "Other subtractions",
+        "",
+        "",
+        "Date",
+        "Description",
+        "",
+        "Amount",
+        "",
+        "04/07/25",
+        "SPECTRUM PPD",
+        "DES:SPECTRUM ID:0187495 INDN:BONNIE DREXLER CO ID:0000358635",
+        "-302.82",
+        "",
+        "04/08/25",
+        "ATT DES:Payment ID:XXXXXXXXXEPAYB INDN:MARCI DREXLER CO ID:9864031004 PPD",
+        "-76.68",
+        "",
+        "Total other subtractions",
+        "-$379.50"
       ]
     },
     {
       "rows": 4,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -3279,7 +5254,7 @@
     {
       "rows": 3,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -3294,7 +5269,7 @@
     {
       "rows": 7,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Beginning balance on April 22, 2025",
         "$315,670.09",
         "Deposits and other additions",
@@ -3314,7 +5289,7 @@
     {
       "rows": 4,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Deposits\nDate",
         "and other additions\nDescription",
         "Amount",
@@ -3332,7 +5307,7 @@
     {
       "rows": 14,
       "cols": 4,
-      "sample": [
+      "cells": [
         "",
         "Date",
         "Description",
@@ -3352,13 +5327,49 @@
         "៛",
         "04/24/25",
         "SPROUTS FARMER 04/24 #000616941 PURCHASE SPROUTS FARMERS M BURBANK CA",
-        "-151.43"
+        "-151.43",
+        "0",
+        "04/25/25",
+        "CHECKCARD 0424 SQ *SUGAR NAILS Valley VillagCA 24692165114105641931229",
+        "-32.00",
+        "",
+        "04/28/25",
+        "CHECKCARD 0425 TRADER JOE S #122 STUDIO CITY CA 24137465116501396055187",
+        "-51.23",
+        "",
+        "04/28/25",
+        "THE HOME DEPOT 04/28 #000099888 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-59.23",
+        "",
+        "04/29/25",
+        "SPROUTS FARMER 04/29 #000176110 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-121.71",
+        "",
+        "05/05/25",
+        "CHECKCARD 0501 TRADER JOE S #122 STUDIO CITY CA 24137465122501247879829",
+        "-37.05",
+        "",
+        "05/05/25",
+        "PURCHASE 0502 AMAZON PRIME*NB11D7FK1 Amzn.com/billWA",
+        "-152.55",
+        "",
+        "05/05/25",
+        "PURCHASE 0505 AMAZON MARK* NI5298GI2 AMAZON.COM/MAWA",
+        "-10.92",
+        "",
+        "05/05/25",
+        "CHECKCARD 0505 N & D OIL CORP NORTH HOLLYWOCA",
+        "-64.23",
+        "",
+        "05/05/25",
+        "SPROUTS FARMER 05/05 #000940756 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-144.57"
       ]
     },
     {
       "rows": 10,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -3378,13 +5389,23 @@
         "SPROUTS FARMER 05/11 #000924336 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
         "-136.38",
         "4 05/15/25",
-        "CHECKCARD 0515 LA FITNESS IRVINE CA 00000000000000000398925 RECURRING"
+        "CHECKCARD 0515 LA FITNESS IRVINE CA 00000000000000000398925 RECURRING",
+        "-29.99",
+        "05/15/25",
+        "CHECKCARD 0515 LA FITNESS IRVINE CA 00000000000000000416081 RECURRING",
+        "-29.99",
+        "# 05/15/25",
+        "SPROUTS FARMER 05/15 #000622970 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-108.10",
+        "₱ 05/19/25",
+        "SPROUTS FARMER 05/19 #000947617 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-152.17"
       ]
     },
     {
       "rows": 4,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -3402,7 +5423,7 @@
     {
       "rows": 5,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -3423,7 +5444,7 @@
     {
       "rows": 4,
       "cols": 4,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -3442,7 +5463,7 @@
     {
       "rows": 7,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Beginning balance on May 21, 2025",
         "$333,773.82",
         "Deposits and other additions",
@@ -3462,7 +5483,7 @@
     {
       "rows": 4,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Deposits\nDate",
         "and other additions\nDescription",
         "Amount",
@@ -3480,7 +5501,7 @@
     {
       "rows": 14,
       "cols": 4,
-      "sample": [
+      "cells": [
         "",
         "Date",
         "Description",
@@ -3500,13 +5521,49 @@
         "֏",
         "05/30/25",
         "PURCHASE 0529 AMAZON MARK* NN3FC9VRO AMAZON.COM/MAWA",
-        "-133.83"
+        "-133.83",
+        "",
+        "05/30/25",
+        "CHECKCARD 0530 N & D OIL CORP NORTH HOLLYWOCA",
+        "-45.04",
+        "",
+        "05/30/25",
+        "SPROUTS FARMER 05/30 #000700336 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-98.99",
+        "",
+        "06/02/25",
+        "CHECKCARD 0531 TRADER JOE S #122 STUDIO CITY CA 24137465152501306469416",
+        "-38.37",
+        "៛",
+        "06/02/25",
+        "PURCHASE 0601 AMAZON MARK* N64PS9F21 AMAZON.COM/MAWA",
+        "-58.72",
+        "֏",
+        "06/02/25",
+        "PURCHASE 0601 AMAZON MARK* N61A35FA1 AMAZON.COM/MAWA",
+        "-49.34",
+        ":",
+        "06/03/25",
+        "SPROUTS FARMER 06/03 #000685420 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-81.16",
+        "·",
+        "06/05/25",
+        "CHECKCARD 0605 WWW.TRUPANION. SEATTLE WA 00000000000000000953659 RECURRING",
+        "-113.95",
+        "",
+        "06/09/25",
+        "PURCHASE 0606 AMAZON MARK* N62K70UI1 AMAZON.COM/MAWA",
+        "-23.97",
+        "+",
+        "06/09/25",
+        "CHECKCARD 0607 TRADER JOE S #122 STUDIO CITY CA 24137465159501273795895",
+        "-72.56"
       ]
     },
     {
       "rows": 17,
       "cols": 4,
-      "sample": [
+      "cells": [
         "",
         "Date",
         "Description",
@@ -3526,13 +5583,59 @@
         "·",
         "06/13/25",
         "PURCHASE 0612 AMAZON MARK* NH4J31IPO AMAZON.COM/MAWA",
-        "-120.71"
+        "-120.71",
+        "៛",
+        "06/13/25",
+        "PURCHASE 0613 AMAZON MARK* NA6EF2622 AMAZON.COM/MAWA",
+        "-10.59",
+        "",
+        ": 06/13/25",
+        "SPROUTS FARMER 06/13 #000391680 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-148.72",
+        "",
+        "06/16/25",
+        "CHECKCARD 0614 TRADER JOE S #122 STUDIO CITY CA 24137465166501253370686",
+        "-57.59",
+        "",
+        "06/16/25",
+        "CHECKCARD 0615 LA FITNESS IRVINE CA 00000000000000000396990 RECURRING",
+        "-29.99",
+        "",
+        "06/16/25",
+        "CHECKCARD 0615 LA FITNESS IRVINE CA 00000000000000000426235 RECURRING",
+        "-29.99",
+        ",",
+        "06/18/25",
+        "CHECKCARD 0618 CVS/PHARMACY # Studio City CA",
+        "-27.84",
+        "৳",
+        "06/18/25",
+        "SPROUTS FARMER 06/18 #000964988 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-104.86",
+        "",
+        "Total ATM and debit card subtractions",
+        "-$1,999.34",
+        "",
+        "Other subtractions",
+        "",
+        "",
+        "Date",
+        "Description",
+        "Amount",
+        "6",
+        "06/05/25",
+        "SPECTRUM DES:SPECTRUM ID:2686620 INDN:BONNIE DREXLER CO ID:0000358635 PPD",
+        "-302.82",
+        "0",
+        "06/09/25",
+        "ATT DES:Payment ID:XXXXXXXXXEPAYK INDN:MARCI DREXLER CO ID:9864031004 PPD",
+        "-76.47"
       ]
     },
     {
       "rows": 3,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -3547,7 +5650,7 @@
     {
       "rows": 7,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Beginning balance on June 19, 2025",
         "$359,452.52",
         "Deposits and other additions",
@@ -3567,7 +5670,7 @@
     {
       "rows": 5,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Deposits\nDate",
         "and other additions\nDescription",
         "Amount",
@@ -3587,7 +5690,7 @@
     {
       "rows": 14,
       "cols": 4,
-      "sample": [
+      "cells": [
         "",
         "Date",
         "Description",
@@ -3607,13 +5710,49 @@
         "4",
         "06/25/25",
         "CHECKCARD 0623 TRADER JOE S #122 STUDIO CITY CA 24137465175500977157055",
-        "-44.23"
+        "-44.23",
+        "14",
+        "06/27/25",
+        "SPROUTS FARMER 06/27 #000611045 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-125.10",
+        "$",
+        "06/30/25",
+        "PURCHASE 0630 AMAZON MARK* NQ9BV7UY1 AMAZON.COM/MAWA",
+        "-36.73",
+        "·",
+        "07/01/25",
+        "PURCHASE 0630 AMAZON MARK* N330FOXR2 AMAZON.COM/MAWA",
+        "-18.65",
+        "·",
+        "07/01/25",
+        "PURCHASE 0630 LAW OFFICES OF ROZSA LIVINGTRUST-ACA",
+        "-150.00",
+        "·",
+        "07/02/25",
+        "SPROUTS FARMER 07/02 #000178559 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-126.59",
+        "·",
+        "07/03/25",
+        "CHECKCARD 0702 THE UPS STORE 2036 213-4945128 CA 24000975183996403602577",
+        "-15.00",
+        "1",
+        "07/07/25",
+        "CHECKCARD 0702 TRADER JOE S #122 STUDIO CITY CA 24137465184501155589969",
+        "-43.09",
+        ",",
+        "07/07/25",
+        "CHECKCARD 0704 ALL STAR HEALTH.COM 800-875-0448 CA 24692165185103987652180",
+        "-50.29",
+        "0",
+        "07/07/25",
+        "SPROUTS FARMER 07/04 #000151869 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-31.81"
       ]
     },
     {
       "rows": 16,
       "cols": 4,
-      "sample": [
+      "cells": [
         "",
         "Date",
         "Description",
@@ -3633,13 +5772,57 @@
         "·",
         "07/08/25",
         "CHECKCARD 0707 CARFAX *CARFAX.COM CARFAX.COM VA 24692165188106309563784",
-        "-44.99"
+        "-44.99",
+        "៛",
+        "07/10/25",
+        "SPROUTS FARMER 07/10 #000913745 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-72.08",
+        "",
+        "07/11/25",
+        "THE HOME DEPOT 07/11 #000227901 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-236.88",
+        "៛",
+        "07/14/25",
+        "PURCHASE 0714 AMAZON MARK* 7L9GI5QM3 AMAZON.COM/MAWA",
+        "-24.13",
+        "·",
+        "07/14/25",
+        "SPROUTS FARMER 07/14 #000783331 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-70.06",
+        "¢",
+        "07/15/25",
+        "CHECKCARD 0715 LA FITNESS IRVINE CA 00000000000000000294907 RECURRING",
+        "-29.99",
+        ":",
+        "07/15/25",
+        "CHECKCARD 0715 LA FITNESS IRVINE CA 00000000000000000296114 RECURRING",
+        "-29.99",
+        "",
+        "07/16/25",
+        "CHECKCARD 0714 TRADER JOE S #122 STUDIO CITY CA 24137465196501013283546",
+        "-33.79",
+        "¢",
+        "07/21/25",
+        "SPROUTS FARMER 07/20 #000368813 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-134.05",
+        "§",
+        "07/22/25",
+        "CHECKCARD 0720 TRADER JOE S #122 STUDIO CITY CA 24137465202501041664628",
+        "-40.11",
+        "₾",
+        "07/22/25",
+        "MICHAELS STORE 07/22 #000068916 PURCHASE 1551 N VICTORY PL BURBANK CA",
+        "-9.92",
+        "₡",
+        "07/22/25",
+        "SPROUTS FARMER 07/22 #000977030 PURCHASE SPROUTS FARMERS M BURBANK CA",
+        "-45.70"
       ]
     },
     {
       "rows": 4,
       "cols": 5,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "Amount",
@@ -3660,7 +5843,7 @@
     {
       "rows": 5,
       "cols": 4,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -3685,7 +5868,7 @@
     {
       "rows": 4,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -3703,7 +5886,7 @@
     {
       "rows": 7,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Beginning balance on July 23, 2025",
         "$381,574.94",
         "Deposits and other additions",
@@ -3723,7 +5906,7 @@
     {
       "rows": 4,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Deposits\nDate",
         "and other additions\nDescription",
         "Amount",
@@ -3741,7 +5924,7 @@
     {
       "rows": 14,
       "cols": 4,
-      "sample": [
+      "cells": [
         "",
         "Date",
         "Description",
@@ -3761,13 +5944,49 @@
         "",
         "07/28/25",
         "CHECKCARD 0726 TRADER JOE S #122 STUDIO CITY CA 24137465208501272623065",
-        "-39.88"
+        "-39.88",
+        "·",
+        "07/28/25",
+        "SPROUTS FARMER 07/26 #000962931 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-75.47",
+        ",",
+        "07/30/25",
+        "CHECKCARD 0729 RUSTY'S DISCOUNT PET CE STUDIO CITY CA 24988065210900015200013",
+        "-168.99",
+        "·",
+        "07/30/25",
+        "THE HOME DEPOT 07/30 #000153359 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-87.59",
+        "",
+        "07/30/25",
+        "SPROUTS FARMER 07/30 #000363991 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-96.63",
+        "",
+        "08/04/25",
+        "PURCHASE 0801 AMAZON MKTPL*072GA53P3 Amzn.com/billWA",
+        "-17.55",
+        "$",
+        "08/04/25",
+        "PURCHASE 0801 AMAZON MARK* VB2UL1713 AMAZON.COM/MAWA",
+        "-9.77",
+        "",
+        "08/04/25",
+        "PURCHASE 0803 AMAZON RETA* S910B9Q23 WWW.AMAZON.COWA",
+        "-43.90",
+        "৳",
+        "08/04/25",
+        "SPROUTS FARMER 08/03 #000353014 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-90.60",
+        "¥",
+        "08/05/25",
+        "CHECKCARD 0803 TRADER JOE S #122 STUDIO CITY CA 24137465216501083474989",
+        "-30.30"
       ]
     },
     {
       "rows": 20,
       "cols": 4,
-      "sample": [
+      "cells": [
         "",
         "Date",
         "debit card subtractions\nDescription",
@@ -3787,13 +6006,73 @@
         "",
         "08/11/25",
         "CHECKCARD 0810 PSJMC BURBANK PARKING BURBANK CA 24055235223438976369420",
-        "-10.00"
+        "-10.00",
+        "₾",
+        "08/11/25",
+        "USPS PO 055452 08/11 #000814900 PURCHASE USPS PO 05545203 VALLEY VILLAG CA",
+        "-15.60",
+        "৳",
+        "08/11/25",
+        "SPROUTS FARMER 08/11 #000175892 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-72.65",
+        "1",
+        "08/13/25",
+        "CHECKCARD 0811 TRADER JOE S #122 STUDIO CITY CA 24137465224501039785454",
+        "-43.28",
+        "·",
+        "08/14/25",
+        "PURCHASE 0814 AMAZON MARK* GM3AR4ZS3 AMAZON.COM/MAWA",
+        "-53.44",
+        "·",
+        "08/14/25",
+        "PURCHASE 0814 AMAZON MARK* WW6W81323 AMAZON.COM/MAWA",
+        "-25.23",
+        "₩",
+        "08/14/25",
+        "THE HOME DEPOT 08/14 #000634156 PURCHASE THE HOME DEPOT #6 N. HOLLYWOOD CA",
+        "-47.61",
+        "~",
+        "08/14/25",
+        "SPROUTS FARMER 08/14 #000991317 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-80.68",
+        "·",
+        "08/15/25",
+        "CHECKCARD 0815 LA FITNESS IRVINE CA 00000000000000000251492 RECURRING",
+        "-29.99",
+        "৳",
+        "08/15/25",
+        "CHECKCARD 0815 LA FITNESS IRVINE CA 00000000000000000287821 RECURRING",
+        "-29.99",
+        "৳",
+        "08/18/25",
+        "CHECKCARD 0814 TRADER JOE S #122 STUDIO CITY CA 24137465227501119394554",
+        "-18.46",
+        "₾",
+        "08/18/25",
+        "PURCHASE 0816 AMAZON MARK* TG3SROHA3 AMAZON.COM/MAWA",
+        "-123.38",
+        "",
+        "08/18/25",
+        "CHECKCARD 0815 SMILE SPECIALIST LOS ANGELES CA 24750765229900015900695",
+        "-180.00",
+        "·",
+        "08/18/25",
+        "CHECKCARD 0816 CHIPOTLE 2093 SHERMAN OAKS CA 24431065229268056544695",
+        "-23.05",
+        "",
+        "08/18/25",
+        "PURCHASE 0818 AMAZON MARK* 3G6XG4QF3 AMAZON.COM/MAWA",
+        "-52.67",
+        "৳",
+        "08/18/25",
+        "SPROUTS FARMER 08/18 #000187880 PURCHASE SPROUTS FARMERS M STUDIO CITY CA",
+        "-121.30"
       ]
     },
     {
       "rows": 4,
       "cols": 4,
-      "sample": [
+      "cells": [
         "Date",
         "Description",
         "",
@@ -3812,7 +6091,7 @@
     {
       "rows": 4,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -3830,7 +6109,7 @@
     {
       "rows": 2,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Date",
         "Check #",
         "Amount",
@@ -3842,7 +6121,7 @@
     {
       "rows": 4,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Date Check #",
         "Amount",
         "",
@@ -3856,7 +6135,7 @@
     {
       "rows": 2,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Account No.",
         "Statement Period",
         "Page",
@@ -3868,7 +6147,7 @@
     {
       "rows": 9,
       "cols": 2,
-      "sample": [
+      "cells": [
         "ACCOUNT BALANCE\nSavings",
         "$5.00",
         "Checking",
@@ -3892,7 +6171,7 @@
     {
       "rows": 7,
       "cols": 5,
-      "sample": [
+      "cells": [
         "Transaction Date",
         "Post Date",
         "Transaction Description",
@@ -3912,13 +6191,28 @@
         "",
         "Deposit Dividend Split Rate",
         "309.76",
-        "97,723.60"
+        "97,723.60",
+        "",
+        "",
+        "Annual Percentage Yield Earned (APYE) For Period 11/01 - 11/30: 3.940% Based on an Average Daily Balance of $ 97,413.84",
+        "",
+        "",
+        "01/01",
+        "",
+        "Deposit Dividend Split Rate Annual Percentage Yield Earned (APYE) For Period 12/01 - 12/31: 3.770% Based on an Average Daily Balance of $ 97,723.60",
+        "307.55",
+        "98,031.15",
+        "01/12",
+        "",
+        "Ending Balance",
+        "",
+        "$ 98,031.15"
       ]
     },
     {
       "rows": 2,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Account No.",
         "Statement Period",
         "Page",
@@ -3930,7 +6224,7 @@
     {
       "rows": 13,
       "cols": 6,
-      "sample": [
+      "cells": [
         "12 MONTH FLEX CERTIFICATE (ID 50)",
         "",
         "",
@@ -3950,13 +6244,58 @@
         "Post Date",
         "",
         "Transaction Description",
-        ""
+        "",
+        "",
+        "Amount",
+        "New Balance",
+        "",
+        "",
+        "Previous Balance",
+        "",
+        "$ 415,414.15",
+        "11/01",
+        "",
+        "",
+        "Deposit Dividend 4.887%",
+        "1,724.22",
+        "417,138.37",
+        "",
+        "",
+        "Annual Percentage Yield Earned (APYE) For Period 10/01",
+        "- 10/31: 5.000%",
+        "",
+        "12/01",
+        "",
+        "",
+        "Deposit Dividend 4.887%",
+        "1,675.53",
+        "418,813.90",
+        "",
+        "",
+        "Annual Percentage Yield Earned (APYE) For Period 11/01 - 11/30: 5.000%",
+        "",
+        "01/01",
+        "",
+        "",
+        "Deposit Dividend 4.887%",
+        "1,738.34",
+        "420,552.24",
+        "",
+        "",
+        "Annual Percentage Yield Earned (APYE) For Period 12/01 - 12/31: 5.000%",
+        "",
+        "01/12",
+        "",
+        "",
+        "Ending Balance",
+        "",
+        "$ 420,552.24"
       ]
     },
     {
       "rows": 2,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Account No.",
         "Statement Period",
         "Page",
@@ -3968,7 +6307,7 @@
     {
       "rows": 9,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Savings",
         "$5.00",
         "Checking",
@@ -3992,7 +6331,7 @@
     {
       "rows": 2,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Looking for a Rewarding",
         "",
         "STOP THE PAPER. GET $5.",
@@ -4004,7 +6343,7 @@
     {
       "rows": 9,
       "cols": 5,
-      "sample": [
+      "cells": [
         "Transaction Date",
         "Post Date",
         "Transaction Description",
@@ -4024,13 +6363,38 @@
         "",
         "Deposit Dividend Split Rate",
         "278.48",
-        "98,616.98"
+        "98,616.98",
+        "",
+        "",
+        "Annual Percentage Yield Earned (APYE) For Period 02/01 - 02/28: 3.760% Based on an Average Daily Balance of $ 98,338.50",
+        "",
+        "",
+        "03/25",
+        "",
+        "Withdrawal Transfer To Share 70",
+        "-5,000.00",
+        "93,616.98",
+        "04/01",
+        "",
+        "Deposit Dividend Split Rate",
+        "305.63",
+        "93,922.61",
+        "",
+        "",
+        "Annual Percentage Yield Earned (APYE) For Period 03/01 - 03/31: 3.750% Based on an Average Daily Balance of $ 97,487.95",
+        "",
+        "",
+        "04/12",
+        "",
+        "Ending Balance",
+        "",
+        "$ 93,922.61"
       ]
     },
     {
       "rows": 2,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Account No.",
         "Statement Period",
         "Page",
@@ -4042,7 +6406,7 @@
     {
       "rows": 15,
       "cols": 6,
-      "sample": [
+      "cells": [
         "12 MONTH JUMBO CERTIFICATE (ID 50)",
         "",
         "Current",
@@ -4062,13 +6426,73 @@
         "",
         "",
         "Previous Balance",
+        "",
+        "",
+        "$ 420,552.24",
+        "02/01",
+        "",
+        "Deposit Dividend 4.887%",
+        "",
+        "1,745.55",
+        "422,297.79",
+        "",
+        "",
+        "Annual Percentage Yield Earned (APYE) For Period",
+        "01/01 - 01/31: 5.000%",
+        "",
+        "",
+        "03/01",
+        "",
+        "Deposit Dividend 4.887%",
+        "",
+        "1,583.17",
+        "423,880.96",
+        "",
+        "",
+        "Annual Percentage Yield Earned (APYE) For Period",
+        "02/01 - 02/28: 5.000%",
+        "",
+        "",
+        "03/25",
+        "",
+        "Deposit Dividend 4.887%",
+        "",
+        "1,362.09",
+        "425,243.05",
+        "",
+        "",
+        "Annual Percentage Yield Earned (APYE) For Period",
+        "03/01 - 03/24: 5.000%",
+        "",
+        "",
+        "03/25",
+        "",
+        "Renewed at 3.304% to mature 03/25/26",
+        "",
+        "",
+        "",
+        "03/25",
+        "",
+        "Withdrawal Transfer To Share 70",
+        "",
+        "-425,243.05",
+        "0.00",
+        "",
+        "",
+        "Ending Balance",
+        "",
+        "",
+        "$ 0.00",
+        "This is the final statement you will receive for this account.",
+        "",
+        "",
         ""
       ]
     },
     {
       "rows": 8,
       "cols": 6,
-      "sample": [
+      "cells": [
         "13 MONTH PROMO CERTIFICATE (ID 70)",
         "Current",
         "Balance: Matures on:",
@@ -4088,13 +6512,35 @@
         "",
         "$ 0.00",
         "03/25",
-        ""
+        "",
+        "",
+        "Deposit Transfer From Share 50",
+        "425,243.05",
+        "425,243.05",
+        "03/25",
+        "",
+        "",
+        "Deposit Transfer From Share 42",
+        "5,000.00",
+        "430,243.05",
+        "04/01",
+        "",
+        "",
+        "Deposit Dividend 3.924%",
+        "323.78",
+        "430,566.83",
+        "04/12",
+        "",
+        "",
+        "Annual Percentage Yield Earned (APYE) For Period\nEnding Balance",
+        "03/25 - 03/31: 4.000%",
+        "$ 430,566.83"
       ]
     },
     {
       "rows": 2,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Account No.",
         "Statement Period",
         "Page",
@@ -4106,7 +6552,7 @@
     {
       "rows": 9,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Savings",
         "$5.00",
         "Checking",
@@ -4130,7 +6576,7 @@
     {
       "rows": 7,
       "cols": 5,
-      "sample": [
+      "cells": [
         "Transaction Date",
         "Post Date",
         "Transaction Description",
@@ -4150,13 +6596,28 @@
         "",
         "Deposit Dividend Split Rate",
         "295.35",
-        "94,502.92"
+        "94,502.92",
+        "",
+        "",
+        "Annual Percentage Yield Earned (APYE) For Period 05/01 - 05/31: 3.750% Based on an Average Daily Balance of $ 94,207.57",
+        "",
+        "",
+        "07/01",
+        "",
+        "Deposit Dividend Split Rate Annual Percentage Yield Earned (APYE) For Period 06/01 - 06/30: 3.750% Based on an Average Daily Balance of $ 94,502.92",
+        "286.72",
+        "94,789.64",
+        "07/12",
+        "",
+        "Ending Balance",
+        "",
+        "$ 94,789.64"
       ]
     },
     {
       "rows": 2,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Account No.",
         "Statement Period",
         "Page",
@@ -4168,7 +6629,7 @@
     {
       "rows": 8,
       "cols": 5,
-      "sample": [
+      "cells": [
         "Transaction Date",
         "Post Date",
         "Transaction Description",
@@ -4188,13 +6649,27 @@
         "",
         "Deposit Dividend 3.924% Annual Percentage Yield Earned (APYE) For Period 05/01 - 05/31: 4.000%",
         "1,439.59",
-        "433,395.09"
+        "433,395.09",
+        "",
+        "",
+        "",
+        "07/01",
+        "",
+        "Deposit Dividend 3.924% Annual Percentage Yield Earned (APYE) For Period 06/01 - 06/30: 4.000%",
+        "1,397.79",
+        "434,792.88",
+        "",
+        "07/12",
+        "",
+        "Ending Balance",
+        "",
+        "$ 434,792.88"
       ]
     },
     {
       "rows": 2,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Account No.",
         "Statement Period",
         "Page",
@@ -4206,7 +6681,7 @@
     {
       "rows": 9,
       "cols": 2,
-      "sample": [
+      "cells": [
         "Savings",
         "$5.00",
         "Checking",
@@ -4230,7 +6705,7 @@
     {
       "rows": 7,
       "cols": 5,
-      "sample": [
+      "cells": [
         "Transaction Date",
         "Post Date",
         "Transaction Description",
@@ -4250,13 +6725,28 @@
         "",
         "Deposit Dividend Split Rate",
         "298.09",
-        "95,384.89"
+        "95,384.89",
+        "",
+        "",
+        "Annual Percentage Yield Earned (APYE) For Period 08/01 - 08/31: 3.750% Based on an Average Daily Balance of $ 95,086.80",
+        "",
+        "",
+        "10/01",
+        "",
+        "Deposit Dividend Split Rate Annual Percentage Yield Earned (APYE) For Period 09/01 - 09/30: 3.750% Based on an Average Daily Balance of $ 95,384.89",
+        "289.29",
+        "95,674.18",
+        "10/12",
+        "",
+        "Ending Balance",
+        "",
+        "$ 95,674.18"
       ]
     },
     {
       "rows": 2,
       "cols": 3,
-      "sample": [
+      "cells": [
         "Account No.",
         "Statement Period",
         "Page",
@@ -4268,7 +6758,7 @@
     {
       "rows": 11,
       "cols": 6,
-      "sample": [
+      "cells": [
         "13 MONTH PROMO CERTIFICATE (ID 70)",
         "Current",
         "Balance: Matures on:",
@@ -4288,7 +6778,48 @@
         "",
         "",
         "$ 434,792.88",
-        "08/01"
+        "08/01",
+        "",
+        "Deposit Dividend 3.924%",
+        "",
+        "1,449.04",
+        "436,241.92",
+        "",
+        "",
+        "Annual Percentage Yield Earned (APYE) For Period",
+        "07/01 - 07/31: 4.000%",
+        "",
+        "",
+        "09/01",
+        "",
+        "Deposit Dividend 3.924%",
+        "",
+        "1,453.87",
+        "437,695.79",
+        "",
+        "",
+        "Annual Percentage Yield Earned (APYE) For Period",
+        "08/01 - 08/31: 4.000%",
+        "",
+        "",
+        "10/01",
+        "",
+        "Deposit Dividend 3.924%",
+        "",
+        "1,411.66",
+        "439,107.45",
+        "",
+        "",
+        "Annual Percentage Yield Earned (APYE) For Period",
+        "09/01 - 09/30: 4.000%",
+        "",
+        "",
+        "10/12",
+        "",
+        "Ending Balance",
+        "",
+        "",
+        "$ 439,107.45"
       ]
     }
   ]

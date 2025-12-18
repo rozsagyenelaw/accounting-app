@@ -123,7 +123,7 @@ async function testAzureDirect() {
     console.log('\n' + '=' .repeat(80));
     console.log('💾 Saving full Azure response for inspection...');
 
-    // Save the full result
+    // Save the full result with COMPLETE table data
     fs.writeFileSync(
       '/Users/rozsagyene/accounting-app/azure-raw-response.json',
       JSON.stringify({
@@ -135,7 +135,8 @@ async function testAzureDirect() {
         tables: tables.map(t => ({
           rows: t.rowCount,
           cols: t.columnCount,
-          sample: t.cells.slice(0, 20).map(c => c.content)
+          // Save ALL cells, not just first 20
+          cells: t.cells.map(c => c.content)
         }))
       }, null, 2)
     );

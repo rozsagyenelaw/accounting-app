@@ -1,0 +1,621 @@
+{
+  "statementSummary": {
+    "deposits": 703315.26,
+    "atmDebit": -62381.16000000001,
+    "checks": -187777.96999999997,
+    "otherSub": -561643.5200000001,
+    "fees": -17.42
+  },
+  "azureExtracted": {
+    "deposits": {
+      "count": 89,
+      "total": 703690.2100000001
+    },
+    "atmDebit": {
+      "count": 681,
+      "total": -56578.24000000002
+    },
+    "checks": {
+      "count": 84,
+      "total": -121828.49999999994
+    },
+    "otherWithdrawals": {
+      "count": 22,
+      "total": -11052.75
+    }
+  },
+  "differences": {
+    "deposits": -374.95000000006985,
+    "atmDebit": -5802.919999999991,
+    "checks": -65949.47000000003,
+    "other": -550590.7700000001,
+    "net": -622735.5300000004
+  },
+  "missingCheckNumbers": [
+    322,
+    323,
+    328,
+    333,
+    334,
+    336,
+    342,
+    346,
+    347,
+    351,
+    353,
+    354,
+    355,
+    356,
+    358,
+    359,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    370,
+    373,
+    379,
+    380,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    393,
+    396,
+    397,
+    398,
+    400,
+    403,
+    404,
+    405,
+    406,
+    407,
+    410,
+    411,
+    412,
+    420,
+    421,
+    422,
+    423,
+    425,
+    426,
+    427,
+    430,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    458,
+    459,
+    460,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    475,
+    476,
+    477,
+    478
+  ],
+  "checksFound": [
+    {
+      "date": "08/29/23",
+      "checkNum": "319",
+      "amount": -412.04,
+      "description": "19 Anthem blueCross -412.04"
+    },
+    {
+      "date": "08/29/23",
+      "checkNum": "320",
+      "amount": -94.5,
+      "description": "20 Anthem blue Cross -94.50"
+    },
+    {
+      "date": "08/29/23",
+      "checkNum": "321",
+      "amount": -3828,
+      "description": "21 Bond -3,828.00"
+    },
+    {
+      "date": "08/29/23",
+      "checkNum": "341",
+      "amount": -4500,
+      "description": "41 Jaime Herrera -4,500.00"
+    },
+    {
+      "date": "09/01/23",
+      "checkNum": "325",
+      "amount": -1832.71,
+      "description": "25 Stefan Meyer -1,832.71"
+    },
+    {
+      "date": "09/12/23",
+      "checkNum": "324",
+      "amount": -130,
+      "description": "24* Manuel Gonzalez -130.00"
+    },
+    {
+      "date": "09/18/23",
+      "checkNum": "329",
+      "amount": -94.5,
+      "description": "29 Anthem Blue Cross -94.50"
+    },
+    {
+      "date": "09/19/23",
+      "checkNum": "326",
+      "amount": -1700,
+      "description": "26 Hector and Payment Paint/cement -1,700.00"
+    },
+    {
+      "date": "09/20/23",
+      "checkNum": null,
+      "amount": -37.22,
+      "description": "28* 90 CALGAS -37.22"
+    },
+    {
+      "date": "09/21/23",
+      "checkNum": "327",
+      "amount": -26442,
+      "description": " 327 USTherum Tax -26,442.00"
+    },
+    {
+      "date": "09/29/23",
+      "checkNum": "331",
+      "amount": -800,
+      "description": " 331 Manuel (Cut Palms) -800.00"
+    },
+    {
+      "date": "10/05/23",
+      "checkNum": "332",
+      "amount": -412.04,
+      "description": "32 Authem blue Cross -412.04"
+    },
+    {
+      "date": "10/06/23",
+      "checkNum": "330",
+      "amount": -130,
+      "description": "30* Manuel Gonzalez -130.00"
+    },
+    {
+      "date": "10/17/23",
+      "checkNum": "335",
+      "amount": -100,
+      "description": "35* Yeule Nails -100.00"
+    },
+    {
+      "date": "10/20/23",
+      "checkNum": "337",
+      "amount": -94.5,
+      "description": " 337* Authem -94.50"
+    },
+    {
+      "date": "10/20/23",
+      "checkNum": "338",
+      "amount": -412.04,
+      "description": "38 Authem -412.04"
+    },
+    {
+      "date": "10/20/23",
+      "checkNum": "339",
+      "amount": -119,
+      "description": " 339 AAA Membership -119.00"
+    },
+    {
+      "date": "11/03/23",
+      "checkNum": "340",
+      "amount": -130,
+      "description": "40 GARDNER -130.00"
+    },
+    {
+      "date": "11/03/23",
+      "checkNum": "343",
+      "amount": -2337.5,
+      "description": "43* Property tax -2,337.50"
+    },
+    {
+      "date": "11/29/23",
+      "checkNum": "344",
+      "amount": -94.5,
+      "description": "44 Authem Pharmacy -94.50"
+    },
+    {
+      "date": "11/29/23",
+      "checkNum": "345",
+      "amount": -412.04,
+      "description": "45 Anthem Medical -412.04"
+    },
+    {
+      "date": "12/07/23",
+      "checkNum": "348",
+      "amount": -130,
+      "description": "48* GARDNER -130.00"
+    },
+    {
+      "date": "12/21/23",
+      "checkNum": "349",
+      "amount": -412.04,
+      "description": " 349 Anthem Medical -412.04"
+    },
+    {
+      "date": "12/27/23",
+      "checkNum": "350",
+      "amount": -428,
+      "description": " 350 DMV Renewal -428.00"
+    },
+    {
+      "date": "01/05/24",
+      "checkNum": "352",
+      "amount": -130,
+      "description": " 352* GARDNER -130.00"
+    },
+    {
+      "date": "01/24/24",
+      "checkNum": "357",
+      "amount": -26442,
+      "description": " 357 IRS -26,442.00"
+    },
+    {
+      "date": "01/29/24",
+      "checkNum": "360",
+      "amount": -70,
+      "description": " 360* Yeule Nails -70.00"
+    },
+    {
+      "date": "03/11/24",
+      "checkNum": "368",
+      "amount": -130,
+      "description": "68* Gardner -130.00"
+    },
+    {
+      "date": "03/28/24",
+      "checkNum": "371",
+      "amount": -132.7,
+      "description": "71* Anthem -132.70"
+    },
+    {
+      "date": "03/28/24",
+      "checkNum": "372",
+      "amount": -463.2,
+      "description": "72 Authem -463.20"
+    },
+    {
+      "date": "03/28/24",
+      "checkNum": "374",
+      "amount": -793.5,
+      "description": "74* Felipe Juarez -793.50"
+    },
+    {
+      "date": "03/29/24",
+      "checkNum": "369",
+      "amount": -400,
+      "description": " 369 Shapiro fax Prep -400.00"
+    },
+    {
+      "date": "03/29/24",
+      "checkNum": "375",
+      "amount": -130,
+      "description": " 375 Manuel Gonzalez -130.00"
+    },
+    {
+      "date": "04/24/24",
+      "checkNum": "377",
+      "amount": -132.7,
+      "description": "77 Authem -132.70"
+    },
+    {
+      "date": "04/25/24",
+      "checkNum": "376",
+      "amount": -6892.47,
+      "description": " 376 Nationwide HomeInsurance -6,892.47"
+    },
+    {
+      "date": "04/25/24",
+      "checkNum": "378",
+      "amount": -463.2,
+      "description": "78 Authem -463.20"
+    },
+    {
+      "date": "05/03/24",
+      "checkNum": "381",
+      "amount": -130,
+      "description": " 381* Manuel Gonzalez -130.00"
+    },
+    {
+      "date": "07/01/24",
+      "checkNum": "390",
+      "amount": -2191.46,
+      "description": " 390 Geico 6 months -2,191.46"
+    },
+    {
+      "date": "07/01/24",
+      "checkNum": "391",
+      "amount": -463.2,
+      "description": " 391 Authem -463.20"
+    },
+    {
+      "date": "07/01/24",
+      "checkNum": "392",
+      "amount": -132.7,
+      "description": " 392 Authem -132.70"
+    },
+    {
+      "date": "07/29/24",
+      "checkNum": "394",
+      "amount": -463.2,
+      "description": "94 Authem -463.20"
+    },
+    {
+      "date": "07/31/24",
+      "checkNum": "395",
+      "amount": -132.7,
+      "description": " 395 Authem -132.70"
+    },
+    {
+      "date": "08/22/24",
+      "checkNum": "401",
+      "amount": -132.7,
+      "description": "01* Authem Pharmacy -132.70"
+    },
+    {
+      "date": "08/22/24",
+      "checkNum": "402",
+      "amount": -463.2,
+      "description": " 402 Authem Medical -463.20"
+    },
+    {
+      "date": "08/28/24",
+      "checkNum": "399",
+      "amount": -390,
+      "description": " 399 Manuel May,June, July -390.00"
+    },
+    {
+      "date": "09/30/24",
+      "checkNum": "408",
+      "amount": -775,
+      "description": " 408 Manuel Trim Palms(6) -775.00"
+    },
+    {
+      "date": "09/30/24",
+      "checkNum": "409",
+      "amount": -132.7,
+      "description": "09 Authem Pharmacy -132.70"
+    },
+    {
+      "date": "10/25/24",
+      "checkNum": "413",
+      "amount": -1189.42,
+      "description": "13 La County tax -1,189.42"
+    },
+    {
+      "date": "10/25/24",
+      "checkNum": "414",
+      "amount": -463.2,
+      "description": " 414 Anthem Pharmacy -463.20"
+    },
+    {
+      "date": "10/25/24",
+      "checkNum": "415",
+      "amount": -132.7,
+      "description": " 415 Anthem Medical -132.70"
+    },
+    {
+      "date": "10/25/24",
+      "checkNum": "416",
+      "amount": -121,
+      "description": "16 AAA Membership -121.00"
+    },
+    {
+      "date": "11/08/24",
+      "checkNum": "417",
+      "amount": -130,
+      "description": "17 Manuel Gardner -130.00"
+    },
+    {
+      "date": "11/29/24",
+      "checkNum": "419",
+      "amount": -463.2,
+      "description": "19 Anthem Medical -463.20"
+    },
+    {
+      "date": "12/04/24",
+      "checkNum": "418",
+      "amount": -57,
+      "description": "18 GO CALGAS -57.00"
+    },
+    {
+      "date": "12/20/24",
+      "checkNum": "424",
+      "amount": -463.2,
+      "description": "12/20/24 424 Authem Medical -463.20"
+    },
+    {
+      "date": "01/10/25",
+      "checkNum": "431",
+      "amount": -90,
+      "description": " 431* Air Condition Repair -90.00"
+    },
+    {
+      "date": "01/13/25",
+      "checkNum": "429",
+      "amount": -1189.41,
+      "description": " 429 La County tax (#2) -1,189.41"
+    },
+    {
+      "date": "01/15/25",
+      "checkNum": "428",
+      "amount": -407,
+      "description": " 428 DMV Renewal -407.00"
+    },
+    {
+      "date": "01/17/25",
+      "checkNum": "433",
+      "amount": -164.9,
+      "description": " · 433* Anthem Pharmacy -164.90"
+    },
+    {
+      "date": "01/17/25",
+      "checkNum": "434",
+      "amount": -463.2,
+      "description": ". 434 Anthem Medical -463.20"
+    },
+    {
+      "date": "01/23/25",
+      "checkNum": "432",
+      "amount": 284.59,
+      "description": "32 SO CALGAS 284.59"
+    },
+    {
+      "date": "01/24/25",
+      "checkNum": "435",
+      "amount": -2425,
+      "description": "35 Nawel 1/2 Pay Flout Ya -2,425.00"
+    },
+    {
+      "date": "01/28/25",
+      "checkNum": "436",
+      "amount": -1000,
+      "description": "36 Roofing deposit -1,000.00"
+    },
+    {
+      "date": "01/30/25",
+      "checkNum": "437",
+      "amount": -19475,
+      "description": "37 Roofing and Payment -19,475.00"
+    },
+    {
+      "date": "03/03/25",
+      "checkNum": "447",
+      "amount": -130,
+      "description": "47 Manuel Gardho -130.00"
+    },
+    {
+      "date": "03/11/25",
+      "checkNum": "448",
+      "amount": -120,
+      "description": "48 Mom Sit Kustine -120.00"
+    },
+    {
+      "date": "03/31/25",
+      "checkNum": "450",
+      "amount": -164.9,
+      "description": "50 Anthem -164.90"
+    },
+    {
+      "date": "03/31/25",
+      "checkNum": "451",
+      "amount": -521.23,
+      "description": "51 Anthem -521.23"
+    },
+    {
+      "date": "04/02/25",
+      "checkNum": "452",
+      "amount": -130,
+      "description": " 452 Manuel Gonzalez -130.00"
+    },
+    {
+      "date": "04/03/25",
+      "checkNum": "449",
+      "amount": -197.57,
+      "description": "49 SO CALGAS -197.57"
+    },
+    {
+      "date": "04/18/25",
+      "checkNum": "453",
+      "amount": -400,
+      "description": " 453 Shapiro Tax Prep -400.00"
+    },
+    {
+      "date": "04/22/25",
+      "checkNum": "454",
+      "amount": -112.1,
+      "description": " 454 SO CAL GAS -112.10"
+    },
+    {
+      "date": "04/23/25",
+      "checkNum": "455",
+      "amount": -160,
+      "description": " 455 KAstane Varon (Mon Sit) -160.00"
+    },
+    {
+      "date": "04/28/25",
+      "checkNum": "456",
+      "amount": -521.23,
+      "description": "56 Anthem -521.23"
+    },
+    {
+      "date": "04/28/25",
+      "checkNum": "457",
+      "amount": -164.9,
+      "description": " 457 Anthem -164.90"
+    },
+    {
+      "date": "05/29/25",
+      "checkNum": "461",
+      "amount": -100.59,
+      "description": "61 SOCALGAS -100.59"
+    },
+    {
+      "date": "06/02/25",
+      "checkNum": "462",
+      "amount": -521.23,
+      "description": "62 Authers -521.23"
+    },
+    {
+      "date": "06/27/25",
+      "checkNum": "469",
+      "amount": -375,
+      "description": " 469 BenitezWroughtROW-GATE FIX -375.00"
+    },
+    {
+      "date": "07/14/25",
+      "checkNum": "470",
+      "amount": -2534.46,
+      "description": " 470 GRIco CAR INSURANCE -2,534.46"
+    },
+    {
+      "date": "07/16/25",
+      "checkNum": "471",
+      "amount": -164,
+      "description": " 471 DMV FOCUS -164.00"
+    },
+    {
+      "date": "08/01/25",
+      "checkNum": "472",
+      "amount": -164.9,
+      "description": "72 Anthem -164.90"
+    },
+    {
+      "date": "08/01/25",
+      "checkNum": "473",
+      "amount": -521.23,
+      "description": "73 Authem -521.23"
+    },
+    {
+      "date": "08/01/25",
+      "checkNum": "474",
+      "amount": -41.36,
+      "description": " 474 SOCAL GAS -41.36"
+    },
+    {
+      "date": "08/20/25",
+      "checkNum": "479",
+      "amount": -164.9,
+      "description": "79* ANTHEM -164.90"
+    }
+  ],
+  "transactionsFound": 792
+}
