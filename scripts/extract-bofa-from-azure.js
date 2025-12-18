@@ -65,10 +65,18 @@ for (const table of azureData.tables) {
 
       // Amount - look for negative (withdrawal) or positive (deposit)
       if (!amount && /^-?\$?\d{1,3}(,\d{3})*\.\d{2}$/.test(cellStr.replace(/[()]/g, ''))) {
-        const cleaned = cellStr.replace(/[$,()]/g, '');
+        const cleaned = cellStr.replace(/[$,()-]/g, ''); // Remove all formatting including minus
         const isNegative = cellStr.includes('-') || cellStr.includes('(');
-        amount = parseFloat(cleaned) * (isNegative ? -1 : 1);
-        type = amount < 0 ? 'PAYMENT' : 'RECEIPT';
+        const rawAmount = parseFloat(cleaned);
+
+        // Determine type based on sign, but store amount as positive
+        if (isNegative) {
+          amount = Math.abs(rawAmount); // Always positive
+          type = 'PAYMENT';
+        } else {
+          amount = Math.abs(rawAmount); // Always positive
+          type = 'RECEIPT';
+        }
       }
     }
 
@@ -87,7 +95,7 @@ for (const table of azureData.tables) {
       bofaTransactions.push({
         date: `${month}/${day}/${year}`,
         description: `Bank of America ${description}`,
-        amount: Math.abs(amount),
+        amount,
         type,
         source: `Table ${tableNum}`,
         raw: { date, description, amount }
