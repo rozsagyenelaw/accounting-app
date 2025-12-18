@@ -29,6 +29,7 @@ export function TransactionReview({ onNext, onBack }: { onNext: () => void; onBa
   const [showAddDialog, setShowAddDialog] = useState(false);
   const [saving, setSaving] = useState(false);
   const [saveStatus, setSaveStatus] = useState<'idle' | 'saving' | 'saved' | 'error'>('idle');
+  const [importingLogix, setImportingLogix] = useState(false);
 
   const filteredAndSortedTransactions = useMemo(() => {
     let filtered = [...transactions];
@@ -148,6 +149,58 @@ export function TransactionReview({ onNext, onBack }: { onNext: () => void; onBa
     }
   };
 
+  const handleImportLogixDividends = async () => {
+    if (!confirm('Import Logix FCU dividends?\n\nThis will add dividend transactions from Logix credit union statements.')) {
+      return;
+    }
+
+    setImportingLogix(true);
+    try {
+      const response = await fetch('/api/import-logix', {
+        method: 'POST',
+      });
+
+      if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.error || 'Failed to import');
+      }
+
+      const data = await response.json();
+
+      // Add each Logix transaction, checking for duplicates
+      let addedCount = 0;
+      for (const txn of data.transactions) {
+        // Check if already exists (by description and date)
+        const exists = transactions.some(
+          t => t.description === txn.description &&
+               new Date(t.date).toDateString() === new Date(txn.date).toDateString()
+        );
+
+        if (!exists) {
+          addTransaction({
+            id: txn.id,
+            date: new Date(txn.date),
+            description: txn.description,
+            amount: txn.amount,
+            type: txn.type,
+            category: txn.category,
+            subCategory: txn.subCategory,
+            confidence: 100,
+            manuallyReviewed: true,
+          });
+          addedCount++;
+        }
+      }
+
+      alert(`Successfully imported ${addedCount} Logix dividends!\n\nTotal: $${data.summary.total.toFixed(2)}`);
+    } catch (error) {
+      console.error('Failed to import Logix dividends:', error);
+      alert(`Failed to import Logix dividends: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    } finally {
+      setImportingLogix(false);
+    }
+  };
+
   return (
     <div className="space-y-6">
       {/* Summary Stats */}
@@ -234,6 +287,14 @@ export function TransactionReview({ onNext, onBack }: { onNext: () => void; onBa
         <CardHeader className="flex flex-row items-center justify-between">
           <CardTitle>Transactions ({filteredAndSortedTransactions.length})</CardTitle>
           <div className="flex gap-3 items-center">
+            <Button
+              onClick={handleImportLogixDividends}
+              disabled={importingLogix}
+              variant="outline"
+              className="bg-blue-50 hover:bg-blue-100 border-blue-300"
+            >
+              {importingLogix ? 'Importing...' : '+ Import Logix Dividends'}
+            </Button>
             <Button
               onClick={handleSaveToDatabase}
               disabled={saving}

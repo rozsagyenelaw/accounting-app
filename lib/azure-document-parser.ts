@@ -86,13 +86,14 @@ function parseDate(dateStr: string): string | undefined {
 }
 
 // Validate transactions and filter out non-transaction entries
-function isValidTransaction(description: string, date: string | undefined): boolean {
+function isValidTransaction(description: string, date: string | undefined, amount?: number): boolean {
   if (!date) return false;
   if (!description || description.trim().length === 0) return false;
 
   const desc = description.toLowerCase();
 
   // FILTER 1: Balance lines (these are NOT transactions)
+  // Comprehensive list to catch all balance-related entries
   const balancePatterns = [
     /beginning balance/i,
     /ending balance/i,
@@ -101,9 +102,29 @@ function isValidTransaction(description: string, date: string | undefined): bool
     /balance brought forward/i,
     /^balance\s*/i,
     /current balance/i,
+    /account balance/i,
+    /closing balance/i,
+    /opening balance/i,
+    /total balance/i,
+    /available balance/i,
+    /ledger balance/i,
+    /^balance$/i,
+    /balance on \d/i,              // "Balance on 01/15/24"
+    /balance as of/i,
+    /statement balance/i,
+    /daily balance/i,
+    /ending.*balance/i,            // "Ending Account Balance"
+    /beginning.*balance/i,         // "Beginning Account Balance"
   ];
   if (balancePatterns.some(pattern => pattern.test(description))) {
-    console.log(`[Azure Parser] FILTERED BALANCE LINE: "${description.substring(0, 60)}"`);
+    console.log(`[Azure Parser] FILTERED BALANCE LINE: "${description.substring(0, 60)}" ($${amount || 0})`);
+    return false;
+  }
+
+  // FILTER 1b: Very large amounts are likely balance lines that slipped through
+  // Bank account balances are often $100K+ while transactions are rarely over $50K
+  if (amount && amount > 100000) {
+    console.log(`[Azure Parser] FILTERED LARGE AMOUNT (likely balance): "${description.substring(0, 60)}" ($${amount})`);
     return false;
   }
 
@@ -204,6 +225,10 @@ export async function parseWithAzure(pdfBuffer: Buffer): Promise<ParseResult> {
         let amount: number | undefined;
         let partialDate: string | undefined; // For MM/DD format without year
 
+        // For Logix tables, collect ALL amounts and pick the smallest reasonable one
+        // (to avoid picking the "New Balance" column instead of "Amount" column)
+        const potentialAmounts: number[] = [];
+
         for (const value of values) {
           // Check for full date with year (MM/DD/YYYY or MM-DD-YYYY)
           if (!date && !partialDate && /\d{1,2}[\/\-]\d{1,2}[\/\-]\d{2,4}/.test(value)) {
@@ -213,15 +238,25 @@ export async function parseWithAzure(pdfBuffer: Buffer): Promise<ParseResult> {
           else if (!date && !partialDate && /^\d{1,2}[\/\-]\d{1,2}$/.test(value.trim())) {
             partialDate = value.trim();
           }
-          // Check for amount
-          else if (!amount && /^-?\$?[\d,]+\.\d{2}$/.test(value.replace(/\s/g, ''))) {
-            amount = parseAmount(value);
+          // Collect ALL amounts from the row
+          else if (/^-?\$?[\d,]+\.\d{2}$/.test(value.replace(/\s/g, ''))) {
+            const amt = parseAmount(value);
+            if (amt > 0) {
+              potentialAmounts.push(amt);
+            }
           }
           // Otherwise it's likely part of description
           // BUT: Don't add values that look like amounts (to avoid picking up "New Balance" column)
           else if (value.length > 3 && !/^\d+$/.test(value) && !/^-?\$?[\d,]+\.\d{2}$/.test(value.replace(/\s/g, ''))) {
             description = description ? `${description} ${value}` : value;
           }
+        }
+
+        // Pick the SMALLEST amount from the row
+        // When a row has multiple amounts (e.g., transaction amount AND balance),
+        // the transaction amount is typically smaller than the running balance
+        if (potentialAmounts.length > 0) {
+          amount = Math.min(...potentialAmounts);
         }
 
         // If we found a partial date (MM/DD), infer the year
@@ -271,9 +306,9 @@ export async function parseWithAzure(pdfBuffer: Buffer): Promise<ParseResult> {
           }
 
           // Minimal validation - only skip obvious garbage
-          if (!isValidTransaction(description, date)) {
+          if (!isValidTransaction(description, date, amount)) {
             rowsFiltered++;
-            console.log(`[Azure Parser] FILTERED: "${description.substring(0, 60)}..." (date: ${date})`);
+            console.log(`[Azure Parser] FILTERED: "${description.substring(0, 60)}..." (date: ${date}, amount: $${amount})`);
             continue;
           }
 
@@ -435,7 +470,7 @@ function parseTextTransactions(paragraphs: any[]): Transaction[] {
         .trim();
 
       if (description && amount > 0 && date) {
-        if (!isValidTransaction(description, date)) {
+        if (!isValidTransaction(description, date, amount)) {
           continue;
         }
 
@@ -474,7 +509,7 @@ function parseTextTransactions(paragraphs: any[]): Transaction[] {
     const description = para2;
 
     if (date && amount > 0 && description) {
-      if (!isValidTransaction(description, date)) {
+      if (!isValidTransaction(description, date, amount)) {
         continue;
       }
 
